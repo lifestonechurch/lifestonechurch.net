@@ -15,6 +15,10 @@ a,
 header nav > ul > li.has-dd:hover a,
 #slider { color: #008f01; }
 
+header nav .dropdown li {
+	background-color: #FFFFFF;
+}
+
 .button,
 #bottom,
 header nav .dropdown li:hover,
