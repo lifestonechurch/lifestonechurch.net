@@ -1,9 +1,11 @@
 
 # TODO
 
-* Remove all references to lifestonechurch.net
-* Add all images
-* Add all pages
+* Add breadcrumbs to all pages
+* Add images to all pages
+* Remove all shortcodes from pages
+* Add contact form
+* Add paypal donation form
 * Add all posts
 * Add rss feed for podcast
 
