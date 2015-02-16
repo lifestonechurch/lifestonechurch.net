@@ -1,7 +1,6 @@
 
 # TODO
 
-* Add logo
 * Add all pages
 * Add all posts
 * Remove all references to lifestonechurch.net
