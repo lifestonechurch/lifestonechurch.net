@@ -1,7 +1,6 @@
 
 # TODO
 
-* Add breadcrumbs to all pages
 * Add images to all pages
 * Remove all shortcodes from pages
 * Add contact form
