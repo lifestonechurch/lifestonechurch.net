@@ -1,8 +1,6 @@
 
 # TODO
 
-* Add rss feed for podcast
-
 * Point url to github pages
 * Point feedburner to github pages
 * Add google analytics
