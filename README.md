@@ -1,9 +1,10 @@
 
 # TODO
 
+* Remove all references to lifestonechurch.net
+* Add all images
 * Add all pages
 * Add all posts
-* Remove all references to lifestonechurch.net
 * Add rss feed for podcast
 
 * Point url to github pages
