@@ -7,7 +7,26 @@ layout: page
 </p>
 <h1>Give</h1>
 
-<p>[donateplus]</p>
+<form id="donateplusform" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" id="cmd" name="cmd" value="_donations">
+			<p class="donate_amount"><label for="amount">Donation Amount:</label><br><input type="text" name="amount" id="amount" value="10"> <small>(Currency: USD)</small></p>
+<input type="hidden" name="a3" id="a3" value="0">
+<p class="donate_recur"><label for="recur">Repeat Donation:</label>
+<select name="t3" id="t3"><option value="0">Do not repeat</option><option value="W">Weekly</option><option value="M">Monthly</option></select> x 
+<input name="p3" id="p3" value="1" type="text" style="width:10px;">
+</p>
+<input type="hidden" name="item_name" value="Donation to Lifestone Church">
+<input type="hidden" name="business" value="give@lifestonechurch.net">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="rm" value="1">
+<input type="hidden" name="return" value="http://www.lifestonechurch.net/support/thank-you/">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+<p class="submit"><input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"></p>
+</form>
+
 <p>Mailing Address:</p>
 <p>5526W. 13400 S.<br />
 #352<br />

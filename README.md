@@ -3,7 +3,6 @@
 
 * Remove all shortcodes from pages
 * Add contact form
-* Add paypal donation form
 * Add all posts
 * Add rss feed for podcast
 
