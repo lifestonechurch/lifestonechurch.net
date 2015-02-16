@@ -177,5 +177,12 @@
 		<script type='text/javascript' src='{{ site.baseurl }}/assets/js/jquery.countdown.min.js'></script>
 		<script type='text/javascript' src='{{ site.baseurl }}/assets/js/fancybox/jquery.fancybox.pack.js'></script>
 		<script type='text/javascript' src='{{ site.baseurl }}/assets/js/functions.js'></script>
+
+		<script src="{{ site.baseurl }}/assets/js/audiojs/audio.min.js"></script>
+		<script>
+			audiojs.events.ready(function() {
+				var as = audiojs.createAll();
+			});
+		</script>
 	</body>
 </html>
