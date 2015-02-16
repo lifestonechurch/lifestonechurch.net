@@ -1,11 +1,12 @@
 
 # TODO
 
-* Add all posts
+* Fix all posts
 * Add rss feed for podcast
 
 * Point url to github pages
 * Point feedburner to github pages
+* Add google analytics
 
 * Add contact form
 * Remove breadcrumbs from the pages
