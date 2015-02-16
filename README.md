@@ -1,7 +1,6 @@
 
 # TODO
 
-* Fix all posts
 * Add rss feed for podcast
 
 * Point url to github pages
