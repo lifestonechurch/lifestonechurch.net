@@ -374,7 +374,15 @@ header #mobile-nav ul { display:none; }
 #content p#breadcrumbs { margin: 0; font-size: 11px; color:#888; }
 #content blockquote { background: url('../images/blockquote.png') 0 5px no-repeat; padding: 0 0 20px 60px; margin: 20px 0 0 30px; display: block; }
 #content blockquote p { color:#888; }
-#content img { -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; display: block; margin:0; padding:0; }
+#content img {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	display: block;
+	margin:0;
+	padding:0;
+	max-width: 100%;
+}
 #content .image { text-align: center; font-size: 11px; display: block; }
 #content .image.left { margin: 0 20px 0 0; }
 #content .image.right { margin: 0 0 0 20px; }
