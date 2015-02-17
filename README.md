@@ -1,7 +1,6 @@
 
 # TODO
 
-* Point url to github pages
 * Add google analytics
 
 * Add contact form
