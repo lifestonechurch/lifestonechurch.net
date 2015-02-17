@@ -2,7 +2,6 @@
 # TODO
 
 * Point url to github pages
-* Move sermon audio to another domain
 * Add google analytics
 
 * Add contact form
