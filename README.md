@@ -1,7 +1,4 @@
-
 # TODO
-
-* Add google analytics
 
 * Add contact form
 * Remove breadcrumbs from the pages
