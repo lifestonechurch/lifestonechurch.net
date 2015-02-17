@@ -11,8 +11,8 @@
 		<item>
 				<title>{{ post.title }}</title>
 				<link>{{ site.url }}/{{ post.url }}</link>
-				<pubDate>{{ post.description }}</pubDate>
-				<description>{{ post.content | xml_escape }}</description>
+				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+				<description>{{ post.description }}</description>
 				<guid isPermaLink="true">{{ site.url }}/{{ post.url }}</guid>
 				<enclosure url="{{ post.mp3 }}" type="audio/mp3"/>
 			</item>
