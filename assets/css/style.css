@@ -85,7 +85,24 @@ header nav > ul > li.has-dd > a { padding-right:35px; }
 header nav > ul > li.has-dd:hover a { top: 5px; }
 header nav > ul > li.has-dd:hover .dropdown a { top:0; }
 header nav .dropdown { background: url(../images/dropdown.png); background: rgba(0,0,0,.6); position: absolute; width: 220px; display: none; }
-header nav .dropdown a { display: block; font-size: 13px; line-height: 50px; padding: 0 10px 0 20px; height: 50px; position: relative; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; color: #555555 !important; -moz-transition: all linear .2s; -ms-transition: all linear .2s; -o-transition: all linear .2s; -webkit-transition: all linear .2s; transition: all linear .2s; border-right: 0; }
+header nav .dropdown a {
+	display: block;
+	font-size: 13px;
+	line-height: 50px;
+	padding: 0 10px 0 20px;
+	height: 50px;
+	position: relative;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #555555;
+	-moz-transition: all linear .2s;
+	-ms-transition: all linear .2s;
+	-o-transition: all linear .2s;
+	-webkit-transition: all linear .2s;
+	transition: all linear .2s;
+	border-right: 0;
+}
 header nav .dropdown a .icon-font { line-height:33px; }
 header nav .dropdown li + li a { border-top: solid 1px #999; border-color: rgba(255,255,255,.2); }
 header nav .dropdown li {font-size: 0; line-height: 0; position: relative; width: 220px; }

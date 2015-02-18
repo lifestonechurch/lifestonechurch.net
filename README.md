@@ -1,6 +1,5 @@
 # TODO
 
-* Fix text color on dropdowns to white when hovered
 * Move podcast away from feedburner
 * Add contact form
 * Remove breadcrumbs from the pages

@@ -12,23 +12,30 @@ a,
 #sidebar .theme-widget-upcoming-events li .text strong,
 #content .gallery .image figcaption,
 #content .event-info-left,
-header nav > ul > li.has-dd:hover a,
-#slider { color: #008f01; }
+header nav .dropdown a,
+#slider {
+	color: #008f01;
+}
 
 header nav .dropdown li {
 	background-color: #FFFFFF;
 }
+header nav .dropdown li:hover a {
+	background-color: #008f01;
+	color: #FFFFFF;
+}
 
 .button,
 #bottom,
-header nav .dropdown li:hover,
 #content .gallery .image a,
 #content .upcoming-event-posts .date-circle,
 #pagination li a,
 #content .post-content a.more:hover,
 header #mobile-nav .mobile-nav-toggle,
 header #mobile-nav > ul,
-#respond input#submit { background-color: #008f01; }
+#respond input#submit {
+	background-color: #008f01;
+}
 
 #logo a { width:400px; }
 
