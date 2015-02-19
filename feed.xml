@@ -1,20 +1,49 @@
----
+		---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 	<channel>
 		<title>{{ site.title }}</title>
 		<description>{{ site.description }}</description>
 		<link>{{ site.url }}</link>
-		<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.posts limit:10 %}
+		<language>en</language>
+		<managingEditor>{{ site.managerName }} ({{ site.managerEmail }})</managingEditor>
+		<webMaster>{{ site.managerName }} ({{ site.managerEmail }})</webMaster>
+		<copyright>2014-{{site.time | "%Y" }} {{ site.organizationName }}</copyright>
+		<pubDate>{{ site.time | date: "%a, %d %b %Y" }}</pubDate>
+		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y" }}</lastBuildDate>
+		<image>
+			<link>{{ site.baseurl}}</link>
+			<url>{{ site.squareUrl}}</url>
+			<title>{{ site.title }}</title>
+		</image>
+		<itunes:subtitle>{{ site.podcastSubtitle }}</itunes:subtitle>
+		<itunes:author></itunes:author>
+		<itunes:summary></itunes:summary>
+		<itunes:keywords></itunes:keywords>
+		<itunes:owner>
+			<itunes:name></itunes:name>
+			<itunes:email></itunes:email>
+		</itunes:owner>
+		<itunes:image></itunes:image>
+		<itunes:category text="Religion & Spirituality">
+			<itunes:category text="Christianiyt" />
+		</itunes:category>
+		{% for post in site.posts %}
 		<item>
 				<title>{{ post.title }}</title>
 				<link>{{ site.url }}/{{ post.url }}</link>
-				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+				<pubDate>{{ post.date | date: "%a, %d %b %Y" }}</pubDate>
 				<description>{{ post.description }}</description>
-				<guid isPermaLink="true">{{ site.url }}/{{ post.url }}</guid>
-				<enclosure url="{{ post.mp3 }}" type="audio/mp3"/>
+				<guid isPermaLink="true">{{ post.link }}</guid>
+				<enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/mp3"/>
+				<itunes:author>{{ post.speaker }}</itunes:author>
+				<itunes:subtitle></itunes:subtitle>
+				<itunes:summary>{{ post.description }}</itunes:summary>
+				<itunes:duration>{{ post.length }}</itunes:duration>
+				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
+				<itune:image>{{ post.image }}</itune:image>
+				<itunes:explicit>no</itunes:explicit>
 			</item>
 			<item>
 			</item>

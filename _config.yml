@@ -1,3 +1,10 @@
 baseurl: http://www.lifestonechurch.net
+description: A Bible-based church in Herriman, Utah.
+managerName: Adam Harris
+managerEmail: adam@mountainview-webdesign.com
+title: Lifestone Church
+organizationName: Lifestone Church
+squareUrl:
+podcastSubtitle:
 permalink: /:categories/:title/
 google_analytics_code: UA-44899328-1
