@@ -25,12 +25,12 @@
 			<itunes:name>{{ site.managerName}}</itunes:name>
 			<itunes:email>{{ site.managerEmail}}</itunes:email>
 		</itunes:owner>
-		<itunes:image></itunes:image>
+		<itunes:image href="{{ site.squareLogo}}" />
 		<itunes:category text="Religion &amp; Spirituality">
 			<itunes:category text="Christianity" />
 		</itunes:category>
 		{% for post in site.posts %}
-		<item>
+			<item>
 				<title>{{ post.title }}</title>
 				<link>{{ site.baseurl }}/{{ post.url }}</link>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y" }}</pubDate>
@@ -40,12 +40,10 @@
 				<itunes:author>{{ post.speaker }}</itunes:author>
 				<itunes:subtitle></itunes:subtitle>
 				<itunes:summary>{{ post.description }}</itunes:summary>
-				<itunes:duration>{{ post.length }}</itunes:duration>
+				<itunes:duration>{{ post.podcastLength }}</itunes:duration>
 				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
-				<itunes:image>{% if post.image %}{{ post.image }}{% else %}{{site.squareLogo}}{% endif %}</itunes:image>
+				<itunes:image href="{% if post.image %}{{ post.image }}{% else %}{{site.squareLogo}}{% endif %}" />
 				<itunes:explicit>no</itunes:explicit>
-			</item>
-			<item>
 			</item>
 		{% endfor %}
 	</channel>
