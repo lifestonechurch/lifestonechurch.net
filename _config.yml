@@ -4,7 +4,7 @@ managerName: Adam Harris
 managerEmail: adam@mountainview-webdesign.com
 title: Lifestone Church
 organizationName: Lifestone Church
-squareUrl: http://www.lifestonechurch.net/assets/images/logo2.jpg
+squareLogo: http://www.lifestonechurch.net/assets/images/logo2.jpg
 podcastSubtitle: Messages from Sunday morning worship at Lifestone Church
 permalink: /:categories/:title/
 google_analytics_code: UA-44899328-1

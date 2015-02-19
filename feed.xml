@@ -7,7 +7,7 @@
 		<description>{{ site.description }}</description>
 		<link>{{ site.baseurl }}</link>
 		<language>en</language>
-		<managingEditor>{{ site.managerEmail }}</managingEditor>
+		<managingEditor>{{ site.managerName }} ({{ site.managerEmail }})</managingEditor>
 		<webMaster>{{ site.managerName }} ({{ site.managerEmail }})</webMaster>
 		<copyright>2014-{{site.time | "%Y" }} {{ site.organizationName }}</copyright>
 		<pubDate>{{ site.time | date: "%a, %d %b %Y" }}</pubDate>
@@ -42,7 +42,7 @@
 				<itunes:summary>{{ post.description }}</itunes:summary>
 				<itunes:duration>{{ post.length }}</itunes:duration>
 				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
-				<itune:image>{% if post.image %}{{ post.image }}{% else %}{{site.squareLogo{% endif %}</itune:image>
+				<itune:image>{% if post.image %}{{ post.image }}{% else %}{{site.squareLogo}}{% endif %}</itune:image>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 			<item>
