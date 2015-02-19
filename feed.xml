@@ -42,7 +42,7 @@
 				<itunes:summary>{{ post.description }}</itunes:summary>
 				<itunes:duration>{{ post.length }}</itunes:duration>
 				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
-				<itune:image>{% if post.image %}{{ post.image }}{% else %}{{site.squareLogo}}{% endif %}</itune:image>
+				<itunes:image>{% if post.image %}{{ post.image }}{% else %}{{site.squareLogo}}{% endif %}</itunes:image>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 			<item>
