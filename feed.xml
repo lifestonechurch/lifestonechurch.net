@@ -1,4 +1,4 @@
-		---
+---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
@@ -22,12 +22,12 @@
 		<itunes:summary></itunes:summary>
 		<itunes:keywords></itunes:keywords>
 		<itunes:owner>
-			<itunes:name></itunes:name>
-			<itunes:email></itunes:email>
+			<itunes:name>{{ site.managerName}}</itunes:name>
+			<itunes:email>{{ site.managerEmail}}</itunes:email>
 		</itunes:owner>
 		<itunes:image></itunes:image>
 		<itunes:category text="Religion & Spirituality">
-			<itunes:category text="Christianiyt" />
+			<itunes:category text="Christianity" />
 		</itunes:category>
 		{% for post in site.posts %}
 		<item>
