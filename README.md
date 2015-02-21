@@ -1,6 +1,5 @@
 # TODO
 
-* Move podcast away from feedburner
 * Add contact form
 * Remove breadcrumbs from the pages
 * Fix breadcrumbs on posts to include a link to sermons

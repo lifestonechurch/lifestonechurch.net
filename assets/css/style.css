@@ -51,6 +51,7 @@ header, nav, section, article, aside, footer { display: block; }
 .notext { font-size: 0; line-height: 0; text-indent: -9999px; }
 .left, .alignleft { float: left; display: inline; }
 .right, .alignright { float: right; display: inline; }
+.center { text-align: center; }
 
 footer, #footer-push { height: 50px; }
 footer .top {
