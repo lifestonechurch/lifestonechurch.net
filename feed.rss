@@ -18,7 +18,7 @@
 			<title>{{ site.title }}</title>
 		</image>
 		<itunes:subtitle>{{ site.podcastSubtitle }}</itunes:subtitle>
-		<itunes:author></itunes:author>
+		<itunes:author>{{ site.organizationName }}</itunes:author>
 		<itunes:summary></itunes:summary>
 		<itunes:keywords></itunes:keywords>
 		<itunes:owner>
