@@ -4,7 +4,6 @@ title: Christmas Series- The Gift of Hope
 date: 2014-12-07
 categories:
 - Podcast
-status: publish
 published: true
 link: http://www.mountainview-webdesign.com/lifestonechurch/2014-12-07-TheGiftOfHope.mp3
 keywords:
@@ -12,14 +11,16 @@ podcastLength: 00:42:00
 image:
 speaker: Pastor Ben Helton
 description: Christmas Series
+vimeoId: 114403257
 ---
 
 <p id="breadcrumbs">
-	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Videos &rsaquo; Sermons &rsaquo; Christmas Series- The Gift of Hope
-</p>
-<h1>Christmas Series- The Gift of Hope</h1>
+	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Videos &rsaquo; <a href="{{ site.baseurl }}/videos/sermons/">Sermons</a> &rsaquo; {{page.title}}
 
-{% include vimeoPlayer.html id="114403257" %}
+</p>
+<h1>{{page.title}}</h1>
+
+{% include vimeoPlayer.html id=page.vimeoId %}
 
 <br/>
 <br/>

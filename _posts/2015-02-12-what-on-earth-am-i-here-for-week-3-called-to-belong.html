@@ -11,14 +11,16 @@ podcastLength: 00:47:00
 image:
 speaker: Pastor Ben Helton
 description: What On Earth Am I Here For? Series
+vimeoId: 119403832
 ---
 
 <p id="breadcrumbs">
-	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Videos &rsaquo; Sermons &rsaquo; What On Earth Am I Here For?- Week 3- Called to be Belong
-</p>
-<h1>What On Earth Am I Here For?- Week 3- Called to be Belong</h1>
+	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Videos &rsaquo; <a href="{{ site.baseurl }}/videos/sermons/">Sermons</a> &rsaquo; {{page.title}}
 
-{% include vimeoPlayer.html id="119403832" %}
+</p>
+<h1>{{page.title}}</h1>
+
+{% include vimeoPlayer.html id=page.vimeoId %}
 
 <br/>
 <br/>

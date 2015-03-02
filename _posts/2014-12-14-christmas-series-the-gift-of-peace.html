@@ -4,7 +4,6 @@ title: Christmas Series- The Gift Of Peace
 date: 2014-12-14
 categories:
 - Podcast
-status: publish
 published: true
 link: http://www.mountainview-webdesign.com/lifestonechurch/2014-12-14-TheGiftOfPeace.mp3
 keywords:
@@ -15,9 +14,10 @@ description: Christmas Series
 ---
 
 <p id="breadcrumbs">
-	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Videos &rsaquo; Sermons &rsaquo; Christmas Series- The Gift Of Peace
+	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Videos &rsaquo; <a href="{{ site.baseurl }}/videos/sermons/">Sermons</a> &rsaquo; {{page.title}}
+
 </p>
-<h1>Christmas Series- The Gift Of Peace</h1>
+<h1>{{page.title}}</h1>
 
 <p><iframe width="560" height="315" src="//www.youtube.com/embed/oLHG2NP8Ns8" frameborder="0" allowfullscreen></iframe></p>
 
@@ -25,3 +25,4 @@ description: Christmas Series
 <br/>
 
 {% include audioPlayer.html path=page.link %}
+
