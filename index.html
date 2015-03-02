@@ -2,54 +2,11 @@
 layout: default
 ---
 
-<section id="slider">
-	<section class="image-slider">
-		<ul class="slides">
-			<li class="bottom hidden">
-				<a href="{{ site.baseurl }}/videos/sermons/">
-					<img width="1400" height="500" src="{{ site.baseurl }}/assets/uploads/sliders/sermon_slider2.jpg" class="attachment-slide-image wp-post-image" alt="sermon_slider2" title="Sermons" />
-				</a>
-			</li>
-			<li class="bottom hidden">
-				<a href="{{ site.baseurl }}/videos/sermons/">
-					<img width="1280" height="553" src="{{ site.baseurl }}/assets/uploads/sliders/40daysslider1-1280x553.jpg" class="attachment-slide-image wp-post-image" alt="40daysslider" title="40 Days of Purpose" />
-				</a>
-			</li>
-			<li class="bottom hidden">
-				<a href="{{ site.baseurl }}/videos/sermons/">
-					<img width="1400" height="500" src="{{ site.baseurl }}/assets/uploads/sliders/Preschool_slider.jpg" class="attachment-slide-image wp-post-image" alt="Preschool_slider" title="Beach House Bandit" />
-				</a>
-			</li>
-			<li class="bottom hidden">
-				<a href="{{ site.baseurl }}/videos/sermons/">
-					<img width="1400" height="500" src="{{ site.baseurl }}/assets/uploads/sliders/MK5slider1.jpg" class="attachment-slide-image wp-post-image" alt="MK5slider" title="MK5" />
-				</a>
-			</li>
-			<li class="bottom light">
-				<img width="1400" height="400" src="{{ site.baseurl }}/assets/uploads/sliders/RecCenterSlider.jpg" class="attachment-slide-image wp-post-image" alt="RecCenterSlider" title="Herriman Rec Center" />
-				<div class="caption">
-					<div class="overlay">
-						<h2>Herriman Rec Center</h2>
-						<p>Every Sunday @ 10:30am</p>
-					</div>
-				</div>
-			</li>
-			<li class="bottom light">
-				<img width="1400" height="400" src="{{ site.baseurl }}/assets/uploads/sliders/KidsWillLoveIt.jpg" class="attachment-slide-image wp-post-image" alt="KidsWillLoveIt" title="Kid&#8217;s Life" />
-				<div class="caption">
-					<div class="overlay">
-						<h2>Kid&#8217;s Life
-						</h2>
-						<p>K-5th Grade</p>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</section>
-</section>
+{% include slider.html %}
+
 <section id="features">
 	<section class="shell">
-		<section id="page" class="homepage no-countdown">
+		<section id="page" class="homepage">
 			<article id="content" class="full">
 				<h2>Welcome!</h2>
 				<p>We’re a new <span style="color: #000000;">Bible based church</span>&nbsp;in Herriman, Utah and we meet in the&nbsp;<span style="color: #000000;">J. L. Sorenson Recreation Center. We would love for you to <a title="I’m New" href="{{ site.baseurl }}/visit/">visit us</a>!</span></p>
