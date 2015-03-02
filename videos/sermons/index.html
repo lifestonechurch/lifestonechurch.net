@@ -13,13 +13,6 @@ layout: page
 
 <h2>Videos</h2>
 
-<p>2015-03-01- <a title="What On Earth Am I Here For?- Week 6- Called To Be Sent" href="{{ site.baseurl }}/podcast/what-on-earth-am-i-here-for-week-6-called-to-be-sent/">What On Earth Am I Here For?- Called to Be Sent</a></p>
-<p>2015-02-22- <a title="What On Earth Am I Here For?- Week 5- Called To Bless" href="{{ site.baseurl }}/podcast/what-on-earth-am-i-here-for-week-5-called-to-bless/">What On Earth Am I Here For?- Called to Bless</a></p>
-<p>2015-02-15- <a title="What On Earth Am I Here For?- Week 4- Called To Become" href="{{ site.baseurl }}/podcast/what-on-earth-am-i-here-for-week-4-called-to-become/">What On Earth Am I Here For?- Called to Become</a></p>
-<p>2015-02-08- <a title="What On Earth Am I Here For?- Week 3- Called To Belong" href="{{ site.baseurl }}/podcast/what-on-earth-am-i-here-for-week-3-called-to-belong/">What On Earth Am I Here For?- Called to Belong</a></p>
-<p>2015-02-01- <a title="What On Earth Am I Here For?- Week 2- Called To Be Loved" href="{{ site.baseurl }}/podcast/what-on-earth-am-i-here-for-week-2-called-to-be-loved/">What On Earth Am I Here For?- Called to be Loved</a></p>
-<p>2015-01-25- <a title="What On Earth Am I Here For- Live Your Calling" href="{{ site.baseurl }}/podcast/what-on-earth-am-i-here-for-live-your-calling/">What On Earth Am I Here For?- Live Your Calling</a></p>
-<p>2015-01-18- <a title="What on Earth Am I Here For? Kick Off" href="{{ site.baseurl }}/podcast/what-on-earth-am-i-here-for-kick-off/">What On Earth Am I Here For?- Kick Off</a></p>
-<p>2014-12-21- <a title="Christmas Series- The Gift Of Joy" href="{{ site.baseurl }}/podcast/christmas-series-the-gift-of-joy/">Christmas Series- The Gift of Joy</a></p>
-<p>2014-12-14- <a title="Christmas Series- The Gift Of Peace" href="{{ site.baseurl }}/podcast/christmas-series-the-gift-of-peace/">Christmas Series- The Gift of Peace</a></p>
-<p>2014-12-07- <a title="Christmas Series- Hope" href="{{ site.baseurl }}/podcast/christmas-series-the-gift-of-hope/">Christmas Series- The Gift of Hope</a></p>
+{% for post in site.posts %}
+	<p>{{post.date | date: "%-m/%-d/%y"}}- <a title="{{post.title}}" href="{{site.url}}{{post.url}}">{{post.title}}</a></p>
+{% endfor %}
