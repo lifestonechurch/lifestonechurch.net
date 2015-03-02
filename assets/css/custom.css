@@ -40,3 +40,7 @@ header #mobile-nav > ul,
 #logo a { width:400px; }
 
 #logo a, header .shell { height:90px; }
+
+#slider {
+	height: 500px;
+}
