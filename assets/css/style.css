@@ -397,7 +397,7 @@ header #mobile-nav ul { display:none; }
 	-webkit-border-radius:3px;
 	border-radius:3px;
 	display: block;
-	margin:0;
+	margin: 20px 0;
 	padding:0;
 	max-width: 100%;
 }

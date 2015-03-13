@@ -1,0 +1,71 @@
+---
+layout: page
+---
+
+<style>
+#content h3.question {
+	color: #268bd2;
+	font-size: 24;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0 0 1em 0;
+}
+.question:hover {
+	color: #2aa198;
+}
+.question.down:before{
+	content: "\25BE";
+}
+.question:before{
+	content: "\25B8";
+}
+</style>
+
+<script>
+	$(document).ready(function() {
+		dynamicFaq();
+	});
+	function dynamicFaq() {
+		$('.answer').hide();
+		$('.question').bind('click', function(){
+				$(this)
+					.toggleClass('down')
+					.next()
+					.slideToggle();
+			});
+	}
+</script>
+
+<h1>Easter Sunday</h1>
+
+<img src="{{ site.baseurl }}/assets/uploads/pages/easter.jpg"/>
+
+<p>Join us for refreshments, music, a short message, and an Easter egg hunt!</p>
+
+<p><b>Refreshments</b>- Each week we have free coffee, tea, hot chocolate, donuts, granola bars, and bananas, before the service.</p>
+<p><b>Music</b>- We have live worship music with guitars, drums, and a keyboard.</p>
+<p><b>Message</b>- Our pastor, Ben Helton, will share a message from the Bible.</p>
+<p><b>Easter Egg Hunt</b>- Then we’ll head outside for an Easter egg hunt and pictures with the Easter bunny!</p>
+
+<h3 class="question">What should I wear?</h3>
+<div class="answer">
+	<p>Wear whatever make you feel comfortable. Many wear casual clothes, and others dress up a bit.</p>
+</div>
+<h3 class="question">How long will it last?</h3>
+<div class="answer">
+	<p>The service will take about an hour and then the Easter egg hunt will be afterwards.</p>
+</div>
+<h3 class="question">What kind of church is this?</h3>
+<div class="answer">
+	<p></p>
+</div>
+<h3 class="question">What do you guys believe?</h3>
+<div class="answer">
+	<p></p>
+</div>
+<h3 class="question">Where is the church?</h3>
+<div class="answer">
+	<p>We meet at the J. L. Sorenson Recreation Center on 5350 West Herriman Main Street</p>
+</div>
+
+<a href="{{ site.baseurl }}/contact-us/">Ask us a question</a>
