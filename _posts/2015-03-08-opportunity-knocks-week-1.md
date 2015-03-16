@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: sermon
 title: Opportunity Knocks- Week 1
 date: 2015-03-08
 categories:
@@ -12,16 +12,3 @@ image:
 speaker: Pastor Ben Helton
 description: Opportunity Knocks Series
 ---
-
-<p id="breadcrumbs">
-	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Videos &rsaquo; <a href="{{ site.baseurl }}/videos/sermons/">Sermons</a> &rsaquo; {{page.title}}
-
-</p>
-<h1>{{page.title}}</h1>
-
-<br/>
-<br/>
-
-{% include audioPlayer.html path=page.link %}
-
-

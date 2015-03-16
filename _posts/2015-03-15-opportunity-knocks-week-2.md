@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: sermon
 title: Opportunity Knocks- Week 2
 date: 2015-03-15
 categories:
@@ -13,16 +13,3 @@ speaker: Pastor Ben Helton
 description: Opportunity Knocks Series
 vimeoId: 122257929
 ---
-
-<p id="breadcrumbs">
-	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Videos &rsaquo; <a href="{{ site.baseurl }}/videos/sermons/">Sermons</a> &rsaquo; {{page.title}}
-
-</p>
-<h1>{{page.title}}</h1>
-
-{% include vimeoPlayer.html id=page.vimeoId %}
-
-<br/>
-<br/>
-
-{% include audioPlayer.html path=page.link %}
