@@ -67,7 +67,7 @@ footer .top { position: relative; box-shadow: 0 5px 5px rgba(0,0,0,.2); }
 footer .top .shell { overflow: hidden; padding-top: 36px; padding-bottom: 40px; }
 footer .bottom { background: #202020; padding: 17px 0; height: 20px; }
 footer .bottom p { font-size: 11px; line-height: 17px; color: #8e8e8e; }
-footer .bottom p a { color: #f2f2f2; margin-left: 8px; }
+footer .bottom p a { color: inherit; text-decoration: underline; }
 footer .bottom p a:hover { text-decoration: none; color: #fff; }
 
 header { padding:0; position: relative; z-index: 20; }
@@ -282,7 +282,7 @@ header #mobile-nav ul { display:none; }
 .widget a { color: #fff; }
 .widget .container { width: 100%;; overflow: hidden; position: relative; }
 .widget ul { width: 100%;; }
-.widget ul > li { border-top: 1px solid #ddd; border-color: rgba(255,255,255,.5); padding: 16px 0 21px; }
+.widget ul > li { padding: 0 0 20px; }
 .widget .tweet_time { padding:0; margin-bottom:-6px; }
 .widget ul > li .player { font-size:0; line-height:0; }
 
