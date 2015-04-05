@@ -1,7 +1,6 @@
 ---
 layout: sermon
 title: Palm Sunday
-date: 2015-03-29
 categories:
 - Podcast
 published: true
