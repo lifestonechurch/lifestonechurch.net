@@ -13,7 +13,7 @@ layout: page
 {% endif %}
 
 {% if page.youtubeId %}
-<p><iframe width="560" height="315" src="//www.youtube.com/embed/{{ page.youtubeId }}" frameborder="0" allowfullscreen></iframe></p>
+	{% include youTubePlayer.html id=page.youtubeId %}
 {% endif %}
 
 <br/>
