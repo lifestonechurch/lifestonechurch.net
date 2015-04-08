@@ -37,10 +37,12 @@ header #mobile-nav > ul,
 	background-color: #008f01;
 }
 
-#logo a { width:400px; }
+#logo a {
+	width: 500px;
+}
 
 #logo a, header .shell { height:90px; }
 
 #slider {
-	height: 400px;
+	height: 500px;
 }
