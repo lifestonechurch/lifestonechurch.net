@@ -12,5 +12,3 @@ speaker: Pastor Ben Helton
 description: Once Upon a Marriage
 vimeoId: 124771713
 ---
-
-
