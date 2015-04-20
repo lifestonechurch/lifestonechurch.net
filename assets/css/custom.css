@@ -1,7 +1,24 @@
-h1,h2,h3,h4,h5,h6,blockquote,p,input,ul,ol,.date-circle {
-	font-family: 'Droid Serif';
+h1,h2,h3,h4,h5,h6,dd {
+	font-family: 'Droid Sans', sans-serif;
 }
-
+blockquote {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #008f01;
+    background-color: #DDD;
+    padding: 20px 0;
+    margin: 20px 0;
+    
+}
+blockquote footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #FFF;
+    background-color: #008f01;
+    margin: 20px 0 -20px;
+    padding: 10px 0;
+}
 footer .top { background-color: #484848; }
 footer .bottom { background-color: #242424; }
 

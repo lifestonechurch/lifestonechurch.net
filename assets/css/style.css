@@ -28,9 +28,9 @@ Tags: two-columns, three-columns, fixed-width, threaded-comments
 body, html { height: 100%; }
 
 body {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.2;
-    font-family: arial, sans-serif;
+    font-family: 'Droid Serif', serif;
     color: #000;
     background: #fff;
     min-width: 100%;
@@ -390,7 +390,7 @@ header #mobile-nav ul { display:none; }
 #content h5, #sidebar h5 { border-top:1px dashed #ccc; background:#f5f5f5; text-shadow:1px 1px 0 #fff; padding:18px 20px; font-size:12px; line-height:17px; color:#888; font-weight:normal; margin:0 0 15px; }
 #content p { font-size: 15px; line-height: 22px; color: #000; padding:0; margin:0 0 15px; }
 #content p#breadcrumbs { margin: 0; font-size: 11px; color:#888; }
-#content blockquote { background: url('../images/blockquote.png') 0 5px no-repeat; padding: 0 0 20px 60px; margin: 20px 0 0 30px; display: block; }
+/*#content blockquote { background: url('../images/blockquote.png') 0 5px no-repeat; padding: 0 0 20px 60px; margin: 20px 0 0 30px; display: block; }*/
 #content blockquote p { color:#888; }
 #content img {
 	-moz-border-radius:3px;
