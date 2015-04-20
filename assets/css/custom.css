@@ -11,7 +11,7 @@ blockquote {
     text-align: center;
     color: #008f01;
     background-color: #DDD;
-    padding: 20px 0;
+    padding: 20px 10px;
     margin: 20px 0;
     
 }
@@ -20,7 +20,7 @@ blockquote footer {
     font-size: 18px;
     color: #FFF;
     background-color: #008f01;
-    margin: 20px 0 -20px;
+    margin: 20px -10px -20px;
     padding: 10px 0;
 }
 footer .top { background-color: #484848; }
