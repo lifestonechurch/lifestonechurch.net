@@ -30,7 +30,7 @@ body, html { height: 100%; }
 body {
     font-size: 15px;
     line-height: 1.2;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Lato', sans-serif;
     color: #000;
     background: #fff;
     min-width: 100%;
