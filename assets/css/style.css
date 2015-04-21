@@ -53,6 +53,9 @@ header, nav, section, article, aside, footer { display: block; }
 .right, .alignright { float: right; display: inline; }
 .center { text-align: center; }
 
+#footer-push {
+    height: 50px;
+}
 footer .top {
 	background: rgb(47,47,47);
 	background: -moz-linear-gradient(top, rgba(47,47,47,1) 0%, rgba(54,54,54,1) 100%);
