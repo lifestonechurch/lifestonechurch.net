@@ -8,3 +8,7 @@ squareLogo: http://www.lifestonechurch.net/assets/images/logo2.jpg
 podcastSubtitle: Messages from Sunday morning worship at Lifestone Church
 permalink: /:categories/:title/
 google_analytics_code: UA-44899328-1
+collections:
+  redirects:
+    output: true
+    permalink: /:path/
