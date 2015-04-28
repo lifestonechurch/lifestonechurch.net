@@ -9,6 +9,13 @@ podcastSubtitle: Messages from Sunday morning worship at Lifestone Church
 permalink: /:categories/:title/
 google_analytics_code: UA-44899328-1
 collections:
+  layout: redirect
   redirects:
     output: true
     permalink: /:path/
+defaults:
+  -
+    scope:
+      type: redirects
+    values:
+      layout: redirect
