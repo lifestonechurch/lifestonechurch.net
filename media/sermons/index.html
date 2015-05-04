@@ -14,5 +14,5 @@ layout: page
 <h2>Videos</h2>
 
 {% for post in site.posts %}
-	<p>{{post.date | date: "%-m/%-d/%y"}}- <a title="{{post.title}}" href="{{site.url}}{{post.url}}">{{post.title}}</a></p>
+	<p>{{post.date | date: "%-m/%-d/%y"}}- <a title="{{post.title}}" href="{{post.url}}">{{post.title}}</a></p>
 {% endfor %}
