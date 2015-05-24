@@ -27,5 +27,47 @@ layout: page
 <br/>
 
 <div class="sermon-notes">
+	<button class="sermonAnswersToggleButton" onclick="toggleAnswers()">Show Answers</button>
 	{{ content }}
 </div>
+
+<script>
+var answersAreVisible = true;
+
+$(document).ready(function() {
+  hideAnswers();
+});
+
+function hideAnswers() {
+  $('.sermon-answer').each(function() {
+    var numberOfCharacters = $(this).html().length;
+    var blanks = Array(numberOfCharacters).join("_");
+    var $blank = $('<span class="sermon-blank">' + blanks + '</span>');
+    $(this).before($blank);
+  });
+
+  $('.sermon-answer').hide();
+
+  $('.sermonAnswersToggleButton').html('Show Answers');
+
+  answersAreVisible = false;
+}
+
+function showAnswers() {
+  $('.sermon-blank').remove();
+
+  $('.sermon-answer').show();
+
+  $('.sermonAnswersToggleButton').html('Hide Answers');
+
+  answersAreVisible = true;
+};
+
+function toggleAnswers() {
+  if (answersAreVisible) {
+    hideAnswers();
+  } else {
+    showAnswers();
+  }
+}
+</script>
