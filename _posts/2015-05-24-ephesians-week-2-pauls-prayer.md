@@ -15,9 +15,11 @@ verse: Ephesians 1:15-23
 ---
 
 Intro
+
 v. 15-16
 
 The Most Important Commandment- _________________
+
 Matthew 22:36-40
 
 How to have influence
@@ -29,15 +31,19 @@ How to have influence
 Paul's Powerful Prayer:
 
 1. v. 17 For us to _____ God
-  Philippians 3:4-6
+
+    Philippians 3:4-6
 
 1. v. 18 Know _____ _____
-  Romans 8:38-39
-  John 16:33
+
+    Romans 8:38-39
+
+    John 16:33
 
 1. v. 19 Know God's _____
 
 Who is Jesus?
+
 Ephesians 1:21-23
 
 1. Jesus is greater than __, __, and __
