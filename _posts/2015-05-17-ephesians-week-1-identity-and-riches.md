@@ -11,4 +11,5 @@ image:
 speaker: Pastor Ben Helton
 description: Ephesians
 vimeoId: 128104324
+verse:
 ---
