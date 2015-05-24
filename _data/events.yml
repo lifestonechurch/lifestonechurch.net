@@ -1,0 +1,57 @@
+grades-6-12:
+  -
+    date: 2015-05-30
+    name: Game Night
+    location:
+    description:
+    cost: Free
+  -
+    date: 2015-06-07
+    end-date: 2015-06-11
+    name: High School Camp
+    location:
+    description:
+    cost: $120
+  -
+    date: 2015-06-20
+    name: Hangout/BBQ
+    location:
+    description:
+    cost: Free
+  -
+    date: 2015-06-27
+    name: Adam's Road Concert
+    location: Midvalley Bible Church
+    description: High School Only
+    cost: $10.00 for dinner
+  -
+    date: 2015-06-28
+    end-date: 2015-07-01
+    name: Middle School Camp
+    location:
+    description:
+    cost: $100
+  -
+    date: 2015-07-04
+    name: Families of youth 4th of July party
+    location:
+    description: Please bring snacks to share
+    cost:
+  -
+    date: 2015-07-11
+    name: Karaoke Night
+    location: the Blevin's
+    description:
+    cost: Free
+  -
+    date: 2015-07-14
+    name: Ultimate Frisbee in the park
+    location:
+    description:
+    cost: Free
+  -
+    date: 2015-07-24
+    name: Fireworks/night games
+    location:
+    description:
+    cost: Free
