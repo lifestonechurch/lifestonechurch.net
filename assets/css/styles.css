@@ -23,6 +23,7 @@ a {
 }
 .navbar-brand {
     padding: 0;
+    padding-top: 4px;
 }
 .navbar-brand img {
     height: 45px;
