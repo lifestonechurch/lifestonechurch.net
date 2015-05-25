@@ -13,8 +13,6 @@ If you would like to contribute:
 
 # Todo
 
-* Include slides automatically
 * Add contact form
 * Remove breadcrumbs code from the pages
 * Add sidebar on pages that are subpages, listing all subpages
-* Remove styles from sidebar
