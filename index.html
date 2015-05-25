@@ -19,7 +19,7 @@ layout: default
 			<p>We’re a new <span style="color: #000000;">Bible based church</span>&nbsp;in Herriman, Utah and we meet in the&nbsp;<span style="color: #000000;">J. L. Sorenson Recreation Center. We would love for you to <a title="I’m New" href="{{ site.baseurl }}/visit/">visit us</a>!</span></p>
 		</div>
 		<div class="col-sm-4">
-			<h3>Latest Message</h3>
+			<h2>Latest Message</h2>
 			{% for post in site.posts limit:1 %}
 				<div class="latest-sermon">
 					<a href="{{ site.baseurl }}{{ post.url}}">
@@ -38,6 +38,9 @@ layout: default
 			{% endfor %}
 		</div>
 		<div class="col-sm-4">
+			<h2>Upcoming Events</h2>
+
+			{% include events.html category="churchwide" %}
 		</div>
 	</div>
 </div>
