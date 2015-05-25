@@ -1,0 +1,29 @@
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Droid Serif', serif;
+ */
+body {
+    padding-top: 70px;
+};
+h1,h2,h3,h4,h5,h6,dd {
+    font-family: 'Droid Serif', serif;
+}
+
+.navbar {
+    border-radius: 0;
+}
+.navbar-brand {
+    padding: 0;
+}
+.navbar-brand img {
+    height: 45px;
+}
+
+.content img {
+    width: 100%;
+}
+
+@media (min-width: 771px) {
+}
+@media (max-width: 770px) {
+}
