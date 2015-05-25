@@ -82,3 +82,9 @@ header #mobile-nav > ul,
     border-radius: 2px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 767px) {
+    #page.homepage {
+	height: 500px;
+    }
+}

@@ -13,8 +13,6 @@ If you would like to contribute:
 
 # Todo
 
-* Fix mobile navigation
-  - on a short page, the navigation gets cut off on mobile
 * Include slides automatically
 * Add contact form
 * Remove breadcrumbs code from the pages
