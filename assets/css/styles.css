@@ -90,6 +90,11 @@ a {
     }
 }
 
+/* Sidebar */
+.sidebar {
+    margin-top: 45px;
+}
+
 /* Footer */
 footer {
     margin-top: 50px;
