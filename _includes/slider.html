@@ -1,20 +1,16 @@
 <div class="carousel slide" data-ride="carousel" id="slider">
 	<div class="carousel-inner">
-		<div class="item active">
-			<a href="{{ site.baseurl }}/videos/sermons/">
-				<img src="{{ site.baseurl }}/assets/uploads/sliders/ephesians.jpg"  alt="" />
-			</a>
-		</div>
-		<div class="item">
-			<a href="{{ site.baseurl }}/kids/birth-grade-5/">
-				<img src="{{ site.baseurl }}/assets/uploads/sliders/kidsSlider.jpg" alt="" />
-			</a>
-		</div>
-		<div class="item">
-			<a href="{{ site.baseurl }}/videos/sermons/">
-				<img src="{{ site.baseurl }}/assets/uploads/sliders/sermon_slider.jpg" alt="" />
-			</a>
-		</div>
+		{% for slider in site.data.sliders.sliders %}
+			{% if forloop.index == 1 %}
+				<div class="item active">
+			{% else %}
+				<div class="item">
+			{% endif %}
+				<a href="{{ site.baseurl }}/{{ slider.link}}">
+					<img src="{{ site.baseurl }}/assets/uploads/sliders/{{ slider.filename }}"  alt="" />
+				</a>
+			</div>
+		{% endfor %}
 	</div>
 	<a href="#slider" class="left carousel-control" role="button" data-slide="prev">
 		<span class="glyphicon glyphicon-chevron-left"></span>
