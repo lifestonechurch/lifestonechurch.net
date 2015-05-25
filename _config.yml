@@ -21,3 +21,11 @@ defaults:
       type: redirects
     values:
       layout: redirect
+  -
+    scope:
+      type: posts
+    values:
+      layout: sermon
+      categories:
+        - media
+        - sermons
