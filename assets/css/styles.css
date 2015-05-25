@@ -2,6 +2,8 @@
 font-family: 'Lato', sans-serif;
 font-family: 'Droid Serif', serif;
  */
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -9999px; clear: both; }
+
 body {
     padding-top: 70px;
     font-family: 'Lato', sans-serif;
