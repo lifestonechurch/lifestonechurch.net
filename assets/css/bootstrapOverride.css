@@ -4,9 +4,14 @@ font-family: 'Droid Serif', serif;
  */
 body {
     padding-top: 70px;
+    font-family: 'Lato', sans-serif;
 };
 h1,h2,h3,h4,h5,h6,dd {
     font-family: 'Droid Serif', serif;
+}
+
+a {
+    color: #008f01;
 }
 
 /* Navigation */
@@ -19,6 +24,48 @@ h1,h2,h3,h4,h5,h6,dd {
 }
 .navbar-brand img {
     height: 45px;
+}
+.dropdown-menu {
+    border: none;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    background-color: #008f01;
+    color: #FFF;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #008f01;
+}
+.navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #008f01;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+@media (max-width: 770px) {
+    .navbar-nav {
+	background-color: #008f01;
+    }
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: #FFF;
+    }
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+	color: rgba(255,255,255,0.6);
+	text-decoration: underline;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > a:hover {
+	background-color: #FFF;
+	color: #008f01;
+	text-decoration: none;
+    }
 }
 
 /* Carousel (Slider) */
@@ -70,4 +117,21 @@ footer a:hover {
 /* Audio Player */
 .audiojs .play-pause {
     width: 38px;
+}
+
+/* Sermon Notes Answers */
+.sermon-answer {
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.sermonAnswersToggleButton {
+    margin-bottom: 20px;
+    padding: .5em 1em;
+    border: 0 rgba(0,0,0,0);
+    color: white;
+    background-color: #0078e7;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer;
 }
