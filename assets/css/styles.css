@@ -174,3 +174,23 @@ footer a:hover {
     width: 100% !important;
     height: 100% !important;
 }
+
+/* Homepage */
+
+/* Homepage- Latest Sermon/Message */
+.latest-sermon {
+    position: relative;
+}
+.latest-sermon img {
+    width: 100%;
+}
+.latest-sermon-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 143, 1, 0.5);
+    color: #FFF;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}

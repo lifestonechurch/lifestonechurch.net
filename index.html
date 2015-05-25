@@ -8,9 +8,55 @@ layout: default
 	<div class="row">
 		<div class="col-sm-1"></div>
 		<div class="col-sm-10">
-			<h2>Welcome!</h2>
-			<p>We’re a new <span style="color: #000000;">Bible based church</span>&nbsp;in Herriman, Utah and we meet in the&nbsp;<span style="color: #000000;">J. L. Sorenson Recreation Center. We would love for you to <a title="I’m New" href="{{ site.baseurl }}/visit/">visit us</a>!</span></p>
 		</div>
 		<div class="col-sm-1"></div>
 	</div>
 </div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<h2>Welcome!</h2>
+			<p>We’re a new <span style="color: #000000;">Bible based church</span>&nbsp;in Herriman, Utah and we meet in the&nbsp;<span style="color: #000000;">J. L. Sorenson Recreation Center. We would love for you to <a title="I’m New" href="{{ site.baseurl }}/visit/">visit us</a>!</span></p>
+		</div>
+		<div class="col-sm-4">
+			<h3>Latest Message</h3>
+			{% for post in site.posts limit:1 %}
+				<div class="latest-sermon">
+					<a href="{{ site.baseurl }}{{ post.url}}">
+						<img id="vimeo-{{ post.vimeoId }}" src="" alt="{{ video.title }}" />
+						<div class='latest-sermon-text'>
+							<h4>{{ post.title }}</h4>
+							{{ post.verse }}
+						</div>
+					</a>
+				</div>
+				<script>
+					$(document).ready(function() {
+						vimeoLoadThumbnail({{ post.vimeoId }});
+					});
+				</script>
+			{% endfor %}
+		</div>
+		<div class="col-sm-4">
+		</div>
+	</div>
+</div>
+<script>
+function vimeoLoadThumbnail(id){
+	var url = "http://vimeo.com/api/v2/video/" + id + ".json?callback=showThumbnail";
+	var imageId = "#vimeo-" + id;
+	var script = document.createElement('script');
+
+	script.type = 'text/javascript';
+	script.src = url;
+
+	$(imageId).before(script);
+}
+
+
+function showThumbnail(data){
+	var imageId = "#vimeo-" + data[0].id;
+	$(imageId).attr('src',data[0].thumbnail_large);
+	$(imageId).attr('alt',data[0].title);
+}
+</script>
