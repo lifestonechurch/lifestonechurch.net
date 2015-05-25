@@ -5,7 +5,6 @@
 	input { -webkit-appearance:none; }
 
 	#slider, .image-slider, .image-slider li, .image-slider li .overlay-dark { height:450px; background-position: center center; background-size:auto 450px; }
-	.image-slider .caption .player-wrapper { width: 775px; }
 	#slider .flex-direction-nav { top:50%; margin-top:-36px; }
 	
 	.image-slider .caption .video { height:450px; max-width:100%; }
@@ -46,13 +45,10 @@
 	.image-slider .caption .video { height:350px; max-width:100%; }
 	
 	.image-slider .caption .button { margin:5px 0 15px; font-size: 13px; line-height: 19px; padding:6px 11px; position:relative; right:auto !important; left:0; top:0; bottom:auto !important; float:none; }
-	.image-slider .caption .player-wrapper { width: 100%; }
 
 	.image-slider .overlay { width:64%; padding-left:4%; padding-right:4%; }
 	.image-slider .middle.alignleft h2,
 	.image-slider .middle.alignright h2 { display:none; }
-	.image-slider li.alignright .play-video { margin-right:0; }
-	.image-slider li.alignleft .play-video { margin-left:0; }
 	.image-slider .caption h2 { font-size:16px; line-height:23px; }
 	.image-slider .caption p { font-size: 13px; line-height: 19px; }
 
@@ -71,9 +67,6 @@
 	
 	#content .upcoming-event-posts .date-circle { width:54px; height:54px; font-size:42px; line-height:27px; }
 	#content .postlist-thumbnail img { width:100px; height:100px; }
-	
-	#content .gallery .image.post-style { width:100%; }
-	#content .gallery .image.post-style img { width:100%; height:auto; }
 	
 	#content.full { width:100%; }
 	.one_half img,.one_third img,.two_third img,.three_fourth img,.one_fourth img,.one_fifth img,.two_fifth img,.three_fifth img,.four_fifth img,.one_sixth img,.five_sixth img {
@@ -185,9 +178,6 @@
 	.image-slider .caption h2 { font-size:14px; padding-bottom:5px; }
 	.image-slider .caption .button { padding:3px 9px; }
 	
-	.image-slider li.alignright .play-video { right:95%; }
-	.image-slider li.alignleft .play-video { left:95%; }
-
 	.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth {
 		float:none;
 		display:block;
@@ -221,8 +211,6 @@
 	#content blockquote { margin-left:0; }
 	#page-wrap .shell { padding-bottom:0; }
 	
-	#content .gallery .image figcaption { font-size:11px; }
-	
 	.theme-widget-social-icons-widget .socials a { width:32px; height:32px; background-size:auto; }
 	.theme-widget-social-icons-widget .facebook a { background-position: 0 0; }
 	.theme-widget-social-icons-widget .twitter a { background-position: -32px 0; }
@@ -236,5 +224,4 @@
 	#countdown h3 { font-size:11px; line-height:19px; margin:0; }
 	
 	#featured-image { height:100px; background-size:auto 100% !important; }
-
 }

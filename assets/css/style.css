@@ -1,15 +1,3 @@
-/*
-Theme Name: Peacemaker
-Theme URI: http://www.scheetzdesigns.com
-Author URI: http://www.scheetzdesigns.com
-Description: The Premium WordPress Theme for Churches
-Author: Justin Scheetz
-Version: 1.5.1
-License: GNU General Public License
-License URI: license.txt
-Tags: two-columns, three-columns, fixed-width, threaded-comments
-*/
-
 @font-face {
     font-family: 'PulsarJS';
     src: url('../fonts/pulsarjs-webfont.eot');
@@ -35,8 +23,6 @@ body {
     background: #fff;
     min-width: 100%;
 }
-
-.sticky, .gallery-caption, .bypostauthor { }
 
 a { color: #47b2c3; text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
@@ -213,8 +199,6 @@ header #mobile-nav ul { display:none; }
 .image-slider { width: 100%; height: 553px; position: relative; overflow: hidden; }
 .image-slider li { width: 100%; height: 553px; background-position: 50% 0; background-repeat: no-repeat; display: none; }
 .image-slider li iframe { width: 100%; }
-.image-slider .play-video { position: absolute; top: 50%; width: 72px; border-radius: 100%; height: 72px; background: url('../images/play-ico.png'); margin: -36px 0 0 -36px; z-index: 15;  -moz-transition: all linear .2s; -ms-transition: all linear .2s; -o-transition: all linear .2s; -webkit-transition: all linear .2s; transition: all linear .2s; }
-.image-slider .play-video:hover { background-color: rgba(255,255,255,.5); }
 .image-slider li .flex-direction-nav { display: none; height: 0px; line-height: 0px; }
 .image-slider li > a { background:rgba(0,0,0,0); display: block; height: 100%; width: 100%; }
 .image-slider li > a:hover { background:rgba(0,0,0,0.2); display: block; height: 100%; width: 100%; }
@@ -233,10 +217,6 @@ header #mobile-nav ul { display:none; }
 .image-slider .caption p { padding-bottom: 10px; }
 .image-slider .caption .text { width: 405px; position: absolute; top: 0; }
 .image-slider .caption .button { position: absolute; top: 25px; right: 26px; }
-.image-slider .caption .player-wrapper { width: 892px; height: 24px; position: relative; display: none; padding-bottom: 12px; margin-top: 9px; }
-.image-slider .caption .player { position: absolute; top:0; left:0; width: 100%; height: 24px; }
-.image-slider .caption .player audio { width:100%; }
-.image-slider .caption .play-video img { display: block !important; margin: 0 auto; max-width: 100%; }
 .image-slider .caption .video { display: none; position: absolute; left: 0; width: 940px; top: -254px; }
 .image-slider li.middle .caption h2 { padding-bottom:0; }
 
@@ -246,12 +226,7 @@ header #mobile-nav ul { display:none; }
 .image-slider li.light .text { color: #fff; }
 
 .image-slider li.alignleft .text { text-align: right; left: 0; right: auto; }
-.image-slider li.alignleft .play-video { left: 100%; margin: -36px 0 0 36px; }
 .image-slider li.alignright .text { text-align: left; left: auto; right: 0; }
-.image-slider li.alignright .play-video { right: 100%; margin: -36px 36px 0 0; }
-
-.image-slider li.dark .play-video { background-position:0 -72px; }
-.image-slider li.dark .play-video:hover { background-color: rgba(0,0,0,0.2); }
 
 .image-slider li.dark .overlay { background: url(../images/dropdown.png); }
 
@@ -286,7 +261,6 @@ header #mobile-nav ul { display:none; }
 .widget ul { width: 100%;; }
 .widget ul > li { padding: 0 0 20px; }
 .widget .tweet_time { padding:0; margin-bottom:-6px; }
-.widget ul > li .player { font-size:0; line-height:0; }
 
 .caroufredsel_wrapper, .caroufredsel_wrapper .slides { width:100% !important; }
 
@@ -297,8 +271,6 @@ header #mobile-nav ul { display:none; }
 #sidebar .widget p, #sidebar .widget .tweet_text { font-size: 13px; line-height: 20px; padding: 0 0 10px; color: #000; }
 #sidebar .widget ul > li { border-top: 1px solid #ddd; padding: 16px 0 17px; font-size:13px; line-height:17px; }
 #sidebar .theme-widget-upcoming-events ul > li { padding:0; }
-#sidebar .player { display:none; }
-#sidebar .continue.button-player { margin-bottom: 4px; }
 
 #sidebar .widget .children,
 .widget .children {
@@ -315,14 +287,12 @@ header #mobile-nav ul { display:none; }
 
 .shell { width: 940px; margin: 0 auto; padding: 0 20px; position:relative; }
 
-.player-container p { display: none; font-size: 0; line-height: 0; text-indent: -4000px; }
 
 .sermons-widget { font-size: 11px; line-height: 19px; padding: 0 0 8px; }
 .sermons-widget h3 { font-weight: bold; font-size: 16px; line-height: 22px; color: #fff; }
 .sermons-widget h6 { font-size: 11px; line-height: 22px; font-weight: normal; color: #fff; zoom:1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)"; filter: alpha(opacity=75); -moz-opacity:0.75; -khtml-opacity: 0.75; opacity: 0.75; padding: 0 0 8px; }
 .sermons-widget p { font-size: 13px; line-height: 20px; padding: 0 0 10px; color: #fff; }
 .sermons-widget a { color: #fff; }
-.sermons-widget .player { display: none; }
 
 .theme-widget-upcoming-events li a { display: block; font-size: 11px; line-height: 19px; background: transparent; -moz-transition: all linear .2s; -ms-transition: all linear .2s; -o-transition: all linear .2s; -webkit-transition: all linear .2s; transition: all linear .2s; clear: both; color: #fff; padding: 12px 0; }
 .theme-widget-upcoming-events li .icon { float: left; width: 16px; height: 16px; margin: 4px 10px 0 0; }
@@ -428,33 +398,6 @@ header #mobile-nav ul { display:none; }
 #sidebar h3 { font-size:17px; line-height:24px; }
 
 /* Galleries */
-#content .gallery { padding:18px 0 0; }
-#content .gallery .image { float:left; display:block; margin: 0 3% 2% 0; width: 17.6%; }
-#content .gallery .image.post-style { float:none; width:610px; margin:0; }
-#content .gallery .image.medium { width:31%; margin:0 3.5% 2% 0; }
-#content .gallery .image.last { margin-right:0; }
-#content .gallery .image a { width:100%; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; overflow:hidden; position:relative; opacity:1; display:block; margin:0; padding:0; }
-#content .gallery .image a img { width:100%; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
-#content .gallery .image span.plus, #content .gallery .image span.gallery-icon { zoom:1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); -moz-opacity:0; -khtml-opacity: 0; opacity: 0; display:block; position:absolute; top:105%; left:50%; margin:-20px 0 0 -20px; width:40px; height:40px; background-image:url('../images/plus.png'); background-position:center center; background-repeat:no-repeat; }
-#content .gallery .image span.gallery-icon { background-image:url('../images/gallery.png'); }
-#content .gallery .image figcaption { position:relative; text-align:center; display:block; font-size:12px; margin-bottom:13px; }
-#content .gallery .image:hover figcaption { color:#000; }
-#content .gallery .image a:hover img { zoom:1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)"; filter: alpha(opacity=40); -moz-opacity:0.4; -khtml-opacity: 0.4; opacity: 0.4; }
-#content .gallery .image a:hover span.plus,
-#content .gallery .image a:hover span.gallery-icon { top:50%; zoom:1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity: 1; }
-
-#content .gallery .image img,
-#content .gallery .image span.plus,
-#content .gallery .image span.gallery-icon,
-#content .gallery .image figcaption {
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
-	transition: all .15s ease-in-out;
-}
-
-#content .gallery-post-thumb { width:610px; height:350px; display:block; margin:0; }
-#content .single-audio-player { margin:0 0 10px; }
 #content .single-post .vid-frame { margin:0 0 15px; }
 
 #content p.event-info { border-top:1px solid #ddd; border-bottom:1px solid #ddd; padding:25px 0 15px; margin-bottom:20px; line-height:19px; font-size:14px; }
@@ -477,30 +420,6 @@ header #mobile-nav ul { display:none; }
 	-o-transition: all .15s ease-in-out;
 	transition: all .15s ease-in-out;
 }
-
-/* Custom Gallery Widget Styles */
-.widget .gallery-thumb { width:100%; margin:0 0 10px; height:auto; }
-.widget .gallery-thumb:hover { opacity:0.7; }
-.widget .gallery-thumb {
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
-	transition: all .15s ease-in-out;
-}
-
-.widget .gallery-thumb .caption {
-	display:block;
-	padding:10px 0 10px 0;
-	text-align:center;
-	font-size:11px;
-	text-decoration:none;
-}
-
-.widget .gallery-thumb:hover .caption {
-	text-decoration:none;
-}
-
-
 
 /* Pagination */
 #pagination {
