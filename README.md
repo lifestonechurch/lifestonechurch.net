@@ -18,5 +18,3 @@ If you would like to contribute:
 * Remove breadcrumbs code from the pages
 * Add sidebar on pages that are subpages, listing all subpages
 * Remove styles from sidebar
-* Remove unnecessary js
-* Convert to bootstrap

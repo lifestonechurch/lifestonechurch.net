@@ -65,7 +65,9 @@ footer a:hover {
     color: #fff;
 }
 
-@media (min-width: 771px) {
-}
-@media (max-width: 770px) {
+/* Other */
+
+/* Audio Player */
+.audiojs .play-pause {
+    width: 38px;
 }
