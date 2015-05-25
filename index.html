@@ -23,7 +23,7 @@ layout: default
 			{% for post in site.posts limit:1 %}
 				<div class="latest-sermon">
 					<a href="{{ site.baseurl }}{{ post.url}}">
-						<img id="vimeo-{{ post.vimeoId }}" src="" alt="{{ video.title }}" />
+						<img id="vimeo-{{ post.vimeoId }}" src="{{ site.baseurl }}/assets/images/defaultLatestMessage.jpg" alt="{{ video.title }}" />
 						<div class='latest-sermon-text'>
 							<h4>{{ post.title }}</h4>
 							{{ post.verse }}
