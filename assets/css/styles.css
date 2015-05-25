@@ -76,6 +76,9 @@ a:hover {
 .carousel {
     margin-top: -20px;
 }
+.carousel img {
+    width: 100%;
+}
 
 /* Content */
 
