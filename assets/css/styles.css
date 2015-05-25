@@ -78,6 +78,17 @@ a {
 .content img {
     width: 100%;
 }
+.content img.image-third {
+    display: inline;
+    margin-right: 1%;
+    width: 30%
+}
+@media (max-width: 501px) {
+    .content img.image-third {
+	margin-top: 10px;
+	width: 100%
+    }
+}
 
 /* Footer */
 footer {
