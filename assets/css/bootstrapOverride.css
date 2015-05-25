@@ -32,6 +32,39 @@ h1,h2,h3,h4,h5,h6,dd {
     width: 100%;
 }
 
+/* Footer */
+footer {
+    margin-top: 50px;
+}
+.footer-top .container,
+.footer-bottom .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-top {
+    color: #FFF;
+    background-color: #484848;
+    background: rgb(47,47,47);
+    background: -moz-linear-gradient(top, rgba(47,47,47,1) 0%, rgba(54,54,54,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(47,47,47,1)), color-stop(100%,rgba(54,54,54,1)));
+    background: -webkit-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+    background: -o-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+    background: -ms-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+    background: linear-gradient(to bottom, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+}
+.footer-bottom {
+    background-color: #242424;
+    color: #8e8e8e;
+}
+.footer-bottom a {
+    color: #8e8e8e;
+    text-decoration: underline;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 @media (min-width: 771px) {
 }
 @media (max-width: 770px) {
