@@ -187,9 +187,10 @@ footer a:hover {
 .latest-sermon-text {
     position: absolute;
     width: 100%;
+    height: 100%;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 143, 1, 0.5);
+    background-color: rgba(50, 50, 50, 0.6);
     color: #FFF;
     padding-left: 10px;
     padding-bottom: 10px;
