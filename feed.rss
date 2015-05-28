@@ -5,7 +5,7 @@
 	<channel>
 		<title>{{ site.title }}</title>
 		<description>{{ site.description }}</description>
-		<link>{{ site.baseurl }}</link>
+		<link>{{ site.url }}</link>
 		<language>en</language>
 		<managingEditor>{{ site.managerName }} ({{ site.managerEmail }})</managingEditor>
 		<webMaster>{{ site.managerName }} ({{ site.managerEmail }})</webMaster>
@@ -13,7 +13,7 @@
 		<pubDate>{{ site.time | date: "%a, %d %b %Y" }}</pubDate>
 		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y" }}</lastBuildDate>
 		<image>
-			<link>{{ site.baseurl}}</link>
+			<link>{{ site.url}}</link>
 			<url>{{ site.url }}/{{ site.squareLogo}}</url>
 			<title>{{ site.title }}</title>
 		</image>
@@ -32,7 +32,7 @@
 		{% for post in site.posts %}
 			<item>
 				<title>{{ post.title }}</title>
-				<link>{{ site.baseurl }}/{{ post.url }}</link>
+				<link>{{ site.url }}/{{ post.url }}</link>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y" }}</pubDate>
 				<description>{{ post.description }}</description>
 				<guid isPermaLink="true">{{ post.link }}</guid>

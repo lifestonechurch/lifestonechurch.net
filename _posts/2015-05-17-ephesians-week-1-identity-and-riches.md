@@ -2,7 +2,7 @@
 title: Ephesians- Week 1- Identity and Riches
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-05-17.mp3
 podcastLength: 00:46:10
-image: /assets/uploads/podcast/ephesians.jpg
+image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
 vimeoId: 128104324
