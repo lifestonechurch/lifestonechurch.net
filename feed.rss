@@ -14,7 +14,7 @@
 		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y" }}</lastBuildDate>
 		<image>
 			<link>{{ site.baseurl}}</link>
-			<url>{{ site.squareLogo}}</url>
+			<url>{{ site.url }}/{{ site.squareLogo}}</url>
 			<title>{{ site.title }}</title>
 		</image>
 		<itunes:subtitle>{{ site.podcastSubtitle }}</itunes:subtitle>
@@ -25,7 +25,7 @@
 			<itunes:name>{{ site.managerName}}</itunes:name>
 			<itunes:email>{{ site.managerEmail}}</itunes:email>
 		</itunes:owner>
-		<itunes:image href="{{ site.squareLogo}}" />
+		<itunes:image href="{{ site.url }}/{{ site.squareLogo}}" />
 		<itunes:category text="Religion &amp; Spirituality">
 			<itunes:category text="Christianity" />
 		</itunes:category>
@@ -42,7 +42,7 @@
 				<itunes:summary>{{ post.description }}</itunes:summary>
 				<itunes:duration>{{ post.podcastLength }}</itunes:duration>
 				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
-				<itunes:image href="{% if post.image %}{{ post.image }}{% else %}{{site.squareLogo}}{% endif %}" />
+				<itunes:image href="{% if post.image %}{{ site.url }}/{{ post.image }}{% else %}{{ site.url }}/{{site.squareLogo}}{% endif %}" />
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		{% endfor %}
