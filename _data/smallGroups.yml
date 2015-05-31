@@ -1,12 +1,15 @@
 lifeGroups:
-  - time: Tuesdays, 6:30-8:30pm
-    people: William’s & Taylor’s
+  - time: Tuesdays, 7-8:30pm
+    people:
     childcare: (childcare available)
-  - time: Wednesdays, 7:00-8:30pm
-    people: Youth Grades 6th-12th
-  - time: Thursday, 6:30-8:00pm
-    people: Helton’s and Domm’s
+  - time: Thursdays, 6:30-8pm
+    people:
     childcare: (childcare available)
-  - time: Saturdays, 7:00-8:30pm
-    people: Nelson’s & Harris’s
+  - time: Sundays, 6:30-8pm
+    people:
     childcare: (no childcare available)
+youth:
+  - time: Wednesdays, 6:30-7:30pm
+    people: Grades 6th-8th
+  - time: Wednesdays, 7-8:30pm
+    people: Grades 9th-12th
