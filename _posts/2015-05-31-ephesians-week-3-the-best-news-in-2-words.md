@@ -11,8 +11,6 @@ verse: Ephesians 2:1-10
 
 ## Sermon Notes
 
-The Most Important Commandment- *Love God and love people*{: class="sermon-answer"}
-
 1. Sin *separates*{: class="sermon-answer"}
 
     Ephesians 2:1
