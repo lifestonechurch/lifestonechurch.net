@@ -48,7 +48,7 @@ a:hover {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFF;
 }
-@media (max-width: 770px) {
+@media (max-width: 767px) {
     .navbar-nav {
 	background-color: #008F01;
     }
