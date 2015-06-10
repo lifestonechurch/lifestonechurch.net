@@ -1,7 +1,7 @@
 ---
 title: Ephesians- Week 2- Paul's Prayer
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-05-24.mp3
-podcastLength: 00:40:16
+podcastLength: '00:40:16'
 image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians

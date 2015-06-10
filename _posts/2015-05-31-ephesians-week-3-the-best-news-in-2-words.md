@@ -1,7 +1,7 @@
 ---
 title: Ephesians- Week 3- The Best News in 2 Words
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-05-31.mp3
-podcastLength: 00:40:52
+podcastLength: '00:40:52'
 image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians

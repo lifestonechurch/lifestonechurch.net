@@ -1,7 +1,7 @@
 ---
 title: Ephesians- Week 4- Outsider to Family Member
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-06-07.mp3
-podcastLength: 00:46:01
+podcastLength: '00:46:01'
 image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
