@@ -10,7 +10,7 @@
 		<managingEditor>{{ site.managerName }} ({{ site.managerEmail }})</managingEditor>
 		<webMaster>{{ site.managerName }} ({{ site.managerEmail }})</webMaster>
 		<copyright>2014-{{site.time | "%Y" }} {{ site.organizationName }}</copyright>
-		<pubDate>{{ site.time | date: "%a, %d %b %Y" }}</pubDate>
+		<pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S GMT" }}</pubDate>
 		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y" }}</lastBuildDate>
 		<image>
 			<link>{{ site.url}}</link>
@@ -33,7 +33,7 @@
 			<item>
 				<title>{{ post.title }}</title>
 				<link>{{ site.url }}/{{ post.url }}</link>
-				<pubDate>{{ post.date | date: "%a, %d %b %Y" }}</pubDate>
+				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S GMT" }}</pubDate>
 				<description>{{ post.description }}</description>
 				<guid isPermaLink="true">{{ post.link }}</guid>
 				<enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/mp3"/>
