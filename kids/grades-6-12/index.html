@@ -29,8 +29,13 @@ layout: page
 
 <blockquote>
     YOUTH BIBLE STUDY<br/> EVERY WEDNESDAY NIGHT!!!!
-    <footer>Phil &amp; Ashley Smith’s house&#8212; 7 P.M. to 8:30 P.M.<br/> 4883 W. Chilly Peak Dr. Riverton UT 84096 </footer>
 </blockquote>
+
+<ul>
+{% for group in site.data.smallGroups.youth %}
+	<li>{{ group.time }}- {{ group.people }}- {{ group.childcare}}</li>
+{% endfor %}
+</ul>
 
 
 <h2>Events</h2>
