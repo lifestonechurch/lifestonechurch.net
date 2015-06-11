@@ -7,13 +7,6 @@ churchwide:
     name: Baptism
 grades-6-12:
   -
-    date: 2015-06-07
-    end-date: 2015-06-11
-    name: High School Camp
-    location:
-    description:
-    cost: $120
-  -
     date: 2015-06-28
     end-date: 2015-07-01
     name: Middle School Camp
