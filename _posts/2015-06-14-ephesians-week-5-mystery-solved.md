@@ -9,8 +9,6 @@ vimeoId: 130705801
 verse: Ephesians 3:1-13
 ---
 
-## Sermon Notes
-
 1. Knowing our ___________  changes our ______________  v1a
 
     Ephesians 2:6
