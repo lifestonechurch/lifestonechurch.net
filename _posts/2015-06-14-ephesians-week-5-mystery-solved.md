@@ -6,7 +6,7 @@ image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
 vimeoId: 130705801
-verse:
+verse: Ephesians 3:1-13
 ---
 
 ## Sermon Notes
