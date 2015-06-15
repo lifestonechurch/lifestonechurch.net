@@ -9,32 +9,34 @@ vimeoId: 130705801
 verse: Ephesians 3:1-13
 ---
 
-1. Knowing our ___________  changes our ______________  v1a
+## Sermon Notes
+
+1. Knowing our *position*{: class="sermon-answer"}  changes our *perspective*{: class="sermon-answer"}. v1a
 
     Ephesians 2:6
 
-1. To ___________ God’s grace, _______________  your life. v1b-2
+1. To *share*{: class="sermon-answer"} God’s grace, *surrender*{: class="sermon-answer"}  your life. v1b-2
 
     Mark 8:35
 
 1. Demystifying the Mystery -
 
-    __________ in Jesus and ____________ a child of God v3-6
+    *Trust*{: class="sermon-answer"} in Jesus and *become*{: class="sermon-answer"} a child of God. v3-6
 
     John 3:16
 
-1. God’s grace and mercy result in _____________ and a desire to
+1. God’s grace and mercy result in *humility*{: class="sermon-answer"} and a desire to *share*{: class="sermon-answer"}. v7-8
 
-    _________. v7-8   1 Timothy 1:15
+    1 Timothy 1:15
 
-1. The church are ______ ______________ who trust in Jesus v9-11
+1. The church is *all*{: class="sermon-answer"} *people*{: class="sermon-answer"} who trust in Jesus. v9-11
 
     1 Corinthians 3:16
 
-1. God uses the _______ to share his glory even with ________. v10
+1. God uses the *church*{: class="sermon-answer"} to share his glory even with *angels*{: class="sermon-answer"}. v10
 
-1. Faith in Christ makes us completely ______________. v12
+1. Faith in Christ makes us completely *worthy*{: class="sermon-answer"}. v12
 
-1. Our difficulties our __________ -  Life in Christ is __________ v13
+1. Our difficulties our *temporary*{: class="sermon-answer"}- Life in Christ is *forever*{: class="sermon-answer"}. v13
 
     Romans 8:18
