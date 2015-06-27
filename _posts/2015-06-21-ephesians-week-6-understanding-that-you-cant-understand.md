@@ -9,30 +9,20 @@ vimeoId: 131562479
 verse: Ephesians 3:14-21
 ---
 
+## Sermon Notes
+
 Luke 18:9-14
 
 Ephesians 3:6
 
-1. Bigger _________ = Bigger ________________ v. 14-16
+1. Bigger *God*{: class="sermon-answer"} = Bigger *worship*{: class="sermon-answer"} v. 14-16
 
-1. Pray also for ________________ ______________ v. 17
+1. Pray also for *spiritual*{: class="sermon-answer"} *growth*{: class="sermon-answer"} v. 17
 
-1. Prayer is primarily to change _______ not _______
+1. Prayer is primarily to change *us*{: class="sermon-answer"} not *God*{: class="sermon-answer"}
 
-1. Understand God’s ___________ is too great to ____________ v. 18
+1. Understand that God’s *love*{: class="sermon-answer"} is too great to *understand*{: class="sermon-answer"} v. 18
 
-1. Experience God’s love through His ____________, ___________, & ______________
+1. Experience God’s love through His *truth*{: class="sermon-answer"}, *spirit*{: class="sermon-answer"}, & *people*{: class="sermon-answer"}
 
-1. God ___________ to work through ___________. v.20
-
-    1. Bigger God = Bigger Worship
-
-    1. Pray also for SPIRITUAL growth
-
-    1. Prayer is primarily to change US not God
-
-    1. Understand God’s Love is too great to Understand
-
-    1. Experience God’s love through His Truth, Spirit, & People
-
-    1. God chooses to work through you.
+1. God *chooses*{: class="sermon-answer"} to work through *you*{: class="sermon-answer"}. v.20
