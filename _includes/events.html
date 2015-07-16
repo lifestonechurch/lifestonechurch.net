@@ -1,5 +1,6 @@
 <dl>
 	{% if site.data.events[include.category] %}
+		<h2>{{ include.title }}</h2>
 		{% for event in site.data.events[include.category] %}
 			{% capture newMonth %}{{ event.date | date:"%B" }}{% endcapture %}
 			{% if newMonth != oldMonth %}
