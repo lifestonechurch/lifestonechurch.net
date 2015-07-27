@@ -20,15 +20,15 @@ Ephesians 4:25-27
 2. Speak the *truth*{: class="sermon-answer"} in *love*{: class="sermon-answer"}
 
     Proverbs 12:22
-    
+
     John 8:44
-    
+
     Proverbs 26:28
 
 3. Don’t be *controlled*{: class="sermon-answer"} by anger
 
     Ephesians 4:26
-    
+
     Mark 3:5
 
 5. Trust in God’s *justice*{: class="sermon-answer"}
@@ -38,7 +38,7 @@ Ephesians 4:25-27
 6. Don’t *stew*{: class="sermon-answer"}
 
     Ephesians 4:27
-    
+
     Proverbs 19:11
 
 7. Be thankful *life is not fair*{: class="sermon-answer"}
