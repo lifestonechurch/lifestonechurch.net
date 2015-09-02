@@ -12,7 +12,12 @@ layout: page
 
 ## LifeGroups
 
-### Make plans to attend the group that fits your schedule best!
+Connect to God by connecting to His people & His Word.
+
+LifeGroups are the heart of Lifestone Church. They are small groups of people who meet in homes one night a week in order to connect to God by connecting other people who love Him and
+ to the Bible. This is where spiritual growth happens!
+
+New Groups set to start the week of September 20th!
 
 <ul>
 {% for group in site.data.smallGroups.lifeGroups %}
