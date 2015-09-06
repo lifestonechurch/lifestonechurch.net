@@ -17,6 +17,16 @@ a:hover {
     color: #008F01;
 }
 
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.rounded {
+    border-radius: 1000px;
+}
+
 /* Navigation */
 
 .navbar {
