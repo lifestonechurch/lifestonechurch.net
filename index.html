@@ -44,20 +44,26 @@ layout: default
 </div>
 <script>
 function vimeoLoadThumbnail(id){
-	var url = "http://vimeo.com/api/v2/video/" + id + ".json?callback=showThumbnail";
-	var imageId = "#vimeo-" + id;
-	var script = document.createElement('script');
+	var imageId = "#vimeo-";
+	if (id) {
+		var url = "http://vimeo.com/api/v2/video/" + id + ".json?callback=showThumbnail";
+		imageId += id;
+		var imageId = "#vimeo-" + id;
+		var script = document.createElement('script');
 
-	script.type = 'text/javascript';
-	script.src = url;
+		script.type = 'text/javascript';
+		script.src = url;
 
-	$(imageId).before(script);
+		$(imageId).before(script);
+	} else {
+		$(imageId).attr('src', '/assets/uploads/pages/benPreaching.jpg');
+	}
 }
 
 
 function showThumbnail(data){
 	var imageId = "#vimeo-" + data[0].id;
-	$(imageId).attr('src',data[0].thumbnail_large);
-	$(imageId).attr('alt',data[0].title);
+	$(imageId).attr('src', data[0].thumbnail_large);
+	$(imageId).attr('alt', data[0].title);
 }
 </script>
