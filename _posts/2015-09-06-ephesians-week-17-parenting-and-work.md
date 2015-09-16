@@ -6,10 +6,12 @@ image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
 vimeoId:
-verse:
+verse: Ephesians 6:1-9
 ---
 
-**Parenting**
+## Sermon Notes
+
+### Parenting
 
 Ephesians 6:1-4
 
@@ -27,7 +29,7 @@ Ephesians 6:1-4
 
    Dueteronomy 6:4-9
 
-**Work**
+### Work
 
 Ephesians 6:5-9
 
