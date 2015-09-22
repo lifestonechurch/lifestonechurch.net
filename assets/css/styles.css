@@ -151,6 +151,8 @@ footer a:hover {
 /* Audio Player */
 .audiojs .play-pause {
     width: 38px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Sermon Notes Answers */
@@ -203,4 +205,30 @@ footer a:hover {
     background-color: rgba(50, 50, 50, 0.6);
     color: #FFF;
     padding: 10px;
+}
+
+.js-video {
+    height: 0;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.js-video.widescreen {
+    padding-bottom: 56.34%;
+}
+
+.js-video.vimeo {
+    padding-top: 0;
+}
+
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
