@@ -6,11 +6,11 @@ layout: page
 	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Small Groups
 </p>
 
-# Small Groups
+# LifeGroups
 
 ![lifegroups]({{ site.baseurl }}/assets/uploads/pages/lifegroups.jpg)
 
-## LifeGroups
+## About LifeGroups
 
 Connect to God by connecting to His people & His Word.
 
@@ -19,7 +19,7 @@ LifeGroups are the heart of Lifestone Church. They are small groups of people wh
 
  {% if site.data.smallGroups.currentSemester %}Current Semester: {{ site.data.smallGroups.currentSemester }}{% endif %}
 
-5 Reasons to Join a LifeGroup!
+#### 5 Reasons to Join a LifeGroup!
 
 1. You will begin to really feel like part of God´s family.
 
@@ -33,18 +33,25 @@ LifeGroups are the heart of Lifestone Church. They are small groups of people wh
 
 Check out the details and select the group that works best for your family!
 
+## Find a LifeGroup
+
 {% for group in site.data.smallGroups.lifeGroups %}
-### {{ group.day }} LifeGroup
+<section>
+<h3>{{ group.day }} LifeGroup</h3>
+<blockquote>
 {{ group.time }}
-
+<br/>
 {{ group.address }}
-
+<br/>
 {{ group.childcare }}
+</blockquote>
 
-Meet the Leaders:
+<h4>Meet the Leaders:</h4>
 {% for leader in group.leaders %}
-{{ leader.name }}
+<p>{{ leader.name }}</p>
 
-{{ leader.description }}
+{% if leader.image %}<img class="small left rounded" src="{{site.baseurl}}{{ leader.image }}"/>{% endif %}
+<p>{{ leader.description }}</p>
 {% endfor %}
+</section>
 {% endfor %}
