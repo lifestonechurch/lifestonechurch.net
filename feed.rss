@@ -31,12 +31,12 @@
 		</itunes:category>
 		{% for post in site.posts %}
 			<item>
-				<title>{{ post.title }}</title>
+				<title>{{ post.title | xml_escape }}</title>
 				<link>{{ site.url }}/{{ post.url }}</link>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S GMT" }}</pubDate>
 				<description>{{ post.description }}</description>
-				<guid isPermaLink="true">{{ post.link }}</guid>
-				<enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/mp3"/>
+				<guid isPermaLink="true">http://www.podtrac.com/pts/redirect.mp3/{{ post.link }}</guid>
+				<enclosure url="http://www.podtrac.com/pts/redirect.mp3/{{ post.link }}" length="{{ post.length }}" type="audio/mp3"/>
 				<itunes:author>{{ post.speaker }}</itunes:author>
 				<itunes:subtitle></itunes:subtitle>
 				<itunes:summary>{{ post.description }}</itunes:summary>
