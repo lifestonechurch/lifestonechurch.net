@@ -17,8 +17,34 @@ Connect to God by connecting to His people & His Word.
 LifeGroups are the heart of Lifestone Church. They are small groups of people who meet in homes one night a week in order to connect to God by connecting other people who love Him and
  to the Bible. This is where spiritual growth happens!
 
-<ul>
+ {% if site.data.smallGroups.currentSemester %}Current Semester: {{ site.data.smallGroups.currentSemester }}{% endif %}
+
+5 Reasons to Join a LifeGroup!
+
+1. You will begin to really feel like part of God´s family.
+
+1. You will understand the Bible better in a small group.
+
+1. Prayer will become more meaningful to you.
+
+1. You will have friends with whom to share both your joys and burdens.
+
+1. You will have a natural way to share Jesus with neighbors, friends, relatives, and at co-workers.
+
+Check out the details and select the group that works best for your family!
+
 {% for group in site.data.smallGroups.lifeGroups %}
-	<li>{{ group.time }}- {{ group.people }}- {{ group.childcare}}</li>
+### {{ group.day }} LifeGroup
+{{ group.time }}
+
+{{ group.address }}
+
+{{ group.childcare }}
+
+Meet the Leaders:
+{% for leader in group.leaders %}
+{{ leader.name }}
+
+{{ leader.description }}
 {% endfor %}
-</ul>
+{% endfor %}
