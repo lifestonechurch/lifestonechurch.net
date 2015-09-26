@@ -26,6 +26,9 @@ img.center {
 img.rounded {
     border-radius: 1000px;
 }
+img.small {
+    max-width: 200px;
+}
 
 /* Navigation */
 
