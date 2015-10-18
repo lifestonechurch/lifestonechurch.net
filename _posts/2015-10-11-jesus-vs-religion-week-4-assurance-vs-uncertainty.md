@@ -1,5 +1,5 @@
 ---
-title: Jesus Vs. Religion- Week 3- Assurance vs Uncertainty
+title: Jesus Vs. Religion- Week 4- Assurance vs Uncertainty
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-10-11.mp3
 podcastLength: '00:41:56'
 image: assets/uploads/podcast/jesusVsReligion.jpg
