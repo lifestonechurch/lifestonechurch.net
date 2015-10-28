@@ -3,6 +3,10 @@ font-family: 'Lato', sans-serif;
 font-family: 'Droid Serif', serif;
  */
 
+.cl {
+    clear: left;
+}
+
 body {
     padding-top: 70px;
     font-family: 'Lato', sans-serif;
