@@ -1,5 +1,5 @@
 ---
-title: Lifestone Refocus
+title: Lifestone Refocus- Week 1
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-10-18.mp3
 podcastLength: '00:47:51'
 image: assets/uploads/podcast/lifestone.jpg
