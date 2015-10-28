@@ -1,5 +1,5 @@
 ---
-title: Lifestone Refocus
+title: Lifestone Refocus- Week 2- Investment Tips
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-10-25.mp3
 podcastLength: '00:59:04'
 size: 56715584
