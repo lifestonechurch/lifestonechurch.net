@@ -1,5 +1,5 @@
 ---
-title: Heaven and Hell- Week 1- Hell
+title: Heaven and Hell- Week 1- Heaven
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-11-01.mp3
 podcastLength: '00:50:29'
 size: 48475328
