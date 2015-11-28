@@ -17,6 +17,12 @@ p {
     line-height: 1.5em;
 }
 
+p,
+input {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 h1,h2,h3,h4,h5,h6,dd {
     font-family: 'Droid Serif', serif;
 }
