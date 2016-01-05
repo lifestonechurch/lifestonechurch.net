@@ -6,7 +6,7 @@ size: 98470185
 image:
 speaker: Pastor Ben Helton
 description: All Things New
-vimeoId:
+vimeoId: 150735947
 verse: 2 Corinthians 5:13-20
 ---
 
