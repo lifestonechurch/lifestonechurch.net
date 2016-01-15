@@ -1,5 +1,5 @@
 ---
-title: All Things New
+title: All Things New- Week 1
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-01-03.mp3
 podcastLength: '00:50:44'
 size: 98470185
