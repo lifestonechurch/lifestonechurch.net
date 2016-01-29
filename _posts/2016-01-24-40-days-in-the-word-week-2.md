@@ -1,12 +1,12 @@
 ---
-title: 40 Days in the Word- Week 1- Why Can I Trust the Bible?
+title: 40 Days in the Word- Week 2- Why Can I Trust the Bible?
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-01-24.mp3
 podcastLength: '00:55:06'
 size: 106881626
 image:
 speaker: Pastor Ben Helton
 description: 40 Days in the Word
-vimeoId: 
+vimeoId: 152928852
 verse: 2 Timothy 3:16-17
 ---
 
