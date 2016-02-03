@@ -3,3 +3,11 @@ churchwide:
     date: 2016-02-08
     name: Financial Peace University Begins
 grades-6-12:
+  -
+    date: 2016-06-19
+    end-date: 2016-06-23
+    name: High School Camp
+  -
+    date: 2016-06-23
+    end-date: 2016-06-26
+    name: Junior High School Camp
