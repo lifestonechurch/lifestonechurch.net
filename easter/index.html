@@ -22,6 +22,15 @@ layout: page
 .question:before{
 	content: "\25B8";
 }
+
+.addtocalendar {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.google-maps {
+	margin-top: 30px;
+}
 </style>
 
 <script>
@@ -38,6 +47,7 @@ layout: page
 			});
 	}
 </script>
+ <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
 
 <h1>Easter Sunday</h1>
 
@@ -51,6 +61,28 @@ layout: page
 <p><b>Music</b>- We have live worship music with guitars and drums.</p>
 <p><b>Message</b>- Our pastor, Ben Helton, will share a message from the Bible.</p>
 <p><b>Easter Egg Hunt</b>- Then we’ll head outside for an Easter egg hunt and pictures with the Easter bunny!</p>
+
+<!--
+AddToCalendar 1.5 Example
+http://addtocalendar.com
+-->
+<script type="text/javascript">(function () {
+			if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+			if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+				 var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+				 s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+				 s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+				 var h = d[g]('body')[0];h.appendChild(s); }})();
+ </script>
+<span class="addtocalendar atc-style-blue">
+	<var class="atc_event">
+	<var class="atc_date_start">2016-03-27 10:30:00</var>
+	<var class="atc_date_end">2016-03-27 12:00:00</var>
+	<var class="atc_timezone">America/Denver</var>
+	<var class="atc_title">Easter Egg Hunt at Lifestone Church</var>
+	<var class="atc_description">Join us for refreshments, music, a short message, and an Easter egg hunt!</var>
+	<var class="atc_location">Providence Hall High School, 4550 W Mount Ogden Peak Dr, Herriman, UT 84096</var>
+</span>
 
 <h3 class="question">What should I wear?</h3>
 <div class="answer">
