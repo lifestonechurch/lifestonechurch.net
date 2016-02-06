@@ -10,8 +10,11 @@ layout: page
 	cursor: pointer;
 	margin: 0 0 1em 0;
 }
+.question {
+	cursor: pointer;
+}
 .question:hover {
-	color: #2aa198;
+	color: #008f01;
 }
 .question.down:before{
 	content: "\25BE";
@@ -31,16 +34,16 @@ layout: page
 				$(this)
 					.toggleClass('down')
 					.next()
-					.slideToggle();
+					.toggle();
 			});
 	}
 </script>
 
 <h1>Easter Sunday</h1>
 
-<p>Thanks for visiting. Check back later for more details about Easter. In the meantime, we would love for you to <a href="{{site.baseurl}}/visit/">visit us</a></p>
+<!--p>Thanks for visiting. Check back later for more details about Easter. In the meantime, we would love for you to <a href="{{site.baseurl}}/visit/">visit us</a></p-->
 
-<!--img src="{{ site.baseurl }}/assets/uploads/pages/easter.jpg"/>
+<!--img src="{{ site.baseurl }}/assets/uploads/pages/easter.jpg"/-->
 
 <p>Join us for refreshments, music, a short message, and an Easter egg hunt!</p>
 
@@ -57,13 +60,16 @@ layout: page
 <div class="answer">
 	<p>The service will take about an hour and then the Easter egg hunt will be afterwards.</p>
 </div>
-<h3 class="question">What do you guys believe?</h3>
+<h3 class="question">What do you believe?</h3>
 <div class="answer">
 	<p>We're a Bible-based Christian Church. We believe in the Bible and we believe in the <a href="{{ site.baseurl }}/best-news-ever/">Gospel</a> or "good news" of Jesus!</p>
 </div>
 <h3 class="question">Where is the church?</h3>
 <div class="answer">
-	<p>We meet at the J. L. Sorenson Recreation Center on 5350 West Herriman Main Street</p>
+	<p>We meet at Providence Hall High School, in Herriman.</p>
+	<p>4550 W Mount Ogden Peak Dr</p>
 </div>
 
-<a href="{{ site.baseurl }}/about/contact-us/">Ask us a question</a-->
+<div class="google-maps">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12138.127565652052!2d-111.9985416!3d40.4856199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e9e6a7e89209dae!2sProvidence+Hall+High+School!5e0!3m2!1sen!2sus!4v1440508946897" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
