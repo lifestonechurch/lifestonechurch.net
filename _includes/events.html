@@ -8,7 +8,10 @@
 			{% endif %}
 			<dt>
 			<b>{{ event.date | date:"%-d" }}{% if event.end-date %}-{{ event.end-date | date:"%-d" }}{% endif %}</b>
-			({{ event.date | date:"%a" }}{% if event.end-date %}-{{ event.end-date | date:"%a" }}{% endif %})- {{ event.name }}
+			({{ event.date | date:"%a" }}{% if event.end-date %}-{{ event.end-date | date:"%a" }}{% endif %})-
+			{% if event.link %}<a href="{{event.link}}">{% endif %}
+			{{ event.name }}
+			{% if event.link %}</a>{% endif %}
 			{% if event.location %}- {{ event.location }}{% endif %}
 			{% if event.cost %}- {{ event.cost }}{% endif %}
 			{% if event.description %}- {{ event.description }}{% endif %}

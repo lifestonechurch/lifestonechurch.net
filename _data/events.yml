@@ -1,7 +1,8 @@
 churchwide:
   -
     date: 2016-03-27
-    name: Easter Egg Hunt after the service
+    name: Easter Egg Hunt
+    link: easter
 grades-6-12:
   -
     date: 2016-06-19
