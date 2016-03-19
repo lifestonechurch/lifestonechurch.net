@@ -1,6 +1,8 @@
 sliders:
   - filename: easter.jpg
     link: easter/
+  - filename: acts.jpg
+    link: media/sermons/
   - filename: firstTimeGuest.jpg
     link: visit/
   - filename: providence.jpg
