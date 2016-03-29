@@ -1,41 +1,61 @@
 currentSemester:
 lifeGroups:
   - day: Sunday Morning
-    time: 8:30-10:00am
-    address: Providence Hall High School Commons Area
+    time: 8:45am
+    address: PHHS Teachers Lounge
     childcare: Free on-site childcare
+    startDate: 4/3/16
+    hosts:
     leaders:
-      - name: Tom & Lisa Musgrave
-        image: /assets/uploads/pages/musgraves.jpg
-        description: "Tom grew up in South Kansas City, Missouri, and Lisa was born and raised in North Kansas City, Missouri. They were introduced at the wedding of mutual friends and married in 2003. The Musgraves have two children, Sam (11) and Daniel (8). The family moved to Herriman two years ago when Lisa took a position as a Chief Nursing Officer at Intermountain Health Systems' Homecare.  Tom also works with Intermountain Healthcare as a HR Information Systems Analyst. Tom and Lisa both love serving at Lifestone-Tom serves on the morning Setup Crew and Lisa teaches in Kid's Life. In their free time, they both enjoy reading and traveling, Lisa enjoys gardening, and Tom enjoys all things automotive and aviation. What they love most about LifeGroups is the opportunity to live in community, to build deeper relationships, to serve each other and serve together and to get to know God better in the setting of a small group. Tom and Lisa welcome new friends and new faces to try out their Lifegroup and look forward to growing God’s church together everyday!"
+      - name: TBD
+        image:
+        description:
   - day: Sunday
-    time: 6:30-8:00pm
-    address: 4844 W Cave Peak Drive
+    time: 6:00pm
+    address: 4982 Badger Lane, Riverton
     childcare: Free on-site childcare
+    hosts: Shane and Dixie Wise
+    startDate: 4/3/16
     leaders:
       - name: Ben & Kristen Helton
         image: /assets/uploads/pages/ben.jpg
         description: "Ben grew up in Chadron, Nebraska and Kristen in Littlefield, Texas. The two met while attending Wayland University and married in 2000. Ben served in various churches as Student Minister for several years before planting and pastoring a church in Weatherford, TX in 2009. Kristen taught Music in public schools and worked alongside Ben as they shared Jesus’ love with hundreds of students and adults. In 2013, Ben and Kristen, along with their children, Rachel (now 12), Karis (10), and Jaxson (7), moved here to Herriman to plant the first ever Bible- teaching church in Herriman! Ben serves Lifestone as Lead Pastor and Kristen serves as Kid’s Life Elementary Coordinator and Worship Team Coordinator. In their spare time, Ben enjoys playing basketball and working on cars, and Kristen enjoys remodeling and singing. What Ben and Kristen love most about LifeGroups is making life-long friends, and they hope that you, too, get connected and build lasting friendships!"
   - day: Sunday
-    time:
-    address:
+    time: 6:30pm
+    address: 5468 W Sierra Rose Drive, Herriman
     childcare: Free on-site childcare
+    startDate: 4/3/16
+    hosts:
     leaders:
-      - name: Cody & Keely Williams
-        image: /assets/uploads/pages/williams.jpg
-        description: "Cody and Keely are both from the Fort Worth, Texas area. They met while playing together in a worship band and married in 2011. Cody worked as a Mobile Electronic Installer while Keely taught Math and coached Volleyball for Weatherford schools. Cody and Keely moved to Herriman in 2013 along with Pastor Ben and his family, excited to help begin the first ever Bible-teaching church in Herriman and spread the love of Jesus here! Cody now works at California Audio in West Valley and attends SLCC with the pursuit of a degree in Civil Engineering. Keely serves Lifestone as Kid’s Life Preschool Coordinator and 1st Impressions Coordinator and takes care of their daughters, Jaz (2) and Jayden (1). When the couple isn’t working or chasing babies, Cody enjoys cycling and playing bass guitar, and Keely enjoys playing volleyball and cooking.  The couple’s favorite thing about LifeGroups is giving people who are new to the Bible a safe place to explore and ask questions, and they hope that you, too, find a safe, loving group in which to explore the Bible and Jesus’ AWESOME love!"
+      - name: Tyson and Lindsey Pepper
+        image:
+        description:
+  - day: Sunday
+    time: 7:00pm
+    address: 8088 W. Canyon Rd Herriman UT (call 801-946-1067 to be buzzed in to gate)
+    childcare: Free on-site childcare
+    startDate: 4/3/16
+    hosts:
+    leaders:
+      - name: Dennis and Rachel Nelson
+        image:
+        description:
   - day: Tuesday
-    time: 6:00-7:30pm
-    address: 14717 Tangle Hill Road
+    time: 6:00pm
+    address: 5392 Venetia Street, Herriman
     childcare: Free on-site childcare
+    startDate: 3/29/16
+    hosts:
     leaders:
-      - name: Chris & Melissa Taylor
+      - name: Jerame and Jessie Blevins
         image:
         description:
   - day: Thursday
-    time: 6:30-8:00pm
-    address: 14643 S. River Chase Rd
+    time: 6:30pm
+    address: 14643 S River Chase Rd, Herriman
     childcare: Free on-site childcare
+    startDate: 3/31/16
+    hosts:
     leaders:
       - name: Ryan & Jen Breedlove
         image: /assets/uploads/pages/breedloves.jpg

@@ -46,6 +46,16 @@ Check out the details and select the group that works best for your family!
 {{ group.childcare }}
 </blockquote>
 
+{% if group.startDate %}
+<h4>Start Date:</h4>
+<p>{{ group.startDate }}</p>
+{% endif %}
+
+{% if group.hosts %}
+<h4>Hosts:</h4>
+<p>{{ group.hosts }}</p>
+{% endif %}
+
 <h4>Meet the Leaders:</h4>
 {% for leader in group.leaders %}
 <p>{{ leader.name }}</p>
