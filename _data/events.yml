@@ -1,8 +1,15 @@
 churchwide:
   -
+    date: 2016-04-01
+    name: Baptism
+  -
     date: 2016-04-17
     name: Party with the Pastor
 grades-6-12:
+  -
+    date: 2016-04-15
+    end-date: 2016-04-16
+    name: Spring Fling
   -
     date: 2016-06-19
     end-date: 2016-06-23
