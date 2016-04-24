@@ -5,7 +5,7 @@ podcastLength: '00:54:16'
 size: 106084448
 image:
 speaker: Pastor Ben Helton
-description:
+description: Acts
 youtubeId: E31LvHl_MxQ
 verse: Acts 1:1-8
 ---
