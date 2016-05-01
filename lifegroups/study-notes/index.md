@@ -8,12 +8,24 @@ layout: page
 
 ## LifeGroup Study Notes
 
-Ice Breaker- What additional language would you like to speak and why?
+Can you think of a time when a stranger unexpectedly helped you? Tell the story. How did that impact you?
 
-1. We have heard in this Sunday's teaching that as followers of Christ there will be evidence of the Holy Spirit working in our lives. But have you ever been confused as to what that looks like or how you recognize the work of the Holy Spirit? How does Ephesians 4:17-32 help you answer these questions?
+1. Ministry often happens in the interruptions of life. Jesus gave his followers clear instruction and a great example of what it looks like to be interruptible and to meet the needs of others. Read [Mark 10:46-52](https://www.bible.com/bible/111/mark.10) and [Matthew 25:31-46](https://www.bible.com/bible/111/matthew.25) and then answer the following questions.
 
-2. Last Sunday we heard that one of the primary purposes of the Holy Spirit is "to make God look good." As you read 1 Corinthians 2:9-15, what other roles does the Holy Spirit play in the lives of those who are committed to following Christ? Have you found this to be true in your life?
+    What helps you pay attention and take notice of the needs of others?
 
-3. We all too often get tripped up in thinking that it's just "God and me." We forget that our regular connection with believers is essential to tuning into and being led by the Holy Spirit. How does Hebrews 10:24-25 describe and emphasize this point?
+	 What can distract you from taking notice of these needs?
 
-These kinds of connections usually don't happen by accident and often need to be intentional. Are there any steps you need to take to make a better connection with other believers?
+	 How could you become more interruptible to be used by God?
+
+2. Jesus told a story about a Samaritan man whose offer to help someone in need was far more than a kind gesture. Read the story in [Luke 10:25-37](https://www.bible.com/bible/111/luke.10) and notice what getting involved cost this guy. Can you think of anyone in your life that may need some help from you? What's at risk for you to step in and offer to help? How can we follow the Samaritan's example and see our helping role through to the end?
+
+3. Sometimes we get confused about what it takes or feel inadequate to make a difference in the world around us. What do the following verses reveal about what it really takes to make an impact and how it happens?
+
+    [Matthew 5:16, 20:26](https://www.bible.com/bible/111/matthew.5)
+
+    [Ephesians 2:10, 3:20](https://www.bible.com/bible/111/ephesians.2)
+
+    [1 Timothy 6:17-18](https://www.bible.com/bible/111/1ti.6)
+
+    [Titus 3:8](https://www.bible.com/bible/111/titus.3.8)
