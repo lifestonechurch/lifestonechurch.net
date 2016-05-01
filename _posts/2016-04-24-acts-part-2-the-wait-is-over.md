@@ -1,5 +1,5 @@
 ---
-title: "Acts- Week 2- Part 2: The Wait is Over!"
+title: "Acts- Part 2: The Wait is Over!"
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-04-24.mp3
 podcastLength: '00:40:53'
 size: 79082578
