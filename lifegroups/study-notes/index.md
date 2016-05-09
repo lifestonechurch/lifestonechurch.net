@@ -8,24 +8,24 @@ layout: page
 
 ## LifeGroup Study Notes
 
-Can you think of a time when a stranger unexpectedly helped you? Tell the story. How did that impact you?
+Connect: Go around the group and share your summer plans.
 
-1. Ministry often happens in the interruptions of life. Jesus gave his followers clear instruction and a great example of what it looks like to be interruptible and to meet the needs of others. Read [Mark 10:46-52](https://www.bible.com/bible/111/mark.10) and [Matthew 25:31-46](https://www.bible.com/bible/111/matthew.25) and then answer the following questions.
+Read Acts 4:1-31
 
-    What helps you pay attention and take notice of the needs of others?
+- What has upset the religious leaders (v. 1-2)?
 
-	 What can distract you from taking notice of these needs?
+- What action did they take (v. 3-7)?
 
-	 How could you become more interruptible to be used by God?
+- Just a few weeks have passed since Annas and Caiaphas had been involved in the condemnation of Jesus. In his response to their question "By what power or name did you say this?" Peter is forcing them to encounter Jesus again. What does Peter say about him (v. 10-12)?
 
-2. Jesus told a story about a Samaritan man whose offer to help someone in need was far more than a kind gesture. Read the story in [Luke 10:25-37](https://www.bible.com/bible/111/luke.10) and notice what getting involved cost this guy. Can you think of anyone in your life that may need some help from you? What's at risk for you to step in and offer to help? How can we follow the Samaritan's example and see our helping role through to the end?
+- In verses 13-22, what made it so difficult for the opposing religious leaders to bring this unacceptable behavior to a halt?
 
-3. Sometimes we get confused about what it takes or feel inadequate to make a difference in the world around us. What do the following verses reveal about what it really takes to make an impact and how it happens?
+- What was the reaction of the believers to John and Peter's account (v. 24-30)?
 
-    [Matthew 5:16, 20:26](https://www.bible.com/bible/111/matthew.5)
+- What does their prayer tell you about their faith in the character, power, and faithfulness of God (v. 24-30)?
 
-    [Ephesians 2:10, 3:20](https://www.bible.com/bible/111/ephesians.2)
+- When has your faith been challenged by others?
 
-    [1 Timothy 6:17-18](https://www.bible.com/bible/111/1ti.6)
+- Imagine that you had been in a group of believers John and Peter returned to and told of what had happened. What would have been your reaction?
 
-    [Titus 3:8](https://www.bible.com/bible/111/titus.3.8)
+- "After they prayed, the place where they were meeting was shaken. And they were all filled with the Holy Spirit and spoke the word of God boldly." In what ways do you need the power of the Holy Spirit to face the world today?

@@ -1,5 +1,5 @@
 ---
-title: "Acts- Part 3: Better"
+title: "Acts - Part 3: Better"
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-05-01.mp3
 podcastLength: '00:48:35'
 size: 94890589
