@@ -23,7 +23,7 @@ layout: default
 			{% for post in site.posts limit:1 %}
 				<div class="latest-sermon">
 					<a href="{{ site.baseurl }}{{ post.url}}">
-						<img id="vimeo-{{ post.vimeoId }}" src="{{ site.baseurl }}/assets/images/defaultLatestMessage.gif" alt="{{ video.title }}" />
+						<img id="youtube-{{ post.youtubeId }}" src="{{ site.baseurl }}/assets/images/defaultLatestMessage.gif" alt="{{ video.title }}" />
 						<div class='latest-sermon-text'>
 							<h4>{{ post.title }}</h4>
 							{{ post.verse }}
@@ -32,7 +32,7 @@ layout: default
 				</div>
 				<script>
 					$(document).ready(function() {
-						vimeoLoadThumbnail({{ post.vimeoId }});
+						loadYoutubeThumbnail('{{ post.youtubeId }}');
 					});
 				</script>
 			{% endfor %}
@@ -43,27 +43,17 @@ layout: default
 	</div>
 </div>
 <script>
-function vimeoLoadThumbnail(id){
-	var imageId = "#vimeo-";
+function loadYoutubeThumbnail(id){
+	var imageId = "#youtube-";
 	if (id) {
-		var url = "http://vimeo.com/api/v2/video/" + id + ".json?callback=showThumbnail";
+		var url = "http://img.youtube.com/vi/" + id + "/0.jpg";
 		imageId += id;
-		var imageId = "#vimeo-" + id;
-		var script = document.createElement('script');
+		var imageId = "#youtube-" + id;
 
-		script.type = 'text/javascript';
-		script.src = url;
+		$(imageId).attr('src', url);
 
-		$(imageId).before(script);
 	} else {
 		$(imageId).attr('src', '/assets/uploads/pages/benPreaching.jpg');
 	}
-}
-
-
-function showThumbnail(data){
-	var imageId = "#vimeo-" + data[0].id;
-	$(imageId).attr('src', data[0].thumbnail_large);
-	$(imageId).attr('alt', data[0].title);
 }
 </script>
