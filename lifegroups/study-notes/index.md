@@ -8,24 +8,14 @@ layout: page
 
 ## LifeGroup Study Notes
 
-Connect: Go around the group and share your summer plans.
+Share a time someone was very generous to you.
 
-Read Acts 4:1-31
+Looking back over your sermon notes, was there a particular point, story or scripture that challenged, confused, or caught your attention?
 
-- What has upset the religious leaders (v. 1-2)?
+1. This Saturday we saw the critical mistake Ananias and Sapphira made when they tried to impress everyone with their generosity. Obviously, it's not a mistake any of use would want to make - especially knowing what happened to the two of them! Read 1 Timothy 6:6-10 and Matthew 6:25-34 and then jot down what they tell us about the desire to impress people and the pursuit of recognition.
 
-- What action did they take (v. 3-7)?
+2. Generosity is a natural outflow of the Holy Spirit. Yet, when we talk about generosity, at times there can be confusion about the appropriate motivation behind it and God's view of it. As you read 2 Corinthians 9:6-15, what insights do you gain about generosity, especially its motivation and purpose?
 
-- Just a few weeks have passed since Annas and Caiaphas had been involved in the condemnation of Jesus. In his response to their question "By what power or name did you say this?" Peter is forcing them to encounter Jesus again. What does Peter say about him (v. 10-12)?
+    What are some ways you can be generous besides financially? Is there any area you might sense the Holy Spirit motivation you to be more generous?
 
-- In verses 13-22, what made it so difficult for the opposing religious leaders to bring this unacceptable behavior to a halt?
-
-- What was the reaction of the believers to John and Peter's account (v. 24-30)?
-
-- What does their prayer tell you about their faith in the character, power, and faithfulness of God (v. 24-30)?
-
-- When has your faith been challenged by others?
-
-- Imagine that you had been in a group of believers John and Peter returned to and told of what had happened. What would have been your reaction?
-
-- "After they prayed, the place where they were meeting was shaken. And they were all filled with the Holy Spirit and spoke the word of God boldly." In what ways do you need the power of the Holy Spirit to face the world today?
+3. What guidance does 2 Peter 1:3-9 give us about focusing on developing godly character as a top priority? Is there anything in these verses that you'd like to work on "adding to your faith"?
