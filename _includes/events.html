@@ -13,9 +13,10 @@
       {% if event.link %}</a>{% endif %}
       {% if event.location %}- {{ event.location }}{% endif %}
       {% if event.cost %}- {{ event.cost }}{% endif %}
-      {% if event.description %}<div style='padding: 20px;'>{{ event.description }}</div>{% endif %}
+      {% if event.description %}<div style='padding: 20px;'>{{ event.description | markdownify }}</div>{% endif %}
       </dt>
       {% capture oldMonth %}{{ newMonth }}{% endcapture %}
     {% endfor %}
   {% endif %}
 </dl>
+<ul>
