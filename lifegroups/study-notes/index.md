@@ -8,14 +8,12 @@ layout: page
 
 ## LifeGroup Study Notes
 
-Share a time someone was very generous to you.
+As LifeGroups come to a close for the Spring semester, we encourage you to stay in God's word this summer. One way to do this is through...
 
-Looking back over your sermon notes, was there a particular point, story or scripture that challenged, confused, or caught your attention?
+### [rightnow.org](http://www.rightnow.org)
 
-1. This Saturday we saw the critical mistake Ananias and Sapphira made when they tried to impress everyone with their generosity. Obviously, it's not a mistake any of use would want to make - especially knowing what happened to the two of them! Read 1 Timothy 6:6-10 and Matthew 6:25-34 and then jot down what they tell us about the desire to impress people and the pursuit of recognition.
+Lifestone Church has purchased everyone who attends our church access to this incredible resource. *It is 100% FREE to YOU!* It contains 10,000+ Bible study videos covering topics on parenting, marriage, finances, defending your faith, books of the Bible, church history, other religions, leadership... just to name a few. It also contains a wonderful section for the kids with videos like "Veggie Tales" and "What's in the Bible" - our current Kid's Life curriculum the kid's LOVE!
 
-2. Generosity is a natural outflow of the Holy Spirit. Yet, when we talk about generosity, at times there can be confusion about the appropriate motivation behind it and God's view of it. As you read 2 Corinthians 9:6-15, what insights do you gain about generosity, especially its motivation and purpose?
+To access this amazing resource you should have received an invite from our church via email. If not, just email [Keely](mailto:keely@lifestonechurch.net) and ask for Right Now Media access.
 
-    What are some ways you can be generous besides financially? Is there any area you might sense the Holy Spirit motivation you to be more generous?
-
-3. What guidance does 2 Peter 1:3-9 give us about focusing on developing godly character as a top priority? Is there anything in these verses that you'd like to work on "adding to your faith"?
+Download the app for easier access. It's available on many media players. It's the "Netflix" for Bible study.
