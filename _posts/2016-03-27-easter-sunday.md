@@ -1,11 +1,12 @@
 ---
 title: Easter Sunday
+date: 2016-03-27 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-03-27.mp3
 podcastLength: '00:46:31'
 size: 90793680
-image:
+image: 
 speaker: Pastor Ben Helton
-description:
+description: 
 vimeoId: 160741094
 verse: John 21:25; 13:34
 ---

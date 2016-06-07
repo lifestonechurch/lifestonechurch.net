@@ -1,12 +1,13 @@
 ---
 title: 40 Days in the Word- Week 6- Understanding the Bible
+date: 2016-02-21 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-02-21.mp3
 podcastLength: '00:52:56'
 size: 50815894
-image:
+image: 
 speaker: Pastor Ben Helton
 description: 40 Days in the Word
-vimeoId:
+vimeoId: 
 verse: John 15:1-17
 ---
 

@@ -1,11 +1,12 @@
 ---
 title: Ephesians- Week 13- Copy Cat
+date: 2015-08-09 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-08-09.mp3
 podcastLength: '00:46:12'
 image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
-vimeoId:
+vimeoId: 
 verse: Ephesians 5:1-2
 ---
 

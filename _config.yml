@@ -1,31 +1,40 @@
-baseurl:
+---
+title: Lifestone Church
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  redirects:
+    title: Redirects
+    output: true
+    permalink: "/:path/"
+    layout: redirect
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: redirects
+  values:
+    layout: redirect
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: sermon
+    categories:
+    - media
+    - sermons
+baseurl: 
 url: http://www.lifestonechurch.net
 description: A Bible-based church in Herriman, Utah.
 markdown: kramdown
 managerName: Adam Harris
 managerEmail: adam@mountainview-webdesign.com
-title: Lifestone Church
 organizationName: Lifestone Church
 squareLogo: assets/images/logo2.jpg
 podcastSubtitle: Messages from Sunday morning worship at Lifestone Church
-permalink: /:categories/:title/
+permalink: "/:categories/:title/"
 google_analytics_code: UA-44899328-1
-collections:
-  redirects:
-    layout: redirect
-    output: true
-    permalink: /:path/
-defaults:
-  -
-    scope:
-      type: redirects
-    values:
-      layout: redirect
-  -
-    scope:
-      type: posts
-    values:
-      layout: sermon
-      categories:
-        - media
-        - sermons

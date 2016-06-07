@@ -1,12 +1,13 @@
 ---
 title: The Light of Christmas- Week 1- Light That Overcomes Loneliness
+date: 2015-11-29 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-11-29.mp3
 podcastLength: '00:50:25'
 size: 48410372
 image: assets/uploads/podcast/lightOfChristmas.jpg
 speaker: Pastor Ben Helton
 description: The Light of Christmas
-vimeoId:
+vimeoId: 
 verse: 1 John 1:5
 ---
 

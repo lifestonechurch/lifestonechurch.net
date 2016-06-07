@@ -1,11 +1,12 @@
 ---
 title: Ephesians- Week 11- Work
+date: 2015-07-26 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-07-26.mp3
 podcastLength: '00:49:20'
 image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
-vimeoId:
+vimeoId: 
 verse: Ephesians 4:28
 ---
 

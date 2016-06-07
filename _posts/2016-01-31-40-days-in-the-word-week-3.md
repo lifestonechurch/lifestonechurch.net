@@ -1,12 +1,13 @@
 ---
 title: 40 Days in the Word- Week 3- Not Just a Good Book
+date: 2016-01-31 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-01-31.mp3
 podcastLength: '00:51:47'
 size: 49720320
-image:
+image: 
 speaker: Pastor Ben Helton
 description: 40 Days in the Word
-vimeoId:
+vimeoId: 
 verse: Psalm 33:6
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Ephesians- Week 3- The Best News in 2 Words
+date: 2015-05-31 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-05-31.mp3
 podcastLength: '00:40:52'
 image: assets/uploads/podcast/ephesians.jpg

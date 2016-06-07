@@ -1,5 +1,6 @@
 ---
 title: Ephesians- Week 8- Player or Spectator
+date: 2015-07-05 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-07-05.mp3
 podcastLength: '00:48:25'
 image: assets/uploads/podcast/ephesians.jpg

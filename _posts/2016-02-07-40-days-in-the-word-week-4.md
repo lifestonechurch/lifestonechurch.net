@@ -1,13 +1,14 @@
 ---
 title: 40 Days in the Word- Week 4- Seeing What God Wants Me to See
+date: 2016-02-07 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-02-07.mp3
 podcastLength: '00:51:38'
 size: 49575936
-image:
+image: 
 speaker: Pastor Ben Helton
 description: 40 Days in the Word
-vimeoId:
-verse:
+vimeoId: 
+verse: 
 ---
 
 ## Sermon Notes

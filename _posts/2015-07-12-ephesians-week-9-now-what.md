@@ -1,11 +1,12 @@
 ---
 title: Ephesians- Week 9- Now What?
+date: 2015-07-12 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-07-12.mp3
 podcastLength: '00:50:21'
 image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
-vimeoId:
+vimeoId: 
 verse: Ephesians 4:17-24
 ---
 

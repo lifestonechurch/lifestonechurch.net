@@ -1,5 +1,6 @@
 ---
 title: Heaven and Hell- Week 3- Hell
+date: 2015-11-15 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-11-15.mp3
 podcastLength: '00:50:40'
 size: 48229460
@@ -7,7 +8,7 @@ image: assets/uploads/podcast/heavenAndHell.jpg
 speaker: Pastor Ben Helton
 description: Heaven and Hell
 vimeoId: 146314804
-verse:
+verse: 
 ---
 
 ## Sermon Notes

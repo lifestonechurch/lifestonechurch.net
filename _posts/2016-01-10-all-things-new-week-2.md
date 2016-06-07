@@ -1,9 +1,10 @@
 ---
 title: All Things New- Week 2
+date: 2016-01-10 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-01-10.mp3
 podcastLength: '00:40:41'
 size: 79228898
-image:
+image: 
 speaker: Pastor Ben Helton
 description: All Things New
 vimeoId: 151858663

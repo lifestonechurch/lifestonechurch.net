@@ -1,5 +1,6 @@
 ---
 title: Ephesians- Week 7- Unity
+date: 2015-06-28 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-06-28.mp3
 podcastLength: '00:48:07'
 image: assets/uploads/podcast/ephesians.jpg

@@ -1,9 +1,10 @@
 ---
 title: 40 Days in the Word- Week 1- How Do You Build Your Life on the Bible?
+date: 2016-01-17 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-01-17.mp3
 podcastLength: '00:48:30'
 size: 94240771
-image:
+image: 
 speaker: Pastor Ben Helton
 description: 40 Days in the Word
 vimeoId: 152092171

@@ -1,11 +1,12 @@
 ---
 title: Ephesians- Week 12
+date: 2015-08-02 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-08-02.mp3
 podcastLength: '00:47:03'
 image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
-vimeoId:
+vimeoId: 
 verse: Ephesians 4:29-32
 ---
 

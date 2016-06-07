@@ -1,5 +1,6 @@
 ---
 title: Ephesians- Week 10- Lying & Anger
+date: 2015-07-19 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-07-19.mp3
 podcastLength: '00:51:21'
 image: assets/uploads/podcast/ephesians.jpg

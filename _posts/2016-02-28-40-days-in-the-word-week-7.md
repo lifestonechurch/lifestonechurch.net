@@ -1,9 +1,10 @@
 ---
 title: 40 Days in the Word- Week 7- Integrating God's Word Into My Life
+date: 2016-02-28 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-02-28.mp3
 podcastLength: '00:42:47'
 size: 83383193
-image:
+image: 
 speaker: Pastor Ben Helton
 description: 40 Days in the Word
 vimeoId: 157587086

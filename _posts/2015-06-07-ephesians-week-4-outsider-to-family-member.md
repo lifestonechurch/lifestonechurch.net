@@ -1,5 +1,6 @@
 ---
 title: Ephesians- Week 4- Outsider to Family Member
+date: 2015-06-07 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-06-07.mp3
 podcastLength: '00:46:01'
 image: assets/uploads/podcast/ephesians.jpg

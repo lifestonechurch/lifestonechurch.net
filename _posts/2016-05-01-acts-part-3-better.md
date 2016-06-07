@@ -1,9 +1,10 @@
 ---
-title: "Acts - Part 3: Better"
+title: 'Acts - Part 3: Better'
+date: 2016-05-01 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-05-01.mp3
 podcastLength: '00:48:35'
 size: 94890589
-image:
+image: 
 speaker: Pastor Ben Helton
 description: Acts
 youtubeId: 3pJGwhyg54Q

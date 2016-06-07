@@ -1,5 +1,6 @@
 ---
 title: Jesus Vs. Religion- Week 2- Brokenness vs Pride
+date: 2015-09-27 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-09-27.mp3
 podcastLength: '00:54:10'
 image: assets/uploads/podcast/jesusVsReligion.jpg

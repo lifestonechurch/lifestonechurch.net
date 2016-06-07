@@ -1,9 +1,10 @@
 ---
-title: "Acts - Part 2: The Wait is Over!"
+title: 'Acts - Part 2: The Wait is Over!'
+date: 2016-04-24 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-04-24.mp3
 podcastLength: '00:40:53'
 size: 79082578
-image:
+image: 
 speaker: Pastor Ben Helton
 description: Acts
 youtubeId: bSXg0ks5rt4

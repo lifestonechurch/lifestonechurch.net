@@ -1,12 +1,13 @@
 ---
 title: The Light of Christmas- Week 2- Light That Conquers Fear
+date: 2015-12-06 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-12-06.mp3
 podcastLength: '00:40:46'
 size: 78280331
 image: assets/uploads/podcast/lightOfChristmas.jpg
 speaker: Pastor Ben Helton
 description: The Light of Christmas
-vimeoId:
+vimeoId: 
 verse: 2 Timothy 1:7
 ---
 

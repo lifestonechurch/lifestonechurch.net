@@ -1,5 +1,6 @@
 ---
 title: Ephesians- Week 6- Understanding that You Can’t Understand.......Understand?
+date: 2015-06-21 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-06-21.mp3
 podcastLength: '00:48:12'
 image: assets/uploads/podcast/ephesians.jpg

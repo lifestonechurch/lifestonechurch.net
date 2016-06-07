@@ -1,9 +1,10 @@
 ---
-title: "Acts - Part 5: Crazy Day at Church"
+title: 'Acts - Part 5: Crazy Day at Church'
+date: 2016-05-15 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-05-15.mp3
 podcastLength: '00:55:53'
 size: 108920293
-image:
+image: 
 speaker: Pastor Ben Helton
 description: Acts
 youtubeId: lGmEtwISdbc

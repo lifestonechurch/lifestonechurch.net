@@ -1,13 +1,14 @@
 ---
 title: The Lord's Supper
+date: 2016-03-13 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-03-13.mp3
 podcastLength: '00:46:46'
 size: 91106002
-image:
+image: 
 speaker: Pastor Ben Helton
-description:
+description: 
 vimeoId: 159088422
-verse:
+verse: 
 ---
 
 ## Sermon Notes

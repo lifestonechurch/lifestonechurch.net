@@ -1,5 +1,6 @@
 ---
 title: Ephesians- Week 5- Mystery Solved
+date: 2015-06-14 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-06-14.mp3
 podcastLength: '00:35:32'
 image: assets/uploads/podcast/ephesians.jpg

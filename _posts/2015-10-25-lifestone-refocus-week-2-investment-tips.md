@@ -1,12 +1,13 @@
 ---
 title: Lifestone Refocus- Week 2- Investment Tips
+date: 2015-10-25 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-10-25.mp3
 podcastLength: '00:59:04'
 size: 56715584
 image: assets/uploads/podcast/lifestone.jpg
 speaker: Pastor Ben Helton
 description: Lifestone
-vimeoId:
+vimeoId: 
 verse: 1 Corinthians 3:10-17; Matthew 6:19
 ---
 

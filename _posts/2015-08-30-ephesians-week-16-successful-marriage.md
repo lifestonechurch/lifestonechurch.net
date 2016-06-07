@@ -1,11 +1,12 @@
 ---
 title: Ephesians- Week 16- Successful Marriage
+date: 2015-08-30 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-08-30.mp3
 podcastLength: '00:47:36'
 image: assets/uploads/podcast/ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
-vimeoId:
+vimeoId: 
 verse: Ephesians 5:21-33
 ---
 

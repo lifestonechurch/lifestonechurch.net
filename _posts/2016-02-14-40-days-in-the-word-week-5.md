@@ -1,12 +1,13 @@
 ---
 title: 40 Days in the Word- Week 5- How to Study a Bible Study
+date: 2016-02-14 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-02-14.mp3
 podcastLength: '00:53:06'
 size: 50971793
-image:
+image: 
 speaker: Pastor Ben Helton
 description: 40 Days in the Word
-vimeoId:
+vimeoId: 
 verse: Philippians 2:19-30
 ---
 

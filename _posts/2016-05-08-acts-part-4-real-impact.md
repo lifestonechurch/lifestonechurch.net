@@ -1,9 +1,10 @@
 ---
-title: "Acts - Part 4: Real Impact"
+title: 'Acts - Part 4: Real Impact'
+date: 2016-05-08 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-05-08.mp3
 podcastLength: '00:41:06'
 size: 80172640
-image:
+image: 
 speaker: Pastor Ben Helton
 description: Acts
 youtubeId: 6Es5l0Z33C0

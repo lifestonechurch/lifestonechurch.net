@@ -1,9 +1,10 @@
 ---
-title: "Acts - Part 1: Anticipation"
+title: 'Acts - Part 1: Anticipation'
+date: 2016-04-17 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-04-17.mp3
 podcastLength: '00:54:16'
 size: 106084448
-image:
+image: 
 speaker: Pastor Ben Helton
 description: Acts
 youtubeId: E31LvHl_MxQ

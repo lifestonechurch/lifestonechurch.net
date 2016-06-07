@@ -1,11 +1,12 @@
 ---
 title: Palm Sunday
+date: 2016-03-20 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-03-20.mp3
 podcastLength: '00:48:31'
 size: 94508893
-image:
+image: 
 speaker: Pastor Ben Helton
-description:
+description: 
 vimeoId: 160158356
 verse: Luke 19:28-34
 ---

@@ -1,11 +1,12 @@
 ---
 title: Lifestone Refocus- Week 1
+date: 2015-10-18 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-10-18.mp3
 podcastLength: '00:47:51'
 image: assets/uploads/podcast/lifestone.jpg
 speaker: Pastor Ben Helton
 description: Lifestone
-vimeoId:
+vimeoId: 
 verse: Acts 2:42
 ---
 

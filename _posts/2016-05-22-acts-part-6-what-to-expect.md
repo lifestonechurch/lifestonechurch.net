@@ -1,9 +1,10 @@
 ---
-title: "Acts - Part 6: What to Expect"
+title: 'Acts - Part 6: What to Expect'
+date: 2016-05-22 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-05-22.mp3
 podcastLength: '00:53:48'
 size: 104970782
-image:
+image: 
 speaker: Pastor Ben Helton
 description: Acts
 youtubeId: J7fxVO93-6s

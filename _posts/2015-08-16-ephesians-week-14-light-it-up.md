@@ -1,5 +1,6 @@
 ---
 title: Ephesians- Week 14- Light It Up
+date: 2015-08-16 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-08-16.mp3
 podcastLength: '00:46:05'
 image: assets/uploads/podcast/ephesians.jpg

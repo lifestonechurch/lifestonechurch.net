@@ -1,5 +1,6 @@
 ---
 title: Ephesians- Week 15- Represent
+date: 2015-08-23 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-08-23.mp3
 podcastLength: '00:41:54'
 image: assets/uploads/podcast/ephesians.jpg

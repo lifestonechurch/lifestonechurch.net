@@ -1,12 +1,13 @@
 ---
 title: Jesus Vs. Religion- Week 4- Assurance vs Uncertainty
+date: 2015-10-11 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-10-11.mp3
 podcastLength: '00:41:56'
 image: assets/uploads/podcast/jesusVsReligion.jpg
 speaker: Pastor Ben Helton
 description: Jesus Vs Religion
 vimeoId: 142209839
-verse:
+verse: 
 ---
 
 ## Sermon Notes
