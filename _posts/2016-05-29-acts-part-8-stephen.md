@@ -4,7 +4,7 @@ date: 2016-05-29 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-06-05.mp3
 podcastLength: '00:42:49'
 size: 41099136
-image:
+image: 
 speaker: Pastor Ben Helton
 description: Acts
 verse: Acts 6:8-8:1

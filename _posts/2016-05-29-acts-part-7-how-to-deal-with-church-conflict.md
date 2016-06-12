@@ -4,7 +4,7 @@ date: 2016-05-29 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2016-05-29.mp3
 podcastLength: '00:40:37'
 size: 79126669
-image:
+image: 
 speaker: Pastor Ben Helton
 description: Acts
 youtubeId: 872QrhhVNgk
