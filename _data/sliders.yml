@@ -1,5 +1,7 @@
 sliders:
+  - filename: kidsCamp.jpg
+    link: kids-camp
   - filename: acts.jpg
-    link: media/sermons/
+    link: media/sermons
   - filename: firstTimeGuest.jpg
-    link: visit/
+    link: visit
