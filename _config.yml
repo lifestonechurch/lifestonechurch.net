@@ -10,9 +10,6 @@ collections:
     output: true
     permalink: "/:path/"
     layout: redirect
-  uploads:
-    title: Uploads
-    output: true
 defaults:
 - scope:
     path: ''
