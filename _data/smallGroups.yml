@@ -2,64 +2,57 @@ currentSemester:
 lifeGroups:
   - day: Sunday Morning
     time: 8:45am
-    address: PHHS Teachers Lounge
+    address: PHHS
     childcare: Free on-site childcare
-    startDate: 4/3/16
-    hosts:
     leaders:
-      - name: TBD
+      - name: Jake Moore & Megan Henderson
         image:
         description:
-  - day: Sunday
-    time: 6:00pm
-    address: 4982 Badger Lane, Riverton
-    childcare: Free on-site childcare
-    hosts: Shane and Dixie Wise
-    startDate: 4/3/16
-    leaders:
-      - name: Ben & Kristen Helton
-        image: /assets/uploads/pages/ben.jpg
-        description: "Ben grew up in Chadron, Nebraska and Kristen in Littlefield, Texas. The two met while attending Wayland University and married in 2000. Ben served in various churches as Student Minister for several years before planting and pastoring a church in Weatherford, TX in 2009. Kristen taught Music in public schools and worked alongside Ben as they shared Jesus’ love with hundreds of students and adults. In 2013, Ben and Kristen, along with their children, Rachel (now 12), Karis (10), and Jaxson (7), moved here to Herriman to plant the first ever Bible- teaching church in Herriman! Ben serves Lifestone as Lead Pastor and Kristen serves as Kid’s Life Elementary Coordinator and Worship Team Coordinator. In their spare time, Ben enjoys playing basketball and working on cars, and Kristen enjoys remodeling and singing. What Ben and Kristen love most about LifeGroups is making life-long friends, and they hope that you, too, get connected and build lasting friendships!"
   - day: Sunday
     time: 6:30pm
-    address: 5468 W Sierra Rose Drive, Herriman
+    address: 14233 S Valle Vista Drive, Herriman
     childcare: Free on-site childcare
-    startDate: 4/3/16
-    hosts:
+    hosts: Roland's
     leaders:
-      - name: Tyson and Lindsey Pepper
+      - name: Tyson & Lindsey Pepper
         image:
         description:
   - day: Sunday
-    time: 7:00pm
-    address: 8088 W. Canyon Rd Herriman UT (call 801-946-1067 to be buzzed in to gate)
+    time: 6:30pm
+    address: 13148 S Copeland Dr, Herriman
     childcare: Free on-site childcare
-    startDate: 4/3/16
-    hosts:
+    hosts: Calton's
     leaders:
-      - name: Dennis and Rachel Nelson
+      - name: Henry & Ana Killackey
         image:
         description:
-  - day: Tuesday
-    time: 6:00pm
-    address: 5392 Venetia Street, Herriman
+  - day: Sunday
+    time: 6:30pm
+    address:  3281 W 12075 S, Riverton
     childcare: Free on-site childcare
-    startDate: 3/29/16
-    hosts:
+    hosts: Coleman's
     leaders:
-      - name: Jerame and Jessie Blevins
+      - name: Sam & Rachael Coleman
         image:
-        description: "A mix of desert, city, neb-hippie, clown, redneck, and a whole lot of love for Jesus our Lord and Savior.  Jerame grew up in a small California town in the middle of Death Valley called Trona.  Jessie ping ponged between Dallas, TX and SLC, UT all her life until meeting Jerame in 2009 on eharmony.  Jerame is a manager at a power plant, likes video games, the NFL Dolphins, and all things redneck.  Jessie home schools their two boys, clowns around for her father’s entertainment company, likes sewing, motorcycles, and all things crunchy.  Jerame serves Lifestone in many ways and his favorite is working the sound board for the worship team.  Jessie serves Lifestone as a greeter and helping with the teens.  The Blevins favorite thing about Lifestone is living life together with people who love them some Jesus!"
+        description:
+  - day: Wednesday
+    time: 6:30pm
+    address: 4982 Badger Lane, Herriman
+    childcare: Free on-site childcare
+    hosts: Wise's
+    leaders:
+      - name: Phil & Ashley Smith
+        image:
+        description:
   - day: Thursday
     time: 6:30pm
-    address: 14643 S River Chase Rd, Herriman
+    address: 5392 Venetia St, Herriman
     childcare: Free on-site childcare
-    startDate: 3/31/16
-    hosts:
+    hosts: Blevins'
     leaders:
-      - name: Ryan & Jen Breedlove
-        image: /assets/uploads/pages/breedloves.jpg
-        description: "Ryan and and Jen both grew up the in Tulsa, Oklahoma area. The couple met on a mission trip to Guatemala and married in 2005.They lived in Owasso where Ryan worked in healthcare finance and Jen taught and served as school librarian in Tulsa schools. The Breedloves have 4 children: Cade (6), Ava (4), Emma (3), and Olivia (1). The family re-located to Utah in 2014 when Ryan accepted a job in finance at Intermountain Healthcare. Ryan and Jen enjoy using their gifts to serve at Lifestone where Ryan serves on the 1st Impressions Team and Jen operates our online database and teaches in Kid’s Life. During the week, Jen stays home with the children and enjoys homeschooling their oldest, Cade. As for hobbies, Ryan and Jen keep busy playing with their 4 kids! The couple’s favorite thing about LifeGroups is building relationships with other believers, and they are excited to see you, too, find a family of believers to build relationships with!"
+      - name: Dennis & Raechel Nelson
+        image:
+        description:
 youth:
   - time: Wednesdays, 6:30-8pm
     people: Grades 6th-12th
