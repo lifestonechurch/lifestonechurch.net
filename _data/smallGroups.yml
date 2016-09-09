@@ -33,7 +33,7 @@ lifeGroups:
     hosts: Coleman's
     leaders:
       - name: Sam & Rachael Coleman
-        image:
+        image: /assets/uploads/pages/colemans.jpg
         description: Sam and Rachael Coleman moved from Ft. Worth, Tx in 1999 to help with a small church in Pleasant Grove, UT.  They met through a mutual friend who was Rachael’s youth pastor and Sam’s college friend when Rachael was 15.  A few years later when Rachael was a Sophomore in college the same youth pastor partnered them together for a Disciple Now Weekend (which is an intense weekend long small group for youth).  The reason Sam and Rachael were put together according to the youth pastor was because these two are so different it should be interesting.  After 18 years of marriage, “interesting” is still the word for what Sam and Rachael bring to small groups.  We are excited to be a part of Lifestone Church with our four children Abigail (16), Atticus (14), Asher (8), and Adelai Shalom (7).  We are looking to form life-long friendships and work alongside others in our LifeGroups this year.
   - day: Wednesday
     time: 6:30pm
@@ -42,7 +42,7 @@ lifeGroups:
     hosts: Wise's
     leaders:
       - name: Phil & Ashley Smith
-        image:
+        image: /assets/uploads/pages/smiths.jpg
         description: Phil and Ashley are happy to be celebrating their 3rd year as official Utahns after both being raised in Texas. They were married in 2003 and have served in various ministry roles over the past 15 years.  Phil is currently an RN at the University of Utah hospital (GO UTES!) and the Sunday morning worship team coordinator.  Ashley is an office manager for a custom home builder and helps with Lifestone's finances.   They both love to laugh and are laid back in their approach to life.  Their goal is to build a lifegroup family that is bonded by a desire to grow spiritually and support one another through all that life dishes out.  See you Wednesdays!
   - day: Thursday
     time: 6:30pm
@@ -51,7 +51,7 @@ lifeGroups:
     hosts: Blevins'
     leaders:
       - name: Dennis & Raechel Nelson
-        image:
+        image: /assets/uploads/pages/nelsons.jpg
         description: Originally from Nebraska and Colorado, respectively, Dennis and Raechel met 13 years ago while attending college at the University of Nebraska in Lincoln.  After spending several years apart, Raechel going to school and Dennis working in different states, they both ended up together in the Salt Lake area.  They’ve now been happily married for 7 years. Dennis works for BD Medical as a Product Manager and Raechel has a dental practice, Desert Rose Dental.  Although they don’t have kids yet, they stay busy with a couple of dogs, several horses, and a bunch of outdoor activities.  They’ve lived in Herriman for the past 6 years, but were led to join God’s work through Lifestone in bringing Jesus to town of Herriman just two years ago. Dennis serves as the Grow Director for Lifestone and they both serve with Kids Life. They were both blessed to be raised in Christian homes and are excited for the opportunity to help make Christ known in our community now.
 youth:
   - time: Wednesdays, 6:30-8pm
