@@ -34,7 +34,7 @@ Acts 27
 
 ### What we can gain in the storm
 
-1. Remembering whom I *belong to *{: class="sermon-answer"} and whom I *serve*{: class="sermon-answer"}.
+1. Remembering whom I *belong to*{: class="sermon-answer"} and whom I *serve*{: class="sermon-answer"}.
 
 2. *Thankfulness*{: class="sermon-answer"}
 
