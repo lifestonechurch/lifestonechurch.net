@@ -65,7 +65,3 @@ Check out the details and select the group that works best for your family!
 {% endfor %}
 </section>
 {% endfor %}
-
-## LifeGroup Study Notes
-
-Click <a href="study-notes/">here</a> for this week's study notes.
