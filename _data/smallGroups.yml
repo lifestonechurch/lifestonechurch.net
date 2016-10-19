@@ -4,7 +4,6 @@ lifeGroups:
     time: 8:45am
     address: PHHS
     childcare: Free on-site childcare
-    startDate: 9/25/16
     leaders:
       - name: Jake Moore & Megan Henderson
         image: /assets/uploads/pages/hendersons.jpg
@@ -14,7 +13,6 @@ lifeGroups:
     address: 14233 S Valle Vista Drive, Herriman
     childcare: Free on-site childcare
     hosts: Roland's
-    startDate: 9/18/16
     leaders:
       - name: Tyson & Lindsey Pepper
         image: /assets/uploads/pages/peppers.jpg
@@ -24,7 +22,6 @@ lifeGroups:
     address: 13148 S Copeland Dr, Herriman
     childcare: Free on-site childcare
     hosts: Calton's
-    startDate: 9/18/16
     leaders:
       - name: Henry & Ana Killackey
         image: /assets/uploads/pages/killackeys.jpg
@@ -34,7 +31,6 @@ lifeGroups:
     address:  3281 W 12075 S, Riverton
     childcare: Free on-site childcare
     hosts: Coleman's
-    startDate: 9/18/16
     leaders:
       - name: Sam & Rachael Coleman
         image: /assets/uploads/pages/colemans.jpg
@@ -44,7 +40,6 @@ lifeGroups:
     address: 4982 Badger Lane, Herriman
     childcare: Free on-site childcare
     hosts: Wise's
-    startDate: 9/21/16
     leaders:
       - name: Phil & Ashley Smith
         image: /assets/uploads/pages/smiths.jpg
@@ -54,7 +49,6 @@ lifeGroups:
     address: 5392 Venetia St, Herriman
     childcare: Free on-site childcare
     hosts: Blevins'
-    startDate: 9/22/16
     leaders:
       - name: Dennis & Raechel Nelson
         image: /assets/uploads/pages/nelsons.jpg
