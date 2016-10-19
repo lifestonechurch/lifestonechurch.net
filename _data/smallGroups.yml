@@ -37,13 +37,22 @@ lifeGroups:
         description: Sam and Rachael Coleman moved from Ft. Worth, Tx in 1999 to help with a small church in Pleasant Grove, UT.  They met through a mutual friend who was Rachael’s youth pastor and Sam’s college friend when Rachael was 15.  A few years later when Rachael was a Sophomore in college the same youth pastor partnered them together for a Disciple Now Weekend (which is an intense weekend long small group for youth).  The reason Sam and Rachael were put together according to the youth pastor was because these two are so different it should be interesting.  After 18 years of marriage, “interesting” is still the word for what Sam and Rachael bring to small groups.  We are excited to be a part of Lifestone Church with our four children Abigail (16), Atticus (14), Asher (8), and Adelai Shalom (7).  We are looking to form life-long friendships and work alongside others in our LifeGroups this year.
   - day: Wednesday
     time: 6:30pm
-    address: 4982 Badger Lane, Herriman
+    address: 4883 W Chilly Peak Dr Riverton
     childcare: Free on-site childcare
-    hosts: Wise's
+    hosts: Smith's
     leaders:
       - name: Phil & Ashley Smith
         image: /assets/uploads/pages/smiths.jpg
         description: Phil and Ashley are happy to be celebrating their 3rd year as official Utahns after both being raised in Texas. They were married in 2003 and have served in various ministry roles over the past 15 years.  Phil is currently an RN at the University of Utah hospital (GO UTES!) and the Sunday morning worship team coordinator.  Ashley is an office manager for a custom home builder and helps with Lifestone's finances.   They both love to laugh and are laid back in their approach to life.  Their goal is to build a lifegroup family that is bonded by a desire to grow spiritually and support one another through all that life dishes out.  See you Wednesdays!
+  - day: Wednesday
+    time: 6:30pm
+    address: 4982 Badger Lane, Herriman
+    childcare: Free on-site childcare
+    hosts: Wise's
+    leaders:
+      - name: Sam & Rachael Coleman
+        image: /assets/uploads/pages/colemans.jpg
+        description: Sam and Rachael Coleman moved from Ft. Worth, Tx in 1999 to help with a small church in Pleasant Grove, UT.  They met through a mutual friend who was Rachael’s youth pastor and Sam’s college friend when Rachael was 15.  A few years later when Rachael was a Sophomore in college the same youth pastor partnered them together for a Disciple Now Weekend (which is an intense weekend long small group for youth).  The reason Sam and Rachael were put together according to the youth pastor was because these two are so different it should be interesting.  After 18 years of marriage, “interesting” is still the word for what Sam and Rachael bring to small groups.  We are excited to be a part of Lifestone Church with our four children Abigail (16), Atticus (14), Asher (8), and Adelai Shalom (7).  We are looking to form life-long friendships and work alongside others in our LifeGroups this year.
   - day: Thursday
     time: 6:30pm
     address: 5392 Venetia St, Herriman
