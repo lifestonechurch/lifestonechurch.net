@@ -4,7 +4,7 @@ date: 2015-11-01 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-11-01.mp3
 podcastLength: '00:50:29'
 size: 48475328
-image: assets/uploads/podcast/heavenAndHell.jpg
+image: heavenAndHell.jpg
 speaker: Pastor Ben Helton
 description: Heaven and Hell
 vimeoId: 145069190

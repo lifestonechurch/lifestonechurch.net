@@ -3,7 +3,7 @@ title: Ephesians- Week 2- Paul's Prayer
 date: 2015-05-24 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-05-24.mp3
 podcastLength: '00:40:16'
-image: assets/uploads/podcast/ephesians.jpg
+image: ephesians.jpg
 speaker: Pastor Ben Helton
 description: Ephesians
 vimeoId: 128737723

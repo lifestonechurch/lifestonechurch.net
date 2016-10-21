@@ -4,7 +4,7 @@ date: 2015-11-29 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-11-29.mp3
 podcastLength: '00:50:25'
 size: 48410372
-image: assets/uploads/podcast/lightOfChristmas.jpg
+image: lightOfChristmas.jpg
 speaker: Pastor Ben Helton
 description: The Light of Christmas
 vimeoId: 

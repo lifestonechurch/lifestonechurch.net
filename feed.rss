@@ -43,7 +43,7 @@
 				<itunes:summary>{{ post.description }}</itunes:summary>
 				<itunes:duration>{{ post.podcastLength }}</itunes:duration>
 				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
-				<itunes:image href="{% if post.image %}{{ site.url }}/{{ post.image }}{% else %}{{ site.url }}/{{site.squareLogo}}{% endif %}" />
+				<itunes:image href="{{ site.url }}/{{site.squareLogo}}" />
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		{% endfor %}

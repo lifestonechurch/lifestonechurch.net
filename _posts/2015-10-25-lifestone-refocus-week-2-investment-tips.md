@@ -4,7 +4,6 @@ date: 2015-10-25 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2015-10-25.mp3
 podcastLength: '00:59:04'
 size: 56715584
-image: assets/uploads/podcast/lifestone.jpg
 speaker: Pastor Ben Helton
 description: Lifestone
 vimeoId: 
