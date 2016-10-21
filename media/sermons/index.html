@@ -33,11 +33,13 @@ layout: page
 {% for post in site.posts %}
 <div class="Sermon">
   <div class="Sermon__Image">
-    {% if post.image %}
-    <img src="{{site.baseurl}}/assets/uploads/podcast/{{post.image}}" />
-    {% else %}
-    <img src="{{site.baseurl}}/assets/images/logo2.jpg" />
-    {% endif %}
+    <a title="{{post.title}}" href="{{post.url}}">
+      {% if post.image %}
+      <img src="{{site.baseurl}}/assets/uploads/podcast/{{post.image}}" />
+      {% else %}
+      <img src="{{site.baseurl}}/assets/images/logo2.jpg" />
+      {% endif %}
+    </a>
   </div>
   <p class="Sermon__Text">{{post.date | date: "%-m/%-d/%y"}}- <a title="{{post.title}}" href="{{post.url}}">{{post.title}}</a></p>
 </div>
