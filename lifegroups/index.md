@@ -37,7 +37,10 @@ Check out the details and select the group that works best for your family!
 
 {% for group in site.data.smallGroups.lifeGroups %}
 <section>
-<h3>{{ group.day }} LifeGroup</h3>
+<h3>{{ group.title }}</h3>
+{% if group.description %}
+	<p>{{ group.description}}</p>
+{% endif %}
 <blockquote>
 {{ group.time }}
 <br/>
@@ -61,7 +64,7 @@ Check out the details and select the group that works best for your family!
 <p>{{ leader.name }}</p>
 
 {% if leader.image %}<img class="small left rounded" src="{{site.baseurl}}{{ leader.image }}"/>{% endif %}
-<p>{{ leader.description }}</p>
+<p style="clear: both">{{ leader.description }}</p>
 {% endfor %}
 </section>
 {% endfor %}
