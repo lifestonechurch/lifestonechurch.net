@@ -6,15 +6,13 @@
 			{% if newMonth != oldMonth %}
 				<dd>{{ newMonth }}</dd>
 			{% endif %}
-			<dt>
 			<b>{{ event.date | date:"%-d" }}{% if event.end-date %}-{{ event.end-date | date:"%-d" }}{% endif %}</b> -
 			{% if event.link %}<a href="{{event.link}}">{% endif %}
-			{{ event.name }}
+			<b>{{ event.name }}</b>
 			{% if event.link %}</a>{% endif %}
 			{% if event.location %}- {{ event.location }}{% endif %}
 			{% if event.cost %}- {{ event.cost }}{% endif %}
-			{% if event.description %}- {{ event.description }}{% endif %}
-			</dt>
+			{% if event.description %}<div style='padding: 20px;'>{{ event.description }}</div>{% endif %}
 			{% capture oldMonth %}{{ newMonth }}{% endcapture %}
 		{% endfor %}
 	{% endif %}
