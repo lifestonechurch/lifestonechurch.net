@@ -30,7 +30,8 @@ layout: page
 
 <div class="cl"></div>
 
-{% for post in site.sermons reversed %}
+{% assign sermons = (site.sermons | sort: 'date') | reverse %}
+{% for post in sermons %}
 <div class="Sermon">
   <div class="Sermon__Image">
     <a title="{{post.title}}" href="{{post.url}}">
