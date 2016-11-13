@@ -20,7 +20,8 @@ layout: default
 		</div>
 		<div class="col-sm-4">
 			<h2 class="banner-header">Latest Message</h2>
-			{% for post in site.posts limit:1 %}
+			{% assign sermons = (site.sermons | sort: 'date') | reverse %}
+			{% for post in sermons limit:1 %}
 				<div class="latest-sermon">
 					<a href="{{ site.baseurl }}{{ post.url}}">
 						<img id="youtube-{{ post.youtubeId }}" src="{{ site.baseurl }}/assets/images/defaultLatestMessage.gif" alt="{{ video.title }}" />
