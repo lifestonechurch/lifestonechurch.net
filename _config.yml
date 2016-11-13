@@ -2,9 +2,10 @@
 title: Lifestone Church
 timezone: UTC
 collections:
-  posts:
-    title: Posts
+  sermons:
+    title: Sermons
     output: true
+    permalink: "/resources/sermons/:title/"
   redirects:
     title: Redirects
     output: true
@@ -18,11 +19,10 @@ defaults:
     layout: redirect
 - scope:
     path: ''
-    type: posts
+    type: sermons
   values:
     layout: sermon
     categories:
-    - media
     - sermons
 baseurl: 
 url: http://www.lifestonechurch.net
