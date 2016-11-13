@@ -14,7 +14,16 @@ body {
 }
 
 p {
+    color: #000;
+    font-size: 16px;
     line-height: 1.5em;
+    padding: 0 0 1em 0;
+    text-align: justify;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+    letter-spacing: .03em;
 }
 
 p,
@@ -184,7 +193,6 @@ footer {
     padding-bottom: 50px;
 }
 .footer-top {
-    color: #FFF;
     background-color: #484848;
     background: rgb(47,47,47);
     background: -moz-linear-gradient(top, rgba(47,47,47,1) 0%, rgba(54,54,54,1) 100%);
@@ -194,7 +202,9 @@ footer {
     background: -ms-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
     background: linear-gradient(to bottom, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
 }
-.footer-top a {
+.footer-top,
+.footer-top a,
+.footer-top p {
     color: #FFF;
 }
 .footer-top a:hover {
@@ -203,9 +213,12 @@ footer {
 .socialMediaIcon {
     margin-right: 10px;
 }
+.footer-bottom,
+.footer-bottom p {
+    color: #8e8e8e;
+}
 .footer-bottom {
     background-color: #242424;
-    color: #8e8e8e;
 }
 .footer-bottom a {
     color: #8e8e8e;
@@ -221,6 +234,7 @@ footer a:hover {
 /* Audio Player */
 .audiojs .play-pause {
     width: 38px;
+    margin-bottom: 40px;
 }
 
 /* Sermon Notes Answers */
