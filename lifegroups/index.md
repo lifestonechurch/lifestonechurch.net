@@ -11,6 +11,7 @@ layout: page
 ![lifegroups]({{ site.baseurl }}/assets/uploads/pages/lifegroups.jpg)
 
 ## About LifeGroups
+{: class="banner-header"}
 
 Connect to God by connecting to His people & His Word.
 
@@ -34,6 +35,7 @@ LifeGroups are the heart of Lifestone Church. They are small groups of people wh
 Check out the details and select the group that works best for your family!
 
 ## Find a LifeGroup
+{: class="banner-header"}
 
 {% for group in site.data.smallGroups.lifeGroups %}
 <section>
