@@ -1,10 +1,19 @@
 churchwide:
   -
     date: 2016-11-18
-    name: Women’s Event - Fall Treats & "Thank You"s
+    name: Ladies Event
+    link: https://www.facebook.com/events/519450818264341/
+  -
+    date: 2016-11-20
+    name: Operation Christmas Child Boxes Due
+    link: https://www.facebook.com/events/206355433138620/
   -
     date: 2016-11-19
     name: Men's event- Skeet Shooting
+    link: https://www.facebook.com/events/272704219793229/
+  -
+    date: 2016-12-24
+    name: Christmas Eve Service
 grades-6-12:
   -
     date: 2016-11-09
