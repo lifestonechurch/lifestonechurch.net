@@ -2,6 +2,32 @@
 layout: page
 ---
 
+<style>
+.Devotionals__Post {
+  display: block;
+  background-color: #F4F4F4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-width: 700px;
+  box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.Devotionals__Post:hover {
+  text-decoration: none;
+}
+.Devotionals__Header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.Devotional__Metadata {
+	font-size: 14px;
+	font-style: italic;
+	color: #777;
+	line-height: 2em;
+	margin-bottom: 10px;
+}
+</style>
+
 <p id="breadcrumbs">
   <a href="{{ site.baseurl }}/">Home</a> &rsaquo; Resources &rsaquo; Devotionals
 </p>
@@ -10,8 +36,20 @@ layout: page
 
 {% assign devotionals = (site.devotionals | sort: 'date') | reverse %}
 {% for post in devotionals %}
-<div>
-  <h3><a href="{{post.url}}">{{post.date | date: "%-m/%-d/%y"}} - {{post.title}}</a></h3>
-  <p>{{post.excerpt}}</p>
-</div>
+
+{% capture date %}
+{% assign d = post.date | date: "%-d" %}
+{{ post.date | date: "%B" }}
+{% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+{{ post.date | date: "%Y" }}
+{% endcapture %}
+
+<a class="Devotionals__Post" href="{{post.url}}">
+	 <h3 class="Devotionals__Header">{{post.title}}</h3>
+	 <div class="Devotional__Metadata">
+		 <span>{{date}}</span> - <span>{{post.author}}</span>
+	 </div>
+	 {{post.excerpt}}
+	 <div>Read more</div>
+</a>
 {% endfor %}
