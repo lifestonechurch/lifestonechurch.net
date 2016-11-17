@@ -30,7 +30,8 @@
 		<itunes:category text="Religion &amp; Spirituality">
 			<itunes:category text="Christianity" />
 		</itunes:category>
-		{% for post in site.posts %}
+		{% assign sermons = (site.sermons | sort: 'date') | reverse %}
+		{% for post in sermons %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<link>{{ site.url }}{{ post.url | replace:'&','%26'}}</link>
