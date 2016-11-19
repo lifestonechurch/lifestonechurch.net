@@ -1,3 +1,6 @@
+---
+---
+
 /*
 font-family: 'Lato', sans-serif;
 font-family: 'Droid Serif', serif;
@@ -61,7 +64,7 @@ h4 {
     margin-bottom: 30px;
     margin-top: 30px;
     font-size: 2em;
-    background-color: #008F01;
+    background-color: {{site.data.colors.GREEN}};
     color: #FFF;
 }
 
@@ -69,12 +72,12 @@ h4 {
 section {
     margin-bottom: 2.5em;
     padding-bottom: 1em;
-    border-bottom: 5px solid #008F01;
+    border-bottom: 5px solid {{site.data.colors.GREEN}};
 }
 
 a,
 a:hover {
-    color: #008F01;
+    color: {{site.data.colors.GREEN}};
 }
 
 img.left {
@@ -114,23 +117,23 @@ img.small {
 }
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover {
-    background-color: #008F01;
+    background-color: {{site.data.colors.GREEN}};
     color: #FFF;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #008F01;
+    color: {{site.data.colors.GREEN}};
 }
 .navbar-toggle,
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-    background-color: #008F01;
+    background-color: {{site.data.colors.GREEN}};
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFF;
 }
 @media (max-width: 767px) {
     .navbar-nav {
-	background-color: #008F01;
+	background-color: {{site.data.colors.GREEN}};
     }
     .navbar-default .navbar-nav > li > a,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -147,7 +150,7 @@ img.small {
     .navbar-default .navbar-nav > .open > a:focus,
     .navbar-default .navbar-nav > .open > a:hover {
 	background-color: #FFF;
-	color: #008F01;
+	color: {{site.data.colors.GREEN}};
 	text-decoration: none;
     }
 }
