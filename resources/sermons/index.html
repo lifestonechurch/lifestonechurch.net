@@ -3,18 +3,35 @@ layout: page
 ---
 
 <style>
+.Sermon {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F4F4F4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-width: 700px;
+  box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.Sermon:hover {
+  text-decoration: none;
+}
 .Sermon__Image {
-  display: inline;
-  width: 100px;
-  margin-right: -100px;
 }
 .Sermon__Image img {
   width: 100px;
 }
 .Sermon__Text {
-  display: inline;
-  margin-left: 120px;
-  height: 100px;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.Sermon__Text p {
+  margin: 0;
+  padding: 0;
+}
+.Sermon__Title {
+  font-size: 1.5em;
+  color: {{site.data.colors.GREEN}};
 }
 </style>
 
@@ -32,16 +49,19 @@ layout: page
 
 {% assign sermons = (site.sermons | sort: 'date') | reverse %}
 {% for post in sermons %}
-<div class="Sermon">
+<a class="Sermon" href="{{post.url}}">
   <div class="Sermon__Image">
-    <a title="{{post.title}}" href="{{post.url}}">
-      {% if post.image %}
-      <img src="{{site.baseurl}}/assets/uploads/podcast/{{post.image}}" />
-      {% else %}
-      <img src="{{site.baseurl}}/assets/images/logo2.jpg" />
-      {% endif %}
-    </a>
+    {% if post.image %}
+    <img src="{{site.baseurl}}/assets/uploads/podcast/{{post.image}}" />
+    {% else %}
+    <img src="{{site.baseurl}}/assets/images/logo2.jpg" />
+    {% endif %}
   </div>
-  <p class="Sermon__Text">{{post.date | date: "%-m/%-d/%y"}} - <a title="{{post.title}}" href="{{post.url}}">{{post.title}}</a></p>
-</div>
+  <div class="Sermon__Text">
+    <p class="Sermon__Title">{{post.title}}</p>
+    <p>{{post.date | date: "%-m/%-d/%y"}}</p>
+    <p>{{post.speaker}}</p>
+    <p>{{post.verse}}</p>
+  </div>
+</a>
 {% endfor %}
