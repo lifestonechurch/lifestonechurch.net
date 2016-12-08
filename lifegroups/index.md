@@ -66,7 +66,8 @@ Check out the details and select the group that works best for your family!
 <p>{{ leader.name }}</p>
 
 {% if leader.image %}<img class="small left rounded" src="{{site.baseurl}}{{ leader.image }}"/>{% endif %}
-<p style="clear: both">{{ leader.description }}</p>
+<p>{{ leader.description }}</p>
+<div style="clear: both;"></div>
 {% endfor %}
 </section>
 {% endfor %}
