@@ -26,37 +26,7 @@
 		{{content}}
 	</div>
 
-	<footer>
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<h4>Sundays 10:30 am</h4>
-						<p>3443 12600 S, Riverton, UT 84065</p>
-						<div class="google-maps">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309.165490217484!2d-111.97396447551098!3d40.52138232511006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3011289953bd878e!2sSouth+Valley+Baptist+Church!5e0!3m2!1sen!2sus!4v1474841111651" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
-					</div>
-					<div class="col-sm-4">
-					</div>
-					<div class="col-sm-4">
-						<p><a href="https://www.facebook.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/facebook.svg" height="15px" width="15px" class="socialMediaIcon"/>lifestonechurchutah</a></p>
-						<p><a href="https://www.instagram.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/instagram.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestonechurchutah</a></p>
-						<p><a href="https://twitter.com/lifestonechurch" target="_blank"><img src="/assets/images/twitter.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestonechurch</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<p>Copyright ©{{ 'now' | date: "%Y" }} <a href="http://www.mountainview-webdesign.com/">Mountainview Web Design</a>- hosted by <a href="https://github.com/Mountainview-WebDesign/lifestonechurch">Github Pages</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	{% include footer.html %}
 
 	<script src="{{ site.baseurl }}/assets/js/audiojs/audio.min.js"></script>
 	<script>
