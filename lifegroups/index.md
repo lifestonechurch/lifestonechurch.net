@@ -12,43 +12,42 @@ layout: page
   padding-bottom: 1em;
   border-bottom: 5px solid {{site.data.colors.GREEN}};
 }
+.Lifegroup__Leader_Section:last-child {
+  border-bottom: none;
+}
+.Lifegroup__Register {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: {{site.data.colors.GREEN}};
+  border-radius: 10px;
+}
+.Lifegroup__Register a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  text-decoration: none;
+}
 </style>
 
 # LifeGroups
 
-![lifegroups]({{ site.baseurl }}/assets/uploads/pages/lifegroups.jpg)
+![lifegroups]({{ site.baseurl }}/assets/uploads/pages/lifegroupRegistrations.png)
 
 {% include bannerHeader.html children='About LifeGroups' %}
 
-Connect to God by connecting to His people & His Word.
+Connect to God by connecting to His people & His Word. LifeGroups are the heart of Lifestone Church. They are small groups of people who meet in homes one night a week in order to connect to God by connecting other people who love Him and to the Bible. This is where spiritual growth happens! Check out the details and select the group that works best for your family!
 
-LifeGroups are the heart of Lifestone Church. They are small groups of people who meet in homes one night a week in order to connect to God by connecting other people who love Him and
- to the Bible. This is where spiritual growth happens!
+{% include bannerHeader.html children='Open LifeGroups' %}
 
- {% if site.data.smallGroups.currentSemester %}Current Semester: {{ site.data.smallGroups.currentSemester }}{% endif %}
-
-#### 5 Reasons to Join a LifeGroup!
-
-1. You will begin to really feel like part of God´s family.
-
-1. You will understand the Bible better in a small group.
-
-1. Prayer will become more meaningful to you.
-
-1. You will have friends with whom to share both your joys and burdens.
-
-1. You will have a natural way to share Jesus with neighbors, friends, relatives, and at co-workers.
-
-Check out the details and select the group that works best for your family!
-
-{% include bannerHeader.html children='Find a LifeGroup' %}
-
+<div>
 {% for group in site.data.smallGroups.lifeGroups %}
+{% if group.link %}
 <div class='Lifegroup__Leader_Section'>
 <h3>{{ group.title }}</h3>
-{% if group.description %}
-  <p>{{ group.description}}</p>
-{% endif %}
+
 <blockquote>
 {{ group.time }}
 <br/>
@@ -57,9 +56,9 @@ Check out the details and select the group that works best for your family!
 {{ group.childcare }}
 </blockquote>
 
-{% if group.startDate %}    
-<h4>Start Date:</h4>    
-<p>{{ group.startDate }}</p>    
+{% if group.startDate %}
+<h4>Start Date:</h4>
+<p>{{ group.startDate }}</p>
 {% endif %}
 
 {% if group.hosts %}
@@ -74,6 +73,23 @@ Check out the details and select the group that works best for your family!
 {% if leader.image %}<img class="small left rounded" src="{{site.baseurl}}{{ leader.image }}"/>{% endif %}
 <p>{{ leader.description }}</p>
 <div style="clear: both;"></div>
+
+<h4>Join this LifeGroup:</h4>
+<div class="Lifegroup__Register">
+  <a href="{{group.link}}" target="_blank">Sign Up</a>
+</div>
+
+<div style="clear: both;"></div>
 {% endfor %}
 </div>
+{% endif %}
 {% endfor %}
+</div>
+
+{% include bannerHeader.html children='5 Reasons to Join a LifeGroup!' %}
+
+1. You will begin to really feel like part of God´s family.
+1. You will understand the Bible better in a small group.
+1. Prayer will become more meaningful to you.
+1. You will have friends with whom to share both your joys and burdens.
+1. You will have a natural way to share Jesus with neighbors, friends, relatives, and at co-workers.
