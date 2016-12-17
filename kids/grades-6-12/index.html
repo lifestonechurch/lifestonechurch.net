@@ -3,18 +3,18 @@ layout: page
 ---
 
 <style>
-    dd {
-      font-size: 18px;
-      color: #008f01;
-      margin: 10px 0px;
-    }
-    dt {
-        margin: 10px 0;
-    }
+dd {
+  font-size: 18px;
+  color: #008f01;
+  margin: 10px 0px;
+}
+dt {
+    margin: 10px 0;
+}
 </style>
 
 <p id="breadcrumbs">
-	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Kids &rsaquo; Grade 6-12
+  <a href="{{ site.baseurl }}/">Home</a> &rsaquo; Kids &rsaquo; Grade 6-12
 </p>
 
 <h1>Grade 6-12</h1>
@@ -27,7 +27,7 @@ layout: page
 {% include bannerHeader.html children='We meet every Wednesday!' %}
 
 {% for group in site.data.smallGroups.youth %}
-	<p>{{ group.time }}- {{ group.people }}- {{ group.address}}</p>
+  <p>{{ group.time }}- {{ group.people }}- {{ group.address}}</p>
 {% endfor %}
 
 <p>

@@ -4,16 +4,16 @@ layout: page
 
 <style>
 .Devotional__Metadata {
-	font-size: 14px;
-	font-style: italic;
-	color: {{site.data.colors.GREY_60}};
-	line-height: 2em;
-	margin-bottom: 20px;
+  font-size: 14px;
+  font-style: italic;
+  color: {{site.data.colors.GREY_60}};
+  line-height: 2em;
+  margin-bottom: 20px;
 }
 </style>
 
 <p id="breadcrumbs">
-	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Resources &rsaquo; <a href="{{ site.baseurl }}/resources/devotionals/">Devotionals</a> &rsaquo; {{page.title}}
+  <a href="{{ site.baseurl }}/">Home</a> &rsaquo; Resources &rsaquo; <a href="{{ site.baseurl }}/resources/devotionals/">Devotionals</a> &rsaquo; {{page.title}}
 
 </p>
 
@@ -22,10 +22,10 @@ layout: page
 {% include date.html postDate=page.date %}
 
 <div class="Devotional__Metadata">
-	<div>{{page.author}}</div>
-	<div>{{date}}</div>
+  <div>{{page.author}}</div>
+  <div>{{date}}</div>
 </div>
 
 <div class="sermon-notes">
-	{{ content }}
+  {{ content }}
 </div>

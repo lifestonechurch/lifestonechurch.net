@@ -3,7 +3,7 @@ layout: page
 ---
 
 <p id="breadcrumbs">
-	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; <a href="{{ site.baseurl }}/lifegroups/">LifeGroups</a>
+  <a href="{{ site.baseurl }}/">Home</a> &rsaquo; <a href="{{ site.baseurl }}/lifegroups/">LifeGroups</a>
 </p>
 
 <style>
@@ -47,7 +47,7 @@ Check out the details and select the group that works best for your family!
 <div class='Lifegroup__Leader_Section'>
 <h3>{{ group.title }}</h3>
 {% if group.description %}
-	<p>{{ group.description}}</p>
+  <p>{{ group.description}}</p>
 {% endif %}
 <blockquote>
 {{ group.time }}
@@ -57,9 +57,9 @@ Check out the details and select the group that works best for your family!
 {{ group.childcare }}
 </blockquote>
 
-{% if group.startDate %}		
-<h4>Start Date:</h4>		
-<p>{{ group.startDate }}</p>		
+{% if group.startDate %}    
+<h4>Start Date:</h4>    
+<p>{{ group.startDate }}</p>    
 {% endif %}
 
 {% if group.hosts %}

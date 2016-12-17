@@ -20,11 +20,11 @@ layout: page
   margin-bottom: 0px;
 }
 .Devotional__Metadata {
-	font-size: 14px;
-	font-style: italic;
-	color: {{site.data.colors.GREY_60}};
-	line-height: 2em;
-	margin-bottom: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: {{site.data.colors.GREY_60}};
+  line-height: 2em;
+  margin-bottom: 10px;
 }
 </style>
 
@@ -40,11 +40,11 @@ layout: page
 {% include date.html postDate=post.date %}
 
 <a class="Devotionals__Post" href="{{post.url}}">
-	 <h3 class="Devotionals__Header">{{post.title}}</h3>
-	 <div class="Devotional__Metadata">
-		 <span>{{date}}</span> - <span>{{post.author}}</span>
-	 </div>
-	 {{post.excerpt}}
-	 <div>Read more</div>
+   <h3 class="Devotionals__Header">{{post.title}}</h3>
+   <div class="Devotional__Metadata">
+     <span>{{date}}</span> - <span>{{post.author}}</span>
+   </div>
+   {{post.excerpt}}
+   <div>Read more</div>
 </a>
 {% endfor %}

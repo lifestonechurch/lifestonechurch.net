@@ -4,44 +4,44 @@ layout: page
 
 <style>
 .sermon-answer {
-    font-style: normal;
-    text-decoration: underline;
+  font-style: normal;
+  text-decoration: underline;
 }
 
 .sermonAnswersToggleButton {
-    margin-bottom: 20px;
-    padding: .5em 1em;
-    border: 0 rgba(0,0,0,0);
-    color: white;
-    background-color: #0078e7;
-    text-decoration: none;
-    border-radius: 2px;
-    cursor: pointer;
+  margin-bottom: 20px;
+  padding: .5em 1em;
+  border: 0 rgba(0,0,0,0);
+  color: white;
+  background-color: #0078e7;
+  text-decoration: none;
+  border-radius: 2px;
+  cursor: pointer;
 }
 </style>
 
 <p id="breadcrumbs">
-	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; Resources &rsaquo; <a href="{{ site.baseurl }}/resources/sermons/">Sermons</a> &rsaquo; {{page.title}}
+  <a href="{{ site.baseurl }}/">Home</a> &rsaquo; Resources &rsaquo; <a href="{{ site.baseurl }}/resources/sermons/">Sermons</a> &rsaquo; {{page.title}}
 
 </p>
 <h1>{{page.title}}</h1>
 
 {% if page.image %}
-	<img src="{{site.baseurl}}/assets/uploads/podcast/{{page.image}}" style="max-width: 300px;" />
+  <img src="{{site.baseurl}}/assets/uploads/podcast/{{page.image}}" style="max-width: 300px;" />
 {% endif %}
 
 {% if page.vimeoId %}
-	{% include vimeoPlayer.html id=page.vimeoId %}
+  {% include vimeoPlayer.html id=page.vimeoId %}
 {% endif %}
 
 {% if page.youtubeId %}
-	{% include youtubePlayer.html id=page.youtubeId %}
+  {% include youtubePlayer.html id=page.youtubeId %}
 {% endif %}
 
 {% if page.link %}
-	{% include audioPlayer.html path=page.link %}
+  {% include audioPlayer.html path=page.link %}
 {% endif %}
 
 <div class="sermon-notes">
-	{{ content }}
+  {{ content }}
 </div>

@@ -4,28 +4,28 @@ layout: page
 
 <style>
 #content h3.question {
-	color: #008f01;
-	font-size: 24;
-	font-weight: bold;
-	cursor: pointer;
-	margin: 0 0 1em 0;
+  color: #008f01;
+  font-size: 24;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0 1em 0;
 }
 .question {
-	cursor: pointer;
+  cursor: pointer;
 }
 .question:hover {
-	color: #008f01;
+  color: #008f01;
 }
 .question.down:before{
-	content: "\25BE";
+  content: "\25BE";
 }
 .question:before{
-	content: "\25B8";
+  content: "\25B8";
 }
 
 .addtocalendar {
-	margin-top: 30px;
-	margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .google-maps {
@@ -44,18 +44,18 @@ layout: page
 </style>
 
 <script>
-	$(document).ready(function() {
-		dynamicFaq();
-	});
-	function dynamicFaq() {
-		$('.answer').hide();
-		$('.question').bind('click', function(){
-				$(this)
-					.toggleClass('down')
-					.next()
-					.toggle();
-			});
-	}
+  $(document).ready(function() {
+    dynamicFaq();
+  });
+  function dynamicFaq() {
+    $('.answer').hide();
+    $('.question').bind('click', function(){
+        $(this)
+          .toggleClass('down')
+          .next()
+          .toggle();
+      });
+  }
 </script>
  <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
 
@@ -75,42 +75,42 @@ layout: page
 <p><b>Easter Egg Hunt</b>- Then we’ll head outside for an Easter egg hunt and pictures with the Easter bunny!</p>
 
 <script type="text/javascript">(function () {
-			if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-			if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
-				 var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-				 s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-				 s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
-				 var h = d[g]('body')[0];h.appendChild(s); }})();
+      if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+      if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+         var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+         s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+         s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+         var h = d[g]('body')[0];h.appendChild(s); }})();
  </script>
 <span class="addtocalendar atc-style-blue">
-	<var class="atc_event">
-	<var class="atc_date_start">2016-03-27 10:30:00</var>
-	<var class="atc_date_end">2016-03-27 12:00:00</var>
-	<var class="atc_timezone">America/Denver</var>
-	<var class="atc_title">Easter Egg Hunt at Lifestone Church</var>
-	<var class="atc_description">Join us for refreshments, music, a short message, and an Easter egg hunt!</var>
-	<var class="atc_location">Providence Hall High School, 4550 W Mount Ogden Peak Dr, Herriman, UT 84096</var>
+  <var class="atc_event">
+  <var class="atc_date_start">2016-03-27 10:30:00</var>
+  <var class="atc_date_end">2016-03-27 12:00:00</var>
+  <var class="atc_timezone">America/Denver</var>
+  <var class="atc_title">Easter Egg Hunt at Lifestone Church</var>
+  <var class="atc_description">Join us for refreshments, music, a short message, and an Easter egg hunt!</var>
+  <var class="atc_location">Providence Hall High School, 4550 W Mount Ogden Peak Dr, Herriman, UT 84096</var>
 </span>
 
 <h3 class="question">What should I wear?</h3>
 <div class="answer">
-	<p>Wear whatever makes you feel comfortable. Many wear casual clothes like jeans, and others dress up a bit.</p>
+  <p>Wear whatever makes you feel comfortable. Many wear casual clothes like jeans, and others dress up a bit.</p>
 </div>
 <h3 class="question">How long will it last?</h3>
 <div class="answer">
-	<p>The service will take about an hour and then the Easter egg hunt will be afterwards.</p>
+  <p>The service will take about an hour and then the Easter egg hunt will be afterwards.</p>
 </div>
 <h3 class="question">What do you believe?</h3>
 <div class="answer">
-	<p>We're a Bible-based Christian Church. We believe in the Bible and we believe in the <a href="{{ site.baseurl }}/best-news-ever/">Gospel</a> or "good news" of Jesus!</p>
+  <p>We're a Bible-based Christian Church. We believe in the Bible and we believe in the <a href="{{ site.baseurl }}/best-news-ever/">Gospel</a> or "good news" of Jesus!</p>
 </div>
 <h3 class="question">Where is the church?</h3>
 <div class="answer">
-	<p>W. Patriot Ridge Dr, 4550 Patriot Ridge Dr<br/>
-		Herriman, UT 84096
-	</p>
+  <p>W. Patriot Ridge Dr, 4550 Patriot Ridge Dr<br/>
+    Herriman, UT 84096
+  </p>
 </div>
 
 <div class="google-maps">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48552.51019027009!2d-111.998542!3d40.48562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e9e6a7e89209dae!2sProvidence+Hall+High+School!5e0!3m2!1sen!2sus!4v1458419271464" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48552.51019027009!2d-111.998542!3d40.48562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e9e6a7e89209dae!2sProvidence+Hall+High+School!5e0!3m2!1sen!2sus!4v1458419271464" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div-->
