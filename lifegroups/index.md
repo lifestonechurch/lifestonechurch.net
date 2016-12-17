@@ -6,6 +6,14 @@ layout: page
 	<a href="{{ site.baseurl }}/">Home</a> &rsaquo; <a href="{{ site.baseurl }}/lifegroups/">LifeGroups</a>
 </p>
 
+<style>
+.Lifegroup__Leader_Section {
+  margin-bottom: 2.5em;
+  padding-bottom: 1em;
+  border-bottom: 5px solid {{site.data.colors.GREEN}};
+}
+</style>
+
 # LifeGroups
 
 ![lifegroups]({{ site.baseurl }}/assets/uploads/pages/lifegroups.jpg)
@@ -36,7 +44,7 @@ Check out the details and select the group that works best for your family!
 {% include bannerHeader.html children='Find a LifeGroup' %}
 
 {% for group in site.data.smallGroups.lifeGroups %}
-<section>
+<div class='Lifegroup__Leader_Section'>
 <h3>{{ group.title }}</h3>
 {% if group.description %}
 	<p>{{ group.description}}</p>
@@ -67,5 +75,5 @@ Check out the details and select the group that works best for your family!
 <p>{{ leader.description }}</p>
 <div style="clear: both;"></div>
 {% endfor %}
-</section>
+</div>
 {% endfor %}
