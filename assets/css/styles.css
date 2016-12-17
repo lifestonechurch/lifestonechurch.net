@@ -56,19 +56,6 @@ h4 {
     margin-top: 1em;
 }
 
-.banner-header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 35px;
-    margin-left: -35px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    font-size: 2em;
-    background-color: {{site.data.colors.GREEN}};
-    color: #FFF;
-}
-
-
 section {
     margin-bottom: 2.5em;
     padding-bottom: 1em;

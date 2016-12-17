@@ -24,7 +24,7 @@ layout: page
 
 <p>We exist to encourage and partner with the parents of Jr./Sr. High students to help guide kids through their spiritual journey.  Our desire is to see students empowered with the message of the gospel so that they find their identity and security in Christ alone.  We meet every Wednesday night to build up and encourage one another with a biblical message so our students can stand firm in their faith and be leaders on our campuses and in our neighborhoods and…. just because its fun!!!  On Sunday mornings the Jr. High &amp; Sr. High students attend church with their parents.</p>
 
-<h2 class="banner-header">We meet every Wednesday!</h2>
+{% include bannerHeader.html children='We meet every Wednesday!' %}
 
 {% for group in site.data.smallGroups.youth %}
 	<p>{{ group.time }}- {{ group.people }}- {{ group.address}}</p>
@@ -37,7 +37,7 @@ Grab your friends and meet us next Wednesday as we continue learning who Jesus r
 {% include events.html title="Events" category="grades-6-12" %}
 
 <!--
-<h2 class="banner-header">Youth Leaders</h2>
+{% include bannerHeader.html children='Youth Leaders' %}
 
 <div class="row">
     <div class="col-xs-6">
