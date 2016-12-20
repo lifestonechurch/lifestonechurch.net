@@ -3,7 +3,7 @@ layout: page
 ---
 
 <style>
-.Sermon {
+.Sermons__Item {
   display: flex;
   justify-content: space-between;
   background-color: #F4F4F4;
@@ -13,23 +13,23 @@ layout: page
   max-width: 700px;
   box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.3);
 }
-.Sermon:hover {
+.Sermons__Item:hover {
   text-decoration: none;
 }
-.Sermon__Image {
+.Sermons__Image {
 }
-.Sermon__Image img {
+.Sermons__Image img {
   width: 100px;
 }
-.Sermon__Text {
+.Sermons__Text {
   flex-grow: 1;
   margin-left: 20px;
 }
-.Sermon__Text p {
+.Sermons__Text p {
   margin: 0;
   padding: 0;
 }
-.Sermon__Title {
+.Sermons__Title {
   font-size: 1.5em;
   color: {{site.data.colors.GREEN}};
 }
@@ -41,27 +41,28 @@ layout: page
 
 <h1>Sermons</h1>
 
-<a href="https://itunes.apple.com/us/podcast/lifestone-church/id968942229"><img src="{{ site.baseurl }}/assets/images/itunes.png" style="float: left; width: 100px" /></a>
-
-<a href="{{ site.baseurl }}/feed.rss"><img src="{{ site.baseurl }}/assets/images/rss.png" style="float: left; margin-left: 10px; width: 36px;" /></a>
-
-<div class="cl"></div>
+<div>
+  <a href="https://itunes.apple.com/us/podcast/lifestone-church/id968942229"><img src="{{ site.baseurl }}/assets/images/itunes.png" style="width: 100px" /></a>
+  <a href="{{ site.baseurl }}/feed.rss"><img src="{{ site.baseurl }}/assets/images/rss.png" style="margin-left: 10px; width: 36px;" /></a>
+</div>
 
 {% assign sermons = (site.sermons | sort: 'date') | reverse %}
 {% for post in sermons %}
-<a class="Sermon" href="{{post.url}}">
-  <div class="Sermon__Image">
+<div>
+<a class="Sermons__Item" href="{{post.url}}">
+  <div class="Sermons__Image">
     {% if post.image %}
     <img src="{{site.baseurl}}/assets/uploads/podcast/{{post.image}}" />
     {% else %}
     <img src="{{site.baseurl}}/assets/images/logo2.jpg" />
     {% endif %}
   </div>
-  <div class="Sermon__Text">
-    <p class="Sermon__Title">{{post.title}}</p>
+  <div class="Sermons__Text">
+    <p class="Sermons__Title">{{post.title}}</p>
     <p>{{post.date | date: "%-m/%-d/%y"}}</p>
     <p>{{post.speaker}}</p>
     <p>{{post.verse}}</p>
   </div>
 </a>
+</div>
 {% endfor %}
