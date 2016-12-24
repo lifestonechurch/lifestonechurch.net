@@ -1,0 +1,19 @@
+<style>
+.Card {
+  display: block;
+  background-color: {{site.data.colors.GREY_5}};
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-width: 700px;
+  box-shadow: 4px 4px 2px 0px {{site.data.colors.GREY_30}};
+}
+.Card:hover {
+  text-decoration: none;
+}
+</style>
+
+
+<a class="Card" href="{{include.url}}">
+  {{include.children}}
+</a>

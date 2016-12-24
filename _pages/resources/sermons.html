@@ -6,17 +6,6 @@ layout: page
 .Sermons__Item {
   display: flex;
   justify-content: space-between;
-  background-color: #F4F4F4;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
-  max-width: 700px;
-  box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.3);
-}
-.Sermons__Item:hover {
-  text-decoration: none;
-}
-.Sermons__Image {
 }
 .Sermons__Image img {
   width: 100px;
@@ -48,8 +37,10 @@ layout: page
 
 {% assign sermons = (site.sermons | sort: 'date') | reverse %}
 {% for post in sermons %}
-<div>
-<a class="Sermons__Item" href="{{post.url}}">
+
+
+{% capture cardContent %}
+<div class="Sermons__Item">
   <div class="Sermons__Image">
     {% if post.image %}
     <img src="{{site.baseurl}}/assets/uploads/podcast/{{post.image}}" />
@@ -63,6 +54,9 @@ layout: page
     <p>{{post.speaker}}</p>
     <p>{{post.verse}}</p>
   </div>
-</a>
 </div>
+{% endcapture %}
+
+{% include card.html url=post.url children=cardContent %}
+
 {% endfor %}

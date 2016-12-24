@@ -3,28 +3,9 @@ layout: page
 ---
 
 <style>
-.Devotionals__Post {
-  display: block;
-  background-color: {{site.data.colors.GREY_5}};
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
-  max-width: 700px;
-  box-shadow: 4px 4px 2px 0px {{site.data.colors.GREY_30}};
-}
-.Devotionals__Post:hover {
-  text-decoration: none;
-}
 .Devotionals__Header {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-.Devotional__Metadata {
-  font-size: 14px;
-  font-style: italic;
-  color: {{site.data.colors.GREY_60}};
-  line-height: 2em;
-  margin-bottom: 10px;
 }
 </style>
 
@@ -39,12 +20,18 @@ layout: page
 
 {% include date.html postDate=post.date %}
 
-<a class="Devotionals__Post" href="{{post.url}}">
-   <h3 class="Devotionals__Header">{{post.title}}</h3>
-   <div class="Devotional__Metadata">
-     <span>{{date}}</span> - <span>{{post.author}}</span>
-   </div>
-   {{post.excerpt}}
-   <div>Read more</div>
-</a>
+{% capture metadata %}
+  <span>{{date}}</span> - <span>{{post.author}}</span>
+{% endcapture %}
+
+{% capture cardContent %}
+<div>
+  <h3 class="Devotionals__Header">{{post.title}}</h3>
+  {% include metadata.html children=metadata %}
+  {{post.excerpt}}
+  <div>Read more</div>
+</div>
+{% endcapture %}
+{% include card.html url=post.url children=cardContent %}
+
 {% endfor %}
