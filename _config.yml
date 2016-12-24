@@ -11,7 +11,6 @@ collections:
     output: true
     permalink: "/resources/devotionals/:title/"
   events:
-    layout: events
     output: true
     permalink: /events/:path/
   sermons:
@@ -22,7 +21,6 @@ collections:
     title: Redirects
     output: true
     permalink: "/:path/"
-    layout: redirect
 defaults:
   - scope:
       path: ''
@@ -33,7 +31,7 @@ defaults:
     scope:
       type: events
     values:
-      layout: events
+      layout: page
   - scope:
       path: ''
       type: redirects

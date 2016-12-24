@@ -10,7 +10,6 @@ description: Are you currently transitioning or considering the transition from 
   <a href="{{ site.baseurl }}/">Home</a> &rsaquo; <a href="{{ site.baseurl }}/events/">Events</a> &rsaquo; {{page.title}}
 </p>
 
-
 Are you currently transitioning or considering the transition from religion to Biblical Christianity? Join others who are on the same journey and receive essential information and amazing support as you begin to navigate God's perfect grace!
 
 Monday Evenings Beginning January 23rd
