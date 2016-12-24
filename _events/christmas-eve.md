@@ -1,5 +1,7 @@
 ---
-layout: page
+title: Christmas Eve Service
+date: 2016-12-24
+description: Make plans for your entire family to celebrate with us this year.
 ---
 
 <img style="width: 100%;" src="{{site.baseurl}}/assets/uploads/pages/gifts-of-christmas.png"/>

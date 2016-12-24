@@ -12,7 +12,8 @@ title: Events
 
 <h2>Events</h2>
 
-{% for event in site.events %}
+{% assign events = site.events | sort: "date" %}
+{% for event in events reversed %}
   {% capture newMonth %}{{ event.date | date:"%B" }}{% endcapture %}
 
   {% if newMonth != oldMonth %}
