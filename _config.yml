@@ -10,6 +10,10 @@ collections:
     title: Devotionals
     output: true
     permalink: "/resources/devotionals/:title/"
+  events:
+    layout: events
+    output: true
+    permalink: /events/:path/
   sermons:
     title: Sermons
     output: true
@@ -20,26 +24,31 @@ collections:
     permalink: "/:path/"
     layout: redirect
 defaults:
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
-- scope:
-    path: ''
-    type: redirects
-  values:
-    layout: redirect
-- scope:
-    path: ''
-    type: devotionals
-  values:
-    layout: devotional
-- scope:
-    path: ''
-    type: sermons
-  values:
-    layout: sermon
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      type: events
+    values:
+      layout: events
+  - scope:
+      path: ''
+      type: redirects
+    values:
+      layout: redirect
+  - scope:
+      path: ''
+      type: devotionals
+    values:
+      layout: devotional
+  - scope:
+      path: ''
+      type: sermons
+    values:
+      layout: sermon
 baseurl: 
 url: http://www.lifestonechurch.net
 description: A Bible-based church in Herriman, Utah.
@@ -51,4 +60,3 @@ squareLogo: assets/images/logo2.jpg
 podcastSubtitle: Messages from Sunday morning worship at Lifestone Church
 permalink: "/:categories/:title/"
 google_analytics_code: UA-44899328-1
-
