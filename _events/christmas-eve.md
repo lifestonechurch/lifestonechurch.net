@@ -4,6 +4,8 @@ date: 2016-12-24
 description: Make plans for your entire family to celebrate with us this year.
 ---
 
+# {{page.title}}
+
 <p id="breadcrumbs">
   <a href="{{ site.baseurl }}/">Home</a> &rsaquo; <a href="{{ site.baseurl }}/events/">Events</a> &rsaquo; {{page.title}}
 </p>

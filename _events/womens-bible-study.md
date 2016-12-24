@@ -5,6 +5,8 @@ ongoing: true
 description: Join us for the exciting Old Testament story of Queen Esther...
 ---
 
+# {{page.title}}
+
 <p id="breadcrumbs">
   <a href="{{ site.baseurl }}/">Home</a> &rsaquo; <a href="{{ site.baseurl }}/events/">Events</a> &rsaquo; {{page.title}}
 </p>

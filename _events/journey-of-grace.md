@@ -6,6 +6,8 @@ ongoing: true
 description: Are you currently transitioning or considering the transition from religion to Biblical Christianity?
 ---
 
+# {{page.title}}
+
 <p id="breadcrumbs">
   <a href="{{ site.baseurl }}/">Home</a> &rsaquo; <a href="{{ site.baseurl }}/events/">Events</a> &rsaquo; {{page.title}}
 </p>
