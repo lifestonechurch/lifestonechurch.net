@@ -1,6 +1,8 @@
 ---
 title: Women's Bible Study
 date: 2016-01-23
+ongoing: true
+description: Join us for the exciting Old Testament story of Queen Esther...
 ---
 
 <p id="breadcrumbs">
