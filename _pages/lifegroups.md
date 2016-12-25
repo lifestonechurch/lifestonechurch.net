@@ -63,7 +63,6 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 
 {% include button.html link=group.link newTab=true label='Sign Up' %}
 
-<div style="clear: both;"></div>
 {% endfor %}
 </div>
 {% endif %}
