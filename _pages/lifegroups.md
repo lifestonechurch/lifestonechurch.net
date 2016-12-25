@@ -15,21 +15,6 @@ layout: page
 .Lifegroup__Leader_Section:last-child {
   border-bottom: none;
 }
-.Lifegroup__Register {
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  background: {{site.data.colors.GREEN}};
-  border-radius: 10px;
-}
-.Lifegroup__Register a {
-  display: block;
-  height: 100%;
-  width: 100%;
-  color: #FFF;
-  text-decoration: none;
-}
 </style>
 
 # LifeGroups
@@ -75,9 +60,8 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 <div style="clear: both;"></div>
 
 <h4>Join this LifeGroup:</h4>
-<div class="Lifegroup__Register">
-  <a href="{{group.link}}" target="_blank">Sign Up</a>
-</div>
+
+{% include button.html link=group.link newTab=true label='Sign Up' %}
 
 <div style="clear: both;"></div>
 {% endfor %}
