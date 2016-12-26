@@ -1,9 +1,10 @@
 ---
 layout: page
+title: LifeGroups
 ---
 
 <p id="breadcrumbs">
-  <a href="{{ site.baseurl }}/">Home</a> &rsaquo; <a href="{{ site.baseurl }}/lifegroups/">LifeGroups</a>
+  <a href="{{ site.baseurl }}/">Home</a> &rsaquo; {{page.title}}
 </p>
 
 <style>
