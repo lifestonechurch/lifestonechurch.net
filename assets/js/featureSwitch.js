@@ -14,6 +14,14 @@ var featureSwitch = (function() {
     return qd;
   }
 
+  function on(feature) {
+   return localStorage['_on='+feature] === 'true';
+  }
+
+  function off(feature) {
+   return !on(feature);
+  }
+
   var featuresOn = getQueryStringValues('_on');
   if (featuresOn) {
     featuresOn.map(function(value) {
@@ -27,4 +35,9 @@ var featureSwitch = (function() {
       localStorage.removeItem('_on='+value)
     });
   }
+
+  return {
+    on: on,
+    off: off,
+  };
 }());
