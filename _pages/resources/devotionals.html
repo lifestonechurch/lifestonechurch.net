@@ -28,7 +28,7 @@ layout: page
 <div>
   <h3 class="Devotionals__Header">{{post.title}}</h3>
   {% include metadata.html children=metadata %}
-  {{post.excerpt}}
+  <p>{{ post.excerpt | strip_html }}</p>
   <div>Read more</div>
 </div>
 {% endcapture %}

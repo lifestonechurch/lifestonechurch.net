@@ -3,7 +3,7 @@ title: Jumping Jacks For Jesus
 author: Pastor Sam Coleman
 ---
 
-What Are Your Family Christmas Traditions?
+## What Are Your Family Christmas Traditions?
 
 I remember a story from Pastor Andy Hornbaker (former Pastor of Holladay Baptist now called Risen Life Church) of a young man in the youth group or youth camp who had asked to preach and was very nervous because it was his first sermon. In the middle of his preaching the fellow decided to do some jumping jacks for Jesus and now Pastor Andy was nervous. Turns out jumping jacks for Jesus was exactly what that sermon needed and it calmed everyone down and turned out to be a pretty good message. Sometimes when I'm preaching and I start to see people nodding off I am tempted to maybe do a few of those jumping jacks for Jesus myself.
 
