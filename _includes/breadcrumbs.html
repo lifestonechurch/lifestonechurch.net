@@ -1,0 +1,22 @@
+<div>
+  <span><a href="{{site.baseurl}}/">Home</a></span>
+  {% assign crumbs = page.url | split: '/' %}
+  {% assign lastIndex = crumbs | size | minus: 2 %}
+  {% assign index=0 %}
+  {% assign currentPath = site.baseurl %}
+  {% for crumb in crumbs offset:1 %}
+    {% unless crumb == 'index.html' %}
+    {% assign currentPath=currentPath | append: crumb | append: '/' | remove: '.html' %}
+    <span><span>&rsaquo;</span>
+      {% if index > 0 and index != lastIndex %}<a href="{{site.baseurl}}/{{currentPath}}">{% endif %}
+        {% if index == lastIndex and page.title %}
+          {{page.title}}
+        {% else %}
+          {{ crumb | remove: '.html' | capitalize }}
+        {% endif %}
+        {% if index > 0 and index != lastIndex %}</a>{% endif %}
+    </span>
+    {% endunless %}
+    {% assign index=index | plus:1 %}
+  {% endfor %}
+</div>

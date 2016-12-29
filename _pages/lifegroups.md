@@ -3,10 +3,6 @@ layout: page
 title: LifeGroups
 ---
 
-<p id="breadcrumbs">
-  <a href="{{ site.baseurl }}/">Home</a> &rsaquo; {{page.title}}
-</p>
-
 <style>
 .Lifegroup__Leader_Section {
   margin-bottom: 2.5em;
@@ -17,8 +13,6 @@ title: LifeGroups
   border-bottom: none;
 }
 </style>
-
-# LifeGroups
 
 ![lifegroups]({{ site.baseurl }}/assets/uploads/pages/lifegroupRegistrations.png)
 
