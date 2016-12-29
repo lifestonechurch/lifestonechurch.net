@@ -1,0 +1,5 @@
+SIZES:
+  - name: 'small'
+    size: 200
+  - name: 'medium'
+    size: 300

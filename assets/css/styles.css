@@ -32,52 +32,33 @@ p {
 
 ,
 input {
-   margin-top: 0.5em;
-   margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 h1,h2,h3,h4,h5,h6,dd {
-   font-family: 'Droid Serif', serif;
+  font-family: 'Droid Serif', serif;
 }
 
 h1 {
-   font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 h2 {
-   font-size: 2em;
+  font-size: 2em;
 }
 
 h3 {
-   font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h4 {
-   font-size: 1.25em;
-   margin-top: 1em;
+  font-size: 1.25em;
+  margin-top: 1em;
 }
 
 a,
 a:hover {
-   color: {{site.data.colors.GREEN}};
+  color: {{site.data.colors.GREEN}};
 }
 
-img.left {
-   float: left;
-   margin-right: 2em;
-}
-
-img.center {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-img.rounded {
-   border-radius: 50%;
-   shape-outside: circle();
-}
-
-img.small {
-   max-width: 200px;
-}

@@ -1,0 +1,31 @@
+<style>
+img.left {
+  float: left;
+  margin-right: 2em;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.rounded {
+  border-radius: 50%;
+  shape-outside: circle();
+}
+
+{% for size in site.data.images.SIZES %}
+img.{{size.name}} {
+  max-width: {{size.size}}px;
+}
+{% endfor %}
+
+</style>
+
+<img class="
+  {{include.size}}
+  {{include.position}}
+  {% if include.rounded %}rounded{% endif %}
+"
+src="{{site.baseurl}}{{ include.url }}"/>

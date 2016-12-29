@@ -56,7 +56,9 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 {% for leader in group.leaders %}
 <p>{{ leader.name }}</p>
 
-{% if leader.image %}<img class="small left rounded" src="{{site.baseurl}}{{ leader.image }}"/>{% endif %}
+{% if leader.image %}
+{% include image.html url=leader.image rounded=true size='small' position='left' %}
+{% endif %}
 <p>{{ leader.description }}</p>
 <div style="clear: both;"></div>
 
