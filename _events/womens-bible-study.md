@@ -5,12 +5,6 @@ ongoing: true
 description: Join us for the exciting Old Testament story of Queen Esther...
 ---
 
-# {{page.title}}
-
-<p id="breadcrumbs">
-  <a href="{{ site.baseurl }}/">Home</a> &rsaquo; <a href="{{ site.baseurl }}/events/">Events</a> &rsaquo; {{page.title}}
-</p>
-
 Join us for the exciting Old Testament story of Queen Esther, a biography of courage with many modern parallels for today's overloaded and stressed woman. Esther, while a queen, lived as an outsider in a hostile environment. We will learn strong lessons of faith, providence, and hope and be equipped to live them out courageously "for such a time as this"!
 
 ### We are excited to offer 2 groups this session:
