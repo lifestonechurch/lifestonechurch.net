@@ -2,26 +2,9 @@
 layout: page
 ---
 
-<style>
-.sermon-answer {
-  font-style: normal;
-  text-decoration: underline;
-}
-
-.sermonAnswersToggleButton {
-  margin-bottom: 20px;
-  padding: .5em 1em;
-  border: 0 rgba(0,0,0,0);
-  color: white;
-  background-color: #0078e7;
-  text-decoration: none;
-  border-radius: 2px;
-  cursor: pointer;
-}
-</style>
-
 {% if page.image %}
   <img src="{{site.baseurl}}/assets/uploads/podcast/{{page.image}}" style="max-width: 300px;" />
+  {% include image.html size="medium" %}
 {% endif %}
 
 {% if page.vimeoId %}
@@ -36,6 +19,6 @@ layout: page
   {% include audioPlayer.html path=page.link %}
 {% endif %}
 
-<div class="sermon-notes">
-  {{ content }}
+<div>
+  {{content}}
 </div>
