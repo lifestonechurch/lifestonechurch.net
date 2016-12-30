@@ -4,9 +4,13 @@ title: Devotionals
 ---
 
 <style>
-.Devotionals__Header {
+.Devotionals__Title {
   margin-top: 0px;
   margin-bottom: 0px;
+  color: {{site.data.colors.GREEN}};
+}
+.Devotionals__ReadMore {
+  color: {{site.data.colors.GREEN}};
 }
 </style>
 
@@ -21,10 +25,10 @@ title: Devotionals
 
 {% capture cardContent %}
 <div>
-  <h3 class="Devotionals__Header">{{post.title}}</h3>
+  <h3 class="Devotionals__Title">{{post.title}}</h3>
   {% include metadata.html children=metadata %}
   <p>{{ post.excerpt | strip_html }}</p>
-  <div>Read more</div>
+  <div class="Devotionals__ReadMore">Read more</div>
 </div>
 {% endcapture %}
 {% include card.html url=post.url children=cardContent %}
