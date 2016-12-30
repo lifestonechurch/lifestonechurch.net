@@ -2,23 +2,15 @@
 layout: page
 ---
 
-<style>
-.Devotional__Metadata {
-  font-size: 14px;
-  font-style: italic;
-  color: {{site.data.colors.GREY_60}};
-  line-height: 2em;
-  margin-bottom: 20px;
-}
-</style>
-
 {% include date.html postDate=page.date %}
 
-<div class="Devotional__Metadata">
+{% capture metadata %}
   <div>{{page.author}}</div>
   <div>{{date}}</div>
-</div>
+{% endcapture %}
 
-<div class="sermon-notes">
+{% include metadata.html children=metadata %}
+
+<div>
   {{ content }}
 </div>
