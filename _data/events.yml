@@ -6,3 +6,33 @@ churchwide:
     date: 2016-01-23
     name: Ladies Bible study begins
 grades-6-12:
+  -
+    date: 2017-01-04
+    name: Begin “Identity” Bible Study series
+  -
+    date: 2017-01-18
+    name: Serve @ Ronald McDonald House
+  -
+    date: 2017-02-08
+    name: Sledding @ Rosecrest Park
+  -
+    date: 2017-03-15
+    name: Easter Egg Stuffing Party
+  -
+    date: 2017-03-24
+    endDate: 2017-03-25
+    name: Spring Fling
+  -
+    month: April
+    name: Serve @ Pregnancy Resource Center
+  -
+    month: May
+    name: Serve @ Holding out Help
+  -
+    date: 2016-06-18
+    endDate: 2016-06-22
+    name: High School Youth Camp
+  -
+    date: 2016-06-22
+    endDate: 2016-06-25
+    name: Junior High Youth Camp
