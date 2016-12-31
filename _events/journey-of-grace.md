@@ -1,7 +1,7 @@
 ---
 title: Journey of Grace
 embed: https://lifestonechurch.breezechms.com/form/86154a3498
-date: 2016-01-23
+startDate: 2017-01-23
 ongoing: true
 description: Are you currently transitioning or considering the transition from religion to Biblical Christianity?
 ---

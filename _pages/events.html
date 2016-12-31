@@ -5,9 +5,9 @@ title: Events
 
 <div></div>
 
-{% assign events = site.events | sort: "date" %}
-{% for event in events reversed %}
-  {% capture newMonth %}{{ event.date | date:"%B" }}{% endcapture %}
+{% assign events = site.events | sort: "startDate" %}
+{% for event in events %}
+  {% capture newMonth %}{{ event.startDate | date:"%B" }}{% endcapture %}
 
   {% if newMonth != oldMonth %}
   {% include bannerHeader.html children=newMonth %}
@@ -15,7 +15,7 @@ title: Events
 
 
   {% capture metadata %}
-  <span>{% if event.ongoing == true %}Starting {% endif %}{{ event.date | date:"%b %-d" }}{% if event.end-date %}-{{ event.end-date | date:"%-d" }}{% endif %}</span>
+  <span>{% if event.ongoing == true %}Starting {% endif %}{{ event.startDate | date:"%b %-d" }}{% if event.endDate %}-{{ event.endDate | date:"%-d" }}{% endif %}</span>
   {% endcapture %}
 
   {% capture cardContent %}

@@ -1,9 +1,13 @@
 churchwide:
   -
-    date: 2016-01-01
+    date: 2017-01-01
     name: Baptism
   -
-    date: 2016-01-23
+    date: 2017-01-13
+    name: Men's Go Kart Event
+    link: /events/go-kart-racing/
+  -
+    date: 2017-01-23
     name: Ladies Bible study begins
 grades-6-12:
   -
@@ -29,10 +33,10 @@ grades-6-12:
     month: May
     name: Serve @ Holding out Help
   -
-    date: 2016-06-18
-    endDate: 2016-06-22
+    date: 2017-06-18
+    endDate: 2017-06-22
     name: High School Youth Camp
   -
-    date: 2016-06-22
-    endDate: 2016-06-25
+    date: 2017-06-22
+    endDate: 2017-06-25
     name: Junior High Youth Camp
