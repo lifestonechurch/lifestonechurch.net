@@ -24,8 +24,10 @@ img.{{size.name}} {
 </style>
 
 <img class="
-  {{include.size}}
-  {{include.position}}
-  {% if include.rounded %}rounded{% endif %}
-"
-src="{{site.baseurl}}{{ include.url }}"/>
+    {{include.size}}
+    {{include.position}}
+    {% if include.rounded %}rounded{% endif %}
+  "
+  src="{{site.baseurl}}{{ include.url }}"
+  alt="{{include.alt}}"
+/>
