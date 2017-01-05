@@ -41,7 +41,9 @@ grades-6-12:
     date: 2017-06-18
     endDate: 2017-06-22
     name: High School Youth Camp
+    link: /events/youth-camp/
   -
     date: 2017-06-22
     endDate: 2017-06-25
     name: Junior High Youth Camp
+    link: /events/youth-camp/
