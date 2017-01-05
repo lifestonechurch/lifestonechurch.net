@@ -1,5 +1,8 @@
 <style>
 .Button {
+  display: block;
+}
+.Button__Button {
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -17,5 +20,7 @@
 </style>
 
 <div class="Button">
-  <a href="{{include.link}}" {% if include.newTab %}target="_blank" {% endif %}>{{include.label}}</a>
+  <div class="Button__Button">
+    <a href="{{include.link}}" {% if include.newTab %}target="_blank" {% endif %}>{{include.label}}</a>
+  </div>
 </div>
