@@ -23,7 +23,7 @@
     <a href="{{ site.baseurl }}{{ post.url}}">
       <img id="youtube-{{ post.youtubeId }}" src="{{ site.baseurl }}/assets/images/defaultLatestMessage.gif" alt="{{ video.title }}" />
       <div class='latest-sermon-text'>
-        <h4>{{ post.title }}</h4>
+        {% include header.html level='4' children=post.title %}
         {{ post.verse }}
       </div>
     </a>

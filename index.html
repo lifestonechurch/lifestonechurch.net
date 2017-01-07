@@ -7,11 +7,11 @@ layout: default
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      {% include bannerHeader.html children='Welcome!' %}
+      {% include header.html level='2' banner=true children='Welcome!' %}
       <p>We’re a <span style="color: #000000;">Bible based church</span> in Riverton, Utah. We would love for you to <a title="I’m New" href="{{ site.baseurl }}/visit/">visit us</a>!</span></p>
     </div>
     <div class="col-sm-4">
-      {% include bannerHeader.html children='Latest Message' %}
+      {% include header.html level='2' banner=true children='Latest Message' %}
       {% include latestSermon.html %}
     </div>
     <div class="col-sm-4">

@@ -10,7 +10,7 @@ title: Events
   {% capture newMonth %}{{ event.startDate | date:"%B" }}{% endcapture %}
 
   {% if newMonth != oldMonth %}
-  {% include bannerHeader.html children=newMonth %}
+  {% include header.html level='2' banner=true children=newMonth %}
   {% endif %}
 
 
@@ -20,7 +20,7 @@ title: Events
 
   {% capture cardContent %}
   <div>
-    <h3>{{ event.title }}</h3>
+    {% include header.html level='3' children=event.title %}
     {% include metadata.html children=metadata %}
     {% if event.description %}<p>{{ event.description }}</p>{% endif %}
   </div>

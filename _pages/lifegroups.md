@@ -16,17 +16,17 @@ title: LifeGroups
 
 ![lifegroups]({{ site.baseurl }}/assets/uploads/pages/lifegroupRegistrations.png)
 
-{% include bannerHeader.html children='About LifeGroups' %}
+{% include header.html level='2' banner=true children='About LifeGroups' %}
 
 Connect to God by connecting to His people & His Word! LifeGroups are the heart of Lifestone Church. LifeGroups are small groups of people who meet once a week in order to connect to God by connecting to other people who love Him and to the Bible. This is where spiritual growth happens! Check out the details and select the group that works best for your family.
 
-{% include bannerHeader.html children='Open LifeGroups' %}
+{% include header.html level='2' banner=true children='Open LifeGroups' %}
 
 <div>
 {% for group in site.data.smallGroups.lifeGroups %}
 {% if group.link %}
 <div class='Lifegroup__Leader_Section'>
-<h3>{{ group.title }}</h3>
+{% include header.html level='3' children=group.title %}
 
 <blockquote>
 {{ group.time }}
@@ -37,16 +37,16 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 </blockquote>
 
 {% if group.startDate %}
-<h4>Start Date:</h4>
+{% include header.html level='4' children='Start Date:' %}
 <p>{{ group.startDate }}</p>
 {% endif %}
 
 {% if group.hosts %}
-<h4>Hosts:</h4>
+{% include header.html level='4' children='Hosts:' %}
 <p>{{ group.hosts }}</p>
 {% endif %}
 
-<h4>Leaders:</h4>
+{% include header.html level='4' children='Leaders:' %}
 {% for leader in group.leaders %}
 <p>{{ leader.name }}</p>
 
@@ -56,7 +56,7 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 <p>{{ leader.description }}</p>
 <div style="clear: both;"></div>
 
-<h4>Join this LifeGroup:</h4>
+{% include header.html level='4' children='Join this LifeGroup:' %}
 
 {% include button.html link=group.link newTab=true label='Sign Up' %}
 
@@ -66,7 +66,7 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 {% endfor %}
 </div>
 
-{% include bannerHeader.html children='5 Reasons to Join a LifeGroup!' %}
+{% include header.html level='2' banner=true children='5 Reasons to Join a LifeGroup!' %}
 
 1. You will begin to really feel like part of God´s family.
 1. You will understand the Bible better in a small group.

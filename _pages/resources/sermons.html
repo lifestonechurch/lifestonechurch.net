@@ -21,7 +21,6 @@ title: Sermons
   padding: 0;
 }
 .Sermons__Title {
-  font-size: 1.5em;
   color: {{site.data.colors.GREEN}};
 }
 </style>
@@ -45,7 +44,9 @@ title: Sermons
     {% endif %}
   </div>
   <div class="Sermons__Text">
-    <h3 class="Sermons__Title">{{post.title}}</h3>
+    <div class="Sermons__Title">
+      {% include header.html level='3' children=post.title %}
+    </div>
     <p>{{post.date | date: "%-m/%-d/%y"}}</p>
     <p>{{post.speaker}}</p>
     <p>{{post.verse}}</p>

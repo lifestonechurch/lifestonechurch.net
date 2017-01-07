@@ -1,6 +1,6 @@
 <dl>
   {% if site.data.events[include.category] %}
-    {% include bannerHeader.html children=include.title %}
+    {% include header.html level='2' banner=true children=include.title %}
     {% for event in site.data.events[include.category] %}
       {% capture newMonth %}{% if event.date %}{{ event.date | date:"%B" }}{% else %}{{event.month}}{% endif %}{% endcapture %}
       {% if newMonth != oldMonth %}

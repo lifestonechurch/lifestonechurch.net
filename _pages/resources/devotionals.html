@@ -25,7 +25,9 @@ title: Devotionals
 
 {% capture cardContent %}
 <div>
-  <h3 class="Devotionals__Title">{{post.title}}</h3>
+  <div class="Devotionals__Title">
+    {% include header.html level='3' children=post.title %}
+  </div>
   {% include metadata.html children=metadata %}
   <p>{{ post.excerpt | strip_html }}</p>
   <div class="Devotionals__ReadMore">Read more</div>
