@@ -43,20 +43,26 @@
   text-decoration: none;
   color: #fff;
 }
+
+@media (max-width: 767px) {
+  .Footer__Top_Column {
+    padding-bottom: 30px;
+  }
+}
 </style>
 
 <div class="Footer">
   <div class="Footer__Top">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="Footer__Top_Column col-sm-4">
           {% include header.html level='4' children='Sundays 10:30 am' %}
           <p>3443 12600 S, Riverton, UT 84065</p>
           {% include googleMap.html %}
         </div>
-        <div class="col-sm-4">
+        <div class="Footer__Top_Column col-sm-4">
         </div>
-        <div class="col-sm-4">
+        <div class="Footer__Top_Column col-sm-4">
           <p><a href="https://www.facebook.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/facebook.svg" height="15px" width="15px" class="socialMediaIcon"/>lifestonechurchutah</a></p>
           <p><a href="https://www.instagram.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/instagram.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestonechurchutah</a></p>
           <p><a href="https://twitter.com/lifestonechurch" target="_blank"><img src="/assets/images/twitter.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestonechurch</a></p>
