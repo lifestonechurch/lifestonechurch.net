@@ -29,7 +29,7 @@ title: Devotionals
     {% include header.html level='3' children=post.title %}
   </div>
   {% include metadata.html children=metadata %}
-  <p>{{ post.excerpt | strip_html }}</p>
+  <p>{% if post.description %}{{post.description}}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
   <div class="Devotionals__ReadMore">Read more</div>
 </div>
 {% endcapture %}
