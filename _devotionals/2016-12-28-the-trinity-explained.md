@@ -22,7 +22,10 @@ As soon as we introduce the concept of created God we have to ask the question: 
 
 The Christian concept of God starts with a God who was never created:
 
-Isaiah 43:10 "You are my witnesses," declares the LORD, "and my servant whom I have chosen, that you may know and believe me and understand that I am he. Before me no god was formed, nor shall there be any after me.
+{: .BibleQuote}
+Isaiah 43:10<br/>
+"You are my witnesses," declares the LORD, "and my servant whom I have chosen, that you may know and believe me and understand that I am he. Before me no god was formed, nor shall there be any after me.
+
 In Isaiah 45-46 **seven times God says He is LORD** and "**there is no other**" he created the universe.
 
 Thanks to the Dead Sea Scrolls (DSS) we as Christians have something old to say about Isaiah. The DSS tell us the Bible has not been corrupted over time - pretty much what we had in 250 BC is what we have in 900 AD (date of oldest complete Masoretic Text) which is what we have in 2017+ AD - it has not changed or been corrupted or tampered with. If you can not get your new revelation to agree with the reliable Word of God and a God who does not by nature change over time, you naturally have to teach the Word of God has been corrupted or change the context of what is being taught in Isaiah. These are both current trends in many churches today.
@@ -45,11 +48,21 @@ Same God different manifestations does not fit with what Jesus teaches in any pa
 
 When the Holy Spirit came at Pentecost they had the full power to abide in Jesus . . ."But if Christ is in you" (Rom. 8:10) for all who are led by the Spirit of God are sons of God (Rom. 8:14) by whom we cry, "Abba! Father!"(Gal. 4:6) - Even the Holy Spirit is teaching us the distinctions of the Godhead. They are not mere manifestations of the same person and to teach that runs counter to Christ's clear teaching of the person distinctions and unity of God as one - which Jesus did teach.
 
-John 6:46 not that anyone has seen the Father except he who is from God; he has seen the Father.
+{: .BibleQuote}
+John 6:46<br/>
+not that anyone has seen the Father except he who is from God; he has seen the Father.
 
-John 8:38 I speak of what I have seen with my Father . . ."
+{: .BibleQuote}
+John 8:38<br/>
+I speak of what I have seen with my Father . . ."
 
-John 8:42 Jesus said to them, "If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. Jesus is God but He is not the Father - he has an eternal and perfect relationship with this person of the Trinity. Mark 13:32 "But concerning that day or that hour, no one knows, not even the angels in heaven, nor the Son, but only the Father.
+{: .BibleQuote}
+John 8:42<br/>
+Jesus said to them, "If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. Jesus is God but He is not the Father - he has an eternal and perfect relationship with this person of the Trinity.
+
+{: .BibleQuote}
+Mark 13:32<br/>
+"But concerning that day or that hour, no one knows, not even the angels in heaven, nor the Son, but only the Father.
 
 The New Testament teaching is consistent in revealing the Trinity - One God in Three persons. When I look at Jesus I get to see the non-visible Father because He represents Him so well in word, deed, purpose and essence (Being). Jesus miracles are performed in the Power of the Holy Spirit (Matt. 12) and His teaching is done through the Holy Spirit in Col. 2:9 so that we have Christ portrayed as "the whole fullness of deity dwells bodily."
 
