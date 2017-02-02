@@ -1,26 +1,24 @@
 <style>
 .Button {
-  display: block;
+  display: inline-block;
+  text-decoration: none;
+}
+.Button:hover {
+  text-decoration: none;
 }
 .Button__Button {
-  display: inline-block;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-right: 20px;
   padding: 10px 20px;
   background: {{site.data.colors.GREEN}};
   border-radius: 10px;
-}
-.Button a {
-  display: block;
-  height: 100%;
-  width: 100%;
   color: #FFF;
-  text-decoration: none;
 }
 </style>
 
-<div class="Button">
+<a class="Button" href="{{include.link}}" {% if include.newTab %}target="_blank" {% endif %}>
   <div class="Button__Button">
-    <a href="{{include.link}}" {% if include.newTab %}target="_blank" {% endif %}>{{include.label}}</a>
+    {{include.label}}
   </div>
-</div>
+</a>
