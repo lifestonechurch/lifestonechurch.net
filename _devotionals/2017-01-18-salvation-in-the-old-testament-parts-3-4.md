@@ -1,5 +1,5 @@
 ---
-title: Salvation in the Old Testament - Parts 3 & 4
+title: "Salvation in the Old Testament - Parts 3 & 4"
 author: Pastor Sam Coleman
 description: Can trust in God be based on how you feel?
 ---
