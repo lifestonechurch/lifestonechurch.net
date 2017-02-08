@@ -11,9 +11,8 @@ layout: none
 		<language>en</language>
 		<managingEditor>{{ site.managerName }} ({{ site.managerEmail }})</managingEditor>
 		<webMaster>{{ site.managerName }} ({{ site.managerEmail }})</webMaster>
-		<copyright>2014-{{site.time | "%Y" }} {{ site.organizationName }}</copyright>
-		<pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S GMT" }}</pubDate>
-		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y" }}</lastBuildDate>
+		<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<image>
 			<link>{{ site.url}}</link>
 			<url>{{ site.url }}/{{ site.squareLogo}}</url>
@@ -36,7 +35,7 @@ layout: none
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<link>{{ site.url }}{{ post.url | replace:'&','%26'}}</link>
-				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S GMT" }}</pubDate>
+				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<description>{{ post.description }}</description>
 				<guid isPermaLink="true">http://www.podtrac.com/pts/redirect.mp3/{{ post.link }}</guid>
 				<enclosure url="http://www.podtrac.com/pts/redirect.mp3/{{ post.link }}" length="{{ post.length }}" type="audio/mp3"/>
