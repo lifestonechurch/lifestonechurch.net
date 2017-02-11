@@ -1,5 +1,9 @@
 churchwide:
   -
+    date: 2017-02-24
+    name: Ladies Dinner @ Cubby's
+    link: events/womens-dinner
+  -
     date: 2017-02-26
     name: Baptism
     link: events/baptism
