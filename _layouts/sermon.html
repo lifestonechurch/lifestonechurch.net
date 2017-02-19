@@ -3,8 +3,8 @@ layout: page
 ---
 
 {% if page.image %}
-  <img src="{{site.baseurl}}/assets/uploads/podcast/{{page.image}}" style="max-width: 300px;" />
-  {% include image.html size="medium" %}
+  {% capture url %}/assets/uploads/podcast/{{page.image}}{% endcapture %}
+  {% include image.html url=url size="medium" %}
 {% endif %}
 
 {% if page.vimeoId %}
