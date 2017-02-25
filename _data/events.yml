@@ -1,9 +1,5 @@
 churchwide:
   -
-    date: 2017-02-24
-    name: Ladies Dinner @ Cubby's
-    link: events/womens-dinner
-  -
     date: 2017-02-26
     name: Baptism
     link: events/baptism
@@ -12,9 +8,6 @@ churchwide:
     name: Men's Bake Auction
     link: events/mens-bake-auction
 grades-6-12:
-  -
-    date: 2017-02-08
-    name: Party at the Colemans' house
   -
     date: 2017-03-15
     name: Easter Egg Stuffing Party
