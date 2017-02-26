@@ -4,6 +4,10 @@ churchwide:
     name: Baptism
     link: events/baptism
   -
+    date: 2017-03-11
+    name: Men's Ice Fishing
+    link: events/ice-fishing
+  -
     date: 2017-03-19
     name: Men's Bake Auction
     link: events/mens-bake-auction
