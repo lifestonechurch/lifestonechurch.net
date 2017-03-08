@@ -1,7 +1,5 @@
 # Lifestone Church Website
 
-[![Stories in Ready](https://badge.waffle.io/Mountainview-WebDesign/lifestonechurch.png?label=ready&title=Ready)](http://waffle.io/Mountainview-WebDesign/lifestonechurch)
-
 # Contributing
 
 If you would like to contribute:
