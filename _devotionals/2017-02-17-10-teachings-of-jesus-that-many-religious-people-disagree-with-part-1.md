@@ -1,7 +1,7 @@
 ---
 title: "10 Teachings of Jesus That Many Religious People Disagree With - Part 1"
 author: Pastor Sam Coleman
-description: ""
+description: "How many of Jesus' teachings would I have to disagree with in order not to be His follower?"
 ---
 
 ## #1 No One Has Seen The Father except the One:
