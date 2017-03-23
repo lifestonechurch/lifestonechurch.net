@@ -17,10 +17,6 @@ collections:
     title: Sermons
     output: true
     permalink: "/resources/sermons/:title/"
-  redirects:
-    title: Redirects
-    output: true
-    permalink: "/:path/"
 defaults:
   - scope:
       path: ''
@@ -32,11 +28,6 @@ defaults:
       type: events
     values:
       layout: page
-  - scope:
-      path: ''
-      type: redirects
-    values:
-      layout: redirect
   - scope:
       path: ''
       type: devotionals
@@ -60,3 +51,5 @@ squareLogo: assets/images/logo2.jpg
 podcastSubtitle: Messages from Sunday morning worship at Lifestone Church
 permalink: "/:categories/:title/"
 google_analytics_code: UA-44899328-1
+gems:
+  - jekyll-redirect-from
