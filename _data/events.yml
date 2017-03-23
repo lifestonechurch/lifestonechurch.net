@@ -3,6 +3,10 @@ churchwide:
     date: 2017-04-01
     name: Night of Worship
     link: events/night-of-worship
+  -
+    date: 2017-04-16
+    name: Easter Egg Drop
+    link: events/easter
 grades-6-12:
   -
     date: 2017-03-24
