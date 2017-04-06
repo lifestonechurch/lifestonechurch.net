@@ -1,5 +1,5 @@
 sliders:
-  - filename: genesis.jpg
-    link: media/sermons
   - filename: easter.jpg
     link: events/easter
+  - filename: genesis.jpg
+    link: media/sermons
