@@ -1,7 +1,7 @@
 ---
 title: "10 Teachings of Jesus That Many Religious People Disagree With - Part 2"
 author: Pastor Sam Coleman
-description: ""
+description: "Do we see Jesus as the source/author and perfector/finisher of our faith?"
 ---
 
 Do we see Jesus as the source/author and perfector/finisher of our faith?
