@@ -3,6 +3,10 @@ churchwide:
     date: 2017-04-16
     name: Easter Egg Drop
     link: events/easter
+  -
+    date: 2017-04-23
+    name: Baptism
+    link: events/baptism
 grades-6-12:
   -
     month: April
