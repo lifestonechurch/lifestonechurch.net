@@ -11,6 +11,10 @@ churchwide:
     date: 2017-04-28
     name: Ladies Night - Herb Potting
     link: events/ladies-night
+  -
+    date: 2017-06-04
+    name: Lifestone Serves
+    link: events/lifestone-serves
 grades-6-12:
   -
     month: April
