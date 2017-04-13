@@ -7,6 +7,10 @@ churchwide:
     date: 2017-04-23
     name: Baptism
     link: events/baptism
+  -
+    date: 2017-04-28
+    name: Ladies Night - Herb Potting
+    link: events/ladies-night
 grades-6-12:
   -
     month: April
