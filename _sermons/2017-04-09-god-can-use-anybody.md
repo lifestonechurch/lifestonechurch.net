@@ -4,7 +4,7 @@ date: 2017-04-09 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2017-04-09.mp3
 podcastLength: '00:44:51'
 size: 52360772
-image:
+image: miracle-of-mercy.jpg
 speaker: Pastor Ben Helton
 description: Miracle of Mercy
 verse: 2 Corinthians 4:1-18
