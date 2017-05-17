@@ -9,6 +9,9 @@ churchwide:
     link: events/lifestone-serves
 grades-6-12:
   -
+    date: 2017-06-07
+    name: Serve @ Rocky Mountain Care
+  -
     date: 2017-06-18
     endDate: 2017-06-22
     name: High School Youth Camp
@@ -18,3 +21,14 @@ grades-6-12:
     endDate: 2017-06-25
     name: Junior High Youth Camp
     link: /events/youth-camp/
+  -
+    date: 2017-07-10
+    endDate: 2017-07-14
+    name: Serve @ Kid’s Life Camp
+  -
+    date: 2017-07-12
+    name: Bowling w/ Student Mission Team from Tennessee
+  -
+    date: 2017-08-04
+    endDate: 2017-08-06
+    name: Sonfest Retreat in Layton
