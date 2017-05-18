@@ -27,7 +27,8 @@ layout: default
 <div class="container FullPage">
   <div class="row">
     <div class="content col-sm-12">
+      {% include breadcrumbs.html %}
+      {% include header.html level='1' children=page.title %}
       {{content}}
     </div>
-  </div>
 </div>

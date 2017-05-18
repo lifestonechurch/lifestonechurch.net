@@ -27,7 +27,7 @@ defaults:
     scope:
       type: events
     values:
-      layout: page
+      layout: fullPage
   - scope:
       path: ''
       type: devotionals
