@@ -43,14 +43,6 @@ lifeGroups:
       - name: Ben & Kristen Helton
         image: /assets/uploads/pages/ben.jpg
         description:
-  - title: Henderson Group - Sunday Morning
-    time: 9:00am
-    address: Lifestone Church building
-    childcare: false
-    leaders:
-      - name: Jake Moore & Megan Henderson
-        image: /assets/uploads/pages/hendersons.jpg
-        description: Jake, a Virginia native, and Megan, a New York native, made the long trek to Utah just under two years ago. The two were introduced by a close friend while living in Washington, DC, and will be saying "I Do" September 2017. You may recognize Jake's smiling face as he frequently serves as a door greeter on Sunday mornings and helps assemble nursery toys for Lifestone's smallest members. After a good cup of coffee from the cafe station, Megan can be found handing out gifts and answering questions at the welcome table. Both are blessed to be part of the Lifestone family, especially while at a distance from their East Coast families.
 youth:
   - time: Wednesdays, 6:30-8pm
     people: Grades 6th-12th
