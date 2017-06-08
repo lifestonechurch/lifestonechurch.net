@@ -1,12 +1,4 @@
 lifeGroups:
-  - title: Henderson Group - Sunday Evening
-    time: 8:45am
-    address: Lifestone Church building
-    childcare: true
-    leaders:
-      - name: Jake Moore & Megan Henderson
-        image: /assets/uploads/pages/hendersons.jpg
-        description: Jake, a Virginia native, and Megan, a New York native, made the long trek to Utah just under two years ago. The two were introduced by a close friend while living in Washington, DC, and will be saying "I Do" September 2017. You may recognize Jake's smiling face as he frequently serves as a door greeter on Sunday mornings and helps assemble nursery toys for Lifestone's smallest members. After a good cup of coffee from the cafe station, Megan can be found handing out gifts and answering questions at the welcome table. Both are blessed to be part of the Lifestone family, especially while at a distance from their East Coast families.
   - title: Pepper Group - Sunday Evening
     time: 6:30pm
     address: 14233 S Valle Vista Drive, Herriman
@@ -24,7 +16,7 @@ lifeGroups:
       - name: Henry & Ana Killackey
         image: /assets/uploads/pages/killackeys.jpg
         description: Henry grew up and attended college in Southern California, before moving to South Texas for a new job. Ana grew up in New Mexico and moved to Texas to go to college and start her career. While in Texas, Henry and Ana met and married. They have lived in Northern Utah for just over a year. Although they still miss Texas, they are enjoying the mountains, the snow, and the new people they’ve met here in Herriman. On Sundays, you will often see Henry greet you with his infectious smile as you walk through the door while Ana is busy serving in Kids Life. On their free time, they enjoy hiking, cross-country skiing, and exploring Utah and the surrounding states. They also enjoy running through the various local parks with their dogs, Bella and Boaz. They are looking forward to growing relationships at Lifestone as they study God’s word together.
-  - title: Coleman Group - Sunday LifeGroup
+  - title: Coleman Group - Sunday Evening
     time: 6:30pm
     address:  3281 W 12075 S, Riverton
     childcare: true
@@ -51,6 +43,14 @@ lifeGroups:
       - name: Ben & Kristen Helton
         image: /assets/uploads/pages/ben.jpg
         description:
+  - title: Henderson Group - Sunday Morning
+    time: 9:00am
+    address: Lifestone Church building
+    childcare: false
+    leaders:
+      - name: Jake Moore & Megan Henderson
+        image: /assets/uploads/pages/hendersons.jpg
+        description: Jake, a Virginia native, and Megan, a New York native, made the long trek to Utah just under two years ago. The two were introduced by a close friend while living in Washington, DC, and will be saying "I Do" September 2017. You may recognize Jake's smiling face as he frequently serves as a door greeter on Sunday mornings and helps assemble nursery toys for Lifestone's smallest members. After a good cup of coffee from the cafe station, Megan can be found handing out gifts and answering questions at the welcome table. Both are blessed to be part of the Lifestone family, especially while at a distance from their East Coast families.
 youth:
   - time: Wednesdays, 6:30-8pm
     people: Grades 6th-12th
