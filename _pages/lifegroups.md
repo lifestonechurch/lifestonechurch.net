@@ -57,8 +57,6 @@ Free on-site childcare
 <p>{{ leader.description }}</p>
 <div style="clear: both;"></div>
 
-{% include header.html level='4' children='Join this LifeGroup:' %}
-
 {% endfor %}
 </div>
 {% endfor %}
