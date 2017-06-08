@@ -24,7 +24,6 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 
 <div>
 {% for group in site.data.smallGroups.lifeGroups %}
-{% if group.link %}
 <div class='Lifegroup__Leader_Section'>
 {% include header.html level='3' children=group.title %}
 
@@ -33,7 +32,9 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 <br/>
 {{ group.address }}
 <br/>
-{{ group.childcare }}
+{% if group.childcare %}
+Free on-site childcare
+{% endif %}
 </blockquote>
 
 {% if group.startDate %}
@@ -58,11 +59,8 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 
 {% include header.html level='4' children='Join this LifeGroup:' %}
 
-{% include button.html link=group.link newTab=true label='Sign Up' %}
-
 {% endfor %}
 </div>
-{% endif %}
 {% endfor %}
 </div>
 

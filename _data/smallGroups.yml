@@ -1,76 +1,56 @@
 lifeGroups:
-  - title: Sunday Morning LifeGroup
+  - title: Henderson Group - Sunday Evening
     time: 8:45am
     address: Lifestone Church building
-    childcare: Free on-site childcare
-    link: https://lifestonechurch.breezechms.com/form/137c029
+    childcare: true
     leaders:
       - name: Jake Moore & Megan Henderson
         image: /assets/uploads/pages/hendersons.jpg
         description: Jake, a Virginia native, and Megan, a New York native, made the long trek to Utah just under two years ago. The two were introduced by a close friend while living in Washington, DC, and will be saying "I Do" September 2017. You may recognize Jake's smiling face as he frequently serves as a door greeter on Sunday mornings and helps assemble nursery toys for Lifestone's smallest members. After a good cup of coffee from the cafe station, Megan can be found handing out gifts and answering questions at the welcome table. Both are blessed to be part of the Lifestone family, especially while at a distance from their East Coast families.
-  - title: Sunday LifeGroup
+  - title: Pepper Group - Sunday Evening
     time: 6:30pm
     address: 14233 S Valle Vista Drive, Herriman
-    childcare: Free on-site childcare
-    link: https://lifestonechurch.breezechms.com/form/137c029569
+    childcare: true
     hosts: Roland's
     leaders:
       - name: Tyson & Lindsey Pepper
         image: /assets/uploads/pages/peppers.jpg
         description: Tyson and Lindsey both grew up in Salt Lake County, Utah.  The couple met while Lindsey was a photographer.  Tyson was strongly encouraged by both his Mom and Sister to ask Lindsey on a date. The couple went Ice skating on their first date in 2004.  The couple married in 2007.  The Pepper’s have one child Rhadek.  Rhadek loves bonding with friends during LifeGroup.  Tyson and Lindsey love serving God through Lifestone where they both teach in Kids Life.  Also, Lindsey serves as Lifestone’s 1st Impression Coordinator and Women’s Outreach Coordinator.  Tyson also helps with set-up due to his incredible love for lifting things up and putting them down.  The Pepper’s favorite thing about LifeGroup is building relationships with other believers.
-  - title: Sunday LifeGroup
+  - title: Killackey Group - Sunday Evening
     time: 6:30pm
     address: Lifestone Church building
-    childcare: Free on-site childcare
-    link: https://lifestonechurch.breezechms.com/form/137c0295
+    childcare: false
     leaders:
       - name: Henry & Ana Killackey
         image: /assets/uploads/pages/killackeys.jpg
         description: Henry grew up and attended college in Southern California, before moving to South Texas for a new job. Ana grew up in New Mexico and moved to Texas to go to college and start her career. While in Texas, Henry and Ana met and married. They have lived in Northern Utah for just over a year. Although they still miss Texas, they are enjoying the mountains, the snow, and the new people they’ve met here in Herriman. On Sundays, you will often see Henry greet you with his infectious smile as you walk through the door while Ana is busy serving in Kids Life. On their free time, they enjoy hiking, cross-country skiing, and exploring Utah and the surrounding states. They also enjoy running through the various local parks with their dogs, Bella and Boaz. They are looking forward to growing relationships at Lifestone as they study God’s word together.
-  - title: Sunday LifeGroup
+  - title: Coleman Group - Sunday LifeGroup
     time: 6:30pm
     address:  3281 W 12075 S, Riverton
-    childcare: Free on-site childcare
+    childcare: true
     hosts: Coleman's
     leaders:
       - name: Sam & Rachael Coleman
         image: /assets/uploads/pages/colemans.jpg
         description: Sam and Rachael Coleman moved from Ft. Worth, Tx in 1999 to help with a small church in Pleasant Grove, UT.  They met through a mutual friend who was Rachael’s youth pastor and Sam’s college friend when Rachael was 15.  A few years later when Rachael was a Sophomore in college the same youth pastor partnered them together for a Disciple Now Weekend (which is an intense weekend long small group for youth).  The reason Sam and Rachael were put together according to the youth pastor was because these two are so different it should be interesting.  After 18 years of marriage, “interesting” is still the word for what Sam and Rachael bring to small groups.  We are excited to be a part of Lifestone Church with our four children Abigail (16), Atticus (14), Asher (8), and Adelai Shalom (7).  We are looking to form life-long friendships and work alongside others in our LifeGroups this year.
-  - title: Wednesday LifeGroup
+  - title: Smith Group - Wednesday Evening
     time: 6:30pm
-    address: 4883 W Chilly Peak Dr Riverton
-    childcare: Free on-site childcare
+    address: 4883 W Chilly Peak Drive, Riverton
+    childcare: true
     hosts: Smith's
     leaders:
       - name: Phil & Ashley Smith
         image: /assets/uploads/pages/smiths.jpg
         description: Phil and Ashley are happy to be celebrating their 3rd year as official Utahns after both being raised in Texas. They were married in 2003 and have served in various ministry roles over the past 15 years.  Phil is currently an RN at the University of Utah hospital (GO UTES!) and the Sunday morning worship team coordinator.  Ashley is an office manager for a custom home builder and helps with Lifestone's finances.   They both love to laugh and are laid back in their approach to life.  Their goal is to build a lifegroup family that is bonded by a desire to grow spiritually and support one another through all that life dishes out.  See you Wednesdays!
-  - title: Wednesday LifeGroup
+  - title: Helton Group - Wednesday Evening
     time: 6:30pm
-    address: 4982 Badger Lane, Herriman
-    childcare: Free on-site childcare
+    address: 4982 Badger Lane, Riverton 84096
+    childcare: true
     hosts: Wise's
     leaders:
-      - name: Sam Coleman/ Shane & Dixie Wise
-        image: /assets/uploads/pages/colemans.jpg
-        description: Sam and Rachael Coleman moved from Ft. Worth, Tx in 1999 to help with a small church in Pleasant Grove, UT.  They met through a mutual friend who was Rachael’s youth pastor and Sam’s college friend when Rachael was 15.  A few years later when Rachael was a Sophomore in college the same youth pastor partnered them together for a Disciple Now Weekend (which is an intense weekend long small group for youth).  The reason Sam and Rachael were put together according to the youth pastor was because these two are so different it should be interesting.  After 18 years of marriage, “interesting” is still the word for what Sam and Rachael bring to small groups.  We are excited to be a part of Lifestone Church with our four children Abigail (16), Atticus (14), Asher (8), and Adelai Shalom (7).  We are looking to form life-long friendships and work alongside others in our LifeGroups this year.
-  - title: Wednesday LifeGroup
-    time: 6:30pm
-    address: 3409 W 12600 S Riverton (just east of Lifestone Church building)
-    childcare: Free childcare
-    leaders:
-      - name: Dennis & Raechel Nelson
-        image: /assets/uploads/pages/nelsons.jpg
-        description: Originally from Nebraska and Colorado, respectively, Dennis and Raechel met 13 years ago while attending college at the University of Nebraska in Lincoln.  After spending several years apart, Raechel going to school and Dennis working in different states, they both ended up together in the Salt Lake area.  They’ve now been happily married for 7 years. Dennis works for BD Medical as a Product Manager and Raechel has a dental practice, Desert Rose Dental.  Although they don’t have kids yet, they stay busy with a couple of dogs, several horses, and a bunch of outdoor activities.  They’ve lived in Herriman for the past 6 years, but were led to join God’s work through Lifestone in bringing Jesus to town of Herriman just two years ago. Dennis serves as the Grow Director for Lifestone and they both serve with Kids Life. They were both blessed to be raised in Christian homes and are excited for the opportunity to help make Christ known in our community now.
-  - title: Thursday LifeGroup
-    time: 6:30pm
-    address: 5392 Venetia St, Herriman
-    childcare: Free on-site childcare
-    hosts: Blevins'
-    leaders:
-      - name: Dennis & Raechel Nelson
-        image: /assets/uploads/pages/nelsons.jpg
-        description: Originally from Nebraska and Colorado, respectively, Dennis and Raechel met 13 years ago while attending college at the University of Nebraska in Lincoln.  After spending several years apart, Raechel going to school and Dennis working in different states, they both ended up together in the Salt Lake area.  They’ve now been happily married for 7 years. Dennis works for BD Medical as a Product Manager and Raechel has a dental practice, Desert Rose Dental.  Although they don’t have kids yet, they stay busy with a couple of dogs, several horses, and a bunch of outdoor activities.  They’ve lived in Herriman for the past 6 years, but were led to join God’s work through Lifestone in bringing Jesus to town of Herriman just two years ago. Dennis serves as the Grow Director for Lifestone and they both serve with Kids Life. They were both blessed to be raised in Christian homes and are excited for the opportunity to help make Christ known in our community now.
+      - name: Ben & Kristen Helton
+        image: /assets/uploads/pages/ben.jpg
+        description:
 youth:
   - time: Wednesdays, 6:30-8pm
     people: Grades 6th-12th
