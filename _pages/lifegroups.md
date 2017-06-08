@@ -20,10 +20,6 @@ title: LifeGroups
 
 Connect to God by connecting to His people & His Word! LifeGroups are the heart of Lifestone Church. LifeGroups are small groups of people who meet once a week in order to connect to God by connecting to other people who love Him and to the Bible. This is where spiritual growth happens! Check out the details and select the group that works best for your family.
 
-{% include header.html level='2' banner=true children='Mother\'s Day' %}
-
-<b>All Sunday LifeGroups WILL meet this Sunday (Mother’s Day) except for Sunday evening group at the church (Killackeys).</b>
-
 {% include header.html level='2' banner=true children='Open LifeGroups' %}
 
 <div>
