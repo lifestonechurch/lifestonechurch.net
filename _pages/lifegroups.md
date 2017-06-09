@@ -14,9 +14,7 @@ title: LifeGroups
 }
 </style>
 
-![lifegroups]({{ site.baseurl }}/assets/uploads/pages/lifegroupRegistrations.png)
-
-{% include header.html level='2' banner=true children='About LifeGroups' %}
+<img src="{{ site.baseurl }}/assets/uploads/pages/lifegroups.png" alt="lifegroups" style="display: block; max-width: 367px; margin: 0 auto;" />
 
 Connect to God by connecting to His people & His Word! LifeGroups are the heart of Lifestone Church. LifeGroups are small groups of people who meet once a week in order to connect to God by connecting to other people who love Him and to the Bible. This is where spiritual growth happens! Check out the details and select the group that works best for your family.
 
