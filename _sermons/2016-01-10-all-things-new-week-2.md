@@ -57,7 +57,7 @@ Galatians 2:16
 
 **How do you keep you resolutions?**
 
-1. Get support from a *lifegroup*{: class="sermon-answer"}.
+1. Get support from a *LifeGroup*{: class="sermon-answer"}.
 
     Hebrews 10:24-25
 
