@@ -1,4 +1,12 @@
 lifeGroups:
+  - title: Killackey Group - Sunday Evening
+    time: 1:00pm
+    address: Lifestone Church building
+    childcare: false
+    leaders:
+      - name: Henry & Ana Killackey
+        image: /assets/uploads/pages/killackeys.jpg
+        description: Henry grew up and attended college in Southern California, before moving to South Texas for a new job. Ana grew up in New Mexico and moved to Texas to go to college and start her career. While in Texas, Henry and Ana met and married. They have lived in Northern Utah for just over a year. Although they still miss Texas, they are enjoying the mountains, the snow, and the new people they’ve met here in Herriman. On Sundays, you will often see Henry greet you with his infectious smile as you walk through the door while Ana is busy serving in Kids Life. On their free time, they enjoy hiking, cross-country skiing, and exploring Utah and the surrounding states. They also enjoy running through the various local parks with their dogs, Bella and Boaz. They are looking forward to growing relationships at Lifestone as they study God’s word together.
   - title: Pepper Group - Sunday Evening
     time: 6:30pm
     address: 14233 S Valle Vista Drive, Herriman
@@ -8,14 +16,6 @@ lifeGroups:
       - name: Tyson & Lindsey Pepper
         image: /assets/uploads/pages/peppers.jpg
         description: Tyson and Lindsey both grew up in Salt Lake County, Utah.  The couple met while Lindsey was a photographer.  Tyson was strongly encouraged by both his Mom and Sister to ask Lindsey on a date. The couple went Ice skating on their first date in 2004.  The couple married in 2007.  The Pepper’s have one child Rhadek.  Rhadek loves bonding with friends during LifeGroup.  Tyson and Lindsey love serving God through Lifestone where they both teach in Kids Life.  Also, Lindsey serves as Lifestone’s 1st Impression Coordinator and Women’s Outreach Coordinator.  Tyson also helps with set-up due to his incredible love for lifting things up and putting them down.  The Pepper’s favorite thing about LifeGroup is building relationships with other believers.
-  - title: Killackey Group - Sunday Evening
-    time: 6:30pm
-    address: Lifestone Church building
-    childcare: false
-    leaders:
-      - name: Henry & Ana Killackey
-        image: /assets/uploads/pages/killackeys.jpg
-        description: Henry grew up and attended college in Southern California, before moving to South Texas for a new job. Ana grew up in New Mexico and moved to Texas to go to college and start her career. While in Texas, Henry and Ana met and married. They have lived in Northern Utah for just over a year. Although they still miss Texas, they are enjoying the mountains, the snow, and the new people they’ve met here in Herriman. On Sundays, you will often see Henry greet you with his infectious smile as you walk through the door while Ana is busy serving in Kids Life. On their free time, they enjoy hiking, cross-country skiing, and exploring Utah and the surrounding states. They also enjoy running through the various local parks with their dogs, Bella and Boaz. They are looking forward to growing relationships at Lifestone as they study God’s word together.
   - title: Coleman Group - Sunday Evening
     time: 6:30pm
     address:  3281 W 12075 S, Riverton
