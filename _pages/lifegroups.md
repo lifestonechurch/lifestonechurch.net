@@ -57,9 +57,10 @@ Free on-site childcare
 <p>{{ leader.description }}</p>
 <div style="clear: both;"></div>
 
-<p>{{ leader.signup }}</p>
-
 {% endfor %}
+
+<p>{{ group.signup }}</p>
+
 </div>
 {% endfor %}
 </div>
