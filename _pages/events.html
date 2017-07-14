@@ -9,6 +9,8 @@ title: Events
 }
 </style>
 
+{% include image.html url="/assets/uploads/pages/upcoming-events.jpg" %}
+
 {% assign events = site.events | sort: "startDate" %}
 {% for event in events %}
   {% capture newMonth %}{{ event.startDate | date:"%B" }}{% endcapture %}
