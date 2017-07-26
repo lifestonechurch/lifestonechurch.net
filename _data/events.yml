@@ -13,21 +13,16 @@ churchwide:
     link: events/baptism
 grades-6-12:
   -
-    date: 2017-07-05
-    name: Movie Night @ Lifestone!
-  -
-    date: 2017-07-10
-    endDate: 2017-07-14
-    name: Serve @ Kids Life Camp
-  -
-    date: 2017-07-12
-    name: Game Night @ Lifestone with FBC Powell Youth Group
-  -
-    date: 2017-07-10
-    endDate: 2017-07-14
-    name: Serve @ Kids Life Camp
-  -
     date: 2017-08-04
     endDate: 2017-08-06
     name: Sonfest Retreat in Layton
     link: /events/sonfest
+  -
+    date: 2017-08-16
+    name: Bowling Party + New 6th Graders officially join us!
+  -
+    date: 2017-09-20
+    name: Serve @ Holding Out Help
+  -
+    month: October
+    name: Serve @ Holding Out Help
