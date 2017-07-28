@@ -7,6 +7,7 @@ layout: none
 	<channel>
 		<title>{{ site.title }}</title>
 		<description>{{ site.description }}</description>
+		<itunes:summary>{{ site.description }}</itunes:summary>
 		<link>{{ site.url }}</link>
 		<language>en</language>
 		<managingEditor>{{ site.managerName }} ({{ site.managerEmail }})</managingEditor>
@@ -20,7 +21,6 @@ layout: none
 		</image>
 		<itunes:subtitle>{{ site.podcastSubtitle }}</itunes:subtitle>
 		<itunes:author>{{ site.organizationName }}</itunes:author>
-		<itunes:summary></itunes:summary>
 		<itunes:keywords></itunes:keywords>
 		<itunes:owner>
 			<itunes:name>{{ site.managerName}}</itunes:name>
@@ -36,16 +36,16 @@ layout: none
 				<title>{{ post.title | xml_escape }}</title>
 				<link>{{ site.url }}{{ post.url | replace:'&','%26'}}</link>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-				<description>{{ post.description }}</description>
 				<guid isPermaLink="true">http://www.podtrac.com/pts/redirect.mp3/{{ post.link }}</guid>
 				<enclosure url="http://www.podtrac.com/pts/redirect.mp3/{{ post.link }}" length="{{ post.length }}" type="audio/mp3"/>
 				<itunes:author>{{ post.speaker }}</itunes:author>
 				<itunes:subtitle></itunes:subtitle>
-				<itunes:summary>{{ post.description }}</itunes:summary>
 				<itunes:duration>{{ post.podcastLength }}</itunes:duration>
 				<itunes:keywords>{{ post.keywords }}</itunes:keywords>
 				<itunes:image href="{{ site.url }}/{{site.squareLogo}}" />
 				<itunes:explicit>no</itunes:explicit>
+				<description>{{ post.description }}</description>
+				<itunes:summary>{{ post.description }}</itunes:summary>
 			</item>
 		{% endfor %}
 	</channel>
