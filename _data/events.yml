@@ -1,12 +1,16 @@
 churchwide:
   -
+    date: 2017-08-06
+    name: Baptism
+    link: events/baptism
+  -
     date: 2017-08-13
     name: Promotion Sunday
     link: events/promotion-sunday
   -
-    date: 2017-08-06
-    name: Baptism
-    link: events/baptism
+    date: 2017-08-25
+    name: Lifestone Ladies Ice Cream
+    link: events/ice-cream
 grades-6-12:
   -
     date: 2017-08-04
