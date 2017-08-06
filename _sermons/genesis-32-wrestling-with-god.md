@@ -7,7 +7,7 @@ size: 50905642
 image: genesis.jpg
 speaker: Pastor Ben Helton
 description: Genesis
-verse: Genesis 30
+verse: Genesis 32
 ---
 
 ## Sermon Notes
