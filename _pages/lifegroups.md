@@ -20,6 +20,8 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 
 **Please text the LifeGroup leader to sign up!**
 
+**We will break from LifeGroups Aug 31- Sept 9. Groups will resume meeting Sept 10.**
+
 {% include header.html level='2' banner=true children='Open LifeGroups' %}
 
 <div>
