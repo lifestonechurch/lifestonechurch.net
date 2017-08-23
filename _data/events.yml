@@ -7,6 +7,10 @@ churchwide:
     date: 2017-09-16
     name: Archery Tag
     link: events/archery
+  -
+    date: 2017-10-02
+    name: Women's Bible Study
+    link: events/womens-bible-study
 grades-6-12:
   -
     date: 2017-09-20
