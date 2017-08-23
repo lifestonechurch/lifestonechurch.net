@@ -11,11 +11,10 @@ body {
   padding-top: 70px;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
-  color: {{site.data.colors.GREY_60}};
+  color: {{site.data.colors.GREY_70}};
 }
 
 p {
-  padding: 0 0 1em 0;
   font-size: 16px;
   line-height: 1.5em;
   text-align: justify;
@@ -33,6 +32,7 @@ input {
 
 h1,h2,h3,h4,h5,h6,dd {
   font-family: 'Droid Serif', serif;
+  color: {{site.data.colors.GREY_60}};
 }
 
 h1 { font-size: 2.5em; }
