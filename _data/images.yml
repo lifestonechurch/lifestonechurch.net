@@ -1,5 +1,5 @@
 SIZES:
   - name: 'small'
-    size: 200
+    size: 200px
   - name: 'medium'
-    size: 300
+    size: 300px
