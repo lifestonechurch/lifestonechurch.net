@@ -1,13 +1,13 @@
-# Lifestone Church Website
+# gatsby-starter-default
+The default Gatsby starter
 
-# Contributing
+For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
 
-If you would like to contribute:
+Install this starter (assuming Gatsby is installed) by running from your CLI:
+```
+gatsby new gatsby-example-site
+```
 
-* Fork this repository
-* Clone it to your computer
-* Run `bundle install`
-* Run `bundle exec jekyll serve`
-* Go to `localhost:4000` in your browser
-* Now you can edit the site and the site will get generated automatically (but you'll still need to hit refresh in the browser)
-* Then you can submit a pull request to have it added to the live site
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)

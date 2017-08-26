@@ -1,1 +1,5 @@
-_site/*
+# Project dependencies
+node_modules
+.cache/
+# Build directory
+public/
