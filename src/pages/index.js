@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Card';
 import Button from '../components/Button';
+import SermonCard from '../components/SermonCard';
 
 const IndexPage = () =>
   <div>
@@ -9,14 +10,27 @@ const IndexPage = () =>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
-    <Card> Blah </Card>
+
+    <SermonCard 
+      image='' 
+      title='Genesis 37 - Did It Have To Go This Way?' 
+      date='8/20/17'
+      speaker=' Pastor Ben Helton' 
+      passage='Genesis 37' 
+    />
+
+    <SermonCard 
+      image='' 
+      title="Genesis 39 - Oh no he didn't"
+      date='8/20/17'
+      speaker=' Pastor Ben Helton' 
+      passage='Genesis 37' 
+    />
+
     <Card> 
       <Button>I don't need no defualt</Button>
       <p>I'm a paragraph</p>
     </Card>
-
-
-    <Card children={<Button>I don't need no defualt</Button>} />
 
     <Button linkTo='http://www.google.com'>I am a button!</Button>
     <Button linkTo='contact'>No, I am a button!</Button>
