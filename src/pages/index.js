@@ -12,7 +12,7 @@ const IndexPage = () =>
     <Link to="/page-2/">Go to page 2</Link>
 
     <SermonCard 
-      image='' 
+      image='/assets/uploads/podcast/genesis.jpg'
       title='Genesis 37 - Did It Have To Go This Way?' 
       date='8/20/17'
       speaker=' Pastor Ben Helton' 
@@ -20,11 +20,11 @@ const IndexPage = () =>
     />
 
     <SermonCard 
-      image='' 
-      title="Genesis 39 - Oh no he didn't"
-      date='8/20/17'
-      speaker=' Pastor Ben Helton' 
-      passage='Genesis 37' 
+    image='' 
+    title="Genesis 39 - Oh no he didn't"
+    date='8/20/17'
+    speaker=' Pastor Ben Helton' 
+    passage='Genesis 37' 
     />
 
     <Card> 

@@ -6,7 +6,22 @@ import Card from './Card'
 const SermonCard = ({image, title, date, speaker, passage}) =>
   <div className="SermonCard">
     <Card>
-    {title} {date} {speaker}
+      <div class="SermonCard__Image"> 
+        <img src={image} />
+      </div>
+
+      <div class="SermonCard__Text">
+        <div class="SermonCard__Title">
+          <h2>{title}</h2>
+        </div>
+
+        <p>{date}</p>
+
+        <p>{speaker}</p>
+
+        <p>{passage}</p>
+
+      </div>
     </Card>
   </div>
 
