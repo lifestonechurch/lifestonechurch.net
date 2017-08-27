@@ -6,12 +6,12 @@ import Card from './Card'
 const SermonCard = ({image, title, date, speaker, passage}) =>
   <div className="SermonCard">
     <Card>
-      <div class="SermonCard__Image"> 
+      <div className="SermonCard__Image"> 
         <img src={image} />
       </div>
 
-      <div class="SermonCard__Text">
-        <div class="SermonCard__Title">
+      <div className="SermonCard__Text">
+        <div className="SermonCard__Title">
           <h2>{title}</h2>
         </div>
 
