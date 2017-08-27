@@ -20,7 +20,7 @@ const SermonCard = ({image, title, date, speaker, passage}) =>
 
         <div className="SermonCard__Speaker" >{speaker}</div>
 
-        <div>{passage}</div>
+        <div className="SermonCard__Passage" >{passage}</div>
 
       </div>
     </div>

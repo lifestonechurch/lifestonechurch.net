@@ -2,21 +2,39 @@
   display: flex;
   align-items: center;
   width: 100%;
+  padding: 10px 0 20px 0;
+  
 }
+
 
 .SermonCard__Image {
   
   
 }
 .SermonCard__Image img {
-  width: 100px;
+  width: 150px;
+
 
 }
 
 .SermonCard__Text{
   margin-left: 20px;
+
+}
+
+.SermonCard__Text {
+  
 }
 
 .SermonCard__Title h2 {
-  margin-bottom: 10px;
+  margin: 0 0 15px 0;
+
 }
+
+.SermonCard__Date, .SermonCard__Speaker, .SermonCard__Passage{
+margin-bottom: 5px;
+}
+
+ 
+
+
