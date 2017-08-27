@@ -1,20 +1,22 @@
 .SermonCard {
   display: flex;
-  align-items:center;
-  width:100%;
+  align-items: center;
+  width: 100%;
 }
 
 .SermonCard__Image {
+  
+  
+}
+.SermonCard__Image img {
+  width: 100px;
 
 }
-
 
 .SermonCard__Text{
-
+  margin-left: 20px;
 }
 
-
-.SermonCard__Title{
-
+.SermonCard__Title h2 {
+  margin-bottom: 10px;
 }
-

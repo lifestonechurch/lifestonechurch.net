@@ -4,8 +4,9 @@ import './SermonCard.css'
 import Card from './Card'
 
 const SermonCard = ({image, title, date, speaker, passage}) =>
-  <div className="SermonCard">
-    <Card>
+
+  <Card >
+    <div className="SermonCard">
       <div className="SermonCard__Image"> 
         <img src={image} />
       </div>
@@ -15,14 +16,15 @@ const SermonCard = ({image, title, date, speaker, passage}) =>
           <h2>{title}</h2>
         </div>
 
-        <p>{date}</p>
+        <div className="SermonCard__Date">{date}</div>
 
-        <p>{speaker}</p>
+        <div className="SermonCard__Speaker" >{speaker}</div>
 
-        <p>{passage}</p>
+        <div>{passage}</div>
 
       </div>
-    </Card>
-  </div>
+    </div>
+  </Card>
+  
 
 export default SermonCard
