@@ -4,6 +4,7 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 import SermonCard from '../components/SermonCard';
 import genesis from '../images/genesis.jpg';
+import EventCard from '../components/EventCard';
 
 const IndexPage = () =>
   <div>
@@ -26,6 +27,12 @@ const IndexPage = () =>
       date='8/20/17'
       speaker=' Pastor Ben Helton'
       passage='Genesis 37'
+    />
+
+    <EventCard
+      title="Ice Cream Social"
+      date="August 25"
+      linkTo='events/ice-cream'
     />
 
     <Card>
