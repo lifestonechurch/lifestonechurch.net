@@ -14,13 +14,16 @@ title: LifeGroups
 }
 </style>
 
-<img src="{{ site.baseurl }}/assets/uploads/pages/lifegroups-new-session.jpg" alt="lifegroups" />
+<img src="{{ site.baseurl }}/assets/uploads/pages/lifegroups.jpg" alt="lifegroups" />
 
 Connect to God by connecting to His people & His Word! LifeGroups are the heart of Lifestone Church. LifeGroups are small groups of people who meet once a week in order to connect to God by connecting to other people who love Him and to the Bible. This is where spiritual growth happens! Check out the details and select the group that works best for your family.
 
-**We will break from LifeGroups Aug 31- Sept 9. Groups will resume meeting Sept 10.**
+**SIGN UP BY SHOWING UP!**
 
-<!--
+Sundays Beginning 9/10
+
+Wednesdays Beginning 9/13
+
 {% include header.html level='2' banner=true children='Open LifeGroups' %}
 
 <div>
@@ -65,7 +68,6 @@ Free on-site childcare
 </div>
 {% endfor %}
 </div>
--->
 
 {% include header.html level='2' banner=true children='5 Reasons to Join a LifeGroup!' %}
 

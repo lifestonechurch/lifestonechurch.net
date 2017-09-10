@@ -1,14 +1,14 @@
 lifeGroups:
-  - title: Pepper Group - Sunday Evening
-    signup: Text Lindsey 801-792-2880
+  - title: Clement Group - Sunday Evening
+    signup:
     time: 6:30pm
-    address: 14233 S Valle Vista Drive, Herriman
+    address: 5468 W Sierra Rose Drive, Herriman
     childcare: true
-    hosts: Roland's
+    hosts: Pepper's
     leaders:
-      - name: Tyson & Lindsey Pepper
-        image: /assets/uploads/pages/peppers.jpg
-        description: Tyson and Lindsey both grew up in Salt Lake County, Utah.  The couple met while Lindsey was a photographer.  Tyson was strongly encouraged by both his Mom and Sister to ask Lindsey on a date. The couple went Ice skating on their first date in 2004.  The couple married in 2007.  The Pepper’s have one child Rhadek.  Rhadek loves bonding with friends during LifeGroup.  Tyson and Lindsey love serving God through Lifestone where they both teach in Kids Life.  Also, Lindsey serves as Lifestone’s 1st Impression Coordinator and Women’s Outreach Coordinator.  Tyson also helps with set-up due to his incredible love for lifting things up and putting them down.  The Pepper’s favorite thing about LifeGroup is building relationships with other believers.
+      - name: Ron and Diane Clement
+        image: /assets/uploads/pages/clements.jpg
+        description: Ron and Diane moved to the Salt Lake valley at the beginning of 2016 to work with the churches in Salt Lake Baptist Association. For 35 years Ron has served as pastor, church planter, and Team Leader for prayer and evangelism on the Colorado Baptist Convention state staff. They met in high school youth group at church and eventually married in 1978. They have a daughter and son-in-law in Colorado Springs, CO, and a daughter and son-in-law and grandson in Vale, NC. They have a strong desire for God to do something extraordinary so that Utah will see the wonder, might, and uniqueness of the only True God and His Son, Jesus. They are thankful to be a part of His work at Lifestone and serve as part of the First Impressions Team. They enjoy the safe place that LifeGroups offer in exploring God's word, sharing one another's burdens through prayer, and fellowshipping together.
   - title: Coleman Group - Sunday Evening
     signup: Text Sam 801-750-0787
     time: 6:30pm
