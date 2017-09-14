@@ -20,10 +20,6 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 
 **SIGN UP BY SHOWING UP!**
 
-Sundays Beginning 9/10
-
-Wednesdays Beginning 9/13
-
 {% include header.html level='2' banner=true children='Open LifeGroups' %}
 
 <div>
