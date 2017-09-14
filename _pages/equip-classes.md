@@ -10,9 +10,7 @@ NEW Equipping Classes!<br/>
 Monday nights starting October 2<br/>
 6:30pm - 7:30pm @ Lifestone</p>
 
-SIGN UP BELOW!
-
-Join us for an 8-Week Bible Study on the main purpose of the Bible: how to read, study and encounter God in His Word.  Equipping classes are designed to make the Bible easy and accessible to understand so that experienced and new Christians alike can share and defend their faith. Classes will also introduce both experienced and new believers in the essentials of growing our faith the way God has designed for Christians to mature (Ephesians 4:12-13).
+Join us for an 8-Week Bible Study on the main purpose of the Bible: how to read, study and encounter God in His Word. Equipping classes are designed to make the Bible easy and accessible to understand so that experienced and new Christians alike can share and defend their faith. Classes will also introduce both experienced and new believers in the essentials of growing our faith the way God has designed for Christians to mature (Ephesians 4:12-13).
 
 Some of the topics that will be discussed:
 
