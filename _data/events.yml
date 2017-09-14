@@ -11,6 +11,10 @@ churchwide:
     date: 2017-10-02
     name: Women's Bible Study
     link: events/womens-bible-study
+  -
+    date: 2017-10-08
+    name: Baptism
+    link: events/baptism
 grades-6-12:
   -
     date: 2017-09-20
