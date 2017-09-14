@@ -12,7 +12,7 @@ Monday nights starting October 2<br/>
 
 SIGN UP BELOW!
 
-Equipping classes are designed to introduce both experienced and new believers in the essentials of growing our faith the way God has designed for Christians to mature (Ephesians 4:13). Join us for an 8-Week Bible Study on the main purpose of the Bible: how to read, study and encounter God in His Word. Equipping classes are designed to make the Bible easy and accessible to understand so that experienced and new Christians alike can share and defend their faith.
+Join us for an 8-Week Bible Study on the main purpose of the Bible: how to read, study and encounter God in His Word.  Equipping classes are designed to make the Bible easy and accessible to understand so that experienced and new Christians alike can share and defend their faith. Classes will also introduce both experienced and new believers in the essentials of growing our faith the way God has designed for Christians to mature (Ephesians 4:12-13).
 
 Some of the topics that will be discussed:
 
@@ -21,8 +21,8 @@ Some of the topics that will be discussed:
 - What are the easiest/best Bible verses to explain who God is.
 - How do I share my faith with others?
 
-People build lasting trust in God because they know Who they believe and why they believe, which should lead to living out faith in God. We hope you take 8 weeks this Fall to be challenged to grow in who God has called you to be, “equipped” and ready to build up the body of Christ (Ephesians 4).
+Class participants will build lasting trust in God because they will know Who they believe and why they believe, which lead to living out faith in God. We hope you take 8 weeks this fall to be challenged to grow in who God has called you to be, “equipped” and ready to build up the body of Christ!
 
-Free on-site childcare provided.
+Free onsite childcare provided.
 
 {% include eventForm.html height="1000" link="https://lifestonechurch.breezechms.com/form/f754f7" %}
