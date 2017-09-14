@@ -1,44 +1,40 @@
 lifeGroups:
   - title: Clement Group - Sunday Evening
-    signup:
     time: 6:30pm
     address: 5468 W Sierra Rose Drive, Herriman
     childcare: true
-    hosts: Pepper's
+    hosts: Peppers
     leaders:
       - name: Ron and Diane Clement
         image: /assets/uploads/pages/clements.jpg
         description: Ron and Diane moved to the Salt Lake valley at the beginning of 2016 to work with the churches in Salt Lake Baptist Association. For 35 years Ron has served as pastor, church planter, and Team Leader for prayer and evangelism on the Colorado Baptist Convention state staff. They met in high school youth group at church and eventually married in 1978. They have a daughter and son-in-law in Colorado Springs, CO, and a daughter and son-in-law and grandson in Vale, NC. They have a strong desire for God to do something extraordinary so that Utah will see the wonder, might, and uniqueness of the only True God and His Son, Jesus. They are thankful to be a part of His work at Lifestone and serve as part of the First Impressions Team. They enjoy the safe place that LifeGroups offer in exploring God's word, sharing one another's burdens through prayer, and fellowshipping together.
   - title: Coleman Group - Sunday Evening
-    signup: Text Sam 801-750-0787
     time: 6:30pm
     address:  3281 W 12075 S, Riverton
     childcare: true
-    hosts: Coleman's
+    hosts: Colemans
     leaders:
       - name: Sam & Rachael Coleman
         image: /assets/uploads/pages/colemans.jpg
         description: Sam and Rachael Coleman moved from Ft. Worth, Tx in 1999 to help with a small church in Pleasant Grove, UT.  They met through a mutual friend who was Rachael’s youth pastor and Sam’s college friend when Rachael was 15.  A few years later when Rachael was a Sophomore in college the same youth pastor partnered them together for a Disciple Now Weekend (which is an intense weekend long small group for youth).  The reason Sam and Rachael were put together according to the youth pastor was because these two are so different it should be interesting.  After 18 years of marriage, “interesting” is still the word for what Sam and Rachael bring to small groups.  We are excited to be a part of Lifestone Church with our four children Abigail (16), Atticus (14), Asher (8), and Adelai Shalom (7).  We are looking to form life-long friendships and work alongside others in our LifeGroups this year.
   - title: Smith Group - Wednesday Evening
-    signup: Text Phil 817-480-8131
     time: 6:30pm
     address: 5392 W Venetia Street, Herriman
     childcare: true
-    hosts: Blevin's
+    hosts: Blevins
     leaders:
       - name: Phil & Ashley Smith
         image: /assets/uploads/pages/smiths.jpg
         description: Phil and Ashley are happy to be celebrating their 3rd year as official Utahns after both being raised in Texas. They were married in 2003 and have served in various ministry roles over the past 15 years.  Phil is currently an RN at the University of Utah hospital (GO UTES!) and the Sunday morning worship team coordinator.  Ashley is an office manager for a custom home builder and helps with Lifestone's finances.   They both love to laugh and are laid back in their approach to life.  Their goal is to build a LifeGroup family that is bonded by a desire to grow spiritually and support one another through all that life dishes out.  See you Wednesdays!
   - title: Helton Group - Wednesday Evening
-    signup: Text Ben 817-565-8316
     time: 6:30pm
     address: 4982 Badger Lane, Riverton 84096
     childcare: true
-    hosts: Wise's
+    hosts: Wises
     leaders:
       - name: Ben & Kristen Helton
         image: /assets/uploads/pages/ben.jpg
-        description:
+        description: Pastor Ben and Kristen met in college at Walyand Baptist University in Plainview, Texas and married shortly after graduating. The couple served as Youth Ministers for several churches in Texas before planting a church of their own in Weatherford, Texas in 2009. After much prayer and research, the Heltons felt called to plant in Herriman, Utah, where no Bible-based church had been planted before. Ben, Kristen, children Rachel (14), Karis (12), and Jaxson (9), and a team of 3 additional families moved from the Fort Worth area to Herriman in August of 2013 to plant Lifestone Church. Growing this new church and connecting with new neighbors and friends here in Utah has been an exciting adventure the family has absolutely enjoyed. One of the Heltons' favorite things about Lifestone Church has been the opportunity to closely connect with others through LifeGroups. It is their desire that you, too, get connected in a LifeGroups this season and experience spiritual growth while forging life-long friendships!
 youth:
   - time: Wednesdays, 6:30-8pm
     people: Grades 6th-12th

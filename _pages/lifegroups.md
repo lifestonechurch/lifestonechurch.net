@@ -63,8 +63,6 @@ Free on-site childcare
 
 {% endfor %}
 
-<p>{{ group.signup }}</p>
-
 </div>
 {% endfor %}
 </div>
