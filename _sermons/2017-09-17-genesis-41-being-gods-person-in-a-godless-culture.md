@@ -3,7 +3,7 @@ title: "Genesis 41 - Being God's Person in a Godless Culture"
 date: 2017-09-17 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2017-09-17.mp3
 podcastLength: '00:49:30'
-size:
+size: 45347185
 image: genesis.jpg
 speaker: Pastor Ben Helton
 description: Genesis
