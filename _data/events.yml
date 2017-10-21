@@ -1,8 +1,16 @@
 churchwide:
   -
-    date: 2017-10-25
-    name: Youth Jump Party @Airborne
-    link: kids/grades-6-12/#events
+    date: 2017-10-27
+    name: Ladies' Karaoke & Chili Bar event
+    link: events/ladies-karaoke
+  -
+    date: 2017-11-10
+    name: Men's Bowling Night
+    link: events/mens-bowling
+  -
+    date: 2017-11-19
+    name: Operation Christmas Child
+    link: events/operation-christmas-child
 grades-6-12:
   -
     date: 2017-10-25
