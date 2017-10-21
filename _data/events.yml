@@ -15,10 +15,13 @@ grades-6-12:
         </ul>
   -
     date: 2017-11-11
-    name: Serve @ Concern Center of Salt Lake (tentative)
+    name: Serve @ Concern Center of Salt Lake
+    description: <div>The youth will meet at church at 8:45 am, depart at 9:00am and will return at 11:30am for parent pickup.</div>
   -
     date: 2017-11-15
     name: Winter Jam Concert
+    description: >
+      <div>The youth will meet at church at 5:15pm and depart at 5:30pm sharp. Tickets are $15 per person and are available at the door. Doors for the concert will open at 6:00pm and the concert begins at 7:00pm. For more information, visit the <a href="http://2017.jamtour.com/shows/west-valley-city-ut" target="_blank">Winter Jam website</a>. Lindsey will text parents when they are heading back to the church for parent pickup.</div>
   -
     date: 2017-11-22
     name: Break for Thanksgiving
