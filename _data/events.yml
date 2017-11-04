@@ -1,6 +1,11 @@
 churchwide:
   -
     date: 2017-11-10
+    endDate: 2017-11-13
+    name: Short Creek Dream Center Clean Up
+    link: events/dream-center-clean-up
+  -
+    date: 2017-11-10
     name: Men's Bowling Night
     link: events/mens-bowling
   -

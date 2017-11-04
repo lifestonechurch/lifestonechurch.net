@@ -9,7 +9,7 @@ font-family: 'Droid Serif', serif;
 
 body {
   padding-top: 70px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Lato', sans-serif;
   color: {{site.data.colors.GREY_70}};
 }
@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6,dd {
   color: {{site.data.colors.GREY_60}};
 }
 
-h1 { font-size: 2.5em; }
+h1 { font-size: 2.5em; margin-bottom: 20px; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.5em; }
 h4 { font-size: 1.25em; }
