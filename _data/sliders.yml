@@ -1,5 +1,7 @@
 sliders:
   - filename: star.jpg
     link: events/star
+  - filename: christmas.jpg
+    link: events/christmas
   - filename: kids-life.jpg
     link: kids/grades-1-5
