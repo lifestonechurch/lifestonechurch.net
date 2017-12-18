@@ -4,7 +4,7 @@ date: 2017-11-26 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2017-11-26.mp3
 podcastLength: '00:46:33'
 size: 54038161
-image: genesis.jpg
+image:
 speaker: Pastor Ben Helton
 description: The Star
 ---
