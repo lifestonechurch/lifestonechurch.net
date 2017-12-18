@@ -2,6 +2,7 @@ lifeGroups:
   - title: Clement Group - Sunday Evening
     time: 5:30pm
     address: 5468 W Sierra Rose Drive, Herriman
+    number: "Text Diane: 719-494-4160<br/>Text Ron: 801-380-6494"
     childcare: true
     hosts: Peppers
     leaders:
@@ -11,6 +12,7 @@ lifeGroups:
   - title: Coleman Group - Sunday Evening
     time: 6:30pm
     address:  3281 W 12075 S, Riverton
+    number: "Text Sam: 801-750-0787"
     childcare: true
     hosts: Colemans
     leaders:
@@ -20,6 +22,7 @@ lifeGroups:
   - title: McGee Group - Sunday Evening
     time: 6:30pm
     address:  12308 Flintlock Way Herriman, UT 84096
+    number: "Text Denise: 801-879-9557"
     childcare: true
     hosts: Greenwoods
     leaders:
@@ -29,6 +32,7 @@ lifeGroups:
   - title: Smith Group - Wednesday Evening
     time: 6:30pm
     address: 5392 W Venetia Street, Herriman
+    number: "Text Phil: 817-480-8131"
     childcare: true
     hosts: Blevins
     leaders:
@@ -38,6 +42,7 @@ lifeGroups:
   - title: Helton Group - Wednesday Evening
     time: 6:30pm
     address: 4982 Badger Lane, Riverton 84096
+    number: "Text Ben: 817-565-8316"
     childcare: true
     hosts: Wises
     leaders:
