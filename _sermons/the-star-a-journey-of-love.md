@@ -5,7 +5,7 @@ link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2017-12-03.mp3
 podcastLength: '00:44:16'
 size: 50500585
 image:
-speaker: Pastor Ben Helton
+speaker: Pastor Sam Coleman
 description: The Star
 ---
 
