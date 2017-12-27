@@ -31,7 +31,7 @@ We'll discuss the following topics:
   <li>Feb 26 Our Role in Evangelism</li>
 </ul>
 
-Equipping classes are designed to make the Bible easy and accessible to understand so that experienced and new Christians alike can share and defend their faith. We hope you take 7 weeks this fall to be challenged to grow in who God has called you to be, “equipped” and ready to build up the body of Christ!
+Equipping classes are designed to make the Bible easy and accessible to understand so that experienced and new Christians alike can share and defend their faith. We hope you take 7 weeks to be challenged to grow in who God has called you to be, “equipped” and ready to build up the body of Christ!
 
 Free onsite childcare provided.
 
