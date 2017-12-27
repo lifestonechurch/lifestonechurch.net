@@ -20,7 +20,7 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 
 **Text the leader to sign up!**
 
-**NEW LIFEGROUP SESSION BEGINS WEEK OF JANUARY 7-9.**
+**NEW LIFEGROUP SESSION BEGINS JANUARY 7 & 10.**
 
 {% include header.html level='2' banner=true children='Open LifeGroups' %}
 
