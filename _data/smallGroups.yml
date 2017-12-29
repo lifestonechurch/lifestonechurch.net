@@ -29,16 +29,6 @@ lifeGroups:
       - name: Kelly & Denise McGee
         image:
         description:
-  - title: Smith Group - Wednesday Evening
-    time: 6:30pm
-    address: 5392 W Venetia Street, Herriman
-    number: "Text Phil: 817-480-8131"
-    childcare: true
-    hosts: Blevins
-    leaders:
-      - name: Phil & Ashley Smith
-        image: /assets/uploads/pages/smiths.jpg
-        description: Phil and Ashley are happy to be celebrating their 3rd year as official Utahns after both being raised in Texas. They were married in 2003 and have served in various ministry roles over the past 15 years.  Phil is currently an RN at the University of Utah hospital (GO UTES!) and the Sunday morning worship team coordinator.  Ashley is an office manager for a custom home builder and helps with Lifestone's finances.   They both love to laugh and are laid back in their approach to life.  Their goal is to build a LifeGroup family that is bonded by a desire to grow spiritually and support one another through all that life dishes out.  See you Wednesdays!
   - title: Helton Group - Wednesday Evening
     time: 6:30pm
     address: 4982 Badger Lane, Riverton 84096
@@ -49,6 +39,16 @@ lifeGroups:
       - name: Ben & Kristen Helton
         image: /assets/uploads/pages/ben.jpg
         description: Ben and Kristen Helton met in college in the panhandle of Texas. After graduating they got married and moved to the Dallas area where Ben attended seminary while Kristen taught elementary music. After serving in churches as a Pastor to Students for 12 years, Ben was asked to start a new church in Weatherford, Texas in 2009. After much prayer and research, the Helton's felt called to start a church in Herriman, Utah, where no Bible-based church had been started before. Ben, Kristen, children Rachel (14), Karis (12), and Jaxson (9), and a team of 3 additional families moved from the Fort Worth area to Herriman in August of 2013 start Lifestone Church. Growing this new church and connecting with new neighbors and friends here in Utah has been an exciting adventure the family has absolutely enjoyed. One of the Heltons' favorite things about Lifestone Church has been the opportunity to closely connect with others and grow spiritually through LifeGroups. It is their desire that you, too, get connected in a LifeGroup this season and experience spiritual growth while forging life-long friendships!
+  - title: Smith Group - Thursday Evening
+    time: 6:30pm
+    address: 4009 Charisma Lane, Herriman
+    number: "Text Phil: 817-480-8131"
+    childcare: true
+    hosts: Sanfords
+    leaders:
+      - name: Phil & Ashley Smith
+        image: /assets/uploads/pages/smiths.jpg
+        description: Phil and Ashley are happy to be celebrating their 3rd year as official Utahns after both being raised in Texas. They were married in 2003 and have served in various ministry roles over the past 15 years.  Phil is currently an RN at the University of Utah hospital (GO UTES!) and the Sunday morning worship team coordinator.  Ashley is an office manager for a custom home builder and helps with Lifestone's finances.   They both love to laugh and are laid back in their approach to life.  Their goal is to build a LifeGroup family that is bonded by a desire to grow spiritually and support one another through all that life dishes out.  See you Wednesdays!
 youth:
   - time: Wednesdays, 6:30-8pm
     people: Grades 6th-12th
