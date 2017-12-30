@@ -4,7 +4,7 @@ lifeGroups:
     address: 5468 W Sierra Rose Drive, Herriman
     number: "Text Diane: 719-494-4160<br/>Text Ron: 801-380-6494"
     childcare: true
-    hosts: Peppers
+    hosts: Lindsey & Tyson Pepper
     leaders:
       - name: Ron and Diane Clement
         image: /assets/uploads/pages/clements.jpg
@@ -14,7 +14,7 @@ lifeGroups:
     address:  3281 W 12075 S, Riverton
     number: "Text Sam: 801-750-0787"
     childcare: true
-    hosts: Colemans
+    hosts: Sam & Rachael Coleman
     leaders:
       - name: Sam & Rachael Coleman
         image: /assets/uploads/pages/colemans.jpg
@@ -31,10 +31,10 @@ lifeGroups:
         description:
   - title: Helton Group - Wednesday Evening
     time: 6:30pm
-    address: 4982 Badger Lane, Riverton 84096
+    address: 3707 W. Arches Park Road, Riverton, UT 84065
     number: "Text Ben: 817-565-8316"
     childcare: true
-    hosts: Wises
+    hosts: Bill & Kaylene Smith
     leaders:
       - name: Ben & Kristen Helton
         image: /assets/uploads/pages/ben.jpg
@@ -44,7 +44,7 @@ lifeGroups:
     address: 4009 Charisma Lane, Herriman
     number: "Text Phil: 817-480-8131"
     childcare: true
-    hosts: Sanfords
+    hosts: Kari & Scott Sanford
     leaders:
       - name: Phil & Ashley Smith
         image: /assets/uploads/pages/smiths.jpg
