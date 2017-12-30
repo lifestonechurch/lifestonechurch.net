@@ -20,3 +20,11 @@ grades-6-12:
     date: 2017-12-20
     endDate: 2017-12-27
     name: Break for Christmas
+  -
+    date: 2018-01-17
+    name: Break for Christmas
+    description: <div>SLEDDING PARTY! Meet @ Lifestone at 6:00pm. We will have a game night instead if weather does not cooperate.</div>
+  -
+    date: 2018-02-14
+    name: Service project
+    description: <div>Make Valentine's Day cards and take them next door to Rocky Mountain Care Center residents.</div>
