@@ -3,7 +3,18 @@ layout: page
 title: Equip Classes
 ---
 
-<img src="{{ site.baseurl }}/assets/uploads/pages/equip.jpg" alt="Equip Classes" />
+<style>
+img.Logo__Image {
+  width: 100%;
+}
+@media (min-width: 767px) {
+  img.Logo__Image {
+    width: 50%;
+  }
+}
+</style>
+
+<img class="Logo__Image" src="{{ site.baseurl }}/assets/uploads/pages/equip.jpg" alt="Equip Classes" />
 
 NEW Equipping Classes! SIGN UP BELOW!
 

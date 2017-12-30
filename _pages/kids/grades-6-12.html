@@ -5,10 +5,23 @@ title: Grade 6-12
 
 <style>
 img.Logo__Image {
-  width: 50%;
+  width: 100%;
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+img.Series__Image {
+  width: 100%;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+@media (min-width: 767px) {
+  img.Logo__Image {
+    width: 50%;
+  }
+  img.Series__Image {
+    width: 50%;
+  }
 }
 dd {
   font-size: 18px;
@@ -34,9 +47,9 @@ dt {
 
 {% include events.html title="Events" category="grades-6-12" %}
 
-<img src="/assets/uploads/pages/la.jpg" />
+{% include header.html level='3' banner=false children='Lifestone Students L.A. Mission Trip' %}
 
-<p>Lifestone Students L.A. Mission Trip</p>
+<img class="Series__Image" src="/assets/uploads/pages/la.jpg" />
 
 <p>Next summer, Lifestone students are heading into the heart of Los Angeles to serve the people who live and work there! We are excited to partner with Center for Student Missions (CSM) to provide our students with a mission opportunity that we wholeheartedly believe will change their lives forever. Spots are limited, so register now! <a href="http://mailchi.mp/8e5b1a877ffc/lifestone-youth-are-headed-to-los-angeles-2070237?e=70784fbc60" target="_blank" rel="noopener">Check out details and registration info here.</a></p>
 
