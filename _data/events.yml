@@ -1,21 +1,9 @@
 churchwide:
   -
-    date: 2018-01-07
-    name: Vision Sunday
-    link: events/vision-sunday
-  -
-    date: 2018-01-07
-    name: Baptism
-    link: events/baptism
-  -
     date: 2018-01-14
     name: First Sunday with 2 Services
     link: events/2-services
 grades-6-12:
-  -
-    date: 2017-12-20
-    endDate: 2017-12-27
-    name: Break for Christmas
   -
     date: 2018-01-17
     name: Break for Christmas
