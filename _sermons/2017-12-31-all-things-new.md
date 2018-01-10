@@ -11,20 +11,20 @@ description: All Things New
 
 ## Sermon Notes
 
-1. Something to ________ up  1 Corinthians 15:33-34
+1. Something to **give** up  1 Corinthians 15:33-34
 
     It’s time to stop ___________
 
     It’s time to gain mastery of _____________
 
-2. Something to ___________ up James 1 & 2
+2. Something to **start** up James 1 & 2
 
     It’s time to start ___________
 
-3. Someone to ___________ up Ephesians 4:32
+3. Someone to **call** up Ephesians 4:32
 
     It’s time to transfer burden from ____________ to Jesus
 
-4. Somewhere to _________ up Hebrews 5
+4. Somewhere to **step** up Hebrews 5
 
     It’s time to _______________
