@@ -9,17 +9,28 @@ const Container = styled.div``;
 
 const DesktopNav = styled.ul`
   display: flex;
-  flex-direction: row;
   list-style: none;
   justify-content: flex-end;
+  margin: 0;
   & li {
     position: relative;
-    padding: 5px;
+    padding: 15px;
+    margin: 0;
     color: ${COLORS.BRAND};
     cursor: pointer;
     & a {
       text-decoration: none;
       color: ${COLORS.BRAND};
+    }
+    & a:hover,
+    & div:hover {
+      color: ${COLORS.HOVER};
+    }
+    & svg {
+      fill: ${COLORS.BRAND};
+    }
+    &:hover svg {
+      fill: ${COLORS.HOVER};
     }
   }
   @media (max-width: 1027px) {
@@ -78,7 +89,7 @@ const Item = styled.div`
 `;
 
 const Caret = styled.div`
-  width: 1.5rem;
+  width: 1.2rem;
 `;
 
 class Menu extends React.Component {
@@ -115,10 +126,7 @@ class Menu extends React.Component {
                   <Caret>
                     <svg viewBox="0 0 64 64">
                       <title>Icons 100</title>
-                      <path
-                        d="M18.4 28.6L32 42.2l13.6-13.6H18.4z"
-                        fill={COLORS.BRAND}
-                      />
+                      <path d="M18.4 28.6L32 42.2l13.6-13.6H18.4z" />
                     </svg>
                   </Caret>
                 </Item>
