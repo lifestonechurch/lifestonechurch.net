@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import styled from 'react-emotion';
 import Burger from './Burger';
 import * as COLORS from '../constants/colors';
+import logo from '../../assets/logo2.png';
 
 const MIN_DESKTOP_SIZE = 1163;
 
@@ -140,6 +141,20 @@ const Item = styled.div`
   justify-content: center;
 `;
 
+const Image = styled.img`
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height 45px;
+  padding: 4px 0;
+  z-index: 1000;
+  display: ${props => (props.isVisible ? 'visible' : 'none')};
+`;
+
+Image.propTypes = {
+  isVisible: PropTypes.bool.isRequired,
+};
+
 class Menu extends React.Component {
   state = {
     openDesktopItem: null,
@@ -219,6 +234,7 @@ class Menu extends React.Component {
             onClick={this.handleMobileToggle}
           />
           <MobileContainer className={this.state.isOpen ? 'open' : ''}>
+            <Image src={logo} alt="Logo" isVisible={this.state.isOpen} />
             <MobileNav>
               {navigation.map((a, i) => (
                 <li key={i}>
