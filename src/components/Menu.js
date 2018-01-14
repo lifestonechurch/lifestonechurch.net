@@ -59,6 +59,20 @@ const Mobile = styled.div`
   }
 `;
 
+const MobileContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: ${COLORS.BRAND};
+  display: none;
+  overflow-y: scroll;
+  &.open {
+    display: inherit;
+  }
+`;
+
 const Item = styled.div`
   display: flex;
 `;
@@ -75,6 +89,7 @@ class Menu extends React.Component {
 
   handleMobileToggle = isOpen => {
     this.setState({ isOpen });
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
   };
 
   handleItemClick = openItem => {
@@ -125,6 +140,35 @@ class Menu extends React.Component {
             color={this.state.isOpen ? 'white' : COLORS.BRAND}
             onClick={this.handleMobileToggle}
           />
+          <MobileContainer className={this.state.isOpen ? 'open' : ''}>
+            <ul>
+              <li>hi</li>
+              <li>hi</li>
+              <li>hi</li>
+              <li>hi</li>
+              <li>hi</li>
+              <li>hi</li>
+              <li>hi</li>
+              <li>hi</li>
+              <li>hi</li>
+              <ul>
+                <li>hi</li>
+                <li>hi</li>
+              </ul>
+              <ul>
+                <li>hi</li>
+                <li>hi</li>
+              </ul>
+              <ul>
+                <li>hi</li>
+                <li>hi</li>
+              </ul>
+              <ul>
+                <li>hi</li>
+                <li>hi</li>
+              </ul>
+            </ul>
+          </MobileContainer>
         </Mobile>
       </Container>
     );

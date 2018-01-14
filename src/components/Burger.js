@@ -9,7 +9,7 @@ const Icon = styled.div`
   z-index: 9001;
   width: 30px;
   height: 30px;
-  position: absolute;
+  position: fixed;
   right: 20px;
   top: 10px;
   transform: rotate(0deg);
