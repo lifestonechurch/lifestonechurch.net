@@ -80,26 +80,16 @@ const Icon = styled.div`
 `;
 
 class Burger extends React.Component {
-  state = { isOpen: false };
-
   handleClick = () => {
-    this.setState(
-      {
-        isOpen: !this.state.isOpen,
-      },
-      () => {
-        this.props.onClick(this.state.isOpen);
-      }
-    );
+    this.props.onClick(!this.props.isOpen);
   };
 
   render() {
     const { color } = this.props;
-    console.log(color);
     return (
       <Container onClick={this.handleClick}>
-        {this.state.isOpen ? null : <Text>Menu</Text>}
-        <Icon color={color} className={this.state.isOpen ? 'open' : ''}>
+        {this.props.isOpen ? null : <Text>Menu</Text>}
+        <Icon color={color} className={this.props.isOpen ? 'open' : ''}>
           <span />
           <span />
           <span />
@@ -111,6 +101,7 @@ class Burger extends React.Component {
 }
 
 Burger.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
   color: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };

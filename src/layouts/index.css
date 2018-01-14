@@ -3,8 +3,11 @@ font-family: 'Lato', sans-serif;
 font-family: 'Droid Serif', serif;
  */
 
-html,body {
+* {
   box-sizing: border-box;
+}
+
+html,body {
   margin: 0;
   padding: 0;
   font-size: 18px;

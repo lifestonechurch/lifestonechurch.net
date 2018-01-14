@@ -30,6 +30,7 @@ const DesktopNav = styled.ul`
     }
     & svg {
       fill: ${COLORS.BRAND};
+      width: 1.2rem;
     }
     &:hover svg {
       fill: ${COLORS.HOVER};
@@ -39,7 +40,7 @@ const DesktopNav = styled.ul`
     display: none;
   }
 `;
-const SubNav = styled.ul`
+const DesktopSubNav = styled.ul`
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -53,9 +54,9 @@ const SubNav = styled.ul`
   background: white;
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  & li:hover {
+  & a:hover {
     background: ${COLORS.BRAND};
-    & a {
+    & li {
     color: white;
     }
   }
@@ -66,7 +67,7 @@ const SubNav = styled.ul`
   }
 `;
 
-const Mobile = styled.div`
+const Mobile = styled.ul`
   @media (min-width: ${MIN_DESKTOP_SIZE}px) {
     display: none;
   }
@@ -78,6 +79,7 @@ const MobileContainer = styled.div`
   left: 0;
   height: 100%;
   width: 100%;
+  padding-top: 4rem;
   background: ${COLORS.BRAND};
   display: none;
   overflow-y: scroll;
@@ -86,17 +88,62 @@ const MobileContainer = styled.div`
   }
 `;
 
-const Item = styled.div`
+const MobileNav = styled.ul`
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  & li {
+    cursor: pointer;
+    & a {
+      color: white;
+      text-decoration: none;
+    }
+    & svg {
+      width: 2rem;
+      margin-right: -2rem;
+      fill: white;
+    }
+  }
 `;
 
-const Caret = styled.div`
-  width: 1.2rem;
+const MobileSubNav = styled.ul`
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  list-style: none;
+  display: none;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  & li:hover {
+    background: ${COLORS.BRAND};
+    & a {
+      color: white;
+    }
+  }
+  & a:last-child li {
+    margin-bottom: 0;
+  }
+  &.open {
+    display: inherit;
+  }
+`;
+
+const Item = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 class Menu extends React.Component {
   state = {
-    openItem: -1,
+    openDesktopItem: null,
+    openMobileItems: {},
     isOpen: false,
   };
 
@@ -105,9 +152,21 @@ class Menu extends React.Component {
     document.body.style.overflow = isOpen ? 'hidden' : 'auto';
   };
 
-  handleItemClick = openItem => {
+  handleDesktopItemClick = index => {
     this.setState({
-      openItem: this.state.openItem === openItem ? -1 : openItem,
+      openDesktopItem: this.state.openDesktopItem === index ? null : index,
+    });
+  };
+
+  handleMobileItemClick = (item, i) => {
+    const items = this.state.openMobileItems;
+    this.setState({
+      openMobileItems: items[i]
+        ? Object.keys(items)
+            .filter(a => a !== i)
+            .reduce((a, c) => ({ ...a, c: true }), {})
+        : { ...items, [i]: true },
+      isOpen: item.children ? this.state.isOpen : false,
     });
   };
 
@@ -119,65 +178,83 @@ class Menu extends React.Component {
           {navigation.map((a, i) => (
             <li key={i}>
               {a.path ? (
-                <Link to={a.path} onClick={() => this.handleItemClick(i)}>
+                <Link
+                  to={a.path}
+                  onClick={() => this.handleDesktopItemClick(i)}
+                >
                   {a.name}
                 </Link>
               ) : (
                 <Item>
-                  <div onClick={() => this.handleItemClick(i)}>{a.name}</div>
-                  <Caret>
-                    <svg viewBox="0 0 64 64">
-                      <title>Icons 100</title>
-                      <path d="M18.4 28.6L32 42.2l13.6-13.6H18.4z" />
-                    </svg>
-                  </Caret>
+                  <div onClick={() => this.handleDesktopItemClick(i)}>
+                    {a.name}
+                  </div>
+                  <svg viewBox="0 0 64 64">
+                    <path d="M18.4 28.6L32 42.2l13.6-13.6H18.4z" />
+                  </svg>
                 </Item>
               )}
               {a.children && (
-                <SubNav className={this.state.openItem === i ? 'open' : ''}>
+                <DesktopSubNav
+                  className={this.state.openDesktopItem === i ? 'open' : ''}
+                >
                   {a.children.map((b, j) => (
-                    <li key={j}>
-                      <Link to={b.path}>{b.name}</Link>
-                    </li>
+                    <Link
+                      to={b.path}
+                      key={j}
+                      onClick={() => this.handleDesktopItemClick(i)}
+                    >
+                      <li>{b.name}</li>
+                    </Link>
                   ))}
-                </SubNav>
+                </DesktopSubNav>
               )}
             </li>
           ))}
         </DesktopNav>
         <Mobile>
           <Burger
+            isOpen={this.state.isOpen}
             color={this.state.isOpen ? 'white' : COLORS.BRAND}
             onClick={this.handleMobileToggle}
           />
           <MobileContainer className={this.state.isOpen ? 'open' : ''}>
-            <ul>
-              <li>hi</li>
-              <li>hi</li>
-              <li>hi</li>
-              <li>hi</li>
-              <li>hi</li>
-              <li>hi</li>
-              <li>hi</li>
-              <li>hi</li>
-              <li>hi</li>
-              <ul>
-                <li>hi</li>
-                <li>hi</li>
-              </ul>
-              <ul>
-                <li>hi</li>
-                <li>hi</li>
-              </ul>
-              <ul>
-                <li>hi</li>
-                <li>hi</li>
-              </ul>
-              <ul>
-                <li>hi</li>
-                <li>hi</li>
-              </ul>
-            </ul>
+            <MobileNav>
+              {navigation.map((a, i) => (
+                <li key={i}>
+                  {a.path ? (
+                    <Link
+                      to={a.path}
+                      onClick={() => this.handleMobileItemClick(a, i)}
+                    >
+                      {a.name}
+                    </Link>
+                  ) : (
+                    <Item onClick={() => this.handleMobileItemClick(a, i)}>
+                      <div>{a.name}</div>
+                      <svg viewBox="0 0 64 64">
+                        <path d="M18.4 28.6L32 42.2l13.6-13.6H18.4z" />
+                      </svg>
+                    </Item>
+                  )}
+                  {a.children && (
+                    <MobileSubNav
+                      className={this.state.openMobileItems[i] ? 'open' : ''}
+                    >
+                      {a.children.map((b, j) => (
+                        <Link
+                          to={b.path}
+                          key={j}
+                          onClick={() => this.handleMobileItemClick(b, i)}
+                        >
+                          <li>{b.name}</li>
+                        </Link>
+                      ))}
+                    </MobileSubNav>
+                  )}
+                </li>
+              ))}
+            </MobileNav>
           </MobileContainer>
         </Mobile>
       </Container>
