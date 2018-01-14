@@ -1,32 +1,46 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import styled from 'react-emotion';
+import Menu from '../components/Menu';
+import * as COLORS from '../constants/colors';
+import logo from '../../assets/logo.png';
 
-const Header = () =>
-  <div
-    style={{
-      background: 'green',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Lifestone Church
-        </Link>
-      </h1>
-    </div>
-  </div>
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: #e7e7e7;
+  background: #f8f8f8;
+  padding: 0 20px;
+`;
 
-export default Header
+const Image = styled.img`
+  height 45px;
+`;
+
+const Header = ({ navigation }) => (
+  <Container>
+    <Link to="/">
+      <Image src={logo} alt="Logo" />
+    </Link>
+    <Menu navigation={navigation} />
+  </Container>
+);
+
+Header.propTypes = {
+  navigation: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      path: PropTypes.string,
+      children: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          path: PropTypes.string,
+        })
+      ),
+    })
+  ).isRequired,
+};
+
+export default Header;

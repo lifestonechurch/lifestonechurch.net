@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Header from '../components/Header';
 import Container from '../components/Container';
-import Menu from '../components/Menu';
 
 import './index.css';
 
 const TemplateWrapper = ({ children, data }) => {
   const navigation = data.site.siteMetadata.navigation;
+  console.log(navigation);
   return (
     <div>
       <Helmet
@@ -18,13 +18,12 @@ const TemplateWrapper = ({ children, data }) => {
           { name: 'keywords', content: 'sample, something' },
         ]}
       />
+      <Header navigation={navigation} />
       <link
         href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
         rel="stylesheet"
         type="text/css"
       />
-      <Header />
-      <Menu navigation={navigation} />
       <Container>{children()}</Container>
     </div>
   );

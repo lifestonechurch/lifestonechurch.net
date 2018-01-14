@@ -7,18 +7,18 @@ const Icon = styled.div`
   transform: scale(0.7);
   transform-origin: top right;
   z-index: 9001;
-  width: 50px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  right: 32px;
-  top: 34px;
+  right: 20px;
+  top: 10px;
   transform: rotate(0deg);
   cursor: pointer;
 
   & span {
     display: block;
     position: absolute;
-    height: 7px;
+    height: 4px;
     width: 100%;
     background-color: ${props => props.color};
     opacity: 1;
@@ -34,11 +34,11 @@ const Icon = styled.div`
 
   & span:nth-child(2),
   & span:nth-child(3) {
-    top: 14px;
+    top: 12px;
   }
 
   & span:nth-child(4) {
-    top: 28px;
+    top: 24px;
   }
 
   &.open span:first-child {
