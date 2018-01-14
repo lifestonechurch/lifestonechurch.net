@@ -12,11 +12,6 @@ const Container = styled.div`
   z-index: 9001;
 `;
 
-const Text = styled.span`
-  margin-right: 8px;
-  color: ${COLORS.BRAND};
-`;
-
 const Icon = styled.div`
   display: block;
   transform: scale(0.7);
@@ -88,7 +83,6 @@ class Burger extends React.Component {
     const { color } = this.props;
     return (
       <Container onClick={this.handleClick}>
-        {this.props.isOpen ? null : <Text>Menu</Text>}
         <Icon color={color} className={this.props.isOpen ? 'open' : ''}>
           <span />
           <span />
