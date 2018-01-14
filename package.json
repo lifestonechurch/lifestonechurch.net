@@ -4,12 +4,18 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.8.12",
+    "emotion": "^8.0.12",
+    "emotion-server": "^8.0.12",
+    "gatsby": "^1.9.145",
     "gatsby-link": "^1.6.8",
-    "gatsby-plugin-react-helmet": "^1.0.3"
+    "gatsby-plugin-emotion": "^1.1.10",
+    "gatsby-plugin-react-helmet": "^1.0.3",
+    "prop-types": "^15.6.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "church",
+    "website"
   ],
   "license": "MIT",
   "main": "n/a",
@@ -20,6 +26,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.5.2"
+    "prettier": "^1.9.2"
   }
 }

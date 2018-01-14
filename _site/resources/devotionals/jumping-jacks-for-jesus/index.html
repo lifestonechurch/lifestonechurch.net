@@ -1,0 +1,578 @@
+<!doctype html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lifestone Church</title>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#008F01"> <meta name="mobile-web-app-capable" content="yes"> <link rel="icon" sizes="192x192" href="assets/images/icon.png">
+
+  <link rel="shortcut icon" href="/assets/images/favicon.png" />
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" media="all">
+
+  <script type='text/javascript' src='/bower_components/jquery/dist/jquery.min.js'></script>
+  <script type='text/javascript' src='/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=210998452410886";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <header>
+    <style>
+.navbar {
+  border-radius: 0;
+}
+.navbar-brand {
+  padding: 0;
+  padding-top: 4px;
+}
+.navbar-brand img {
+  height: 45px;
+}
+.dropdown-menu {
+  border: none;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background-color: #008F01;
+  color: #FFF;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #008F01;
+}
+.navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #008F01;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+.navbar-collapse {
+  max-height: inherit !important;
+}
+@media (min-width: 800px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+    .navbar-nav {
+  background-color: #008F01;
+    }
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #FFF;
+    }
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  color: rgba(255,255,255,0.6);
+  text-decoration: underline;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > a:hover {
+  background-color: #FFF;
+  color: #008F01;
+  text-decoration: none;
+    }
+}
+</style>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"><img src="/assets/images/logo.png" /></a>
+  </div>
+  <div id="collapse" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right" role="navigation">
+      
+        
+        
+          <li>
+            <a href="/visit">Visit</a>
+          </li>
+        
+      
+        
+        
+          <li>
+            <a href="/events">Events</a>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              About <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/about/about-us">About Us</a></li>
+              
+              <li><a href="/about/pastors">Pastors</a></li>
+              
+              <li><a href="/about/contact-us">Contact Us</a></li>
+              
+              <li><a href="/about/what-we-believe">What We Believe</a></li>
+              
+              <li><a href="/about/membership">Membership</a></li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Resources <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/resources/sermons">Sermons</a></li>
+              
+              <li><a href="/resources/devotionals">Devotionals</a></li>
+              
+              <li><a href="/resources/videos">Videos</a></li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+          <li>
+            <a href="/lifegroups">LifeGroups</a>
+          </li>
+        
+      
+        
+        
+          <li>
+            <a href="/equip-classes">Equip Classes</a>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Kids <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/kids/birth-kindergarten">Birth-Kindergarten</a></li>
+              
+              <li><a href="/kids/grades-1-5">Grades 1-5</a></li>
+              
+              <li><a href="/kids/grades-6-12">Grades 6-12</a></li>
+              
+              <li><a href="/kids/t-shirt-order">T-Shirt Order</a></li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Support <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/support/serve">Serve</a></li>
+              
+              <li><a href="/support/give">Give</a></li>
+              
+              <li><a href="/support/concern-center">Concern Center</a></li>
+              
+            </ul>
+          </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+  </header>
+
+  <div>
+    <style>
+.content img {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.content img.image-third {
+  display: inline;
+  margin-right: 1%;
+  width: 30%
+}
+@media (max-width: 501px) {
+  .content img.image-third {
+    margin-top: 10px;
+    width: 100%
+  }
+}
+.Page__Sidebar {
+  margin-top: 45px;
+}
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="content col-lg-9 col-md-12">
+      <!-- Get array of every page url -->
+
+
+
+<div>
+  <span><a href="/">Home</a></span>
+  
+  
+  
+  
+  
+    
+    
+    <span><span>&rsaquo;</span>
+      
+        
+          Resources
+        
+        
+    </span>
+    
+    
+  
+    
+    
+    <span><span>&rsaquo;</span>
+      <a href="/resources/devotionals/">
+        
+          Devotionals
+        
+        </a>
+    </span>
+    
+    
+  
+    
+    
+    <span><span>&rsaquo;</span>
+      
+        
+          Jumping Jacks For Jesus
+        
+        
+    </span>
+    
+    
+  
+</div>
+
+      <style>
+.Header__Banner{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2em;
+  background-color: #008F01;
+  color: #FFF;
+}
+</style>
+
+
+
+<h1 id='jumping-jacks-for-jesus' >Jumping Jacks For Jesus</h1>
+
+      <style>
+.BibleQuote {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin: 20px 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+  max-width: 500px;
+}
+.BibleQuote__Title {
+  font-style: normal;
+  font-size: 1.2em;
+}
+.BibleQuote__Label {
+  font-size: 0.8em;
+  color: #797979;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<style>
+.Metadata {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(0,0,0,0.6);
+  line-height: 2em;
+  margin-bottom: 10px;
+}
+</style>
+
+<div class="Metadata">
+  
+  <div>Pastor Sam Coleman</div>
+  <div>
+
+December
+21st,
+2016
+</div>
+
+</div>
+
+
+<div>
+  <h2 id="what-are-your-family-christmas-traditions">What Are Your Family Christmas Traditions?</h2>
+
+<p>I remember a story from Pastor Andy Hornbaker (former Pastor of Holladay Baptist now called Risen Life Church) of a young man in the youth group or youth camp who had asked to preach and was very nervous because it was his first sermon. In the middle of his preaching the fellow decided to do some jumping jacks for Jesus and now Pastor Andy was nervous. Turns out jumping jacks for Jesus was exactly what that sermon needed and it calmed everyone down and turned out to be a pretty good message. Sometimes when I’m preaching and I start to see people nodding off I am tempted to maybe do a few of those jumping jacks for Jesus myself.</p>
+
+<p>Who is the first person or group of people to really get into the celebration mode of the new Christ child conceived by the Holy Spirit? - Envelope please - the winner is (pause for effect)…</p>
+
+<p>A. The Shepherds (Luke 2:8-18)</p>
+
+<p>B. The Wise Men of the East (Matt. 2:1-12)</p>
+
+<p>C. An unborn baby (Luke 1:41)</p>
+
+<p>D. Simeon (Luke 2:25-35)</p>
+
+<p>E. Elizabeth (Luke 1:43)</p>
+
+<p>In Luke 1 the Christmas narrative starts with <strong>two old people</strong> who are unable to have children.</p>
+
+<p>At this point, you may be thinking I’m reading the wrong gospel because Christmas starts with Mary and “The Holy Spirit will come upon you, and the power of the Most High will overshadow you. Therefore, the holy One to be born will be called the Son of God.” - Luke 1:35.</p>
+
+<p>So back to <strong>the two old people</strong> in Luke 1 who are unable to have children and remember one of the keys to understanding why Luke is even writing his good news “narrative” in Luke 1:1 was to talk “about the events that have been fulfilled among us.” Luke likes fulfilled prophecy.</p>
+
+<p>Before baby Jesus comes, one of the prophecies that needs fulfilled is found in Isaiah 40.</p>
+
+<p class="BibleQuote">Isaiah 40:3<br />
+A voice cries: “In the wilderness prepare the way of <strong>the LORD</strong>;<br />
+make straight in the desert a highway for <strong>our God</strong>.</p>
+
+<p class="BibleQuote">Isaiah 40:5<br />
+And <strong>the glory of the LORD</strong> shall be revealed, and all flesh shall see it together, for the mouth of the LORD has spoken.”</p>
+
+<p class="BibleQuote">Isaiah 40:9<br />
+<strong>“Behold your God!”</strong></p>
+
+<p>This messenger needs to come to prepare “the way of the Yahweh [LORD]”, our God, to reveal the “glory of the LORD” so that we can “Behold your God!” This is talking about Jesus and answers right away the question, who is Jesus? He is not the messenger, he is the LORD, our God, Behold Him! Or as John the Baptist would say in John 1:29 “Behold, the Lamb of God, who takes away the sin of the world!”</p>
+
+<p><strong>The two old people continued…</strong></p>
+
+<p>Zechariah was a priest and his wife Elizabeth was from the daughters of Aaron (Luke 1:5). They are both called “righteous” and “living without blame” in verse 6. Zechariah gets chosen “by lot” to go in and burn incense at the sanctuary of the Lord when all of a sudden he gets startled when an angel later identified as Gabriel shows up to the right side of the altar of incense (Old Testament symbol of offered up prayer) and tells him his prayer has been heard. They are going to have a Baby! Yahweh is gracious would be the name of the child (that’s what John means) and “many will rejoice at his birth” (Luke 1:14) He will be filled with the Holy Spirit while still in his mother’s womb and he will turn many of the sons of Israel to the Lord their God. Also he can not have alcoholic beverages (Luke 1:15). He will go before the Lord God in the spirit and power of Elijah “to make ready for the Lord a prepared people” (Luke 1:17) and just to make sure we know what is going on Gabriel makes reference to the last two verses of the Old Testament written 400 years ago:</p>
+
+<p class="BibleQuote">Malachi 4<br />
+5 Look, I am going to send you Elijah the prophet before the great and awesome Day of the LORD comes.<br />
+6 And he will turn the hearts of fathers to their children and the hearts of children to their fathers. Otherwise, I will come and strike the land with a curse.”</p>
+
+<p>*To understand the phrase “to turn the hearts of children to their fathers” note some of the context of injustice mentioned in Malachi 2 with men hating, divorcing, and abusing their wives (Mal. 2:16) along with adultery, oppression of widows and orphans (Mal. 3:5) as people mistreated others and got away with it they started to think and teach God must not care about hurting people and started calling what is evil, good. So the question was asked, “Where is the God of Justice?” (Mal. 2:17) - “See, I am going to send My messenger, and he will clear the way before Me.” (Mal. 3:1) This is God speaking and John the Baptist will be used as a messenger to bring about the preparing of a way for God who shows up in bone and flesh through Jesus - God is going to bring Justice Himself not the messenger.</p>
+
+<p>Gabriel talking to Zechariah about his future son:</p>
+
+<p class="BibleQuote">Luke 1:17<br />
+And he will go before Him in the spirit and power of Elijah, to turn the hearts of fathers to their children, and the disobedient to the understanding of the righteous, to make ready for the Lord a prepared people.</p>
+
+<p>Zechariah had a problem with this, because he thought his wife was too old for this baby stuff and he begins to argue with Gabriel who whips out his credentials:</p>
+
+<p class="BibleQuote">Luke 1:19 and 20a<br />
+“I am Gabriel, <strong>who stands in the presence of God</strong>, and I was sent to speak to you and tell you this good news. <strong>Now listen!</strong></p>
+
+<p>Zechariah gets slapped with proverbial heavenly duct tape and can’t speak till after Yahweh is gracious (John) is born.</p>
+
+<p>Elizabeth knows she is pregnant from Zechariah and she hides herself for 5 months (Luke 1:24).</p>
+
+<p>Gabriel shows up again, this time to tell Mary: “Rejoice, favored woman! The Lord is with you.” (Luke 1:28)</p>
+
+<p>This upsets Mary because angel visitations are scary and she does not understand the statement. Gabriel does not come down hard on Mary like he did Zechariah and lets her know she will give birth to a child without the help of a man but the Holy Spirit (Luke 1:35) the child’s name will be Yahweh delivers or saves (Jesus) and he “will be called the Son of the Most High”</p>
+
+<p>Notice Mary’s reaction to having a child (without a human father) is a lot different from Zechariah’s reaction of old people having a kid.</p>
+
+<p class="BibleQuote">Luke 1:38<br />
+“I am the Lord’s slave,” said Mary. “May it be done to me according to your word.” Then the angel left her.</p>
+
+<p class="BibleQuote">Luke 1:39<br />
+In those days Mary set out and hurried to a town in the hill country of Judah 40 where she entered Zechariah’s house and greeted Elizabeth. 41 When Elizabeth heard Mary’s greeting, <strong>the baby leaped inside her</strong>, and Elizabeth was filled with the Holy Spirit. 42 Then she exclaimed with a loud cry: “You are the most blessed of women, and your child will be blessed! 43 How could this happen to me, that <strong>the mother of my Lord should come to me</strong>? 44 For you see, when the sound of your greeting reached my ears, <strong>the baby leaped for joy inside me</strong>! 45 She who has believed is blessed because what was spoken to her by the Lord will be fulfilled!”</p>
+
+<p>The first recorded leap for Jesus took place inside of a womb it most likely was not a jumping jack for Jesus but a jump nonetheless. Notice Elizabeth full of the Holy Spirit recognizes Mary as the “mother of my Lord.” This announcement leads Mary to “My soul proclaims the greatness of the Lord and my spirit has rejoiced in God my Savior” (Luke 1:46 the Magnificat) the my soul makes great/magnifies the Lord talks about scattering the proud and toppling the mighty and lifting up (exalting) the lowly, satisfying the hungry and the rich sent away empty - these praise thoughts can be directly tied back to Malachi and Isaiah and the prophecy of the Messiah (Christ) coming with a messenger who not yet born yet full of the Holy Spirit leaps inside of a womb.</p>
+
+<p>After the birth of John on the day eight circumcision, the people were questioning Elizabeth’s name choice of John and Zechariah who was still muted had to write on a tablet: “HIS NAME IS JOHN” And they were all amazed. (Luke 1:63). Then Zechariah filled with the Holy Spirit and with the heavenly duct taped removed prophesied about his son:</p>
+
+<p class="BibleQuote">Acts 1:76<br />
+And child, you will be called a prophet of the Most High,<br />
+for you will go before the Lord to prepare His ways</p>
+
+<p>Why do you think a good portion of Luke 1 covers the birth of John the Baptist - why is he important to Luke’s goal of writing his gospel?</p>
+
+<p>How does being filled with the Holy Spirit help Elizabeth see who Jesus is?</p>
+
+<p>How does being filled with the Holy Spirit help Zechariah understand who his son is?</p>
+
+<p>1 Corinthians teaches that when we become Christians we have this same Holy Spirit and ability as believers to understand the depth of God (1 Cor. 2:10).</p>
+
+<p>How does being filled with Holy Spirit help you understand what he has freely given you in Christ? (1 Cor. 2:12)</p>
+
+</div>
+
+    </div>
+    <div class="Page__Sidebar">
+      <div class="col-sm-3 visible-lg">
+  <div>
+    <div class="fb-page" data-href="https://www.facebook.com/lifestonechurchutah" data-width="320" data-height="1000" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lifestonechurchutah"><a href="https://www.facebook.com/lifestonechurchutah">Lifestone Church Herriman Utah</a></blockquote></div></div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <style>
+.Footer {
+  margin-top: 50px;
+}
+.Footer__Top .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Footer__Top {
+  background-color: #484848;
+  background: rgb(47,47,47);
+  background: -moz-linear-gradient(top, rgba(47,47,47,1) 0%, rgba(54,54,54,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(47,47,47,1)), color-stop(100%,rgba(54,54,54,1)));
+  background: -webkit-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+  background: -o-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+  background: -ms-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+  background: linear-gradient(to bottom, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+}
+.Footer__Top,
+.Footer__Top a,
+.Footer__Top p {
+  color: #FFF;
+}
+.Footer__Top a:hover {
+  text-decoration: underline;
+}
+.socialMediaIcon {
+  margin-right: 10px;
+}
+.Footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Footer__Top_Column h4 {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .Footer__Top_Column {
+    padding-bottom: 30px;
+  }
+}
+</style>
+
+<div class="Footer">
+  <div class="Footer__Top">
+    <div class="container">
+      <div class="row">
+        <div class="Footer__Top_Column col-sm-4">
+          <style>
+.Header__Banner{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2em;
+  background-color: #008F01;
+  color: #FFF;
+}
+</style>
+
+
+
+<h4 id='sundays-900-am--1030-am' >Sundays 9:00 am & 10:30 am</h4>
+
+          <p>3443 12600 S, Riverton, UT 84065</p>
+          <style>
+.googleMap {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.googleMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
+
+<div class="googleMap">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309.165490217484!2d-111.97396447551098!3d40.52138232511006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3011289953bd878e!2sSouth+Valley+Baptist+Church!5e0!3m2!1sen!2sus!4v1474841111651" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+        </div>
+        <div class="Footer__Top_Column col-sm-4">
+        </div>
+        <div class="Footer__Top_Column col-sm-4">
+          <p><a href="https://www.facebook.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/facebook.svg" height="15px" width="15px" class="socialMediaIcon"/>lifestonechurchutah</a></p>
+          <p><a href="https://www.instagram.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/instagram.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestonechurchutah</a></p>
+          <p><a href="https://twitter.com/lifestoneutah" target="_blank"><img src="/assets/images/twitter.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestoneutah</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/assets/js/audiojs/audio.min.js"></script>
+  <script>
+    audiojs.events.ready(function() {
+      var as = audiojs.createAll();
+    });
+  </script>
+
+  <script src="/assets/js/featureSwitch.js"></script>
+  <script src="/assets/js/googleAnalytics.js"></script>
+</body>
+</html>

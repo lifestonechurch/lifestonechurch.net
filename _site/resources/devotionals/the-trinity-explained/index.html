@@ -1,0 +1,584 @@
+<!doctype html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lifestone Church</title>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#008F01"> <meta name="mobile-web-app-capable" content="yes"> <link rel="icon" sizes="192x192" href="assets/images/icon.png">
+
+  <link rel="shortcut icon" href="/assets/images/favicon.png" />
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" media="all">
+
+  <script type='text/javascript' src='/bower_components/jquery/dist/jquery.min.js'></script>
+  <script type='text/javascript' src='/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=210998452410886";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <header>
+    <style>
+.navbar {
+  border-radius: 0;
+}
+.navbar-brand {
+  padding: 0;
+  padding-top: 4px;
+}
+.navbar-brand img {
+  height: 45px;
+}
+.dropdown-menu {
+  border: none;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background-color: #008F01;
+  color: #FFF;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #008F01;
+}
+.navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #008F01;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+.navbar-collapse {
+  max-height: inherit !important;
+}
+@media (min-width: 800px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+    .navbar-nav {
+  background-color: #008F01;
+    }
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #FFF;
+    }
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  color: rgba(255,255,255,0.6);
+  text-decoration: underline;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > a:hover {
+  background-color: #FFF;
+  color: #008F01;
+  text-decoration: none;
+    }
+}
+</style>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"><img src="/assets/images/logo.png" /></a>
+  </div>
+  <div id="collapse" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right" role="navigation">
+      
+        
+        
+          <li>
+            <a href="/visit">Visit</a>
+          </li>
+        
+      
+        
+        
+          <li>
+            <a href="/events">Events</a>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              About <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/about/about-us">About Us</a></li>
+              
+              <li><a href="/about/pastors">Pastors</a></li>
+              
+              <li><a href="/about/contact-us">Contact Us</a></li>
+              
+              <li><a href="/about/what-we-believe">What We Believe</a></li>
+              
+              <li><a href="/about/membership">Membership</a></li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Resources <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/resources/sermons">Sermons</a></li>
+              
+              <li><a href="/resources/devotionals">Devotionals</a></li>
+              
+              <li><a href="/resources/videos">Videos</a></li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+          <li>
+            <a href="/lifegroups">LifeGroups</a>
+          </li>
+        
+      
+        
+        
+          <li>
+            <a href="/equip-classes">Equip Classes</a>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Kids <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/kids/birth-kindergarten">Birth-Kindergarten</a></li>
+              
+              <li><a href="/kids/grades-1-5">Grades 1-5</a></li>
+              
+              <li><a href="/kids/grades-6-12">Grades 6-12</a></li>
+              
+              <li><a href="/kids/t-shirt-order">T-Shirt Order</a></li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Support <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/support/serve">Serve</a></li>
+              
+              <li><a href="/support/give">Give</a></li>
+              
+              <li><a href="/support/concern-center">Concern Center</a></li>
+              
+            </ul>
+          </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+  </header>
+
+  <div>
+    <style>
+.content img {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.content img.image-third {
+  display: inline;
+  margin-right: 1%;
+  width: 30%
+}
+@media (max-width: 501px) {
+  .content img.image-third {
+    margin-top: 10px;
+    width: 100%
+  }
+}
+.Page__Sidebar {
+  margin-top: 45px;
+}
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="content col-lg-9 col-md-12">
+      <!-- Get array of every page url -->
+
+
+
+<div>
+  <span><a href="/">Home</a></span>
+  
+  
+  
+  
+  
+    
+    
+    <span><span>&rsaquo;</span>
+      
+        
+          Resources
+        
+        
+    </span>
+    
+    
+  
+    
+    
+    <span><span>&rsaquo;</span>
+      <a href="/resources/devotionals/">
+        
+          Devotionals
+        
+        </a>
+    </span>
+    
+    
+  
+    
+    
+    <span><span>&rsaquo;</span>
+      
+        
+          The Trinity Explained
+        
+        
+    </span>
+    
+    
+  
+</div>
+
+      <style>
+.Header__Banner{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2em;
+  background-color: #008F01;
+  color: #FFF;
+}
+</style>
+
+
+
+<h1 id='the-trinity-explained' >The Trinity Explained</h1>
+
+      <style>
+.BibleQuote {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin: 20px 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+  max-width: 500px;
+}
+.BibleQuote__Title {
+  font-style: normal;
+  font-size: 1.2em;
+}
+.BibleQuote__Label {
+  font-size: 0.8em;
+  color: #797979;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<style>
+.Metadata {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(0,0,0,0.6);
+  line-height: 2em;
+  margin-bottom: 10px;
+}
+</style>
+
+<div class="Metadata">
+  
+  <div>Pastor Sam Coleman</div>
+  <div>
+
+December
+28th,
+2016
+</div>
+
+</div>
+
+
+<div>
+  <h2 id="what-jesus-taught-about-the-trinity">What Jesus Taught About The Trinity</h2>
+
+<p>When I get into conversations with people who think the Trinity is unbiblical or comes from church creeds (Apostles creed or Nicene the most famous) I always take them to John 14 and 16. I teach the Trinity because Jesus taught the Trinity clearly and distinctly. John 14 - I am leaving you but not as orphans (Jn.14:3, 8) - the Father will send another to comfort you (Holy Spirit Jn. 14:26) when he comes the Father and the Son will be in you (Jn. 14:23). After Jesus teaches he will be with them no more in John 14 he gives them the command in John 15:4-5 to abide (remain) in Him.</p>
+
+<h3 id="how-do-you-abide-with-someone-who-is-no-longer-around">How do you abide with someone who is no longer around?</h3>
+
+<p>Jesus taught in Matthew 24:23 that Christ will not in the future do guest appearances. According to Jesus’ own teaching which is a part of the command in John 15 to abide - Jesus warned me ahead of time this would happen and I should not be surprised when people come up with convincing stories of Jesus visitations.</p>
+
+<p>When we do have people see Christ after the the ascension into heaven it is always visions and they keep Christ in heaven (Stephen as he is being stoned, Paul on road to Damascus, John in Revelation) proving this is a consistent biblical teaching. When my faith comes from a man who goes against this teaching - then my faith is not abiding in Christ, it is abiding in a new thing that is different from the biblical good news.</p>
+
+<p>I have been asked who is Jesus praying to in the garden if Jesus is the Father? Hank Hanegraaff, known as the Bible answer man says, at that many confuse <strong>the What of the Trinity</strong> (One Being, Essence, Substance) with <strong>the Who of the Trinity</strong> (Father, Son, and Holy Spirit). <strong>The What of God</strong> gets declared in Deut. 6 - hear O Israel the LORD <strong>your God is one</strong>! (One Substance - never created, eternal, and thus worthy of worship). I am constantly told in Isaiah there is only one God (Isa. 45:5) in Isaiah 42 he created all the “heavens” - stars, galaxies and Isa. 43:10-11 - <strong>there was no god before me nor will there be one after me</strong>. When my child comes and asks me who is God, my answer is - the One who was not created (Father, Son, and Holy Spirit).</p>
+
+<p>All three are worthy of worship simply because they are unique to all creation - they create and are not created.</p>
+
+<p>When I meet someone who claims God was once a man and is a created glorified being who has become “heavenly Father” then we begin to see the difference between a created god (not a Christian concept) vs. a eternal God with no beginning or end (Christian concept).
+As soon as we introduce the concept of created God we have to ask the question: who created “heavenly father”?</p>
+
+<p>The Christian concept of God starts with a God who was never created:</p>
+
+<p class="BibleQuote">Isaiah 43:10<br />
+“You are my witnesses,” declares the LORD, “and my servant whom I have chosen, that you may know and believe me and understand that I am he. Before me no god was formed, nor shall there be any after me.</p>
+
+<p>In Isaiah 45-46 <strong>seven times God says He is LORD</strong> and “<strong>there is no other</strong>” he created the universe.</p>
+
+<p>Thanks to the Dead Sea Scrolls (DSS) we as Christians have something old to say about Isaiah. The DSS tell us the Bible has not been corrupted over time - pretty much what we had in 250 BC is what we have in 900 AD (date of oldest complete Masoretic Text) which is what we have in 2017+ AD - it has not changed or been corrupted or tampered with. If you can not get your new revelation to agree with the reliable Word of God and a God who does not by nature change over time, you naturally have to teach the Word of God has been corrupted or change the context of what is being taught in Isaiah. These are both current trends in many churches today.</p>
+
+<p>Getting back to the who is Jesus praying to question - In John 10:30 Jesus says, “I and the Father are one” Well if they are the same person then how can Jesus talk to the Father - would that not be like me talking to myself? - Again biblical context wins out - the “one” in Greek is neuter not referring to person but to purpose and essence - this corresponds well to John 14 “whoever has seen me has seen the Father (Jn. 14:9) not because Jesus is the Father but because Jesus shows them the Father, the words he speaks are not his own, they belong to the Father (Consistent in John 5:19, 6:46, 8:38 &amp; 42). John 5:19 So Jesus said to them, “Truly, truly, I say to you, the Son can do nothing of his own accord, but only what he sees the Father doing. For whatever the Father does, that the Son does likewise.</p>
+
+<p>Some of the names given to the child born in Isaiah 9:6 are: Wonderful Counselor, Mighty God, Everlasting Father, again this teaches the born Christ child is truly God - of the same Essence and Being as the Father.</p>
+
+<p>Nowhere does Jesus say the Father is the Son or Jesus is the Father.</p>
+
+<p>Is the Father in Jesus? Answered in John 14:10-11</p>
+
+<p>Is Jesus going to the Father? Answered in John 14:12, 17:11</p>
+
+<p>Is Jesus the Father? No - but the Father is “in” him and when He goes to the Father (who is not the Son or Holy Spirit because Jesus makes that clear), the Father will send the Holy Spirit.</p>
+
+<p>When the Holy Spirit comes he “will be in” you (referring to followers of Christ - Jn. 14:17). That is the exact same language Jesus used to teach Philip that: “whoever has seen me has seen the Father” he goes on to say “I am in the Father and the Father is in me” (v. 11) but before that he again makes the distinction that the words he speaks are not his “own authority, but the Father who dwells in me does his works.” (v. 10).</p>
+
+<p>Same God different manifestations does not fit with what Jesus teaches in any part of the Gospels. When we get to heaven will there be three different Gods we bow to - Father, Son, and Holy Spirit? Again Jesus does not teach three different God’s - He actually teaches the Unity of the Godhead with “we will come” and “we” will make our home with those who “keep my word” (Jn. 14:21) who are the we? - Father, Son, and Holy Spirit. So yes all three will be present but only Jesus has the flesh and bone (Luke 24:39) the Father and the Spirit will be worshiped in truth and spirit (John 4). There is a current trend in Christianity to give the Father and the Spirit flesh and bone and the justification is so we can sit down and talk with them and find out they care very much about us, Paul was able to find out God the Father (no human eye has ever seen or will see” 1 Tim. 6:16 because He lives in “unapproachable light”) and the Holy Spirit are very relatable and caring and want a relationship with Him. If making God visible brings about a better relationship with God then we would need to redefine what Jesus taught in John 14:6 and what Paul taught in 2 Cor. 5:7 we walk/live by <strong>__</strong>_ not by sight).</p>
+
+<p>When the Holy Spirit came at Pentecost they had the full power to abide in Jesus . . .”But if Christ is in you” (Rom. 8:10) for all who are led by the Spirit of God are sons of God (Rom. 8:14) by whom we cry, “Abba! Father!”(Gal. 4:6) - Even the Holy Spirit is teaching us the distinctions of the Godhead. They are not mere manifestations of the same person and to teach that runs counter to Christ’s clear teaching of the person distinctions and unity of God as one - which Jesus did teach.</p>
+
+<p class="BibleQuote">John 6:46<br />
+not that anyone has seen the Father except he who is from God; he has seen the Father.</p>
+
+<p class="BibleQuote">John 8:38<br />
+I speak of what I have seen with my Father . . .”</p>
+
+<p class="BibleQuote">John 8:42<br />
+Jesus said to them, “If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. Jesus is God but He is not the Father - he has an eternal and perfect relationship with this person of the Trinity.</p>
+
+<p class="BibleQuote">Mark 13:32<br />
+“But concerning that day or that hour, no one knows, not even the angels in heaven, nor the Son, but only the Father.</p>
+
+<p>The New Testament teaching is consistent in revealing the Trinity - One God in Three persons. When I look at Jesus I get to see the non-visible Father because He represents Him so well in word, deed, purpose and essence (Being). Jesus miracles are performed in the Power of the Holy Spirit (Matt. 12) and His teaching is done through the Holy Spirit in Col. 2:9 so that we have Christ portrayed as “the whole fullness of deity dwells bodily.”</p>
+
+<p>The Trinity is best taught as Jesus taught it - Father, Son, Holy Spirit as distinct persons yet all fully representing each other because they are of the same Essence or Being one. Even later on the Holy Spirit in Rom. 8 is referred to the Spirit of Christ, Philippians 1:19 the “Spirit of Jesus Christ” and in Romans 8:9 if you don’t have the Holy Spirit you don’t have Christ. This is consistent with what Jesus taught in John 14-16. The reason the Trinity is attached to the gospel is tied to many passages - 2 Peter 1:8 warns us to grow and not be “ineffective and unfruitful in the knowledge of our Lord Jesus Christ” - who Christ is becomes crucial to salvation - 2 Pet. 1:11 For in this way there will be richly provided for you an entrance into the eternal kingdom of our Lord and Savior Jesus Christ.</p>
+
+<p>John 14:6 Jesus said to him, “I am the way, and the truth, and the life. No one comes to the Father except through me. 7 If you had known me, you would have known my Father also. From now on you do know him and have seen him.” -Quite a statement since John 1 teaches no one has seen the Father except the Son - John 1 also teaches the Word who became flesh (Jesus) created everything (John 1:3) and Col. 1:16 even indicates he created invisible angelic beings (heavenly authorities) so Satan is not a brother but a creation of Jesus. The classical way of presenting how the Father, Son, and Holy Spirit work is the Father has a plan or blueprint - the Son speaks it into existence and the Spirit sees it to completion. This is the way God has worked in creation and this is also the way God works in salvation (Eph. 1). Although the Trinity is alluded to in the Old Testament - Gen. 1 let us make man in “our” image it is most clearly taught by Jesus in the gospel of John during the Lord’s Supper (John 13-17).</p>
+
+<p>Remember if I don’t abide in the teaching of Christ Jesus teaches: John 15:6 If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned. If you don’t believe in the Trinity it is worth investigating - I hope as followers of Christ we would want to know what he taught about it to develop our thinking and guide our teaching. If you believe Christ is created you are not trinitarian, if you believe god is three separate beings you are not trinitarian, if you believe that God is only one (Jehovah) showing up in two other modes (modalism) you are not trinitarian. At the end of the day we know according to Matthew 7 that many did miracles and prophecy and other wonderful things in the name of Jesus and he simply says to them - depart from me, you workers of lawlessness - those are people who hear his teaching and even agree with it but do not do it.</p>
+
+<p>Objections to the Trinity and some examples you want to avoid:</p>
+
+<p>The word is not in the Bible - correct. It is a concept of understanding God in the way He has revealed Himself. Many theologians would argue we know it comes from an eternal, complex God because it would be much easier to teach something humans could more easily relate to.</p>
+
+<p>Examples and Analogies to avoid:</p>
+
+<p>One God showing up in 3 modes (modalism): These examples are good at communicating one substance but bad at communicating each is different from the other (persons)</p>
+
+<p>3 braids of hair, a clover leaf, states of water (steam, water, ice), 3 in 1 shampoo</p>
+
+<p>the man: who is an uncle, son, and father</p>
+
+<p>3 Different Gods (tritheism)</p>
+
+<p>An Egg (yolk, white, and shell) 3 distinct parts but is the yolk the same substance as the shell? This is where the analogy breaks apart.</p>
+
+<p>Sun, Light, and Heat (this could be modalism as well)</p>
+
+<p>Man is body, soul, and spirit (like the clover leaf it can teach modalism or tritheism)</p>
+
+<p>3 separate robots coming together to make one really cool destructive robot (transformers)</p>
+
+<p>In the trinity each member is a distinct person who is able to relate with the other member of the Godhead, they are not the same person and they have a perfect relationship with no hierarchy or subordination, none is more God than the other.</p>
+
+<p>If we have no easy model or good demonstration point to teach kids and family members what should we teach?</p>
+
+<p>Teach what Jesus taught and make sure you understand the words Being and Person.</p>
+
+<p>Substance/Essence/Nature/<strong>Being</strong> (100% God) - the <strong>what</strong> of God (One, eternal, equal in power, love, mercy, holiness, and other attributes of God)</p>
+
+<p><strong>Personhood</strong>: will, distinction, not the same person, “I” vs. you (statements heard spoken by each person to the other persons of the Trinity) - the <strong>who</strong> of the Trinity</p>
+
+</div>
+
+    </div>
+    <div class="Page__Sidebar">
+      <div class="col-sm-3 visible-lg">
+  <div>
+    <div class="fb-page" data-href="https://www.facebook.com/lifestonechurchutah" data-width="320" data-height="1000" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lifestonechurchutah"><a href="https://www.facebook.com/lifestonechurchutah">Lifestone Church Herriman Utah</a></blockquote></div></div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <style>
+.Footer {
+  margin-top: 50px;
+}
+.Footer__Top .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Footer__Top {
+  background-color: #484848;
+  background: rgb(47,47,47);
+  background: -moz-linear-gradient(top, rgba(47,47,47,1) 0%, rgba(54,54,54,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(47,47,47,1)), color-stop(100%,rgba(54,54,54,1)));
+  background: -webkit-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+  background: -o-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+  background: -ms-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+  background: linear-gradient(to bottom, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+}
+.Footer__Top,
+.Footer__Top a,
+.Footer__Top p {
+  color: #FFF;
+}
+.Footer__Top a:hover {
+  text-decoration: underline;
+}
+.socialMediaIcon {
+  margin-right: 10px;
+}
+.Footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Footer__Top_Column h4 {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .Footer__Top_Column {
+    padding-bottom: 30px;
+  }
+}
+</style>
+
+<div class="Footer">
+  <div class="Footer__Top">
+    <div class="container">
+      <div class="row">
+        <div class="Footer__Top_Column col-sm-4">
+          <style>
+.Header__Banner{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2em;
+  background-color: #008F01;
+  color: #FFF;
+}
+</style>
+
+
+
+<h4 id='sundays-900-am--1030-am' >Sundays 9:00 am & 10:30 am</h4>
+
+          <p>3443 12600 S, Riverton, UT 84065</p>
+          <style>
+.googleMap {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.googleMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
+
+<div class="googleMap">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309.165490217484!2d-111.97396447551098!3d40.52138232511006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3011289953bd878e!2sSouth+Valley+Baptist+Church!5e0!3m2!1sen!2sus!4v1474841111651" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+        </div>
+        <div class="Footer__Top_Column col-sm-4">
+        </div>
+        <div class="Footer__Top_Column col-sm-4">
+          <p><a href="https://www.facebook.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/facebook.svg" height="15px" width="15px" class="socialMediaIcon"/>lifestonechurchutah</a></p>
+          <p><a href="https://www.instagram.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/instagram.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestonechurchutah</a></p>
+          <p><a href="https://twitter.com/lifestoneutah" target="_blank"><img src="/assets/images/twitter.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestoneutah</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/assets/js/audiojs/audio.min.js"></script>
+  <script>
+    audiojs.events.ready(function() {
+      var as = audiojs.createAll();
+    });
+  </script>
+
+  <script src="/assets/js/featureSwitch.js"></script>
+  <script src="/assets/js/googleAnalytics.js"></script>
+</body>
+</html>
