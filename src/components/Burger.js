@@ -1,17 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import * as COLORS from '../constants/colors';
+
+const Container = styled.div`
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 9001;
+`;
+
+const Text = styled.span`
+  margin-right: 8px;
+  color: ${COLORS.BRAND};
+`;
 
 const Icon = styled.div`
   display: block;
   transform: scale(0.7);
   transform-origin: top right;
-  z-index: 9001;
   width: 30px;
   height: 30px;
-  position: fixed;
-  right: 20px;
-  top: 10px;
   transform: rotate(0deg);
   cursor: pointer;
 
@@ -84,15 +95,17 @@ class Burger extends React.Component {
 
   render() {
     const { color } = this.props;
+    console.log(color);
     return (
-      <div onClick={this.handleClick}>
+      <Container onClick={this.handleClick}>
+        {this.state.isOpen ? null : <Text>Menu</Text>}
         <Icon color={color} className={this.state.isOpen ? 'open' : ''}>
           <span />
           <span />
           <span />
           <span />
         </Icon>
-      </div>
+      </Container>
     );
   }
 }

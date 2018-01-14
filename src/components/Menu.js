@@ -5,6 +5,8 @@ import styled from 'react-emotion';
 import Burger from './Burger';
 import * as COLORS from '../constants/colors';
 
+const MIN_DESKTOP_SIZE = 1163;
+
 const Container = styled.div``;
 
 const DesktopNav = styled.ul`
@@ -33,7 +35,7 @@ const DesktopNav = styled.ul`
       fill: ${COLORS.HOVER};
     }
   }
-  @media (max-width: 1027px) {
+  @media (max-width: ${MIN_DESKTOP_SIZE - 1}px) {
     display: none;
   }
 `;
@@ -65,7 +67,7 @@ const SubNav = styled.ul`
 `;
 
 const Mobile = styled.div`
-  @media (min-width: 1027px) {
+  @media (min-width: ${MIN_DESKTOP_SIZE}px) {
     display: none;
   }
 `;

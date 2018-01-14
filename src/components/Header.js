@@ -19,6 +19,7 @@ const Container = styled.div`
 
 const Image = styled.img`
   height 45px;
+  padding: 4px 0;
 `;
 
 const Header = ({ navigation }) => (
