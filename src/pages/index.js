@@ -8,17 +8,11 @@ import EventCard from '../components/EventCard';
 
 const IndexPage = () => (
   <div>
-    <SermonCard
-      image={genesis}
-      title="Genesis 37 - Did It Have To Go This Way?"
-      date="8/20/17"
-      speaker=" Pastor Ben Helton"
-      passage="Genesis 37"
-    />
+    <p>TODO: Home Page</p>
 
     <SermonCard
       image={genesis}
-      title="Genesis 39 - Oh no he didn't"
+      title="Genesis 37 - Did It Have To Go This Way?"
       date="8/20/17"
       speaker=" Pastor Ben Helton"
       passage="Genesis 37"
@@ -31,7 +25,7 @@ const IndexPage = () => (
     />
 
     <Card>
-      <Button>I don't need no defualt</Button>
+      <Button>I'm a button</Button>
       <p>I'm a paragraph</p>
     </Card>
 

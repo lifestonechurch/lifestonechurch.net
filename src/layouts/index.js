@@ -8,7 +8,6 @@ import './index.css';
 
 const TemplateWrapper = ({ children, data }) => {
   const navigation = data.site.siteMetadata.navigation;
-  console.log(navigation);
   return (
     <div>
       <Helmet

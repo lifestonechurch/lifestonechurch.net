@@ -1,68 +1,82 @@
 import React from 'react';
+import BibleQuote from '../../components/BibleQuote';
+import worship from './worship.jpg';
 
 const AboutUs = () => (
   <div>
     <h1>About Us</h1>
 
     <p>
-      When you’re visiting a church for the first time, there can sometimes be
-      some unknowns. You might be asking, “Where do I go? Where do my kids go?
-      What will the music be like? What will people be wearing? What will the
-      teaching be like? What time will I get out for lunch?”
+      A church in Riverton Utah excited about bringing the amazing message of
+      God’s grace to our community. We are a Bible based church dedicated to
+      doing whatever it takes to share the good news that has radically changed
+      our lives to everyone possible.
     </p>
 
     <p>
-      These are all valid questions to ask when you visit a new church. Below
-      you will find some helpful information on what to expect when you arrive
-      at a Lifestone Church service. We want your visit to feel as comfortable
-      as possible.
+      <img src={worship} />
+    </p>
+
+    <h2>Life discovered. Life shared.</h2>
+
+    <BibleQuote reference="1 John 5:12 NLT">
+      “Whoever has the Son has life; whoever does not have God’s Son does not
+      have life.”
+    </BibleQuote>
+
+    <p>
+      <b>Mission</b>: “Jesus came and told his disciples, “I have been given all
+      authority in heaven and on earth. Therefore, go and make disciples of all
+      the nations, baptizing them in the name of the Father and the Son and the
+      Holy Spirit. Teach these new disciples to obey all the commands I have
+      given you. And be sure of this: I am with you always, even to the end of
+      the age.” Matthew 28:18-20 NLT
     </p>
 
     <p>
-      Dress: Dress comfortably. You’ll feel right at home wearing anything from
-      shorts, to jeans, to business casual.
+      <b>Mission Motto</b>: Life discovered. Life Shared.
     </p>
 
     <p>
-      Time frame: Our services are on Sunday mornings from 9:00-10:00 and from
-      10:30-11:30. We recommend arriving about 10-15 minutes early so that you
-      can get your kids checked in and grab some donuts and coffee before the
-      worship service begins.
+      <b>Vision</b>: To establish a local church family committed to loving God,
+      loving people, and sharing with everyone in our community and beyond, real
+      life in Christ.
     </p>
 
     <p>
-      Arriving: Inside, a Lifestone volunteer will greet you and answer any
-      questions you have about finding Kids Life area, worship area, etc.
+      <b>Strategy</b>:
     </p>
+    <ul>
+      <li>GET CONNECTED on Sundays at 10:30am.</li>
+      <li>GET HEALTHY by committing to a LifeGroup.</li>
+      <li>GET GOING! Serve, support, meet needs & share Jesus.</li>
+    </ul>
 
     <p>
-      Kid’s Life: We encourage you to bring your kiddos (infants through 5th
-      graders) to participate in our fun, safe, kid-friendly activities while
-      you attend the adult service. Kids are very important to us here at
-      Lifestone, and our goal is to teach them about Jesus’ love in a way that
-      they will understand and enjoy!
+      <b>Values</b>:
     </p>
 
-    <p>For more information on our children’s program, click here.</p>
-
-    <p>
-      Breakfast: For your convenience, a simple breakfast with donuts, coffee,
-      tea, and hot chocolate will be set up for you outside the worship area.
-    </p>
-
-    <p>
-      Music: Come enjoy contemporary praise songs as well as some old hymns with
-      modern arrangements.
-    </p>
-
-    <p>
-      Teaching: Be encouraged by biblical teaching that is useful in every day
-      living.
-    </p>
-
-    <p>Directions:</p>
-
-    <p>3443 12600 S, Riverton, UT 84065</p>
+    <ul>
+      <li>
+        <b>Focus</b> – We will be guided by focusing on the mission Jesus gave
+        His followers and the callings of the church to Evangelism, Ministry,
+        Worship, Discipleship, and Fellowship, aware of our natural tendency to
+        focus on self, those reached, and to slip in to maintenance mode, or
+        busy church programming.
+      </li>
+      <li>
+        <b>Grace</b> – We will humbly serve and love one another and both the
+        easy to love and difficult outside our church family. We will humbly
+        submit and support the imperfect leadership of the church and put others
+        first.
+      </li>
+      <li>
+        <b>Joy</b> – As we celebrate Jesus and live a life in God’s family our
+        lives should be full of authentic joy than is attractive to those
+        without God’s peace and forgiveness. We will have fun as a church
+        family.
+      </li>
+    </ul>
   </div>
 );
 
