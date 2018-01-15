@@ -1,13 +1,14 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import PhotoAlbum from '../../components/PhotoAlbum';
-import youthImage from './youth.jpg';
+import SmallImage from '../../components/SmallImage';
+import youth from './youth.jpg';
 
 const Page = () => (
   <div>
-    <h1>Grade 6-12</h1>
+    <h1>Students Grade 6-12</h1>
 
-    <img src="/assets/uploads/pages/youth.jpg" />
+    <SmallImage src={youth} />
 
     <p>
       We exist to encourage and partner with the parents of Jr./Sr. High

@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import Button from '../../components/Button';
+import BibleQuote from '../../components/BibleQuote';
 
 // https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/
 // Return method: 1 - redirect to the return url by using the GET method with no variables included
@@ -58,11 +59,10 @@ const Page = () => (
       Herriman UT 84096
     </p>
 
-    <blockquote>
+    <BibleQuote reference="2 Corinthians 9:7 (NIV)">
       "Each of you should give what you have decided in your heart to give, not
       reluctantly or under compulsion, for God loves a cheerful giver."
-      <footer>2 Corinthians 9:7 (NIV)</footer>
-    </blockquote>
+    </BibleQuote>
 
     <Banner>
       <h2>2016 Giving Statement</h2>

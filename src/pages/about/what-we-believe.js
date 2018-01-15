@@ -1,14 +1,14 @@
 import React from 'react';
+import BibleQuote from '../../components/BibleQuote';
 
 const Page = () => (
   <div>
     <h1>What We Believe</h1>
 
-    <blockquote>
+    <BibleQuote reference="Romans 6:23 (NLT)">
       "For the wages of sin is death, but the free gift of God is eternal life
       through Christ Jesus our Lord."
-      <footer>Romans 6:23 (NLT)</footer>
-    </blockquote>
+    </BibleQuote>
 
     <p>
       You are not an accident.  You are the wonderful creation of God.  He made

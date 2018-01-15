@@ -29,7 +29,7 @@ module.exports = {
         children: [
           { name: 'Birth-Kindergarten', path: '/kids/birth-kindergarten' },
           { name: 'Grades 1-5', path: '/kids/grades-1-5' },
-          { name: 'Students', path: '/students' },
+          { name: 'Students', path: '/kids/students' },
         ],
       },
       {
