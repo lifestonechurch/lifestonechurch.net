@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../../components/Banner';
+import Button from '../../components/Button';
 
 // https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/
 // Return method: 1 - redirect to the return url by using the GET method with no variables included
