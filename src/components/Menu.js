@@ -173,6 +173,12 @@ class Menu extends React.Component {
     });
   };
 
+  handleHomeClick = () => {
+    this.setState({
+      isOpen: false,
+    });
+  };
+
   handleMobileItemClick = (item, i) => {
     const items = this.state.openMobileItems;
     this.setState({
@@ -234,7 +240,9 @@ class Menu extends React.Component {
             onClick={this.handleMobileToggle}
           />
           <MobileContainer className={this.state.isOpen ? 'open' : ''}>
-            <Image src={logo} alt="Logo" isVisible={this.state.isOpen} />
+            <Link to="/" onClick={() => this.handleHomeClick()}>
+              <Image src={logo} alt="Logo" isVisible={this.state.isOpen} />
+            </Link>
             <MobileNav>
               {navigation.map((a, i) => (
                 <li key={i}>
