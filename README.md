@@ -1,13 +1,24 @@
-# gatsby-starter-default
-The default Gatsby starter
+# lifestonechurch.net
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+Website for [lifestonechurch.net](http://www.lifestonechurch.net/).
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+## Running
+
+Create a .env file with the following variables (replace with the real values).
+
 ```
-gatsby new gatsby-example-site
+CONTENTFUL_SPACE_ID=k9ajfiadv9aj
+CONTENTFUL_ACCESS_TOKEN=39kd99313kdkkad8fwe0xvmqv90213mv91238jk91298ijkqw073856kajsdv097
+GOOGLE_ANALYTICS_TRACKING_ID=UA-12345678-1
 ```
 
-## Deploy
+Then run:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+```sh
+npm install
+npm run develop
+```
+
+## Built with Gatsby
+
+[Gatsby documentation](https://www.gatsbyjs.org/docs/)

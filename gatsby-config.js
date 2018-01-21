@@ -41,36 +41,16 @@ module.exports = {
         ],
       },
     ],
-    events: [
-      {
-        startDate: '2018-01-14',
-        endDate: null,
-        name: 'First Sunday with 2 Services',
-        slug: '2-services',
-        ministry: 'churchwide',
-      },
-      {
-        startDate: '2018-01-20',
-        endDate: null,
-        name: `Men's Serve Day`,
-        slug: `mens-serve-day`,
-        ministry: 'men',
-      },
-      {
-        startDate: `2018-01-17`,
-        endDate: null,
-        name: `Sledding Party`,
-        description: `<div>SLEDDING PARTY! Meet @ Lifestone at 6:00pm. We will have a game night instead if weather does not cooperate.</div>`,
-        ministry: 'youth',
-      },
-      {
-        startDate: `2018-02-14`,
-        endDate: null,
-        name: `Service project`,
-        description: `<div>Make Valentine's Day cards and take them next door to Rocky Mountain Care Center residents.</div>`,
-        ministry: 'youth',
-      },
-    ],
   },
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-emotion`],
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ujxurwjh56v6`,
+        accessToken: `402fad6cb9cd222cc3796589814b27bb76d98096ccbbc9c54e980feb97e41424`,
+      },
+    },
+  ],
 };

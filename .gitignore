@@ -1,5 +1,4 @@
-# Project dependencies
 node_modules
 .cache/
-# Build directory
 public/
+.env
