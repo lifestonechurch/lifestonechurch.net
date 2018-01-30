@@ -47,7 +47,7 @@ const AboutUs = () => (
       <b>Strategy</b>:
     </p>
     <ul>
-      <li>GET CONNECTED on Sundays at 10:30am.</li>
+      <li>GET CONNECTED on Sundays at 9:00am or 10:30am.</li>
       <li>GET HEALTHY by committing to a LifeGroup.</li>
       <li>GET GOING! Serve, support, meet needs & share Jesus.</li>
     </ul>
