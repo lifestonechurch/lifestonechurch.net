@@ -16,3 +16,18 @@ grades-6-12:
     date: 2018-02-14
     name: Service project
     description: <div>Make Valentine's Day cards and take them next door to Rocky Mountain Care Center residents.</div>
+  -
+    date: 2018-03-07
+    name: Create Eggvites for Easter
+  -
+    date: 2018-03-16
+    name: Spring Fling
+    description: <div><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/d6AR5CTCaT4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+  -
+    date: 2018-06-18
+    endDate: 2018-06-22
+    name: High School Camp
+  -
+    date: 2018-06-22
+    endDate: 2018-06-25
+    name: Junior High Camp
