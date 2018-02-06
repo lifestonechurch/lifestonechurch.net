@@ -7,7 +7,7 @@
         <dd>{{ newMonth }}</dd>
       {% endif %}
       <dt>
-      <b>{% if event.date %}{{ event.date | date:"%-d" }}{% if event.endDate %}-{{ event.endDate | date:"%-d" }}{% endif %}{% else %}Date TBA{% endif %}</b> -
+      <b>{% if event.date %}{{ event.date | date:"%b %-d" }}{% if event.endDate %} - {{ event.endDate | date:"%b %-d" }}{% endif %}{% else %}Date TBA{% endif %}</b> -
       {% if event.link %}<a href="{{event.link}}">{% endif %}
       <b>{{ event.name }}</b>
       {% if event.link %}</a>{% endif %}

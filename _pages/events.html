@@ -21,7 +21,7 @@ title: Events
 
 
   {% capture metadata %}
-  <span>{% if event.ongoing == true %}Starting {% endif %}{{ event.startDate | date:"%b %-d" }}{% if event.endDate %}-{{ event.endDate | date:"%-d" }}{% endif %}</span>
+  <span>{% if event.ongoing == true %}Starting {% endif %}{{ event.startDate | date:"%b %-d" }}{% if event.endDate %} - {{ event.endDate | date:"%b %-d" }}{% endif %}</span>
   {% endcapture %}
 
   {% capture cardContent %}
