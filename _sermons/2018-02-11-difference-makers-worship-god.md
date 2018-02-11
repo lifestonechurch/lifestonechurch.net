@@ -4,7 +4,7 @@ date: 2018-02-11 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2018-02-11.mp3
 podcastLength: '00:43:56'
 size: 48953233
-image:
+image: difference-maker.jpg
 speaker: Pastor Ben Helton
 description: Difference Makers
 ---

@@ -4,7 +4,7 @@ date: 2017-12-03 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2017-12-03.mp3
 podcastLength: '00:44:16'
 size: 50500585
-image:
+image: the-star.png
 speaker: Pastor Sam Coleman
 description: The Star
 ---

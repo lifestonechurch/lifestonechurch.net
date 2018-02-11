@@ -4,7 +4,7 @@ date: 2017-12-24 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2017-12-24.mp3
 podcastLength: '00:53:52'
 size: 53551345
-image:
+image: the-star.png
 speaker: Pastor Ben Helton
 description: The Star
 ---
