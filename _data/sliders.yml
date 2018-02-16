@@ -1,4 +1,6 @@
 sliders:
+  - filename: easter.jpg
+    link: events/easter
   - filename: service-time.jpg
     link: visit
   - filename: difference-maker.jpg
