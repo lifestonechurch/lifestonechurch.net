@@ -1,4 +1,4 @@
----
+--
 title: "Difference Makers: Worship God"
 date: 2018-02-11 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2018-02-11.mp3
@@ -32,7 +32,7 @@ John 4:23-24, Matthew 15:8-9, 1 Samuel 16:7, 15:22, Romans 1:18-32, John 8:31-32
 
     Psalm 150, Proverbs 1:7, Hebrews 11:6
 
-2.Thanksgiving: Reminds me what God has done.
+2. Thanksgiving: Reminds me what God has done.
 
     Psalm 100:3-4, 1 Thessalonians 5:18, Philippians 4:6-7
 
