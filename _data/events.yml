@@ -4,6 +4,10 @@ churchwide:
     name: "Ladies Craft Night"
     link: events/craft-night
   -
+    date: 2018-03-11
+    name: "Welcome to Lifestone Dessert"
+    link: events/dessert
+  -
     date: 2018-04-01
     name: "Easter"
     link: events/easter
