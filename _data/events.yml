@@ -1,9 +1,5 @@
 churchwide:
   -
-    date: 2018-02-23
-    name: "Ladies Craft Night"
-    link: events/craft-night
-  -
     date: 2018-03-11
     name: "Welcome to Lifestone Dessert"
     link: events/dessert
@@ -12,10 +8,6 @@ churchwide:
     name: "Easter"
     link: events/easter
 grades-6-12:
-  -
-    date: 2018-02-14
-    name: Service project
-    description: <div>Make Valentine's Day cards and take them next door to Rocky Mountain Care Center residents.</div>
   -
     date: 2018-03-07
     name: Create Eggvites for Easter
