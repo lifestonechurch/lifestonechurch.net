@@ -31,8 +31,6 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 
 <p style="clear: left;"><b>Text the leader to sign up!</b></p>
 
-**NEW LIFEGROUP SESSION BEGINS JANUARY 7 & 10.**
-
 {% include header.html level='2' banner=true children='Open LifeGroups' %}
 
 <div>
