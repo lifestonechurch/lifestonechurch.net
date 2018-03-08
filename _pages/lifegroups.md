@@ -82,4 +82,4 @@ Free on-site childcare
 1. You will understand the Bible better in a small group.
 1. Prayer will become more meaningful to you.
 1. You will have friends with whom to share both your joys and burdens.
-1. You will have a natural way to share Jesus with neighbors, friends, relatives, and at co-workers.
+1. You will have a natural way to share Jesus with neighbors, friends, relatives, and co-workers.
