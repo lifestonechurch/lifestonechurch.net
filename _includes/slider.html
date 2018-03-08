@@ -16,9 +16,13 @@
       {% else %}
         <div class="item">
       {% endif %}
+        {% if slider.link %}
         <a href="{{ site.baseurl }}/{{ slider.link}}">
+        {% endif %}
           <img src="{{ site.baseurl }}/assets/uploads/sliders/{{ slider.filename }}"  alt="" />
+        {% if slider.link %}
         </a>
+        {% endif %}
       </div>
     {% endfor %}
   </div>
