@@ -163,6 +163,21 @@ class Menu extends React.Component {
     isOpen: false
   };
 
+  escapeListener = ({ key, keyCode }) => {
+    if (key === "Escape" || keyCode === 27) {
+      this.allowScroll();
+      this.setState({ isOpen: false });
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener("keydown", this.escapeListener);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("keydown", this.escapeListener);
+  }
+
   handleMobileToggle = isOpen => {
     this.setState({ isOpen }, () => {
       document.body.style.overflow = isOpen ? "hidden" : "auto";
