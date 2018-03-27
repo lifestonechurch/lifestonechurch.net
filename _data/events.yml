@@ -7,6 +7,10 @@ churchwide:
     date: 2018-04-01
     name: "Baptism"
     link: events/baptism
+  -
+    date: 2018-04-15
+    name: "Welcome to Lifestone Dessert"
+    link: events/dessert
 grades-6-12:
   -
     date: 2018-04-04
