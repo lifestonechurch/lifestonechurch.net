@@ -12,6 +12,10 @@ churchwide:
     name: "Men's Study"
     link: events/mens-study
   -
+    date: 2018-04-09
+    name: "Women's Study"
+    link: events/mens-study
+  -
     date: 2018-04-15
     name: "Welcome to Lifestone Dessert"
     link: events/dessert

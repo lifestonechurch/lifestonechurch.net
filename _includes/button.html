@@ -15,7 +15,7 @@
 }
 </style>
 
-<a class="Button" href="{{include.link}}" {% if include.newTab %}target="_blank" {% endif %}>
+<a class="Button" href="{{include.link}}" {% if include.newTab %}target="_blank" rel="noopener" {% endif %}>
   <div class="Button__Button">
     {{include.label}}
   </div>
