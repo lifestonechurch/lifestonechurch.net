@@ -34,7 +34,7 @@ lifeGroups:
     address: 4883 W. Chilly Peak Dr. Riverton
     number: "Text Phil: 817-480-8131"
     childcare: true
-    hosts: Kari & Scott Sanford
+    hosts: Phil & Ashley Smith
     leaders:
       - name: Phil & Ashley Smith
         image: /assets/uploads/pages/smiths.jpg
