@@ -31,7 +31,7 @@ Connect to God by connecting to His people & His Word! LifeGroups are the heart 
 
 <p style="clear: left;"><b>Text the leader to sign up! NEW session starts week of April 8-12.</b></p>
 
-{% include header.html level='2' banner=true children='Open LifeGroups' %}
+{% include header.html level='2' banner=true children='Group Info' %}
 
 <div>
 {% for group in site.data.smallGroups.lifeGroups %}
