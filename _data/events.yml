@@ -12,6 +12,10 @@ grades-6-12:
     date: 2018-04-04
     name: Spring break (no youth group)
   -
+    date: 2018-05-13
+    name: "Youth camp fundraiser: Men’s bake auction!"
+    link: /events/mens-bake-sale
+  -
     date: 2018-06-18
     endDate: 2018-06-22
     name: High School Camp
