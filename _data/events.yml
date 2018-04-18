@@ -1,13 +1,5 @@
 churchwide:
   -
-    date: 2018-04-09
-    name: "Men's Study"
-    link: events/mens-study
-  -
-    date: 2018-04-09
-    name: "Women's Study"
-    link: events/womens-study
-  -
     date: 2018-05-13
     name: "Baby Dedication"
     link: events/baby-dedication
