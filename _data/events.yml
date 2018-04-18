@@ -4,6 +4,10 @@ churchwide:
     name: "Baby Dedication"
     link: events/baby-dedication
   -
+    date: 2018-05-13
+    name: "Men's Bake Sale"
+    link: events/mens-bake-sale
+  -
     date: 2018-05-20
     name: "Welcome to Lifestone Dessert"
     link: events/dessert
