@@ -8,13 +8,13 @@ churchwide:
     name: "Women's Study"
     link: events/womens-study
   -
-    date: 2018-04-15
-    name: "Welcome to Lifestone Dessert"
-    link: events/dessert
-  -
     date: 2018-05-13
     name: "Baby Dedication"
     link: events/baby-dedication
+  -
+    date: 2018-05-20
+    name: "Welcome to Lifestone Dessert"
+    link: events/dessert
 grades-6-12:
   -
     date: 2018-04-04
