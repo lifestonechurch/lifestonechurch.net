@@ -15,6 +15,16 @@ churchwide:
     date: 2018-05-20
     name: "Welcome to Lifestone Dessert"
     link: events/dessert
+  -
+    date: 2018-07-09
+    endDate: 2018-07-13
+    name: "Kids Life Camp"
+    link: events/kids-life-camp
+  -
+    date: 2018-07-18
+    endDate: 2018-07-25
+    name: "Youth Camp"
+    link: events/youth-camp
 grades-6-12:
   -
     date: 2018-05-09
