@@ -1,5 +1,9 @@
 churchwide:
   -
+    date: 2018-05-09
+    name: Movie Night
+    link: events/movie-night
+  -
     date: 2018-05-13
     name: "Baby Dedication"
     link: events/baby-dedication
@@ -12,6 +16,10 @@ churchwide:
     name: "Welcome to Lifestone Dessert"
     link: events/dessert
 grades-6-12:
+  -
+    date: 2018-05-09
+    name: Movie Night
+    description: <div><img class="Series__Image" src="/assets/uploads/pages/movie.jpg" /><p>Grades 6-12! Invite all your friends for MOVIE NIGHT! We'll watch "Case for Christ" and enjoy yummy movie treats! REMEMBER TO ARRIVE 30 MINUTES EARLIER THAN USUAL! We'll start the movie promptly at 6!</p></div>
   -
     date: 2018-05-13
     name: "Youth camp fundraiser: Men’s bake auction!"
