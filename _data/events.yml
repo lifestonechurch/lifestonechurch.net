@@ -15,14 +15,6 @@ churchwide:
     link: events/youth-camp
 grades-6-12:
   -
-    date: 2018-05-09
-    name: Movie Night
-    description: <div><img class="Series__Image" src="/assets/uploads/pages/movie.jpg" /><p>Grades 6-12! Invite all your friends for MOVIE NIGHT! We'll watch "Case for Christ" and enjoy yummy movie treats! REMEMBER TO ARRIVE 30 MINUTES EARLIER THAN USUAL! We'll start the movie promptly at 6!</p></div>
-  -
-    date: 2018-05-13
-    name: "Youth camp fundraiser: Men’s bake auction!"
-    link: /events/mens-bake-sale
-  -
     date: 2018-06-18
     endDate: 2018-06-22
     name: High School Camp
@@ -35,7 +27,7 @@ grades-6-12:
     date: 2018-07-15
     endDate: 2018-07-22
     name: L.A. Mission Trip
-    description: <div><img class="Series__Image" src="/assets/uploads/pages/la.jpg" /><p>Next summer, Lifestone students are heading into the heart of Los Angeles to serve the people who live and work there! We are excited to partner with Center for Student Missions (CSM) to provide our students with a mission opportunity that we wholeheartedly believe will change their lives forever. Spots are limited, so register now! <a href="http://mailchi.mp/8e5b1a877ffc/lifestone-youth-are-headed-to-los-angeles-2070237?e=70784fbc60" target="_blank" rel="noopener">Check out details and registration info here.</a></p></div>
+    description: <div><img class="Series__Image" src="/assets/uploads/pages/la.jpg" /><p>Next summer, Lifestone students are heading into the heart of Los Angeles to serve the people who live and work there! We are excited to partner with Center for Student Missions (CSM) to provide our students with a mission opportunity that we wholeheartedly believe will change their lives forever. Spots are limited, so register now!</p><p><a href="http://mailchi.mp/8e5b1a877ffc/lifestone-youth-are-headed-to-los-angeles-2070237?e=70784fbc60" target="_blank" rel="noopener">Check out details and registration info here.</a></p><p><a href="https://lifestonechurch.breezechms.com/form/d6fbe35114" target="_blank" rel="noopener">Youth Camp Scholarships available</a></p></div>
   -
     date: 2018-08-03
     endDate: 2018-08-05
