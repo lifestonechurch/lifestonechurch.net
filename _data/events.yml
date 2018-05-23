@@ -13,6 +13,11 @@ churchwide:
     endDate: 2018-07-25
     name: "Youth Camp"
     link: events/youth-camp
+  -
+    date: 2018-08-03
+    endDate: 2018-08-05
+    name: Sonfest
+    link: events/sonfest
 grades-6-12:
   -
     date: 2018-06-18
@@ -32,3 +37,4 @@ grades-6-12:
     date: 2018-08-03
     endDate: 2018-08-05
     name: Sonfest
+    description: <div><p>6th-12th graders! Registration now open for SONFEST!! Student from all over the valley will come together to worship, be encouraged, and connect with other teens at this exciting retreat!</p><p>August 3-5</p><p>Peery’s Egyptian Theater Ogden, Utah</p><p>$120.00/student - includes a day @ LAGOON, Sonfest t-shirt, worship sessions with Sean Patrick (worship) & Ryan Young (speaker) , 2 nights lodging (plus breakfast!).</p><p>May 27 • $10 Deposit & Registration form due</p><p>Forms available at Wednesday Night Youth AND Sunday mornings</p></div>
