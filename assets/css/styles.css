@@ -48,3 +48,7 @@ a,
 a:hover {
   color: {{site.data.colors.GREEN}};
 }
+
+dt {
+  font-weight: inherit;
+}
