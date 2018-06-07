@@ -49,8 +49,6 @@ grades-6-12:
     name: CSM Students and parents mandatory Pack & Pray!
     description: <div>@7pm at Lifestone Church</div>
   -
-    name: Mandatory CSM Parent Meeting
-  -
     date: 2018-07-15
     endDate: 2018-07-22
     name: L.A. Mission Trip
@@ -58,6 +56,7 @@ grades-6-12:
   -
     date: 2018-07-18
     name: Lake Party @ Blackridge Reservoir W/ K2 Church Youth Group
+    description: <div><img class="Series__Image" src="/assets/uploads/events/lake-party.jpg" /></div>
   -
     date: 2018-08-03
     endDate: 2018-08-05
