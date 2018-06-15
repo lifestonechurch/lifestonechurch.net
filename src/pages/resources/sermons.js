@@ -1,17 +1,22 @@
-import React from 'react';
-import SermonCard from '../../components/SermonCard';
+import React from "react";
+import SermonCard from "../../components/SermonCard";
 
-const Page = ({data}) => {
+const Page = ({ data }) => {
   const sermons = data.allContentfulSermon.edges;
 
   return (
     <div>
       <h1>Sermons</h1>
 
-      {sermons.map(({node}) => (
+      {sermons.map(({ node }) => (
         <SermonCard
+          key={node.id}
           linkTo={node.fields.slug}
-          image={node.sermonSeries && node.sermonSeries.image.file.url}
+          image={
+            node.sermonSeries &&
+            node.sermonSeries.image &&
+            node.sermonSeries.image.file.url
+          }
           title={node.title}
           date={node.date}
           speaker={node.speaker.name}
@@ -26,7 +31,7 @@ export default Page;
 
 export const query = graphql`
   query SermonsQuery {
-    allContentfulSermon {
+    allContentfulSermon(sort: { fields: [date], order: DESC }) {
       edges {
         node {
           id
