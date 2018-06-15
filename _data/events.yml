@@ -22,7 +22,7 @@ grades-6-12:
   -
     date: 2018-06-20
     name: Youth Invade Sonic!
-    description: <div><img class="Series__Image" src="/assets/uploads/events/sonic.jpg" /></div>
+    description: <div><img class="Series__Image" src="/assets/uploads/events/sonic.jpg" /><p>6:30pm-8pm Grades 6-12. Enjoy a sweet treat & Bible Study! Bring friends and a little spending money. 5117 West 13400 South, Riverton Parent drop off/Pick up @ Sonic</p></div>
   -
     date: 2018-06-18
     endDate: 2018-06-22
@@ -38,6 +38,7 @@ grades-6-12:
   -
     date: 2018-07-04
     name: No Youth Group
+    description: <div><img class="Series__Image" src="/assets/uploads/events/summer-break.jpg" /></div>
   -
     date: 2018-07-09
     endDate: 2018-07-13
@@ -46,7 +47,7 @@ grades-6-12:
   -
     date: 2018-07-11
     name: Sunset Bonfire in the Canyon w/ FBCC Youth Group
-    description: <div><img class="Series__Image" src="/assets/uploads/events/bonfire.jpg" /></div>
+    description: <div><img class="Series__Image" src="/assets/uploads/events/bonfire.jpg" /><p>Meet @6:15pm at Lifestone Church. We will depart @ 6:30 sharp & head up Big Cottonwood Canyon to Dogwood Picnic area! Please bring a camping chair if you have one. We will return @ 9:30pm at Lifestone Church for parent pick-up.</p></div>
   -
     date: 2018-07-14
     name: CSM Students and parents mandatory Pack & Pray!
