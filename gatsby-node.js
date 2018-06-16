@@ -8,7 +8,8 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
   const types = {
     EVENT: `ContentfulEvent`,
-    SERMON: `ContentfulSermon`
+    SERMON: `ContentfulSermon`,
+    SMALL_GROUP: `ContentfulSmallGroup`
   };
 
   if (node.internal.type === types.EVENT) {
@@ -37,6 +38,15 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
         node,
         name: "notesFormatted",
         value: markdown.render(notes.internal.content)
+      });
+    }
+  } else if (node.internal.type === types.SMALL_GROUP) {
+    const contact = getNode(node.contact___NODE);
+    if (contact && contact.internal) {
+      createNodeField({
+        node,
+        name: "contactFormatted",
+        value: markdown.render(contact.internal.content)
       });
     }
   }

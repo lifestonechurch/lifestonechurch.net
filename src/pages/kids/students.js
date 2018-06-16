@@ -17,14 +17,12 @@ const Month = styled.div`
 
 const Page = ({ data }) => {
   const events = data.allContentfulEvent.edges;
-  console.log(events);
 
   const youthEvents = events.filter(
     ({ node }) =>
       node.ministry !== undefined &&
       node.ministry.map(m => m.name).includes("Youth")
   );
-  console.log(youthEvents);
 
   return (
     <div>
