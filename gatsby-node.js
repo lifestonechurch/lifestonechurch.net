@@ -7,6 +7,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
 
   const types = {
+    POST: `ContentfulPost`,
     EVENT: `ContentfulEvent`,
     SERMON: `ContentfulSermon`,
     SMALL_GROUP: `ContentfulSmallGroup`
@@ -49,6 +50,20 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
         value: markdown.render(contact.internal.content)
       });
     }
+  } else if (node.internal.type === types.POST) {
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug(node.title, { lower: true })
+    });
+    const body = getNode(node.body___NODE);
+    if (body && body.internal) {
+      createNodeField({
+        node,
+        name: "bodyFormatted",
+        value: markdown.render(body.internal.content)
+      });
+    }
   }
 };
 
@@ -74,34 +89,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               fields {
                 slug
               }
+            }
+          }
+        }
+        allContentfulPost {
+          edges {
+            node {
+              id
               title
-              date
-              audioUrl
-              audioDuration
-              audioLength
-              sermonSeries {
-                name
-                image {
-                  title
-                  file {
-                    url
-                  }
-                }
-              }
-              childContentfulSermonNotesTextNode {
-                notes
-              }
-              speaker {
-                name
-                photo {
-                  file {
-                    url
-                  }
-                }
-              }
-              mainScripture
-              notes {
-                notes
+              fields {
+                slug
               }
             }
           }
@@ -126,6 +123,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/sermon.js`),
+          context: {
+            // Data passed to context is available in page queries as GraphQL variables.
+            id: node.id
+          }
+        });
+      });
+
+      result.data.allContentfulPost.edges.forEach(({ node }) => {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`./src/templates/devotional.js`),
           context: {
             // Data passed to context is available in page queries as GraphQL variables.
             id: node.id

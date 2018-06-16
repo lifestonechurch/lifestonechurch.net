@@ -2,14 +2,13 @@ import React from "react";
 import styled from "react-emotion";
 import formatDate from "../utils/formatDate";
 
+// TODO: use otherStuff on page
 const OtherStuff = ({ data }) => {
   const sermon = data.contentfulSermon;
   return (
     <div>
       {sermon.speaker.map(
-        s =>
-          console.log(s) ||
-          (s.photo && s.photo.file && <img src={s.photo.file.url} />)
+        s => s.photo && s.photo.file && <img src={s.photo.file.url} />
       )}
       <div>{sermon.audioDuration}</div>
       <div>{sermon.sermonSeries && sermon.sermonSeries.name}</div>

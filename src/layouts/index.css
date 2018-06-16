@@ -10,7 +10,7 @@ font-family: 'Droid Serif', serif;
 html,body {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Lato', sans-serif;
   color: rgba(0,0,0,0.7);
 }
@@ -26,9 +26,8 @@ h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem; }
 
 ul, p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5rem;
-  text-align: justify;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: antialiased !important;

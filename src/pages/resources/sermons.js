@@ -19,7 +19,7 @@ const Page = ({ data }) => {
           }
           title={node.title}
           date={node.date}
-          speaker={node.speaker.name}
+          speakers={node.speaker.map(s => s.name)}
           passage={node.mainScripture}
         />
       ))}
