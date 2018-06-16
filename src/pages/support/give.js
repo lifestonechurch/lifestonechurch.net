@@ -1,10 +1,12 @@
-import React from 'react';
-import Banner from '../../components/Banner';
-import Button from '../../components/Button';
-import BibleQuote from '../../components/BibleQuote';
+import React from "react";
+import Banner from "../../components/Banner";
+import Button from "../../components/Button";
+import BibleQuote from "../../components/BibleQuote";
 
 // https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/
 // Return method: 1 - redirect to the return url by using the GET method with no variables included
+
+const lastYear = new Date().getUTCFullYear() - 1;
 
 const Page = () => (
   <div>
@@ -65,7 +67,7 @@ const Page = () => (
     </BibleQuote>
 
     <Banner>
-      <h2>2016 Giving Statement</h2>
+      <h2>{lastYear} Giving Statement</h2>
     </Banner>
 
     <p>
@@ -81,21 +83,21 @@ const Page = () => (
           rel="noopener"
         >
           Login
-        </a>{' '}
+        </a>{" "}
         to your account.
       </li>
       <li>Select "My Profile".</li>
       <li>Select "Giving" on the left side of your screen.</li>
       <li>
-        Adjust the dates to 1/1/2016 - 12/31/2016. (If your contributions do not
-        appear, try changing the "Show For" drop down from your name to your
-        family name or vise versa.)
+        Adjust the dates to 1/1/{lastYear} - 12/31/{lastYear}. (If your
+        contributions do not appear, try changing the "Show For" drop down from
+        your name to your family name or vise versa.)
       </li>
       <li>Print or download your giving statement from this screen.</li>
     </ol>
 
     <p>
-      Feel free to email{' '}
+      Feel free to email{" "}
       <a href="mailto:ashley@lifestonechurch.net">Ashley Smith</a> with any
       questions regarding your giving statement.
     </p>
