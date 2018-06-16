@@ -17,6 +17,14 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       name: `slug`,
       value: slug(node.name, { lower: true })
     });
+    const description = getNode(node.description___NODE);
+    if (description && description.internal) {
+      createNodeField({
+        node,
+        name: "descriptionFormatted",
+        value: markdown.render(description.internal.content)
+      });
+    }
   } else if (node.internal.type === types.SERMON) {
     createNodeField({
       node,
