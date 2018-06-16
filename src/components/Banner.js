@@ -11,6 +11,16 @@ const Banner = styled.div`
   font-size: 2em;
   background-color: ${COLORS.BRAND};
   color: #fff;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+    margin: 0;
+  }
 `;
 
 export default Banner;

@@ -15,7 +15,7 @@ const Page = ({ data }) => {
 
       {events.map(({ node }, i) => (
         <div>
-          {i !== 0 &&
+          {i === 0 ||
           getMonthNumber(events[i - 1].node.startDate) <
             getMonthNumber(node.startDate) ? (
             <Banner>{getMonthName(node.startDate)}</Banner>
