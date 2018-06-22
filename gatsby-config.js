@@ -22,7 +22,6 @@ module.exports = {
         ]
       },
       { name: "LifeGroups", path: "/lifegroups" },
-      { name: "Equip Classes", path: "/equip-classes" },
       {
         name: "Kids & Students",
         children: [
