@@ -15,12 +15,10 @@ const Container = styled.div`
 
 const Content = styled.div`
   flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  grid-column-gap: 12px;
-  width: 1200px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 16px;
 `;
 
 const Sidebar = styled.div``;
