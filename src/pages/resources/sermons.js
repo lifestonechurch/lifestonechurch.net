@@ -11,7 +11,7 @@ const Page = ({data}) => {
       {sermons.map(({node}) => (
         <SermonCard
           key={node.id}
-          linkTo={`/${node.fields.slug}`}
+          linkTo={`/resources/sermons/${node.fields.slug}`}
           image={
             node.sermonSeries &&
             node.sermonSeries.image &&

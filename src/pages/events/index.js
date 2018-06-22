@@ -1,11 +1,11 @@
-import React from "react";
-import EventCard from "../../components/EventCard";
-import Banner from "../../components/Banner";
-import { getMonthNumber, getMonthName } from "../../utils/formatDate";
+import React from 'react';
+import EventCard from '../../components/EventCard';
+import Banner from '../../components/Banner';
+import {getMonthNumber, getMonthName} from '../../utils/formatDate';
 
-import upcomingEvents from "./upcoming-events.jpg";
+import upcomingEvents from './upcoming-events.jpg';
 
-const Page = ({ data }) => {
+const Page = ({data}) => {
   const events = data.allContentfulEvent.edges;
   return (
     <div>
@@ -13,17 +13,17 @@ const Page = ({ data }) => {
 
       <img src={upcomingEvents} alt="Upcoming Events" />
 
-      {events.map(({ node }, i) => (
+      {events.map(({node}, i) => (
         <div>
           {i === 0 ||
           getMonthNumber(events[i - 1].node.startDate) <
             getMonthNumber(node.startDate) ? (
             <Banner>{getMonthName(node.startDate)}</Banner>
           ) : (
-            ""
+            ''
           )}
           <EventCard
-            linkTo={node.fields.slug}
+            linkTo={`events/${node.fields.slug}`}
             startDate={node.startDate}
             endDate={node.endDate}
             title={node.name}
@@ -39,7 +39,7 @@ export default Page;
 
 export const query = graphql`
   query EventsQuery {
-    allContentfulEvent(sort: { fields: [startDate], order: ASC }) {
+    allContentfulEvent(sort: {fields: [startDate], order: ASC}) {
       edges {
         node {
           id
