@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Lifestone Church`,
+    description: `A Bible based church in Riverton, Utah.`,
+    keywords: `church, bible, utah, riverton, herriman`,
     navigation: [
       { name: "Visit", path: "/visit" },
       { name: "Events", path: "/events" },
@@ -49,6 +51,7 @@ module.exports = {
         spaceId: `ujxurwjh56v6`,
         accessToken: `402fad6cb9cd222cc3796589814b27bb76d98096ccbbc9c54e980feb97e41424`
       }
-    }
+    },
+    `gatsby-plugin-offline`
   ]
 };

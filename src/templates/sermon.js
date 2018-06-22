@@ -31,7 +31,6 @@ const Audio = styled.audio`
 export default ({ data }) => {
   const sermon = data.contentfulSermon;
 
-  console.log(formatDate(sermon.date));
   return (
     <div>
       <h1>{sermon.title}</h1>

@@ -1,7 +1,6 @@
 import React from "react";
 
 export default ({ data }) => {
-  console.log(data);
   const event = data.contentfulEvent;
   return (
     <div>

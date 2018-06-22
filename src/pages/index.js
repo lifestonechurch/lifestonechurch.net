@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'react-emotion';
-import Link from 'gatsby-link';
-import Card from '../components/Card';
-import Button from '../components/Button';
-import SermonCard from '../components/SermonCard';
-import ImageGallery from 'react-image-gallery';
+import React from "react";
+import styled from "react-emotion";
+import Link from "gatsby-link";
+import Card from "../components/Card";
+import Button from "../components/Button";
+import SermonCard from "../components/SermonCard";
+import ImageGallery from "react-image-gallery";
 
-import benPreaching from './benPreaching.jpg';
+import benPreaching from "./benPreaching.jpg";
 
-import 'react-image-gallery/styles/css/image-gallery.css';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const Row = styled.div`
   display: grid;
@@ -48,10 +48,10 @@ const LatestSermonText = styled.div`
   }
 `;
 
-const IndexPage = ({data}) => {
-  const images = data.allContentfulSlider.edges.map(({node}) => ({
+const IndexPage = ({ data }) => {
+  const images = data.allContentfulSlider.edges.map(({ node }) => ({
     original: node.image.file.url,
-    link: node.link,
+    link: node.link
   }));
 
   return (
@@ -75,7 +75,6 @@ const IndexPage = ({data}) => {
         showThumbnails={false}
         showFullscreenButton={false}
         showPlayButton={false}
-        onClick={e => console.log(e)}
       />
       <Row>
         <div>

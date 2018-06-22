@@ -5,7 +5,6 @@ import lifegroupsImage from "./lifegroups.jpg";
 
 const Page = ({ data }) => {
   const lifegroups = data.allContentfulSmallGroup.edges;
-  console.log(lifegroups[0].node.leaders);
 
   return (
     <div>
