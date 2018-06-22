@@ -23,34 +23,54 @@ const Content = styled.div`
   margin-left: auto;
 `;
 
-const MainContent = styled.div``;
-
 const Sidebar = styled.div``;
 
-const TemplateWrapper = ({children, data}) => {
+const TemplateWrapper = ({children, data, location}) => {
   const navigation = data.site.siteMetadata.navigation;
-  return (
-    <Container>
-      <Helmet
-        title={data.site.siteMetadata.title}
-        meta={[
-          {name: 'description', content: 'Sample'},
-          {name: 'keywords', content: 'sample, something'},
-        ]}
-      />
-      <Header navigation={navigation} />
-      <link
-        href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
-        rel="stylesheet"
-        type="text/css"
-      />
-      <Content>
-        <MainContent>{children()}</MainContent>
-        <Sidebar />
-      </Content>
-      <Footer />
-    </Container>
-  );
+  if (location.pathname === '/') {
+    return (
+      <Container>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            {name: 'description', content: 'Sample'},
+            {name: 'keywords', content: 'sample, something'},
+          ]}
+        />
+        <Header navigation={navigation} />
+        <link
+          href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <div>{children()}</div>
+        <Footer />
+      </Container>
+    );
+  } else {
+    return (
+      <Container>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            {name: 'description', content: 'Sample'},
+            {name: 'keywords', content: 'sample, something'},
+          ]}
+        />
+        <Header navigation={navigation} />
+        <link
+          href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <Content>
+          <div>{children()}</div>
+          <Sidebar />
+        </Content>
+        <Footer />
+      </Container>
+    );
+  }
 };
 
 TemplateWrapper.propTypes = {
