@@ -51,12 +51,27 @@ const LatestSermonText = styled.div`
 const IndexPage = ({data}) => {
   const images = data.allContentfulSlider.edges.map(({node}) => ({
     original: node.image.file.url,
+    link: node.link,
   }));
 
   return (
     <div>
       <ImageGallery
         items={images}
+        renderItem={item => {
+          return (
+            <div className="image-gallery-image">
+              <Link to={`/${item.link}`}>
+                <img
+                  src={item.original}
+                  alt={item.originalAlt}
+                  srcSet={item.srcSet}
+                  sizes={item.sizes}
+                />
+              </Link>
+            </div>
+          );
+        }}
         showThumbnails={false}
         showFullscreenButton={false}
         showPlayButton={false}
