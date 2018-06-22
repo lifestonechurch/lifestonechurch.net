@@ -1,0 +1,585 @@
+<!doctype html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lifestone Church</title>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#008F01"> <meta name="mobile-web-app-capable" content="yes"> <link rel="icon" sizes="192x192" href="assets/images/icon.png">
+
+  <link rel="shortcut icon" href="/assets/images/favicon.png" />
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" media="all">
+
+  <script type='text/javascript' src='/bower_components/jquery/dist/jquery.min.js'></script>
+  <script type='text/javascript' src='/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=210998452410886";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <header>
+    <style>
+.navbar {
+  border-radius: 0;
+}
+.navbar-brand {
+  padding: 0;
+  padding-top: 4px;
+}
+.navbar-brand img {
+  height: 45px;
+}
+.dropdown-menu {
+  border: none;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background-color: #008F01;
+  color: #FFF;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #008F01;
+}
+.navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #008F01;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+.navbar-collapse {
+  max-height: inherit !important;
+}
+@media (min-width: 800px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+    .navbar-nav {
+  background-color: #008F01;
+    }
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #FFF;
+    }
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  color: rgba(255,255,255,0.6);
+  text-decoration: underline;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > a:hover {
+  background-color: #FFF;
+  color: #008F01;
+  text-decoration: none;
+    }
+}
+</style>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"><img src="/assets/images/logo.png" /></a>
+  </div>
+  <div id="collapse" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right" role="navigation">
+      
+        
+        
+          <li>
+            <a href="/visit">Visit</a>
+          </li>
+        
+      
+        
+        
+          <li>
+            <a href="/events">Events</a>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              About <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/about/about-us">About Us</a></li>
+              
+              <li><a href="/about/pastors">Pastors</a></li>
+              
+              <li><a href="/about/contact-us">Contact Us</a></li>
+              
+              <li><a href="/about/what-we-believe">What We Believe</a></li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Resources <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/resources/sermons">Sermons</a></li>
+              
+              <li><a href="/resources/devotionals">Devotionals</a></li>
+              
+              <li><a href="/resources/videos">Videos</a></li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+          <li>
+            <a href="/lifegroups">LifeGroups</a>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Kids <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/kids/birth-kindergarten">Birth-Kindergarten</a></li>
+              
+              <li><a href="/kids/grades-1-5">Grades 1-5</a></li>
+              
+              <li><a href="/kids/grades-6-12">Grades 6-12</a></li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+          <li class="dropdown" role="presentation">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              Support <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              
+              <li><a href="/support/serve">Serve</a></li>
+              
+              <li><a href="/support/give">Give</a></li>
+              
+              <li><a href="/support/concern-center">Concern Center</a></li>
+              
+            </ul>
+          </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+  </header>
+
+  <div>
+    <style>
+.content img {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.content img.image-third {
+  display: inline;
+  margin-right: 1%;
+  width: 30%
+}
+@media (max-width: 501px) {
+  .content img.image-third {
+    margin-top: 10px;
+    width: 100%
+  }
+}
+.Page__Sidebar {
+  margin-top: 45px;
+}
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="content col-lg-9 col-md-12">
+      <!-- Get array of every page url -->
+
+
+
+<div>
+  <span><a href="/">Home</a></span>
+  
+  
+  
+  
+  
+    
+    
+    <span><span>&rsaquo;</span>
+      
+        
+          Resources
+        
+        
+    </span>
+    
+    
+  
+    
+    
+    <span><span>&rsaquo;</span>
+      <a href="/resources/devotionals/">
+        
+          Devotionals
+        
+        </a>
+    </span>
+    
+    
+  
+    
+    
+    <span><span>&rsaquo;</span>
+      
+        
+          Salvation in the Old Testament - Parts 3 & 4
+        
+        
+    </span>
+    
+    
+  
+</div>
+
+      <style>
+.Header__Banner{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2em;
+  background-color: #008F01;
+  color: #FFF;
+}
+</style>
+
+
+
+<h1 id='salvation-in-the-old-testament---parts-3--4' >Salvation in the Old Testament - Parts 3 & 4</h1>
+
+      <style>
+.BibleQuote {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin: 20px 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+  max-width: 500px;
+}
+.BibleQuote__Title {
+  font-style: normal;
+  font-size: 1.2em;
+}
+.BibleQuote__Label {
+  font-size: 0.8em;
+  color: #797979;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<style>
+.Metadata {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(0,0,0,0.6);
+  line-height: 2em;
+  margin-bottom: 10px;
+}
+</style>
+
+<div class="Metadata">
+  
+  <div>Pastor Sam Coleman</div>
+  <div>
+
+January
+18th,
+2017
+</div>
+
+</div>
+
+
+<div>
+  <h3 id="salvation-in-the-old-testament-part-3---the-prophecy">Salvation in the Old Testament (Part 3 - The prophecy)</h3>
+
+<p>The Song of Moses is a song of prophecy before the event:</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Deut. 31:19</em><br />
+“Now therefore write this song and teach it to the people of Israel. Put it in their mouths, that this song may be a witness for me against the people of Israel. 20 For when I have brought them into the land flowing with milk and honey, which I swore to give to their fathers, and they have eaten and are full and grown fat, they will turn to other gods and serve them, and despise me and break my covenant.</p>
+
+<p>The song they were required to learn was about their lack of faithfulness and ability to despise God, and break their agreement with Him. In the song, “Amazing Grace” we sing the line “saved a wretch like me” and what made the Israelites despicable (wretched) is what makes us wretched . . . our sin and our ability to despise God.</p>
+
+<p>Jeremiah is a Prophet after the law breakers who despise God follow through with Moses’ prophecy - this is what God says about His covenant breaking people:</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Jeremiah 2:13</em><br />
+for my people have committed two evils: they have forsaken me, the fountain of living waters, and hewed out cisterns for themselves, broken cisterns that can hold no water.</p>
+
+<p>Jeremiah 17:5 goes onto to explain you are “cursed” if you trust in your own strength instead of depending on the LORD - he is like a shrub in the desert and desolate “salt land” vs the Jer. 17:7-8 person who trusts in the LORD and he is compared to a tree planted by God next to a stream that bears much fruit.</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Jeremiah 17:9</em><br />
+The heart is deceitful above all things, and desperately sick; who can understand it? 10 “I the LORD search the heart and test the mind, to give every man according to his ways, according to the fruit of his deeds.”</p>
+
+<p>What is the heart of man that is deceitful and sick? The heart is your inner man - your thoughts, feeling and attitude - your ability and inability to tell the truth based on how you feel and your emotions.</p>
+
+<p>Can trust in God be based on how you feel?</p>
+
+<p>“I know in my heart of heart this is true,” is a statement that has to be met with your heart is sick and deceitful. Feelings end up being one of the worse ways to determine truth, it will not result in worship but in worship of your own ideas or what Jeremiah calls relying on your own strength.</p>
+
+<p>Jesus teaches: But if your eye is bad, your whole body will be full of darkness. So if the light within you is darkness—how deep is that darkness! (Matthew 6:23)</p>
+
+<p>The basis of biblical trust and the ability to know God’s will all depend on God speaking and telling us plainly who He is (trustworthy, full of mercy, holy) and who we are (despicable and in need of His forgiveness). God also has the ability to call us holy because He gives that to us as a gift when we call on the name of the Lord for our forgiveness and trust that Jesus’ sacrifice of his broken body and shed blood cover (atonement) and remove our sin from us which sets us free from the slavery of sin (redemption) and we acknowledge Jesus is risen and has called us to a new heart and life that lives for His glory instead of our glory.</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Romans 10:1</em><br />
+1 Brothers, my heart’s desire and prayer to God for them [chosen Israel] is that they may be saved. 2 For I bear them witness that they have a zeal for God, but not according to knowledge. 3 For, being ignorant of the righteousness of God, and seeking to establish their own, they did not submit to God’s righteousness. 4 For Christ is the end of the law for righteousness to everyone who believes.</p>
+
+<p>Paul was praying for these good intentioned Jewish people who had a passion/zeal for God but it was not based on knowledge. They had been deceived into thinking they were serving God but at the end of the day when they tried to “establish their own” righteousness they were actually ignorant of “the righteousness of God” which is found in the person and work of Jesus Christ.</p>
+
+<p>Why does God put into plan a man and woman in a perfect garden knowing they will disobey Him?</p>
+
+<p>Why does God make a nation that will turn their back on him?</p>
+
+<p>Why does God extend a hand to a person drowning in their sin?</p>
+
+<p>God knows the end from the beginning (Isaiah 46:10) and his will is that all men be saved (2 Pet. 3:9 &amp; 1 Tim. 2:4) yet they are not all saved . . . this does not show God’s weakness nor does it show his lack of control - the only way you can have God in control with free will men wanting to reject the Shepherd is to have a Good Shepherd who calls the sheep that are His own while all men are culpable (guilty) and deserving of not having a Shepherd at all - only those who listen (John 10:16) or as Jesus says it “I know my own and my own know me.” John 10:14</p>
+
+<p>To hear Jesus is totally different from hearing men . . . the heart is different, the message is different, the outcome is different as the Holy Spirit convicts us of our sin and shows us what is freely given in Christ . . . “behold all things are made new” (2 Cor. 5:17).</p>
+
+<p>Matthew 11:29 Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. 30 For my yoke is easy, and my burden is light.”</p>
+
+<h3 id="salvation-in-the-old-testament---part-4---calling-on-the-name-of-the-lord">Salvation in the Old Testament - (Part 4 - Calling on the name of the LORD)</h3>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Joel 2:32</em><br />
+And it shall come to pass that everyone who calls on the name of the LORD shall be saved.</p>
+
+<p>Saved means to be delivered from sin and the consequence of sin is eternal separation from God. From what we know in Scripture we were made to know and walk with God (made in God’s image). We were designed for that relationship to know and seek God.</p>
+
+<p>If you acknowledge you are drowning in your sin and you have no hope apart from God you are actually in a good place because you can begin to ask, seek, and knock - God is ready to answer.</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Romans 10:9</em><br />
+because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved.</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Romans 10:13</em><br />
+For “everyone who calls on the name of the Lord will be saved.” This is a quote from Joel 2:32 “everyone one who calls on the name of the Yahweh shall be saved”</p>
+
+<p>We are acknowledging that Jesus is Rev. 21:13 I am the Alpha and the Omega, the first and the last, the beginning and the end.”</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Isaiah 44:6</em><br />
+Thus says the LORD, the King of Israel and his Redeemer, the LORD of hosts: “I am the first and I am the last; besides me there is no god.</p>
+
+<p>The confession is Jesus is the Author of Life (Acts 3:15, Heb. 12:1-2) the Alpha and Omega, the end of the law, the righteousness of God, the Yahweh who spoke it all into existence “the Word was God” and “the Word became flesh and dwelt among us”(Jn. 1:1&amp;14)” and “all things were made through him (Jn. 1:3)” and “by him all things were created, in heaven and on earth, visible and invisible (Col. 3:16) and we agree with Jesus that He is the Way and the Truth and the Life and no one can come to God the Father apart from Jesus the Good Shepherd (John 14:6).</p>
+
+<p>Anyone who says Jesus was created or not equal with God is basically saying he is not God (Alpha and Omega, Yahweh, Word become flesh) which according to Romans 10:9 is a necessary part of the confession Jesus is Lord!</p>
+
+<p>Another necessary part of the confession that David makes is the “LORD is my Shepherd” He makes me lie down . . . He restores my soul . . . He leads me in paths of righteousness . . .his rod and staff comfort . . . surely goodness and mercy shall follow [Hebrew: radaf - hunt you down] and I shall dwell in the house of the LORD forever.
+David could only make a good list of the LORD’s work with an eternal consequence of dwelling in his presence forever.</p>
+
+<p>Have you confessed Jesus is LORD! Have you had his goodness and love and mercy chase you down?</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Romans 5:8</em><br />
+but God shows his love for us in that while we were still sinners, Christ died for us.</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Ephesians 2:13</em><br />
+But now in Christ Jesus you who once were far off have been brought near by the blood of Christ.</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">John 10:26-30</em><br />
+<em class="BibleQuote__Label">26</em> but you do not believe because you are not among my sheep. <em class="BibleQuote__Label">27</em> My sheep hear my voice, and I know them, and they follow me. <em class="BibleQuote__Label">28</em> I give them eternal life, and they will never perish, and no one will snatch them out of my hand. <em class="BibleQuote__Label">29</em> My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father’s hand. <em class="BibleQuote__Label">30</em> I and the Father are one.”</p>
+
+<p>Is your salvation secure in Jesus? “No one will snatch them out of my hand”</p>
+
+<p>Can you do things to lose your salvation? Whatever list you come up with will be the same list of things to do to get salvation and would make you “ignorant of the righteousness of God” to borrow the language of Paul in Romans 10.</p>
+
+<p>Calling on the name of the Lord is a gentle and lowly heart calling for help.</p>
+
+<p>Calling on the name of the Lord is asking for Jesus’ easy yoke and light burden.</p>
+
+<p>Calling on the name of the Lord is a call for forgiveness over my sin.</p>
+
+<p>Calling on the name of the Lord is acknowledging everything I need is found in Jesus.</p>
+
+<p>There is no step 2 or 3 there is only one step, one way, one means to become holy and righteous. To surrender and trust in God takes a sinful dead man in his sin and makes him alive and free from that sin, when we call on the name of the Lord for salvation.</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">John 5:24</em><br />
+“I assure you: Anyone who hears My word and believes Him who sent Me has eternal life and will not come under judgment but has passed from death to life.</p>
+
+<p>In your testimony right now could you say for sure you have passed from death to life and you are secure in Jesus the Good Shepherd’s hand for all eternity?</p>
+
+<p>If not follow the Old Testament plea to “call on the name of the Lord!”</p>
+
+<p class="BibleQuote"><em class="BibleQuote__Title">Acts 4:12</em><br />
+ There is salvation in no one else, for there is no other name under heaven given to people, and we must be saved by it.</p>
+
+</div>
+
+    </div>
+    <div class="Page__Sidebar">
+      <div class="col-sm-3 visible-lg">
+  <div>
+    <div class="fb-page" data-href="https://www.facebook.com/lifestonechurchutah" data-width="320" data-height="1000" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lifestonechurchutah"><a href="https://www.facebook.com/lifestonechurchutah">Lifestone Church Herriman Utah</a></blockquote></div></div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <style>
+.Footer {
+  margin-top: 50px;
+}
+.Footer__Top .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Footer__Top {
+  background-color: #484848;
+  background: rgb(47,47,47);
+  background: -moz-linear-gradient(top, rgba(47,47,47,1) 0%, rgba(54,54,54,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(47,47,47,1)), color-stop(100%,rgba(54,54,54,1)));
+  background: -webkit-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+  background: -o-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+  background: -ms-linear-gradient(top, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+  background: linear-gradient(to bottom, rgba(47,47,47,1) 0%,rgba(54,54,54,1) 100%);
+}
+.Footer__Top,
+.Footer__Top a,
+.Footer__Top p {
+  color: #FFF;
+}
+.Footer__Top a:hover {
+  text-decoration: underline;
+}
+.socialMediaIcon {
+  margin-right: 10px;
+}
+.Footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Footer__Top_Column h4 {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .Footer__Top_Column {
+    padding-bottom: 30px;
+  }
+}
+</style>
+
+<div class="Footer">
+  <div class="Footer__Top">
+    <div class="container">
+      <div class="row">
+        <div class="Footer__Top_Column col-sm-4">
+          <style>
+.Header__Banner{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2em;
+  background-color: #008F01;
+  color: #FFF;
+}
+</style>
+
+
+
+<h4 id='sundays-900-am-or-1030-am' >Sundays 9:00 am or 10:30 am</h4>
+
+          <p>3443 W 12600 S, Riverton, UT 84065</p>
+          <style>
+.googleMap {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.googleMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
+
+<div class="googleMap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.893478502823!2d-111.97531858460084!3d40.52184547935291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528434534e1fd7%3A0x3011289953bd878e!2sLifestone+Church!5e0!3m2!1sen!2sus!4v1518562897965" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+        </div>
+        <div class="Footer__Top_Column col-sm-4">
+        </div>
+        <div class="Footer__Top_Column col-sm-4">
+          <p><a href="https://www.facebook.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/facebook.svg" height="15px" width="15px" class="socialMediaIcon"/>lifestonechurchutah</a></p>
+          <p><a href="https://www.instagram.com/lifestonechurchutah/" target="_blank"><img src="/assets/images/instagram.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestonechurchutah</a></p>
+          <p><a href="https://twitter.com/lifestoneutah" target="_blank"><img src="/assets/images/twitter.svg" height="15px" width="15px" class="socialMediaIcon"/>@lifestoneutah</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/assets/js/audiojs/audio.min.js"></script>
+  <script>
+    audiojs.events.ready(function() {
+      var as = audiojs.createAll();
+    });
+  </script>
+
+  <script src="/assets/js/featureSwitch.js"></script>
+  <script src="/assets/js/googleAnalytics.js"></script>
+</body>
+</html>

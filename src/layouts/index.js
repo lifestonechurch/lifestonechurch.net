@@ -1,20 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import styled from 'react-emotion';
 import Header from '../components/Header';
-import Container from '../components/Container';
+import Footer from '../components/Footer';
 
 import './index.css';
 
-const TemplateWrapper = ({ children, data }) => {
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
+const Content = styled.div`
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-column-gap: 12px;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+`;
+
+const MainContent = styled.div``;
+
+const Sidebar = styled.div``;
+
+const TemplateWrapper = ({children, data}) => {
   const navigation = data.site.siteMetadata.navigation;
   return (
-    <div>
+    <Container>
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          {name: 'description', content: 'Sample'},
+          {name: 'keywords', content: 'sample, something'},
         ]}
       />
       <Header navigation={navigation} />
@@ -23,8 +44,12 @@ const TemplateWrapper = ({ children, data }) => {
         rel="stylesheet"
         type="text/css"
       />
-      <Container>{children()}</Container>
-    </div>
+      <Content>
+        <MainContent>{children()}</MainContent>
+        <Sidebar />
+      </Content>
+      <Footer />
+    </Container>
   );
 };
 
