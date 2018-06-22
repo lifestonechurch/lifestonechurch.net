@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Link from "gatsby-link";
-import styled from "react-emotion";
-import Burger from "./Burger";
-import * as COLORS from "../constants/colors";
-import logo from "../../assets/logo2.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import styled from 'react-emotion';
+import Burger from './Burger';
+import * as COLORS from '../constants/colors';
+import logo from '../../assets/logo2.png';
 
 const MIN_DESKTOP_SIZE = 1163;
 
@@ -85,6 +85,8 @@ const MobileContainer = styled.div`
   background: ${COLORS.BRAND};
   display: none;
   overflow-y: scroll;
+  z-index: 10;
+
   &.open {
     display: inherit;
   }
@@ -149,55 +151,55 @@ const Image = styled.img`
   height 45px;
   padding: 4px 0;
   z-index: 1000;
-  display: ${props => (props.isVisible ? "visible" : "none")};
+  display: ${props => (props.isVisible ? 'visible' : 'none')};
 `;
 
 Image.propTypes = {
-  isVisible: PropTypes.bool.isRequired
+  isVisible: PropTypes.bool.isRequired,
 };
 
 class Menu extends React.Component {
   state = {
     openDesktopItem: null,
     openMobileItems: {},
-    isOpen: false
+    isOpen: false,
   };
 
-  escapeListener = ({ key, keyCode }) => {
-    if (key === "Escape" || keyCode === 27) {
+  escapeListener = ({key, keyCode}) => {
+    if (key === 'Escape' || keyCode === 27) {
       this.allowScroll();
-      this.setState({ isOpen: false });
+      this.setState({isOpen: false});
     }
   };
 
   componentDidMount() {
-    window.addEventListener("keydown", this.escapeListener);
+    window.addEventListener('keydown', this.escapeListener);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("keydown", this.escapeListener);
+    window.removeEventListener('keydown', this.escapeListener);
   }
 
   handleMobileToggle = isOpen => {
-    this.setState({ isOpen }, () => {
-      document.body.style.overflow = isOpen ? "hidden" : "auto";
+    this.setState({isOpen}, () => {
+      document.body.style.overflow = isOpen ? 'hidden' : 'auto';
     });
   };
 
   handleDesktopItemClick = index => {
     this.setState({
-      openDesktopItem: this.state.openDesktopItem === index ? null : index
+      openDesktopItem: this.state.openDesktopItem === index ? null : index,
     });
   };
 
   handleHomeClick = () => {
     this.setState({
-      isOpen: false
+      isOpen: false,
     });
   };
 
   allowScroll() {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = 'auto';
   }
 
   handleMobileItemClick = (item, i) => {
@@ -207,14 +209,14 @@ class Menu extends React.Component {
       openMobileItems: items[i]
         ? Object.keys(items)
             .filter(a => a !== i)
-            .reduce((a, c) => ({ ...a, c: true }), {})
-        : { ...items, [i]: true },
-      isOpen: item.children ? this.state.isOpen : false
+            .reduce((a, c) => ({...a, c: true}), {})
+        : {...items, [i]: true},
+      isOpen: item.children ? this.state.isOpen : false,
     });
   };
 
   render() {
-    const { children, navigation } = this.props;
+    const {children, navigation} = this.props;
     return (
       <Container>
         <DesktopNav>
@@ -239,7 +241,7 @@ class Menu extends React.Component {
               )}
               {a.children && (
                 <DesktopSubNav
-                  className={this.state.openDesktopItem === i ? "open" : ""}
+                  className={this.state.openDesktopItem === i ? 'open' : ''}
                 >
                   {a.children.map((b, j) => (
                     <Link
@@ -258,10 +260,10 @@ class Menu extends React.Component {
         <Mobile>
           <Burger
             isOpen={this.state.isOpen}
-            color={this.state.isOpen ? "white" : COLORS.BRAND}
+            color={this.state.isOpen ? 'white' : COLORS.BRAND}
             onClick={this.handleMobileToggle}
           />
-          <MobileContainer className={this.state.isOpen ? "open" : ""}>
+          <MobileContainer className={this.state.isOpen ? 'open' : ''}>
             <Link to="/" onClick={() => this.handleHomeClick()}>
               <Image
                 src={logo}
@@ -290,7 +292,7 @@ class Menu extends React.Component {
                   )}
                   {a.children && (
                     <MobileSubNav
-                      className={this.state.openMobileItems[i] ? "open" : ""}
+                      className={this.state.openMobileItems[i] ? 'open' : ''}
                     >
                       {a.children.map((b, j) => (
                         <Link
@@ -321,11 +323,11 @@ Menu.propTypes = {
       children: PropTypes.arrayOf(
         PropTypes.shape({
           name: PropTypes.string.isRequired,
-          path: PropTypes.string
+          path: PropTypes.string,
         })
-      )
+      ),
     })
-  ).isRequired
+  ).isRequired,
 };
 
 export default Menu;
