@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'react-emotion';
-import * as COLORS from '../constants/colors';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "react-emotion";
+import * as COLORS from "../constants/colors";
 
 const Container = styled.div`
   position: fixed;
@@ -76,14 +76,16 @@ const Icon = styled.div`
 
 class Burger extends React.Component {
   handleClick = () => {
-    this.props.onClick(!this.props.isOpen);
+    if (this.props.onClick) {
+      this.props.onClick(!this.props.isOpen);
+    }
   };
 
   render() {
     const { color } = this.props;
     return (
       <Container onClick={this.handleClick}>
-        <Icon color={color} className={this.props.isOpen ? 'open' : ''}>
+        <Icon color={color} className={this.props.isOpen ? "open" : ""}>
           <span />
           <span />
           <span />
@@ -97,7 +99,7 @@ class Burger extends React.Component {
 Burger.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   color: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+  onClick: PropTypes.func
 };
 
 export default Burger;

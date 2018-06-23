@@ -46,7 +46,9 @@ const TemplateWrapper = ({ children, data, location }) => {
           rel="stylesheet"
           type="text/css"
         />
-        <div>{children()}</div>
+        <Content>
+          <div>{children()}</div>
+        </Content>
         <Footer />
       </Container>
     );

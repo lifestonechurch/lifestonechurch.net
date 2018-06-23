@@ -1,12 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
-import styled from 'react-emotion';
-import Menu from '../components/Menu';
-import * as COLORS from '../constants/colors';
-import logo from '../../assets/logo.png';
+import React from "react";
+import PropTypes from "prop-types";
+import Link from "gatsby-link";
+import styled from "react-emotion";
+import DesktopMenu from "../components/DesktopMenu";
+import MobileMenu from "../components/MobileMenu";
+import * as COLORS from "../constants/colors";
+import logo from "../../assets/logo.png";
 
 const Container = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +32,10 @@ const Header = ({ navigation }) => (
     <Link to="/">
       <Image src={logo} alt="Logo" />
     </Link>
-    <Menu navigation={navigation} />
+    <div>
+      <DesktopMenu navigation={navigation} />
+      <MobileMenu navigation={navigation} />
+    </div>
   </Container>
 );
 
@@ -39,11 +47,11 @@ Header.propTypes = {
       children: PropTypes.arrayOf(
         PropTypes.shape({
           name: PropTypes.string.isRequired,
-          path: PropTypes.string,
+          path: PropTypes.string
         })
-      ),
+      )
     })
-  ).isRequired,
+  ).isRequired
 };
 
 export default Header;
