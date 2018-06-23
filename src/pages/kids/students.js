@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'react-emotion';
+import ImageGallery from 'react-image-gallery';
 import EventCard from '../../components/EventCard';
 import Banner from '../../components/Banner';
-import PhotoAlbum from '../../components/PhotoAlbum';
 import SmallImage from '../../components/SmallImage';
 import { getMonthNumber, getMonthName } from '../../utils/formatDate';
 import * as COLORS from '../../constants/colors';
@@ -19,8 +19,17 @@ const Month = styled.div`
   margin: 10px 0px;
 `;
 
+const GalleryContainer = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+`;
+
 const Page = ({ data }) => {
   const events = data.allContentfulEvent.edges;
+  const images = data.contentfulImageGallery.images.map(i => ({
+    original: i.file.url,
+  }));
+  console.log(images);
 
   const youthEvents = events.filter(
     ({ node }) =>
@@ -98,7 +107,7 @@ const Page = ({ data }) => {
       </Banner>
 
       {youthEvents.map(({ node }, i) => (
-        <div>
+        <div key={node.id}>
           <EventCard
             linkTo={`/events/${node.fields.slug}`}
             startDate={node.startDate}
@@ -113,10 +122,9 @@ const Page = ({ data }) => {
         <h2>Photos</h2>
       </Banner>
 
-      <PhotoAlbum
-        albumId="72157652789307104"
-        coverImage="https://c1.staticflickr.com/5/4185/34566550455_64630617dc_z.jpg"
-      />
+      <GalleryContainer>
+        <ImageGallery items={images} showThumbnails={false} />
+      </GalleryContainer>
     </div>
   );
 };
@@ -148,6 +156,16 @@ export const query = graphql`
           ministry {
             name
           }
+        }
+      }
+    }
+    contentfulImageGallery(id: { eq: "c32DZGuSOIMA4W2IYEiAMga" }) {
+      title
+      images {
+        id
+        title
+        file {
+          url
         }
       }
     }

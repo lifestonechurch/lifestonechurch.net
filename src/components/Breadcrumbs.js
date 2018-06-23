@@ -10,8 +10,8 @@ const Container = styled.div`
 const Breadcrumbs = ({ path, title }) => {
   return (
     <Container>
-      {path.map(item => (
-        <span>
+      {path.map((item, i) => (
+        <span key={i}>
           {item.url ? <Link to={item.url}>{item.title}</Link> : `${item.title}`}{' '}
           ›{' '}
         </span>
@@ -25,7 +25,7 @@ Breadcrumbs.propTypes = {
   path: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
+      url: PropTypes.string,
     })
   ),
   title: PropTypes.string.isRequired,

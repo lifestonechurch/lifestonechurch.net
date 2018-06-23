@@ -1,6 +1,5 @@
 import React from 'react';
 import Banner from '../../components/Banner';
-import PhotoAlbum from '../../components/PhotoAlbum';
 import SmallImage from '../../components/SmallImage';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
@@ -42,11 +41,6 @@ const Page = () => (
       *** Our secure environments are staffed with loving volunteers who have
       all submitted to extensive background checks and interviews.
     </p>
-
-    <PhotoAlbum
-      albumId="72157651701477048"
-      coverImage="https://c1.staticflickr.com/5/4163/34566183695_c28f477ec8_z.jpg"
-    />
   </div>
 );
 
