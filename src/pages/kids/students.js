@@ -66,7 +66,7 @@ const Page = ({ data }) => {
             ""
           )}
           <EventCard
-            linkTo={node.fields.slug}
+            linkTo={`/events/${node.fields.slug}`}
             startDate={node.startDate}
             endDate={node.endDate}
             title={node.name}
