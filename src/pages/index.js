@@ -2,6 +2,7 @@ import React from "react";
 import styled from "react-emotion";
 import Link from "gatsby-link";
 import ImageGallery from "react-image-gallery";
+import SmallCalendar from "../components/SmallCalendar";
 
 import benPreaching from "./benPreaching.jpg";
 
@@ -65,7 +66,14 @@ const IndexPage = ({ data }) => {
     link: node.link
   }));
   const sermon = data.allContentfulSermon.edges[0].node;
-  console.log(sermon);
+  const events = data.allContentfulEvent.edges.map(({ node }) => ({
+    id: node.id,
+    name: node.name,
+    startDate: node.startDate,
+    endDate: node.endDate,
+    shortDescription: node.shortDescription,
+    slug: node.fields.slug
+  }));
 
   return (
     <div>
@@ -115,7 +123,9 @@ const IndexPage = ({ data }) => {
         </RowItem>
         <RowItem>
           <RowHeader>Upcoming Events</RowHeader>
-          <RowContainer />
+          <RowContainer>
+            <SmallCalendar events={events} />
+          </RowContainer>
         </RowItem>
       </Row>
     </div>
@@ -148,6 +158,20 @@ export const query = graphql`
             slug
           }
           mainScripture
+        }
+      }
+    }
+    allContentfulEvent(sort: { fields: [startDate], order: ASC }, limit: 6) {
+      edges {
+        node {
+          id
+          name
+          startDate
+          endDate
+          shortDescription
+          fields {
+            slug
+          }
         }
       }
     }

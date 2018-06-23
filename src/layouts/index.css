@@ -44,6 +44,14 @@ input {
   margin-bottom: 0.5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 a,
 a:hover {
   color: #008F01;
