@@ -97,18 +97,46 @@ class DesktopMenu extends React.Component {
 
   escapeListener = ({ key, keyCode }) => {
     if (key === 'Escape' || keyCode === 27) {
-      this.allowScroll();
-      this.setState({ isOpen: false });
+      this.setState({
+        isOpen: false,
+        openDesktopItem: null,
+      });
+    }
+  };
+
+  onClickOutside = e => {
+    if (this.menuRef && !this.menuRef.contains(e.target)) {
+      this.setState({
+        openDesktopItem: null,
+      });
     }
   };
 
   componentDidMount() {
     window.addEventListener('keydown', this.escapeListener);
+    document.addEventListener('mousedown', this.onClickOutside);
   }
 
   componentWillUnmount() {
     window.removeEventListener('keydown', this.escapeListener);
+    document.removeEventListener('mousedown', this.onClickOutside);
   }
+
+  handleDesktopItemHover = openDesktopItem => {
+    clearTimeout(this.hoverTimer);
+
+    this.setState({
+      openDesktopItem,
+    });
+  };
+
+  handleDesktopItemHoverOff = () => {
+    this.hoverTimer = setTimeout(() => {
+      this.setState({
+        openDesktopItem: null,
+      });
+    }, 500);
+  };
 
   handleDesktopItemClick = index => {
     this.setState({
@@ -122,53 +150,57 @@ class DesktopMenu extends React.Component {
     });
   };
 
-  allowScroll() {
-    document.body.style.overflow = 'auto';
-  }
-
   render() {
     const { children, navigation } = this.props;
     return (
-      <Container>
-        <DesktopNav>
-          {navigation.map((a, i) => (
-            <li key={i}>
-              {a.path ? (
-                <Link
-                  to={a.path}
-                  onClick={() => this.handleDesktopItemClick(i)}
-                >
-                  {a.name}
-                </Link>
-              ) : (
-                <Item>
-                  <div onClick={() => this.handleDesktopItemClick(i)}>
+      <div ref={node => (this.menuRef = node)}>
+        <Container>
+          <DesktopNav>
+            {navigation.map((a, i) => (
+              <li key={i}>
+                {a.path ? (
+                  <Link
+                    to={a.path}
+                    onClick={() => this.handleDesktopItemClick(i)}
+                    onMouseEnter={() => this.handleDesktopItemHover(i)}
+                  >
                     {a.name}
-                  </div>
-                  <svg viewBox="0 0 64 64">
-                    <path d="M18.4 28.6L32 42.2l13.6-13.6H18.4z" />
-                  </svg>
-                </Item>
-              )}
-              {a.children && (
-                <DesktopSubNav
-                  className={this.state.openDesktopItem === i ? 'open' : ''}
-                >
-                  {a.children.map((b, j) => (
-                    <Link
-                      to={b.path}
-                      key={j}
-                      onClick={() => this.handleDesktopItemClick(i)}
+                  </Link>
+                ) : (
+                  <Item>
+                    <div onMouseEnter={() => this.handleDesktopItemHover(i)}>
+                      {a.name}
+                    </div>
+                    <svg viewBox="0 0 64 64">
+                      <path d="M18.4 28.6L32 42.2l13.6-13.6H18.4z" />
+                    </svg>
+                  </Item>
+                )}
+                {a.children && (
+                  <div
+                    onMouseEnter={() => this.handleDesktopItemHover(i)}
+                    onMouseLeave={() => this.handleDesktopItemHoverOff()}
+                  >
+                    <DesktopSubNav
+                      className={this.state.openDesktopItem === i ? 'open' : ''}
                     >
-                      <li>{b.name}</li>
-                    </Link>
-                  ))}
-                </DesktopSubNav>
-              )}
-            </li>
-          ))}
-        </DesktopNav>
-      </Container>
+                      {a.children.map((b, j) => (
+                        <Link
+                          to={b.path}
+                          key={j}
+                          onClick={() => this.handleDesktopItemClick(i)}
+                        >
+                          <li>{b.name}</li>
+                        </Link>
+                      ))}
+                    </DesktopSubNav>
+                  </div>
+                )}
+              </li>
+            ))}
+          </DesktopNav>
+        </Container>
+      </div>
     );
   }
 }
