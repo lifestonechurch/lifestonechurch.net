@@ -64,6 +64,8 @@ const IndexPage = ({ data }) => {
     original: node.image.file.url,
     link: node.link
   }));
+  const sermon = data.allContentfulSermon.edges[0].node;
+  console.log(sermon);
 
   return (
     <div>
@@ -101,14 +103,11 @@ const IndexPage = ({ data }) => {
           <RowHeader>Latest Message</RowHeader>
           <RowContainer>
             <LatestSermon>
-              <Link to="/resources/sermons/beautiful-mess-3/">
+              <Link to={`/resources/sermons/${sermon.fields.slug}`}>
                 <img src={benPreaching} alt="" />
                 <LatestSermonText>
-                  <h4>
-                    Beautiful Mess: Week 3 - The “Secret Wisdom”... Is It In
-                    You?
-                  </h4>
-                  1 Corinthians 2:6-16
+                  <h4>{sermon.title}</h4>
+                  {sermon.mainScripture}
                 </LatestSermonText>
               </Link>
             </LatestSermon>
@@ -138,6 +137,17 @@ export const query = graphql`
               url
             }
           }
+        }
+      }
+    }
+    allContentfulSermon(sort: { fields: [date], order: DESC }, limit: 1) {
+      edges {
+        node {
+          title
+          fields {
+            slug
+          }
+          mainScripture
         }
       }
     }
