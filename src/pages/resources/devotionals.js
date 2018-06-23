@@ -1,5 +1,5 @@
-import React from "react";
-import DevotionalCard from "../../components/DevotionalCard";
+import React from 'react';
+import DevotionalCard from '../../components/DevotionalCard';
 
 const Page = ({ data }) => {
   const sermons = data.allContentfulPost.edges;
@@ -14,7 +14,7 @@ const Page = ({ data }) => {
           linkTo={`resources/devotionals/${node.fields.slug}`}
           title={node.title}
           date={node.date}
-          author={node.author.map(a => a.name).join(", ")}
+          author={node.author.map(a => a.name).join(', ')}
         />
       ))}
     </div>

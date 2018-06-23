@@ -24,7 +24,7 @@ const Content = styled.div`
 
 const Sidebar = styled.div``;
 
-const TemplateWrapper = ({children, data, location}) => {
+const TemplateWrapper = ({ children, data, location }) => {
   const navigation = data.site.siteMetadata.navigation;
 
   if (location.pathname === '/') {
@@ -37,7 +37,7 @@ const TemplateWrapper = ({children, data, location}) => {
               name: 'description',
               content: data.site.siteMetadata.description,
             },
-            {name: 'keywords', content: data.site.siteMetadata.keywords},
+            { name: 'keywords', content: data.site.siteMetadata.keywords },
           ]}
         />
         <Header navigation={navigation} />
@@ -60,7 +60,7 @@ const TemplateWrapper = ({children, data, location}) => {
               name: 'description',
               content: data.site.siteMetadata.description,
             },
-            {name: 'keywords', content: data.site.siteMetadata.keywords},
+            { name: 'keywords', content: data.site.siteMetadata.keywords },
           ]}
         />
         <Header navigation={navigation} />
@@ -70,6 +70,7 @@ const TemplateWrapper = ({children, data, location}) => {
           type="text/css"
         />
         <Content>
+          <Breadcrumbs navigation={navigation} pathname={location.pathname} />
           <div>{children()}</div>
           <Sidebar />
         </Content>

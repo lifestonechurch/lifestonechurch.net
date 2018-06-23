@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Link from "gatsby-link";
-import styled from "react-emotion";
-import Burger from "./Burger";
-import * as COLORS from "../constants/colors";
-import logo from "../../assets/logo2.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import styled from 'react-emotion';
+import Burger from './Burger';
+import * as COLORS from '../constants/colors';
+import logo from '../../assets/logo2.png';
 
 const MIN_DESKTOP_SIZE = 1163;
 
@@ -81,48 +81,48 @@ const Image = styled.img`
   height 45px;
   padding: 4px 0;
   z-index: 1000;
-  display: ${props => (props.isVisible ? "visible" : "none")};
+  display: ${props => (props.isVisible ? 'visible' : 'none')};
 `;
 
 Image.propTypes = {
-  isVisible: PropTypes.bool.isRequired
+  isVisible: PropTypes.bool.isRequired,
 };
 
 class DesktopMenu extends React.Component {
   state = {
     openDesktopItem: null,
-    isOpen: false
+    isOpen: false,
   };
 
   escapeListener = ({ key, keyCode }) => {
-    if (key === "Escape" || keyCode === 27) {
+    if (key === 'Escape' || keyCode === 27) {
       this.allowScroll();
       this.setState({ isOpen: false });
     }
   };
 
   componentDidMount() {
-    window.addEventListener("keydown", this.escapeListener);
+    window.addEventListener('keydown', this.escapeListener);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("keydown", this.escapeListener);
+    window.removeEventListener('keydown', this.escapeListener);
   }
 
   handleDesktopItemClick = index => {
     this.setState({
-      openDesktopItem: this.state.openDesktopItem === index ? null : index
+      openDesktopItem: this.state.openDesktopItem === index ? null : index,
     });
   };
 
   handleHomeClick = () => {
     this.setState({
-      isOpen: false
+      isOpen: false,
     });
   };
 
   allowScroll() {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = 'auto';
   }
 
   render() {
@@ -151,7 +151,7 @@ class DesktopMenu extends React.Component {
               )}
               {a.children && (
                 <DesktopSubNav
-                  className={this.state.openDesktopItem === i ? "open" : ""}
+                  className={this.state.openDesktopItem === i ? 'open' : ''}
                 >
                   {a.children.map((b, j) => (
                     <Link
@@ -180,11 +180,11 @@ DesktopMenu.propTypes = {
       children: PropTypes.arrayOf(
         PropTypes.shape({
           name: PropTypes.string.isRequired,
-          path: PropTypes.string
+          path: PropTypes.string,
         })
-      )
+      ),
     })
-  ).isRequired
+  ).isRequired,
 };
 
 export default DesktopMenu;

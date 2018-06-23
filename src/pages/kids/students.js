@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "react-emotion";
-import EventCard from "../../components/EventCard";
-import Banner from "../../components/Banner";
-import PhotoAlbum from "../../components/PhotoAlbum";
-import SmallImage from "../../components/SmallImage";
-import { getMonthNumber, getMonthName } from "../../utils/formatDate";
-import * as COLORS from "../../constants/colors";
+import React from 'react';
+import styled from 'react-emotion';
+import EventCard from '../../components/EventCard';
+import Banner from '../../components/Banner';
+import PhotoAlbum from '../../components/PhotoAlbum';
+import SmallImage from '../../components/SmallImage';
+import { getMonthNumber, getMonthName } from '../../utils/formatDate';
+import * as COLORS from '../../constants/colors';
 
-import youth from "./youth.jpg";
+import youth from './youth.jpg';
 
 const Month = styled.div`
   font-size: 18px;
@@ -21,7 +21,7 @@ const Page = ({ data }) => {
   const youthEvents = events.filter(
     ({ node }) =>
       node.ministry !== undefined &&
-      node.ministry.map(m => m.name).includes("Youth")
+      node.ministry.map(m => m.name).includes('Youth')
   );
 
   return (
@@ -63,7 +63,7 @@ const Page = ({ data }) => {
             getMonthNumber(node.startDate) ? (
             <Month>{getMonthName(node.startDate)}</Month>
           ) : (
-            ""
+            ''
           )}
           <EventCard
             linkTo={`/events/${node.fields.slug}`}

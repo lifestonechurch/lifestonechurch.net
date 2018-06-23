@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Link from "gatsby-link";
-import styled from "react-emotion";
-import Burger from "./Burger";
-import * as COLORS from "../constants/colors";
-import logo from "../../assets/logo2.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import styled from 'react-emotion';
+import Burger from './Burger';
+import * as COLORS from '../constants/colors';
+import logo from '../../assets/logo2.png';
 
 const Container = styled.div``;
 
@@ -103,7 +103,7 @@ const Image = styled.img`
   height 45px;
   padding: 4px 0;
   z-index: 10;
-  display: ${props => (props.isVisible ? "visible" : "none")};
+  display: ${props => (props.isVisible ? 'visible' : 'none')};
 
   @media (min-width: 700px) {
     display: none;
@@ -111,27 +111,27 @@ const Image = styled.img`
 `;
 
 Image.propTypes = {
-  isVisible: PropTypes.bool.isRequired
+  isVisible: PropTypes.bool.isRequired,
 };
 
 class MobileMenu extends React.Component {
   state = {
     openMobileItems: {},
-    isOpen: false
+    isOpen: false,
   };
 
   escapeListener = ({ key, keyCode }) => {
-    if (key === "Escape" || keyCode === 27) {
+    if (key === 'Escape' || keyCode === 27) {
       this.setState({ isOpen: false });
     }
   };
 
   componentDidMount() {
-    window.addEventListener("keydown", this.escapeListener);
+    window.addEventListener('keydown', this.escapeListener);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("keydown", this.escapeListener);
+    window.removeEventListener('keydown', this.escapeListener);
   }
 
   handleMobileToggle = isOpen => {
@@ -140,7 +140,7 @@ class MobileMenu extends React.Component {
 
   handleHomeClick = () => {
     this.setState({
-      isOpen: false
+      isOpen: false,
     });
   };
 
@@ -152,7 +152,7 @@ class MobileMenu extends React.Component {
             .filter(a => a !== i)
             .reduce((a, c) => ({ ...a, c: true }), {})
         : { ...items, [i]: true },
-      isOpen: item.children ? this.state.isOpen : false
+      isOpen: item.children ? this.state.isOpen : false,
     });
   };
 
@@ -163,10 +163,10 @@ class MobileMenu extends React.Component {
         <Mobile>
           <Burger
             isOpen={this.state.isOpen}
-            color={this.state.isOpen ? "white" : COLORS.BRAND}
+            color={this.state.isOpen ? 'white' : COLORS.BRAND}
             onClick={this.handleMobileToggle}
           />
-          <MobileContainer className={this.state.isOpen ? "open" : ""}>
+          <MobileContainer className={this.state.isOpen ? 'open' : ''}>
             <Link to="/" onClick={() => this.handleHomeClick()}>
               <Image src={logo} alt="Logo" isVisible={this.state.isOpen} />
             </Link>
@@ -190,7 +190,7 @@ class MobileMenu extends React.Component {
                   )}
                   {a.children && (
                     <MobileSubNav
-                      className={this.state.openMobileItems[i] ? "open" : ""}
+                      className={this.state.openMobileItems[i] ? 'open' : ''}
                     >
                       {a.children.map((b, j) => (
                         <Link
@@ -221,11 +221,11 @@ MobileMenu.propTypes = {
       children: PropTypes.arrayOf(
         PropTypes.shape({
           name: PropTypes.string.isRequired,
-          path: PropTypes.string
+          path: PropTypes.string,
         })
-      )
+      ),
     })
-  ).isRequired
+  ).isRequired,
 };
 
 export default MobileMenu;

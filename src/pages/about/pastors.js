@@ -1,5 +1,5 @@
-import React from "react";
-import heltonFamily from "./helton-family.jpg";
+import React from 'react';
+import heltonFamily from './helton-family.jpg';
 
 const Page = () => (
   <div>
@@ -11,7 +11,7 @@ const Page = () => (
     </p>
 
     <p>
-      Lifestone Church is supported by{" "}
+      Lifestone Church is supported by{' '}
       <a href="http://www.namb.net/" target="_blank" rel="noopener">
         The North American Mission Board.
       </a>

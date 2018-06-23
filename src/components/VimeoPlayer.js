@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "react-emotion";
-import PropTypes from "prop-types";
+import React from 'react';
+import styled from 'react-emotion';
+import PropTypes from 'prop-types';
 
 const Container = styled.div`
   height: 0;
@@ -43,7 +43,7 @@ const VimeoPlayer = ({ id }) => (
 );
 
 VimeoPlayer.propTypes = {
-  id: PropTypes.string.isRequired
+  id: PropTypes.string.isRequired,
 };
 
 export default VimeoPlayer;

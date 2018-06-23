@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "react-emotion";
-import Link from "gatsby-link";
-import Card from "./Card";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'react-emotion';
+import Link from 'gatsby-link';
+import Card from './Card';
 
 const Container = styled.div``;
 
@@ -22,7 +22,7 @@ const LifeGroup = ({
   hosts,
   leaders,
   contact,
-  hasChildcare
+  hasChildcare,
 }) => (
   <Container>
     <h3>
@@ -34,7 +34,7 @@ const LifeGroup = ({
       {contact && (
         <div
           dangerouslySetInnerHTML={{
-            __html: contact
+            __html: contact,
           }}
         />
       )}
@@ -74,7 +74,7 @@ LifeGroup.propTypes = {
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       photo: PropTypes.string.isRequired,
-      photoTitle: PropTypes.string.isRequired
+      photoTitle: PropTypes.string.isRequired,
     })
   ),
   leaders: PropTypes.arrayOf(
@@ -83,11 +83,11 @@ LifeGroup.propTypes = {
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       photo: PropTypes.string.isRequired,
-      photoTitle: PropTypes.string.isRequired
+      photoTitle: PropTypes.string.isRequired,
     })
   ),
   contact: PropTypes.string.isRequired,
-  hasChildcare: PropTypes.bool.isRequired
+  hasChildcare: PropTypes.bool.isRequired,
 };
 
 export default LifeGroup;

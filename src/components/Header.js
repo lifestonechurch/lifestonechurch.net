@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Link from "gatsby-link";
-import styled from "react-emotion";
-import DesktopMenu from "../components/DesktopMenu";
-import MobileMenu from "../components/MobileMenu";
-import * as COLORS from "../constants/colors";
-import logo from "../../assets/logo.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import styled from 'react-emotion';
+import DesktopMenu from '../components/DesktopMenu';
+import MobileMenu from '../components/MobileMenu';
+import * as COLORS from '../constants/colors';
+import logo from '../../assets/logo.png';
 
 const Container = styled.div`
   position: sticky;
@@ -47,11 +47,11 @@ Header.propTypes = {
       children: PropTypes.arrayOf(
         PropTypes.shape({
           name: PropTypes.string.isRequired,
-          path: PropTypes.string
+          path: PropTypes.string,
         })
-      )
+      ),
     })
-  ).isRequired
+  ).isRequired,
 };
 
 export default Header;

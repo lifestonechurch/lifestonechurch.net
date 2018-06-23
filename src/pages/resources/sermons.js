@@ -1,14 +1,14 @@
 import React from 'react';
 import SermonCard from '../../components/SermonCard';
 
-const Page = ({data}) => {
+const Page = ({ data }) => {
   const sermons = data.allContentfulSermon.edges;
 
   return (
     <div>
       <h1>Sermons</h1>
 
-      {sermons.map(({node}) => (
+      {sermons.map(({ node }) => (
         <SermonCard
           key={node.id}
           linkTo={`/resources/sermons/${node.fields.slug}`}
@@ -31,7 +31,7 @@ export default Page;
 
 export const query = graphql`
   query SermonsQuery {
-    allContentfulSermon(sort: {fields: [date], order: DESC}) {
+    allContentfulSermon(sort: { fields: [date], order: DESC }) {
       edges {
         node {
           id

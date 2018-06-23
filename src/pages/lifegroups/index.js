@@ -1,7 +1,7 @@
-import React from "react";
-import Banner from "../../components/Banner";
-import LifeGroup from "../../components/LifeGroup";
-import lifegroupsImage from "./lifegroups.jpg";
+import React from 'react';
+import Banner from '../../components/Banner';
+import LifeGroup from '../../components/LifeGroup';
+import lifegroupsImage from './lifegroups.jpg';
 
 const Page = ({ data }) => {
   const lifegroups = data.allContentfulSmallGroup.edges;
@@ -38,9 +38,9 @@ const Page = ({ data }) => {
                   name: host.name,
                   description: host.description
                     ? host.description.description
-                    : "",
-                  photo: host.photo ? host.photo.file.url : "",
-                  photoTitle: host.photo ? host.photo.title : ""
+                    : '',
+                  photo: host.photo ? host.photo.file.url : '',
+                  photoTitle: host.photo ? host.photo.title : '',
                 }))
               : []
           }
@@ -51,9 +51,9 @@ const Page = ({ data }) => {
                   name: leader.name,
                   description: leader.description
                     ? leader.description.description
-                    : "",
-                  photo: leader.photo ? leader.photo.file.url : "",
-                  photoTitle: leader.photo ? leader.photo.title : ""
+                    : '',
+                  photo: leader.photo ? leader.photo.file.url : '',
+                  photoTitle: leader.photo ? leader.photo.title : '',
                 }))
               : []
           }

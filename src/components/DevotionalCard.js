@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "react-emotion";
-import Link from "gatsby-link";
-import Card from "./Card";
-import * as COLORS from "../constants/colors";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'react-emotion';
+import Link from 'gatsby-link';
+import Card from './Card';
+import * as COLORS from '../constants/colors';
 
 const Container = styled.div`
   & a {
@@ -52,7 +52,7 @@ SermonCard.propTypes = {
   title: PropTypes.string,
   date: PropTypes.string,
   author: PropTypes.string.isRequired,
-  description: PropTypes.string
+  description: PropTypes.string,
 };
 
 export default SermonCard;

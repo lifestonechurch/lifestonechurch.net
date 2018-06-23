@@ -1,5 +1,5 @@
-import React from "react";
-import VimeoPlayer from "../../components/VimeoPlayer";
+import React from 'react';
+import VimeoPlayer from '../../components/VimeoPlayer';
 
 const Page = () => (
   <div>

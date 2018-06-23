@@ -1,7 +1,7 @@
-import React from "react";
-import Banner from "../../components/Banner";
-import Button from "../../components/Button";
-import BibleQuote from "../../components/BibleQuote";
+import React from 'react';
+import Banner from '../../components/Banner';
+import Button from '../../components/Button';
+import BibleQuote from '../../components/BibleQuote';
 
 // https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/
 // Return method: 1 - redirect to the return url by using the GET method with no variables included
@@ -83,7 +83,7 @@ const Page = () => (
           rel="noopener"
         >
           Login
-        </a>{" "}
+        </a>{' '}
         to your account.
       </li>
       <li>Select "My Profile".</li>
@@ -97,7 +97,7 @@ const Page = () => (
     </ol>
 
     <p>
-      Feel free to email{" "}
+      Feel free to email{' '}
       <a href="mailto:ashley@lifestonechurch.net">Ashley Smith</a> with any
       questions regarding your giving statement.
     </p>

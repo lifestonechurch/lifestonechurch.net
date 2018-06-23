@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "react-emotion";
-import GoogleMap from "../../components/GoogleMap";
+import React from 'react';
+import styled from 'react-emotion';
+import GoogleMap from '../../components/GoogleMap';
 
-import cafe from "./cafe.jpg";
+import cafe from './cafe.jpg';
 
 const MapContainer = styled.div`
   max-width: 900px;

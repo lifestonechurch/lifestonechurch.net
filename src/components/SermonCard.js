@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "react-emotion";
-import Link from "gatsby-link";
-import Card from "./Card";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'react-emotion';
+import Link from 'gatsby-link';
+import Card from './Card';
 
 const Container = styled.div`
   & a {
@@ -48,7 +48,7 @@ const SermonCard = ({ linkTo, image, title, date, speakers, passage }) => (
           <Text>
             <Title>{title}</Title>
             <MetaData>{date}</MetaData>
-            <MetaData>{speakers.join("")}</MetaData>
+            <MetaData>{speakers.join('')}</MetaData>
             <MetaData>{passage}</MetaData>
           </Text>
         </InnerContainer>
@@ -63,7 +63,7 @@ SermonCard.propTypes = {
   title: PropTypes.string,
   date: PropTypes.string,
   speakers: PropTypes.arrayOf(PropTypes.string),
-  passage: PropTypes.string
+  passage: PropTypes.string,
 };
 
 export default SermonCard;

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default ({ data }) => {
   const event = data.contentfulEvent;
@@ -9,7 +9,7 @@ export default ({ data }) => {
       {event.fields.descriptionFormatted && (
         <div
           dangerouslySetInnerHTML={{
-            __html: event.fields.descriptionFormatted
+            __html: event.fields.descriptionFormatted,
           }}
         />
       )}

@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "react-emotion";
-import Link from "gatsby-link";
-import ImageGallery from "react-image-gallery";
-import SmallCalendar from "../components/SmallCalendar";
+import React from 'react';
+import styled from 'react-emotion';
+import Link from 'gatsby-link';
+import ImageGallery from 'react-image-gallery';
+import SmallCalendar from '../components/SmallCalendar';
 
-import benPreaching from "./benPreaching.jpg";
+import benPreaching from './benPreaching.jpg';
 
-import "react-image-gallery/styles/css/image-gallery.css";
+import 'react-image-gallery/styles/css/image-gallery.css';
 
 const Row = styled.div`
   display: flex;
@@ -63,16 +63,14 @@ const LatestSermonText = styled.div`
 const IndexPage = ({ data }) => {
   const images = data.allContentfulSlider.edges.map(({ node }) => ({
     original: node.image.file.url,
-    link: node.link
+    link: node.link,
   }));
   const sermon = data.allContentfulSermon.edges[0].node;
   const events = data.allContentfulEvent.edges.map(({ node }) => ({
     id: node.id,
     name: node.name,
     startDate: node.startDate,
-    endDate: node.endDate,
-    shortDescription: node.shortDescription,
-    slug: node.fields.slug
+    slug: node.fields.slug,
   }));
 
   return (

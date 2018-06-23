@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "react-emotion";
-import formatDate from "../utils/formatDate";
+import React from 'react';
+import styled from 'react-emotion';
+import formatDate from '../utils/formatDate';
 
 // TODO: use otherStuff on page
 const OtherStuff = ({ data }) => {
@@ -43,7 +43,7 @@ export default ({ data }) => {
           <h2>Sermon Notes</h2>
           <div
             dangerouslySetInnerHTML={{
-              __html: sermon.fields.notesFormatted
+              __html: sermon.fields.notesFormatted,
             }}
           />
         </div>

@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "react-emotion";
-import { longFormatDate } from "../utils/formatDate";
+import React from 'react';
+import styled from 'react-emotion';
+import { longFormatDate } from '../utils/formatDate';
 
 const MetaData = styled.div`
   font-size: 14px;
@@ -23,7 +23,7 @@ export default ({ data }) => {
       {post.fields.bodyFormatted && (
         <div
           dangerouslySetInnerHTML={{
-            __html: post.fields.bodyFormatted
+            __html: post.fields.bodyFormatted,
           }}
         />
       )}

@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "react-emotion";
-import * as COLORS from "../constants/colors";
+import React from 'react';
+import styled from 'react-emotion';
+import * as COLORS from '../constants/colors';
 
 const Banner = styled.div`
   padding-top: 10px;

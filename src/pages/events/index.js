@@ -1,9 +1,9 @@
-import React from "react";
-import EventCard from "../../components/EventCard";
-import Banner from "../../components/Banner";
-import { getMonthNumber, getMonthName } from "../../utils/formatDate";
+import React from 'react';
+import EventCard from '../../components/EventCard';
+import Banner from '../../components/Banner';
+import { getMonthNumber, getMonthName } from '../../utils/formatDate';
 
-import upcomingEvents from "./upcoming-events.jpg";
+import upcomingEvents from './upcoming-events.jpg';
 
 const Page = ({ data }) => {
   const events = data.allContentfulEvent.edges;
@@ -20,7 +20,7 @@ const Page = ({ data }) => {
             getMonthNumber(node.startDate) ? (
             <Banner>{getMonthName(node.startDate)}</Banner>
           ) : (
-            ""
+            ''
           )}
           <EventCard
             linkTo={`/events/${node.fields.slug}`}

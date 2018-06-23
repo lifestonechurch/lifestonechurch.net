@@ -1,10 +1,10 @@
-import React from "react";
-import Link from "gatsby-link";
-import PropTypes from "prop-types";
-import styled from "react-emotion";
-import { shortFormatDate } from "../utils/formatDate";
-import * as COLORS from "../constants/colors";
-import Card from "./Card";
+import React from 'react';
+import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
+import styled from 'react-emotion';
+import { shortFormatDate } from '../utils/formatDate';
+import * as COLORS from '../constants/colors';
+import Card from './Card';
 
 const Container = styled.div`
   & a {
@@ -46,7 +46,7 @@ EventCard.propTypes = {
   startDate: PropTypes.string,
   endDate: PropTypes.string,
   description: PropTypes.string,
-  linkTo: PropTypes.string.isRequired
+  linkTo: PropTypes.string.isRequired,
 };
 
 export default EventCard;
