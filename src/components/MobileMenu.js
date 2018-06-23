@@ -33,7 +33,7 @@ const MobileContainer = styled.div`
   }
 
   @media (min-width: 700px) {
-    width: 50%;
+    width: 400px;
   }
 `;
 
