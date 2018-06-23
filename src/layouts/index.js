@@ -70,7 +70,6 @@ const TemplateWrapper = ({ children, data, location }) => {
           type="text/css"
         />
         <Content>
-          <Breadcrumbs navigation={navigation} pathname={location.pathname} />
           <div>{children()}</div>
           <Sidebar />
         </Content>
