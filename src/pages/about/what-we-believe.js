@@ -1,9 +1,16 @@
 import React from 'react';
 import BibleQuote from '../../components/BibleQuote';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
+const title = 'What We Believe';
 
 const Page = () => (
   <div>
-    <h1>What We Believe</h1>
+    <Breadcrumbs
+      path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
+      title={title}
+    />
+    <h1>{title}</h1>
 
     <BibleQuote reference="Romans 6:23 (NLT)">
       "For the wages of sin is death, but the free gift of God is eternal life

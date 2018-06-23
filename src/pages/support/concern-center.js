@@ -1,10 +1,18 @@
 import React from 'react';
 import SmallImage from '../../components/SmallImage';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
 import concernCenter from './concern-center.jpg';
+
+const title = 'Concern Center';
 
 const Page = () => (
   <div>
-    <h1>Concern Center</h1>
+    <Breadcrumbs
+      path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+      title={title}
+    />
+    <h1>{title}</h1>
 
     <SmallImage src={concernCenter} />
 

@@ -1,15 +1,19 @@
 import React from 'react';
 import EventCard from '../../components/EventCard';
 import Banner from '../../components/Banner';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import { getMonthNumber, getMonthName } from '../../utils/formatDate';
 
 import upcomingEvents from './upcoming-events.jpg';
+
+const title = 'Events';
 
 const Page = ({ data }) => {
   const events = data.allContentfulEvent.edges;
   return (
     <div>
-      <h1>Events</h1>
+      <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
+      <h1>{title}</h1>
 
       <img src={upcomingEvents} alt="Upcoming Events" />
 

@@ -2,6 +2,9 @@ import React from 'react';
 import Banner from '../../components/Banner';
 import Button from '../../components/Button';
 import BibleQuote from '../../components/BibleQuote';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
+const title = 'Give';
 
 // https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/
 // Return method: 1 - redirect to the return url by using the GET method with no variables included
@@ -10,7 +13,11 @@ const lastYear = new Date().getUTCFullYear() - 1;
 
 const Page = () => (
   <div>
-    <h1>Give</h1>
+    <Breadcrumbs
+      path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+      title={title}
+    />
+    <h1>{title}</h1>
 
     <form
       id="donateplusform"

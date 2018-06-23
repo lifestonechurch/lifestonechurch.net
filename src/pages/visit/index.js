@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'react-emotion';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import GoogleMap from '../../components/GoogleMap';
 
 import cafe from './cafe.jpg';
+
+const title = 'Visit';
 
 const MapContainer = styled.div`
   max-width: 900px;
@@ -10,7 +13,8 @@ const MapContainer = styled.div`
 
 const Visit = () => (
   <div>
-    <h1>Visit</h1>
+    <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
+    <h1>{title}</h1>
 
     <img src={cafe} />
 

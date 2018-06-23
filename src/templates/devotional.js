@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 import { longFormatDate } from '../utils/formatDate';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const MetaData = styled.div`
   font-size: 14px;
@@ -15,7 +16,16 @@ export default ({ data }) => {
 
   return (
     <div>
+      <Breadcrumbs
+        path={[
+          { title: 'Home', url: '/' },
+          { title: 'Resources' },
+          { title: 'Devotionals', url: '/resources/devotionals' },
+        ]}
+        title={post.title}
+      />
       <h1>{post.title}</h1>
+
       <MetaData>
         <div>{post.author.map(s => <span key={s.id}>{s.name}</span>)}</div>
         <div>{longFormatDate(post.date)}</div>

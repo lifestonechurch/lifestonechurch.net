@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 import formatDate from '../utils/formatDate';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 // TODO: use otherStuff on page
 const OtherStuff = ({ data }) => {
@@ -33,7 +34,16 @@ export default ({ data }) => {
 
   return (
     <div>
+      <Breadcrumbs
+        path={[
+          { title: 'Home', url: '/' },
+          { title: 'Resources' },
+          { title: 'Sermons', url: '/resources/sermons' },
+        ]}
+        title={sermon.title}
+      />
       <h1>{sermon.title}</h1>
+
       <div>{formatDate(sermon.date)}</div>
       <div>{sermon.speaker.map(s => <span key={s.id}>{s.name}</span>)}</div>
       <div>{sermon.mainScripture}</div>

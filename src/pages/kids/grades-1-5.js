@@ -2,11 +2,20 @@ import React from 'react';
 import Banner from '../../components/Banner';
 import PhotoAlbum from '../../components/PhotoAlbum';
 import SmallImage from '../../components/SmallImage';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
 import kidsLife from './kids-life.png';
+
+const title = 'Grades 1-5';
 
 const Page = () => (
   <div>
-    <h1>Grades 1-5</h1>
+    <Breadcrumbs
+      path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+      title={title}
+    />
+    <h1>{title}</h1>
+
     <SmallImage src={kidsLife} />
 
     <p>

@@ -1,33 +1,34 @@
 import React from 'react';
+import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 
-const getPath = (navigation, pathname) => {
-  if (!navigation) {
-    return [];
-  }
-  // if (navigation.length === 1) {
-  //   return pathname;
-  // }
-  navigation.forEach(nav => {
-    console.log(nav.name);
-    return [nav.name, ...getPath(nav.children, pathname)];
-  });
-  // const matchingPath = Object.values(navigation).filter(
-  //   ({ path }) => pathname.indexOf(path) == 0 || path === null
-  // );
-  // console.log(matchingPath);
-  // if (matchingPath.length >= 0) {
-  //   matchingPath.forEach(path => {
-  //     getPath(path, pathname);
-  //   });
-  // }
-  // return matchingPath;
+const Container = styled.div`
+  margin-top: 16px;
+`;
+
+const Breadcrumbs = ({ path, title }) => {
+  return (
+    <Container>
+      {path.map(item => (
+        <span>
+          {item.url ? <Link to={item.url}>{item.title}</Link> : `${item.title}`}{' '}
+          ›{' '}
+        </span>
+      ))}
+      <span>{title}</span>
+    </Container>
+  );
 };
 
-const Breadcrumbs = ({ navigation, pathname }) => {
-  // console.log(navigation, pathname);
-  console.log(getPath(navigation, pathname));
-  return <div>answer - {getPath(navigation, pathname)}</div>;
+Breadcrumbs.propTypes = {
+  path: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    })
+  ),
+  title: PropTypes.string.isRequired,
 };
 
 export default Breadcrumbs;

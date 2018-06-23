@@ -1,10 +1,18 @@
 import React from 'react';
 import BibleQuote from '../../components/BibleQuote';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
 import worship from './worship.jpg';
+
+const title = 'About Us';
 
 const AboutUs = () => (
   <div>
-    <h1>About Us</h1>
+    <Breadcrumbs
+      path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
+      title={title}
+    />
+    <h1>{title}</h1>
 
     <p>
       A church in Riverton Utah excited about bringing the amazing message of

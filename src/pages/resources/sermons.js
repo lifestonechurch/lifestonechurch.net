@@ -1,12 +1,19 @@
 import React from 'react';
 import SermonCard from '../../components/SermonCard';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
+const title = 'Sermons';
 
 const Page = ({ data }) => {
   const sermons = data.allContentfulSermon.edges;
 
   return (
     <div>
-      <h1>Sermons</h1>
+      <Breadcrumbs
+        path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+        title={title}
+      />
+      <h1>{title}</h1>
 
       {sermons.map(({ node }) => (
         <SermonCard

@@ -1,12 +1,19 @@
 import React from 'react';
 import DevotionalCard from '../../components/DevotionalCard';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
+const title = 'Devotionals';
 
 const Page = ({ data }) => {
   const sermons = data.allContentfulPost.edges;
 
   return (
     <div>
-      <h1>Devotionals</h1>
+      <Breadcrumbs
+        path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+        title={title}
+      />
+      <h1>{title}</h1>
 
       {sermons.map(({ node }) => (
         <DevotionalCard

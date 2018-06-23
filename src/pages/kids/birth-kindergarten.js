@@ -2,11 +2,19 @@ import React from 'react';
 import Banner from '../../components/Banner';
 import PhotoAlbum from '../../components/PhotoAlbum';
 import SmallImage from '../../components/SmallImage';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
 import littleLife from './little-life.png';
+
+const title = 'Birth-Kindergarten';
 
 const Page = () => (
   <div>
-    <h1>Birth-Kindergarten</h1>
+    <Breadcrumbs
+      path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+      title={title}
+    />
+    <h1>{title}</h1>
 
     <SmallImage src={littleLife} />
 

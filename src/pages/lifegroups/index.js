@@ -1,14 +1,22 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import LifeGroup from '../../components/LifeGroup';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
 import lifegroupsImage from './lifegroups.jpg';
+
+const title = 'LifeGroups';
 
 const Page = ({ data }) => {
   const lifegroups = data.allContentfulSmallGroup.edges;
 
   return (
     <div>
-      <h1>LifeGroups</h1>
+      <Breadcrumbs
+        path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+        title={title}
+      />
+      <h1>{title}</h1>
 
       <img src={lifegroupsImage} />
 

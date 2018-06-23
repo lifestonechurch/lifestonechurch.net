@@ -6,8 +6,11 @@ import PhotoAlbum from '../../components/PhotoAlbum';
 import SmallImage from '../../components/SmallImage';
 import { getMonthNumber, getMonthName } from '../../utils/formatDate';
 import * as COLORS from '../../constants/colors';
+import Breadcrumbs from '../../components/Breadcrumbs';
 
 import youth from './youth.jpg';
+
+const title = 'Students Grade 6-12';
 
 const Month = styled.div`
   font-size: 18px;
@@ -26,7 +29,11 @@ const Page = ({ data }) => {
 
   return (
     <div>
-      <h1>Students Grade 6-12</h1>
+      <Breadcrumbs
+        path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+        title={title}
+      />
+      <h1>{title}</h1>
 
       <SmallImage src={youth} />
 

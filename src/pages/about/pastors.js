@@ -1,9 +1,17 @@
 import React from 'react';
+import Breadcrumbs from '../../components/Breadcrumbs';
+
 import heltonFamily from './helton-family.jpg';
+
+const title = 'Meet the Pastor';
 
 const Page = () => (
   <div>
-    <h1>Meet the Pastors</h1>
+    <Breadcrumbs
+      path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
+      title={title}
+    />
+    <h1>{title}</h1>
 
     <p>
       <img src={heltonFamily} alt="Helton family" /> Lead Pastor Ben Helton,
