@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import styled from "react-emotion";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import styled from 'react-emotion';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-import "./index.css";
+import './index.css';
 
 const Container = styled.div`
   display: flex;
@@ -24,20 +24,20 @@ const Content = styled.div`
 
 const Sidebar = styled.div``;
 
-const TemplateWrapper = ({ children, data, location }) => {
+const TemplateWrapper = ({children, data, location}) => {
   const navigation = data.site.siteMetadata.navigation;
 
-  if (location.pathname === "/") {
+  if (location.pathname === '/') {
     return (
       <Container>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
             {
-              name: "description",
-              content: data.site.siteMetadata.description
+              name: 'description',
+              content: data.site.siteMetadata.description,
             },
-            { name: "keywords", content: data.site.siteMetadata.keywords }
+            {name: 'keywords', content: data.site.siteMetadata.keywords},
           ]}
         />
         <Header navigation={navigation} />
@@ -46,9 +46,7 @@ const TemplateWrapper = ({ children, data, location }) => {
           rel="stylesheet"
           type="text/css"
         />
-        <Content>
-          <div>{children()}</div>
-        </Content>
+        <div>{children()}</div>
         <Footer />
       </Container>
     );
@@ -59,10 +57,10 @@ const TemplateWrapper = ({ children, data, location }) => {
           title={data.site.siteMetadata.title}
           meta={[
             {
-              name: "description",
-              content: data.site.siteMetadata.description
+              name: 'description',
+              content: data.site.siteMetadata.description,
             },
-            { name: "keywords", content: data.site.siteMetadata.keywords }
+            {name: 'keywords', content: data.site.siteMetadata.keywords},
           ]}
         />
         <Header navigation={navigation} />
@@ -82,7 +80,7 @@ const TemplateWrapper = ({ children, data, location }) => {
 };
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
 };
 
 export default TemplateWrapper;
