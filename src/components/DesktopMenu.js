@@ -31,7 +31,8 @@ const DesktopNav = styled.ul`
     }
     & svg {
       fill: ${COLORS.BRAND};
-      width: 1.2rem;
+      width: 24px;
+      height: 24px;
     }
     &:hover svg {
       fill: ${COLORS.HOVER};
