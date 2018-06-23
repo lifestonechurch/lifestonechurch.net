@@ -1,6 +1,10 @@
-import React from "react";
-import styled from "react-emotion";
-import GoogleMap from "./GoogleMap";
+import React from 'react';
+import styled from 'react-emotion';
+import GoogleMap from './GoogleMap';
+
+import Facebook from '../images/social/facebook.svg';
+import Instagram from '../images/social/instagram.svg';
+import Twitter from '../images/social/twitter.svg';
 
 const Container = styled.div`
   margin-top: 40px;
@@ -53,7 +57,7 @@ const Footer = () => (
 
         <p>3443 W 12600 S, Riverton, UT 84065</p>
 
-        <GoogleMap></GoogleMap>
+        <GoogleMap />
       </LeftColumn>
       <div>
         <p>
@@ -61,11 +65,7 @@ const Footer = () => (
             href="https://www.facebook.com/lifestonechurchutah/"
             target="_blank"
           >
-            <SocialMediaIcon
-              src="/assets/images/facebook.svg"
-              width="15px"
-              height="15px"
-            />lifestonechurchutah
+            <SocialMediaIcon src={Facebook} width="15px" height="15px" />lifestonechurchutah
           </a>
         </p>
         <p>
@@ -73,20 +73,12 @@ const Footer = () => (
             href="https://www.instagram.com/lifestonechurchutah/"
             target="_blank"
           >
-            <SocialMediaIcon
-              src="/assets/images/instagram.svg"
-              width="15px"
-              height="15px"
-            />@lifestonechurchutah
+            <SocialMediaIcon src={Instagram} width="15px" height="15px" />@lifestonechurchutah
           </a>
         </p>
         <p>
           <a href="https://twitter.com/lifestoneutah" target="_blank">
-            <SocialMediaIcon
-              src="/assets/images/twitter.svg"
-              width="15px"
-              height="15px"
-            />@lifestoneutah
+            <SocialMediaIcon src={Twitter} width="15px" height="15px" />@lifestoneutah
           </a>
         </p>
       </div>
