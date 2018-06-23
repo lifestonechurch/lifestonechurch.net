@@ -1,6 +1,12 @@
-import React from 'react';
-import GoogleMap from '../../components/GoogleMap';
-import cafe from './cafe.jpg';
+import React from "react";
+import styled from "react-emotion";
+import GoogleMap from "../../components/GoogleMap";
+
+import cafe from "./cafe.jpg";
+
+const MapContainer = styled.div`
+  max-width: 900px;
+`;
 
 const Visit = () => (
   <div>
@@ -68,7 +74,9 @@ const Visit = () => (
 
     <p>3443 12600 S, Riverton, UT 84065</p>
 
-    <GoogleMap />
+    <MapContainer>
+      <GoogleMap />
+    </MapContainer>
   </div>
 );
 
