@@ -1,6 +1,16 @@
-import React from 'react';
-import './Card.css';
+import React from "react";
+import styled from "react-emotion";
 
-const Card = ({ children }) => <div className="Card">{children}</div>;
+const Container = styled.div`
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.3);
+`;
+
+const Card = ({ children }) => <Container>{children}</Container>;
 
 export default Card;

@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "react-emotion";
 import Link from "gatsby-link";
-import Card from "../components/Card";
-import Button from "../components/Button";
-import SermonCard from "../components/SermonCard";
 import ImageGallery from "react-image-gallery";
 
 import benPreaching from "./benPreaching.jpg";
@@ -11,11 +8,25 @@ import benPreaching from "./benPreaching.jpg";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 const Row = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 12px;
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 940px) {
+    flex-direction: column;
+  }
+`;
+
+const RowItem = styled.div`
+  width: 33.33%;
+
+  @media (max-width: 940px) {
+    width: 100%;
+  }
+`;
+
+const RowContainer = styled.div`
+  padding: 8px;
 `;
 
 const RowHeader = styled.div`
@@ -77,30 +88,36 @@ const IndexPage = ({ data }) => {
         showPlayButton={false}
       />
       <Row>
-        <div>
+        <RowItem>
           <RowHeader>Welcome!</RowHeader>
-          <p>
-            We’re a Bible based church in Riverton, Utah. We would love for you
-            to <Link to="/visit/">visit us</Link>!
-          </p>
-        </div>
-        <div>
+          <RowContainer>
+            <p>
+              We’re a Bible based church in Riverton, Utah. We would love for
+              you to <Link to="/visit/">visit us</Link>!
+            </p>
+          </RowContainer>
+        </RowItem>
+        <RowItem>
           <RowHeader>Latest Message</RowHeader>
-          <LatestSermon>
-            <Link to="/resources/sermons/beautiful-mess-3/">
-              <img src={benPreaching} alt="" />
-              <LatestSermonText>
-                <h4>
-                  Beautiful Mess: Week 3 - The “Secret Wisdom”... Is It In You?
-                </h4>
-                1 Corinthians 2:6-16
-              </LatestSermonText>
-            </Link>
-          </LatestSermon>
-        </div>
-        <div>
+          <RowContainer>
+            <LatestSermon>
+              <Link to="/resources/sermons/beautiful-mess-3/">
+                <img src={benPreaching} alt="" />
+                <LatestSermonText>
+                  <h4>
+                    Beautiful Mess: Week 3 - The “Secret Wisdom”... Is It In
+                    You?
+                  </h4>
+                  1 Corinthians 2:6-16
+                </LatestSermonText>
+              </Link>
+            </LatestSermon>
+          </RowContainer>
+        </RowItem>
+        <RowItem>
           <RowHeader>Upcoming Events</RowHeader>
-        </div>
+          <RowContainer />
+        </RowItem>
       </Row>
     </div>
   );

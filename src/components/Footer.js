@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'react-emotion';
+import React from "react";
+import styled from "react-emotion";
 
 const Container = styled.div`
   margin-top: 40px;
@@ -26,10 +26,18 @@ const InnerContainer = styled.div`
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 `;
 
 const LeftColumn = styled.div`
   width: 33%;
+
+  @media (max-width: 750px) {
+    width: 100%;
+  }
 `;
 
 const GoogleMap = styled.div`
@@ -62,7 +70,7 @@ const Footer = () => (
         <GoogleMap>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.893478502823!2d-111.97531858460084!3d40.52184547935291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528434534e1fd7%3A0x3011289953bd878e!2sLifestone+Church!5e0!3m2!1sen!2sus!4v1518562897965"
-            style={{border: 0}}
+            style={{ border: 0 }}
             allowFullScreen=""
             width="600"
             height="450"

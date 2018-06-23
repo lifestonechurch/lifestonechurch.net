@@ -15,10 +15,15 @@ const InnerContainer = styled.div`
   align-items: center;
   width: 100%;
   padding: 10px 0 20px 0;
+
+  @media (max-width: 421px) {
+    flex-direction: column;
+  }
 `;
 
 const Img = styled.img`
   width: 150px;
+  margin: 20px;
 `;
 
 const Text = styled.div`
