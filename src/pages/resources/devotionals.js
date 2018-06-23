@@ -11,7 +11,7 @@ const Page = ({ data }) => {
       {sermons.map(({ node }) => (
         <DevotionalCard
           key={node.id}
-          linkTo={node.fields.slug}
+          linkTo={`resources/devotionals/${node.fields.slug}`}
           title={node.title}
           date={node.date}
           author={node.author.map(a => a.name).join(", ")}
