@@ -9,6 +9,7 @@ import * as COLORS from '../../constants/colors';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 import youth from './youth.jpg';
+import series from './youth-series.jpg';
 
 const title = 'Students Grade 6-12';
 
@@ -60,18 +61,44 @@ const Page = ({ data }) => {
       </p>
 
       <Banner>
+        <h2>Current Series</h2>
+      </Banner>
+
+      <SmallImage center={true} src={series} />
+
+      <p>
+        Growing up, we started friendships with a game of tag or
+        hide-and-go-seek. But in high school, things get complicated. Cliques
+        can feel like the real-life version of getting picked last for
+        dodgeball—the cool kids pick each other, and the rest slump in the
+        corner, forgotten. Even worse, social media rules the hallways. Our
+        popularity depends on the amount of “likes” our latest picture earned,
+        the number of retweets we get, and how many people viewed our Snapchat
+        story. People crowd around us online and at school, but many of us still
+        feel lonely. Depressed, even. Some of us feel so excluded that we don't
+        see the need for friends at all.
+      </p>
+
+      <p>
+        It's time for a reality check: we need friends. Not just hang-out
+        friends, but good friends who love, encourage, and challenge us.
+      </p>
+
+      <p>
+        In this 4-part series, pastor Dhati Lewis unpacks true biblical
+        friendship. He teaches students how God created us to need people and
+        challenges students to choose godly friends. You'll also watch real-life
+        stories of other teens who struggle with the realities of friendship.
+        This study will empower teens to build solid friendships, to show
+        kindness to nonbelievers, and to be a good friend.
+      </p>
+
+      <Banner>
         <h2>Events</h2>
       </Banner>
 
       {youthEvents.map(({ node }, i) => (
         <div>
-          {i === 0 ||
-          getMonthNumber(youthEvents[i - 1].node.startDate) <
-            getMonthNumber(node.startDate) ? (
-            <Month>{getMonthName(node.startDate)}</Month>
-          ) : (
-            ''
-          )}
           <EventCard
             linkTo={`/events/${node.fields.slug}`}
             startDate={node.startDate}

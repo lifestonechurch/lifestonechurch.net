@@ -1,12 +1,18 @@
 import React from 'react';
+import styled from 'react-emotion';
 import Banner from '../../components/Banner';
 import PhotoAlbum from '../../components/PhotoAlbum';
 import SmallImage from '../../components/SmallImage';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 import kidsLife from './kids-life.png';
+import series from './whats-in-the-bible.jpg';
 
 const title = 'Grades 1-5';
+
+const Center = styled.div`
+  margin: 0 auto;
+`;
 
 const Page = () => (
   <div>
@@ -25,6 +31,19 @@ const Page = () => (
       Lifestone is committed not only to cementing the fundamentals of faith
       into the hearts and minds of children, but also equipping parents and
       getting families talking about Jesus together throughout their week.
+    </p>
+
+    <Banner>
+      <h2>Current Series</h2>
+    </Banner>
+
+    <SmallImage center={true} src={series} />
+
+    <p>
+      Calling all 1st-5th graders! Buck Denver and his friends are on an
+      adventure through the whole Bible – and you’re invited to come along! Join
+      us as we learn all about the Bible, the world’s most important book –what
+      it is, who wrote it, and why can we trust it!
     </p>
 
     <Banner>
