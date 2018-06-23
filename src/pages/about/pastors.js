@@ -1,6 +1,5 @@
-import React from 'react';
-import heltonFamily from './helton-family.jpg';
-import colemanFamly from './coleman-family.jpg';
+import React from "react";
+import heltonFamily from "./helton-family.jpg";
 
 const Page = () => (
   <div>
@@ -12,12 +11,7 @@ const Page = () => (
     </p>
 
     <p>
-      <img src={colemanFamly} alt="Coleman family" /> Pastor Sam Coleman, wife
-      Rachael, children Asher, Atticus, Abigail, & Adelai
-    </p>
-
-    <p>
-      Lifestone Church is supported by{' '}
+      Lifestone Church is supported by{" "}
       <a href="http://www.namb.net/" target="_blank" rel="noopener">
         The North American Mission Board.
       </a>
