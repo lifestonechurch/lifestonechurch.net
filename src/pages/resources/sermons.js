@@ -2,6 +2,8 @@ import React from 'react';
 import SermonCard from '../../components/SermonCard';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
+import logo from '../../images/logo/logo2.jpg';
+
 const title = 'Sermons';
 
 const Page = ({ data }) => {
@@ -20,9 +22,10 @@ const Page = ({ data }) => {
           key={node.id}
           linkTo={`/resources/sermons/${node.fields.slug}`}
           image={
-            node.sermonSeries &&
-            node.sermonSeries.image &&
-            node.sermonSeries.image.file.url
+            (node.sermonSeries &&
+              node.sermonSeries.image &&
+              node.sermonSeries.image.file.url) ||
+            logo
           }
           title={node.title}
           date={node.date}
