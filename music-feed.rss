@@ -5,9 +5,9 @@ layout: none
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 	<channel>
-		<title>{{ site.title }}</title>
-		<description>{{ site.description }}</description>
-		<itunes:summary>{{ site.description }}</itunes:summary>
+		<title>{{ site.title }} - Music</title>
+		<description>Music from Lifestone Church</description>
+		<itunes:summary>Music from Lifestone Church</itunes:summary>
 		<link>{{ site.url }}</link>
 		<language>en</language>
 		<managingEditor>{{ site.managerName }} ({{ site.managerEmail }})</managingEditor>
