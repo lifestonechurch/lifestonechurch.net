@@ -1,7 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const BreezeForm = () => <div>TODO: BreezeForm Component</div>;
+const BreezeForm = ({ url, height }) => (
+  <iframe
+    src={url}
+    style={{ marginBottom: 20 }}
+    width="100%"
+    height={`${height}px`}
+  />
+);
 
 BreezeForm.propTypes = {
   url: PropTypes.string.isRequired,
