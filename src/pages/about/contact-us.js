@@ -25,7 +25,10 @@ const Page = () => (
     <p>(801) 839-5420</p>
 
     <p>
-      <a href="mailto:ben@lifestonechurch.net">Email us</a>
+      Email us at{' '}
+      <a href="mailto:lifestone@lifestonechurch.net">
+        lifestone@lifestonechurch.net
+      </a>.
     </p>
   </div>
 );
