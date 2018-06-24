@@ -5,7 +5,7 @@ import styled from 'react-emotion';
 import DesktopMenu from '../components/DesktopMenu';
 import MobileMenu from '../components/MobileMenu';
 import * as COLORS from '../constants/colors';
-import logo from '../../assets/logo.png';
+import logo from '../images/logo/logo.png';
 
 const Container = styled.div`
   position: sticky;

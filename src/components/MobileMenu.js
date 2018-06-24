@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import styled from 'react-emotion';
 import Burger from './Burger';
 import * as COLORS from '../constants/colors';
-import logo from '../../assets/logo2.png';
+import logo from '../images/logo/logo-white.png';
 
 const Container = styled.div``;
 
