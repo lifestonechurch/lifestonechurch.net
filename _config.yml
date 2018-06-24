@@ -17,6 +17,9 @@ collections:
     title: Sermons
     output: true
     permalink: "/resources/sermons/:title/"
+  music:
+    title: Music
+    output: false
 defaults:
   - scope:
       path: ''
