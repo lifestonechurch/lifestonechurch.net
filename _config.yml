@@ -47,8 +47,8 @@ description: A Bible-based church in Herriman, Utah.
 markdown: kramdown
 kramdown:
   auto_ids: true
-managerName: Adam Harris
-managerEmail: adam@mountainview-webdesign.com
+managerName: Lifestone Church
+managerEmail: lifestone@lifestonechurch.net
 organizationName: Lifestone Church
 squareLogo: assets/images/logo2.jpg
 podcastSubtitle: Messages from Sunday morning worship at Lifestone Church
