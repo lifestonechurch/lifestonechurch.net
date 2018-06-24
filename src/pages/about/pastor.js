@@ -13,9 +13,10 @@ const Page = () => (
     />
     <h1>{title}</h1>
 
+    <img src={heltonFamily} alt="Helton family" />
+
     <p>
-      <img src={heltonFamily} alt="Helton family" /> Lead Pastor Ben Helton,
-      wife Kristen, children Karis, Rachel, & Jaxson
+      Lead Pastor Ben Helton, wife Kristen, children Karis, Rachel, & Jaxson
     </p>
 
     <p>

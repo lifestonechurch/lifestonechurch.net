@@ -4,43 +4,43 @@ module.exports = {
     description: `A Bible based church in Riverton, Utah.`,
     keywords: `church, bible, utah, riverton, herriman`,
     navigation: [
-      { name: "Visit", path: "/visit" },
-      { name: "Events", path: "/events" },
+      { name: 'Visit', path: '/visit' },
+      { name: 'Events', path: '/events' },
       {
-        name: "About",
+        name: 'About',
         children: [
-          { name: "About Us", path: "/about/about-us" },
-          { name: "Pastors", path: "/about/pastors" },
-          { name: "Contact Us", path: "/about/contact-us" },
-          { name: "What We Belive", path: "/about/what-we-believe" }
-        ]
+          { name: 'About Us', path: '/about/about-us' },
+          { name: 'Pastor', path: '/about/pastor' },
+          { name: 'Contact Us', path: '/about/contact-us' },
+          { name: 'What We Belive', path: '/about/what-we-believe' },
+        ],
       },
       {
-        name: "Resources",
+        name: 'Resources',
         children: [
-          { name: "Sermons", path: "/resources/sermons" },
-          { name: "Devotionals", path: "/resources/devotionals" },
-          { name: "Videos", path: "/resources/videos" }
-        ]
+          { name: 'Sermons', path: '/resources/sermons' },
+          { name: 'Devotionals', path: '/resources/devotionals' },
+          { name: 'Videos', path: '/resources/videos' },
+        ],
       },
-      { name: "LifeGroups", path: "/lifegroups" },
+      { name: 'LifeGroups', path: '/lifegroups' },
       {
-        name: "Kids & Students",
+        name: 'Kids & Students',
         children: [
-          { name: "Birth-Kindergarten", path: "/kids/birth-kindergarten" },
-          { name: "Grades 1-5", path: "/kids/grades-1-5" },
-          { name: "Students", path: "/kids/students" }
-        ]
+          { name: 'Birth-Kindergarten', path: '/kids/birth-kindergarten' },
+          { name: 'Grades 1-5', path: '/kids/grades-1-5' },
+          { name: 'Students', path: '/kids/students' },
+        ],
       },
       {
-        name: "Support",
+        name: 'Support',
         children: [
-          { name: "Serve", path: "/support/serve" },
-          { name: "Give", path: "/support/give" },
-          { name: "Concern Center", path: "/support/concern-center" }
-        ]
-      }
-    ]
+          { name: 'Serve', path: '/support/serve' },
+          { name: 'Give', path: '/support/give' },
+          { name: 'Concern Center', path: '/support/concern-center' },
+        ],
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -49,9 +49,9 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `ujxurwjh56v6`,
-        accessToken: `402fad6cb9cd222cc3796589814b27bb76d98096ccbbc9c54e980feb97e41424`
-      }
+        accessToken: `402fad6cb9cd222cc3796589814b27bb76d98096ccbbc9c54e980feb97e41424`,
+      },
     },
-    `gatsby-plugin-offline`
-  ]
+    `gatsby-plugin-offline`,
+  ],
 };
