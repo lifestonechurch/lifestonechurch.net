@@ -1,14 +1,5 @@
 churchwide:
   -
-    date: 2018-06-17
-    name: "Welcome to Lifestone Dessert"
-    link: events/dessert
-  -
-    date: 2018-06-18
-    endDate: 2018-06-25
-    name: "Youth Camp"
-    link: events/youth-camp
-  -
     date: 2018-07-09
     endDate: 2018-07-13
     name: "Kids Life Camp"
@@ -19,19 +10,6 @@ churchwide:
     name: Sonfest
     link: events/sonfest
 grades-6-12:
-  -
-    date: 2018-06-20
-    name: Youth Invade Sonic!
-    description: <div><img class="Series__Image" src="/assets/uploads/events/sonic.jpg" /><p>6:30pm-8pm Grades 6-12. Enjoy a sweet treat & Bible Study! Bring friends and a little spending money. 5117 West 13400 South, Riverton Parent drop off/Pick up @ Sonic</p></div>
-  -
-    date: 2018-06-18
-    endDate: 2018-06-22
-    name: High School Camp
-  -
-    date: 2018-06-22
-    endDate: 2018-06-25
-    name: Junior High Camp
-    description: <div><img class="Series__Image" src="/assets/uploads/pages/youth-camp.jpg" /><p><a href="https://lifestonechurch.breezechms.com/form/d6fbe35114" target="_blank" rel="noopener">Youth Camp Scholarships available</a></p><p><a href="https://docs.google.com/document/d/1KX2rzbLyA1O18G4qBJMU-G6KBr9EgoAuVdst4qb6TzQ/edit" target="_blank" rel="noopener">Packing list</a></p><p>Registration now closed.</p><p>Final payment due June 11th</p><p>Big Canyon Ranch has a new process for our Consent/Release Form. Everyone attending the event at Big Canyon MUST complete the <a href="https://www.bigcanyon.org/copy-of-step-1" target="_blank" rel="noopener">Participation Agreement</a>, no exceptions, no later than June 11th.</p></div>
   -
     date: 2018-06-27
     name: No Youth Group
