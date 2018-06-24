@@ -33,26 +33,26 @@ const Visit = () => (
     </p>
 
     <p>
-      Dress: Dress comfortably. You’ll feel right at home wearing anything from
-      shorts, to jeans, to business casual.
+      <b>Dress</b>: Dress comfortably. You’ll feel right at home wearing
+      anything from shorts, to jeans, to business casual.
     </p>
 
     <p>
-      Time frame: Our services are on Sunday mornings from 10:30-11:30. We
-      recommend arriving about 10-15 minutes early so that you can get your kids
-      checked in and grab some donuts and coffee before the worship service
-      begins.
+      <b>Time frame</b>: We have 2 services times on Sunday mornings to choose
+      from: 9:00-10:00 or 10:30-11:30. We recommend arriving about 10-15 minutes
+      early so that you can get your kids checked in and grab some donuts and
+      coffee before the worship service begins.{' '}
     </p>
 
     <p>
-      Arriving: Inside, a Lifestone volunteer will greet you and answer any
-      questions you have about finding Kids Life area, worship area, etc.
+      <b>Arriving</b>: Inside, a Lifestone volunteer will greet you and answer
+      any questions you have about finding Kids Life area, worship area, etc.
     </p>
 
     <p>
-      Kid’s Life: We encourage you to bring your kiddos (infants through 5th
-      graders) to participate in our fun, safe, kid-friendly activities while
-      you attend the adult service. Kids are very important to us here at
+      <b>Kid’s Life</b>: We encourage you to bring your kiddos (infants through
+      5th graders) to participate in our fun, safe, kid-friendly activities
+      while you attend the adult service. Kids are very important to us here at
       Lifestone, and our goal is to teach them about Jesus’ love in a way that
       they will understand and enjoy!
     </p>
@@ -60,21 +60,24 @@ const Visit = () => (
     <p>For more information on our children’s program, click here.</p>
 
     <p>
-      Breakfast: For your convenience, a simple breakfast with donuts, coffee,
-      tea, and hot chocolate will be set up for you outside the worship area.
+      <b>Breakfast</b>: For your convenience, a simple breakfast with donuts,
+      coffee, tea, and hot chocolate will be set up for you outside the worship
+      area.
     </p>
 
     <p>
-      Music: Come enjoy contemporary praise songs as well as some old hymns with
-      modern arrangements.
+      <b>Music</b>: Come enjoy contemporary praise songs as well as some old
+      hymns with modern arrangements.
     </p>
 
     <p>
-      Teaching: Be encouraged by biblical teaching that is useful in every day
-      living.
+      <b>Teaching</b>: Be encouraged by biblical teaching that is useful in
+      every day living.
     </p>
 
-    <p>Directions:</p>
+    <p>
+      <b>Directions</b>:
+    </p>
 
     <p>3443 12600 S, Riverton, UT 84065</p>
 
