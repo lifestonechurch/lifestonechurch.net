@@ -30,22 +30,22 @@ const TemplateWrapper = ({ children, data, location }) => {
   if (location.pathname === '/') {
     return (
       <Container>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: 'description',
-              content: data.site.siteMetadata.description,
-            },
-            { name: 'keywords', content: data.site.siteMetadata.keywords },
-          ]}
-        />
+        <Helmet>
+          <title>{data.site.siteMetadata.title}</title>
+          <meta
+            name="description"
+            content={data.site.siteMetadata.description}
+          />
+          <meta name="keywords" content={data.site.siteMetadata.keywords} />
+          <link
+            href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+            rel="stylesheet"
+            type="text/css"
+          />
+          <link rel="shortcut icon" href="/favicon.png" />
+        </Helmet>
+
         <Header navigation={navigation} />
-        <link
-          href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
-          rel="stylesheet"
-          type="text/css"
-        />
         <div>{children()}</div>
         <Footer />
       </Container>
@@ -53,16 +53,20 @@ const TemplateWrapper = ({ children, data, location }) => {
   } else {
     return (
       <Container>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: 'description',
-              content: data.site.siteMetadata.description,
-            },
-            { name: 'keywords', content: data.site.siteMetadata.keywords },
-          ]}
-        />
+        <Helmet>
+          <title>{data.site.siteMetadata.title}</title>
+          <meta
+            name="description"
+            content={data.site.siteMetadata.description}
+          />
+          <meta name="keywords" content={data.site.siteMetadata.keywords} />
+          <link
+            href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+            rel="stylesheet"
+            type="text/css"
+          />
+          <link rel="shortcut icon" href="/favicon.png" />
+        </Helmet>
         <Header navigation={navigation} />
         <link
           href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"

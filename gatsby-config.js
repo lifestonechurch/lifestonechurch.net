@@ -52,6 +52,18 @@ module.exports = {
         accessToken: `402fad6cb9cd222cc3796589814b27bb76d98096ccbbc9c54e980feb97e41424`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Lifestone Church',
+        short_name: 'Lifestone',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#008f01',
+        display: 'minimal-ui',
+        icon: 'src/images/logo/logo2.png',
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 };
