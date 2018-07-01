@@ -40,7 +40,7 @@ const Page = () => (
       <input
         type="hidden"
         name="return"
-        value="http://www.lifestonechurch.net/support/thank-you/"
+        value="https://www.lifestonechurch.net/support/thank-you/"
       />
       <input type="hidden" name="currency_code" value="USD" />
       <p class="submit">
