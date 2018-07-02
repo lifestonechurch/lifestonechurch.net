@@ -50,6 +50,33 @@ const TemplateWrapper = ({ children, data, location }) => {
         <Footer />
       </Container>
     );
+  } else if (location.pathname === '/admin/print-events') {
+    return (
+      <Container>
+        <Helmet>
+          <title>{data.site.siteMetadata.title}</title>
+          <meta
+            name="description"
+            content={data.site.siteMetadata.description}
+          />
+          <meta name="keywords" content={data.site.siteMetadata.keywords} />
+          <link
+            href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+            rel="stylesheet"
+            type="text/css"
+          />
+          <link rel="shortcut icon" href="/favicon.png" />
+        </Helmet>
+        <link
+          href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <Content>
+          <div>{children()}</div>
+        </Content>
+      </Container>
+    );
   } else {
     return (
       <Container>
