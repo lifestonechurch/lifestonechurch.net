@@ -27,16 +27,25 @@ img.Logo__Image {
 
 <img src="{{ site.baseurl }}/assets/uploads/pages/lifegroups.jpg" alt="lifegroups" />
 
-Connect to God by connecting to His people & His Word! LifeGroups are the heart of Lifestone Church. LifeGroups are small groups of people who meet once a week in order to connect to God by connecting to other people who love Him and to the Bible. This is where spiritual growth happens! Check out the details and select the group that works best for your family.
+Connect to God's people and God's Word in LifeGroups! This is your next step after attending Lifestone Church on Sunday mornings and the best way to connect with others and grow spiritually. Below you'll find information on specific groups. #BetterTogether
 
 <p style="clear: left;"><b>Text the leader to sign up!</b></p>
 
-{% include header.html level='2' banner=true children='Group Info' %}
+Your leader will give you details about FREE childcare + any time/location changes!
 
 <div>
 {% for group in site.data.smallGroups.lifeGroups %}
+  {% capture newDay %}{{ group.day }}{% endcapture %}
+  {% if newDay != oldDay %}
+    {% include header.html level='2' banner=true children=newDay %}
+  {% endif %}
+
 <div class='Lifegroup__Leader_Section'>
 {% include header.html level='3' children=group.title %}
+
+{% if group.description %}
+  {{ group.description | markdownify }}
+{% endif %}
 
 <blockquote>
 {{ group.time }}
@@ -73,6 +82,7 @@ Free on-site childcare
 {% endfor %}
 
 </div>
+  {% capture oldDay %}{{ newDay }}{% endcapture %}
 {% endfor %}
 </div>
 
