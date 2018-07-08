@@ -46,6 +46,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-44899328-1',
+        respectDNT: true,
+        exclude: ['/admin/**'],
+      },
+    },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `ujxurwjh56v6`,
