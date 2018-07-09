@@ -52,6 +52,7 @@ const Page = ({ data }) => {
 
           <LifeGroup
             name={node.name}
+            description={node.description && node.description.description}
             day={node.day}
             time={node.time}
             address={node.address}
@@ -114,6 +115,9 @@ export const query = graphql`
         node {
           id
           name
+          description {
+            description
+          }
           day
           time
           address

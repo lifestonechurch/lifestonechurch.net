@@ -24,6 +24,7 @@ const ClearFloat = styled.div`
 
 const LifeGroup = ({
   name,
+  description,
   day,
   time,
   address,
@@ -36,6 +37,7 @@ const LifeGroup = ({
     <h3>
       {name} - {day}
     </h3>
+    <p>{description}</p>
     <blockquote>
       <div>{time}</div>
       <div>{address}</div>
@@ -73,6 +75,7 @@ const LifeGroup = ({
 
 LifeGroup.propTypes = {
   name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   day: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
