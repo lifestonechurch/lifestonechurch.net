@@ -7,6 +7,19 @@ import lifegroupsImage from './lifegroups.jpg';
 
 const title = 'LifeGroups';
 
+const sortByDayOfWeek = (a, b) => {
+  const days = {
+    Sunday: 0,
+    Monday: 1,
+    Tuesday: 2,
+    Wednesday: 3,
+    Thursday: 4,
+    Friday: 5,
+    Saturday: 6,
+  };
+  return days[a.node.day] - days[b.node.day];
+};
+
 const Page = ({ data }) => {
   const lifegroups = data.allContentfulSmallGroup.edges;
 
@@ -31,43 +44,47 @@ const Page = ({ data }) => {
 
       <b>Text the leader to sign up!</b>
 
-      <Banner>Group Info</Banner>
+      {lifegroups.sort(sortByDayOfWeek).map(({ node }, index, array) => (
+        <div>
+          {index === 0 || array[index - 1].node.day !== node.day ? (
+            <Banner>{node.day}</Banner>
+          ) : null}
 
-      {lifegroups.map(({ node }) => (
-        <LifeGroup
-          name={node.name}
-          day={node.day}
-          time={node.time}
-          address={node.address}
-          hosts={
-            node.hosts
-              ? node.hosts.map(host => ({
-                  id: host.id,
-                  name: host.name,
-                  description: host.description
-                    ? host.description.description
-                    : '',
-                  photo: host.photo ? host.photo.file.url : '',
-                  photoTitle: host.photo ? host.photo.title : '',
-                }))
-              : []
-          }
-          leaders={
-            node.leaders
-              ? node.leaders.map(leader => ({
-                  id: leader.id,
-                  name: leader.name,
-                  description: leader.description
-                    ? leader.description.description
-                    : '',
-                  photo: leader.photo ? leader.photo.file.url : '',
-                  photoTitle: leader.photo ? leader.photo.title : '',
-                }))
-              : []
-          }
-          contact={node.fields.contactFormatted}
-          hasChildcare={node.hasChildcare}
-        />
+          <LifeGroup
+            name={node.name}
+            day={node.day}
+            time={node.time}
+            address={node.address}
+            hosts={
+              node.hosts
+                ? node.hosts.map(host => ({
+                    id: host.id,
+                    name: host.name,
+                    description: host.description
+                      ? host.description.description
+                      : '',
+                    photo: host.photo ? host.photo.file.url : '',
+                    photoTitle: host.photo ? host.photo.title : '',
+                  }))
+                : []
+            }
+            leaders={
+              node.leaders
+                ? node.leaders.map(leader => ({
+                    id: leader.id,
+                    name: leader.name,
+                    description: leader.description
+                      ? leader.description.description
+                      : '',
+                    photo: leader.photo ? leader.photo.file.url : '',
+                    photoTitle: leader.photo ? leader.photo.title : '',
+                  }))
+                : []
+            }
+            contact={node.fields.contactFormatted}
+            hasChildcare={node.hasChildcare}
+          />
+        </div>
       ))}
 
       <Banner>5 Reasons to Join a LifeGroup!</Banner>

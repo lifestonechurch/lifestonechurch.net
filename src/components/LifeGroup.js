@@ -4,7 +4,11 @@ import styled from 'react-emotion';
 import Link from 'gatsby-link';
 import Card from './Card';
 
-const Container = styled.div``;
+const Container = styled.div`
+  margin-bottom: 2.5em;
+  padding-bottom: 1em;
+  border-bottom: 5px solid #008f01;
+`;
 
 const Img = styled.img`
   max-width: 200px;
@@ -12,6 +16,10 @@ const Img = styled.img`
   shape-outside: circle();
   float: left;
   margin-right: 2em;
+`;
+
+const ClearFloat = styled.div`
+  clear: both;
 `;
 
 const LifeGroup = ({
@@ -45,7 +53,6 @@ const LifeGroup = ({
       {hosts.map(h => (
         <div key={h.id}>
           <p>{h.name}</p>
-          <Img src={h.photo} title={h.photoTitle} />
           <p>{h.description}</p>
         </div>
       ))}
@@ -60,6 +67,7 @@ const LifeGroup = ({
         </div>
       ))}
     </div>
+    <ClearFloat />
   </Container>
 );
 
