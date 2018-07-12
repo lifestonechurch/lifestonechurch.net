@@ -2,8 +2,8 @@
 title: "Beautiful Mess: Week 7 - The New You"
 date: 2018-07-01 00:00:00 Z
 link: https://s3.amazonaws.com/podcast.lifestonechurch.net/2018-07-01.mp3
-podcastLength: '00:00:00'
-size: 
+podcastLength: '00:39:52'
+size: 39123589
 image:
 speaker: Pastor Ben Helton
 description: Beautiful Mess
