@@ -24,7 +24,6 @@ lifeGroups:
   - title: "Young Adults Group - Sunday Evenings"
     day: "Sundays"
     time: "6:30pm"
-    address: "4883 W Chilly Peak Drive Riverton"
     number: "Text Ashley Smith to sign up: 817-366-3869"
     leaders:
       - name: Ashley and Phil Smith
@@ -50,7 +49,6 @@ lifeGroups:
   - title: Smith Group - Thursday Evenings
     day: "Thursdays"
     time: 6:30pm
-    address: 4883 W. Chilly Peak Dr. Riverton
     number: "Text Phil to sign up: 817-480-8131"
     childcare: true
     hosts: Phil & Ashley Smith
