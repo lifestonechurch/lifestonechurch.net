@@ -1,14 +1,5 @@
 churchwide:
   -
-    date: 2018-07-09
-    endDate: 2018-07-13
-    name: "Kids Life Camp"
-    link: events/kids-life-camp
-  -
-    date: 2018-07-14
-    name: "Men - Axe Throwing"
-    link: events/axe-throwing
-  -
     date: 2018-08-03
     endDate: 2018-08-05
     name: Sonfest
