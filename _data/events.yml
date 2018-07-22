@@ -4,6 +4,10 @@ churchwide:
     endDate: 2018-08-05
     name: Sonfest
     link: events/sonfest
+  -
+    date: 2018-08-12
+    name: "Back to School Sunday"
+    link: events/back-to-school-sunday
 grades-6-12:
   -
     date: 2018-07-09
