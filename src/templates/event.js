@@ -32,11 +32,8 @@ export const query = graphql`
       id
       name
       startDate
-      endDate
       startTime
       endTime
-      repeatingSchedule
-      blockOutDates
       fields {
         descriptionFormatted
       }
