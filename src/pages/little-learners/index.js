@@ -33,12 +33,12 @@ const Page = () => {
         Lifestone Little Learners provides a safe learning environment where 2-5
         year-olds discover God’s love, important social & life skills, and early
         math & reading skills in preparation for Pre-K and Kindergarten. Contact
-        Little Learners Director Ali Gardner with any questions:
+        Little Learners Director Ali Gardner with any questions:{' '}
         <a href="mailto:ali@lifestonechurch.net">ali@lifestonechurch.net</a>
       </p>
 
       <Banner>
-        <h2>Lifestone Little Learners Curriculum includes:</h2>
+        <h2>Curriculum includes:</h2>
       </Banner>
 
       <Curriculum>
