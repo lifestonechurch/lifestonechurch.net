@@ -68,6 +68,24 @@ const Page = () => {
           </ul>
         </Card>
       </Curriculum>
+
+      <Banner>
+        <h2>Director/Staff Bios</h2>
+      </Banner>
+
+      <p>Coming Soon</p>
+
+      <Banner>
+        <h2>Monthly Payment Options</h2>
+      </Banner>
+
+      <p>Coming Soon</p>
+
+      <Banner>
+        <h2>Calendar of Events</h2>
+      </Banner>
+
+      <p>Coming Soon</p>
     </div>
   );
 };
