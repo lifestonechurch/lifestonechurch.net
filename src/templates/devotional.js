@@ -59,11 +59,6 @@ export const query = graphql`
         }
       }
       date
-      mainImage {
-        file {
-          url
-        }
-      }
     }
   }
 `;
