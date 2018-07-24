@@ -13,56 +13,58 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     SMALL_GROUP: `ContentfulSmallGroup`,
   };
 
-  if (node.internal.type === types.EVENT) {
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug(node.name, { lower: true }),
-    });
-    const description = getNode(node.description___NODE);
-    if (description && description.internal) {
+  if (node.internal) {
+    if (node.internal.type === types.EVENT) {
       createNodeField({
         node,
-        name: 'descriptionFormatted',
-        value: markdown.render(description.internal.content),
+        name: `slug`,
+        value: slug(node.name, { lower: true }),
       });
-    }
-  } else if (node.internal.type === types.SERMON) {
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug(node.title, { lower: true }),
-    });
-    const notes = getNode(node.notes___NODE);
-    if (notes && notes.internal) {
+      const description = getNode(node.description___NODE);
+      if (description && description.internal) {
+        createNodeField({
+          node,
+          name: 'descriptionFormatted',
+          value: markdown.render(description.internal.content),
+        });
+      }
+    } else if (node.internal.type === types.SERMON) {
       createNodeField({
         node,
-        name: 'notesFormatted',
-        value: markdown.render(notes.internal.content),
+        name: `slug`,
+        value: slug(node.title, { lower: true }),
       });
-    }
-  } else if (node.internal.type === types.SMALL_GROUP) {
-    const contact = getNode(node.contact___NODE);
-    if (contact && contact.internal && contact.internal.content) {
+      const notes = getNode(node.notes___NODE);
+      if (notes && notes.internal) {
+        createNodeField({
+          node,
+          name: 'notesFormatted',
+          value: markdown.render(notes.internal.content),
+        });
+      }
+    } else if (node.internal.type === types.SMALL_GROUP) {
+      const contact = getNode(node.contact___NODE);
+      if (contact && contact.internal && contact.internal.content) {
+        createNodeField({
+          node,
+          name: 'contactFormatted',
+          value: markdown.render(contact.internal.content),
+        });
+      }
+    } else if (node.internal.type === types.POST) {
       createNodeField({
         node,
-        name: 'contactFormatted',
-        value: markdown.render(contact.internal.content),
+        name: `slug`,
+        value: slug(node.title, { lower: true }),
       });
-    }
-  } else if (node.internal.type === types.POST) {
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug(node.title, { lower: true }),
-    });
-    const body = getNode(node.body___NODE);
-    if (body && body.internal) {
-      createNodeField({
-        node,
-        name: 'bodyFormatted',
-        value: markdown.render(body.internal.content),
-      });
+      const body = getNode(node.body___NODE);
+      if (body && body.internal) {
+        createNodeField({
+          node,
+          name: 'bodyFormatted',
+          value: markdown.render(body.internal.content),
+        });
+      }
     }
   }
 };

@@ -1,7 +1,15 @@
+const { DateTime } = require('luxon');
+var humanizeList = require('humanize-list');
+
 module.exports = {
   siteMetadata: {
     title: `Lifestone Church`,
+    podcastSubtitle: `Messages from Sunday morning worship at Lifestone Church`,
     description: `A Bible based church in Riverton, Utah.`,
+    coverArt: `logo.jpg`,
+    siteUrl: `https://www.lifestonechurch.net`,
+    ownerEmail: `lifestone@lifestonechurch.net`,
+    categories: ['Religion & Spirituality', 'Christianity'],
     keywords: `church, bible, utah, riverton, herriman`,
     navigation: [
       { name: 'Visit', path: '/visit' },
@@ -74,5 +82,176 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              title
+              podcastSubtitle
+              description
+              coverArt
+              siteUrl
+              ownerEmail
+              categories
+            }
+          }
+        }
+      `,
+        feeds: [
+          {
+            setup: ({
+              query: { site: { siteMetadata }, allContentfulSermon: { edges } },
+            }) => ({
+              title: siteMetadata.title,
+              description: siteMetadata.description,
+              feed_url: `${siteMetadata.siteUrl}/feed.rss`,
+              site_url: siteMetadata.siteUrl,
+              image_url: `${siteMetadata.siteUrl}/${siteMetadata.coverArt}`,
+              managingEditor: `${siteMetadata.titel} (${
+                siteMetadata.ownerEmail
+              })`,
+              webMaster: `${siteMetadata.title} (${siteMetadata.ownerEmail})`,
+              copyright: `${new Date().getFullYear()} ${siteMetadata.title}`,
+              language: 'en',
+              categories: siteMetadata.categories,
+              pubDate: DateTime.fromISO(new Date()).toHTTP(),
+              ttl: '60',
+              custom_namespaces: {
+                itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd',
+              },
+              custom_elements: [
+                { 'itunes:subtitle': siteMetadata.podcastSubtitle },
+                { 'itunes:author': siteMetadata.title },
+                { 'itunes:explicit': 'clean' },
+                {
+                  'itunes:summary': siteMetadata.description,
+                },
+                {
+                  'itunes:owner': [
+                    { 'itunes:name': siteMetadata.title },
+                    { 'itunes:email': siteMetadata.ownerEmail },
+                  ],
+                },
+                {
+                  'itunes:image': {
+                    _attr: {
+                      href: `${siteMetadata.siteUrl}/${siteMetadata.coverArt}`,
+                    },
+                  },
+                },
+                ...(siteMetadata.categories
+                  ? siteMetadata.categories.map(c => ({
+                      'itunes:category': {
+                        _attr: {
+                          text: c,
+                        },
+                      },
+                    }))
+                  : {}),
+              ],
+            }),
+            serialize: ({
+              query: { site: { siteMetadata }, allContentfulSermon },
+            }) =>
+              allContentfulSermon.edges.map(({ node }) => ({
+                title: node.title || '',
+                description: node.shortDescription || '',
+                url: `${siteMetadata.siteUrl}/resources/sermons/${
+                  node.fields.slug
+                }`,
+                guid: node.id,
+                author: node.speaker.map(s => s.name, {
+                  oxfordComma: true,
+                }),
+                enclosure: {
+                  url: `https://www.podtrac.com/pts/redirect.mp3/${
+                    node.audioUrl
+                  }`,
+                  length: node.audioLength,
+                  type: 'audio/mp3',
+                },
+                custom_elements: [
+                  {
+                    pubDate: DateTime.fromISO(node.publicationDate).toHTTP(),
+                  },
+                  {
+                    'itunes:author': humanizeList(
+                      node.speaker.map(s => s.name, { oxfordComma: true })
+                    ),
+                  },
+                  {
+                    'itunes:subtitle': node.shortDescription || '',
+                  },
+                  {
+                    'itunes:summary': node.shortDescriptio || '',
+                  },
+                  {
+                    'content:encoded': `<p>${node.shortDescription || ''}</p>${
+                      node.fields ? node.fields.notesFormatted : ``
+                    }`,
+                  },
+                  { 'itunes:explicit': 'clean' },
+                  {
+                    'itunes:image': {
+                      _attr: {
+                        href:
+                          node.sermonSeries &&
+                          node.sermonSeries.image &&
+                          node.sermonSeries.file
+                            ? `https:${node.sermonSeries.image.file.url}`
+                            : '',
+                      },
+                    },
+                  },
+                  { 'itunes:duration': node.audioDuration },
+                ],
+              })),
+            query: `
+            {
+              allContentfulSermon(sort: { fields: [date], order: DESC }) {
+                edges {
+                  node {
+                    id
+                    fields {
+                      slug
+                      notesFormatted
+                    }
+                    title
+                    shortDescription,
+                    date
+                    audioUrl
+                    audioDuration
+                    audioLength
+                    sermonSeries {
+                      name
+                      image {
+                        title
+                        file {
+                          url
+                        }
+                      }
+                    }
+                    speaker {
+                      name
+                      photo {
+                        file {
+                          url
+                        }
+                      }
+                    }
+                    mainScripture
+                  }
+                }
+              }
+            }
+          `,
+            output: '/feed.rss',
+          },
+        ],
+      },
+    },
   ],
 };
