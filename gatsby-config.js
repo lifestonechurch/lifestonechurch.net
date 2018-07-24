@@ -32,6 +32,7 @@ module.exports = {
           { name: 'Students', path: '/kids/students' },
         ],
       },
+      { name: 'Little Learners', path: '/little-learners' },
       {
         name: 'Support',
         children: [

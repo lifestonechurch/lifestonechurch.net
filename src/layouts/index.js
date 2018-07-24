@@ -44,7 +44,6 @@ const TemplateWrapper = ({ children, data, location }) => {
           />
           <link rel="shortcut icon" href="/favicon.png" />
         </Helmet>
-
         <Header navigation={navigation} />
         <div>{children()}</div>
         <Footer />
