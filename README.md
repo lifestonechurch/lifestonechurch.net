@@ -1,6 +1,6 @@
 # lifestonechurch.net
 
-Website for [lifestonechurch.net](http://www.lifestonechurch.net/).
+Website for [lifestonechurch.net](https://www.lifestonechurch.net/).
 
 ## Running
 

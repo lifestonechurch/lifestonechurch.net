@@ -38,7 +38,7 @@ const TemplateWrapper = ({ children, data, location }) => {
           />
           <meta name="keywords" content={data.site.siteMetadata.keywords} />
           <link
-            href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+            href="https://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
             rel="stylesheet"
             type="text/css"
           />
@@ -64,14 +64,14 @@ const TemplateWrapper = ({ children, data, location }) => {
           />
           <meta name="keywords" content={data.site.siteMetadata.keywords} />
           <link
-            href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+            href="https://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
             rel="stylesheet"
             type="text/css"
           />
           <link rel="shortcut icon" href="/favicon.png" />
         </Helmet>
         <link
-          href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+          href="https://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
           rel="stylesheet"
           type="text/css"
         />
@@ -91,7 +91,7 @@ const TemplateWrapper = ({ children, data, location }) => {
           />
           <meta name="keywords" content={data.site.siteMetadata.keywords} />
           <link
-            href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+            href="https://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
             rel="stylesheet"
             type="text/css"
           />
@@ -99,7 +99,7 @@ const TemplateWrapper = ({ children, data, location }) => {
         </Helmet>
         <Header navigation={navigation} />
         <link
-          href="http://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+          href="https://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
           rel="stylesheet"
           type="text/css"
         />

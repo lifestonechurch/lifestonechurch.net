@@ -62,13 +62,13 @@ const Page = () => (
 
     <p>
       We are partnered with the{' '}
-      <a href="http://www.namb.net" target="_blank" rel="noopener">
+      <a href="https://www.namb.net" target="_blank" rel="noopener">
         NAMB
       </a>, the{' '}
       <a href="http://www.uisbc.org" target="_blank" rel="noopener">
         UISBC
       </a>, and the{' '}
-      <a href="http://slba.org" target="_blank" rel="noopener">
+      <a href="https://slba.org" target="_blank" rel="noopener">
         Salt Lake Baptist Association
       </a>.
     </p>

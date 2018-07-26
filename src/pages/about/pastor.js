@@ -21,7 +21,7 @@ const Page = () => (
 
     <p>
       Lifestone Church is supported by{' '}
-      <a href="http://www.namb.net/" target="_blank" rel="noopener">
+      <a href="https://www.namb.net/" target="_blank" rel="noopener">
         The North American Mission Board.
       </a>
     </p>
