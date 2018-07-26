@@ -16,7 +16,7 @@ const Curriculum = styled.div`
   flex-wrap: wrap;
 
   div {
-    width: 360px;
+    width: 500px;
     max-width: 90%;
   }
 `;
@@ -38,12 +38,16 @@ const Page = () => {
       </p>
 
       <Banner>
-        <h2>Curriculum includes:</h2>
+        <h2>Class Descriptions</h2>
       </Banner>
 
       <Curriculum>
         <Card>
           <h3>2’s and 3’s</h3>
+          <p>Tuesday, Thursday 8:30am-11:30am</p>
+
+          <p>$135/ Month September - May</p>
+
           <ul>
             <li>Bible Lessons</li>
             <li>Communication/Social Skills</li>
@@ -57,6 +61,15 @@ const Page = () => {
 
         <Card>
           <h3>4’s and 5’s</h3>
+          <p>Choose from 2 options:</p>
+
+          <ul>
+            <li>Tuesday, Thursday 8:30am-11:30am</li>
+            <li>Tuesday, Thursday 12:00pm-3:00pm</li>
+          </ul>
+
+          <p>$135/ Month September - May</p>
+
           <ul>
             <li>Bible Lessons</li>
             <li>Communication/Social Skills</li>
