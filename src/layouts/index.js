@@ -43,6 +43,10 @@ const TemplateWrapper = ({ children, data, location }) => {
             type="text/css"
           />
           <link rel="shortcut icon" href="/favicon.png" />
+          <meta
+            name="google-site-verification"
+            content="XMuf5LTwJ1U1gFb0tK6lFFDys1hzPnhxR-mTWx6bn3o"
+          />
         </Helmet>
         <Header navigation={navigation} />
         <div>{children()}</div>
