@@ -83,6 +83,17 @@ const Page = () => {
       </Curriculum>
 
       <Banner>
+        <h2>Student Enrollment</h2>
+      </Banner>
+
+      <p>
+        Space is limited. Students will be accepted on a first come, first serve
+        basis. To reserve your spot, please fill out the form below and submit
+        $75 enrollment fee. Enrollment fee also covers a Little Learners tote
+        bag!
+      </p>
+
+      <Banner>
         <h2>Director/Staff Bios</h2>
       </Banner>
 
