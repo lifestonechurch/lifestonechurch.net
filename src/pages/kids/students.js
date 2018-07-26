@@ -8,8 +8,8 @@ import { getMonthNumber, getMonthName } from '../../utils/formatDate';
 import * as COLORS from '../../constants/colors';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
-import youth from './youth.jpg';
-import series from './youth-series.jpg';
+import youthImage from './youth.jpg';
+import seriesImage from './youth-series.png';
 
 const title = 'Students Grade 6-12';
 
@@ -45,7 +45,7 @@ const Page = ({ data }) => {
       />
       <h1>{title}</h1>
 
-      <SmallImage src={youth} />
+      <SmallImage src={youthImage} />
 
       <p>
         We exist to encourage and partner with the parents of Jr./Sr. High
@@ -73,33 +73,27 @@ const Page = ({ data }) => {
         <h2>Current Series</h2>
       </Banner>
 
-      <SmallImage center={true} src={series} />
+      <SmallImage center={true} src={seriesImage} />
 
       <p>
-        Growing up, we started friendships with a game of tag or
-        hide-and-go-seek. But in high school, things get complicated. Cliques
-        can feel like the real-life version of getting picked last for
-        dodgeball—the cool kids pick each other, and the rest slump in the
-        corner, forgotten. Even worse, social media rules the hallways. Our
-        popularity depends on the amount of “likes” our latest picture earned,
-        the number of retweets we get, and how many people viewed our Snapchat
-        story. People crowd around us online and at school, but many of us still
-        feel lonely. Depressed, even. Some of us feel so excluded that we don't
-        see the need for friends at all.
+        It's so easy to get lulled into a sleepy faith, seeing our relationship
+        with God as just what we do on Sundays or at youth group. We're tempted
+        to live for ourselves, pursuing the fleeting pleasures of sin instead of
+        pursuing a vibrant relationship with Jesus Christ. But the time for
+        sleeping is over—no more snooze button, no more pulling the covers over
+        your head. It's time to wake up to the reality of the life we've been
+        called to live in Christ.
       </p>
 
       <p>
-        It's time for a reality check: we need friends. Not just hang-out
-        friends, but good friends who love, encourage, and challenge us.
-      </p>
-
-      <p>
-        In this 4-part series, pastor Dhati Lewis unpacks true biblical
-        friendship. He teaches students how God created us to need people and
-        challenges students to choose godly friends. You'll also watch real-life
-        stories of other teens who struggle with the realities of friendship.
-        This study will empower teens to build solid friendships, to show
-        kindness to nonbelievers, and to be a good friend.
+        In this series, author and church planter D.A. Horton will call students
+        to awaken their faith and reach their world—their friends, neighbors and
+        classmates—with the gospel of Jesus Christ. He will unpack what the
+        Bible says about the life-giving, soul-awakening message of the gospel
+        and how prayer, study of God's Word, and service equip and empower
+        followers of Christ to overcome sin. D.A also challenges students to
+        boldly seek the advancement of God's Kingdom at home and around the
+        world.
       </p>
 
       <Banner>
