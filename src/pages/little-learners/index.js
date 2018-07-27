@@ -94,7 +94,7 @@ const Page = () => {
       </p>
 
       <Banner>
-        <h2>Director/Staff Bios</h2>
+        <h2>Enrollment Form</h2>
       </Banner>
 
       <p>Coming Soon</p>
