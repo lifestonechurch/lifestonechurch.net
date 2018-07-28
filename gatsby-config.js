@@ -20,7 +20,7 @@ module.exports = {
           { name: 'About Us', path: '/about/about-us' },
           { name: 'Pastor', path: '/about/pastor' },
           { name: 'Contact Us', path: '/about/contact-us' },
-          { name: 'What We Belive', path: '/about/what-we-believe' },
+          { name: 'What We Believe', path: '/about/what-we-believe' },
         ],
       },
       {
