@@ -148,9 +148,7 @@ class MobileMenu extends React.Component {
     const items = this.state.openMobileItems;
     this.setState({
       openMobileItems: items[i]
-        ? Object.keys(items)
-            .filter(a => a !== i)
-            .reduce((a, c) => ({ ...a, c: true }), {})
+        ? { ...items, [i]: !items[i] }
         : { ...items, [i]: true },
       isOpen: item.children ? this.state.isOpen : false,
     });
