@@ -1,10 +1,18 @@
 import React from 'react';
+import Link from 'gatsby-link';
+import styled from 'react-emotion';
 import SermonCard from '../../components/SermonCard';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 import logo from '../../images/logo/logo2.jpg';
+import itunesImage from './itunes.png';
+import rssImage from './rss.png';
 
 const title = 'Sermons';
+
+const SubscribeImage = styled.img`
+  margin-right: 12px;
+`;
 
 const Page = ({ data }) => {
   const sermons = data.allContentfulSermon.edges;
@@ -16,6 +24,15 @@ const Page = ({ data }) => {
         title={title}
       />
       <h1>{title}</h1>
+
+      <div>
+        <a href="https://itunes.apple.com/us/podcast/lifestone-church/id968942229">
+          <SubscribeImage src={itunesImage} />
+        </a>
+        <Link to="/feed.rss">
+          <SubscribeImage src={rssImage} />
+        </Link>
+      </div>
 
       {sermons.map(({ node }) => (
         <SermonCard
