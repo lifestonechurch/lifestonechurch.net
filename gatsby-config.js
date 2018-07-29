@@ -52,8 +52,11 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -81,7 +84,6 @@ module.exports = {
         icon: 'src/images/logo/logo2.png',
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -90,8 +92,8 @@ module.exports = {
           site {
             siteMetadata {
               title
-              podcastSubtitle
               description
+              podcastSubtitle
               coverArt
               siteUrl
               ownerEmail
@@ -127,7 +129,7 @@ module.exports = {
                 { 'itunes:author': siteMetadata.title },
                 { 'itunes:explicit': 'clean' },
                 {
-                  'itunes:summary': siteMetadata.description,
+                  'itunes:summary': siteMetadata.description || ``,
                 },
                 {
                   'itunes:owner': [
@@ -186,11 +188,13 @@ module.exports = {
                     'itunes:subtitle': node.shortDescription || '',
                   },
                   {
-                    'itunes:summary': node.shortDescriptio || '',
+                    'itunes:summary': node.shortDescription || '',
                   },
                   {
                     'content:encoded': `<p>${node.shortDescription || ''}</p>${
-                      node.fields ? node.fields.notesFormatted : ``
+                      node.fields && node.fields.notesFormatted
+                        ? node.fields.notesFormatted
+                        : ``
                     }`,
                   },
                   { 'itunes:explicit': 'clean' },
@@ -253,6 +257,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify`, // must be last in the array
   ],
 };

@@ -39,7 +39,9 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
         createNodeField({
           node,
           name: 'notesFormatted',
-          value: markdown.render(notes.internal.content),
+          value: notes.internal.content
+            ? markdown.render(notes.internal.content)
+            : ``,
         });
       }
     } else if (node.internal.type === types.SMALL_GROUP) {
