@@ -31,7 +31,7 @@ const EventCard = ({ title, startDate, endDate, description, linkTo }) => (
         <h3>{title}</h3>
         <Date>
           {endDate
-            ? `${shortFormatDate(endDate)} - ${shortFormatDate(endDate)}`
+            ? `${shortFormatDate(startDate)} - ${shortFormatDate(endDate)}`
             : shortFormatDate(startDate)}
         </Date>
         <p>{description}</p>
