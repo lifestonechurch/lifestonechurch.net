@@ -93,7 +93,7 @@ const MobileSubNav = styled.ul`
 const Item = styled.div`
   display: flex;
   align-items: center;
-  text-align: right;
+  justify-content: flex-end;
 `;
 
 const Image = styled.img`
