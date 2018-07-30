@@ -95,6 +95,7 @@ const IndexPage = ({ data }) => {
         showThumbnails={false}
         showFullscreenButton={false}
         showPlayButton={false}
+        autoplay={true}
       />
       <Row>
         <RowItem>
