@@ -29,7 +29,6 @@ const Page = ({ data }) => {
   const images = data.contentfulImageGallery.images.map(i => ({
     original: i.file.url,
   }));
-  console.log(images);
 
   const youthEvents = events.filter(
     ({ node }) =>

@@ -63,7 +63,7 @@ const LatestSermonText = styled.div`
 const IndexPage = ({ data }) => {
   const images = data.allContentfulSlider.edges.map(({ node }) => ({
     original: node.image.file.url,
-    link: node.link,
+    originalAlt: node.shortDescription,
   }));
   const sermon = data.allContentfulSermon.edges[0].node;
   const events = data.allContentfulEvent.edges.map(({ node }) => ({
@@ -75,26 +75,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <div>
-      <ImageGallery
-        items={images}
-        renderItem={item => {
-          return (
-            <div className="image-gallery-image">
-              <Link to={`/${item.link}`}>
-                <img
-                  src={item.original}
-                  alt={item.originalAlt}
-                  srcSet={item.srcSet}
-                  sizes={item.sizes}
-                />
-              </Link>
-            </div>
-          );
-        }}
-        showThumbnails={false}
-        showFullscreenButton={false}
-        showPlayButton={false}
-      />
+      <ImageGallery items={images} infinite={true} />
       <Row>
         <RowItem>
           <RowHeader>Welcome!</RowHeader>

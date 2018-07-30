@@ -22,6 +22,8 @@ const Curriculum = styled.div`
 `;
 
 const Page = () => {
+  const isEnrolling = true;
+
   return (
     <div>
       <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
@@ -97,7 +99,15 @@ const Page = () => {
         <h2>Enrollment Form</h2>
       </Banner>
 
-      <p>Coming Soon</p>
+      <iframe
+        src="https://lifestonechurch.breezechms.com/form/1eb0c6"
+        style={{
+          width: `100%`,
+          height: 3100,
+          margin: `0 auto`,
+          border: `1px solid #fff`,
+        }}
+      />
 
       <Banner>
         <h2>Monthly Payment Options</h2>
