@@ -13,6 +13,7 @@ const Registration = styled.iframe`
   display: block;
   margin: 0 auto;
   width: 600px;
+  max-width: 100%;
   height: 700px;
   border: 1px solid #fff;
 `;
