@@ -1,5 +1,21 @@
 import React from 'react';
+import styled from 'react-emotion';
 import Breadcrumbs from '../components/Breadcrumbs';
+
+const Image = styled.img`
+  max-height: 400px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+`;
+
+const Registration = styled.iframe`
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: 700px;
+  border: 1px solid #fff;
+`;
 
 export default ({ data }) => {
   const event = data.contentfulEvent;
@@ -14,7 +30,7 @@ export default ({ data }) => {
       />
       <h1>{event.name}</h1>
 
-      {event.image && <img src={event.image.file.url} />}
+      {event.image && <Image src={event.image.file.url} />}
       {event.fields.descriptionFormatted && (
         <div
           dangerouslySetInnerHTML={{
@@ -22,6 +38,8 @@ export default ({ data }) => {
           }}
         />
       )}
+
+      <Registration src={event.registrationLink} />
     </div>
   );
 };
@@ -45,6 +63,7 @@ export const query = graphql`
           contentType
         }
       }
+      registrationLink
     }
   }
 `;
