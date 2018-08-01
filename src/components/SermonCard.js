@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import Link from 'gatsby-link';
+import formatDate from '../utils/formatDate';
 import Card from './Card';
 
 const Container = styled.div`
@@ -39,7 +40,7 @@ const MetaData = styled.div`
   margin-bottom: 5px;
 `;
 
-const SermonCard = ({ linkTo, image, title, date, speakers, passage }) => (
+const SermonCard = ({linkTo, image, title, date, speakers, passage}) => (
   <Container>
     <Link to={linkTo}>
       <Card>
@@ -47,7 +48,7 @@ const SermonCard = ({ linkTo, image, title, date, speakers, passage }) => (
           <Img src={image} />
           <Text>
             <Title>{title}</Title>
-            <MetaData>{date}</MetaData>
+            <MetaData>{formatDate(date)}</MetaData>
             <MetaData>{speakers.join('')}</MetaData>
             <MetaData>{passage}</MetaData>
           </Text>
