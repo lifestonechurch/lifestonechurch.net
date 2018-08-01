@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Adam Garrett-Harris <agarrharr@users.noreply.github.com>",
   "dependencies": {
-    "dotenv": "^4.0.0",
     "emotion": "^8.0.12",
     "emotion-server": "^8.0.12",
     "gatsby": "^1.9.273",
@@ -43,6 +42,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "prettier": "^1.9.2"
   },
   "prettier": {

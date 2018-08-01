@@ -1,4 +1,5 @@
-const { DateTime } = require('luxon');
+require('dotenv').config();
+const {DateTime} = require('luxon');
 var humanizeList = require('humanize-list');
 
 module.exports = {
@@ -12,41 +13,41 @@ module.exports = {
     categories: ['Religion & Spirituality', 'Christianity'],
     keywords: `church, bible, utah, riverton, herriman`,
     navigation: [
-      { name: 'Visit', path: '/visit' },
-      { name: 'Events', path: '/events' },
+      {name: 'Visit', path: '/visit'},
+      {name: 'Events', path: '/events'},
       {
         name: 'About',
         children: [
-          { name: 'About Us', path: '/about/about-us' },
-          { name: 'Pastor', path: '/about/pastor' },
-          { name: 'Contact Us', path: '/about/contact-us' },
-          { name: 'What We Believe', path: '/about/what-we-believe' },
+          {name: 'About Us', path: '/about/about-us'},
+          {name: 'Pastor', path: '/about/pastor'},
+          {name: 'Contact Us', path: '/about/contact-us'},
+          {name: 'What We Believe', path: '/about/what-we-believe'},
         ],
       },
       {
         name: 'Resources',
         children: [
-          { name: 'Sermons', path: '/resources/sermons' },
-          { name: 'Devotionals', path: '/resources/devotionals' },
-          { name: 'Videos', path: '/resources/videos' },
+          {name: 'Sermons', path: '/resources/sermons'},
+          {name: 'Devotionals', path: '/resources/devotionals'},
+          {name: 'Videos', path: '/resources/videos'},
         ],
       },
-      { name: 'LifeGroups', path: '/lifegroups' },
+      {name: 'LifeGroups', path: '/lifegroups'},
       {
         name: 'Kids & Students',
         children: [
-          { name: 'Birth-Kindergarten', path: '/kids/birth-kindergarten' },
-          { name: 'Grades 1-5', path: '/kids/grades-1-5' },
-          { name: 'Students', path: '/kids/students' },
+          {name: 'Birth-Kindergarten', path: '/kids/birth-kindergarten'},
+          {name: 'Grades 1-5', path: '/kids/grades-1-5'},
+          {name: 'Students', path: '/kids/students'},
         ],
       },
-      { name: 'Little Learners', path: '/little-learners' },
+      {name: 'Little Learners', path: '/little-learners'},
       {
         name: 'Support',
         children: [
-          { name: 'Serve', path: '/support/serve' },
-          { name: 'Give', path: '/support/give' },
-          { name: 'Concern Center', path: '/support/concern-center' },
+          {name: 'Serve', path: '/support/serve'},
+          {name: 'Give', path: '/support/give'},
+          {name: 'Concern Center', path: '/support/concern-center'},
         ],
       },
     ],
@@ -60,16 +61,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-44899328-1',
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+        anonymize: true,
         respectDNT: true,
-        exclude: ['/admin/**'],
       },
     },
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `ujxurwjh56v6`,
-        accessToken: `402fad6cb9cd222cc3796589814b27bb76d98096ccbbc9c54e980feb97e41424`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     {
@@ -105,7 +106,10 @@ module.exports = {
         feeds: [
           {
             setup: ({
-              query: { site: { siteMetadata }, allContentfulSermon: { edges } },
+              query: {
+                site: {siteMetadata},
+                allContentfulSermon: {edges},
+              },
             }) => ({
               title: siteMetadata.title,
               description: siteMetadata.description,
@@ -125,16 +129,16 @@ module.exports = {
                 itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd',
               },
               custom_elements: [
-                { 'itunes:subtitle': siteMetadata.podcastSubtitle },
-                { 'itunes:author': siteMetadata.title },
-                { 'itunes:explicit': 'clean' },
+                {'itunes:subtitle': siteMetadata.podcastSubtitle},
+                {'itunes:author': siteMetadata.title},
+                {'itunes:explicit': 'clean'},
                 {
                   'itunes:summary': siteMetadata.description || ``,
                 },
                 {
                   'itunes:owner': [
-                    { 'itunes:name': siteMetadata.title },
-                    { 'itunes:email': siteMetadata.ownerEmail },
+                    {'itunes:name': siteMetadata.title},
+                    {'itunes:email': siteMetadata.ownerEmail},
                   ],
                 },
                 {
@@ -156,9 +160,12 @@ module.exports = {
               ],
             }),
             serialize: ({
-              query: { site: { siteMetadata }, allContentfulSermon },
+              query: {
+                site: {siteMetadata},
+                allContentfulSermon,
+              },
             }) =>
-              allContentfulSermon.edges.map(({ node }) => ({
+              allContentfulSermon.edges.map(({node}) => ({
                 title: node.title || '',
                 description: node.shortDescription || '',
                 url: `${siteMetadata.siteUrl}/resources/sermons/${
@@ -181,7 +188,7 @@ module.exports = {
                   },
                   {
                     'itunes:author': humanizeList(
-                      node.speaker.map(s => s.name, { oxfordComma: true })
+                      node.speaker.map(s => s.name, {oxfordComma: true})
                     ),
                   },
                   {
@@ -197,7 +204,7 @@ module.exports = {
                         : ``
                     }`,
                   },
-                  { 'itunes:explicit': 'clean' },
+                  {'itunes:explicit': 'clean'},
                   {
                     'itunes:image': {
                       _attr: {
@@ -210,7 +217,7 @@ module.exports = {
                       },
                     },
                   },
-                  { 'itunes:duration': node.audioDuration },
+                  {'itunes:duration': node.audioDuration},
                 ],
               })),
             query: `
