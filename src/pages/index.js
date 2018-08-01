@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import ImageGallery from 'react-image-gallery';
 import SmallCalendar from '../components/SmallCalendar';
 
-import benPreaching from './benPreaching.jpg';
+import preaching from './preaching.jpg';
 
 import 'react-image-gallery/styles/css/image-gallery.css';
 
@@ -43,6 +43,12 @@ const RowHeader = styled.div`
 
 const LatestSermon = styled.div`
   position: relative;
+  height: 200px;
+  overflow: hidden;
+`;
+
+const PreachingImage = styled.img`
+  width: 100%;
 `;
 
 const LatestSermonText = styled.div`
@@ -60,14 +66,14 @@ const LatestSermonText = styled.div`
   }
 `;
 
-const IndexPage = ({ data }) => {
-  const images = data.allContentfulSlider.edges.map(({ node }) => ({
+const IndexPage = ({data}) => {
+  const images = data.allContentfulSlider.edges.map(({node}) => ({
     original: node.image.file.url,
     originalAlt: node.shortDescription,
     link: node.link,
   }));
   const sermon = data.allContentfulSermon.edges[0].node;
-  const events = data.allContentfulEvent.edges.map(({ node }) => ({
+  const events = data.allContentfulEvent.edges.map(({node}) => ({
     id: node.id,
     name: node.name,
     startDate: node.startDate,
@@ -112,7 +118,7 @@ const IndexPage = ({ data }) => {
           <RowContainer>
             <LatestSermon>
               <Link to={`/resources/sermons/${sermon.fields.slug}`}>
-                <img src={benPreaching} alt="" />
+                <PreachingImage src={preaching} alt="" />
                 <LatestSermonText>
                   <h4>{sermon.title}</h4>
                   {sermon.mainScripture}
@@ -150,7 +156,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulSermon(sort: { fields: [date], order: DESC }, limit: 1) {
+    allContentfulSermon(sort: {fields: [date], order: DESC}, limit: 1) {
       edges {
         node {
           title
@@ -161,7 +167,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulEvent(sort: { fields: [startDate], order: ASC }, limit: 6) {
+    allContentfulEvent(sort: {fields: [startDate], order: ASC}, limit: 6) {
       edges {
         node {
           id
