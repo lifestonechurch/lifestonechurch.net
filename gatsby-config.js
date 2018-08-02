@@ -13,28 +13,27 @@ module.exports = {
     categories: ['Religion & Spirituality', 'Christianity'],
     keywords: `church, bible, utah, riverton, herriman`,
     navigation: [
-      {name: 'Visit', path: '/visit'},
-      {name: 'Events', path: '/events'},
       {
         name: 'About',
         children: [
+          {name: 'Visit', path: '/about/visit'},
           {name: 'About Us', path: '/about/about-us'},
           {name: 'Pastor', path: '/about/pastor'},
           {name: 'Contact Us', path: '/about/contact-us'},
           {name: 'What We Believe', path: '/about/what-we-believe'},
         ],
       },
+      {name: 'Events', path: '/events'},
       {
-        name: 'Resources',
+        name: 'Connect',
         children: [
-          {name: 'Sermons', path: '/resources/sermons'},
-          {name: 'Devotionals', path: '/resources/devotionals'},
-          {name: 'Videos', path: '/resources/videos'},
+          {name: 'LifeGroups', path: '/connect/lifegroups'},
+          {name: 'Serve', path: '/connect/serve'},
+          {name: 'Concern Center', path: '/connect/concern-center'},
         ],
       },
-      {name: 'LifeGroups', path: '/lifegroups'},
       {
-        name: 'Kids & Students',
+        name: 'Kids + Students',
         children: [
           {name: 'Birth-Kindergarten', path: '/kids/birth-kindergarten'},
           {name: 'Grades 1-5', path: '/kids/grades-1-5'},
@@ -43,13 +42,14 @@ module.exports = {
       },
       {name: 'Little Learners', path: '/little-learners'},
       {
-        name: 'Support',
+        name: 'Resources',
         children: [
-          {name: 'Serve', path: '/support/serve'},
-          {name: 'Give', path: '/support/give'},
-          {name: 'Concern Center', path: '/support/concern-center'},
+          {name: 'Sermons', path: '/resources/sermons'},
+          {name: 'Devotionals', path: '/resources/devotionals'},
+          {name: 'Videos', path: '/resources/videos'},
         ],
       },
+      {name: 'Give', path: '/give'},
     ],
   },
   plugins: [

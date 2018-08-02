@@ -13,10 +13,7 @@ const lastYear = new Date().getUTCFullYear() - 1;
 
 const Page = () => (
   <div>
-    <Breadcrumbs
-      path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
-      title={title}
-    />
+    <Breadcrumbs path={[{title: 'Home', url: '/'}]} title={title} />
     <h1>{title}</h1>
 
     <form
@@ -25,7 +22,7 @@ const Page = () => (
       method="post"
     >
       <input type="hidden" id="cmd" name="cmd" value="_donations" />
-      <label for="amount">Donation Amount:</label>
+      <label htmlFor="amount">Donation Amount:</label>
       <br />$ <input type="text" name="amount" id="amount" />
       <input
         type="hidden"
@@ -43,17 +40,15 @@ const Page = () => (
         value="https://www.lifestonechurch.net/support/thank-you/"
       />
       <input type="hidden" name="currency_code" value="USD" />
-      <p class="submit">
+      <p>
         <input
           type="image"
           src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif"
-          border="0"
           name="submit"
           alt=""
         />
         <img
           alt=""
-          border="0"
           src="https://www.paypal.com/en_US/i/scr/pixel.gif"
           width="1"
           height="1"

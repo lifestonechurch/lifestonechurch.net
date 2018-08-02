@@ -65,7 +65,7 @@ const NewsletterForm = () => (
       action="https://lifestonechurch.us7.list-manage.com/subscribe/post?u=5919b0cbca5b75fa92408b802&amp;id=77d3bd46c0"
       method="post"
       target="_blank"
-      novalidate
+      noValidate
     >
       <div>
         <Title>Sign up for our newsletter</Title>

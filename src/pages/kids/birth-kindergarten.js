@@ -10,7 +10,7 @@ const title = 'Birth-Kindergarten';
 const Page = () => (
   <div>
     <Breadcrumbs
-      path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+      path={[{title: 'Home', url: '/'}, {title: 'Kids'}]}
       title={title}
     />
     <h1>{title}</h1>

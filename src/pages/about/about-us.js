@@ -1,4 +1,5 @@
 import React from 'react';
+
 import BibleQuote from '../../components/BibleQuote';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
@@ -9,7 +10,7 @@ const title = 'About Us';
 const AboutUs = () => (
   <div>
     <Breadcrumbs
-      path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
+      path={[{title: 'Home', url: '/'}, {title: 'About'}]}
       title={title}
     />
     <h1>{title}</h1>

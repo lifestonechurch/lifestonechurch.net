@@ -4,7 +4,7 @@ import ImageGallery from 'react-image-gallery';
 import EventCard from '../../components/EventCard';
 import Banner from '../../components/Banner';
 import SmallImage from '../../components/SmallImage';
-import { getMonthNumber, getMonthName } from '../../utils/formatDate';
+import {getMonthNumber, getMonthName} from '../../utils/formatDate';
 import * as COLORS from '../../constants/colors';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
@@ -24,14 +24,14 @@ const GalleryContainer = styled.div`
   margin: 0 auto;
 `;
 
-const Page = ({ data }) => {
+const Page = ({data}) => {
   const events = data.allContentfulEvent.edges;
   const images = data.contentfulImageGallery.images.map(i => ({
     original: i.file.url,
   }));
 
   const youthEvents = events.filter(
-    ({ node }) =>
+    ({node}) =>
       node.ministry !== undefined &&
       node.ministry.map(m => m.name).includes('Youth')
   );
@@ -39,7 +39,7 @@ const Page = ({ data }) => {
   return (
     <div>
       <Breadcrumbs
-        path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+        path={[{title: 'Home', url: '/'}, {title: 'Kids'}]}
         title={title}
       />
       <h1>{title}</h1>
@@ -99,7 +99,7 @@ const Page = ({ data }) => {
         <h2>Events</h2>
       </Banner>
 
-      {youthEvents.map(({ node }, i) => (
+      {youthEvents.map(({node}, i) => (
         <div key={node.id}>
           <EventCard
             linkTo={`/events/${node.fields.slug}`}
@@ -126,7 +126,7 @@ export default Page;
 
 export const query = graphql`
   query StudentsQuery {
-    allContentfulEvent(sort: { fields: [startDate], order: ASC }) {
+    allContentfulEvent(sort: {fields: [startDate], order: ASC}) {
       edges {
         node {
           id
@@ -152,7 +152,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulImageGallery(id: { eq: "c32DZGuSOIMA4W2IYEiAMga" }) {
+    contentfulImageGallery(id: {eq: "c32DZGuSOIMA4W2IYEiAMga"}) {
       title
       images {
         id

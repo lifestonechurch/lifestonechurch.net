@@ -1,6 +1,6 @@
 import React from 'react';
-import SmallImage from '../../components/SmallImage';
-import Breadcrumbs from '../../components/Breadcrumbs';
+import SmallImage from '../../../components/SmallImage';
+import Breadcrumbs from '../../../components/Breadcrumbs';
 
 import concernCenter from './concern-center.jpg';
 
@@ -9,7 +9,7 @@ const title = 'Concern Center';
 const Page = () => (
   <div>
     <Breadcrumbs
-      path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+      path={[{title: 'Home', url: '/'}, {title: 'Connect'}]}
       title={title}
     />
     <h1>{title}</h1>

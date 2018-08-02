@@ -1,14 +1,16 @@
 import React from 'react';
-import BreezeForm from '../../components/BreezeForm';
+
+import BreezeForm from '../../../components/BreezeForm';
+import Breadcrumbs from '../../../components/Breadcrumbs';
+
 import volunteer from './volunteer.jpg';
-import Breadcrumbs from '../../components/Breadcrumbs';
 
 const title = 'Serve';
 
 const Page = () => (
   <div>
     <Breadcrumbs
-      path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
+      path={[{title: 'Home', url: '/'}, {title: 'Connect'}]}
       title={title}
     />
     <h1>{title}</h1>

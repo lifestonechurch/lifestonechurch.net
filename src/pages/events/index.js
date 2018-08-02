@@ -2,23 +2,23 @@ import React from 'react';
 import EventCard from '../../components/EventCard';
 import Banner from '../../components/Banner';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import { getMonthNumber, getMonthName } from '../../utils/formatDate';
+import {getMonthNumber, getMonthName} from '../../utils/formatDate';
 
 import upcomingEvents from './upcoming-events.jpg';
 
 const title = 'Events';
 
-const Page = ({ data }) => {
+const Page = ({data}) => {
   const events = data.allContentfulEvent.edges;
   return (
     <div>
-      <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
+      <Breadcrumbs path={[{title: 'Home', url: '/'}]} title={title} />
       <h1>{title}</h1>
 
       <img src={upcomingEvents} alt="Upcoming Events" />
 
-      {events.map(({ node }, i) => (
-        <div>
+      {events.map(({node}, i) => (
+        <div key={node.id}>
           {i === 0 ||
           getMonthNumber(events[i - 1].node.startDate) <
             getMonthNumber(node.startDate) ? (
@@ -43,7 +43,7 @@ export default Page;
 
 export const query = graphql`
   query EventsQuery {
-    allContentfulEvent(sort: { fields: [startDate], order: ASC }) {
+    allContentfulEvent(sort: {fields: [startDate], order: ASC}) {
       edges {
         node {
           id
