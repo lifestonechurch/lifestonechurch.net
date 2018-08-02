@@ -24,7 +24,7 @@ const Content = styled.div`
 
 const Sidebar = styled.div``;
 
-const TemplateWrapper = ({ children, data, location }) => {
+const TemplateWrapper = ({children, data, location}) => {
   const navigation = data.site.siteMetadata.navigation;
 
   if (location.pathname === '/') {
@@ -38,7 +38,7 @@ const TemplateWrapper = ({ children, data, location }) => {
           />
           <meta name="keywords" content={data.site.siteMetadata.keywords} />
           <link
-            href="https://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
+            href="https://fonts.googleapis.com/css?family=Lato:400,700"
             rel="stylesheet"
             type="text/css"
           />
