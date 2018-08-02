@@ -11,7 +11,7 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 import youthImage from './youth.jpg';
 import seriesImage from './youth-series.png';
 
-const title = 'Students Grade 6-12';
+const title = 'Grades 6-12';
 
 const Month = styled.div`
   font-size: 18px;

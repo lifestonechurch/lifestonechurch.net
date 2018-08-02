@@ -1,6 +1,6 @@
 https://lifestonechurch.netlify.com/* https://www.lifestonechurch.net/:splat 301!
 https://lifestonechurch.net/* https://www.lifestonechurch.net/:splat 301!
-https://www.lifestonechurch.net/kids/grades-6-12/*  https://www.lifestonechurch.net/kids/students/:splat 301!
+https://www.lifestonechurch.net/kids/students/*  https://www.lifestonechurch.net/kids/grades-6-12/:splat 301!
 https://www.lifestonechurch.net/visit/*  https://www.lifestonechurch.net/about/visit/:splat 301!
 https://www.lifestonechurch.net/support/give/*  https://www.lifestonechurch.net/give/:splat 301!
 https://www.lifestonechurch.net/lifegroups/*  https://www.lifestonechurch.net/connect/lifegroups/:splat 301!

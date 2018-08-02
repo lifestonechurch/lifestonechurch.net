@@ -37,7 +37,7 @@ module.exports = {
         children: [
           {name: 'Birth-Kindergarten', path: '/kids/birth-kindergarten'},
           {name: 'Grades 1-5', path: '/kids/grades-1-5'},
-          {name: 'Students', path: '/kids/students'},
+          {name: 'Grades 6-12', path: '/kids/grades-6-12'},
         ],
       },
       {name: 'Little Learners', path: '/little-learners'},
