@@ -1,4 +1,5 @@
 import React from 'react';
+import { H1 } from '../../components/headers';
 import VimeoPlayer from '../../components/VimeoPlayer';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
@@ -10,7 +11,7 @@ const Page = () => (
       path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
       title={title}
     />
-    <h1>{title}</h1>
+    <H1>{title}</H1>
 
     <VimeoPlayer id="124588710" />
   </div>

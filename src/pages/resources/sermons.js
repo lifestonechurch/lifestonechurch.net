@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'react-emotion';
+import { H1 } from '../../components/headers';
 import SermonCard from '../../components/SermonCard';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
@@ -23,7 +24,7 @@ const Page = ({ data }) => {
         path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
         title={title}
       />
-      <h1>{title}</h1>
+      <H1>{title}</H1>
 
       <div>
         <a href="https://itunes.apple.com/us/podcast/lifestone-church/id968942229">

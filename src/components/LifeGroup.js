@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import Link from 'gatsby-link';
+
 import Card from './Card';
+import { H3, H4 } from './headers';
 
 const Container = styled.div`
   margin-bottom: 2.5em;
@@ -34,9 +36,9 @@ const LifeGroup = ({
   hasChildcare,
 }) => (
   <Container>
-    <h3>
+    <H3>
       {name} - {day}
-    </h3>
+    </H3>
     <p>{description}</p>
     <blockquote>
       <div>{time}</div>
@@ -50,7 +52,7 @@ const LifeGroup = ({
       )}
     </blockquote>
     {hasChildcare && <p>Free on-site childcare</p>}
-    <h4>Hosts</h4>
+    <H4>Hosts</H4>
     <div>
       {hosts.map(h => (
         <div key={h.id}>
@@ -59,7 +61,7 @@ const LifeGroup = ({
         </div>
       ))}
     </div>
-    <h4>Leaders</h4>
+    <H4>Leaders</H4>
     <div>
       {leaders.map(h => (
         <div key={h.id}>

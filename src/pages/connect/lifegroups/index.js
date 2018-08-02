@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { H1 } from '../../../components/headers';
 import Banner from '../../../components/Banner';
 import LifeGroup from '../../../components/LifeGroup';
 import Breadcrumbs from '../../../components/Breadcrumbs';
@@ -21,16 +22,16 @@ const sortByDayOfWeek = (a, b) => {
   return days[a.node.day] - days[b.node.day];
 };
 
-const Page = ({data}) => {
+const Page = ({ data }) => {
   const lifegroups = data.allContentfulSmallGroup.edges;
 
   return (
     <div>
       <Breadcrumbs
-        path={[{title: 'Home', url: '/'}, {title: 'Connect'}]}
+        path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
         title={title}
       />
-      <h1>{title}</h1>
+      <H1>{title}</H1>
 
       <img src={lifegroupsImage} />
 
@@ -45,7 +46,7 @@ const Page = ({data}) => {
 
       <b>Text the leader to sign up!</b>
 
-      {lifegroups.sort(sortByDayOfWeek).map(({node}, index, array) => (
+      {lifegroups.sort(sortByDayOfWeek).map(({ node }, index, array) => (
         <div>
           {index === 0 || array[index - 1].node.day !== node.day ? (
             <Banner>{node.day}</Banner>

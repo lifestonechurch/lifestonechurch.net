@@ -1,4 +1,5 @@
 import React from 'react';
+import { H1 } from '../../components/headers';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 import heltonFamily from './helton-family.jpg';
@@ -11,7 +12,7 @@ const Page = () => (
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
     />
-    <h1>{title}</h1>
+    <H1>{title}</H1>
 
     <img src={heltonFamily} alt="Helton family" />
 

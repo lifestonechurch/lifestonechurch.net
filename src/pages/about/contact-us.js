@@ -1,4 +1,5 @@
 import React from 'react';
+import { H1 } from '../../components/headers';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 const title = 'Contact Us';
@@ -9,7 +10,7 @@ const Page = () => (
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
     />
-    <h1>{title}</h1>
+    <H1>{title}</H1>
 
     <p>
       We are so excited to connect with you soon and help you experience the

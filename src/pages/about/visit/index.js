@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 
+import { H1 } from '../../../components/headers';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import GoogleMap from '../../../components/GoogleMap';
 
@@ -15,10 +16,10 @@ const MapContainer = styled.div`
 const Visit = () => (
   <div>
     <Breadcrumbs
-      path={[{title: 'Home', url: '/'}, {title: 'About'}]}
+      path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
     />
-    <h1>{title}</h1>
+    <H1>{title}</H1>
 
     <img src={cafe} />
 

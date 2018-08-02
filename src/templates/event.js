@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
+import { H1 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 const Image = styled.img`
@@ -29,7 +30,7 @@ export default ({ data }) => {
         ]}
         title={event.name}
       />
-      <h1>{event.name}</h1>
+      <H1>{event.name}</H1>
 
       {event.image && <Image src={event.image.file.url} />}
       {event.fields.descriptionFormatted && (

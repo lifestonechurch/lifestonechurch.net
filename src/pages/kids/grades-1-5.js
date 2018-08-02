@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
+
+import { H1, H2 } from '../../components/headers';
 import Banner from '../../components/Banner';
 import SmallImage from '../../components/SmallImage';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -16,10 +18,10 @@ const Center = styled.div`
 const Page = () => (
   <div>
     <Breadcrumbs
-      path={[{title: 'Home', url: '/'}, {title: 'Kids'}]}
+      path={[{ title: 'Home', url: '/' }, { title: 'Kids' }]}
       title={title}
     />
-    <h1>{title}</h1>
+    <H1>{title}</H1>
 
     <SmallImage src={kidsLife} />
 
@@ -33,7 +35,7 @@ const Page = () => (
     </p>
 
     <Banner>
-      <h2>Current Series</h2>
+      <H2>Current Series</H2>
     </Banner>
 
     <SmallImage center={true} src={series} />
@@ -46,7 +48,7 @@ const Page = () => (
     </p>
 
     <Banner>
-      <h2>What to Expect</h2>
+      <H2>What to Expect</H2>
     </Banner>
 
     <p>

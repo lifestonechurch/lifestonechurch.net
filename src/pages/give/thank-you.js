@@ -1,8 +1,9 @@
 import React from 'react';
+import { H1 } from '../../components/headers';
 
 const Page = () => (
   <div>
-    <h1>Thank You</h1>
+    <H1>Thank You</H1>
 
     <p>Thanks so much!</p>
   </div>

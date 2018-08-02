@@ -2,9 +2,11 @@ import React from 'react';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+
 import { shortFormatDate } from '../utils/formatDate';
 import * as COLORS from '../constants/colors';
 import Card from './Card';
+import { H3 } from './headers';
 
 const Container = styled.div`
   & a {
@@ -28,7 +30,7 @@ const EventCard = ({ title, startDate, endDate, description, linkTo }) => (
   <Container>
     <Link to={linkTo}>
       <Card>
-        <h3>{title}</h3>
+        <H3>{title}</H3>
         <Date>
           {endDate
             ? `${shortFormatDate(startDate)} - ${shortFormatDate(endDate)}`

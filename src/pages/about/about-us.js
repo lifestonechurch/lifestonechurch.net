@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { H1, H2 } from '../../components/headers';
 import BibleQuote from '../../components/BibleQuote';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
@@ -10,10 +11,10 @@ const title = 'About Us';
 const AboutUs = () => (
   <div>
     <Breadcrumbs
-      path={[{title: 'Home', url: '/'}, {title: 'About'}]}
+      path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
     />
-    <h1>{title}</h1>
+    <H1>{title}</H1>
 
     <p>
       A church in Riverton Utah excited about bringing the amazing message of
@@ -26,7 +27,7 @@ const AboutUs = () => (
       <img src={worship} />
     </p>
 
-    <h2>Life discovered. Life shared.</h2>
+    <H2>Life discovered. Life shared.</H2>
 
     <BibleQuote reference="1 John 5:12 NLT">
       “Whoever has the Son has life; whoever does not have God’s Son does not

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { H1, H2 } from '../../../components/headers';
 import BreezeForm from '../../../components/BreezeForm';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 
@@ -10,10 +11,10 @@ const title = 'Serve';
 const Page = () => (
   <div>
     <Breadcrumbs
-      path={[{title: 'Home', url: '/'}, {title: 'Connect'}]}
+      path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
       title={title}
     />
-    <h1>{title}</h1>
+    <H1>{title}</H1>
 
     <img src={volunteer} />
 
@@ -30,7 +31,7 @@ const Page = () => (
       you with more information about volunteering soon!
     </p>
 
-    <h2>Sunday Mornings</h2>
+    <H2>Sunday Mornings</H2>
 
     <p>
       <b>1st Impressions</b> volunteers have the privilege of serving every
@@ -57,7 +58,7 @@ const Page = () => (
       serving in audio, video, or lighting.
     </p>
 
-    <h2>Wednesday Evenings</h2>
+    <H2>Wednesday Evenings</H2>
 
     <p>
       <b>Wednesday Night Media</b> volunteers produce a student-friendly worship
@@ -72,7 +73,7 @@ const Page = () => (
       ministry.
     </p>
 
-    <h2>During the Week</h2>
+    <H2>During the Week</H2>
 
     <p>
       <b>LifeGroup Hosts</b> open their homes and work to ensure that LifeGroup

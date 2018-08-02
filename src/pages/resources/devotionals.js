@@ -1,4 +1,5 @@
 import React from 'react';
+import { H1 } from '../../components/headers';
 import DevotionalCard from '../../components/DevotionalCard';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
@@ -13,7 +14,7 @@ const Page = ({ data }) => {
         path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
         title={title}
       />
-      <h1>{title}</h1>
+      <H1>{title}</H1>
 
       {sermons.map(({ node }) => (
         <DevotionalCard

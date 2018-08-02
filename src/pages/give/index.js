@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { H1, H2 } from '../../components/headers';
 import Banner from '../../components/Banner';
 import Button from '../../components/Button';
 import BibleQuote from '../../components/BibleQuote';
@@ -13,8 +15,8 @@ const lastYear = new Date().getUTCFullYear() - 1;
 
 const Page = () => (
   <div>
-    <Breadcrumbs path={[{title: 'Home', url: '/'}]} title={title} />
-    <h1>{title}</h1>
+    <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
+    <H1>{title}</H1>
 
     <form
       id="donateplusform"
@@ -69,7 +71,7 @@ const Page = () => (
     </BibleQuote>
 
     <Banner>
-      <h2>{lastYear} Giving Statement</h2>
+      <H2>{lastYear} Giving Statement</H2>
     </Banner>
 
     <p>

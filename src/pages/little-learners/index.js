@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
+
+import { H1, H2, H3 } from '../../components/headers';
 import Banner from '../../components/Banner';
 import LifeGroup from '../../components/LifeGroup';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -27,7 +29,7 @@ const Page = () => {
   return (
     <div>
       <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
-      <h1>{title}</h1>
+      <H1>{title}</H1>
 
       <img src={littleLearnersImage} />
 
@@ -40,12 +42,12 @@ const Page = () => {
       </p>
 
       <Banner>
-        <h2>Class Descriptions</h2>
+        <H2>Class Descriptions</H2>
       </Banner>
 
       <Curriculum>
         <Card>
-          <h3>2’s and 3’s</h3>
+          <H3>2’s and 3’s</H3>
           <p>Tuesday, Thursday 8:30am-11:30am</p>
 
           <p>$135/ Month September - May</p>
@@ -62,7 +64,7 @@ const Page = () => {
         </Card>
 
         <Card>
-          <h3>4’s and 5’s</h3>
+          <H3>4’s and 5’s</H3>
           <p>Choose from 2 options:</p>
 
           <ul>
@@ -85,7 +87,7 @@ const Page = () => {
       </Curriculum>
 
       <Banner>
-        <h2>Student Enrollment</h2>
+        <H2>Student Enrollment</H2>
       </Banner>
 
       <p>
@@ -96,7 +98,7 @@ const Page = () => {
       </p>
 
       <Banner>
-        <h2>Enrollment Form</h2>
+        <H2>Enrollment Form</H2>
       </Banner>
 
       <iframe
@@ -110,13 +112,13 @@ const Page = () => {
       />
 
       <Banner>
-        <h2>Monthly Payment Options</h2>
+        <H2>Monthly Payment Options</H2>
       </Banner>
 
       <p>Coming Soon</p>
 
       <Banner>
-        <h2>Calendar of Events</h2>
+        <H2>Calendar of Events</H2>
       </Banner>
 
       <p>Coming Soon</p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 import { longFormatDate } from '../utils/formatDate';
+import { H1 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 const MetaData = styled.div`
@@ -24,7 +25,7 @@ export default ({ data }) => {
         ]}
         title={post.title}
       />
-      <h1>{post.title}</h1>
+      <H1>{post.title}</H1>
 
       <MetaData>
         <div>{post.author.map(s => <span key={s.id}>{s.name}</span>)}</div>

@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'react-emotion';
+
 import formatDate from '../utils/formatDate';
+import { H1, H2 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
 
-// TODO: use otherStuff on page
+// TODO: use OtherStuff on page
 const OtherStuff = ({ data }) => {
   const sermon = data.contentfulSermon;
   return (
@@ -42,7 +44,7 @@ export default ({ data }) => {
         ]}
         title={sermon.title}
       />
-      <h1>{sermon.title}</h1>
+      <H1>{sermon.title}</H1>
 
       <div>{formatDate(sermon.date)}</div>
       <div>{sermon.speaker.map(s => <span key={s.id}>{s.name}</span>)}</div>
@@ -50,7 +52,7 @@ export default ({ data }) => {
       <Audio controls src={sermon.audioUrl} />
       {sermon.fields.notesFormatted && (
         <div>
-          <h2>Sermon Notes</h2>
+          <H2>Sermon Notes</H2>
           <div
             dangerouslySetInnerHTML={{
               __html: sermon.fields.notesFormatted,

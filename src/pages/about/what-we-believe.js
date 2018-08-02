@@ -1,4 +1,5 @@
 import React from 'react';
+import { H1 } from '../../components/headers';
 import BibleQuote from '../../components/BibleQuote';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
@@ -10,7 +11,7 @@ const Page = () => (
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
     />
-    <h1>{title}</h1>
+    <H1>{title}</H1>
 
     <BibleQuote reference="Romans 6:23 (NLT)">
       "For the wages of sin is death, but the free gift of God is eternal life
