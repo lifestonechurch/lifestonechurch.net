@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styled from 'react-emotion';
+
 import Burger from './Burger';
 import * as COLORS from '../constants/colors';
-import logo from '../images/logo/logo-white.png';
+import {MIN_DESKTOP_SIZE} from '../constants';
 
-const MIN_DESKTOP_SIZE = 1163;
+import logo from '../images/logo/logo-white.png';
 
 const Container = styled.div``;
 
@@ -95,7 +96,7 @@ class DesktopMenu extends React.Component {
     isOpen: false,
   };
 
-  escapeListener = ({ key, keyCode }) => {
+  escapeListener = ({key, keyCode}) => {
     if (key === 'Escape' || keyCode === 27) {
       this.setState({
         isOpen: false,
@@ -151,7 +152,7 @@ class DesktopMenu extends React.Component {
   };
 
   render() {
-    const { children, navigation } = this.props;
+    const {children, navigation} = this.props;
     return (
       <div ref={node => (this.menuRef = node)}>
         <Container>

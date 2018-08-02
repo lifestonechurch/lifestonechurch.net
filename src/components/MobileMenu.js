@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+
 import styled from 'react-emotion';
 import Burger from './Burger';
 import * as COLORS from '../constants/colors';
+import {MIN_DESKTOP_SIZE} from '../constants';
+console.log(MIN_DESKTOP_SIZE);
+
 import logo from '../images/logo/logo-white.png';
 
 const Container = styled.div``;
-
-const MIN_DESKTOP_SIZE = 1163;
 
 const Mobile = styled.ul`
   @media (min-width: ${MIN_DESKTOP_SIZE}px) {
@@ -120,9 +122,9 @@ class MobileMenu extends React.Component {
     isOpen: false,
   };
 
-  escapeListener = ({ key, keyCode }) => {
+  escapeListener = ({key, keyCode}) => {
     if (key === 'Escape' || keyCode === 27) {
-      this.setState({ isOpen: false });
+      this.setState({isOpen: false});
     }
   };
 
@@ -135,7 +137,7 @@ class MobileMenu extends React.Component {
   }
 
   handleMobileToggle = isOpen => {
-    this.setState({ isOpen });
+    this.setState({isOpen});
   };
 
   handleHomeClick = () => {
@@ -148,14 +150,14 @@ class MobileMenu extends React.Component {
     const items = this.state.openMobileItems;
     this.setState({
       openMobileItems: items[i]
-        ? { ...items, [i]: !items[i] }
-        : { ...items, [i]: true },
+        ? {...items, [i]: !items[i]}
+        : {...items, [i]: true},
       isOpen: item.children ? this.state.isOpen : false,
     });
   };
 
   render() {
-    const { children, navigation } = this.props;
+    const {children, navigation} = this.props;
     return (
       <Container>
         <Mobile>
