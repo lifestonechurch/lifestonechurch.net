@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'react-emotion';
-import GoogleMap from './GoogleMap';
 
-import Facebook from '../images/social/facebook.svg';
-import Instagram from '../images/social/instagram.svg';
-import Twitter from '../images/social/twitter.svg';
+import GoogleMap from './GoogleMap';
+import NewsletterForm from './NewsletterForm';
+import SocialMedia from './SocialMedia';
 
 const Container = styled.div`
   margin-top: 40px;
@@ -32,56 +31,31 @@ const InnerContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 
-  @media (max-width: 750px) {
+  @media (max-width: 899px) {
     flex-direction: column;
   }
 `;
 
-const LeftColumn = styled.div`
-  width: 33%;
-
-  @media (max-width: 750px) {
-    width: 100%;
-  }
-`;
-
-const SocialMediaIcon = styled.img`
-  margin-right: 10px;
+const Column = styled.div`
+  flex: 1;
 `;
 
 const Footer = () => (
   <Container>
     <InnerContainer>
-      <LeftColumn>
-        <h4>Sundays 9:00 am or 10:30 am</h4>
+      <Column>
+        <p>Sundays 9:00 am or 10:30 am</p>
 
         <p>3443 W 12600 S, Riverton, UT 84065</p>
 
         <GoogleMap />
-      </LeftColumn>
-      <div>
-        <p>
-          <a
-            href="https://www.facebook.com/lifestonechurchutah/"
-            target="_blank"
-          >
-            <SocialMediaIcon src={Facebook} width="15px" height="15px" />lifestonechurchutah
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://www.instagram.com/lifestonechurchutah/"
-            target="_blank"
-          >
-            <SocialMediaIcon src={Instagram} width="15px" height="15px" />@lifestonechurchutah
-          </a>
-        </p>
-        <p>
-          <a href="https://twitter.com/lifestoneutah" target="_blank">
-            <SocialMediaIcon src={Twitter} width="15px" height="15px" />@lifestoneutah
-          </a>
-        </p>
-      </div>
+      </Column>
+      <Column>
+        <SocialMedia />
+      </Column>
+      <Column>
+        <NewsletterForm />
+      </Column>
     </InnerContainer>
   </Container>
 );
