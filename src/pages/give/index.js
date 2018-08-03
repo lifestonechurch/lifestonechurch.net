@@ -17,7 +17,6 @@ const Page = () => (
   <div>
     <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
     <H1>{title}</H1>
-
     <form
       id="donateplusform"
       action="https://www.paypal.com/cgi-bin/webscr"
@@ -57,28 +56,23 @@ const Page = () => (
         />
       </p>
     </form>
-
     <p>Mailing Address:</p>
     <p>
       5526 W. 13400 S.<br />
       #352<br />
       Herriman UT 84096
     </p>
-
     <BibleQuote reference="2 Corinthians 9:7 (NIV)">
       "Each of you should give what you have decided in your heart to give, not
       reluctantly or under compulsion, for God loves a cheerful giver."
     </BibleQuote>
-
     <Banner>
       <H2>{lastYear} Giving Statement</H2>
     </Banner>
-
     <p>
       To view, print, or download your giving statement, follow the steps below.
       Remember, we are here to help!
     </p>
-
     <ol>
       <li>
         <a
@@ -99,24 +93,24 @@ const Page = () => (
       </li>
       <li>Print or download your giving statement from this screen.</li>
     </ol>
-
     <p>
       Feel free to email{' '}
-      <a href="mailto:ashley@lifestonechurch.net">Ashley Smith</a> with any
-      questions regarding your giving statement.
+      <a href="mailto:ashley@lifestonechurch.net">
+        Ashley Smith (ashley@lifestonechurch.net)
+      </a>{' '}
+      with any questions regarding your giving statement.
     </p>
+    <Button linkTo="https://lifestonechurch.breezechms.com/">
+      View Giving Statment
+    </Button>
 
-    <a
-      href="https://lifestonechurch.breezechms.com/"
-      target="_blank"
-      rel="noopener"
-    >
-      <Button>View Giving Statment</Button>
-    </a>
-
-    <a href="mailto:lifestone@lifestonechurch.net?subject=Please%20help%20me%20login%20to%20Lifestone's%20database!&body=First%20%26%20Last%20Name%3A">
-      <Button>Help Me Login</Button>
-    </a>
+    <p>
+      If you need help logging in, please email{' '}
+      <a href="mailto:lifestone@lifestonechurch.net?subject=Please%20help%20me%20login%20to%20Lifestone's%20database!&body=First%20%26%20Last%20Name%3A">
+        lifestone@lifestonechurch.net
+      </a>{' '}
+      for help.
+    </p>
   </div>
 );
 
