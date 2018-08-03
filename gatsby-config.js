@@ -1,5 +1,5 @@
 require('dotenv').config();
-const {DateTime} = require('luxon');
+const { DateTime } = require('luxon');
 var humanizeList = require('humanize-list');
 
 module.exports = {
@@ -16,40 +16,33 @@ module.exports = {
       {
         name: 'About',
         children: [
-          {name: 'Visit', path: '/about/visit'},
-          {name: 'About Us', path: '/about/about-us'},
-          {name: 'Pastor', path: '/about/pastor'},
-          {name: 'Contact Us', path: '/about/contact-us'},
-          {name: 'What We Believe', path: '/about/what-we-believe'},
+          { name: 'Visit', path: '/about/visit' },
+          { name: 'About Us', path: '/about/about-us' },
+          { name: 'Pastor', path: '/about/pastor' },
+          { name: 'Contact Us', path: '/about/contact-us' },
+          { name: 'What We Believe', path: '/about/what-we-believe' },
         ],
       },
-      {name: 'Events', path: '/events'},
+      { name: 'Events', path: '/events' },
       {
         name: 'Connect',
         children: [
-          {name: 'LifeGroups', path: '/connect/lifegroups'},
-          {name: 'Serve', path: '/connect/serve'},
-          {name: 'Concern Center', path: '/connect/concern-center'},
+          { name: 'LifeGroups', path: '/connect/lifegroups' },
+          { name: 'Serve', path: '/connect/serve' },
+          { name: 'Concern Center', path: '/connect/concern-center' },
         ],
       },
       {
         name: 'Kids + Students',
         children: [
-          {name: 'Birth-Kindergarten', path: '/kids/birth-kindergarten'},
-          {name: 'Grades 1-5', path: '/kids/grades-1-5'},
-          {name: 'Grades 6-12', path: '/kids/grades-6-12'},
+          { name: 'Birth-Kindergarten', path: '/kids/birth-kindergarten' },
+          { name: 'Grades 1-5', path: '/kids/grades-1-5' },
+          { name: 'Grades 6-12', path: '/kids/grades-6-12' },
         ],
       },
-      {name: 'Little Learners', path: '/little-learners'},
-      {
-        name: 'Resources',
-        children: [
-          {name: 'Sermons', path: '/resources/sermons'},
-          {name: 'Devotionals', path: '/resources/devotionals'},
-          {name: 'Videos', path: '/resources/videos'},
-        ],
-      },
-      {name: 'Give', path: '/give'},
+      { name: 'Little Learners', path: '/little-learners' },
+      { name: 'Resources', path: '/resources' },
+      { name: 'Give', path: '/give' },
     ],
   },
   plugins: [
@@ -106,10 +99,7 @@ module.exports = {
         feeds: [
           {
             setup: ({
-              query: {
-                site: {siteMetadata},
-                allContentfulSermon: {edges},
-              },
+              query: { site: { siteMetadata }, allContentfulSermon: { edges } },
             }) => ({
               title: siteMetadata.title,
               description: siteMetadata.description,
@@ -129,16 +119,16 @@ module.exports = {
                 itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd',
               },
               custom_elements: [
-                {'itunes:subtitle': siteMetadata.podcastSubtitle},
-                {'itunes:author': siteMetadata.title},
-                {'itunes:explicit': 'clean'},
+                { 'itunes:subtitle': siteMetadata.podcastSubtitle },
+                { 'itunes:author': siteMetadata.title },
+                { 'itunes:explicit': 'clean' },
                 {
                   'itunes:summary': siteMetadata.description || ``,
                 },
                 {
                   'itunes:owner': [
-                    {'itunes:name': siteMetadata.title},
-                    {'itunes:email': siteMetadata.ownerEmail},
+                    { 'itunes:name': siteMetadata.title },
+                    { 'itunes:email': siteMetadata.ownerEmail },
                   ],
                 },
                 {
@@ -160,12 +150,9 @@ module.exports = {
               ],
             }),
             serialize: ({
-              query: {
-                site: {siteMetadata},
-                allContentfulSermon,
-              },
+              query: { site: { siteMetadata }, allContentfulSermon },
             }) =>
-              allContentfulSermon.edges.map(({node}) => ({
+              allContentfulSermon.edges.map(({ node }) => ({
                 title: node.title || '',
                 description: node.shortDescription || '',
                 url: `${siteMetadata.siteUrl}/resources/sermons/${
@@ -188,7 +175,7 @@ module.exports = {
                   },
                   {
                     'itunes:author': humanizeList(
-                      node.speaker.map(s => s.name, {oxfordComma: true})
+                      node.speaker.map(s => s.name, { oxfordComma: true })
                     ),
                   },
                   {
@@ -204,7 +191,7 @@ module.exports = {
                         : ``
                     }`,
                   },
-                  {'itunes:explicit': 'clean'},
+                  { 'itunes:explicit': 'clean' },
                   {
                     'itunes:image': {
                       _attr: {
@@ -217,7 +204,7 @@ module.exports = {
                       },
                     },
                   },
-                  {'itunes:duration': node.audioDuration},
+                  { 'itunes:duration': node.audioDuration },
                 ],
               })),
             query: `

@@ -9,7 +9,7 @@ import logo from '../../images/logo/logo2.jpg';
 import itunesImage from './itunes.png';
 import rssImage from './rss.png';
 
-const title = 'Sermons';
+const title = 'Resources';
 
 const SubscribeImage = styled.img`
   margin-right: 12px;
@@ -20,10 +20,8 @@ const Page = ({ data }) => {
 
   return (
     <div>
-      <Breadcrumbs
-        path={[{ title: 'Home', url: '/' }, { title: 'Resources' }]}
-        title={title}
-      />
+      <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
+
       <H1>{title}</H1>
 
       <div>

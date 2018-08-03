@@ -39,8 +39,8 @@ export default ({ data }) => {
       <Breadcrumbs
         path={[
           { title: 'Home', url: '/' },
-          { title: 'Resources' },
-          { title: 'Sermons', url: '/resources/sermons' },
+          { title: 'Resources', url: '/resources' },
+          { title: 'Sermons' },
         ]}
         title={sermon.title}
       />
