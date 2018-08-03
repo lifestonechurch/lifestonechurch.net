@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-import { H1, H2, H3 } from '../../components/headers';
 import Banner from '../../components/Banner';
-import LifeGroup from '../../components/LifeGroup';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import Button from '../../components/Button';
 import Card from '../../components/Card';
+import { H1, H2, H3 } from '../../components/headers';
+import LifeGroup from '../../components/LifeGroup';
 
 import littleLearnersImage from './little-learners.jpg';
 
@@ -21,6 +22,10 @@ const Curriculum = styled.div`
     width: 500px;
     max-width: 90%;
   }
+`;
+
+const Center = styled.div`
+  text-align: center;
 `;
 
 const Page = () => {
@@ -40,6 +45,17 @@ const Page = () => {
         Little Learners Director Ali Gardner with any questions:{' '}
         <a href="mailto:ali@lifestonechurch.net">ali@lifestonechurch.net</a>
       </p>
+
+      <Button linkTo="#enrollment-form">Enroll now</Button>
+
+      <p>
+        Lifestone Church is currently hiring teachers and teacher’s assistants
+        for our Lifestone Little Learners program.
+      </p>
+
+      <Button linkTo="https://docs.google.com/document/d/1D3bT-6dOcHE9YDJnXG6Bq0eVAiIOElGKLyfCrAhafks/edit?usp=sharing">
+        View Positions
+      </Button>
 
       <Banner>
         <H2>Class Descriptions</H2>
