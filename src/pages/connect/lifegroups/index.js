@@ -5,7 +5,8 @@ import Banner from '../../../components/Banner';
 import LifeGroup from '../../../components/LifeGroup';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 
-import lifegroupsImage from './lifegroups.jpg';
+// import lifegroupsImage from './lifegroups.jpg';
+import summerSessionImage from './summer-session.jpg';
 
 const title = 'LifeGroups';
 
@@ -33,7 +34,7 @@ const Page = ({ data }) => {
       />
       <H1>{title}</H1>
 
-      <img src={lifegroupsImage} />
+      <img src={summerSessionImage} />
 
       <p>
         Connect to God by connecting to His people & His Word! LifeGroups are
