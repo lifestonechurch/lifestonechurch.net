@@ -1,22 +1,15 @@
 import React from 'react';
 import styled from 'react-emotion';
+
 import { H1 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
+import EmbedForm from '../components/EmbedForm';
 
 const Image = styled.img`
   max-height: 400px;
   max-width: 100%;
   display: block;
   margin: 0 auto;
-`;
-
-const Registration = styled.iframe`
-  display: block;
-  margin: 0 auto;
-  width: 600px;
-  max-width: 100%;
-  height: 700px;
-  border: 1px solid #fff;
 `;
 
 export default ({ data }) => {
@@ -41,7 +34,7 @@ export default ({ data }) => {
         />
       )}
 
-      <Registration src={event.registrationLink} />
+      <EmbedForm src={event.registrationLink} />
     </div>
   );
 };
