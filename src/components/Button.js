@@ -31,10 +31,6 @@ const Container = styled.div`
   }
 `;
 
-const ClearFix = styled.div`
-  clear: both;
-`;
-
 const Button = ({ children = 'Ok', linkTo }) => {
   const isExternal = linkTo
     ? linkTo.startsWith('http://') ||
