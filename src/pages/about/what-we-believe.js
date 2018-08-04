@@ -60,19 +60,6 @@ const Page = () => (
         We affirm the Baptist Faith and Message
       </a>
     </p>
-
-    <p>
-      We are partnered with the{' '}
-      <a href="https://www.namb.net" target="_blank" rel="noopener">
-        NAMB
-      </a>, the{' '}
-      <a href="http://www.uisbc.org" target="_blank" rel="noopener">
-        UISBC
-      </a>, and the{' '}
-      <a href="https://slba.org" target="_blank" rel="noopener">
-        Salt Lake Baptist Association
-      </a>.
-    </p>
   </div>
 );
 
