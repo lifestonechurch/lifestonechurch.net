@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 
 const Container = styled.div`
-  display: block;
+  position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;

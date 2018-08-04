@@ -17,6 +17,7 @@ const Curriculum = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: stretch;
   flex-wrap: wrap;
 
   > div {
