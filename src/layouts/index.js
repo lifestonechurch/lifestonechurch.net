@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from 'react-emotion';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import * as COLORS from '../constants/colors';
 
 import './index.css';
 
@@ -11,6 +13,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: ${COLORS.LIGHT_GRAY};
 `;
 
 const Content = styled.div`

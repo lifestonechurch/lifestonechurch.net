@@ -17,6 +17,7 @@ import { H3 } from './headers';
 
 const Container = styled.div`
   & a {
+    color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
   }
 
@@ -30,6 +31,14 @@ const InnerContainer = styled.div`
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+`;
+
+const TextArea = styled.div`
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 `;
 
 const Date = styled.div`
@@ -62,6 +71,8 @@ const EventCard = ({
             <Img sizes={imageSizes} style={{ width: '100%' }} />
           </Link>
           <H3>{title}</H3>
+
+          <Tag color={COLORS.BRAND}>{ministries[0].name}</Tag>
           {dates ? (
             <Date>
               {shortFormatDate(getFirstStartDate(dates))} -{' '}

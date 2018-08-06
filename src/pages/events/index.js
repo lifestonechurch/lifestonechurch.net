@@ -16,9 +16,15 @@ const title = 'Events';
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 24px;
 `;
+
+// <Img
+//   sizes={data.upcomingEvents.childImageSharp.sizes}
+//   style={{ maxWidth: 940 }}
+//   alt="Upcoming Events"
+// />
 
 const Page = ({ data }) => {
   const events = data.allContentfulEvent.edges;
@@ -35,12 +41,6 @@ const Page = ({ data }) => {
     <div>
       <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
       <H1>{title}</H1>
-
-      <Img
-        sizes={data.upcomingEvents.childImageSharp.sizes}
-        style={{ maxWidth: 940 }}
-        alt="Upcoming Events"
-      />
 
       <Container>
         {futureEvents.map(({ node }, i) => (
