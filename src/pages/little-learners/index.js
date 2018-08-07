@@ -66,7 +66,7 @@ const Page = () => {
           <H3>2’s and 3’s</H3>
           <p>Tuesday, Thursday 8:30am-11:30am</p>
 
-          <p>$135/ Month September - May</p>
+          <p>$120/Month September-May</p>
 
           <ul>
             <li>Bible Lessons</li>
@@ -81,14 +81,9 @@ const Page = () => {
 
         <Card>
           <H3>4’s and 5’s</H3>
-          <p>Choose from 2 options:</p>
+          <p>Tuesday, Thursday 8:30am-11:30am</p>
 
-          <ul>
-            <li>Tuesday, Thursday 8:30am-11:30am</li>
-            <li>Tuesday, Thursday 12:00pm-3:00pm</li>
-          </ul>
-
-          <p>$135/ Month September - May</p>
+          <p>$120/Month September-May</p>
 
           <ul>
             <li>Bible Lessons</li>
