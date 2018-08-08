@@ -36,7 +36,8 @@ const Page = ({ data }) => {
   const youthEvents = events.filter(
     ({ node }) =>
       node.ministry !== undefined &&
-      node.ministry.map(m => m.name).includes('Youth')
+      node.ministry.map(m => m.name).includes('Youth') &&
+      new Date(node.startDate) > new Date()
   );
 
   return (
@@ -135,6 +136,7 @@ export const query = graphql`
           id
           name
           startDate
+          endDate
           shortDescription
           description {
             description

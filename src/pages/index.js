@@ -75,12 +75,14 @@ const IndexPage = ({ data }) => {
     link: node.link,
   }));
   const sermon = data.allContentfulSermon.edges[0].node;
-  const events = data.allContentfulEvent.edges.map(({ node }) => ({
-    id: node.id,
-    name: node.name,
-    startDate: node.startDate,
-    slug: node.fields.slug,
-  }));
+  const events = data.allContentfulEvent.edges
+    .filter(({ node }) => new Date(node.startDate) > new Date())
+    .map(({ node }) => ({
+      id: node.id,
+      name: node.name,
+      startDate: node.startDate,
+      slug: node.fields.slug,
+    }));
 
   return (
     <div>
@@ -175,6 +177,7 @@ export const query = graphql`
           id
           name
           startDate
+          endDate
           shortDescription
           fields {
             slug

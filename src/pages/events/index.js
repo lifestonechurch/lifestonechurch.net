@@ -18,24 +18,26 @@ const Page = ({ data }) => {
 
       <img src={upcomingEvents} alt="Upcoming Events" />
 
-      {events.map(({ node }, i) => (
-        <div key={node.id}>
-          {i === 0 ||
-          getMonthNumber(events[i - 1].node.startDate) <
-            getMonthNumber(node.startDate) ? (
-            <Banner>{getMonthName(node.startDate)}</Banner>
-          ) : (
-            ''
-          )}
-          <EventCard
-            linkTo={`/events/${node.fields.slug}`}
-            startDate={node.startDate}
-            endDate={node.endDate}
-            title={node.name}
-            description={node.shortDescription}
-          />
-        </div>
-      ))}
+      {events
+        .filter(({ node }) => new Date(node.startDate) > new Date())
+        .map(({ node }, i) => (
+          <div key={node.id}>
+            {i === 0 ||
+            getMonthNumber(events[i - 1].node.startDate) <
+              getMonthNumber(node.startDate) ? (
+              <Banner>{getMonthName(node.startDate)}</Banner>
+            ) : (
+              ''
+            )}
+            <EventCard
+              linkTo={`/events/${node.fields.slug}`}
+              startDate={node.startDate}
+              endDate={node.endDate}
+              title={node.name}
+              description={node.shortDescription}
+            />
+          </div>
+        ))}
     </div>
   );
 };
@@ -50,6 +52,7 @@ export const query = graphql`
           id
           name
           startDate
+          endDate
           shortDescription
           description {
             description
