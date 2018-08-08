@@ -175,7 +175,6 @@ export const query = graphql`
           id
           name
           startDate
-          endDate
           shortDescription
           fields {
             slug

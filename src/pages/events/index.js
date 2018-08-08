@@ -50,7 +50,6 @@ export const query = graphql`
           id
           name
           startDate
-          endDate
           shortDescription
           description {
             description
