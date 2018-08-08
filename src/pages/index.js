@@ -113,7 +113,7 @@ const IndexPage = ({ data }) => {
           <RowContainer>
             <p>
               We’re a Bible based church in Riverton, Utah. We would love for
-              you to <Link to="/visit/">visit us</Link>!
+              you to <Link to="/about/visit/">visit us</Link>!
             </p>
           </RowContainer>
         </RowItem>
