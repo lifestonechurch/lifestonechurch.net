@@ -118,32 +118,6 @@ const Page = () => {
       </Curriculum>
 
       <Banner>
-        <H2>Enrollment Form</H2>
-      </Banner>
-
-      <iframe
-        src="https://lifestonechurch.breezechms.com/form/1eb0c6"
-        style={{
-          width: `100%`,
-          height: 3100,
-          margin: `0 auto`,
-          border: `1px solid #fff`,
-        }}
-      />
-
-      <Banner>
-        <H2>Monthly Payment Options</H2>
-      </Banner>
-
-      <p>Coming Soon</p>
-
-      <Banner>
-        <H2>Calendar of Events</H2>
-      </Banner>
-
-      <p>Coming Soon</p>
-
-      <Banner>
         <H2>Meet the Director</H2>
       </Banner>
 
@@ -168,6 +142,32 @@ const Page = () => {
           academic learning!
         </p>
       </Director>
+
+      <Banner>
+        <H2>Enrollment Form</H2>
+      </Banner>
+
+      <iframe
+        src="https://lifestonechurch.breezechms.com/form/1eb0c6"
+        style={{
+          width: `100%`,
+          height: 3100,
+          margin: `0 auto`,
+          border: `1px solid #fff`,
+        }}
+      />
+
+      <Banner>
+        <H2>Monthly Payment Options</H2>
+      </Banner>
+
+      <p>Coming Soon</p>
+
+      <Banner>
+        <H2>Calendar of Events</H2>
+      </Banner>
+
+      <p>Coming Soon</p>
     </div>
   );
 };
