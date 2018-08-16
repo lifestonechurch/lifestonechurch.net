@@ -95,8 +95,8 @@ const Page = () => (
     </ol>
     <p>
       Feel free to email{' '}
-      <a href="mailto:ashley@lifestonechurch.net">
-        Ashley Smith (ashley@lifestonechurch.net)
+      <a href="mailto:denise@lifestonechurch.net">
+        Denise McGee (denise@lifestonechurch.net)
       </a>{' '}
       with any questions regarding your giving statement.
     </p>
