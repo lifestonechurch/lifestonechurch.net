@@ -9,6 +9,7 @@ import { H1, H2, H3 } from '../../components/headers';
 import LifeGroup from '../../components/LifeGroup';
 
 import littleLearnersImage from './little-learners.jpg';
+import directorImqge from './ali-gardner.jpg';
 
 const title = 'Little Learners';
 
@@ -28,6 +29,25 @@ const Center = styled.div`
   text-align: center;
 `;
 
+const Director = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+`;
+
+const FloatLeft = styled.div`
+  float: left;
+  margin: 0 20px 20px 0;
+
+  img {
+    max-height: 400px;
+  }
+
+  @media (max-width: 530px) {
+    text-align: center;
+    float: inherit;
+  }
+`;
+
 const Page = () => {
   const isEnrolling = true;
 
@@ -36,7 +56,7 @@ const Page = () => {
       <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
       <H1>{title}</H1>
 
-      <img src={littleLearnersImage} />
+      <img alt="Lifestone Little Learners" src={littleLearnersImage} />
 
       <p>
         Lifestone Little Learners provides a safe learning environment where 2-5
@@ -122,6 +142,32 @@ const Page = () => {
       </Banner>
 
       <p>Coming Soon</p>
+
+      <Banner>
+        <H2>Meet the Director</H2>
+      </Banner>
+
+      <Director>
+        <FloatLeft>
+          <img alt="Ali Gardner" src={directorImqge} />
+        </FloatLeft>
+
+        <p>
+          Ali Gardner has served in the education field for over 9 years. For 7
+          years she taught elementary school including Kindergarten, 4th, 5th,
+          and 6th grades. During her time teaching, Ali also served on a
+          curriculum planning team which helped create a character development
+          program in partnership with the Medal of Honor Foundation. Ali
+          currently teaches English online for a Christian based school that
+          outreaches to families in China. She earned her Bachelor’s Degree in
+          Sociology from the University of California Santa Barbara, a Master’s
+          Degree in Education with emphasis in Professional Learning Communities
+          from Grand Canyon University, and has a Multiple Subject Teaching
+          Credential. Ali’s goal for the students at Lifestone Little Learners
+          is that they discover God’s love while also developing a love of
+          academic learning!
+        </p>
+      </Director>
     </div>
   );
 };
