@@ -17,7 +17,7 @@ const Page = () => (
     <p>
       We are so excited to connect with you soon and help you experience the
       very best God has for your life! Feel free to email us with any prayer
-      requests, questions about joining, or any other queries.
+      requests, questions about visiting, or any other queries.
     </p>
     <p>Mailing Address:</p>
     <p>
