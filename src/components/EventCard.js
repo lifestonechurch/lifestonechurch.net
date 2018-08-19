@@ -3,7 +3,12 @@ import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 
-import { shortFormatDate } from '../utils/formatDate';
+import {
+  shortFormatDate,
+  getDayOfWeek,
+  getFirstStartDate,
+  getLastEndDate,
+} from '../utils/formatDate';
 import * as COLORS from '../constants/colors';
 import Card from './Card';
 import { H3 } from './headers';
@@ -26,16 +31,31 @@ const LearnMore = styled.div`
   color: ${COLORS.BRAND};
 `;
 
-const EventCard = ({ title, startDate, endDate, description, linkTo }) => (
+const EventCard = ({
+  title,
+  description,
+  linkTo,
+  startDate,
+  endDate,
+  dates,
+}) => (
   <Container>
     <Link to={linkTo}>
       <Card>
         <H3>{title}</H3>
-        <Date>
-          {endDate
-            ? `${shortFormatDate(startDate)} - ${shortFormatDate(endDate)}`
-            : shortFormatDate(startDate)}
-        </Date>
+        {dates ? (
+          <Date>
+            {shortFormatDate(getFirstStartDate(dates))} -{' '}
+            {shortFormatDate(getLastEndDate(dates))}
+          </Date>
+        ) : (
+          <Date>
+            {startDate && endDate
+              ? `${shortFormatDate(startDate)} - ${shortFormatDate(endDate)}`
+              : shortFormatDate(startDate)}
+          </Date>
+        )}
+        {dates && dates.map(event => event.timeDescription).join(' or ')}
         <p>{description}</p>
         <LearnMore>Learn More</LearnMore>
       </Card>
@@ -45,10 +65,17 @@ const EventCard = ({ title, startDate, endDate, description, linkTo }) => (
 
 EventCard.propTypes = {
   title: PropTypes.string,
-  startDate: PropTypes.string,
-  endDate: PropTypes.string,
   description: PropTypes.string,
   linkTo: PropTypes.string.isRequired,
+  startDate: PropTypes.string,
+  dates: PropTypes.arrayOf(
+    PropTypes.shape({
+      startDate: PropTypes.string,
+      endDate: PropTypes.string,
+      repeatingSchedule: PropTypes.string,
+      timeDescription: PropTypes.string,
+    })
+  ),
 };
 
 export default EventCard;

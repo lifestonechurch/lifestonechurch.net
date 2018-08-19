@@ -6,7 +6,6 @@ import styled from 'react-emotion';
 import Burger from './Burger';
 import * as COLORS from '../constants/colors';
 import {MIN_DESKTOP_SIZE} from '../constants';
-console.log(MIN_DESKTOP_SIZE);
 
 import logo from '../images/logo/logo-white.png';
 

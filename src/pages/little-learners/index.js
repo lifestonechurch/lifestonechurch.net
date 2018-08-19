@@ -19,7 +19,7 @@ const Curriculum = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
 
-  div {
+  > div {
     width: 500px;
     max-width: 90%;
   }

@@ -24,7 +24,7 @@ const Content = styled.div`
 
 const Sidebar = styled.div``;
 
-const TemplateWrapper = ({children, data, location}) => {
+const TemplateWrapper = ({ children, data, location }) => {
   const navigation = data.site.siteMetadata.navigation;
 
   if (location.pathname === '/') {
