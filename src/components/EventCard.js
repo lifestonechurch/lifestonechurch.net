@@ -72,7 +72,10 @@ const EventCard = ({
             <div>
               <H3>{title}</H3>
 
-              <Tag color={COLORS.BRAND}>{ministries[0].name}</Tag>
+              {ministries && (
+                <Tag color={COLORS.BRAND}>{ministries[0].name}</Tag>
+              )}
+
               {dates ? (
                 <Date>
                   {shortFormatDate(getFirstStartDate(dates))} -{' '}
