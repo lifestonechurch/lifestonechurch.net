@@ -41,7 +41,7 @@ const Page = ({ data }) => {
 
   const youthEvents = events.filter(
     ({ node }) =>
-      node.ministry !== undefined &&
+      node.ministry &&
       node.ministry.map(m => m.name).includes('Youth') &&
       new Date(node.startDate) > new Date()
   );

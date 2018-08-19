@@ -15,10 +15,9 @@ export const getMonthName = date => DateTime.fromISO(date).toFormat('LLLL');
 export const getDayOfWeek = date => DateTime.fromISO(date).toFormat('cccc');
 
 export const getFirstStartDate = dates =>
-  console.log(dates) ||
   dates.reduce(
     (firstDate, current) =>
-      console.log(firstDate, current) || !firstDate
+      !firstDate
         ? current.startDate
         : new Date(current.startDate) < new Date(firstDate)
           ? current.startDate
