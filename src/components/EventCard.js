@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 
@@ -10,13 +11,34 @@ import {
   getLastEndDate,
 } from '../utils/formatDate';
 import * as COLORS from '../constants/colors';
-import Card from './Card';
+import HoverCard from './HoverCard';
+import Tag from './Tag';
 import { H3 } from './headers';
 
 const Container = styled.div`
   & a {
+    color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
   }
+
+  > div {
+    height: 100%;
+  }
+`;
+
+const InnerContainer = styled.div`
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const TextArea = styled.div`
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 `;
 
 const Date = styled.div`
@@ -38,28 +60,43 @@ const EventCard = ({
   startDate,
   endDate,
   dates,
+  ministries,
+  imageSizes,
 }) => (
   <Container>
-    <Link to={linkTo}>
-      <Card>
-        <H3>{title}</H3>
-        {dates ? (
-          <Date>
-            {shortFormatDate(getFirstStartDate(dates))} -{' '}
-            {shortFormatDate(getLastEndDate(dates))}
-          </Date>
-        ) : (
-          <Date>
-            {startDate && endDate
-              ? `${shortFormatDate(startDate)} - ${shortFormatDate(endDate)}`
-              : shortFormatDate(startDate)}
-          </Date>
-        )}
-        {dates && dates.map(event => event.timeDescription).join(' or ')}
-        <p>{description}</p>
-        <LearnMore>Learn More</LearnMore>
-      </Card>
-    </Link>
+    <HoverCard>
+      <Link to={linkTo}>
+        <InnerContainer>
+          <Img sizes={imageSizes} style={{ width: '100%' }} />
+          <TextArea>
+            <div>
+              <H3>{title}</H3>
+
+              <Tag color={COLORS.BRAND}>{ministries[0].name}</Tag>
+              {dates ? (
+                <Date>
+                  {shortFormatDate(getFirstStartDate(dates))} -{' '}
+                  {shortFormatDate(getLastEndDate(dates))}
+                </Date>
+              ) : (
+                <Date>
+                  {startDate && endDate
+                    ? `${shortFormatDate(startDate)} - ${shortFormatDate(
+                        endDate
+                      )}`
+                    : shortFormatDate(startDate)}
+                </Date>
+              )}
+              {dates && (
+                <p>{dates.map(event => event.timeDescription).join(' or ')}</p>
+              )}
+              <p>{description}</p>
+            </div>
+            <LearnMore>Learn More</LearnMore>
+          </TextArea>
+        </InnerContainer>
+      </Link>
+    </HoverCard>
   </Container>
 );
 

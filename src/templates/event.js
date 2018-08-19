@@ -4,7 +4,7 @@ import styled from 'react-emotion';
 import { H1 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
 import EmbedForm from '../components/EmbedForm';
-import Card from '../components/Card';
+import HoverCard from '../components/HoverCard';
 import { shortFormatDate, getDayOfWeek } from '../utils/formatDate';
 import * as COLORS from '../constants/colors';
 
@@ -31,6 +31,10 @@ const EventContainer = styled.div`
   & a {
     text-decoration: none;
   }
+`;
+
+const CardInner = styled.div`
+  padding: 20px;
 `;
 
 const Register = styled.div`
@@ -85,17 +89,19 @@ export default ({ data }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Card>
-                  <h2>{e.timeDescription}</h2>
-                  <p>
-                    {shortFormatDate(e.startDate)} -{' '}
-                    {shortFormatDate(e.endDate)}
-                  </p>
-                  <p>
-                    {e.startTime} - {e.endTime}
-                  </p>
-                  <Register>Register</Register>
-                </Card>
+                <HoverCard>
+                  <CardInner>
+                    <h2>{e.timeDescription}</h2>
+                    <p>
+                      {shortFormatDate(e.startDate)} -{' '}
+                      {shortFormatDate(e.endDate)}
+                    </p>
+                    <p>
+                      {e.startTime} - {e.endTime}
+                    </p>
+                    <Register>Register</Register>
+                  </CardInner>
+                </HoverCard>
               </a>
             </EventContainer>
           ))}

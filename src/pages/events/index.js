@@ -1,4 +1,7 @@
 import React from 'react';
+import Img from 'gatsby-image';
+import styled from 'react-emotion';
+
 import { H1 } from '../../components/headers';
 import EventCard from '../../components/EventCard';
 import Banner from '../../components/Banner';
@@ -9,9 +12,19 @@ import {
   getLastEndDate,
 } from '../../utils/formatDate';
 
-import upcomingEvents from './upcoming-events.jpg';
-
 const title = 'Events';
+
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 24px;
+`;
+
+// <Img
+//   sizes={data.upcomingEvents.childImageSharp.sizes}
+//   style={{ maxWidth: 940 }}
+//   alt="Upcoming Events"
+// />
 
 const Page = ({ data }) => {
   const events = data.allContentfulEvent.edges;
@@ -29,27 +42,21 @@ const Page = ({ data }) => {
       <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
       <H1>{title}</H1>
 
-      <img src={upcomingEvents} alt="Upcoming Events" />
-
-      {futureEvents.map(({ node }, i, array) => (
-        <div key={node.id}>
-          {i === 0 ||
-          getMonthNumber(array[i - 1].node.startDate) <
-            getMonthNumber(node.startDate) ? (
-            <Banner>{getMonthName(node.startDate)}</Banner>
-          ) : (
-            ''
-          )}
+      <Container>
+        {futureEvents.map(({ node }, i) => (
           <EventCard
+            key={node.id}
             linkTo={`/events/${node.fields.slug}`}
             title={node.name}
             description={node.shortDescription}
             startDate={node.startDate}
             endDate={node.endDate}
             dates={node.dateAndRegistration}
+            ministries={node.ministry}
+            imageSizes={node.image.sizes}
           />
-        </div>
-      ))}
+        ))}
+      </Container>
     </div>
   );
 };
@@ -58,6 +65,15 @@ export default Page;
 
 export const query = graphql`
   query EventsQuery {
+    upcomingEvents: file(
+      relativePath: { eq: "pages/events/upcoming-events.jpg" }
+    ) {
+      childImageSharp {
+        sizes(maxWidth: 940, maxHeight: 300) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
     allContentfulEvent(sort: { fields: [startDate], order: ASC }) {
       edges {
         node {
@@ -80,10 +96,13 @@ export const query = graphql`
             description
           }
           image {
-            id
-            file {
-              url
+            sizes(maxWidth: 320) {
+              ...GatsbyContentfulSizes
             }
+          }
+          ministry {
+            id
+            name
           }
           fields {
             slug
