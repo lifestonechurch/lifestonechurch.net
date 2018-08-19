@@ -26,6 +26,10 @@ const Curriculum = styled.div`
   }
 `;
 
+const CardInner = styled.div`
+  padding: 20px;
+`;
+
 const Center = styled.div`
   text-align: center;
 `;
@@ -84,37 +88,41 @@ const Page = () => {
 
       <Curriculum>
         <Card>
-          <H3>2’s and 3’s</H3>
-          <p>Tuesday, Thursday 8:30am-11:30am</p>
+          <CardInner>
+            <H3>2’s and 3’s</H3>
+            <p>Tuesday, Thursday 8:30am-11:30am</p>
 
-          <p>$120/Month September-May</p>
+            <p>$120/Month September-May</p>
 
-          <ul>
-            <li>Bible Lessons</li>
-            <li>Communication/Social Skills</li>
-            <li>Exposure to letters, numbers, and colors</li>
-            <li>Small & large motor skills</li>
-            <li>Art</li>
-            <li>Music</li>
-            <li>Physical Education</li>
-          </ul>
+            <ul>
+              <li>Bible Lessons</li>
+              <li>Communication/Social Skills</li>
+              <li>Exposure to letters, numbers, and colors</li>
+              <li>Small & large motor skills</li>
+              <li>Art</li>
+              <li>Music</li>
+              <li>Physical Education</li>
+            </ul>
+          </CardInner>
         </Card>
 
         <Card>
-          <H3>4’s and 5’s</H3>
-          <p>Tuesday, Thursday 8:30am-11:30am</p>
+          <CardInner>
+            <H3>4’s and 5’s</H3>
+            <p>Tuesday, Thursday 8:30am-11:30am</p>
 
-          <p>$120/Month September-May</p>
+            <p>$120/Month September-May</p>
 
-          <ul>
-            <li>Bible Lessons</li>
-            <li>Communication/Social Skills</li>
-            <li>Early Math and Literacy</li>
-            <li>Introduction to Writing</li>
-            <li>Art</li>
-            <li>Music</li>
-            <li>Physical Education</li>
-          </ul>
+            <ul>
+              <li>Bible Lessons</li>
+              <li>Communication/Social Skills</li>
+              <li>Early Math and Literacy</li>
+              <li>Introduction to Writing</li>
+              <li>Art</li>
+              <li>Music</li>
+              <li>Physical Education</li>
+            </ul>
+          </CardInner>
         </Card>
       </Curriculum>
 

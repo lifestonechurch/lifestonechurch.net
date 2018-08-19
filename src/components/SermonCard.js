@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import Link from 'gatsby-link';
 import formatDate from '../utils/formatDate';
-import Card from './Card';
+import HoverCard from './HoverCard';
 
 const Container = styled.div`
   & a {
@@ -40,10 +40,10 @@ const MetaData = styled.div`
   margin-bottom: 5px;
 `;
 
-const SermonCard = ({linkTo, image, title, date, speakers, passage}) => (
+const SermonCard = ({ linkTo, image, title, date, speakers, passage }) => (
   <Container>
     <Link to={linkTo}>
-      <Card>
+      <HoverCard>
         <InnerContainer>
           <Img src={image} />
           <Text>
@@ -53,7 +53,7 @@ const SermonCard = ({linkTo, image, title, date, speakers, passage}) => (
             <MetaData>{passage}</MetaData>
           </Text>
         </InnerContainer>
-      </Card>
+      </HoverCard>
     </Link>
   </Container>
 );

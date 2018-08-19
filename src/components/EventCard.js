@@ -11,7 +11,7 @@ import {
   getLastEndDate,
 } from '../utils/formatDate';
 import * as COLORS from '../constants/colors';
-import Card from './Card';
+import HoverCard from './HoverCard';
 import Tag from './Tag';
 import { H3 } from './headers';
 
@@ -64,33 +64,39 @@ const EventCard = ({
   imageSizes,
 }) => (
   <Container>
-    <Card>
-      <InnerContainer>
-        <div>
-          <Link to={linkTo}>
-            <Img sizes={imageSizes} style={{ width: '100%' }} />
-          </Link>
-          <H3>{title}</H3>
+    <HoverCard>
+      <Link to={linkTo}>
+        <InnerContainer>
+          <Img sizes={imageSizes} style={{ width: '100%' }} />
+          <TextArea>
+            <div>
+              <H3>{title}</H3>
 
-          <Tag color={COLORS.BRAND}>{ministries[0].name}</Tag>
-          {dates ? (
-            <Date>
-              {shortFormatDate(getFirstStartDate(dates))} -{' '}
-              {shortFormatDate(getLastEndDate(dates))}
-            </Date>
-          ) : (
-            <Date>
-              {startDate && endDate
-                ? `${shortFormatDate(startDate)} - ${shortFormatDate(endDate)}`
-                : shortFormatDate(startDate)}
-            </Date>
-          )}
-          {dates && dates.map(event => event.timeDescription).join(' or ')}
-          <p>{description}</p>
-        </div>
-        <LearnMore>Learn More</LearnMore>
-      </InnerContainer>
-    </Card>
+              <Tag color={COLORS.BRAND}>{ministries[0].name}</Tag>
+              {dates ? (
+                <Date>
+                  {shortFormatDate(getFirstStartDate(dates))} -{' '}
+                  {shortFormatDate(getLastEndDate(dates))}
+                </Date>
+              ) : (
+                <Date>
+                  {startDate && endDate
+                    ? `${shortFormatDate(startDate)} - ${shortFormatDate(
+                        endDate
+                      )}`
+                    : shortFormatDate(startDate)}
+                </Date>
+              )}
+              {dates && (
+                <p>{dates.map(event => event.timeDescription).join(' or ')}</p>
+              )}
+              <p>{description}</p>
+            </div>
+            <LearnMore>Learn More</LearnMore>
+          </TextArea>
+        </InnerContainer>
+      </Link>
+    </HoverCard>
   </Container>
 );
 

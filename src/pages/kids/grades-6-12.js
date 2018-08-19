@@ -22,6 +22,12 @@ const Month = styled.div`
   margin: 10px 0px;
 `;
 
+const EventContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 24px;
+`;
+
 const GalleryContainer = styled.div`
   max-width: 900px;
   margin: 0 auto;
@@ -103,17 +109,21 @@ const Page = ({ data }) => {
         <H2>Events</H2>
       </Banner>
 
-      {youthEvents.map(({ node }, i) => (
-        <div key={node.id}>
+      <EventContainer>
+        {youthEvents.map(({ node }, i) => (
           <EventCard
+            key={node.id}
             linkTo={`/events/${node.fields.slug}`}
-            startDate={node.startDate}
-            endDate={node.endDate}
             title={node.name}
             description={node.shortDescription}
+            startDate={node.startDate}
+            endDate={node.endDate}
+            dates={node.dateAndRegistration}
+            ministries={node.ministry}
+            imageSizes={node.image.sizes}
           />
-        </div>
-      ))}
+        ))}
+      </EventContainer>
 
       <Banner>
         <H2>Photos</H2>
@@ -137,14 +147,23 @@ export const query = graphql`
           name
           startDate
           endDate
+          dateAndRegistration {
+            id
+            timeDescription
+            startDate
+            endDate
+            startTime
+            endTime
+            repeatingSchedule
+            registrationLink
+          }
           shortDescription
           description {
             description
           }
           image {
-            id
-            file {
-              url
+            sizes(maxWidth: 320) {
+              ...GatsbyContentfulSizes
             }
           }
           fields {
