@@ -1,14 +1,19 @@
 import React from 'react';
+import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
 import { H1, H2 } from '../../../components/headers';
 import BreezeForm from '../../../components/BreezeForm';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 
-import volunteer from './volunteer.jpg';
-
 const title = 'Serve';
 
-const Page = () => (
+const Image = styled.div`
+  margin: 0 auto;
+  max-width: 900px;
+`;
+
+const Page = ({ data }) => (
   <div>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
@@ -16,7 +21,9 @@ const Page = () => (
     />
     <H1>{title}</H1>
 
-    <img src={volunteer} />
+    <Image>
+      <Img sizes={data.volunteerImage.childImageSharp.sizes} />
+    </Image>
 
     <p>
       Already committed to a LifeGroup and ready to start serving at Lifestone?
@@ -109,3 +116,17 @@ const Page = () => (
 );
 
 export default Page;
+
+export const query = graphql`
+  query ServeQuery {
+    volunteerImage: file(
+      relativePath: { eq: "pages/connect/serve/volunteer.jpg" }
+    ) {
+      childImageSharp {
+        sizes(maxWidth: 900) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+  }
+`;

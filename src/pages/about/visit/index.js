@@ -1,19 +1,23 @@
 import React from 'react';
 import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
 import { H1 } from '../../../components/headers';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import GoogleMap from '../../../components/GoogleMap';
 
-import cafe from './cafe.jpg';
-
 const title = 'Visit';
+
+const Image = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+`;
 
 const MapContainer = styled.div`
   max-width: 900px;
 `;
 
-const Visit = () => (
+const Visit = ({ data }) => (
   <div>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
@@ -21,7 +25,9 @@ const Visit = () => (
     />
     <H1>{title}</H1>
 
-    <img src={cafe} />
+    <Image>
+      <Img sizes={data.cafeImage.childImageSharp.sizes} />
+    </Image>
 
     <p>
       When you’re visiting a church for the first time, there can sometimes be
@@ -93,3 +99,15 @@ const Visit = () => (
 );
 
 export default Visit;
+
+export const query = graphql`
+  query VisitQuery {
+    cafeImage: file(relativePath: { eq: "pages/about/visit/cafe.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 700) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+  }
+`;

@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import styled from 'react-emotion';
 
 import { H1 } from '../../components/headers';
@@ -19,12 +18,6 @@ const Container = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 24px;
 `;
-
-// <Img
-//   sizes={data.upcomingEvents.childImageSharp.sizes}
-//   style={{ maxWidth: 940 }}
-//   alt="Upcoming Events"
-// />
 
 const Page = ({ data }) => {
   const events = data.allContentfulEvent.edges;

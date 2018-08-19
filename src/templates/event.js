@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import styled from 'react-emotion';
 
 import { H1 } from '../components/headers';
@@ -8,11 +9,9 @@ import HoverCard from '../components/HoverCard';
 import { shortFormatDate, getDayOfWeek } from '../utils/formatDate';
 import * as COLORS from '../constants/colors';
 
-const Image = styled.img`
-  max-height: 400px;
-  max-width: 100%;
-  display: block;
+const Image = styled.div`
   margin: 0 auto;
+  max-width: 700px;
 `;
 
 const MultipleEventContainer = styled.div`
@@ -54,7 +53,9 @@ export default ({ data }) => {
       />
       <H1>{event.name}</H1>
 
-      {event.image && <Image src={event.image.file.url} />}
+      <Image>
+        <Img sizes={event.image.sizes} />
+      </Image>
 
       {!event.dateAndRegistration && (
         <div>
@@ -135,11 +136,8 @@ export const query = graphql`
         descriptionFormatted
       }
       image {
-        title
-        file {
-          url
-          fileName
-          contentType
+        sizes(maxWidth: 700) {
+          ...GatsbyContentfulSizes
         }
       }
       registrationLink

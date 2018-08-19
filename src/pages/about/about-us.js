@@ -1,14 +1,19 @@
 import React from 'react';
+import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
 import { H1, H2 } from '../../components/headers';
 import BibleQuote from '../../components/BibleQuote';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
-import worship from './worship.jpg';
-
 const title = 'About Us';
 
-const AboutUs = () => (
+const Image = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+`;
+
+const AboutUs = ({ data }) => (
   <div>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
@@ -23,9 +28,9 @@ const AboutUs = () => (
       our lives to everyone possible.
     </p>
 
-    <p>
-      <img src={worship} />
-    </p>
+    <Image>
+      <Img sizes={data.worship.childImageSharp.sizes} />
+    </Image>
 
     <H2>Life discovered. Life shared.</H2>
 
@@ -104,3 +109,15 @@ const AboutUs = () => (
 );
 
 export default AboutUs;
+
+export const query = graphql`
+  query AboutUsQuery {
+    worship: file(relativePath: { eq: "pages/about/worship.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 700) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+  }
+`;

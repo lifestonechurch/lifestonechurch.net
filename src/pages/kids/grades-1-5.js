@@ -1,21 +1,23 @@
 import React from 'react';
 import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
 import { H1, H2 } from '../../components/headers';
 import Banner from '../../components/Banner';
-import SmallImage from '../../components/SmallImage';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
-import kidsLife from './kids-life.png';
-import series from './whats-in-the-bible.jpg';
-
 const title = 'Grades 1-5';
+
+const Image = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+`;
 
 const Center = styled.div`
   margin: 0 auto;
 `;
 
-const Page = () => (
+const Page = ({ data }) => (
   <div>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'Kids' }]}
@@ -23,7 +25,9 @@ const Page = () => (
     />
     <H1>{title}</H1>
 
-    <SmallImage src={kidsLife} />
+    <Image>
+      <Img sizes={data.kidsLifeImage.childImageSharp.sizes} />
+    </Image>
 
     <p>
       The goal of Lifestone’s KID’S LIFE ministry is to teach kids truths of the
@@ -38,7 +42,9 @@ const Page = () => (
       <H2>Current Series</H2>
     </Banner>
 
-    <SmallImage center={true} src={series} />
+    <Image>
+      <Img sizes={data.kidsLifeSeriesImage.childImageSharp.sizes} />
+    </Image>
 
     <p>
       Calling all 1st-5th graders! Buck Denver and his friends are on an
@@ -68,3 +74,24 @@ const Page = () => (
 );
 
 export default Page;
+
+export const query = graphql`
+  query LittleLifeQuery {
+    kidsLifeImage: file(relativePath: { eq: "pages/kids/kids-life.png" }) {
+      childImageSharp {
+        sizes(maxWidth: 700) {
+          ...GatsbyImageSharpSizes_noBase64
+        }
+      }
+    }
+    kidsLifeSeriesImage: file(
+      relativePath: { eq: "pages/kids/kids-life-series.jpg" }
+    ) {
+      childImageSharp {
+        sizes(maxWidth: 700) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+  }
+`;

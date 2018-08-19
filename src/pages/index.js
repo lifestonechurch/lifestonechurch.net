@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'react-emotion';
-import Link from 'gatsby-link';
 import ImageGallery from 'react-image-gallery';
+import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
 import { H4 } from '../components/headers';
 import SmallCalendar from '../components/SmallCalendar';
 import { getFirstStartDate, getLastEndDate } from '../utils/formatDate';
-
-import preaching from './preaching.jpg';
 
 import 'react-image-gallery/styles/css/image-gallery.css';
 
@@ -48,10 +47,6 @@ const LatestSermon = styled.div`
   position: relative;
   height: 200px;
   overflow: hidden;
-`;
-
-const PreachingImage = styled.img`
-  width: 100%;
 `;
 
 const LatestSermonText = styled.div`
@@ -133,7 +128,10 @@ const IndexPage = ({ data }) => {
           <RowContainer>
             <LatestSermon>
               <Link to={`/resources/sermons/${sermon.fields.slug}`}>
-                <PreachingImage src={preaching} alt="" />
+                <Img
+                  sizes={data.preaching.childImageSharp.sizes}
+                  style={{ width: '100%' }}
+                />
                 <LatestSermonText>
                   <H4>{sermon.title}</H4>
                   {sermon.mainScripture}
@@ -157,6 +155,13 @@ export default IndexPage;
 
 export const query = graphql`
   query HomeQuery {
+    preaching: file(relativePath: { eq: "pages/preaching.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 360) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
     allContentfulSlider {
       edges {
         node {

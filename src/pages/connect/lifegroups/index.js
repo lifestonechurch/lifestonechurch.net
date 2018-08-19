@@ -1,14 +1,18 @@
 import React from 'react';
+import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
 import { H1 } from '../../../components/headers';
 import Banner from '../../../components/Banner';
 import LifeGroup from '../../../components/LifeGroup';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 
-// import lifegroupsImage from './lifegroups.jpg';
-import summerSessionImage from './summer-session.jpg';
-
 const title = 'LifeGroups';
+
+const Image = styled.div`
+  margin: 0 auto;
+  max-width: 1170px;
+`;
 
 const sortByDayOfWeek = (a, b) => {
   const days = {
@@ -34,7 +38,9 @@ const Page = ({ data }) => {
       />
       <H1>{title}</H1>
 
-      <img src={summerSessionImage} />
+      <Image>
+        <Img sizes={data.lifegroupImage.childImageSharp.sizes} />
+      </Image>
 
       <p>
         Connect to God by connecting to His people & His Word! LifeGroups are
@@ -61,15 +67,18 @@ const Page = ({ data }) => {
             address={node.address}
             hosts={
               node.hosts
-                ? node.hosts.map(host => ({
-                    id: host.id,
-                    name: host.name,
-                    description: host.description
-                      ? host.description.description
-                      : '',
-                    photo: host.photo ? host.photo.file.url : '',
-                    photoTitle: host.photo ? host.photo.title : '',
-                  }))
+                ? node.hosts.map(
+                    host =>
+                      console.log(host.photo) || {
+                        id: host.id,
+                        name: host.name,
+                        description: host.description
+                          ? host.description.description
+                          : '',
+                        photoSizes: host.photo ? host.photo.sizes : '',
+                        photoTitle: host.photo ? host.photo.title : '',
+                      }
+                  )
                 : []
             }
             leaders={
@@ -80,7 +89,7 @@ const Page = ({ data }) => {
                     description: leader.description
                       ? leader.description.description
                       : '',
-                    photo: leader.photo ? leader.photo.file.url : '',
+                    photoSizes: leader.photo ? leader.photo.sizes : '',
                     photoTitle: leader.photo ? leader.photo.title : '',
                   }))
                 : []
@@ -113,6 +122,15 @@ export default Page;
 
 export const query = graphql`
   query LifegroupsQuery {
+    lifegroupImage: file(
+      relativePath: { eq: "pages/connect/lifegroups/summer-session.jpg" }
+    ) {
+      childImageSharp {
+        sizes(maxWidth: 1170) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
     allContentfulSmallGroup {
       edges {
         node {
@@ -132,8 +150,8 @@ export const query = graphql`
             }
             photo {
               title
-              file {
-                url
+              sizes(maxWidth: 200) {
+                ...GatsbyContentfulSizes
               }
             }
           }
@@ -145,8 +163,8 @@ export const query = graphql`
             }
             photo {
               title
-              file {
-                url
+              sizes(maxWidth: 200) {
+                ...GatsbyContentfulSizes
               }
             }
           }

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
 import Banner from '../../components/Banner';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -7,9 +8,6 @@ import Button from '../../components/Button';
 import Card from '../../components/Card';
 import { H1, H2, H3 } from '../../components/headers';
 import LifeGroup from '../../components/LifeGroup';
-
-import littleLearnersImage from './little-learners.jpg';
-import directorImqge from './ali-gardner.jpg';
 
 const title = 'Little Learners';
 
@@ -26,6 +24,17 @@ const Curriculum = styled.div`
   }
 `;
 
+const FloatLeft = styled.div`
+  float: left;
+  width: 300px;
+  margin: 0 20px 20px 0;
+
+  @media (max-width: 530px) {
+    float: inherit;
+    margin: 0 auto;
+  }
+`;
+
 const CardInner = styled.div`
   padding: 20px;
 `;
@@ -39,21 +48,11 @@ const Director = styled.div`
   margin: 0 auto;
 `;
 
-const FloatLeft = styled.div`
-  float: left;
-  margin: 0 20px 20px 0;
-
-  img {
-    max-height: 400px;
-  }
-
-  @media (max-width: 530px) {
-    text-align: center;
-    float: inherit;
-  }
+const ClearFloat = styled.div`
+  clear: both;
 `;
 
-const Page = () => {
+const Page = ({ data }) => {
   const isEnrolling = true;
 
   return (
@@ -61,7 +60,13 @@ const Page = () => {
       <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
       <H1>{title}</H1>
 
-      <img alt="Lifestone Little Learners" src={littleLearnersImage} />
+      <Img
+        sizes={data.littleLearnersImage.childImageSharp.sizes}
+        style={{
+          margin: '0 auto',
+          maxWidth: 1170,
+        }}
+      />
 
       <p>
         Lifestone Little Learners provides a safe learning environment where 2-5
@@ -132,7 +137,10 @@ const Page = () => {
 
       <Director>
         <FloatLeft>
-          <img alt="Ali Gardner" src={directorImqge} />
+          <Img
+            sizes={data.directorImage.childImageSharp.sizes}
+            alt="Ali Gardner"
+          />
         </FloatLeft>
 
         <p>
@@ -150,6 +158,8 @@ const Page = () => {
           is that they discover God’s love while also developing a love of
           academic learning!
         </p>
+
+        <ClearFloat />
       </Director>
 
       <Banner>
@@ -182,3 +192,26 @@ const Page = () => {
 };
 
 export default Page;
+
+export const query = graphql`
+  query LittleLearnersQuery {
+    littleLearnersImage: file(
+      relativePath: { eq: "pages/little-learners/little-learners.jpg" }
+    ) {
+      childImageSharp {
+        sizes(maxWidth: 1170) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+    directorImage: file(
+      relativePath: { eq: "pages/little-learners/ali-gardner.jpg" }
+    ) {
+      childImageSharp {
+        sizes(maxWidth: 384) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+  }
+`;

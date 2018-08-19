@@ -1,13 +1,18 @@
 import React from 'react';
-import { H1 } from '../../../components/headers';
-import SmallImage from '../../../components/SmallImage';
-import Breadcrumbs from '../../../components/Breadcrumbs';
+import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
-import concernCenter from './concern-center.jpg';
+import { H1 } from '../../../components/headers';
+import Breadcrumbs from '../../../components/Breadcrumbs';
 
 const title = 'Concern Center';
 
-const Page = () => (
+const Image = styled.div`
+  margin: 0 auto;
+  max-width: 600px;
+`;
+
+const Page = ({ data }) => (
   <div>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
@@ -15,7 +20,9 @@ const Page = () => (
     />
     <H1>{title}</H1>
 
-    <SmallImage src={concernCenter} />
+    <Image>
+      <Img sizes={data.concernCenterImage.childImageSharp.sizes} />
+    </Image>
 
     <p>
       Want to make a difference in our valley? Why not give something that will
@@ -40,3 +47,17 @@ const Page = () => (
 );
 
 export default Page;
+
+export const query = graphql`
+  query ConcernCenterQuery {
+    concernCenterImage: file(
+      relativePath: { eq: "pages/connect/concern-center/concern-center.png" }
+    ) {
+      childImageSharp {
+        sizes(maxWidth: 600) {
+          ...GatsbyImageSharpSizes_tracedSVG
+        }
+      }
+    }
+  }
+`;

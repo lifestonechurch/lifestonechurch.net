@@ -1,18 +1,21 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'react-emotion';
+import Img from 'gatsby-image';
+
 import { H1 } from '../../components/headers';
 import SermonCard from '../../components/SermonCard';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
-import logo from '../../images/logo/logo2.jpg';
-import itunesImage from './itunes.png';
-import rssImage from './rss.png';
-
 const title = 'Resources';
 
-const SubscribeImage = styled.img`
+const SubscribeImage = styled.div`
+  display: inline-block;
   margin-right: 12px;
+
+  img {
+    max-height: 36px;
+  }
 `;
 
 const Page = ({ data }) => {
@@ -26,10 +29,14 @@ const Page = ({ data }) => {
 
       <div>
         <a href="https://itunes.apple.com/us/podcast/lifestone-church/id968942229">
-          <SubscribeImage src={itunesImage} />
+          <SubscribeImage>
+            <Img resolutions={data.itunesImage.childImageSharp.resolutions} />
+          </SubscribeImage>
         </a>
         <Link to="/feed.rss">
-          <SubscribeImage src={rssImage} />
+          <SubscribeImage>
+            <Img resolutions={data.rssImage.childImageSharp.resolutions} />
+          </SubscribeImage>
         </Link>
       </div>
 
@@ -37,11 +44,11 @@ const Page = ({ data }) => {
         <SermonCard
           key={node.id}
           linkTo={`/resources/sermons/${node.fields.slug}`}
-          image={
+          imageSizes={
             (node.sermonSeries &&
               node.sermonSeries.image &&
-              node.sermonSeries.image.file.url) ||
-            logo
+              node.sermonSeries.image.sizes) ||
+            data.logoImage.childImageSharp.sizes
           }
           title={node.title}
           date={node.date}
@@ -72,9 +79,8 @@ export const query = graphql`
           sermonSeries {
             name
             image {
-              title
-              file {
-                url
+              sizes(maxWidth: 320) {
+                ...GatsbyContentfulSizes
               }
             }
           }
@@ -93,6 +99,27 @@ export const query = graphql`
           notes {
             notes
           }
+        }
+      }
+    }
+    logoImage: file(relativePath: { eq: "images/logo/logo2.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 320) {
+          ...GatsbyImageSharpSizes_tracedSVG
+        }
+      }
+    }
+    itunesImage: file(relativePath: { eq: "pages/resources/itunes.png" }) {
+      childImageSharp {
+        resolutions(width: 100, height: 36) {
+          ...GatsbyImageSharpResolutions
+        }
+      }
+    }
+    rssImage: file(relativePath: { eq: "pages/resources/rss.png" }) {
+      childImageSharp {
+        resolutions(width: 36, height: 36) {
+          ...GatsbyImageSharpResolutions
         }
       }
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 
 import Card from './Card';
@@ -12,13 +13,12 @@ const Container = styled.div`
   border-bottom: 5px solid #008f01;
 `;
 
-const Img = styled.img`
-  max-width: 200px;
-  border-radius: 50%;
-  shape-outside: circle();
-  float: left;
-  margin-right: 2em;
-`;
+const ImageStyles = {
+  maxWidth: 200,
+  borderRadius: '50%',
+  shapeOutside: 'circle()',
+  marginRight: '2em',
+};
 
 const ClearFloat = styled.div`
   clear: both;
@@ -66,7 +66,9 @@ const LifeGroup = ({
       {leaders.map(h => (
         <div key={h.id}>
           <p>{h.name}</p>
-          <Img src={h.photo} title={h.photoTitle} />
+          {h.photoSizes && (
+            <Img sizes={h.photoSizes} alt={h.photoTitle} style={ImageStyles} />
+          )}
           <p>{h.description}</p>
         </div>
       ))}
@@ -77,7 +79,7 @@ const LifeGroup = ({
 
 LifeGroup.propTypes = {
   name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   day: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
@@ -85,18 +87,18 @@ LifeGroup.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      photo: PropTypes.string.isRequired,
-      photoTitle: PropTypes.string.isRequired,
+      description: PropTypes.string,
+      photoSizes: PropTypes.object,
+      photoTitle: PropTypes.string,
     })
   ),
   leaders: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      photo: PropTypes.string.isRequired,
-      photoTitle: PropTypes.string.isRequired,
+      description: PropTypes.string,
+      photoSizes: PropTypes.object,
+      photoTitle: PropTypes.string,
     })
   ),
   contact: PropTypes.string.isRequired,

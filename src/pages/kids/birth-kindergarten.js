@@ -1,15 +1,20 @@
 import React from 'react';
+import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
 import { H1, H2 } from '../../components/headers';
 import Banner from '../../components/Banner';
 import SmallImage from '../../components/SmallImage';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
-import littleLife from './little-life.png';
-
 const title = 'Birth-Kindergarten';
 
-const Page = () => (
+const Image = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+`;
+
+const Page = ({ data }) => (
   <div>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'Kids' }]}
@@ -17,7 +22,9 @@ const Page = () => (
     />
     <H1>{title}</H1>
 
-    <SmallImage src={littleLife} />
+    <Image>
+      <Img sizes={data.littleLifeImage.childImageSharp.sizes} />
+    </Image>
 
     <p>
       The goal of Lifestone’s LITTLE LIFE ministry is to teach kids truths of
@@ -47,3 +54,15 @@ const Page = () => (
 );
 
 export default Page;
+
+export const query = graphql`
+  query BirthKindergartenQuery {
+    littleLifeImage: file(relativePath: { eq: "pages/kids/little-life.png" }) {
+      childImageSharp {
+        sizes(maxWidth: 700) {
+          ...GatsbyImageSharpSizes_noBase64
+        }
+      }
+    }
+  }
+`;

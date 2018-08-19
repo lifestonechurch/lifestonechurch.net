@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
+import Img from 'gatsby-image';
 import ImageGallery from 'react-image-gallery';
 
 import { H1 } from '../../components/headers';
@@ -11,10 +12,12 @@ import { getMonthNumber, getMonthName } from '../../utils/formatDate';
 import * as COLORS from '../../constants/colors';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
-import youthImage from './youth.jpg';
-import seriesImage from './youth-series.jpg';
-
 const title = 'Grades 6-12';
+
+const Image = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+`;
 
 const Month = styled.div`
   font-size: 18px;
@@ -54,7 +57,9 @@ const Page = ({ data }) => {
       />
       <H1>{title}</H1>
 
-      <SmallImage src={youthImage} />
+      <Image>
+        <Img sizes={data.youthImage.childImageSharp.sizes} />
+      </Image>
 
       <p>
         We exist to encourage and partner with the parents of Jr./Sr. High
@@ -82,7 +87,9 @@ const Page = ({ data }) => {
         <H2>Current Series</H2>
       </Banner>
 
-      <SmallImage center={true} src={seriesImage} />
+      <Image>
+        <Img sizes={data.youthSeriesImage.childImageSharp.sizes} />
+      </Image>
 
       <p>A 4-week series on authority</p>
       <p>
@@ -132,7 +139,23 @@ const Page = ({ data }) => {
 export default Page;
 
 export const query = graphql`
-  query StudentsQuery {
+  query YouthQuery {
+    youthImage: file(relativePath: { eq: "pages/kids/youth.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 700) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+    youthSeriesImage: file(
+      relativePath: { eq: "pages/kids/youth-series.jpg" }
+    ) {
+      childImageSharp {
+        sizes(maxWidth: 700) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
     allContentfulEvent(sort: { fields: [startDate], order: ASC }) {
       edges {
         node {
