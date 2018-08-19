@@ -83,7 +83,7 @@ export default ({ data }) => {
       {event.dateAndRegistration ? (
         <MultipleEventContainer>
           {event.dateAndRegistration.map(e => (
-            <EventContainer>
+            <EventContainer key={e.id}>
               <a
                 href={e.registrationLink}
                 target="_blank"

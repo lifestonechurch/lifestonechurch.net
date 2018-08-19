@@ -5,6 +5,7 @@ import ImageGallery from 'react-image-gallery';
 
 import { H4 } from '../components/headers';
 import SmallCalendar from '../components/SmallCalendar';
+import { getFirstStartDate, getLastEndDate } from '../utils/formatDate';
 
 import preaching from './preaching.jpg';
 
@@ -75,12 +76,22 @@ const IndexPage = ({ data }) => {
     link: node.link,
   }));
   const sermon = data.allContentfulSermon.edges[0].node;
-  const events = data.allContentfulEvent.edges
-    .filter(({ node }) => new Date(node.startDate) > new Date())
+  const events = data.allContentfulEvent.edges;
+  const futureEvents = events
+    .filter(
+      ({ node }) =>
+        node.endDate
+          ? new Date(node.endDate) > new Date()
+          : node.startDate
+            ? new Date(node.startDate) > new Date()
+            : node.dateAndRegistration &&
+              new Date(getLastEndDate(node.dateAndRegistration)) > new Date()
+    )
+    .slice(0, 7)
     .map(({ node }) => ({
       id: node.id,
       name: node.name,
-      startDate: node.startDate,
+      startDate: node.startDate || getFirstStartDate(node.dateAndRegistration),
       slug: node.fields.slug,
     }));
 
@@ -134,7 +145,7 @@ const IndexPage = ({ data }) => {
         <RowItem>
           <RowHeader>Upcoming Events</RowHeader>
           <RowContainer>
-            <SmallCalendar events={events} />
+            <SmallCalendar events={futureEvents} />
           </RowContainer>
         </RowItem>
       </Row>
@@ -171,13 +182,23 @@ export const query = graphql`
         }
       }
     }
-    allContentfulEvent(sort: { fields: [startDate], order: ASC }, limit: 6) {
+    allContentfulEvent(sort: { fields: [startDate], order: ASC }) {
       edges {
         node {
           id
           name
           startDate
           endDate
+          dateAndRegistration {
+            id
+            timeDescription
+            startDate
+            endDate
+            startTime
+            endTime
+            repeatingSchedule
+            registrationLink
+          }
           shortDescription
           fields {
             slug
