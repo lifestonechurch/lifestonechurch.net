@@ -12,7 +12,7 @@ import * as COLORS from '../../constants/colors';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 import youthImage from './youth.jpg';
-import seriesImage from './youth-series.png';
+import seriesImage from './youth-series.jpg';
 
 const title = 'Grades 6-12';
 
@@ -84,25 +84,18 @@ const Page = ({ data }) => {
 
       <SmallImage center={true} src={seriesImage} />
 
+      <p>A 4-week series on authority</p>
       <p>
-        It's so easy to get lulled into a sleepy faith, seeing our relationship
-        with God as just what we do on Sundays or at youth group. We're tempted
-        to live for ourselves, pursuing the fleeting pleasures of sin instead of
-        pursuing a vibrant relationship with Jesus Christ. But the time for
-        sleeping is over—no more snooze button, no more pulling the covers over
-        your head. It's time to wake up to the reality of the life we've been
-        called to live in Christ.
-      </p>
-
-      <p>
-        In this series, author and church planter D.A. Horton will call students
-        to awaken their faith and reach their world—their friends, neighbors and
-        classmates—with the gospel of Jesus Christ. He will unpack what the
-        Bible says about the life-giving, soul-awakening message of the gospel
-        and how prayer, study of God's Word, and service equip and empower
-        followers of Christ to overcome sin. D.A also challenges students to
-        boldly seek the advancement of God's Kingdom at home and around the
-        world.
+        Raise your hand if you’ve ever wanted to scream, “You’re not the boss of
+        me!” (You can also raise your hand if you have, in fact, actually
+        screamed it.) Especially when we’re teenagers, we tend to push back on
+        the people, places, and things that control and hold authority over us.
+        But here’s the catch: whether we admit it or not, we’ve all given
+        someone (or something) control of our lives. In this 4-week series,
+        We'll challenge students to consider who, or what, they’ve allowed to be
+        their boss. Because whether it’s the god of me, the god of stuff, the
+        god of worry, or the god of obsession, we all know what it’s like to
+        have an authority problem
       </p>
 
       <Banner>
