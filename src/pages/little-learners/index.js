@@ -78,15 +78,6 @@ const Page = ({ data }) => {
 
       <Button linkTo="#enrollment-form">Enroll now</Button>
 
-      <p>
-        Lifestone Church is currently hiring teachers and teacher’s assistants
-        for our Lifestone Little Learners program.
-      </p>
-
-      <Button linkTo="https://docs.google.com/document/d/1D3bT-6dOcHE9YDJnXG6Bq0eVAiIOElGKLyfCrAhafks/edit?usp=sharing">
-        View Positions
-      </Button>
-
       <Banner>
         <H2>Class Descriptions</H2>
       </Banner>
