@@ -8,6 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 import {
   getMonthNumber,
   getMonthName,
+  getFirstStartDate,
   getLastEndDate,
 } from '../../utils/formatDate';
 
@@ -21,32 +22,39 @@ const Container = styled.div`
 
 const Page = ({ data }) => {
   const events = data.allContentfulEvent.edges;
-  const futureEvents = events.filter(
-    ({ node }) =>
-      node.endDate
-        ? new Date(node.endDate) > new Date()
-        : node.startDate
-          ? new Date(node.startDate) > new Date()
-          : node.dateAndRegistration &&
-            new Date(getLastEndDate(node.dateAndRegistration)) > new Date()
-  );
+  const futureEvents = events
+    .filter(
+      ({ node }) =>
+        node.endDate
+          ? new Date(node.endDate) > new Date()
+          : node.startDate
+            ? new Date(node.startDate) > new Date()
+            : node.dateAndRegistration &&
+              new Date(getLastEndDate(node.dateAndRegistration)) > new Date()
+    )
+    .map(({ node }) => ({
+      ...node,
+      startDate: node.startDate || getFirstStartDate(node.dateAndRegistration),
+    }))
+    .sort((a, b) => new Date(a.startDate) > new Date(b.startDate));
+
   return (
     <div>
       <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
       <H1>{title}</H1>
 
       <Container>
-        {futureEvents.map(({ node }, i) => (
+        {futureEvents.map((e, i) => (
           <EventCard
-            key={node.id}
-            linkTo={`/events/${node.fields.slug}`}
-            title={node.name}
-            description={node.shortDescription}
-            startDate={node.startDate}
-            endDate={node.endDate}
-            dates={node.dateAndRegistration}
-            ministries={node.ministry}
-            imageSizes={node.image.sizes}
+            key={e.id}
+            linkTo={`/events/${e.fields.slug}`}
+            title={e.name}
+            description={e.shortDescription}
+            startDate={e.startDate}
+            endDate={e.endDate}
+            dates={e.dateAndRegistration}
+            ministries={e.ministry}
+            imageSizes={e.image.sizes}
           />
         ))}
       </Container>

@@ -88,7 +88,8 @@ const IndexPage = ({ data }) => {
       name: node.name,
       startDate: node.startDate || getFirstStartDate(node.dateAndRegistration),
       slug: node.fields.slug,
-    }));
+    }))
+    .sort((a, b) => new Date(a.startDate) > new Date(b.startDate));
 
   return (
     <div>
