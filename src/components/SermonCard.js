@@ -36,31 +36,30 @@ const MetaData = styled.div`
   margin-bottom: 5px;
 `;
 
-const SermonCard = ({ linkTo, imageSizes, title, date, speakers, passage }) =>
-  console.log(imageSizes) || (
-    <Container>
-      <Link to={linkTo}>
-        <HoverCard>
-          <InnerContainer>
-            <Img
-              sizes={imageSizes}
-              style={{
-                width: 150,
-                height: 150,
-                margin: 20,
-              }}
-            />
-            <Text>
-              <Title>{title}</Title>
-              <MetaData>{formatDate(date)}</MetaData>
-              <MetaData>{speakers.join('')}</MetaData>
-              <MetaData>{passage}</MetaData>
-            </Text>
-          </InnerContainer>
-        </HoverCard>
-      </Link>
-    </Container>
-  );
+const SermonCard = ({ linkTo, imageSizes, title, date, speakers, passage }) => (
+  <Container>
+    <Link to={linkTo}>
+      <HoverCard>
+        <InnerContainer>
+          <Img
+            sizes={imageSizes}
+            style={{
+              width: 150,
+              height: 150,
+              margin: 20,
+            }}
+          />
+          <Text>
+            <Title>{title}</Title>
+            <MetaData>{formatDate(date)}</MetaData>
+            <MetaData>{speakers.join('')}</MetaData>
+            <MetaData>{passage}</MetaData>
+          </Text>
+        </InnerContainer>
+      </HoverCard>
+    </Link>
+  </Container>
+);
 
 SermonCard.propTypes = {
   linkTo: PropTypes.string.isRequired,

@@ -67,18 +67,15 @@ const Page = ({ data }) => {
             address={node.address}
             hosts={
               node.hosts
-                ? node.hosts.map(
-                    host =>
-                      console.log(host.photo) || {
-                        id: host.id,
-                        name: host.name,
-                        description: host.description
-                          ? host.description.description
-                          : '',
-                        photoSizes: host.photo ? host.photo.sizes : '',
-                        photoTitle: host.photo ? host.photo.title : '',
-                      }
-                  )
+                ? node.hosts.map(host => ({
+                    id: host.id,
+                    name: host.name,
+                    description: host.description
+                      ? host.description.description
+                      : '',
+                    photoSizes: host.photo ? host.photo.sizes : '',
+                    photoTitle: host.photo ? host.photo.title : '',
+                  }))
                 : []
             }
             leaders={
