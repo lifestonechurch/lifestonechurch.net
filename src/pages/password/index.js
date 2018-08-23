@@ -1,13 +1,19 @@
 import React from 'react';
+import styled from 'react-emotion';
 
 import { H1 } from '../../components/headers';
 
 const title = 'LifeGroup Leader Resources';
 
+const Error = styled.div`
+  color: red;
+`;
+
 class Page extends React.Component {
   state = {
     isLoggedIn: false,
     password: '',
+    error: '',
   };
 
   handleChange = e => {
@@ -15,15 +21,27 @@ class Page extends React.Component {
     this.setState(prevState => ({
       ...prevState,
       password,
+      error: '',
     }));
   };
 
   handleKeyDown = e => {
-    console.log(e.keyCode, this.state.password);
-    if (e.keyCode === 13 && this.state.password === 'hello') {
+    if (e.keyCode === 13) {
+      this.submitForm();
+    }
+  };
+
+  submitForm = () => {
+    if (this.state.password === 'hello') {
       this.setState(prevState => ({
         ...prevState,
         isLoggedIn: true,
+        error: '',
+      }));
+    } else {
+      this.setState(prevState => ({
+        ...prevState,
+        error: 'Incorrect password',
       }));
     }
   };
@@ -44,6 +62,8 @@ class Page extends React.Component {
               onChange={this.handleChange}
               onKeyDown={this.handleKeyDown}
             />
+            <button onClick={this.submitForm}>Submit</button>
+            <Error>{this.state.error}</Error>
           </div>
         )}
       </div>
