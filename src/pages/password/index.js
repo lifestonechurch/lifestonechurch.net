@@ -19,6 +19,7 @@ class Page extends React.Component {
   };
 
   handleKeyDown = e => {
+    console.log(e.keyCode, this.state.password);
     if (e.keyCode === 13 && this.state.password === 'hello') {
       this.setState(prevState => ({
         ...prevState,
