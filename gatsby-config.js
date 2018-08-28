@@ -52,6 +52,13 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-offline`,
     {
+      resolve: `gatsby-source-flickr`,
+      options: {
+        key: process.env.FLICKR_KEY,
+        secret: process.env.FLICKR_SECRET,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
