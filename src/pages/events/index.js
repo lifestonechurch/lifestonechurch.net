@@ -5,12 +5,7 @@ import { H1 } from '../../components/headers';
 import EventCard from '../../components/EventCard';
 import Banner from '../../components/Banner';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import {
-  getMonthNumber,
-  getMonthName,
-  getFirstStartDate,
-  getLastEndDate,
-} from '../../utils/formatDate';
+import { getFutureEvents } from '../../utils/formatDate';
 
 const title = 'Events';
 
@@ -22,21 +17,7 @@ const Container = styled.div`
 
 const Page = ({ data }) => {
   const events = data.allContentfulEvent.edges;
-  const futureEvents = events
-    .filter(
-      ({ node }) =>
-        node.endDate
-          ? new Date(node.endDate) > new Date()
-          : node.startDate
-            ? new Date(node.startDate) > new Date()
-            : node.dateAndRegistration &&
-              new Date(getLastEndDate(node.dateAndRegistration)) > new Date()
-    )
-    .map(({ node }) => ({
-      ...node,
-      startDate: node.startDate || getFirstStartDate(node.dateAndRegistration),
-    }))
-    .sort((a, b) => new Date(a.startDate) > new Date(b.startDate));
+  const futureEvents = getFutureEvents(events);
 
   return (
     <div>

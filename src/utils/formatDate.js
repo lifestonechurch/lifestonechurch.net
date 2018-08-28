@@ -36,4 +36,31 @@ export const getLastEndDate = dates =>
     null
   );
 
+export const getFutureEvents = events => {
+  const q = new Date();
+  const m = q.getMonth();
+  const d = q.getDate();
+  const y = q.getFullYear();
+
+  const today = new Date(y, m, d);
+
+  return events
+    .filter(
+      ({ node }) =>
+        node.endDate
+          ? new Date(`${node.endDate} 0:00:00`) >= today
+          : node.startDate
+            ? new Date(`${node.startDate} 0:00:00`) >= today
+            : node.dateAndRegistration &&
+              new Date(`${getLastEndDate(node.dateAndRegistration)} 0:00:00`) >=
+                today
+    )
+    .map(({ node }) => ({
+      ...node,
+      startDate: node.startDate || getFirstStartDate(node.dateAndRegistration),
+      slug: node.fields.slug,
+    }))
+    .sort((a, b) => new Date(a.startDate) > new Date(b.startDate));
+};
+
 export default formatDate;

@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 
 import { H4 } from '../components/headers';
 import SmallCalendar from '../components/SmallCalendar';
-import { getFirstStartDate, getLastEndDate } from '../utils/formatDate';
+import { getFutureEvents } from '../utils/formatDate';
 
 import 'react-image-gallery/styles/css/image-gallery.css';
 
@@ -72,24 +72,7 @@ const IndexPage = ({ data }) => {
   }));
   const sermon = data.allContentfulSermon.edges[0].node;
   const events = data.allContentfulEvent.edges;
-  const futureEvents = events
-    .filter(
-      ({ node }) =>
-        node.endDate
-          ? new Date(node.endDate) > new Date()
-          : node.startDate
-            ? new Date(node.startDate) > new Date()
-            : node.dateAndRegistration &&
-              new Date(getLastEndDate(node.dateAndRegistration)) > new Date()
-    )
-    .slice(0, 7)
-    .map(({ node }) => ({
-      id: node.id,
-      name: node.name,
-      startDate: node.startDate || getFirstStartDate(node.dateAndRegistration),
-      slug: node.fields.slug,
-    }))
-    .sort((a, b) => new Date(a.startDate) > new Date(b.startDate));
+  const futureEvents = getFutureEvents(events).slice(0, 7);
 
   return (
     <div>
