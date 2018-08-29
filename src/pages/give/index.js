@@ -143,8 +143,8 @@ const Page = () => (
           </div>
           <Footer>
             <p>
-              For every $100 you give: $96.80<br />
-              2.9% + $0.30 per transaction
+              For every $100 you give: $97.50<br />
+              2.2% + $0.30 per transaction
             </p>
           </Footer>
         </InnerCard>
