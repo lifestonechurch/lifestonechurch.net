@@ -41,7 +41,7 @@ module.exports = {
         ],
       },
       { name: 'Little Learners', path: '/little-learners' },
-      { name: 'Resources', path: '/resources' },
+      { name: 'Listen', path: '/resources' },
       { name: 'Give', path: '/give' },
     ],
   },
