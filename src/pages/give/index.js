@@ -8,6 +8,7 @@ import BibleQuote from '../../components/BibleQuote';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Card from '../../components/Card';
 import Tag from '../../components/Tag';
+import PayPalForm from '../../components/PayPalForm';
 
 import * as COLORS from '../../constants/colors';
 
@@ -20,12 +21,14 @@ const lastYear = new Date().getUTCFullYear() - 1;
 
 const CardContainer = styled.div`
   display: flex;
-  align-items: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
   flex-wrap: wrap;
 
   > div {
-    flex: 1 1 300px;
-    margin-right: 24px;
+    width: 500px;
+    max-width: 90%;
   }
 `;
 
@@ -43,48 +46,6 @@ const Footer = styled.div`
     font-style: italic;
   }
 `;
-
-const PayPalForm = () => (
-  <form
-    id="donateplusform"
-    action="https://www.paypal.com/cgi-bin/webscr"
-    method="post"
-  >
-    <input type="hidden" id="cmd" name="cmd" value="_donations" />
-    <label htmlFor="amount">Donation Amount:</label>
-    <br />$ <input type="text" name="amount" id="amount" />
-    <input
-      type="hidden"
-      name="item_name"
-      value="Donation to Lifestone Church"
-    />
-    <input type="hidden" name="business" value="give@lifestonechurch.net" />
-    <input type="hidden" name="lc" value="US" />
-    <input type="hidden" name="no_note" value="1" />
-    <input type="hidden" name="no_shipping" value="1" />
-    <input type="hidden" name="rm" value="1" />
-    <input
-      type="hidden"
-      name="return"
-      value="https://www.lifestonechurch.net/support/thank-you/"
-    />
-    <input type="hidden" name="currency_code" value="USD" />
-    <p>
-      <input
-        type="image"
-        src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif"
-        name="submit"
-        alt=""
-      />
-      <img
-        alt=""
-        src="https://www.paypal.com/en_US/i/scr/pixel.gif"
-        width="1"
-        height="1"
-      />
-    </p>
-  </form>
-);
 
 const Page = () => (
   <div>
@@ -139,7 +100,11 @@ const Page = () => (
         <InnerCard>
           <div>
             <H2>PayPal</H2>
-            <PayPalForm />
+            <PayPalForm
+              label="Donation Amount"
+              itemName="Donation to Lifestone Church"
+              payee="give@lifestonechurch.net"
+            />
           </div>
           <Footer>
             <p>

@@ -6,12 +6,15 @@ import Banner from '../../components/Banner';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Button from '../../components/Button';
 import Card from '../../components/Card';
+import Tag from '../../components/Tag';
+import PayPalForm from '../../components/PayPalForm';
 import { H1, H2, H3 } from '../../components/headers';
 import LifeGroup from '../../components/LifeGroup';
+import * as COLORS from '../../constants/colors';
 
 const title = 'Little Learners';
 
-const Curriculum = styled.div`
+const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -22,6 +25,16 @@ const Curriculum = styled.div`
     width: 500px;
     max-width: 90%;
   }
+`;
+
+const InnerCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 20px;
 `;
 
 const FloatLeft = styled.div`
@@ -82,7 +95,7 @@ const Page = ({ data }) => {
         <H2>Class Descriptions</H2>
       </Banner>
 
-      <Curriculum>
+      <CardContainer>
         <Card>
           <CardInner>
             <H3>2’s and 3’s</H3>
@@ -120,7 +133,7 @@ const Page = ({ data }) => {
             </ul>
           </CardInner>
         </Card>
-      </Curriculum>
+      </CardContainer>
 
       <Banner>
         <H2>Meet the Director</H2>
@@ -168,10 +181,41 @@ const Page = ({ data }) => {
       />
 
       <Banner>
-        <H2>Monthly Payment Options</H2>
+        <H2>Tuition Payment Options</H2>
       </Banner>
 
-      <p>Coming Soon</p>
+      <CardContainer>
+        <Card>
+          <InnerCard>
+            <div>
+              <H2>Pay Directly</H2>
+
+              <Tag color={COLORS.BRAND}>Preferred</Tag>
+
+              <p>Make payment directly to Lifestone Little Learners</p>
+
+              <Button linkTo="https://lifestonechurch.breezechms.com/form/a71c10">
+                Make Payment
+              </Button>
+            </div>
+          </InnerCard>
+        </Card>
+
+        <Card>
+          <InnerCard>
+            <div>
+              <H2>PayPal</H2>
+              <PayPalForm
+                label="Payment Amount"
+                itemName="Little Learners"
+                payee="ali@lifestonechurch.net"
+                isDonation={false}
+                defaultAmount={120}
+              />
+            </div>
+          </InnerCard>
+        </Card>
+      </CardContainer>
 
       <Banner>
         <H2>Calendar of Events</H2>
