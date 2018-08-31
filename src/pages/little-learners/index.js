@@ -194,7 +194,7 @@ const Page = ({ data }) => {
 
               <p>Make payment directly to Lifestone Little Learners</p>
 
-              <Button linkTo="https://lifestonechurch.breezechms.com/form/a71c10">
+              <Button linkTo="https://lifestonechurch.breezechms.com/form/LLLTuition">
                 Make Payment
               </Button>
             </div>
