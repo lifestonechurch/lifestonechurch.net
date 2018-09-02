@@ -76,8 +76,7 @@ const Page = ({ data }) => {
       <Img
         sizes={data.littleLearnersImage.childImageSharp.sizes}
         style={{
-          margin: '0 auto',
-          maxWidth: 1170,
+          maxWidth: '100%',
         }}
       />
 
@@ -234,7 +233,7 @@ export const query = graphql`
       relativePath: { eq: "pages/little-learners/little-learners.jpg" }
     ) {
       childImageSharp {
-        sizes(maxWidth: 1170) {
+        sizes(maxWidth: 1200) {
           ...GatsbyImageSharpSizes
         }
       }
