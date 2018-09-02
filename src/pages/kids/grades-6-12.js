@@ -19,6 +19,10 @@ const Image = styled.div`
   max-width: 700px;
 `;
 
+const FullWidthImage = styled.div`
+  width: 100%;
+`;
+
 const Month = styled.div`
   font-size: 18px;
   color: ${COLORS.BRAND};
@@ -57,9 +61,9 @@ const Page = ({ data }) => {
       />
       <H1>{title}</H1>
 
-      <Image>
+      <FullWidthImage>
         <Img sizes={data.youthImage.childImageSharp.sizes} />
-      </Image>
+      </FullWidthImage>
 
       <p>
         We exist to encourage and partner with the parents of Jr./Sr. High
@@ -177,7 +181,7 @@ export const query = graphql`
     }
     youthImage: file(relativePath: { eq: "pages/kids/youth.jpg" }) {
       childImageSharp {
-        sizes(maxWidth: 700) {
+        sizes(maxWidth: 1200) {
           ...GatsbyImageSharpSizes
         }
       }
