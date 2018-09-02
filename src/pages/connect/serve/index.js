@@ -108,6 +108,16 @@ const Page = ({ data }) => (
       potential Lifestone attendees into our church family.
     </p>
 
+    <p>
+      <b>Building Cleaning</b> volunteers serve on Saturdays to keep our
+      building clean and beautiful for Sundays.
+    </p>
+
+    <p>
+      <b>Prayer Team</b> volunteers pray during Sunday morning services that God
+      would move in the hearts and lives of all in attendance.
+    </p>
+
     <BreezeForm
       url="https://lifestonechurch.breezechms.com/form/db82a8"
       height={1500}
