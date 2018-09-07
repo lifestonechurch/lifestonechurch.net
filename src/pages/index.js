@@ -103,7 +103,7 @@ const IndexPage = ({ data }) => {
           <RowHeader>Welcome!</RowHeader>
           <RowContainer>
             <p>
-              We’re a Bible based church in Riverton, Utah. We would love for
+              We are a Bible based church in Riverton, Utah. We would love for
               you to <Link to="/about/visit/">visit us</Link>!
             </p>
           </RowContainer>
