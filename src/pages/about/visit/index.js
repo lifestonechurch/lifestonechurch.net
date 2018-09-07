@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
+import Layout from '../../../components/layout';
 import { H1 } from '../../../components/headers';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import GoogleMap from '../../../components/GoogleMap';
@@ -18,7 +19,7 @@ const MapContainer = styled.div`
 `;
 
 const Visit = ({ data }) => (
-  <div>
+  <Layout>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
@@ -95,7 +96,7 @@ const Visit = ({ data }) => (
     <MapContainer>
       <GoogleMap />
     </MapContainer>
-  </div>
+  </Layout>
 );
 
 export default Visit;

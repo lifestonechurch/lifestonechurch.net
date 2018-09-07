@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'react-emotion';
-import { longFormatDate } from '../utils/formatDate';
+
+import Layout from '../components/layout';
 import { H1 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
+import { longFormatDate } from '../utils/formatDate';
 
 const MetaData = styled.div`
   font-size: 14px;
@@ -16,7 +18,7 @@ export default ({ data }) => {
   const post = data.contentfulPost;
 
   return (
-    <div>
+    <Layout>
       <Breadcrumbs
         path={[
           { title: 'Home', url: '/' },
@@ -38,7 +40,7 @@ export default ({ data }) => {
           }}
         />
       )}
-    </div>
+    </Layout>
   );
 };
 

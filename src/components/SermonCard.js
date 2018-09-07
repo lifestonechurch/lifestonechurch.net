@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import formatDate from '../utils/formatDate';
 import HoverCard from './HoverCard';
 

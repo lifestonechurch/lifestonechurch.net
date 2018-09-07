@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
+import Layout from '../../components/layout';
 import { H1, H2 } from '../../components/headers';
 import Banner from '../../components/Banner';
-import SmallImage from '../../components/SmallImage';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 const title = 'Birth-Kindergarten';
@@ -15,7 +15,7 @@ const Image = styled.div`
 `;
 
 const Page = ({ data }) => (
-  <div>
+  <Layout>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'Kids' }]}
       title={title}
@@ -50,7 +50,7 @@ const Page = ({ data }) => (
       *** Our secure environments are staffed with loving volunteers who have
       all submitted to extensive background checks and interviews.
     </p>
-  </div>
+  </Layout>
 );
 
 export default Page;

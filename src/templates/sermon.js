@@ -1,30 +1,31 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-import formatDate from '../utils/formatDate';
+import Layout from '../components/layout';
 import { H1, H2 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
+import formatDate from '../utils/formatDate';
 
 // TODO: use OtherStuff on page
-const OtherStuff = ({ data }) => {
-  const sermon = data.contentfulSermon;
-  return (
-    <div>
-      {sermon.speaker.map(
-        s => s.photo && s.photo.file && <img src={s.photo.file.url} />
-      )}
-      <div>{sermon.audioDuration}</div>
-      <div>{sermon.sermonSeries && sermon.sermonSeries.name}</div>
-      <img
-        src={
-          sermon.sermonSeries &&
-          sermon.sermonSeries.image &&
-          sermon.sermonSeries.image.file.url
-        }
-      />
-    </div>
-  );
-};
+// const OtherStuff = ({ data }) => {
+//   const sermon = data.contentfulSermon;
+//   return (
+//     <div>
+//       {sermon.speaker.map(
+//         s => s.photo && s.photo.file && <img src={s.photo.file.url} />
+//       )}
+//       <div>{sermon.audioDuration}</div>
+//       <div>{sermon.sermonSeries && sermon.sermonSeries.name}</div>
+//       <img
+//         src={
+//           sermon.sermonSeries &&
+//           sermon.sermonSeries.image &&
+//           sermon.sermonSeries.image.file.url
+//         }
+//       />
+//     </div>
+//   );
+// };
 
 const Audio = styled.audio`
   width: 100%;
@@ -35,7 +36,7 @@ export default ({ data }) => {
   const sermon = data.contentfulSermon;
 
   return (
-    <div>
+    <Layout>
       <Breadcrumbs
         path={[
           { title: 'Home', url: '/' },
@@ -60,7 +61,7 @@ export default ({ data }) => {
           />
         </div>
       )}
-    </div>
+    </Layout>
   );
 };
 

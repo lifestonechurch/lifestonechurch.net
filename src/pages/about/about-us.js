@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
+import Layout from '../../components/layout';
 import { H1, H2 } from '../../components/headers';
 import BibleQuote from '../../components/BibleQuote';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -14,7 +15,7 @@ const Image = styled.div`
 `;
 
 const AboutUs = ({ data }) => (
-  <div>
+  <Layout>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
@@ -95,17 +96,17 @@ const AboutUs = ({ data }) => (
 
     <p>
       We are partnered with the{' '}
-      <a href="https://www.namb.net" target="_blank" rel="noopener">
+      <a href="https://www.namb.net" target="_blank" rel="noopener noreferrer">
         NAMB
       </a>, the{' '}
-      <a href="http://www.uisbc.org" target="_blank" rel="noopener">
+      <a href="http://www.uisbc.org" target="_blank" rel="noopener noreferrer">
         UISBC
       </a>, and the{' '}
-      <a href="https://slba.org" target="_blank" rel="noopener">
+      <a href="https://slba.org" target="_blank" rel="noopener noreferrer">
         Salt Lake Baptist Association
       </a>.
     </p>
-  </div>
+  </Layout>
 );
 
 export default AboutUs;

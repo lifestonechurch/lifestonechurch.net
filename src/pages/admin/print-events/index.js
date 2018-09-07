@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'react-emotion';
+
+import Layout from '../../../components/layout';
 
 class PrintEvents extends React.Component {
   state = {
@@ -21,18 +22,19 @@ class PrintEvents extends React.Component {
   render() {
     const { data } = this.props;
     return (
-      <div>
+      <Layout>
         {data.allContentfulEvent.edges.map(
           ({ node }) =>
             node.image &&
             !this.shouldShowImage(node.id) && (
               <img
                 src={node.image.file.url}
+                alt={node.image.description}
                 onClick={() => this.hideImage(node.id)}
               />
             )
         )}
-      </div>
+      </Layout>
     );
   }
 }
@@ -46,6 +48,7 @@ export const query = graphql`
         node {
           id
           image {
+            description
             file {
               url
             }

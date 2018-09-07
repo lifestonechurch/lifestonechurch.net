@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
+import Layout from '../../components/layout';
 import { H1 } from '../../components/headers';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
@@ -13,7 +14,7 @@ const Image = styled.div`
 `;
 
 const Page = ({ data }) => (
-  <div>
+  <Layout>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
@@ -30,11 +31,11 @@ const Page = ({ data }) => (
 
     <p>
       Lifestone Church is supported by{' '}
-      <a href="https://www.namb.net/" target="_blank" rel="noopener">
+      <a href="https://www.namb.net/" target="_blank" rel="noopener noreferrer">
         The North American Mission Board.
       </a>
     </p>
-  </div>
+  </Layout>
 );
 
 export default Page;

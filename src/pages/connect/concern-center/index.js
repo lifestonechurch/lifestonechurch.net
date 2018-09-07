@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
+import Layout from '../../../components/layout';
 import { H1 } from '../../../components/headers';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 
@@ -13,7 +14,7 @@ const Image = styled.div`
 `;
 
 const Page = ({ data }) => (
-  <div>
+  <Layout>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
       title={title}
@@ -38,12 +39,12 @@ const Page = ({ data }) => (
       <a
         href="https://signup.com/client/invitation2/secure/2068795/false#/invitation"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
         Join the mission
       </a>.
     </p>
-  </div>
+  </Layout>
 );
 
 export default Page;

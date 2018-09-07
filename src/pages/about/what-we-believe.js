@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Layout from '../../components/layout';
 import { H1 } from '../../components/headers';
 import BibleQuote from '../../components/BibleQuote';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -6,7 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 const title = 'What We Believe';
 
 const Page = () => (
-  <div>
+  <Layout>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
@@ -55,12 +57,12 @@ const Page = () => (
       <a
         href="http://www.sbc.net/bfm2000/bfm2000.asp"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
         We affirm the Baptist Faith and Message
       </a>
     </p>
-  </div>
+  </Layout>
 );
 
 export default Page;

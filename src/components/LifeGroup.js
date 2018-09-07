@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
-import Link from 'gatsby-link';
 
-import Card from './Card';
 import { H3, H4 } from './headers';
 
 const Container = styled.div`

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
+import Layout from '../../../components/layout';
 import { H1 } from '../../../components/headers';
 import Banner from '../../../components/Banner';
 import LifeGroup from '../../../components/LifeGroup';
@@ -31,7 +32,7 @@ const Page = ({ data }) => {
   const lifegroups = data.allContentfulSmallGroup.edges;
 
   return (
-    <div>
+    <Layout>
       <Breadcrumbs
         path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
         title={title}
@@ -54,7 +55,7 @@ const Page = ({ data }) => {
       <b>Text the leader to sign up!</b>
 
       {lifegroups.sort(sortByDayOfWeek).map(({ node }, index, array) => (
-        <div>
+        <div key={node.id}>
           {index === 0 || array[index - 1].node.day !== node.day ? (
             <Banner>{node.day}</Banner>
           ) : null}
@@ -64,7 +65,7 @@ const Page = ({ data }) => {
             description={node.description && node.description.description}
             day={node.day}
             time={node.time}
-            address={node.address}
+            address={node.address || ''}
             hosts={
               node.hosts
                 ? node.hosts.map(host => ({
@@ -73,7 +74,7 @@ const Page = ({ data }) => {
                     description: host.description
                       ? host.description.description
                       : '',
-                    photoSizes: host.photo ? host.photo.sizes : '',
+                    photoSizes: host.photo ? host.photo.sizes : undefined,
                     photoTitle: host.photo ? host.photo.title : '',
                   }))
                 : []
@@ -86,7 +87,7 @@ const Page = ({ data }) => {
                     description: leader.description
                       ? leader.description.description
                       : '',
-                    photoSizes: leader.photo ? leader.photo.sizes : '',
+                    photoSizes: leader.photo ? leader.photo.sizes : undefined,
                     photoTitle: leader.photo ? leader.photo.title : '',
                   }))
                 : []
@@ -111,7 +112,7 @@ const Page = ({ data }) => {
           relatives, and co-workers.
         </li>
       </ol>
-    </div>
+    </Layout>
   );
 };
 

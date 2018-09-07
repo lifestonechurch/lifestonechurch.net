@@ -2,6 +2,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 import styled from 'react-emotion';
 
+import Layout from '../components/layout';
 import { H1 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
 import EmbedForm from '../components/EmbedForm';
@@ -43,7 +44,7 @@ const Register = styled.div`
 export default ({ data }) => {
   const event = data.contentfulEvent;
   return (
-    <div>
+    <Layout>
       <Breadcrumbs
         path={[
           { title: 'Home', url: '/' },
@@ -110,7 +111,7 @@ export default ({ data }) => {
       ) : (
         <EmbedForm src={event.registrationLink} />
       )}
-    </div>
+    </Layout>
   );
 };
 

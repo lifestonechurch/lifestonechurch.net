@@ -3,13 +3,11 @@ import styled from 'react-emotion';
 import Img from 'gatsby-image';
 import ImageGallery from 'react-image-gallery';
 
+import Layout from '../../components/layout';
 import { H1 } from '../../components/headers';
 import EventCard from '../../components/EventCard';
 import Banner from '../../components/Banner';
 import { H2 } from '../../components/headers';
-import SmallImage from '../../components/SmallImage';
-import { getMonthNumber, getMonthName } from '../../utils/formatDate';
-import * as COLORS from '../../constants/colors';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 const title = 'Grades 6-12';
@@ -21,12 +19,6 @@ const Image = styled.div`
 
 const FullWidthImage = styled.div`
   width: 100%;
-`;
-
-const Month = styled.div`
-  font-size: 18px;
-  color: ${COLORS.BRAND};
-  margin: 10px 0px;
 `;
 
 const EventContainer = styled.div`
@@ -54,7 +46,7 @@ const Page = ({ data }) => {
   );
 
   return (
-    <div>
+    <Layout>
       <Breadcrumbs
         path={[{ title: 'Home', url: '/' }, { title: 'Kids' }]}
         title={title}
@@ -162,7 +154,7 @@ const Page = ({ data }) => {
       <GalleryContainer>
         <ImageGallery items={images} showThumbnails={false} />
       </GalleryContainer>
-    </div>
+    </Layout>
   );
 };
 
@@ -230,7 +222,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulImageGallery(id: { eq: "c32DZGuSOIMA4W2IYEiAMga" }) {
+    contentfulImageGallery(id: { eq: "ea3eb51a-01b5-527b-9d66-4926b3028efa" }) {
       title
       images {
         id
