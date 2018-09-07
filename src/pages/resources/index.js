@@ -1,8 +1,9 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
+import Layout from '../../components/layout';
 import { H1 } from '../../components/headers';
 import SermonCard from '../../components/SermonCard';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -22,7 +23,7 @@ const Page = ({ data }) => {
   const sermons = data.allContentfulSermon.edges;
 
   return (
-    <div>
+    <Layout>
       <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
 
       <H1>{title}</H1>
@@ -56,7 +57,7 @@ const Page = ({ data }) => {
           passage={node.mainScripture}
         />
       ))}
-    </div>
+    </Layout>
   );
 };
 

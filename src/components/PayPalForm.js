@@ -22,7 +22,7 @@ class PayPalForm extends React.Component {
   };
 
   render() {
-    const { label, itemName, payee, isDonation, defaultAmount } = this.props;
+    const { label, itemName, payee, isDonation } = this.props;
 
     return (
       <form

@@ -1,13 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
-import Link from 'gatsby-link';
-import EventCard from './EventCard';
-import {
-  getMonthNumber,
-  getMonthName,
-  shortFormatDate,
-} from '../utils/formatDate';
+import { Link } from 'gatsby';
+import { shortFormatDate } from '../utils/formatDate';
 
 const Item = styled.div`
   margin: 8px 0;

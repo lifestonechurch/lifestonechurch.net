@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
-import * as COLORS from '../constants/colors';
 
 const Container = styled.div`
   position: fixed;

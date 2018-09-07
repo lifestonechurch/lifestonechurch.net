@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import styled from 'react-emotion';
+
 import DesktopMenu from '../components/DesktopMenu';
 import MobileMenu from '../components/MobileMenu';
-import * as COLORS from '../constants/colors';
 import logo from '../images/logo/logo.png';
 
 const Container = styled.div`

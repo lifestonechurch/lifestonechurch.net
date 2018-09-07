@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'react-emotion';
 import ImageGallery from 'react-image-gallery';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
+import HomeLayout from '../components/HomeLayout';
 import { H4 } from '../components/headers';
 import SmallCalendar from '../components/SmallCalendar';
 import { getFutureEvents } from '../utils/formatDate';
@@ -75,7 +76,7 @@ const IndexPage = ({ data }) => {
   const futureEvents = getFutureEvents(events).slice(0, 7);
 
   return (
-    <div>
+    <HomeLayout>
       <ImageGallery
         items={images}
         renderItem={item => {
@@ -131,7 +132,7 @@ const IndexPage = ({ data }) => {
           </RowContainer>
         </RowItem>
       </Row>
-    </div>
+    </HomeLayout>
   );
 };
 

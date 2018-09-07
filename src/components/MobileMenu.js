@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 import styled from 'react-emotion';
 import Burger from './Burger';
@@ -156,7 +156,7 @@ class MobileMenu extends React.Component {
   };
 
   render() {
-    const { children, navigation } = this.props;
+    const { navigation } = this.props;
     return (
       <Container>
         <Mobile>

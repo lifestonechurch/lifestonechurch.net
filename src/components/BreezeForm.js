@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const BreezeForm = ({ url, height }) => (
   <iframe
     src={url}
+    title="Registration form"
     style={{ marginBottom: 20 }}
     width="100%"
     height={`${height}px`}

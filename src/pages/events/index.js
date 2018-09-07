@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'react-emotion';
 
+import Layout from '../../components/layout';
 import { H1 } from '../../components/headers';
 import EventCard from '../../components/EventCard';
-import Banner from '../../components/Banner';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { getFutureEvents } from '../../utils/formatDate';
 
@@ -20,7 +20,7 @@ const Page = ({ data }) => {
   const futureEvents = getFutureEvents(events);
 
   return (
-    <div>
+    <Layout>
       <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
       <H1>{title}</H1>
 
@@ -39,7 +39,7 @@ const Page = ({ data }) => {
           />
         ))}
       </Container>
-    </div>
+    </Layout>
   );
 };
 

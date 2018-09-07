@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 
+import Layout from '../../components/layout';
 import { H1, H2 } from '../../components/headers';
 import Banner from '../../components/Banner';
 import Button from '../../components/Button';
@@ -48,7 +49,7 @@ const Footer = styled.div`
 `;
 
 const Page = () => (
-  <div>
+  <Layout>
     <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
 
     <H1>{title}</H1>
@@ -128,7 +129,7 @@ const Page = () => (
         <a
           href="https://lifestonechurch.breezechms.com"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           Login
         </a>{' '}
@@ -161,7 +162,7 @@ const Page = () => (
       </a>{' '}
       for help.
     </p>
-  </div>
+  </Layout>
 );
 
 export default Page;

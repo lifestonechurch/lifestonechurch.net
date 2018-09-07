@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Layout from '../../components/layout';
 import { H1 } from '../../components/headers';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import EmbedForm from '../../components/EmbedForm';
@@ -7,7 +8,7 @@ import EmbedForm from '../../components/EmbedForm';
 const title = 'Contact Us';
 
 const Page = () => (
-  <div>
+  <Layout>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'About' }]}
       title={title}
@@ -38,7 +39,7 @@ const Page = () => (
     <br />
 
     <EmbedForm src="https://lifestonechurch.breezechms.com/form/39150e" />
-  </div>
+  </Layout>
 );
 
 export default Page;

@@ -19,7 +19,11 @@ const SocialMedia = () => (
   <Container>
     <div>
       <p>
-        <a href="https://www.facebook.com/lifestonechurchutah/" target="_blank">
+        <a
+          href="https://www.facebook.com/lifestonechurchutah/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <SocialMediaIcon src={Facebook} width="15px" height="15px" />lifestonechurchutah
         </a>
       </p>
@@ -27,12 +31,17 @@ const SocialMedia = () => (
         <a
           href="https://www.instagram.com/lifestonechurchutah/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <SocialMediaIcon src={Instagram} width="15px" height="15px" />@lifestonechurchutah
         </a>
       </p>
       <p>
-        <a href="https://twitter.com/lifestoneutah" target="_blank">
+        <a
+          href="https://twitter.com/lifestoneutah"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <SocialMediaIcon src={Twitter} width="15px" height="15px" />@lifestoneutah
         </a>
       </p>

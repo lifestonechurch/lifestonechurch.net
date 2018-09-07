@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
+import Layout from '../../../components/layout';
 import { H1, H2 } from '../../../components/headers';
 import BreezeForm from '../../../components/BreezeForm';
 import Breadcrumbs from '../../../components/Breadcrumbs';
@@ -14,7 +15,7 @@ const Image = styled.div`
 `;
 
 const Page = ({ data }) => (
-  <div>
+  <Layout>
     <Breadcrumbs
       path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
       title={title}
@@ -122,7 +123,7 @@ const Page = ({ data }) => (
       url="https://lifestonechurch.breezechms.com/form/db82a8"
       height={1500}
     />
-  </div>
+  </Layout>
 );
 
 export default Page;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import styled from 'react-emotion';
 
 import * as COLORS from '../constants/colors';
@@ -40,7 +40,7 @@ const Button = ({ children = 'Ok', linkTo }) => {
   return (
     <Container>
       {isExternal ? (
-        <a href={linkTo} target="_blank" rel="noopener">
+        <a href={linkTo} target="_blank" rel="noopener noreferrer">
           {children}
         </a>
       ) : (

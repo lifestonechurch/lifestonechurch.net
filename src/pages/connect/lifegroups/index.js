@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
+import Layout from '../../../components/layout';
 import { H1 } from '../../../components/headers';
 import Banner from '../../../components/Banner';
 import LifeGroup from '../../../components/LifeGroup';
@@ -31,7 +32,7 @@ const Page = ({ data }) => {
   const lifegroups = data.allContentfulSmallGroup.edges;
 
   return (
-    <div>
+    <Layout>
       <Breadcrumbs
         path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
         title={title}
@@ -111,7 +112,7 @@ const Page = ({ data }) => {
           relatives, and co-workers.
         </li>
       </ol>
-    </div>
+    </Layout>
   );
 };
 

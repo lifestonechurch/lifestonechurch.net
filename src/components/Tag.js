@@ -1,8 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import styled from 'react-emotion';
-
-import * as COLORS from '../constants/colors';
 
 const Container = styled.span`
   background-color: ${({ color }) => color};
