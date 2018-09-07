@@ -1,6 +1,7 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import styled from 'react-emotion';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import { H1 } from '../components/headers';

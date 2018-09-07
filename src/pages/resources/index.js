@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'react-emotion';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../../components/layout';
