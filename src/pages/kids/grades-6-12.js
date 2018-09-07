@@ -222,7 +222,7 @@ export const query = graphql`
         }
       }
     }
-    contentfulImageGallery(id: { eq: "c32DZGuSOIMA4W2IYEiAMga" }) {
+    contentfulImageGallery(id: { eq: "ea3eb51a-01b5-527b-9d66-4926b3028efa" }) {
       title
       images {
         id
