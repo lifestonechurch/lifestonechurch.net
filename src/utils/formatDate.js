@@ -48,11 +48,11 @@ export const getFutureEvents = events => {
     .filter(
       ({ node }) =>
         node.endDate
-          ? new Date(`${node.endDate} 0:00:00`) >= today
+          ? new Date(`${node.endDate}T00:00:00`) >= today
           : node.startDate
-            ? new Date(`${node.startDate} 0:00:00`) >= today
+            ? new Date(`${node.startDate}T00:00:00`) >= today
             : node.dateAndRegistration &&
-              new Date(`${getLastEndDate(node.dateAndRegistration)} 0:00:00`) >=
+              new Date(`${getLastEndDate(node.dateAndRegistration)}T00:00:00`) >=
                 today
     )
     .map(({ node }) => ({
