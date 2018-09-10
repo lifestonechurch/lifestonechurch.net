@@ -159,65 +159,61 @@ module.exports = {
             serialize: ({
               query: { site: { siteMetadata }, allContentfulSermon },
             }) =>
-              allContentfulSermon.edges.map(
-                ({ node }) =>
-                  console.log(node.date) || {
-                    title: node.title || '',
-                    description: node.shortDescription || '',
-                    url: `${siteMetadata.siteUrl}/resources/sermons/${
-                      node.fields.slug
+              allContentfulSermon.edges.map(({ node }) => ({
+                title: node.title || '',
+                description: node.shortDescription || '',
+                url: `${siteMetadata.siteUrl}/resources/sermons/${
+                  node.fields.slug
+                }`,
+                guid: node.id,
+                author: node.speaker.map(s => s.name, {
+                  oxfordComma: true,
+                }),
+                enclosure: {
+                  url: `https://www.podtrac.com/pts/redirect.mp3/${
+                    node.audioUrl
+                  }`,
+                  length: node.audioLength,
+                  type: 'audio/mp3',
+                },
+                custom_elements: [
+                  {
+                    pubDate: DateTime.fromISO(node.date).toHTTP(),
+                  },
+                  {
+                    'itunes:author': humanizeList(
+                      node.speaker.map(s => s.name, { oxfordComma: true })
+                    ),
+                  },
+                  {
+                    'itunes:subtitle': node.shortDescription || '',
+                  },
+                  {
+                    'itunes:summary': node.shortDescription || '',
+                  },
+                  {
+                    'content:encoded': `<p>${node.shortDescription || ''}</p>${
+                      node.fields && node.fields.notesFormatted
+                        ? node.fields.notesFormatted
+                        : ``
                     }`,
-                    guid: node.id,
-                    author: node.speaker.map(s => s.name, {
-                      oxfordComma: true,
-                    }),
-                    enclosure: {
-                      url: `https://www.podtrac.com/pts/redirect.mp3/${
-                        node.audioUrl
-                      }`,
-                      length: node.audioLength,
-                      type: 'audio/mp3',
+                  },
+                  { 'itunes:explicit': 'clean' },
+                  {
+                    'itunes:image': {
+                      _attr: {
+                        href:
+                          node.sermonSeries &&
+                          node.sermonSeries.image &&
+                          node.sermonSeries.file
+                            ? `https:${node.sermonSeries.image.file.url}`
+                            : '',
+                      },
                     },
-                    custom_elements: [
-                      {
-                        pubDate: DateTime.fromISO(node.date).toHTTP(),
-                      },
-                      {
-                        'itunes:author': humanizeList(
-                          node.speaker.map(s => s.name, { oxfordComma: true })
-                        ),
-                      },
-                      {
-                        'itunes:subtitle': node.shortDescription || '',
-                      },
-                      {
-                        'itunes:summary': node.shortDescription || '',
-                      },
-                      {
-                        'content:encoded': `<p>${node.shortDescription ||
-                          ''}</p>${
-                          node.fields && node.fields.notesFormatted
-                            ? node.fields.notesFormatted
-                            : ``
-                        }`,
-                      },
-                      { 'itunes:explicit': 'clean' },
-                      {
-                        'itunes:image': {
-                          _attr: {
-                            href:
-                              node.sermonSeries &&
-                              node.sermonSeries.image &&
-                              node.sermonSeries.file
-                                ? `https:${node.sermonSeries.image.file.url}`
-                                : '',
-                          },
-                        },
-                      },
-                      { 'itunes:duration': node.audioDuration },
-                    ],
-                  }
-              ),
+                  },
+                  { 'itunes:duration': node.audioDuration },
+                ],
+              })),
             query: `
             {
               allContentfulSermon(sort: { fields: [date], order: DESC }) {
