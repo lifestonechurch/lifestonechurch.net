@@ -4,7 +4,7 @@ import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
 import { H3, H4 } from './headers';
-import Card from './card';
+import Card from './Card';
 import ShowMore from './ShowMore';
 
 const InnerCard = styled.div`
