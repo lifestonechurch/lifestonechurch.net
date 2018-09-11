@@ -4,23 +4,21 @@ import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
 import { H3, H4 } from './headers';
+import Card from './card';
+import ShowMore from './ShowMore';
 
-const Container = styled.div`
-  margin-bottom: 2.5em;
-  padding-bottom: 1em;
-  border-bottom: 5px solid #008f01;
+const InnerCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
 `;
 
 const ImageStyles = {
   maxWidth: 200,
-  borderRadius: '50%',
-  shapeOutside: 'circle()',
   marginRight: '2em',
 };
-
-const ClearFloat = styled.div`
-  clear: both;
-`;
 
 const LifeGroup = ({
   name,
@@ -33,46 +31,49 @@ const LifeGroup = ({
   contact,
   hasChildcare,
 }) => (
-  <Container>
-    <H3>
-      {name} - {day}
-    </H3>
-    <p>{description}</p>
-    <blockquote>
-      <div>{time}</div>
-      <div>{address}</div>
-      {contact && (
-        <div
-          dangerouslySetInnerHTML={{
-            __html: contact,
-          }}
-        />
-      )}
-    </blockquote>
-    {hasChildcare && <p>Free on-site childcare</p>}
-    <H4>Hosts</H4>
-    <div>
-      {hosts.map(h => (
-        <div key={h.id}>
-          <p>{h.name}</p>
-          <p>{h.description}</p>
+  <Card>
+    <InnerCard>
+      <div>
+        <H3>{name}</H3>
+        <p>
+          {time} on {day}s {address && `at ${address}`}
+        </p>
+        <p>{description}</p>
+
+        <H4>Hosts: {hosts.name}</H4>
+        <div>
+          {hosts.id !== leaders.id &&
+            (hosts.description && <ShowMore description={hosts.description} />)}
         </div>
-      ))}
-    </div>
-    <H4>Leaders</H4>
-    <div>
-      {leaders.map(h => (
-        <div key={h.id}>
-          <p>{h.name}</p>
-          {h.photoSizes && (
-            <Img sizes={h.photoSizes} alt={h.photoTitle} style={ImageStyles} />
-          )}
-          <p>{h.description}</p>
+
+        <H4>Leaders: {leaders.name}</H4>
+        <div>
+          <div key={leaders.id}>
+            {leaders.photoSizes && (
+              <Img
+                sizes={leaders.photoSizes}
+                alt={leaders.photoTitle}
+                style={ImageStyles}
+              />
+            )}
+            {leaders.description && (
+              <ShowMore description={leaders.description} />
+            )}
+          </div>
         </div>
-      ))}
-    </div>
-    <ClearFloat />
-  </Container>
+      </div>
+
+      <div>
+        {contact && (
+          <div
+            dangerouslySetInnerHTML={{
+              __html: contact,
+            }}
+          />
+        )}
+      </div>
+    </InnerCard>
+  </Card>
 );
 
 LifeGroup.propTypes = {
@@ -81,24 +82,20 @@ LifeGroup.propTypes = {
   day: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
-  hosts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      description: PropTypes.string,
-      photoSizes: PropTypes.object,
-      photoTitle: PropTypes.string,
-    })
-  ),
-  leaders: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      description: PropTypes.string,
-      photoSizes: PropTypes.object,
-      photoTitle: PropTypes.string,
-    })
-  ),
+  hosts: PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.string,
+    photoSizes: PropTypes.object,
+    photoTitle: PropTypes.string,
+  }),
+  leaders: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    photoSizes: PropTypes.object,
+    photoTitle: PropTypes.string,
+  }),
   contact: PropTypes.string.isRequired,
   hasChildcare: PropTypes.bool.isRequired,
 };

@@ -11,6 +11,17 @@ import Breadcrumbs from '../../../components/Breadcrumbs';
 
 const title = 'LifeGroups';
 
+const CardContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  > div {
+    width: 500px;
+    max-width: 90%;
+  }
+`;
+
 const Image = styled.div`
   margin: 0 auto;
   max-width: 1170px;
@@ -55,49 +66,57 @@ const Page = ({ data }) => {
 
       <b>Text the leader to sign up!</b>
 
-      {lifegroups.sort(sortByDayOfWeek).map(({ node }, index, array) => (
-        <div key={node.id}>
-          {index === 0 || array[index - 1].node.day !== node.day ? (
-            <Banner>{node.day}</Banner>
-          ) : null}
+      <Banner>LifeGroups</Banner>
 
-          <LifeGroup
-            name={node.name}
-            description={node.description && node.description.description}
-            day={node.day}
-            time={node.time}
-            address={node.address || ''}
-            hosts={
-              node.hosts
-                ? node.hosts.map(host => ({
-                    id: host.id,
-                    name: host.name,
-                    description: host.description
-                      ? host.description.description
-                      : '',
-                    photoSizes: host.photo ? host.photo.sizes : undefined,
-                    photoTitle: host.photo ? host.photo.title : '',
-                  }))
-                : []
-            }
-            leaders={
-              node.leaders
-                ? node.leaders.map(leader => ({
-                    id: leader.id,
-                    name: leader.name,
-                    description: leader.description
-                      ? leader.description.description
-                      : '',
-                    photoSizes: leader.photo ? leader.photo.sizes : undefined,
-                    photoTitle: leader.photo ? leader.photo.title : '',
-                  }))
-                : []
-            }
-            contact={node.fields.contactFormatted}
-            hasChildcare={node.hasChildcare}
-          />
-        </div>
-      ))}
+      <CardContainer>
+        {lifegroups.sort(sortByDayOfWeek).map(({ node }, index, array) => (
+          <div key={node.id}>
+            <LifeGroup
+              name={node.name}
+              description={node.description && node.description.description}
+              day={node.day}
+              time={node.time}
+              address={node.address || ''}
+              hosts={
+                node.hosts
+                  ? {
+                      id: node.hosts[0].id,
+                      name: node.hosts[0].name,
+                      description: node.hosts[0].description
+                        ? node.hosts[0].description.description
+                        : '',
+                      photoSizes: node.hosts[0].photo
+                        ? node.hosts[0].photo.sizes
+                        : undefined,
+                      photoTitle: node.hosts[0].photo
+                        ? node.hosts[0].photo.title
+                        : '',
+                    }
+                  : {}
+              }
+              leaders={
+                node.leaders
+                  ? {
+                      id: node.leaders[0].id,
+                      name: node.leaders[0].name,
+                      description: node.leaders[0].description
+                        ? node.leaders[0].description.description
+                        : '',
+                      photoSizes: node.leaders[0].photo
+                        ? node.leaders[0].photo.sizes
+                        : undefined,
+                      photoTitle: node.leaders[0].photo
+                        ? node.leaders[0].photo.title
+                        : '',
+                    }
+                  : {}
+              }
+              contact={node.fields.contactFormatted}
+              hasChildcare={node.hasChildcare}
+            />
+          </div>
+        ))}
+      </CardContainer>
 
       <Banner>5 Reasons to Join a LifeGroup!</Banner>
 
