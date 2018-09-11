@@ -10,6 +10,12 @@ const Click = styled.p`
   color: ${COLORS.BRAND};
 `;
 
+const getWords = (str, numberOfWords) =>
+  str
+    .split(/\s+/)
+    .slice(0, numberOfWords)
+    .join(' ');
+
 class ShowMore extends React.Component {
   state = {
     isExpanded: false,
@@ -30,7 +36,7 @@ class ShowMore extends React.Component {
         <p>
           {this.state.isExpanded
             ? description
-            : `${description.substring(0, 100)}...`}
+            : `${getWords(description, 60)}...`}
         </p>
         <Click onClick={this.toggle}>
           {this.state.isExpanded ? 'Show Less' : 'Show More'}
