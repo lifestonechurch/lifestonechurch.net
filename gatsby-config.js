@@ -2,6 +2,8 @@ require('dotenv').config();
 const { DateTime } = require('luxon');
 var humanizeList = require('humanize-list');
 
+const COLORS = { BRAND: '#008F01' };
+
 module.exports = {
   siteMetadata: {
     title: `Lifestone Church`,
@@ -51,6 +53,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: COLORS.BRAND,
+        showSpinner: false,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
