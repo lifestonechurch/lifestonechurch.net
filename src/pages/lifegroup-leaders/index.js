@@ -33,7 +33,7 @@ class Page extends React.Component {
   };
 
   submitForm = () => {
-    if (this.state.password === 'hello') {
+    if (this.state.password === process.env.GATSBY_LIFEGROUP_LEADER_PASSWORD) {
       this.setState(prevState => ({
         ...prevState,
         isLoggedIn: true,
