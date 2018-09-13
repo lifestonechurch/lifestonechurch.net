@@ -91,7 +91,7 @@ const Page = ({ data }) => (
     <CardContainer>
       <Card>
         <CardInner>
-          <H3>2’s and 3’s</H3>
+          <H3>2-3 ½ Year Olds</H3>
           <p>Tuesday, Thursday 8:30am-11:30am</p>
 
           <p>$120/Month September-May</p>
@@ -110,7 +110,7 @@ const Page = ({ data }) => (
 
       <Card>
         <CardInner>
-          <H3>4’s and 5’s</H3>
+          <H3>3 ½-5 Year Olds</H3>
           <p>Tuesday, Thursday 8:30am-11:30am</p>
 
           <p>$120/Month September-May</p>
