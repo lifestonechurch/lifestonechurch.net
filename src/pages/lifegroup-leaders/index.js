@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 
+import Layout from '../../components/layout';
 import { H1 } from '../../components/headers';
 
 const title = 'LifeGroup Leader Resources';
@@ -48,7 +49,7 @@ class Page extends React.Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <H1>{title}</H1>
         {this.state.isLoggedIn ? (
           <div>Secret stuff</div>
@@ -66,7 +67,7 @@ class Page extends React.Component {
             <Error>{this.state.error}</Error>
           </div>
         )}
-      </div>
+      </Layout>
     );
   }
 }
