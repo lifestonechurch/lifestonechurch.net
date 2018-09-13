@@ -20,14 +20,6 @@ const Page = () => (
       very best God has for your life! Feel free to email us with any prayer
       requests, questions about visiting, or any other queries.
     </p>
-    <p>Mailing Address:</p>
-    <p>
-      5526W. 13400 S.<br />
-      #352<br />
-      Herriman UT 84096
-    </p>
-
-
     <p>
       Email us at{' '}
       <a href="mailto:lifestone@lifestonechurch.net">
