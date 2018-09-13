@@ -9,7 +9,7 @@ module.exports = {
     title: `Lifestone Church`,
     podcastSubtitle: `Messages from Sunday morning worship at Lifestone Church`,
     description: `A Bible based church in Riverton, Utah.`,
-    coverArt: `logo.jpg`,
+    coverArt: `logo2.jpg`,
     siteUrl: `https://www.lifestonechurch.net`,
     ownerEmail: `lifestone@lifestonechurch.net`,
     categories: ['Religion & Spirituality', 'Christianity'],
@@ -91,7 +91,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#008f01',
         display: 'minimal-ui',
-        icon: 'src/images/logo/logo2.png',
+        icon: 'src/images/logo/logo2.jpg',
       },
     },
     {

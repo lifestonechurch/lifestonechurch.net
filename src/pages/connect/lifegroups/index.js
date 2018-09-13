@@ -66,7 +66,7 @@ const Page = ({ data }) => {
 
       <b>Text the leader to sign up!</b>
 
-      <Banner>LifeGroups</Banner>
+      <Banner>Check Out Our Groups!</Banner>
 
       <CardContainer>
         {lifegroups.sort(sortByDayOfWeek).map(({ node }, index, array) => (
