@@ -26,7 +26,7 @@ const Page = () => (
       #352<br />
       Herriman UT 84096
     </p>
-    <p>(801) 839-5420</p>
+    <p>(801) 446-6828</p>
 
     <p>
       Email us at{' '}
