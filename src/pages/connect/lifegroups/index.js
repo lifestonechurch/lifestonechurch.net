@@ -4,12 +4,32 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../../../components/layout';
-import { H1 } from '../../../components/headers';
+import { H1, H2 } from '../../../components/headers';
 import Banner from '../../../components/Banner';
 import LifeGroup from '../../../components/LifeGroup';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 
 const title = 'LifeGroups';
+
+const Video = styled.div`
+  position: relative;
+  padding-bottom: 53%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  & iframe,
+  & object,
+  & embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+  }
+`;
 
 const CardContainer = styled.div`
   display: flex;
@@ -65,6 +85,28 @@ const Page = ({ data }) => {
       </p>
 
       <b>Text the leader to sign up!</b>
+
+      <Banner>
+        <H2>Preview Our Fall Series!</H2>
+      </Banner>
+
+      <Video>
+        <iframe
+          title="Fall LifeGroup Series"
+          src="https://player.rightnow.org/241480"
+          width="640"
+          height="360"
+          style={{
+            display: 'block',
+            margin: '0 auto',
+            maxWidth: '100%',
+          }}
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+        />
+      </Video>
 
       <Banner>Check Out Our Groups!</Banner>
 
