@@ -11,6 +11,12 @@ import Breadcrumbs from '../../../components/Breadcrumbs';
 
 const title = 'LifeGroups';
 
+const VideoContainer = styled.div`
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+`;
+
 const Video = styled.div`
   position: relative;
   padding-bottom: 53%;
@@ -79,22 +85,24 @@ const Page = ({ data }) => {
         <H2>Preview Our Fall Series!</H2>
       </Banner>
 
-      <Video>
-        <iframe
-          src="https://player.rightnow.org/241480"
-          width="640"
-          height="360"
-          style={{
-            display: 'block',
-            margin: '0 auto',
-            maxWidth: '100%',
-          }}
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
-        />
-      </Video>
+      <VideoContainer>
+        <Video>
+          <iframe
+            src="https://player.rightnow.org/241480"
+            width="640"
+            height="360"
+            style={{
+              display: 'block',
+              margin: '0 auto',
+              maxWidth: '100%',
+            }}
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+          />
+        </Video>
+      </VideoContainer>
 
       <Banner>Check Out Our Groups!</Banner>
 
