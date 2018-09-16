@@ -75,24 +75,12 @@ const Page = ({ data }) => {
         <Img sizes={data.lifegroupImage.childImageSharp.sizes} />
       </Image>
 
-      <p>
-        Connect to God by connecting to His people & His Word! LifeGroups are
-        the heart of Lifestone Church. LifeGroups are small groups of people who
-        meet once a week in order to connect to God by connecting to other
-        people who love Him and to the Bible. This is where spiritual growth
-        happens! Check out the details and select the group that works best for
-        your family.
-      </p>
-
-      <b>Text the leader to sign up!</b>
-
       <Banner>
         <H2>Preview Our Fall Series!</H2>
       </Banner>
 
       <Video>
         <iframe
-          title="Fall LifeGroup Series"
           src="https://player.rightnow.org/241480"
           width="640"
           height="360"
