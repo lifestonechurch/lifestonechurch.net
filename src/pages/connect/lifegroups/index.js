@@ -82,7 +82,7 @@ const Page = ({ data }) => {
       </Image>
 
       <Banner>
-        <H2>Preview Our Fall Series</H2>
+        <H2>Preview Fall Series</H2>
       </Banner>
 
       <VideoContainer>
@@ -104,7 +104,7 @@ const Page = ({ data }) => {
         </Video>
       </VideoContainer>
 
-      <Banner>Check Out Our Groups</Banner>
+      <Banner>Check Out Groups</Banner>
 
       <CardContainer>
         {lifegroups.sort(sortByDayOfWeek).map(({ node }, index, array) => (
