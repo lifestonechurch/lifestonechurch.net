@@ -82,7 +82,7 @@ const Page = ({ data }) => {
       </Image>
 
       <Banner>
-        <H2>Preview Our Fall Series!</H2>
+        <H2>Preview Our Fall Series</H2>
       </Banner>
 
       <VideoContainer>
@@ -104,7 +104,7 @@ const Page = ({ data }) => {
         </Video>
       </VideoContainer>
 
-      <Banner>Check Out Our Groups!</Banner>
+      <Banner>Check Out Our Groups</Banner>
 
       <CardContainer>
         {lifegroups.sort(sortByDayOfWeek).map(({ node }, index, array) => (
@@ -155,21 +155,6 @@ const Page = ({ data }) => {
           </div>
         ))}
       </CardContainer>
-
-      <Banner>5 Reasons to Join a LifeGroup!</Banner>
-
-      <ol>
-        <li>You will begin to really feel like part of God´s family.</li>
-        <li>You will understand the Bible better in a small group.</li>
-        <li>Prayer will become more meaningful to you.</li>
-        <li>
-          You will have friends with whom to share both your joys and burdens.
-        </li>
-        <li>
-          You will have a natural way to share Jesus with neighbors, friends,
-          relatives, and co-workers.
-        </li>
-      </ol>
     </Layout>
   );
 };
