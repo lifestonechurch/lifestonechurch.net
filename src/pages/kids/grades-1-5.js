@@ -58,17 +58,18 @@ const Page = ({ data }) => (
     </Banner>
 
     <p>
-      When you walk in the door you’ll see signage directing you to your child’s
-      check in. At the check in area, you will be greeted by a volunteer who
-      will help you sign in your child. Our desire is for families to worship
-      together, so when the worship music begins, your child’s teacher will
-      bring children grades K-5 in to worship along side the adults before
-      returning to the kids area for their kid-sized Bible lesson.
+      When you walk in the door at Lifestone on Sunday mornings, our greeters
+      will direct you to the Kids Check In Station. There, you will be greeted
+      by a volunteer who will help you sign in your child and give you a tag so
+      that you can securely check your child out after the service ends. Your
+      child will enjoy an hour long, kid-friendly Bible experience while you
+      join other adults in the worship room for live worship music and to listen
+      to Pastor Ben's message.
     </p>
 
     <p>
       *** Our secure environments are staffed with loving volunteers who have
-      all submitted to extensive background checks and interviews.
+      all passed extensive background checks and interviews.
     </p>
   </Layout>
 );
