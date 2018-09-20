@@ -7,6 +7,7 @@ import Layout from '../../components/layout';
 import { H1, H2 } from '../../components/headers';
 import Banner from '../../components/Banner';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import VideoPlayer from '../../components/VideoPlayer';
 
 const title = 'Grades 1-5';
 
@@ -40,9 +41,10 @@ const Page = ({ data }) => (
       <H2>Current Series</H2>
     </Banner>
 
-    <Image>
-      <Img sizes={data.kidsLifeSeriesImage.childImageSharp.sizes} />
-    </Image>
+    <VideoPlayer
+      url="https://www.youtube.com/embed/U6EkuGoMbZA"
+      maxWidth={600}
+    />
 
     <p>
       Calling all 1st-5th graders! Buck Denver and his friends are on an
@@ -79,15 +81,6 @@ export const query = graphql`
       childImageSharp {
         sizes(maxWidth: 700) {
           ...GatsbyImageSharpSizes_noBase64
-        }
-      }
-    }
-    kidsLifeSeriesImage: file(
-      relativePath: { eq: "pages/kids/kids-life-series.jpg" }
-    ) {
-      childImageSharp {
-        sizes(maxWidth: 700) {
-          ...GatsbyImageSharpSizes
         }
       }
     }

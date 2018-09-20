@@ -8,34 +8,9 @@ import { H1, H2 } from '../../../components/headers';
 import Banner from '../../../components/Banner';
 import LifeGroup from '../../../components/LifeGroup';
 import Breadcrumbs from '../../../components/Breadcrumbs';
+import VideoPlayer from '../../../components/VideoPlayer';
 
 const title = 'LifeGroups';
-
-const VideoContainer = styled.div`
-  display: block;
-  margin: 0 auto;
-  max-width: 600px;
-`;
-
-const Video = styled.div`
-  position: relative;
-  padding-bottom: 53%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-  margin-bottom: 20px;
-
-  & iframe,
-  & object,
-  & embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-  }
-`;
 
 const CardContainer = styled.div`
   display: flex;
@@ -85,24 +60,7 @@ const Page = ({ data }) => {
         <H2>Preview Fall Series</H2>
       </Banner>
 
-      <VideoContainer>
-        <Video>
-          <iframe
-            src="https://player.rightnow.org/241480"
-            width="640"
-            height="360"
-            style={{
-              display: 'block',
-              margin: '0 auto',
-              maxWidth: '100%',
-            }}
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
-          />
-        </Video>
-      </VideoContainer>
+      <VideoPlayer url="https://player.rightnow.org/241480" maxWidth={600} />
 
       <Banner>Check Out Groups</Banner>
 
