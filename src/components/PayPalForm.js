@@ -44,10 +44,17 @@ class PayPalForm extends React.Component {
           value={this.state.amount || ''}
           onChange={this.handleChange}
         />
+        {isDonation && (
+          <div>
+            <br />
+            <label htmlFor="cn">Memo:</label>
+            <br />
+            <input type="text" name="cn" id="cn" />
+          </div>
+        )}
         <input type="hidden" name="item_name" value={itemName} />
         <input type="hidden" name="business" value={payee} />
         <input type="hidden" name="lc" value="US" />
-        <input type="hidden" name="no_note" value="1" />
         <input type="hidden" name="no_shipping" value="1" />
         <input type="hidden" name="rm" value="1" />
         <input
