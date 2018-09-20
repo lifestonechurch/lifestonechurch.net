@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
 import Layout from '../../components/layout';
 import { H1, H2 } from '../../components/headers';
@@ -15,8 +16,10 @@ import * as COLORS from '../../constants/colors';
 
 const title = 'Give';
 
-// https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/
-// Return method: 1 - redirect to the return url by using the GET method with no variables included
+const Image = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+`;
 
 const lastYear = new Date().getUTCFullYear() - 1;
 
@@ -48,7 +51,7 @@ const Footer = styled.div`
   }
 `;
 
-const Page = () => (
+const Page = ({ data }) => (
   <Layout>
     <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
 
@@ -118,8 +121,27 @@ const Page = () => (
     </CardContainer>
 
     <Banner>
+      <H2>Reach More Land Fundraiser</H2>
+    </Banner>
+
+    <Image>
+      <Img sizes={data.reachMoreImage.childImageSharp.sizes} />
+    </Image>
+
+    <p>How to give to reach more:</p>
+
+    <p>
+      Text 385-800-3135 amount + the word reach<br />Example: $50 reach
+    </p>
+
+    <p>OR</p>
+
+    <p>Signify "REACH" in the memo of your check or online gift</p>
+
+    <Banner>
       <H2>{lastYear} Giving Statement</H2>
     </Banner>
+
     <p>
       To view, print, or download your giving statement, follow the steps below.
       Remember, we are here to help!
@@ -166,3 +188,15 @@ const Page = () => (
 );
 
 export default Page;
+
+export const query = graphql`
+  query GiveQuery {
+    reachMoreImage: file(relativePath: { eq: "pages/give/reach-more.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 700) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+  }
+`;
