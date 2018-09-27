@@ -60,7 +60,11 @@ const Page = ({ data }) => {
         <H2>Preview Fall Series</H2>
       </Banner>
 
-      <VideoPlayer url="https://player.rightnow.org/241480" maxWidth={600} />
+      <VideoPlayer
+        url="https://player.rightnow.org/241480"
+        maxWidth={600}
+        title="The Good Book LifeGroup Series"
+      />
 
       <Banner>Check Out Groups</Banner>
 

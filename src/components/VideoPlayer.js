@@ -34,10 +34,11 @@ const Container = styled.div`
   }
 `;
 
-const VideoPlayer = ({ url, maxWidth }) => (
+const VideoPlayer = ({ url, title, maxWidth }) => (
   <VideoContainer maxWidth={maxWidth}>
     <Container>
       <iframe
+        title={title}
         src={url}
         width="560"
         height="315"
@@ -52,6 +53,7 @@ const VideoPlayer = ({ url, maxWidth }) => (
 
 VideoPlayer.propTypes = {
   url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   maxWidth: PropTypes.number,
 };
 

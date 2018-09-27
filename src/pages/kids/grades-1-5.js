@@ -44,6 +44,7 @@ const Page = ({ data }) => (
     <VideoPlayer
       url="https://www.youtube.com/embed/U6EkuGoMbZA"
       maxWidth={600}
+      title="What's in the Bible Series"
     />
 
     <p>

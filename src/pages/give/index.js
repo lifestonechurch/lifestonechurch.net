@@ -125,7 +125,10 @@ const Page = ({ data }) => (
     </Banner>
 
     <Image>
-      <Img sizes={data.reachMoreImage.childImageSharp.sizes} />
+      <Img
+        sizes={data.reachMoreImage.childImageSharp.sizes}
+        alt="Reach More Land Fundraiser"
+      />
     </Image>
 
     <p>How to give to reach more:</p>
