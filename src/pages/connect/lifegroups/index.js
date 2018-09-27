@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'react-emotion';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import humanizeList from 'humanize-list';
 
 import Layout from '../../../components/layout';
-import { H1, H2, H3 } from '../../../components/headers';
+import { H1, H2, H3, H4 } from '../../../components/headers';
 import Banner from '../../../components/Banner';
 import LifeGroup from '../../../components/LifeGroup';
 import Breadcrumbs from '../../../components/Breadcrumbs';
@@ -19,7 +20,7 @@ const Center = styled.div`
 
 const CardContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   > div {
@@ -93,6 +94,13 @@ class Page extends React.Component {
         </Center>
 
         <MultiSelect onChange={this.handleLifeGroupDayChange} />
+
+        {!!this.state.selectedDays.length && (
+          <H4>
+            LifeGroups on{' '}
+            {humanizeList(this.state.selectedDays, { oxfordComma: true })}
+          </H4>
+        )}
 
         <CardContainer>
           {lifegroups
