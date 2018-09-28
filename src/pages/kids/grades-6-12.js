@@ -88,19 +88,19 @@ const Page = ({ data }) => {
         <Img sizes={data.youthSeriesImage.childImageSharp.sizes} />
       </Image>
 
-      <p>A 4-week series on authority</p>
+      <p>THE GREATEST SHOW: A 4-WEEK SERIES ON IDENTITY</p>
 
       <p>
-        Raise your hand if you’ve ever wanted to scream, “You’re not the boss of
-        me!” (You can also raise your hand if you have, in fact, actually
-        screamed it.) Especially when we’re teenagers, we tend to push back on
-        the people, places, and things that control and hold authority over us.
-        But here’s the catch: whether we admit it or not, we’ve all given
-        someone (or something) control of our lives. In this 4-week series,
-        We'll challenge students to consider who, or what, they’ve allowed to be
-        their boss. Because whether it’s the god of me, the god of stuff, the
-        god of worry, or the god of obsession, we all know what it’s like to
-        have an authority problem
+        Do you ever felt like you’re putting on a show? Like the person people
+        think you are doesn’t line up with who you really are? Or maybe you’ve
+        been known to put on different personas for different situations --
+        personas that help you fit in with certain crowds, even if that persona
+        doesn’t reflect who you really want to be. Sound familiar? Of course it
+        does. We can all relate because, at times, we all struggle with the same
+        big questions: “Who am I? Who loves me? Why am I here?” In this 4-week
+        series on identity, you’ll help students find answers to those questions
+        as they discover that, in Jesus, they are loved, they are forgiven, they
+        have purpose, and they belong.
       </p>
 
       <Banner>
