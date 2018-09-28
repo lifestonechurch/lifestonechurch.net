@@ -1,5 +1,7 @@
 # lifestonechurch.net
 
+[![Build Status](https://travis-ci.org/lifestonechurch/lifestonechurch.net.svg?branch=master)](https://travis-ci.org/lifestonechurch/lifestonechurch.net)
+
 Website for [lifestonechurch.net](https://www.lifestonechurch.net/).
 
 ## Running
