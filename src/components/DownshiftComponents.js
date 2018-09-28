@@ -3,12 +3,6 @@ import { css as emoCSS } from 'emotion';
 import styled from 'react-emotion';
 import matchSorter from 'match-sorter';
 
-const allItems = [
-  { name: 'Sunday', id: 'sunday' },
-  { name: 'Wednesday', id: 'wednesday' },
-  { name: 'Thursday', id: 'thursday' },
-];
-
 const css = (...args) => ({ className: emoCSS(...args) });
 
 const Item = styled('li')(
@@ -166,12 +160,12 @@ function XIcon() {
   );
 }
 
-function getItems(filter) {
+function getItems(items, filter) {
   return filter
-    ? matchSorter(allItems, filter, {
+    ? matchSorter(items, filter, {
         keys: ['name'],
       })
-    : allItems;
+    : items;
 }
 
 function getStringItems(filter) {

@@ -106,6 +106,8 @@ class MultiSelect extends React.Component {
   input = React.createRef();
   itemToString = item => (item ? item.name : '');
   render() {
+    const { items } = this.props;
+
     return (
       <div
         {...css({
@@ -132,7 +134,14 @@ class MultiSelect extends React.Component {
             highlightedIndex,
             toggleMenu,
           }) => (
-            <div style={{ width: 500, margin: 'auto', position: 'relative' }}>
+            <div
+              style={{
+                width: '100%',
+                maxWidth: 500,
+                margin: 'auto',
+                position: 'relative',
+              }}
+            >
               <div
                 {...css({
                   cursor: 'pointer',
@@ -243,7 +252,7 @@ class MultiSelect extends React.Component {
               </div>
               <Menu {...getMenuProps({ isOpen })}>
                 {isOpen
-                  ? getItems(inputValue).map((item, index) => (
+                  ? getItems(items, inputValue).map((item, index) => (
                       <Item
                         key={item.id}
                         {...getItemProps({

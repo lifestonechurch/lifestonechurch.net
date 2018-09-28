@@ -20,7 +20,7 @@ const Center = styled.div`
 
 const CardContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 
   > div {
@@ -65,6 +65,19 @@ class Page extends React.Component {
 
     const lifegroups = data.allContentfulSmallGroup.edges;
 
+    const allDays = Object.keys(
+      lifegroups.reduce(
+        (days, { node }) => ({
+          ...days,
+          [node.day]: node.day,
+        }),
+        {}
+      )
+    ).map(x => ({
+      name: x,
+      id: x,
+    }));
+
     return (
       <Layout>
         <Breadcrumbs
@@ -93,7 +106,7 @@ class Page extends React.Component {
           <H3>Which days work best for you?</H3>
         </Center>
 
-        <MultiSelect onChange={this.handleLifeGroupDayChange} />
+        <MultiSelect onChange={this.handleLifeGroupDayChange} items={allDays} />
 
         {!!this.state.selectedDays.length && (
           <H4>
