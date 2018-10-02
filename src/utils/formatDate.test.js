@@ -281,6 +281,7 @@ describe('getFutureEvents', () => {
       const testEvents = [
         createMockNode({
           ...eventWithFutureEndDate.node,
+          startDate: null,
           dateAndRegistration: [
             {
               startDate: '2018-01-02',
