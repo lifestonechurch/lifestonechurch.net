@@ -115,6 +115,12 @@ describe('getFutureEvents', () => {
     endDate: '2018-01-02',
   });
 
+  const eventWithTodayEndDate = createMockNode({
+    id: 'eventWithFutureEndDate',
+    startDate: '2018-01-01',
+    endDate: '2018-01-01',
+  });
+
   const eventWithPastEndDate = createMockNode({
     id: 'eventWithPastEndDate',
     startDate: '2017-01-01',
@@ -124,6 +130,12 @@ describe('getFutureEvents', () => {
   const eventWithNoEndDateAndFutureStartDate = createMockNode({
     id: 'eventWithNoEndDateAndFutureStartDate',
     startDate: '2018-01-02',
+    endDate: null,
+  });
+
+  const eventWithNoEndDateAndTodayStartDate = createMockNode({
+    id: 'eventWithNoEndDateAndTodayStartDate',
+    startDate: '2018-01-01',
     endDate: null,
   });
 
@@ -138,6 +150,17 @@ describe('getFutureEvents', () => {
     dateAndRegistration: [
       {
         endDate: '2018-01-02',
+      },
+    ],
+    startDate: null,
+    endDate: null,
+  });
+
+  const eventWithNoStartOrEndDateAndTodayRegistration = createMockNode({
+    id: 'eventWithNoStartOrEndDateAndFutureRegistration',
+    dateAndRegistration: [
+      {
+        endDate: '2018-01-01',
       },
     ],
     startDate: null,
@@ -164,6 +187,14 @@ describe('getFutureEvents', () => {
       expect(futureEvents[0].id).toBe(testEvents[0].node.id);
     });
 
+    test('it should return events with an end date that is in the today', () => {
+      const testEvents = [eventWithTodayEndDate];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents).toHaveLength(1);
+      expect(futureEvents[0].id).toBe(testEvents[0].node.id);
+    });
+
     test('it should not return events with an end date that is in the past', () => {
       const testEvents = [eventWithPastEndDate];
 
@@ -181,6 +212,14 @@ describe('getFutureEvents', () => {
       expect(futureEvents[0].id).toBe(testEvents[0].node.id);
     });
 
+    test('it should return events with a start date that is today', () => {
+      const testEvents = [eventWithNoEndDateAndTodayStartDate];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents).toHaveLength(1);
+      expect(futureEvents[0].id).toBe(testEvents[0].node.id);
+    });
+
     test('it should not return events with a start date that is in the past', () => {
       const testEvents = [eventWithNoEndDateAndPastStartDate];
 
@@ -192,6 +231,14 @@ describe('getFutureEvents', () => {
   describe('when an event has no end or start date, but has registration dates', () => {
     test('it should return events with a registration date that is in the future', () => {
       const testEvents = [eventWithNoStartOrEndDateAndFutureRegistration];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents).toHaveLength(1);
+      expect(futureEvents[0].id).toBe(testEvents[0].node.id);
+    });
+
+    test('it should return events with a registration date that ends today', () => {
+      const testEvents = [eventWithNoStartOrEndDateAndTodayRegistration];
 
       const futureEvents = getFutureEvents(testEvents);
       expect(futureEvents).toHaveLength(1);
