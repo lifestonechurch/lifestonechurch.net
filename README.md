@@ -6,7 +6,7 @@ Website for [lifestonechurch.net](https://www.lifestonechurch.net/).
 
 ## Running
 
-Create a .env file with the following variables (replace with the real values).
+Create a .env file with the following variables (replace with the real values). Only the first 2 are required to run the project. Check out [the wiki](https://github.com/lifestonechurch/lifestonechurch.net/wiki) for a Contentful Access token you can use to develop locally.
 
 ```
 CONTENTFUL_SPACE_ID=k9ajfiadv9aj
