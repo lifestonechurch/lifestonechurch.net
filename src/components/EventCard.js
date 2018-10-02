@@ -21,7 +21,7 @@ const Container = styled.div`
   }
 
   > div {
-    height: 100%;
+    height: 500px;
   }
 `;
 
