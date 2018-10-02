@@ -86,3 +86,263 @@ describe('getLastEndDate', () => {
     ).toEqual(testDate28.endDate);
   });
 });
+
+describe('getFutureEvents', () => {
+  const { getFutureEvents } = formatDate;
+  const OriginalDate = Date;
+
+  beforeAll(() => {
+    const fakeToday = new Date(2018, 0, 1);
+    Date = (...args) => (args.length ? new OriginalDate(...args) : fakeToday);
+  });
+
+  afterAll(() => {
+    Date = OriginalDate;
+  });
+
+  describe('when events have an end date', () => {
+    test('it should return events with an end date that is in the future', () => {
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            startDate: '2018-01-01',
+            endDate: '2018-01-02',
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents).toHaveLength(1);
+      expect(futureEvents[0].id).toBe(testEvents[0].node.id);
+    });
+
+    test('it should not return events with an end date that is in the past', () => {
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            startDate: '2017-01-01',
+            endDate: '2017-01-02',
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents).toHaveLength(0);
+    });
+  });
+
+  describe('when events have a start date, but no end date', () => {
+    test('it should return events with a start date that is in the future', () => {
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            startDate: '2018-01-02',
+            endDate: null,
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents).toHaveLength(1);
+      expect(futureEvents[0].id).toBe(testEvents[0].node.id);
+    });
+
+    test('it should not return events with a start date that is in the past', () => {
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            startDate: '2017-01-02',
+            endDate: null,
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents).toHaveLength(0);
+    });
+  });
+
+  describe('when an event has no end or start date, but has registration dates', () => {
+    test('it should return events with a registration date that is in the future', () => {
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            dateAndRegistration: [
+              {
+                endDate: '2018-01-02',
+              },
+            ],
+            startDate: null,
+            endDate: null,
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents).toHaveLength(1);
+      expect(futureEvents[0].id).toBe(testEvents[0].node.id);
+    });
+
+    test('it should not return events with a registration date that is in the past', () => {
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            dateAndRegistration: [
+              {
+                endDate: '2017-01-02',
+              },
+            ],
+            startDate: null,
+            endDate: null,
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents).toHaveLength(0);
+    });
+  });
+
+  describe('data transformation', () => {
+    test('it preserves extra keys in the node', () => {
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            startDate: '2018-02-01',
+            extraKey: 'extraKey',
+            endDate: '2018-02-02',
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents[0].extraKey).toBe(testEvents[0].node.extraKey);
+    });
+
+    test('it sets startDate to the startDate if it exists', () => {
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            startDate: '2018-02-01',
+            endDate: '2018-02-02',
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents[0].startDate).toBe(testEvents[0].node.startDate);
+    });
+
+    test('it sets startDate to the earliest registration date if there is no start date', () => {
+      const earliestStartDate = '2018-01-01';
+
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            startDate: null,
+            dateAndRegistration: [
+              {
+                startDate: '2018-01-02',
+              },
+              {
+                startDate: earliestStartDate,
+              },
+            ],
+            endDate: '2018-02-02',
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents[0].startDate).toBe(earliestStartDate);
+    });
+
+    test('it brings fields.slug to the top level', () => {
+      const testEvents = [
+        {
+          node: {
+            id: 'id',
+            startDate: '2018-01-01',
+            endDate: '2018-02-02',
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents[0].slug).toBe(testEvents[0].node.fields.slug);
+    });
+  });
+
+  describe('sorting', () => {
+    test('it sorts returned events by start date, ascending', () => {
+      const newestEventId = 'newestEventId';
+      const oldestEventId = 'oldestEventId';
+
+      const testEvents = [
+        {
+          node: {
+            id: newestEventId,
+            startDate: '2018-01-01',
+            endDate: '2018-02-02',
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+        {
+          node: {
+            id: oldestEventId,
+            startDate: '2017-01-01',
+            endDate: '2018-02-02',
+            fields: {
+              slug: 'slug',
+            },
+          },
+        },
+      ];
+
+      const futureEvents = getFutureEvents(testEvents);
+      expect(futureEvents[0].id).toBe(oldestEventId);
+      expect(futureEvents[1].id).toBe(newestEventId);
+    });
+  });
+});
