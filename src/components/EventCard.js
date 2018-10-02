@@ -15,7 +15,7 @@ import Tag from './Tag';
 import { H3 } from './headers';
 
 const Container = styled.div`
-  & a {
+  & a, & a:hover {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
   }
