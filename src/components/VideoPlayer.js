@@ -42,10 +42,8 @@ const VideoPlayer = ({ url, title, maxWidth }) => (
         src={url}
         width="560"
         height="315"
-        frameborder="0"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen
+        frameBorder="0"
+        allowFullScreen
       />
     </Container>
   </VideoContainer>
