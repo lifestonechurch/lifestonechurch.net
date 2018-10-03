@@ -83,7 +83,7 @@ describe('getLastEndDate', () => {
         testDate30,
         testDate31,
       ])
-    ).toEqual(testDate28.endDate);
+    ).toEqual(testDate31.endDate);
   });
 });
 
