@@ -30,7 +30,7 @@ export const getLastEndDate = dates =>
     (lastDate, current) =>
       !lastDate
         ? current.endDate
-        : new Date(current.endDate) < new Date(lastDate)
+        : new Date(current.endDate) > new Date(lastDate)
           ? current.endDate
           : lastDate,
     null
