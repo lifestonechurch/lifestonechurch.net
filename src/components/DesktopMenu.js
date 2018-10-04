@@ -161,6 +161,7 @@ class DesktopMenu extends React.Component {
                     to={a.path}
                     onClick={() => this.handleDesktopItemClick(i)}
                     onMouseEnter={() => this.handleDesktopItemHover(i)}
+                    activeClassName="active"
                   >
                     {a.name}
                   </Link>
@@ -187,6 +188,7 @@ class DesktopMenu extends React.Component {
                           to={b.path}
                           key={j}
                           onClick={() => this.handleDesktopItemClick(i)}
+                          activeClassName="child-active"
                         >
                           <li>{b.name}</li>
                         </Link>
