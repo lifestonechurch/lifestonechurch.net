@@ -151,7 +151,28 @@ class DesktopMenu extends React.Component {
   render() {
     const { navigation } = this.props;
     return (
-      <div ref={node => (this.menuRef = node)}>
+      <div ref={node => (this.menuRef = node)}
+        css={`
+          .active::after {
+            display: block;
+            content: "";
+            height: 2px;
+            background: #008F01;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+          }
+
+          .child-active {
+            background-color: #008F01;
+          }
+          
+          .child-active > li {
+            color: #ffffff !important;
+          }
+      `}
+      >
         <Container>
           <DesktopNav>
             {navigation.map((a, i) => (
