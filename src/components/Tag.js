@@ -4,7 +4,7 @@ import styled from 'react-emotion';
 const Container = styled.span`
   background-color: ${({ color }) => color};
   color: white;
-  position: absolute;
+  position: static;
   top: 12px;
   right: 12px;
   padding: 2px 4px;
