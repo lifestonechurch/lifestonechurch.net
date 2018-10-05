@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'react-emotion';
+import { css } from 'react-emotion'
 
 import * as COLORS from '../constants/colors';
 import { MIN_DESKTOP_SIZE } from '../constants';
@@ -83,6 +84,26 @@ const Image = styled.img`
   display: ${props => (props.isVisible ? 'visible' : 'none')};
 `;
 
+const active = css`
+  &::after {
+    display: block;
+    content: "";
+    height: 2px;
+    background: #008F01;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+`;
+
+const childActive = css`
+  background-color: #008F01;
+  & > li {
+    color: #ffffff !important;
+  }
+`;
+
 Image.propTypes = {
   isVisible: PropTypes.bool.isRequired,
 };
@@ -151,28 +172,7 @@ class DesktopMenu extends React.Component {
   render() {
     const { navigation } = this.props;
     return (
-      <div ref={node => (this.menuRef = node)}
-        css={`
-          .active::after {
-            display: block;
-            content: "";
-            height: 2px;
-            background: #008F01;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            left: 0;
-          }
-
-          .child-active {
-            background-color: #008F01;
-          }
-          
-          .child-active > li {
-            color: #ffffff !important;
-          }
-      `}
-      >
+      <div ref={node => (this.menuRef = node)}>
         <Container>
           <DesktopNav>
             {navigation.map((a, i) => (
@@ -182,7 +182,7 @@ class DesktopMenu extends React.Component {
                     to={a.path}
                     onClick={() => this.handleDesktopItemClick(i)}
                     onMouseEnter={() => this.handleDesktopItemHover(i)}
-                    activeClassName="active"
+                    activeClassName={active}
                   >
                     {a.name}
                   </Link>
@@ -209,7 +209,7 @@ class DesktopMenu extends React.Component {
                           to={b.path}
                           key={j}
                           onClick={() => this.handleDesktopItemClick(i)}
-                          activeClassName="child-active"
+                          activeClassName={childActive}
                         >
                           <li>{b.name}</li>
                         </Link>
