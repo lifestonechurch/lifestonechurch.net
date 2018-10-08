@@ -76,6 +76,7 @@ const NewsletterForm = () => (
             id="mce-EMAIL"
             placeholder="Email Address"
             type="text"
+            aria-label="Sign up for our newsletter"
           />
           <Button>Subscribe</Button>
         </FormGroup>
