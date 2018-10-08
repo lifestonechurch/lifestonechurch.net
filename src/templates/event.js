@@ -8,8 +8,17 @@ import { H1 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
 import EmbedForm from '../components/EmbedForm';
 import HoverCard from '../components/HoverCard';
-import { shortFormatDate, getDayOfWeek } from '../utils/formatDate';
+import { shortFormatDate, getDayOfWeek, getCalendarFormat} from '../utils/formatDate';
 import * as COLORS from '../constants/colors';
+
+const getCalendarURl = (date, startTime, endTime, name) => {
+  let dateStart;
+  let dateEnd;
+  dateStart = getCalendarFormat(date, startTime);
+  dateEnd = getCalendarFormat(date, endTime);
+
+  return `http://www.google.com/calendar/event?action=TEMPLATE&text=${name}&dates=${dateStart}/${dateEnd}`
+};
 
 const Image = styled.div`
   margin: 0 auto;
@@ -61,6 +70,9 @@ export default ({ data }) => {
 
       {!event.dateAndRegistration && (
         <div>
+          <a href ={getCalendarURl(event.startDate, event.startTime, event.startTime, event.name)}>
+            ✚ gCal
+          </a>
           <p>
             {event.startDate &&
               `${getDayOfWeek(event.startDate)} ${shortFormatDate(
@@ -95,6 +107,9 @@ export default ({ data }) => {
                 <HoverCard>
                   <CardInner>
                     <h2>{e.timeDescription}</h2>
+                    <a href={getCalendarURl(e.startDate, e.startTime, e.endTime, event.name)}>
+                      ✚ gCal
+                    </a>
                     <p>
                       {shortFormatDate(e.startDate)} -{' '}
                       {shortFormatDate(e.endDate)}

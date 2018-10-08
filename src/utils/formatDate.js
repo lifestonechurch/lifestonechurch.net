@@ -63,4 +63,12 @@ export const getFutureEvents = events => {
     .sort((a, b) => new Date(a.startDate) > new Date(b.startDate));
 };
 
+export const getCalendarFormat = (date, time) => {
+  const formatDate = 'yyyy-MM-dd h:mma';
+  const inputDate = (date + " " + time);
+  const isoFormat = DateTime.fromFormat(inputDate, formatDate).toISO();
+  var formatting = isoFormat.slice(0, 19).replace(/:|-/g, '') ;//+ 'Z-4';
+  return formatting;
+};
+
 export default formatDate;
