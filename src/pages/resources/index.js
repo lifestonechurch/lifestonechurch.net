@@ -112,7 +112,7 @@ export const query = graphql`
     }
     itunesImage: file(relativePath: { eq: "pages/resources/itunes.png" }) {
       childImageSharp {
-        resolutions(width: 100, height: 36) {
+        resolutions(width: 150, height: 36) {
           ...GatsbyImageSharpResolutions
         }
       }
