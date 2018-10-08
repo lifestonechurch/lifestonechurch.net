@@ -64,11 +64,10 @@ export const getFutureEvents = events => {
 };
 
 export const getCalendarFormat = (date, time) => {
-  const formatDate = 'yyyy-MM-dd h:mma';
-  const inputDate = (date + " " + time);
+  const formatDate = (!time) ? 'yyyy-MM-dd' : 'yyyy-MM-dd h:mma';
+  const inputDate = (!time) ? date : `${date} ${time}`;
   const isoFormat = DateTime.fromFormat(inputDate, formatDate).toISO();
-  var formatting = isoFormat.slice(0, 19).replace(/:|-/g, '') ;//+ 'Z-4';
-  return formatting;
+  return isoFormat.split('.')[0].replace(/:|-/g, '');
 };
 
 export default formatDate;
