@@ -8,23 +8,8 @@ import { H1 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
 import EmbedForm from '../components/EmbedForm';
 import HoverCard from '../components/HoverCard';
-import { shortFormatDate, getDayOfWeek, getCalendarFormat} from '../utils/formatDate';
+import { shortFormatDate, getDayOfWeek, getCalendarURl} from '../utils/formatDate';
 import * as COLORS from '../constants/colors';
-
-const getCalendarURl = (date, startTime, endTime, name) => {
-  let dateStart;
-  let dateEnd;
-
-  if (!startTime && !endTime) {
-    dateStart = getCalendarFormat(date, null);
-    dateEnd = getCalendarFormat(date, null);
-  } else if (startTime) {
-    dateStart = getCalendarFormat(date, startTime);
-    dateEnd = (!endTime) ? getCalendarFormat(date, startTime) : getCalendarFormat(date, endTime);
-  }
-
-  return `http://www.google.com/calendar/event?action=TEMPLATE&text=${name}&dates=${dateStart}/${dateEnd}`
-};
 
 const Image = styled.div`
   margin: 0 auto;

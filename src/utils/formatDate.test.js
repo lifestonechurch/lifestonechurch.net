@@ -346,3 +346,15 @@ describe('getCalendarFormat', () => {
     expect(formatDate.getCalendarFormat(testDate,testTime)).toBe('20181001T090000');
   });
 });
+
+
+describe('getCalendarURl', () => {
+  test('it should format arguments "2018-10-01", "9:00am", "11:00am", "October_Event" as the expectedResult seen below', () => {
+    const testDate = "2018-10-01";
+    const startTime = "9:00am";
+    const endTime = "11:00am";
+    const name = "October_Event";
+    const expectedResult = `http://www.google.com/calendar/event?action=TEMPLATE&text=October_Event&dates=20181001T090000/20181001T110000`;
+    expect(formatDate.getCalendarURl(testDate, startTime, endTime, name)).toBe(expectedResult);
+  });
+});

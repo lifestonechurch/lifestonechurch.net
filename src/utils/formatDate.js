@@ -70,4 +70,19 @@ export const getCalendarFormat = (date, time) => {
   return isoFormat.split('.')[0].replace(/:|-/g, '');
 };
 
+export const getCalendarURl = (date, startTime, endTime, name) => {
+  let dateStart;
+  let dateEnd;
+
+  if (!startTime && !endTime) {
+    dateStart = getCalendarFormat(date, null);
+    dateEnd = getCalendarFormat(date, null);
+  } else if (startTime) {
+    dateStart = getCalendarFormat(date, startTime);
+    dateEnd = (!endTime) ? getCalendarFormat(date, startTime) : getCalendarFormat(date, endTime);
+  }
+
+  return `http://www.google.com/calendar/event?action=TEMPLATE&text=${name}&dates=${dateStart}/${dateEnd}`
+};
+
 export default formatDate;
