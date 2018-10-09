@@ -63,4 +63,26 @@ export const getFutureEvents = events => {
     .sort((a, b) => new Date(a.startDate) > new Date(b.startDate));
 };
 
+export const getCalendarFormat = (date, time) => {
+  const formatDate = (!time) ? 'yyyy-MM-dd' : 'yyyy-MM-dd h:mma';
+  const inputDate = (!time) ? date : `${date} ${time}`;
+  const isoFormat = DateTime.fromFormat(inputDate, formatDate).toISO();
+  return isoFormat.split('.')[0].replace(/:|-/g, '');
+};
+
+export const getCalendarURl = (date, startTime, endTime, name) => {
+  let dateStart;
+  let dateEnd;
+
+  if (!startTime && !endTime) {
+    dateStart = getCalendarFormat(date, null);
+    dateEnd = getCalendarFormat(date, null);
+  } else if (startTime) {
+    dateStart = getCalendarFormat(date, startTime);
+    dateEnd = (!endTime) ? getCalendarFormat(date, startTime) : getCalendarFormat(date, endTime);
+  }
+
+  return `http://www.google.com/calendar/event?action=TEMPLATE&text=${name}&dates=${dateStart}/${dateEnd}`
+};
+
 export default formatDate;

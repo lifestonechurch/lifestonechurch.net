@@ -4,11 +4,9 @@ import styled from 'react-emotion';
 const Container = styled.span`
   background-color: ${({ color }) => color};
   color: white;
-  position: absolute;
-  top: 12px;
-  right: 12px;
   padding: 2px 4px;
   border-radius: 4px;
+  margin-bottom: 10px;
 `;
 
 const Tag = ({ children, color }) => {

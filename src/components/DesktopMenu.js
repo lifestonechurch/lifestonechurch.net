@@ -56,9 +56,9 @@ const DesktopSubNav = styled.ul`
   background: white;
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  & a:hover {
+  & li:hover {
     background: ${COLORS.BRAND};
-    & li {
+    & a {
     color: white;
     }
   }
@@ -205,14 +205,16 @@ class DesktopMenu extends React.Component {
                       className={this.state.openDesktopItem === i ? 'open' : ''}
                     >
                       {a.children.map((b, j) => (
+                        <li>
                         <Link
                           to={b.path}
                           key={j}
                           onClick={() => this.handleDesktopItemClick(i)}
                           activeClassName={childActive}
                         >
-                          <li>{b.name}</li>
+                          {b.name}
                         </Link>
+                        </li>
                       ))}
                     </DesktopSubNav>
                   </div>

@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const InnerContainer = styled.div`
   display: flex;
-  height: 100%;
+  height: auto;
   flex-direction: column;
   justify-content: space-between;
 `;

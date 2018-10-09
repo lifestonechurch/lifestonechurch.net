@@ -24,7 +24,7 @@ const SocialMedia = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SocialMediaIcon src={Facebook} width="15px" height="15px" />lifestonechurchutah
+          <SocialMediaIcon src={Facebook} width="15px" height="15px" alt="facebook" />lifestonechurchutah
         </a>
       </p>
       <p>
@@ -33,7 +33,7 @@ const SocialMedia = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SocialMediaIcon src={Instagram} width="15px" height="15px" />@lifestonechurchutah
+          <SocialMediaIcon src={Instagram} width="15px" height="15px" alt="instagram" />@lifestonechurchutah
         </a>
       </p>
       <p>
@@ -42,7 +42,7 @@ const SocialMedia = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SocialMediaIcon src={Twitter} width="15px" height="15px" />@lifestoneutah
+          <SocialMediaIcon src={Twitter} width="15px" height="15px" alt="twitter" />@lifestoneutah
         </a>
       </p>
     </div>
