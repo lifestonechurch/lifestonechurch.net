@@ -13,7 +13,8 @@ function renderImage(item) {
                   width: '100vw',
                   objectFit: 'scale-down',
                   fontFamily: "'object-fit: scale-down'",
-                  backgroundColor: COLORS.LIGHT_GRAY}}/>
+                  backgroundColor: COLORS.LIGHT_GRAY}}
+        />
       </div>
     );
 }
