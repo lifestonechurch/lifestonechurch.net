@@ -10,7 +10,7 @@ describe('formatDate', () => {
 });
 
 describe('longFormatDate', () => {
-  test('it should format 2018-12-31 as "December 31, 20018"', () => {
+  test('it should format 2018-12-31 as "December 31, 2018"', () => {
     const testDate = new Date('2018-12-31:00:00:00').toISOString();
     expect(formatDate.longFormatDate(testDate)).toBe('December 31, 2018');
   });
@@ -336,5 +336,25 @@ describe('getFutureEvents', () => {
       expect(futureEvents[0].id).toBe(oldestEventId);
       expect(futureEvents[1].id).toBe(newestEventId);
     });
+  });
+});
+
+describe('getCalendarFormat', () => {
+  test('it should format arguments "2018-10-01" and "9:00am" as "20181001T090000"', () => {
+    const testDate = "2018-10-01";
+    const testTime = "9:00am";
+    expect(formatDate.getCalendarFormat(testDate,testTime)).toBe('20181001T090000');
+  });
+});
+
+
+describe('getCalendarURl', () => {
+  test('it should format arguments "2018-10-01", "9:00am", "11:00am", "October_Event" as the expectedResult seen below', () => {
+    const testDate = "2018-10-01";
+    const startTime = "9:00am";
+    const endTime = "11:00am";
+    const name = "October_Event";
+    const expectedResult = `http://www.google.com/calendar/event?action=TEMPLATE&text=October_Event&dates=20181001T090000/20181001T110000`;
+    expect(formatDate.getCalendarURl(testDate, startTime, endTime, name)).toBe(expectedResult);
   });
 });
