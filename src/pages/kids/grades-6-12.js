@@ -104,31 +104,6 @@ const Page = ({ data }) => {
       </p>
 
       <Banner>
-        <H2>The Lunch Table Challenge</H2>
-      </Banner>
-
-      <Image>
-        <Img sizes={data.lunchTableImage.childImageSharp.sizes} />
-      </Image>
-
-      <p>
-        THE LUNCH TABLE CHALLENGE!!! Starting September 5th... Your mission, if
-        you choose to accept it... SPEND TIME WITH OTHERS around the lunch
-        table. If we want to grow spiritually, we need to be engaged in healthy
-        community and Christlike relationships with others — with people who
-        share our beliefs, as well as with people who don’t.
-      </p>
-
-      <p>
-        We challenge YOU in leading strategic conversations with your friends
-        over lunch during your school lunch period for four weeks. You don't
-        have to do this on your own! We challenge you to collaborate with other
-        students from Lifestone church who attend the same school! Don't worry!
-        Your AWESOME Lifestone Youth Leaders will give you all the tools you'll
-        need to succeed!
-      </p>
-
-      <Banner>
         <H2>Events</H2>
       </Banner>
 
@@ -163,15 +138,6 @@ export default Page;
 
 export const query = graphql`
   query YouthQuery {
-    lunchTableImage: file(
-      relativePath: { eq: "pages/kids/lunch-table-challenge.jpg" }
-    ) {
-      childImageSharp {
-        sizes(maxWidth: 700) {
-          ...GatsbyImageSharpSizes
-        }
-      }
-    }
     youthImage: file(relativePath: { eq: "pages/kids/youth.jpg" }) {
       childImageSharp {
         sizes(maxWidth: 1200) {
