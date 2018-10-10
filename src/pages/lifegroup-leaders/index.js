@@ -3,8 +3,32 @@ import styled from 'react-emotion';
 
 import Layout from '../../components/layout';
 import { H1 } from '../../components/headers';
+import PageMenu from '../../components/PageMenu';
 
 const title = 'LifeGroup Leader Resources';
+
+const menuItems = [
+  {
+    name: 'LifeGroup Report',
+    link: 'https://lifestonechurch.breezechms.com/form/5652c5',
+    target: '_blank',
+  },
+  {
+    name: 'Attendance',
+    link: '',
+    target: '_blank',
+  },
+  {
+    name: 'FAQ',
+    link: '',
+    target: '_blank',
+  },
+  {
+    name: 'Resources',
+    link: '',
+    target: '_blank',
+  },
+];
 
 const Error = styled.div`
   color: red;
@@ -12,7 +36,7 @@ const Error = styled.div`
 
 class Page extends React.Component {
   state = {
-    isLoggedIn: false,
+    isLoggedIn: true,
     password: '',
     error: '',
   };
@@ -52,7 +76,132 @@ class Page extends React.Component {
       <Layout>
         <H1>{title}</H1>
         {this.state.isLoggedIn ? (
-          <div>Secret stuff</div>
+          <div>
+            <PageMenu items={menuItems} />
+            <h2>Fall Curriculum</h2>
+            <ul>
+              <li>
+                <p>Week 1</p>
+                <ul>
+                  <li>
+                    <a href="https://s3-us-west-2.amazonaws.com/lifestonechurch.net/the-good-book-week-1.pdf">
+                      PDF
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.rightnowmedia.org/Content/Series/229881?episode=1 ">
+                      Video
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Week 2</p>
+                <ul>
+                  <li>
+                    <a href="https://s3-us-west-2.amazonaws.com/lifestonechurch.net/the-good-book-week-2.pdf">
+                      PDF
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.rightnowmedia.org/Content/Series/229881?episode=2 ">
+                      Video
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Week 3</p>
+                <ul>
+                  <li>
+                    <a href="https://s3-us-west-2.amazonaws.com/lifestonechurch.net/the-good-book-week-3.pdf">
+                      PDF
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.rightnowmedia.org/Content/Series/229881?episode=3 ">
+                      Video
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Week 4</p>
+                <ul>
+                  <li>
+                    <a href="https://s3-us-west-2.amazonaws.com/lifestonechurch.net/the-good-book-week-4.pdf">
+                      PDF
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.rightnowmedia.org/Content/Series/229881?episode=4 ">
+                      Video
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Week 5</p>
+                <ul>
+                  <li>
+                    <a href="https://s3-us-west-2.amazonaws.com/lifestonechurch.net/the-good-book-week-5.pdf">
+                      PDF
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.rightnowmedia.org/Content/Series/229881?episode=5 ">
+                      Video
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Week 6</p>
+                <ul>
+                  <li>
+                    <a href="https://s3-us-west-2.amazonaws.com/lifestonechurch.net/the-good-book-week-6.pdf">
+                      PDF
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.rightnowmedia.org/Content/Series/229881?episode=6 ">
+                      Video
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Week 7</p>
+                <ul>
+                  <li>
+                    <a href="https://s3-us-west-2.amazonaws.com/lifestonechurch.net/the-good-book-week-7.pdf">
+                      PDF
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.rightnowmedia.org/Content/Series/229881?episode=7 ">
+                      Video
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Week 8</p>
+                <ul>
+                  <li>
+                    <a href="https://s3-us-west-2.amazonaws.com/lifestonechurch.net/the-good-book-week-8.pdf">
+                      PDF
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.rightnowmedia.org/Content/Series/229881?episode=8 ">
+                      Video
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         ) : (
           <div>
             <p>You must be logged in to view this page.</p>
