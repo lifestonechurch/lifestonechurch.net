@@ -45,7 +45,14 @@ input {
 a,
 a:hover {
   color: #008F01;
+}
+
+a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 img {

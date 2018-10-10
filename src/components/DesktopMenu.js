@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'react-emotion';
-import { css } from 'react-emotion'
+import { css } from 'react-emotion';
 
 import * as COLORS from '../constants/colors';
 import { MIN_DESKTOP_SIZE } from '../constants';
@@ -87,9 +87,9 @@ const Image = styled.img`
 const active = css`
   &::after {
     display: block;
-    content: "";
+    content: '';
     height: 2px;
-    background: #008F01;
+    background: #008f01;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -98,7 +98,7 @@ const active = css`
 `;
 
 const childActive = css`
-  background-color: #008F01;
+  background-color: #008f01;
   & > li {
     color: #ffffff !important;
   }
@@ -204,16 +204,15 @@ class DesktopMenu extends React.Component {
                     <DesktopSubNav
                       className={this.state.openDesktopItem === i ? 'open' : ''}
                     >
-                      {a.children.map((b, j) => (
-                        <li>
-                        <Link
-                          to={b.path}
-                          key={j}
-                          onClick={() => this.handleDesktopItemClick(i)}
-                          activeClassName={childActive}
-                        >
-                          {b.name}
-                        </Link>
+                      {a.children.map((b, i) => (
+                        <li key={i}>
+                          <Link
+                            to={b.path}
+                            onClick={() => this.handleDesktopItemClick(i)}
+                            activeClassName={childActive}
+                          >
+                            {b.name}
+                          </Link>
                         </li>
                       ))}
                     </DesktopSubNav>
