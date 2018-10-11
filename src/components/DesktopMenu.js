@@ -7,6 +7,8 @@ import { css } from 'react-emotion';
 import * as COLORS from '../constants/colors';
 import { MIN_DESKTOP_SIZE } from '../constants';
 
+const menuGap = '15px';
+
 const Container = styled.div``;
 
 const DesktopNav = styled.ul`
@@ -16,7 +18,7 @@ const DesktopNav = styled.ul`
   margin: 0;
   & li {
     position: relative;
-    padding: 15px;
+    padding: ${menuGap};
     margin: 0;
     color: ${COLORS.BRAND};
     cursor: pointer;
@@ -66,6 +68,13 @@ const DesktopSubNav = styled.ul`
     z-index: 1;
     max-height: 1000px;
     opacity: 1;
+    > li {
+      padding: 0;
+      > a {
+        padding: ${menuGap};
+        display: block;
+      }
+    }
   }
 `;
 
@@ -102,6 +111,11 @@ const childActive = css`
   & > li {
     color: #ffffff !important;
   }
+`;
+
+const childSubActive = css`
+  color: #fff !important;
+  background-color: #008f01;
 `;
 
 Image.propTypes = {
@@ -209,7 +223,7 @@ class DesktopMenu extends React.Component {
                           <Link
                             to={b.path}
                             onClick={() => this.handleDesktopItemClick(i)}
-                            activeClassName={childActive}
+                            activeClassName={childSubActive}
                           >
                             {b.name}
                           </Link>
