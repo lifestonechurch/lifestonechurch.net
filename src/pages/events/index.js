@@ -31,7 +31,7 @@ const Page = ({ data }) => {
             key={e.id}
             linkTo={`/events/${e.fields.slug}`}
             title={e.name}
-            description={e.shortDescription}
+            description={e.fields.shortDescriptionFormatted}
             startDate={e.startDate}
             endDate={e.endDate}
             dates={e.dateAndRegistration}
@@ -89,6 +89,7 @@ export const query = graphql`
           }
           fields {
             slug
+            shortDescriptionFormatted
           }
         }
       }

@@ -92,7 +92,11 @@ const EventCard = ({
               {dates && (
                 <p>{dates.map(event => event.timeDescription).join(' or ')}</p>
               )}
-              <p>{description}</p>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: description,
+                }}
+              />
             </div>
             <LearnMore>Learn More</LearnMore>
           </TextArea>

@@ -28,6 +28,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
           value: markdown.render(description.internal.content),
         });
       }
+      if (node.shortDescription) {
+        createNodeField({
+            node,
+            name: `shortDescriptionFormatted`,
+            value: markdown.render(node.shortDescription),
+        });
+      }
     } else if (node.internal.type === types.SERMON) {
       createNodeField({
         node,
