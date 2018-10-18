@@ -8,7 +8,11 @@ import { H1 } from '../components/headers';
 import Breadcrumbs from '../components/Breadcrumbs';
 import EmbedForm from '../components/EmbedForm';
 import HoverCard from '../components/HoverCard';
-import { shortFormatDate, getDayOfWeek, getCalendarURl} from '../utils/formatDate';
+import {
+  shortFormatDate,
+  getDayOfWeek,
+  getCalendarURl,
+} from '../utils/formatDate';
 import * as COLORS from '../constants/colors';
 
 const Image = styled.div`
@@ -61,8 +65,15 @@ export default ({ data }) => {
 
       {!event.dateAndRegistration && (
         <div>
-          <a href ={getCalendarURl(event.startDate, event.startTime, event.endTime, event.name)}>
-            ✚ gCal
+          <a
+            href={getCalendarURl(
+              event.startDate,
+              event.startTime,
+              event.endTime,
+              event.name
+            )}
+          >
+            ✚ Add to Google Calendar
           </a>
           <p>
             {event.startDate &&
@@ -98,8 +109,15 @@ export default ({ data }) => {
                 <HoverCard>
                   <CardInner>
                     <h2>{e.timeDescription}</h2>
-                    <a href={getCalendarURl(e.startDate, e.startTime, e.endTime, event.name)}>
-                      ✚ gCal
+                    <a
+                      href={getCalendarURl(
+                        e.startDate,
+                        e.startTime,
+                        e.endTime,
+                        event.name
+                      )}
+                    >
+                      ✚ Add to Google Calendar
                     </a>
                     <p>
                       {shortFormatDate(e.startDate)} -{' '}
