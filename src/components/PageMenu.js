@@ -18,11 +18,18 @@ const Container = styled.div`
 
 const PageMenu = ({ items }) => (
   <Container>
-    {items.map((item, i) => (
-      <a href={item.link} target={item.target} key={i}>
-        {item.name}
-      </a>
-    ))}
+    {items.map(
+      (item, i) =>
+        item.external ? (
+          <a href={item.link} target="_blank" rel="noopener noreferrer" key={i}>
+            {item.name}
+          </a>
+        ) : (
+          <a href={item.link} key={i}>
+            {item.name}
+          </a>
+        )
+    )}
   </Container>
 );
 
