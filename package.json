@@ -49,14 +49,11 @@
     "husky": "^1.1.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
+    "lint-staged": "^7.3.0",
     "prettier": "^1.9.2",
     "react-test-renderer": "^16.5.2"
   },
-  "keywords": [
-    "gatsby",
-    "church",
-    "website"
-  ],
+  "keywords": ["gatsby", "church", "website"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -77,21 +74,23 @@
     "testRegex": "/.*(__tests__\\/.*)|(.*(test|spec))\\.jsx?$",
     "moduleNameMapper": {
       ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
-      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
+      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js"
     },
-    "testPathIgnorePatterns": [
-      "node_modules",
-      ".cache"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!(gatsby)/)"
-    ],
+    "testPathIgnorePatterns": ["node_modules", ".cache"],
+    "transformIgnorePatterns": ["node_modules/(?!(gatsby)/)"],
     "globals": {
       "__PATH_PREFIX__": ""
     },
     "testURL": "http://localhost",
-    "setupFiles": [
-      "<rootDir>/loadershim.js"
-    ]
+    "setupFiles": ["<rootDir>/loadershim.js"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
   }
 }
