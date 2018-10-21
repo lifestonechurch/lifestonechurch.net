@@ -129,7 +129,7 @@ class Page extends React.Component {
                   <p>Week {i + 1}</p>
                   <p>
                     <a href={c.pdf} target="_blank" rel="noopener noreferrer">
-                      PDF
+                      Discussion Guide
                     </a>{' '}
                     <a href={c.video} target="_blank" rel="noopener noreferrer">
                       Video
