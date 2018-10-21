@@ -90,18 +90,6 @@ class Page extends React.Component {
           <Img sizes={data.lifegroupImage.childImageSharp.sizes} />
         </Image>
 
-        <Banner>
-          <H2>Preview Our Fall Series</H2>
-        </Banner>
-
-        <VideoPlayer
-          url="https://player.rightnow.org/241480"
-          maxWidth={600}
-          title="The Good Book LifeGroup Series"
-        />
-
-        <Banner>Check Out Our Groups</Banner>
-
         <Center>
           <H3>Which days work best for you?</H3>
         </Center>
@@ -171,6 +159,16 @@ class Page extends React.Component {
               </div>
             ))}
         </CardContainer>
+
+        <Banner>
+          <H2>Preview Our Fall Series</H2>
+        </Banner>
+
+        <VideoPlayer
+          url="https://player.rightnow.org/241480"
+          maxWidth={600}
+          title="The Good Book LifeGroup Series"
+        />
       </Layout>
     );
   }
