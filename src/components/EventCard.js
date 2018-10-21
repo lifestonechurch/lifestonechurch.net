@@ -66,7 +66,9 @@ const EventCard = ({
     <HoverCard>
       <Link to={linkTo}>
         <InnerContainer>
-          <Img sizes={imageSizes} style={{ width: '100%' }} />
+	       {imageSizes && (
+		      <Img sizes={imageSizes} style={{ width: '100%' }} />
+			 )}
           <TextArea>
             <div>
               <H3>{title}</H3>

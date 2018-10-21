@@ -36,7 +36,7 @@ const Page = ({ data }) => {
             endDate={e.endDate}
             dates={e.dateAndRegistration}
             ministries={e.ministry}
-            imageSizes={e.image.sizes}
+            imageSizes={e.image && e.image.sizes}
           />
         ))}
       </Container>
