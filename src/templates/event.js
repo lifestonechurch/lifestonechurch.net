@@ -163,11 +163,11 @@ export const query = graphql`
       fields {
         descriptionFormatted
       }
-		image {
-		  sizes(maxWidth: 700) {
-			 ...GatsbyContentfulSizes
-		  }
-		}
+      image {
+	sizes(maxWidth: 700) {
+	  ...GatsbyContentfulSizes
+	}
+      }
       registrationLink
     }
   }
