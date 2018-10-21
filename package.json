@@ -46,6 +46,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "dotenv": "^4.0.0",
+    "husky": "^1.1.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
     "prettier": "^1.9.2",
@@ -62,7 +63,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "jest"
+    "test": "jest",
+    "precommit": "npm run format"
   },
   "prettier": {
     "trailingComma": "es5",
