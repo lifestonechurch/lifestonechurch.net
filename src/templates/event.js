@@ -59,9 +59,11 @@ export default ({ data }) => {
       />
       <H1>{event.name}</H1>
 
-      <Image>
-        <Img sizes={event.image.sizes} />
-      </Image>
+	  {event.image && (
+		  <Image>
+			 <Img sizes={event.image.sizes} />
+		  </Image>
+	  )}
 
       {!event.dateAndRegistration && (
         <div>
@@ -162,9 +164,9 @@ export const query = graphql`
         descriptionFormatted
       }
       image {
-        sizes(maxWidth: 700) {
-          ...GatsbyContentfulSizes
-        }
+	sizes(maxWidth: 700) {
+	  ...GatsbyContentfulSizes
+	}
       }
       registrationLink
     }
