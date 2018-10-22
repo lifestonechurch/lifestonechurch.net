@@ -48,12 +48,15 @@ export const getFutureEvents = events => {
     .filter(
       ({ node }) =>
         node.endDate
-          ? new Date(`${node.endDate}T00:00:00`) >= today
+          ? DateTime.fromFormat(node.endDate, 'yyyy-LL-dd').toJSDate() >= today
           : node.startDate
-            ? new Date(`${node.startDate}T00:00:00`) >= today
+            ? DateTime.fromFormat(node.startDate, 'yyyy-LL-dd').toJSDate() >=
+              today
             : node.dateAndRegistration &&
-              new Date(`${getLastEndDate(node.dateAndRegistration)}T00:00:00`) >=
-                today
+              DateTime.fromFormat(
+                getLastEndDate(node.dateAndRegistration),
+                'yyyy-LL-dd'
+              ).toJSDate() >= today
     )
     .map(({ node }) => ({
       ...node,
@@ -64,8 +67,8 @@ export const getFutureEvents = events => {
 };
 
 export const getCalendarFormat = (date, time) => {
-  const formatDate = (!time) ? 'yyyy-MM-dd' : 'yyyy-MM-dd h:mma';
-  const inputDate = (!time) ? date : `${date} ${time}`;
+  const formatDate = !time ? 'yyyy-MM-dd' : 'yyyy-MM-dd h:mma';
+  const inputDate = !time ? date : `${date} ${time}`;
   const isoFormat = DateTime.fromFormat(inputDate, formatDate).toISO();
   return isoFormat.split('.')[0].replace(/:|-/g, '');
 };
@@ -79,10 +82,12 @@ export const getCalendarURl = (date, startTime, endTime, name) => {
     dateEnd = getCalendarFormat(date, null);
   } else if (startTime) {
     dateStart = getCalendarFormat(date, startTime);
-    dateEnd = (!endTime) ? getCalendarFormat(date, startTime) : getCalendarFormat(date, endTime);
+    dateEnd = !endTime
+      ? getCalendarFormat(date, startTime)
+      : getCalendarFormat(date, endTime);
   }
 
-  return `http://www.google.com/calendar/event?action=TEMPLATE&text=${name}&dates=${dateStart}/${dateEnd}`
+  return `http://www.google.com/calendar/event?action=TEMPLATE&text=${name}&dates=${dateStart}/${dateEnd}`;
 };
 
 export default formatDate;
