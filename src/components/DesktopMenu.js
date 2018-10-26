@@ -106,13 +106,6 @@ const active = css`
   }
 `;
 
-const childActive = css`
-  background-color: #008f01;
-  & > li {
-    color: #ffffff !important;
-  }
-`;
-
 const childSubActive = css`
   color: #fff !important;
   background-color: #008f01;
