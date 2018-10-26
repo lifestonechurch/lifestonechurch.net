@@ -88,19 +88,18 @@ const Page = ({ data }) => {
         <Img sizes={data.youthSeriesImage.childImageSharp.sizes} />
       </Image>
 
-      <p>THE GREATEST SHOW: A 4-WEEK SERIES ON IDENTITY</p>
+      <p>AFTER YOU: A 4-WEEK SERIES ON OTHERS</p>
 
       <p>
-        Do you ever felt like you’re putting on a show? Like the person people
-        think you are doesn’t line up with who you really are? Or maybe you’ve
-        been known to put on different personas for different situations --
-        personas that help you fit in with certain crowds, even if that persona
-        doesn’t reflect who you really want to be. Sound familiar? Of course it
-        does. We can all relate because, at times, we all struggle with the same
-        big questions: “Who am I? Who loves me? Why am I here?” In this 4-week
-        series on identity, you’ll help students find answers to those questions
-        as they discover that, in Jesus, they are loved, they are forgiven, they
-        have purpose, and they belong.
+        In a culture obsessed with selfies, celebrities, money, and success,
+        it’s not difficult to understand why so many of us struggle with being a
+        little self-centered at times. But while “me first” may the norm for the
+        rest of the world, Jesus showed us what it looks like to live a
+        generous, compassionate, selfless, “after you” kind of life. In this
+        4-week series, you’ll challenge students to move away from the world’s
+        “me first” attitude and embrace the “after you” message of Jesus by
+        noticing needs, opening their hands, using their gifts, and sharing
+        their joy.
       </p>
 
       <Banner>
