@@ -79,7 +79,7 @@ export default Page;
 
 export const query = graphql`
   query LittleLifeQuery {
-    kidsLifeImage: file(relativePath: { eq: "pages/kids/kids-life.png" }) {
+    kidsLifeImage: file(relativePath: { eq: "pages/kids/kids-life.jpg" }) {
       childImageSharp {
         sizes(maxWidth: 700) {
           ...GatsbyImageSharpSizes_noBase64
