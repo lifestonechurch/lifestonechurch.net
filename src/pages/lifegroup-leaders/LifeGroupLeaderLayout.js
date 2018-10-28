@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'react-emotion';
@@ -44,7 +45,7 @@ const menuItems = [
   },
 ];
 
-const LifeGroupLeaderLayout = ({ children, data }) => (
+const LifeGroupLeaderLayout = ({ children, data, onLogout }) => (
   <Layout>
     <H1>{title}</H1>
     <Image>

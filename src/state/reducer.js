@@ -7,6 +7,11 @@ const reducer = (state, action) => {
         ...state,
         isLoggedIn: true,
       };
+    case TYPES.LOGOUT:
+      return {
+        ...state,
+        isLoggedIn: false,
+      };
     default:
       return state;
   }

@@ -4,7 +4,7 @@ import styled, { css } from 'react-emotion';
 
 import * as COLORS from '../constants/colors';
 
-import { login } from '../state/actions';
+import { login, logout } from '../state/actions';
 import { selectIsLoggedIn } from '../state/selectors';
 
 const Error = styled.div`
@@ -17,6 +17,7 @@ const LoggedOutContainer = styled.div`
 
 const FormGroup = styled.div`
   display: flex;
+  justify-content: center;
   align-items: baseline;
   flex-wrap: no-wrap;
   margin-top: 20px;
@@ -84,6 +85,11 @@ class LoggedIn extends React.Component {
     }
   };
 
+  logout = () => {
+    this.props.onLogout();
+    localStorage.setItem('loggedIn', 'false');
+  };
+
   submitForm = () => {
     if (this.state.password === process.env.GATSBY_LIFEGROUP_LEADER_PASSWORD) {
       this.props.onLogin();
@@ -97,7 +103,6 @@ class LoggedIn extends React.Component {
         ...prevState,
         error: 'Incorrect password',
       }));
-      localStorage.setItem('loggedIn', 'false');
     }
   };
 
@@ -112,12 +117,13 @@ class LoggedIn extends React.Component {
     return (
       <div>
         {isLoggedIn ? (
-          children
+          <div>
+            {children}
+            <Button onClick={this.logout}>Logout</Button>
+          </div>
         ) : (
           <LoggedOutContainer>
             <p>You must be logged in to view this page.</p>
-            <label htmlFor="password">Password:</label>
-            <br />
             <FormGroup>
               <Input
                 type="password"
@@ -143,5 +149,6 @@ export default connect(
   }),
   {
     onLogin: login,
+    onLogout: logout,
   }
 )(LoggedIn);
