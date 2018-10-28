@@ -73,7 +73,6 @@ const Page = () => (
           ))}
         </ul>
       </div>
-      }
     </LoggedIn>
   </Layout>
 );

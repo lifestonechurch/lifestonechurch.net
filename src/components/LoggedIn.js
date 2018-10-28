@@ -35,16 +35,23 @@ class LoggedIn extends React.Component {
       this.props.onLogin();
       this.setState(prevState => ({
         ...prevState,
-        // isLoggedIn: true,
         error: '',
       }));
+      localStorage.setItem('loggedIn', 'true');
     } else {
       this.setState(prevState => ({
         ...prevState,
         error: 'Incorrect password',
       }));
+      localStorage.setItem('loggedIn', 'false');
     }
   };
+
+  componentDidMount() {
+    if (localStorage.getItem('loggedIn') === 'true') {
+      this.props.onLogin();
+    }
+  }
 
   render() {
     const { isLoggedIn, children } = this.props;
