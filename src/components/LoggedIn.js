@@ -1,12 +1,62 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
+
+import * as COLORS from '../constants/colors';
 
 import { login } from '../state/actions';
 import { selectIsLoggedIn } from '../state/selectors';
 
 const Error = styled.div`
   color: red;
+`;
+
+const FormGroup = styled.div`
+  display: flex;
+  align-items: baseline;
+  flex-wrap: no-wrap;
+`;
+
+const FormInput = css`
+  height: 40px;
+  width: 200px;
+  margin: 0;
+  padding: 20px 14px;
+  border-radius: 0;
+  font-size: 16px;
+`;
+
+const Input = styled.input`
+  ${FormInput};
+  margin-left: 20px;
+  color: ${COLORS.LIGHT_TEXT};
+
+  &::placeholder {
+    color: ${COLORS.BRAND};
+  }
+`;
+
+const Button = styled.button`
+  ${FormInput};
+  flex: 0;
+  background-color: ${COLORS.BRAND};
+  border: none;
+  border-radius: 0;
+  padding: 0 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: ${COLORS.BRAND_LIGHTER};
+  }
+
+  &:active,
+  &:focus {
+    background-color: ${COLORS.BRAND_DARKER};
+  }
 `;
 
 class LoggedIn extends React.Component {
@@ -62,14 +112,18 @@ class LoggedIn extends React.Component {
         ) : (
           <div>
             <p>You must be logged in to view this page.</p>
-            <label htmlFor="password">Password: </label>
-            <input
-              id="password"
-              value={this.state.password}
-              onChange={this.handleChange}
-              onKeyDown={this.handleKeyDown}
-            />
-            <button onClick={this.submitForm}>Submit</button>
+            <FormGroup>
+              <label htmlFor="password">Password:</label>
+              <Input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                value={this.state.password}
+                onChange={this.handleChange}
+                onKeyDown={this.handleKeyDown}
+              />
+              <Button onClick={this.submitForm}>Submit</Button>
+            </FormGroup>
             <Error>{this.state.error}</Error>
           </div>
         )}
