@@ -11,10 +11,15 @@ const Error = styled.div`
   color: red;
 `;
 
+const LoggedOutContainer = styled.div`
+  text-align: center;
+`;
+
 const FormGroup = styled.div`
   display: flex;
   align-items: baseline;
   flex-wrap: no-wrap;
+  margin-top: 20px;
 `;
 
 const FormInput = css`
@@ -28,7 +33,6 @@ const FormInput = css`
 
 const Input = styled.input`
   ${FormInput};
-  margin-left: 20px;
   color: ${COLORS.LIGHT_TEXT};
 
   &::placeholder {
@@ -110,10 +114,11 @@ class LoggedIn extends React.Component {
         {isLoggedIn ? (
           children
         ) : (
-          <div>
+          <LoggedOutContainer>
             <p>You must be logged in to view this page.</p>
+            <label htmlFor="password">Password:</label>
+            <br />
             <FormGroup>
-              <label htmlFor="password">Password:</label>
               <Input
                 type="password"
                 id="password"
@@ -125,7 +130,7 @@ class LoggedIn extends React.Component {
               <Button onClick={this.submitForm}>Submit</Button>
             </FormGroup>
             <Error>{this.state.error}</Error>
-          </div>
+          </LoggedOutContainer>
         )}
       </div>
     );
