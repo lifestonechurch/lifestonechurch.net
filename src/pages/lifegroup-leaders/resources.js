@@ -56,7 +56,11 @@ const Page = () => (
       <h4>Constant Talkers</h4>
       <Container>
         <HoverCard>
-          <a href="https://www.rightnowmedia.org/Training/Post/View/9755">
+          <a
+            href="https://www.rightnowmedia.org/Training/Post/View/9755"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98723.jpeg" />
             <TextArea>
               <p>
@@ -69,7 +73,11 @@ const Page = () => (
           </a>
         </HoverCard>
         <HoverCard>
-          <a href="https://www.rightnowmedia.org/Training/Post/View/9035">
+          <a
+            href="https://www.rightnowmedia.org/Training/Post/View/9035"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98532.jpeg" />
             <TextArea>
               <p>
@@ -86,7 +94,11 @@ const Page = () => (
       <h4>General Help</h4>
       <Container>
         <HoverCard>
-          <a href="https://www.rightnowmedia.org/Training/Post/View/202578">
+          <a
+            href="https://www.rightnowmedia.org/Training/Post/View/202578"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/123075.jpeg" />
             <TextArea>
               <p>
@@ -104,7 +116,11 @@ const Page = () => (
           </a>
         </HoverCard>
         <HoverCard>
-          <a href="https://www.rightnowmedia.org/Training/Post/View/9099">
+          <a
+            href="https://www.rightnowmedia.org/Training/Post/View/9099"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98540.jpeg" />
             <TextArea>
               <p>
@@ -118,7 +134,11 @@ const Page = () => (
           </a>
         </HoverCard>
         <HoverCard>
-          <a href="https://www.rightnowmedia.org/Training/Post/View/8957">
+          <a
+            href="https://www.rightnowmedia.org/Training/Post/View/8957"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/97894.jpeg" />
             <TextArea>
               <p>
@@ -136,7 +156,11 @@ const Page = () => (
       <h4>Going Deeper</h4>
       <Container>
         <HoverCard>
-          <a href="https://www.rightnowmedia.org/Training/Post/View/9002">
+          <a
+            href="https://www.rightnowmedia.org/Training/Post/View/9002"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98521.jpeg" />
             <TextArea>
               <p>
@@ -152,7 +176,11 @@ const Page = () => (
       <h4>Asking Good Questions</h4>
       <Container>
         <HoverCard>
-          <a href="https://www.rightnowmedia.org/Training/Post/View/20658">
+          <a
+            href="https://www.rightnowmedia.org/Training/Post/View/20658"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98852.jpeg" />
             <TextArea>
               <p>2nd video</p>
@@ -168,7 +196,11 @@ const Page = () => (
           </a>
         </HoverCard>
         <HoverCard>
-          <a href="https://www.rightnowmedia.org/Training/Post/View/69326">
+          <a
+            href="https://www.rightnowmedia.org/Training/Post/View/69326"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/105928.jpeg" />
             <TextArea>
               <p>
