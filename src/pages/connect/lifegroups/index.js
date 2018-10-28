@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import humanizeList from 'humanize-list';
 
@@ -169,6 +169,8 @@ class Page extends React.Component {
           maxWidth={600}
           title="The Good Book LifeGroup Series"
         />
+
+        <Link to="/lifegroup-leaders">LifeGroup Leader Resources</Link>
       </Layout>
     );
   }
