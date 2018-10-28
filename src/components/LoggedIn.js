@@ -8,6 +8,7 @@ import { login, logout } from '../state/actions';
 import { selectIsLoggedIn } from '../state/selectors';
 
 const Error = styled.div`
+  margin-top: 20px;
   color: red;
 `;
 
@@ -96,12 +97,14 @@ class LoggedIn extends React.Component {
       this.setState(prevState => ({
         ...prevState,
         error: '',
+        password: '',
       }));
       localStorage.setItem('loggedIn', 'true');
     } else {
       this.setState(prevState => ({
         ...prevState,
         error: 'Incorrect password',
+        password: '',
       }));
     }
   };
