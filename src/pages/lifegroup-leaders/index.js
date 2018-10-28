@@ -1,13 +1,9 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-import Layout from '../../components/layout';
-import { H1, H2, H3 } from '../../components/headers';
-import LoggedIn from '../../components/LoggedIn';
+import LifeGroupLeaderLayout from './LifeGroupLeaderLayout';
+import { H2, H3 } from '../../components/headers';
 import Card from '../../components/Card';
-import Menu from './Menu';
-
-const title = 'LifeGroup Leader Resources';
 
 const Container = styled.div`
   display: grid;
@@ -63,34 +59,30 @@ const curriculum = [
 ];
 
 const Page = () => (
-  <Layout>
-    <H1>{title}</H1>
-    <LoggedIn>
-      <div>
-        <Menu />
-        <H2>Fall Curriculum</H2>
-        <Container>
-          {curriculum.map((c, i) => (
-            <Card key={i}>
-              <InnerCard>
-                <H3>Week {i + 1}</H3>
-                <p>
-                  <a href={c.pdf} target="_blank" rel="noopener noreferrer">
-                    Discussion Guide
-                  </a>
-                </p>
-                <p>
-                  <a href={c.video} target="_blank" rel="noopener noreferrer">
-                    Video
-                  </a>
-                </p>
-              </InnerCard>
-            </Card>
-          ))}
-        </Container>
-      </div>
-    </LoggedIn>
-  </Layout>
+  <LifeGroupLeaderLayout>
+    <div>
+      <H2>Fall Curriculum</H2>
+      <Container>
+        {curriculum.map((c, i) => (
+          <Card key={i}>
+            <InnerCard>
+              <H3>Week {i + 1}</H3>
+              <p>
+                <a href={c.pdf} target="_blank" rel="noopener noreferrer">
+                  Discussion Guide
+                </a>
+              </p>
+              <p>
+                <a href={c.video} target="_blank" rel="noopener noreferrer">
+                  Video
+                </a>
+              </p>
+            </InnerCard>
+          </Card>
+        ))}
+      </Container>
+    </div>
+  </LifeGroupLeaderLayout>
 );
 
 export default Page;
