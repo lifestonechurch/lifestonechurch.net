@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import { Link } from 'gatsby';
 
 const Container = styled.div`
   display: flex;
@@ -25,9 +26,9 @@ const PageMenu = ({ items }) => (
             {item.name}
           </a>
         ) : (
-          <a href={item.link} key={i}>
+          <Link to={item.link} key={i}>
             {item.name}
-          </a>
+          </Link>
         )
     )}
   </Container>

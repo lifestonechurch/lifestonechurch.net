@@ -25,7 +25,7 @@ const Content = styled.div`
   padding: 0 16px;
 `;
 
-const TemplateWrapper = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <Container>
       <StaticQuery
@@ -81,6 +81,6 @@ const TemplateWrapper = ({ children }) => {
   );
 };
 
-TemplateWrapper.propTypes = {};
+Layout.propTypes = {};
 
-export default TemplateWrapper;
+export default Layout;
