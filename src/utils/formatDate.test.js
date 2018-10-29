@@ -1,4 +1,5 @@
 import * as formatDate from './formatDate';
+import { DateTime } from 'luxon';
 
 describe('formatDate', () => {
   test('it should format "2018-01-01" as "1/1/2018"', () => {
@@ -89,16 +90,6 @@ describe('getLastEndDate', () => {
 
 describe('getFutureEvents', () => {
   const { getFutureEvents } = formatDate;
-  const OriginalDate = Date;
-
-  beforeAll(() => {
-    const fakeToday = new Date(2018, 0, 1);
-    Date = (...args) => (args.length ? new OriginalDate(...args) : fakeToday);
-  });
-
-  afterAll(() => {
-    Date = OriginalDate;
-  });
 
   const createMockNode = keys => ({
     node: {
@@ -109,16 +100,25 @@ describe('getFutureEvents', () => {
     },
   });
 
+  const todaysDate = new Date();
+
+  const todaysDateString = DateTime.fromJSDate(todaysDate).toFormat(
+    'yyyy-LL-dd'
+  );
+  const nextDayDateString = DateTime.fromJSDate(todaysDate)
+    .plus({ days: 1 })
+    .toFormat('yyyy-LL-dd');
+
   const eventWithFutureEndDate = createMockNode({
     id: 'eventWithFutureEndDate',
-    startDate: '2018-01-01',
-    endDate: '2018-01-02',
+    startDate: todaysDateString,
+    endDate: nextDayDateString,
   });
 
   const eventWithTodayEndDate = createMockNode({
     id: 'eventWithFutureEndDate',
-    startDate: '2018-01-01',
-    endDate: '2018-01-01',
+    startDate: todaysDateString,
+    endDate: todaysDateString,
   });
 
   const eventWithPastEndDate = createMockNode({
@@ -129,13 +129,13 @@ describe('getFutureEvents', () => {
 
   const eventWithNoEndDateAndFutureStartDate = createMockNode({
     id: 'eventWithNoEndDateAndFutureStartDate',
-    startDate: '2018-01-02',
+    startDate: nextDayDateString,
     endDate: null,
   });
 
   const eventWithNoEndDateAndTodayStartDate = createMockNode({
     id: 'eventWithNoEndDateAndTodayStartDate',
-    startDate: '2018-01-01',
+    startDate: todaysDateString,
     endDate: null,
   });
 
@@ -149,7 +149,7 @@ describe('getFutureEvents', () => {
     id: 'eventWithNoStartOrEndDateAndFutureRegistration',
     dateAndRegistration: [
       {
-        endDate: '2018-01-02',
+        endDate: nextDayDateString,
       },
     ],
     startDate: null,
@@ -160,7 +160,7 @@ describe('getFutureEvents', () => {
     id: 'eventWithNoStartOrEndDateAndFutureRegistration',
     dateAndRegistration: [
       {
-        endDate: '2018-01-01',
+        endDate: todaysDateString,
       },
     ],
     startDate: null,
@@ -276,7 +276,7 @@ describe('getFutureEvents', () => {
     });
 
     test('it sets startDate to the earliest registration date if there is no start date', () => {
-      const earliestStartDate = '2018-01-01';
+      const earliestStartDate = todaysDateString;
 
       const testEvents = [
         createMockNode({
@@ -284,7 +284,7 @@ describe('getFutureEvents', () => {
           startDate: null,
           dateAndRegistration: [
             {
-              startDate: '2018-01-02',
+              startDate: nextDayDateString,
             },
             {
               startDate: earliestStartDate,
@@ -323,7 +323,7 @@ describe('getFutureEvents', () => {
         createMockNode({
           ...eventWithFutureEndDate.node,
           id: newestEventId,
-          startDate: '2018-01-01',
+          startDate: todaysDateString,
         }),
         createMockNode({
           ...eventWithFutureEndDate.node,
@@ -341,20 +341,23 @@ describe('getFutureEvents', () => {
 
 describe('getCalendarFormat', () => {
   test('it should format arguments "2018-10-01" and "9:00am" as "20181001T090000"', () => {
-    const testDate = "2018-10-01";
-    const testTime = "9:00am";
-    expect(formatDate.getCalendarFormat(testDate,testTime)).toBe('20181001T090000');
+    const testDate = '2018-10-01';
+    const testTime = '9:00am';
+    expect(formatDate.getCalendarFormat(testDate, testTime)).toBe(
+      '20181001T090000'
+    );
   });
 });
 
-
 describe('getCalendarURl', () => {
   test('it should format arguments "2018-10-01", "9:00am", "11:00am", "October_Event" as the expectedResult seen below', () => {
-    const testDate = "2018-10-01";
-    const startTime = "9:00am";
-    const endTime = "11:00am";
-    const name = "October_Event";
+    const testDate = '2018-10-01';
+    const startTime = '9:00am';
+    const endTime = '11:00am';
+    const name = 'October_Event';
     const expectedResult = `http://www.google.com/calendar/event?action=TEMPLATE&text=October_Event&dates=20181001T090000/20181001T110000`;
-    expect(formatDate.getCalendarURl(testDate, startTime, endTime, name)).toBe(expectedResult);
+    expect(formatDate.getCalendarURl(testDate, startTime, endTime, name)).toBe(
+      expectedResult
+    );
   });
 });
