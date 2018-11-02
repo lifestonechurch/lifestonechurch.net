@@ -44,7 +44,7 @@ const Footer = () => (
   <Container>
     <InnerContainer>
       <Column>
-        <p>Sundays 9:00 am or 10:30 am</p>
+        <p>Sundays 9:30am or 11:00am</p>
 
         <p>3443 W 12600 S, Riverton, UT 84065</p>
 

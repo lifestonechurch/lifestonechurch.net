@@ -52,7 +52,7 @@ const Visit = ({ data }) => (
 
     <p>
       <b>Time frame</b>: We have 2 services times on Sunday mornings to choose
-      from: 9:00-10:00 or 10:30-11:30. We recommend arriving about 10-15 minutes
+      from: 9:30-10:30 or 11:00-12:00. We recommend arriving about 10-15 minutes
       early so that you can get your kids checked in and grab some donuts and
       coffee before the worship service begins.{' '}
     </p>
