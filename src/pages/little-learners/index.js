@@ -209,12 +209,6 @@ const Page = ({ data }) => (
         </InnerCard>
       </Card>
     </CardContainer>
-
-    <Banner>
-      <H2>Calendar of Events</H2>
-    </Banner>
-
-    <p>Coming Soon</p>
   </Layout>
 );
 
