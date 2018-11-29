@@ -57,21 +57,11 @@ const Layout = ({ children }) => {
                 content={data.site.siteMetadata.description}
               />
               <meta name="keywords" content={data.site.siteMetadata.keywords} />
-              <link
-                href="https://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
-                rel="stylesheet"
-                type="text/css"
-              />
               <link rel="shortcut icon" href="/favicon.png" />
             </Helmet>
             <Header navigation={data.site.siteMetadata.navigation} />
           </div>
         )}
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Lato:400,700|Droid+Serif:400,700,400italic"
-        rel="stylesheet"
-        type="text/css"
       />
       <Content>
         <div>{children}</div>

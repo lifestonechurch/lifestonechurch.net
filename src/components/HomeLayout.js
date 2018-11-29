@@ -48,11 +48,6 @@ const TemplateWrapper = ({ children }) => {
                 content={data.site.siteMetadata.description}
               />
               <meta name="keywords" content={data.site.siteMetadata.keywords} />
-              <link
-                href="https://fonts.googleapis.com/css?family=Lato:400,700"
-                rel="stylesheet"
-                type="text/css"
-              />
               <link rel="shortcut icon" href="/favicon.png" />
               <meta
                 name="google-site-verification"

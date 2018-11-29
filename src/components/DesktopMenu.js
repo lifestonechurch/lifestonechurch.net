@@ -88,6 +88,7 @@ const Image = styled.img`
   top: 0;
   left: 20px;
   height 45px;
+  margin-bottom: 0;
   padding: 4px 0;
   z-index: 1000;
   display: ${props => (props.isVisible ? 'visible' : 'none')};

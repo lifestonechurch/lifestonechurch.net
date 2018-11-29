@@ -54,6 +54,12 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-offline`,
     {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: COLORS.BRAND,
