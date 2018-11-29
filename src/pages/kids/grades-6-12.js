@@ -88,18 +88,18 @@ const Page = ({ data }) => {
         <Img sizes={data.youthSeriesImage.childImageSharp.sizes} />
       </Image>
 
-      <p>AFTER YOU: A 4-WEEK SERIES ON OTHERS</p>
+      <p>THE PROBLEM WITH CHRISTMAS: A 4-WEEK SERIES ON CHRISTMAS</p>
 
       <p>
-        In a culture obsessed with selfies, celebrities, money, and success,
-        it’s not difficult to understand why so many of us struggle with being a
-        little self-centered at times. But while “me first” may the norm for the
-        rest of the world, Jesus showed us what it looks like to live a
-        generous, compassionate, selfless, “after you” kind of life. In this
-        4-week series, you’ll challenge students to move away from the world’s
-        “me first” attitude and embrace the “after you” message of Jesus by
-        noticing needs, opening their hands, using their gifts, and sharing
-        their joy.
+        Most people are pretty sure they know the story of Christmas. There’s a
+        baby, and a manger, and some sheep, and Santa, and — well, it’s
+        something like that. But there’s a problem with seeing the story of
+        Jesus’ birth as just another story from the Bible. The story of
+        Christmas isn’t just one of many stories in Scripture – it’s part of the
+        story – the big story of God and His relationship with His creation. In
+        this 4-week series, you’ll help students see how the birth of Jesus
+        changed the story of humanity forever in a way that was completely
+        unexpected, undeserved, unbelievable, and undeniable.
       </p>
 
       <Banner>
