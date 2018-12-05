@@ -160,16 +160,6 @@ class Page extends React.Component {
             ))}
         </CardContainer>
 
-        <Banner>
-          <H2>Preview Our Fall Series</H2>
-        </Banner>
-
-        <VideoPlayer
-          url="https://player.rightnow.org/241480"
-          maxWidth={600}
-          title="The Good Book LifeGroup Series"
-        />
-
         <Link to="/lifegroup-leaders">LifeGroup Leader Resources</Link>
       </Layout>
     );
