@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+input {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+a,
+a:hover {
+  color: #008f01;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

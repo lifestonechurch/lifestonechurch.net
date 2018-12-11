@@ -16,6 +16,7 @@ const InnerCard = styled.div`
 
 const ImageStyles = {
   maxWidth: 200,
+  borderRadius: '50%',
   marginRight: '2em',
   marginBottom: '28px',
 };

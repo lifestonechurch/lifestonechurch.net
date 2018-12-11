@@ -4,7 +4,7 @@ import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import humanizeList from 'humanize-list';
 
-import Layout from '../../../components/layout';
+import LayoutFullWidth from '../../../components/layoutFullWidth';
 import { H1, H2, H3, H4 } from '../../../components/headers';
 import Banner from '../../../components/Banner';
 import LifeGroup from '../../../components/LifeGroup';
@@ -31,7 +31,18 @@ const CardContainer = styled.div`
 
 const Image = styled.div`
   margin: 0 auto;
-  max-width: 1170px;
+  width: 100%;
+  position: relative;
+`;
+
+const ImgText = styled.div`
+  position: absolute;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 const sortByDayOfWeek = (a, b) => {
@@ -79,17 +90,11 @@ class Page extends React.Component {
     }));
 
     return (
-      <Layout>
-        <Breadcrumbs
-          path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
-          title={title}
-        />
-        <H1>{title}</H1>
-
-        <Image>
-          <Img sizes={data.lifegroupImage.childImageSharp.sizes} />
-        </Image>
-
+      <LayoutFullWidth
+        imgSizes={data.lifegroupImage.childImageSharp.sizes}
+        title={title}
+        subtitle="Grow spiritually by connecting with others and to the Bible."
+      >
         <Center>
           <H3>Which days work best for you?</H3>
         </Center>
@@ -161,7 +166,7 @@ class Page extends React.Component {
         </CardContainer>
 
         <Link to="/lifegroup-leaders">LifeGroup Leader Resources</Link>
-      </Layout>
+      </LayoutFullWidth>
     );
   }
 }
@@ -171,7 +176,7 @@ export default Page;
 export const query = graphql`
   query LifegroupsQuery {
     lifegroupImage: file(
-      relativePath: { eq: "pages/connect/lifegroups/fall-session.jpg" }
+      relativePath: { eq: "pages/connect/lifegroups/headerbible.jpg" }
     ) {
       childImageSharp {
         sizes(maxWidth: 1170) {
