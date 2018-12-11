@@ -5,7 +5,6 @@ import Img from 'gatsby-image';
 
 import { H3, H4 } from './headers';
 import Card from './Card';
-import ShowMore from './ShowMore';
 
 const InnerCard = styled.div`
   display: flex;
@@ -18,6 +17,7 @@ const InnerCard = styled.div`
 const ImageStyles = {
   maxWidth: 200,
   marginRight: '2em',
+  marginBottom: '28px',
 };
 
 const LifeGroup = ({
@@ -41,10 +41,6 @@ const LifeGroup = ({
         <p>{description}</p>
 
         <H4>Hosts: {hosts.name}</H4>
-        <div>
-          {hosts.id !== leaders.id &&
-            (hosts.description && <ShowMore description={hosts.description} />)}
-        </div>
 
         <H4>Leaders: {leaders.name}</H4>
         <div>
@@ -55,9 +51,6 @@ const LifeGroup = ({
                 alt={leaders.photoTitle}
                 style={ImageStyles}
               />
-            )}
-            {leaders.description && (
-              <ShowMore description={leaders.description} />
             )}
           </div>
         </div>
