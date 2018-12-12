@@ -12,6 +12,7 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 import Card from '../../components/Card';
 import Tag from '../../components/Tag';
 import PayPalForm from '../../components/PayPalForm';
+import VideoPlayer from '../../components/VideoPlayer';
 
 import * as COLORS from '../../constants/colors';
 
@@ -55,23 +56,48 @@ const Footer = styled.div`
 const Page = ({ data }) => (
   <Layout>
     <Breadcrumbs path={[{ title: 'Home', url: '/' }]} title={title} />
-
     <H1>{title}</H1>
-
     <p>
       Help support the work that we're doing to reach our community! Donations
       to Lifestone help support the local church and churches around the world.
     </p>
-
     <BibleQuote reference="2 Corinthians 9:7 (NIV)">
       "Each of you should give what you have decided in your heart to give, not
       reluctantly or under compulsion, for God loves a cheerful giver."
     </BibleQuote>
 
     <Banner>
-      <H2>Ways to Give</H2>
+      <H2>Year-End Giving</H2>
     </Banner>
 
+    <VideoPlayer
+      url="https://www.youtube.com/embed/E3HGXkMDxzo"
+      maxWidth={600}
+      title="Thank You - Lottie Moon Christmas Offering Video"
+    />
+
+    <p>
+      100% of 2018 YEAR END GIFTS to Lifestone go to Lottie Moon! Use memo
+      "YEG".
+    </p>
+
+    <p>
+      Because you and your church give to the{' '}
+      <a
+        href="https://www.imb.org/lottie-moon-christmas-offering"
+        target="_blank"
+      >
+        Lottie Moon
+      </a>{' '}
+      Christmas Offering, IMB missionaries can take the gospel to unreached
+      peoples around the world. Every dollar you give makes a difference,
+      because 100% of the money collected goes to the work of reaching every
+      nation.
+    </p>
+
+    <Banner>
+      <H2>Ways to Give</H2>
+    </Banner>
     <CardContainer>
       <Card>
         <InnerCard>
@@ -120,32 +146,24 @@ const Page = ({ data }) => (
         </InnerCard>
       </Card>
     </CardContainer>
-
     <Banner>
       <H2>Reach More Land Fundraiser</H2>
     </Banner>
-
     <Image>
       <Img
         sizes={data.reachMoreImage.childImageSharp.sizes}
         alt="Reach More Land Fundraiser"
       />
     </Image>
-
     <p>How to give to reach more:</p>
-
     <p>
       Text 385-800-3135 amount + the word reach<br />Example: $50 reach
     </p>
-
     <p>OR</p>
-
     <p>Signify "REACH" in the memo of your check or online gift</p>
-
     <Banner>
       <H2>{lastYear} Giving Statement</H2>
     </Banner>
-
     <p>
       To view, print, or download your giving statement, follow the steps below.
       Remember, we are here to help!
@@ -180,7 +198,6 @@ const Page = ({ data }) => (
     <Button linkTo="https://lifestonechurch.breezechms.com/">
       View Giving Statment
     </Button>
-
     <p>
       If you need help logging in, please email{' '}
       <a href="mailto:lifestone@lifestonechurch.net?subject=Please%20help%20me%20login%20to%20Lifestone's%20database!&body=First%20%26%20Last%20Name%3A">
