@@ -19,9 +19,8 @@ const Center = styled.div`
 `;
 
 const CardContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   > div {
     width: 500px;
@@ -112,51 +111,50 @@ class Page extends React.Component {
             )
             .sort(sortByDayOfWeek)
             .map(({ node }, index, array) => (
-              <div key={node.id}>
-                <LifeGroup
-                  name={node.name}
-                  description={node.description && node.description.description}
-                  day={node.day}
-                  time={node.time}
-                  address={node.address || ''}
-                  hosts={
-                    node.hosts
-                      ? {
-                          id: node.hosts[0].id,
-                          name: node.hosts[0].name,
-                          description: node.hosts[0].description
-                            ? node.hosts[0].description.description
-                            : '',
-                          photoSizes: node.hosts[0].photo
-                            ? node.hosts[0].photo.sizes
-                            : undefined,
-                          photoTitle: node.hosts[0].photo
-                            ? node.hosts[0].photo.title
-                            : '',
-                        }
-                      : {}
-                  }
-                  leaders={
-                    node.leaders
-                      ? {
-                          id: node.leaders[0].id,
-                          name: node.leaders[0].name,
-                          description: node.leaders[0].description
-                            ? node.leaders[0].description.description
-                            : '',
-                          photoSizes: node.leaders[0].photo
-                            ? node.leaders[0].photo.sizes
-                            : undefined,
-                          photoTitle: node.leaders[0].photo
-                            ? node.leaders[0].photo.title
-                            : '',
-                        }
-                      : {}
-                  }
-                  contact={node.fields.contactFormatted}
-                  hasChildcare={node.hasChildcare}
-                />
-              </div>
+              <LifeGroup
+                key={node.id}
+                name={node.name}
+                description={node.description && node.description.description}
+                day={node.day}
+                time={node.time}
+                address={node.address || ''}
+                hosts={
+                  node.hosts
+                    ? {
+                        id: node.hosts[0].id,
+                        name: node.hosts[0].name,
+                        description: node.hosts[0].description
+                          ? node.hosts[0].description.description
+                          : '',
+                        photoSizes: node.hosts[0].photo
+                          ? node.hosts[0].photo.sizes
+                          : undefined,
+                        photoTitle: node.hosts[0].photo
+                          ? node.hosts[0].photo.title
+                          : '',
+                      }
+                    : {}
+                }
+                leaders={
+                  node.leaders
+                    ? {
+                        id: node.leaders[0].id,
+                        name: node.leaders[0].name,
+                        description: node.leaders[0].description
+                          ? node.leaders[0].description.description
+                          : '',
+                        photoSizes: node.leaders[0].photo
+                          ? node.leaders[0].photo.sizes
+                          : undefined,
+                        photoTitle: node.leaders[0].photo
+                          ? node.leaders[0].photo.title
+                          : '',
+                      }
+                    : {}
+                }
+                contact={node.fields.contactFormatted}
+                hasChildcare={node.hasChildcare}
+              />
             ))}
         </CardContainer>
 
