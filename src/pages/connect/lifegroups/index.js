@@ -171,7 +171,7 @@ export default Page;
 export const query = graphql`
   query LifegroupsQuery {
     lifegroupImage: file(
-      relativePath: { eq: "pages/connect/lifegroups/fall-session.jpg" }
+      relativePath: { eq: "pages/connect/lifegroups/winter-session.jpg" }
     ) {
       childImageSharp {
         sizes(maxWidth: 1170) {
