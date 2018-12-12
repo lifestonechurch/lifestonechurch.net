@@ -40,7 +40,7 @@ const LifeGroup = ({
         </p>
         <p>{description}</p>
 
-        <H4>Hosts: {hosts.name}</H4>
+        {hosts.name && <H4>Hosts: {hosts.name}</H4>}
 
         <H4>Leaders: {leaders.name}</H4>
         <div>
