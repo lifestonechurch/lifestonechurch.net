@@ -1,11 +1,11 @@
 import Typography from 'typography';
 import theme from 'typography-theme-bootstrap';
 
-// theme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
-//   li: {
-//     padding: 0,
-//   },
-// });
+theme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
+  ul: {
+    marginLeft: 0,
+  },
+});
 
 const typography = new Typography(theme);
 const { rhythm, scale } = typography;
