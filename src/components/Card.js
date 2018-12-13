@@ -3,8 +3,6 @@ import styled from 'react-emotion';
 
 const Container = styled.div`
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
   color: rgba(0, 0, 0, 0.6);
   background: rgb(255, 255, 255) none repeat scroll 0% 0%;
   border-radius: 4px;

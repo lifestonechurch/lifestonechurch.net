@@ -85,6 +85,7 @@ const Label = styled('label')({
 const BaseMenu = styled('ul')(
   {
     padding: 0,
+    marginLeft: 0,
     marginTop: 0,
     position: 'absolute',
     backgroundColor: 'white',

@@ -14,17 +14,18 @@ import MultiSelect from '../../../components/MultiSelect';
 
 const title = 'LifeGroups';
 
-const Center = styled.div`
+const DatePickerContainer = styled.div`
   text-align: center;
+  margin-top: 40px;
 `;
 
 const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 
-  > div {
-    width: 500px;
-    max-width: 90%;
+  @media (max-width: 799px) {
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -89,11 +90,14 @@ class Page extends React.Component {
           <Img sizes={data.lifegroupImage.childImageSharp.sizes} />
         </Image>
 
-        <Center>
+        <DatePickerContainer>
           <H3>Which days work best for you?</H3>
-        </Center>
 
-        <MultiSelect onChange={this.handleLifeGroupDayChange} items={allDays} />
+          <MultiSelect
+            onChange={this.handleLifeGroupDayChange}
+            items={allDays}
+          />
+        </DatePickerContainer>
 
         {!!this.state.selectedDays.length && (
           <H4>

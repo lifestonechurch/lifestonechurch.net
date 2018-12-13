@@ -156,6 +156,7 @@ class MultiSelect extends React.Component {
                   padding: 10,
                   paddingRight: 50,
                   boxShadow: '0 2px 3px 0 rgba(34,36,38,.15)',
+                  background: 'white',
                   borderColor: '#96c8da',
                   borderTopWidth: '1',
                   borderRightWidth: 1,
@@ -236,7 +237,7 @@ class MultiSelect extends React.Component {
                         flex: 1,
                         fontSize: 14,
                         minHeight: 27,
-                        backgroundColor: 'inherit',
+                        backgroundColor: 'transparent',
                       }),
                     })}
                   />
