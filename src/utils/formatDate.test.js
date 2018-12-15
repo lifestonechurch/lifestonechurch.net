@@ -350,14 +350,39 @@ describe('getCalendarFormat', () => {
 });
 
 describe('getCalendarURl', () => {
-  test('it should format arguments "2018-10-01", "9:00am", "11:00am", "October_Event" as the expectedResult seen below', () => {
-    const testDate = '2018-10-01';
+  test('single day events', () => {
+    const startDate = '2018-10-01';
+    const endDate = null;
     const startTime = '9:00am';
     const endTime = '11:00am';
     const name = 'October_Event';
     const expectedResult = `http://www.google.com/calendar/event?action=TEMPLATE&text=October_Event&dates=20181001T090000/20181001T110000`;
-    expect(formatDate.getCalendarURl(testDate, startTime, endTime, name)).toBe(
-      expectedResult
-    );
+    expect(
+      formatDate.getCalendarURl(startDate, endDate, startTime, endTime, name)
+    ).toBe(expectedResult);
+  });
+
+  test('formats multi-day events', () => {
+    const startDate = '2018-10-01';
+    const endDate = '2018-10-03';
+    const startTime = '9:00am';
+    const endTime = '11:00am';
+    const name = 'October_Event';
+    const expectedResult = `http://www.google.com/calendar/event?action=TEMPLATE&text=October_Event&dates=20181001T090000/20181003T110000`;
+    expect(
+      formatDate.getCalendarURl(startDate, endDate, startTime, endTime, name)
+    ).toBe(expectedResult);
+  });
+
+  test('formats multi-day all-day events', () => {
+    const startDate = '2018-10-01';
+    const endDate = '2018-10-03';
+    const startTime = null;
+    const endTime = null;
+    const name = 'October_Event';
+    const expectedResult = `http://www.google.com/calendar/event?action=TEMPLATE&text=October_Event&dates=20181001/20181003`;
+    expect(
+      formatDate.getCalendarURl(startDate, endDate, startTime, endTime, name)
+    ).toBe(expectedResult);
   });
 });

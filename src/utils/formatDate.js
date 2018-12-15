@@ -67,24 +67,38 @@ export const getFutureEvents = events => {
 };
 
 export const getCalendarFormat = (date, time) => {
-  const formatDate = !time ? 'yyyy-MM-dd' : 'yyyy-MM-dd h:mma';
-  const inputDate = !time ? date : `${date} ${time}`;
-  const isoFormat = DateTime.fromFormat(inputDate, formatDate).toISO();
-  return isoFormat.split('.')[0].replace(/:|-/g, '');
+  if (time) {
+    const formatDate = !time ? 'yyyy-MM-dd' : 'yyyy-MM-dd h:mma';
+    const inputDate = !time ? date : `${date} ${time}`;
+    const isoFormat = DateTime.fromFormat(inputDate, formatDate).toISO();
+    return isoFormat.split('.')[0].replace(/:|-/g, '');
+  } else {
+    return DateTime.fromISO(date).toFormat('yyyyMMdd');
+  }
 };
 
-export const getCalendarURl = (date, startTime, endTime, name) => {
+export const getCalendarURl = (
+  startDate,
+  endDate,
+  startTime,
+  endTime,
+  name
+) => {
   let dateStart;
   let dateEnd;
 
-  if (!startTime && !endTime) {
-    dateStart = getCalendarFormat(date, null);
-    dateEnd = getCalendarFormat(date, null);
-  } else if (startTime) {
-    dateStart = getCalendarFormat(date, startTime);
-    dateEnd = !endTime
-      ? getCalendarFormat(date, startTime)
-      : getCalendarFormat(date, endTime);
+  if (startTime) {
+    dateStart = getCalendarFormat(startDate, startTime);
+  } else {
+    dateStart = getCalendarFormat(startDate, null);
+  }
+  if (endTime) {
+    dateEnd =
+      !endTime && startTime
+        ? getCalendarFormat(endDate || startDate, startTime)
+        : getCalendarFormat(endDate || startDate, endTime);
+  } else {
+    dateEnd = getCalendarFormat(endDate || startDate, null);
   }
 
   return `http://www.google.com/calendar/event?action=TEMPLATE&text=${name}&dates=${dateStart}/${dateEnd}`;

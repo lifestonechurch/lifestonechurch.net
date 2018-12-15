@@ -70,6 +70,7 @@ export default ({ data }) => {
           <a
             href={getCalendarURl(
               event.startDate,
+              event.endDate,
               event.startTime,
               event.endTime,
               event.name
@@ -117,6 +118,7 @@ export default ({ data }) => {
                     <a
                       href={getCalendarURl(
                         e.startDate,
+                        e.endDate,
                         e.startTime,
                         e.endTime,
                         event.name
