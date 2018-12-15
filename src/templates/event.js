@@ -59,11 +59,11 @@ export default ({ data }) => {
       />
       <H1>{event.name}</H1>
 
-	  {event.image && (
-		  <Image>
-			 <Img sizes={event.image.sizes} />
-		  </Image>
-	  )}
+      {event.image && (
+        <Image>
+          <Img sizes={event.image.sizes} />
+        </Image>
+      )}
 
       {!event.dateAndRegistration && (
         <div>
@@ -78,10 +78,13 @@ export default ({ data }) => {
             ✚ Add to Google Calendar
           </a>
           <p>
-            {event.startDate &&
-              `${getDayOfWeek(event.startDate)} ${shortFormatDate(
-                event.startDate
-              )}`}
+            {event.startDate && event.endDate
+              ? `${getDayOfWeek(event.startDate)} ${shortFormatDate(
+                  event.startDate
+                )} - ${getDayOfWeek(event.endDate)} ${shortFormatDate(
+                  event.endDate
+                )}`
+              : shortFormatDate(event.startDate)}
           </p>
           <p>
             {event.startTime && event.endTime
@@ -164,9 +167,9 @@ export const query = graphql`
         descriptionFormatted
       }
       image {
-	sizes(maxWidth: 700) {
-	  ...GatsbyContentfulSizes
-	}
+        sizes(maxWidth: 700) {
+          ...GatsbyContentfulSizes
+        }
       }
       registrationLink
     }
