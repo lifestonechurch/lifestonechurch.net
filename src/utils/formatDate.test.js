@@ -385,4 +385,16 @@ describe('getCalendarURl', () => {
       formatDate.getCalendarURl(startDate, endDate, startTime, endTime, name)
     ).toBe(expectedResult);
   });
+
+  test('formats single-day events with no times', () => {
+    const startDate = '2018-10-01';
+    const endDate = null;
+    const startTime = null;
+    const endTime = null;
+    const name = 'October_Event';
+    const expectedResult = `http://www.google.com/calendar/event?action=TEMPLATE&text=October_Event&dates=20181001/20181001`;
+    expect(
+      formatDate.getCalendarURl(startDate, endDate, startTime, endTime, name)
+    ).toBe(expectedResult);
+  });
 });

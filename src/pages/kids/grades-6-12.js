@@ -80,47 +80,33 @@ const Page = ({ data }) => {
         students your age for crazy games and encouraging Bible study!
       </p>
 
-      <Banner>
-        <H2>Current Series</H2>
-      </Banner>
-
       <Image>
-        <Img sizes={data.youthSeriesImage.childImageSharp.sizes} />
+        <Img sizes={data.noYouth.childImageSharp.sizes} />
       </Image>
 
-      <p>THE PROBLEM WITH CHRISTMAS: A 4-WEEK SERIES ON CHRISTMAS</p>
+      {youthEvents.length ? (
+        <>
+          <Banner>
+            <H2>Events</H2>
+          </Banner>
 
-      <p>
-        Most people are pretty sure they know the story of Christmas. There’s a
-        baby, and a manger, and some sheep, and Santa, and — well, it’s
-        something like that. But there’s a problem with seeing the story of
-        Jesus’ birth as just another story from the Bible. The story of
-        Christmas isn’t just one of many stories in Scripture – it’s part of the
-        story – the big story of God and His relationship with His creation. In
-        this 4-week series, you’ll help students see how the birth of Jesus
-        changed the story of humanity forever in a way that was completely
-        unexpected, undeserved, unbelievable, and undeniable.
-      </p>
-
-      <Banner>
-        <H2>Events</H2>
-      </Banner>
-
-      <EventContainer>
-        {youthEvents.map(({ node }, i) => (
-          <EventCard
-            key={node.id}
-            linkTo={`/events/${node.fields.slug}`}
-            title={node.name}
-            description={node.shortDescription}
-            startDate={node.startDate}
-            endDate={node.endDate}
-            dates={node.dateAndRegistration}
-            ministries={node.ministry}
-            imageSizes={node.image.sizes}
-          />
-        ))}
-      </EventContainer>
+          <EventContainer>
+            {youthEvents.map(({ node }, i) => (
+              <EventCard
+                key={node.id}
+                linkTo={`/events/${node.fields.slug}`}
+                title={node.name}
+                description={node.shortDescription}
+                startDate={node.startDate}
+                endDate={node.endDate}
+                dates={node.dateAndRegistration}
+                ministries={node.ministry}
+                imageSizes={node.image.sizes}
+              />
+            ))}
+          </EventContainer>
+        </>
+      ) : null}
 
       <Banner>
         <H2>Photos</H2>
@@ -140,6 +126,13 @@ export const query = graphql`
     youthImage: file(relativePath: { eq: "pages/kids/youth.jpg" }) {
       childImageSharp {
         sizes(maxWidth: 1200) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+    noYouth: file(relativePath: { eq: "pages/kids/no-youth.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 700) {
           ...GatsbyImageSharpSizes
         }
       }
