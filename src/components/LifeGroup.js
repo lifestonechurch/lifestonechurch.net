@@ -6,6 +6,7 @@ import humanizeList from 'humanize-list';
 
 import { H3, H4 } from './headers';
 import Card from './Card';
+import Button from './Button';
 
 const InnerCard = styled.div`
   display: flex;
@@ -34,6 +35,7 @@ const LifeGroup = ({
   leaders,
   contact,
   hasChildcare,
+  registrationLink,
 }) => (
   <Card>
     <InnerCard>
@@ -75,6 +77,7 @@ const LifeGroup = ({
           />
         )}
       </div>
+      {registrationLink && <Button linkTo={registrationLink}>Register</Button>}
     </InnerCard>
   </Card>
 );
@@ -89,6 +92,7 @@ LifeGroup.propTypes = {
   leaders: PropTypes.array,
   contact: PropTypes.string.isRequired,
   hasChildcare: PropTypes.bool.isRequired,
+  registrationLink: PropTypes.string,
 };
 
 export default LifeGroup;

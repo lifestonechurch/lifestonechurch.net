@@ -125,6 +125,7 @@ class Page extends React.Component {
                 leaders={node.leaders || null}
                 contact={node.fields.contactFormatted}
                 hasChildcare={node.hasChildcare}
+                registrationLink={node.registrationLink}
               />
             ))}
         </CardContainer>
@@ -189,6 +190,7 @@ export const query = graphql`
           fields {
             contactFormatted
           }
+          registrationLink
         }
       }
     }

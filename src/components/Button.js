@@ -7,21 +7,21 @@ import * as COLORS from '../constants/colors';
 const Container = styled.div`
   display: inline-block;
   margin: 20px 0px;
-  background-color: ${COLORS.GRAY};
-  padding: 10px 20px;
+  background-color: ${COLORS.BRAND};
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
-  border-radius: 5px;
 
   a {
+    display: block;
+    padding: 10px 20px;
     color: white;
     text-decoration: none;
   }
 
   &:hover {
-    background-color: ${COLORS.BRAND};
+    background-color: ${COLORS.BRAND_LIGHTER};
     text-decoration: none;
   }
 
