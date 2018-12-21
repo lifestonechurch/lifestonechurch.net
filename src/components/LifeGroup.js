@@ -36,8 +36,9 @@ const LifeGroup = ({
       <div>
         <H3>{name}</H3>
         <p>
-          {time} on {day}s {address && `at ${address}`}
+          {day}s {time}
         </p>
+        <p>{address && address}</p>
         <p>{description}</p>
 
         {hosts.name && <H4>Hosts: {hosts.name}</H4>}
