@@ -20,9 +20,13 @@ const Container = styled.div`
     text-decoration: none;
   }
 
+  a.Button__Link:hover {
+    color: white;
+    text-decoration: none;
+  }
+
   &:hover {
     background-color: ${COLORS.BRAND_LIGHTER};
-    text-decoration: none;
   }
 
   &:active,
@@ -40,7 +44,12 @@ const Button = ({ children = 'Ok', linkTo }) => {
   return (
     <Container>
       {isExternal ? (
-        <a href={linkTo} target="_blank" rel="noopener noreferrer">
+        <a
+          className="Button__Link"
+          href={linkTo}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {children}
         </a>
       ) : (
