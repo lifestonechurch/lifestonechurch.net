@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
+import humanizeList from 'humanize-list';
 
 import { H3, H4 } from './headers';
 import Card from './Card';
@@ -43,17 +44,22 @@ const LifeGroup = ({
 
         {hosts.name && <H4>Hosts: {hosts.name}</H4>}
 
-        <H4>Leaders: {leaders.name}</H4>
+        <H4>Leaders: {humanizeList(leaders.map(l => l.name))}</H4>
         <div>
-          <div key={leaders.id}>
-            {leaders.photoSizes && (
-              <Img
-                sizes={leaders.photoSizes}
-                alt={leaders.photoTitle}
-                style={ImageStyles}
-              />
-            )}
-          </div>
+          {leaders.map(
+            leader =>
+              console.log(leader) || (
+                <div key={leader.id}>
+                  {leader.photo && (
+                    <Img
+                      sizes={leader.photo.sizes}
+                      alt={leader.photo.title}
+                      style={ImageStyles}
+                    />
+                  )}
+                </div>
+              )
+          )}
         </div>
       </div>
 
@@ -76,20 +82,8 @@ LifeGroup.propTypes = {
   day: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
-  hosts: PropTypes.shape({
-    id: PropTypes.string,
-    name: PropTypes.string,
-    description: PropTypes.string,
-    photoSizes: PropTypes.object,
-    photoTitle: PropTypes.string,
-  }),
-  leaders: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string,
-    photoSizes: PropTypes.object,
-    photoTitle: PropTypes.string,
-  }),
+  hosts: PropTypes.array,
+  leaders: PropTypes.array,
   contact: PropTypes.string.isRequired,
   hasChildcare: PropTypes.bool.isRequired,
 };

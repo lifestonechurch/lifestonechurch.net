@@ -23,6 +23,7 @@ const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  margin-bottom: 40px;
 
   @media (max-width: 799px) {
     grid-template-columns: 1fr;
@@ -114,52 +115,25 @@ class Page extends React.Component {
                 selectedDays.length === 0
             )
             .sort(sortByDayOfWeek)
-            .map(({ node }, index, array) => (
-              <LifeGroup
-                key={node.id}
-                name={node.name}
-                description={node.description && node.description.description}
-                day={node.day}
-                time={node.time}
-                address={node.address || ''}
-                hosts={
-                  node.hosts
-                    ? {
-                        id: node.hosts[0].id,
-                        name: node.hosts[0].name,
-                        description: node.hosts[0].description
-                          ? node.hosts[0].description.description
-                          : '',
-                        photoSizes: node.hosts[0].photo
-                          ? node.hosts[0].photo.sizes
-                          : undefined,
-                        photoTitle: node.hosts[0].photo
-                          ? node.hosts[0].photo.title
-                          : '',
-                      }
-                    : {}
-                }
-                leaders={
-                  node.leaders
-                    ? {
-                        id: node.leaders[0].id,
-                        name: node.leaders[0].name,
-                        description: node.leaders[0].description
-                          ? node.leaders[0].description.description
-                          : '',
-                        photoSizes: node.leaders[0].photo
-                          ? node.leaders[0].photo.sizes
-                          : undefined,
-                        photoTitle: node.leaders[0].photo
-                          ? node.leaders[0].photo.title
-                          : '',
-                      }
-                    : {}
-                }
-                contact={node.fields.contactFormatted}
-                hasChildcare={node.hasChildcare}
-              />
-            ))}
+            .map(
+              ({ node }, index, array) =>
+                console.log(node.name, node.leaders) || (
+                  <LifeGroup
+                    key={node.id}
+                    name={node.name}
+                    description={
+                      node.description && node.description.description
+                    }
+                    day={node.day}
+                    time={node.time}
+                    address={node.address || ''}
+                    hosts={node.hosts || []}
+                    leaders={node.leaders || []}
+                    contact={node.fields.contactFormatted}
+                    hasChildcare={node.hasChildcare}
+                  />
+                )
+            )}
         </CardContainer>
 
         <Link to="/lifegroup-leaders">LifeGroup Leader Resources</Link>
