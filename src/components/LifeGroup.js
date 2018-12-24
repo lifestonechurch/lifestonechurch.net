@@ -42,7 +42,7 @@ const LifeGroup = ({
         <p>{address && address}</p>
         <p>{description}</p>
 
-        {hosts.name && <H4>Hosts: {hosts.name}</H4>}
+        {hosts && <H4>Hosts: {humanizeList(hosts.map(h => h.name))}</H4>}
 
         <H4>Leaders: {humanizeList(leaders.map(l => l.name))}</H4>
         <div>
