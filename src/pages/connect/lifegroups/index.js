@@ -127,8 +127,8 @@ class Page extends React.Component {
                     day={node.day}
                     time={node.time}
                     address={node.address || ''}
-                    hosts={node.hosts || []}
-                    leaders={node.leaders || []}
+                    hosts={node.hosts || null}
+                    leaders={node.leaders || null}
                     contact={node.fields.contactFormatted}
                     hasChildcare={node.hasChildcare}
                   />
