@@ -46,20 +46,17 @@ const LifeGroup = ({
 
         <H4>Leaders: {humanizeList(leaders.map(l => l.name))}</H4>
         <div>
-          {leaders.map(
-            leader =>
-              console.log(leader) || (
-                <div key={leader.id}>
-                  {leader.photo && (
-                    <Img
-                      sizes={leader.photo.sizes}
-                      alt={leader.photo.title}
-                      style={ImageStyles}
-                    />
-                  )}
-                </div>
-              )
-          )}
+          {leaders.map(leader => (
+            <div key={leader.id}>
+              {leader.photo && (
+                <Img
+                  sizes={leader.photo.sizes}
+                  alt={leader.photo.title}
+                  style={ImageStyles}
+                />
+              )}
+            </div>
+          ))}
         </div>
       </div>
 

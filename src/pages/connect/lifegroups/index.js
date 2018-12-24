@@ -115,25 +115,20 @@ class Page extends React.Component {
                 selectedDays.length === 0
             )
             .sort(sortByDayOfWeek)
-            .map(
-              ({ node }, index, array) =>
-                console.log(node.name, node.leaders) || (
-                  <LifeGroup
-                    key={node.id}
-                    name={node.name}
-                    description={
-                      node.description && node.description.description
-                    }
-                    day={node.day}
-                    time={node.time}
-                    address={node.address || ''}
-                    hosts={node.hosts || null}
-                    leaders={node.leaders || null}
-                    contact={node.fields.contactFormatted}
-                    hasChildcare={node.hasChildcare}
-                  />
-                )
-            )}
+            .map(({ node }, index, array) => (
+              <LifeGroup
+                key={node.id}
+                name={node.name}
+                description={node.description && node.description.description}
+                day={node.day}
+                time={node.time}
+                address={node.address || ''}
+                hosts={node.hosts || null}
+                leaders={node.leaders || null}
+                contact={node.fields.contactFormatted}
+                hasChildcare={node.hasChildcare}
+              />
+            ))}
         </CardContainer>
 
         <Link to="/lifegroup-leaders">LifeGroup Leader Resources</Link>

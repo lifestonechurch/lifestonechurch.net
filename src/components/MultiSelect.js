@@ -57,12 +57,11 @@ class MultiDownshift extends React.Component {
 
   addSelectedItem(item, cb) {
     this.setState(
-      ({ selectedItems }) =>
-        console.log(selectedItems) || {
-          selectedItems: selectedItems.map(item => item.id).includes(item.id)
-            ? selectedItems
-            : [...selectedItems, item],
-        },
+      ({ selectedItems }) => ({
+        selectedItems: selectedItems.map(item => item.id).includes(item.id)
+          ? selectedItems
+          : [...selectedItems, item],
+      }),
       cb
     );
   }
