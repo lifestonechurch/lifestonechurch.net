@@ -15,10 +15,13 @@ const InnerCard = styled.div`
   padding: 20px;
 `;
 
+const Description = styled.p``;
+
 const ImageStyles = {
-  maxWidth: 200,
-  marginRight: '2em',
-  marginBottom: '28px',
+  width: 200,
+  marginRight: 20,
+  marginBottom: 20,
+  float: 'left',
 };
 
 const LifeGroup = ({
@@ -54,6 +57,9 @@ const LifeGroup = ({
                   alt={leader.photo.title}
                   style={ImageStyles}
                 />
+              )}
+              {leader.description && (
+                <Description>{leader.description.description}</Description>
               )}
             </div>
           ))}
