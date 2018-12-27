@@ -6,7 +6,7 @@ import * as COLORS from '../constants/colors';
 
 const Container = styled.div`
   display: inline-block;
-  margin: 20px 0px;
+  margin-bottom: 20px;
   background-color: ${COLORS.BRAND};
   font-size: 16px;
   font-weight: bold;
@@ -18,6 +18,7 @@ const Container = styled.div`
     padding: 10px 20px;
     color: white;
     text-decoration: none;
+    letter-spacing: 1px;
   }
 
   a.Button__Link:hover {

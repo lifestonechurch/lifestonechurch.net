@@ -41,6 +41,9 @@ const LifeGroup = ({
     <InnerCard>
       <div>
         <H3>{name}</H3>
+        {registrationLink && (
+          <Button linkTo={registrationLink}>Register</Button>
+        )}
         <p>
           {day}s {time}
         </p>
@@ -77,7 +80,6 @@ const LifeGroup = ({
           />
         )}
       </div>
-      {registrationLink && <Button linkTo={registrationLink}>Register</Button>}
     </InnerCard>
   </Card>
 );
