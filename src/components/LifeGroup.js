@@ -8,10 +8,6 @@ import { H3, H4 } from './headers';
 import Card from './Card';
 
 const InnerCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
   padding: 20px;
 `;
 
@@ -32,48 +28,35 @@ const LifeGroup = ({
   address,
   hosts,
   leaders,
-  contact,
   hasChildcare,
 }) => (
   <Card>
     <InnerCard>
+      <H3>{name}</H3>
+      <p>
+        {day}s {time}
+      </p>
+      <p>{address && address}</p>
+      <p>{description}</p>
+
+      {hosts && <H4>Hosts: {humanizeList(hosts.map(h => h.name))}</H4>}
+
+      <H4>Leaders: {humanizeList(leaders.map(l => l.name))}</H4>
       <div>
-        <H3>{name}</H3>
-        <p>
-          {day}s {time}
-        </p>
-        <p>{address && address}</p>
-        <p>{description}</p>
-
-        {hosts && <H4>Hosts: {humanizeList(hosts.map(h => h.name))}</H4>}
-
-        <H4>Leaders: {humanizeList(leaders.map(l => l.name))}</H4>
-        <div>
-          {leaders.map(leader => (
-            <div key={leader.id}>
-              {leader.photo && (
-                <Img
-                  sizes={leader.photo.sizes}
-                  alt={leader.photo.title}
-                  style={ImageStyles}
-                />
-              )}
-              {leader.description && (
-                <Description>{leader.description.description}</Description>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        {contact && (
-          <div
-            dangerouslySetInnerHTML={{
-              __html: contact,
-            }}
-          />
-        )}
+        {leaders.map(leader => (
+          <div key={leader.id}>
+            {leader.photo && (
+              <Img
+                sizes={leader.photo.sizes}
+                alt={leader.photo.title}
+                style={ImageStyles}
+              />
+            )}
+            {leader.description && (
+              <Description>{leader.description.description}</Description>
+            )}
+          </div>
+        ))}
       </div>
     </InnerCard>
   </Card>
@@ -87,7 +70,6 @@ LifeGroup.propTypes = {
   address: PropTypes.string.isRequired,
   hosts: PropTypes.array,
   leaders: PropTypes.array,
-  contact: PropTypes.string.isRequired,
   hasChildcare: PropTypes.bool.isRequired,
 };
 
