@@ -86,6 +86,7 @@ const Page = ({ data }) => (
       <a
         href="https://www.imb.org/lottie-moon-christmas-offering"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Lottie Moon
       </a>{' '}

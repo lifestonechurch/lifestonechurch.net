@@ -5,11 +5,9 @@ import Img from 'gatsby-image';
 import humanizeList from 'humanize-list';
 
 import Layout from '../../../components/layout';
-import { H1, H2, H3, H4 } from '../../../components/headers';
-import Banner from '../../../components/Banner';
+import { H1, H3, H4 } from '../../../components/headers';
 import LifeGroup from '../../../components/LifeGroup';
 import Breadcrumbs from '../../../components/Breadcrumbs';
-import VideoPlayer from '../../../components/VideoPlayer';
 import MultiSelect from '../../../components/MultiSelect';
 
 const title = 'LifeGroups';

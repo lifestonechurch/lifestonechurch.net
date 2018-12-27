@@ -61,7 +61,10 @@ const Page = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98723.jpeg" />
+            <img
+              alt="Tips for Dealing with Constant Talkers"
+              src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98723.jpeg"
+            />
             <TextArea>
               <p>
                 Is there someone in your group who is unaware of how little they
@@ -78,7 +81,10 @@ const Page = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98532.jpeg" />
+            <img
+              alt="Rein in the Chatterbox"
+              src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98532.jpeg"
+            />
             <TextArea>
               <p>
                 One persistent talker can disrupt your whole group. In this
@@ -99,7 +105,10 @@ const Page = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/123075.jpeg" />
+            <img
+              alt="Biblical Shepherding"
+              src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/123075.jpeg"
+            />
             <TextArea>
               <p>
                 Shepherding may be a foreign concept to many of us who grew in
@@ -121,7 +130,10 @@ const Page = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98540.jpeg" />
+            <img
+              alt="Two Keys to Successful Leadership"
+              src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98540.jpeg"
+            />
             <TextArea>
               <p>
                 If you want to successfully lead, you have to be willing to
@@ -139,7 +151,10 @@ const Page = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/97894.jpeg" />
+            <img
+              alt="Leaders Should Take the Time to Build Relationships"
+              src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/97894.jpeg"
+            />
             <TextArea>
               <p>
                 Darrin Patrick serves as Lead Pastor of The Journey Church in St
@@ -161,7 +176,10 @@ const Page = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98521.jpeg" />
+            <img
+              alt="Deeper Teaching vs. Deeper Application"
+              src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98521.jpeg"
+            />
             <TextArea>
               <p>
                 Eric Metcalf is the Adult Ministries Champion for Community
@@ -181,7 +199,10 @@ const Page = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98852.jpeg" />
+            <img
+              alt="The Art of Asking Good Questions"
+              src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/98852.jpeg"
+            />
             <TextArea>
               <p>2nd video</p>
               <p>
@@ -201,7 +222,10 @@ const Page = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/105928.jpeg" />
+            <img
+              alt="Good Questions for Small Groups"
+              src="https://d2y24eux71xwor.cloudfront.net/Images/Production/Content/Element/105928.jpeg"
+            />
             <TextArea>
               <p>
                 Hayley Miller, from Word of Life Fellowship, has several great

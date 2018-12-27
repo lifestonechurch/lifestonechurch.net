@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'react-emotion';
