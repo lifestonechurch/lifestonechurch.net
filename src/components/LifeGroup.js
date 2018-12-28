@@ -12,6 +12,10 @@ const InnerCard = styled.div`
   padding: 20px;
 `;
 
+const ReachedCapacity = styled.p`
+  text-transform: uppercase;
+`;
+
 const Description = styled.p``;
 
 const ImageStyles = {
@@ -31,18 +35,21 @@ const LifeGroup = ({
   leaders,
   hasChildcare,
   registrationLink,
+  reachedCapacity,
 }) => (
   <Card>
     <InnerCard>
-        <H3>{name}</H3>
-        {registrationLink && (
-          <Button linkTo={registrationLink}>Register</Button>
-        )}
-        <p>
-          {day}s {time}
-        </p>
-        <p>{address && address}</p>
-        <p>{description}</p>
+      <H3>{name}</H3>
+      {registrationLink && !reachedCapacity ? (
+        <Button linkTo={registrationLink}>Register</Button>
+      ) : (
+        <ReachedCapacity>Reached Capacity</ReachedCapacity>
+      )}
+      <p>
+        {day}s {time}
+      </p>
+      <p>{address && address}</p>
+      <p>{description}</p>
 
       {hosts && <H4>Hosts: {humanizeList(hosts.map(h => h.name))}</H4>}
 
@@ -62,6 +69,7 @@ const LifeGroup = ({
             )}
           </div>
         ))}
+      </div>
     </InnerCard>
   </Card>
 );
@@ -76,6 +84,7 @@ LifeGroup.propTypes = {
   leaders: PropTypes.array,
   hasChildcare: PropTypes.bool.isRequired,
   registrationLink: PropTypes.string,
+  reachedCapacity: PropTypes.bool.isRequired,
 };
 
 export default LifeGroup;

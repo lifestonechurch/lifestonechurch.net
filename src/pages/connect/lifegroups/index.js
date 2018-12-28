@@ -126,6 +126,7 @@ class Page extends React.Component {
                 contact={node.fields.contactFormatted}
                 hasChildcare={node.hasChildcare}
                 registrationLink={node.registrationLink}
+                reachedCapacity={node.reachedCapacity}
               />
             ))}
         </CardContainer>
@@ -191,6 +192,7 @@ export const query = graphql`
             contactFormatted
           }
           registrationLink
+          reachedCapacity
         }
       }
     }
