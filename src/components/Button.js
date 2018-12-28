@@ -6,23 +6,28 @@ import * as COLORS from '../constants/colors';
 
 const Container = styled.div`
   display: inline-block;
-  margin: 20px 0px;
-  background-color: ${COLORS.GRAY};
-  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: ${COLORS.BRAND};
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
-  border-radius: 5px;
 
   a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  a.Button__Link:hover {
     color: white;
     text-decoration: none;
   }
 
   &:hover {
-    background-color: ${COLORS.BRAND};
-    text-decoration: none;
+    background-color: ${COLORS.BRAND_LIGHTER};
   }
 
   &:active,
@@ -40,7 +45,12 @@ const Button = ({ children = 'Ok', linkTo }) => {
   return (
     <Container>
       {isExternal ? (
-        <a href={linkTo} target="_blank" rel="noopener noreferrer">
+        <a
+          className="Button__Link"
+          href={linkTo}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {children}
         </a>
       ) : (

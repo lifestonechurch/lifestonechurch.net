@@ -6,9 +6,14 @@ import humanizeList from 'humanize-list';
 
 import { H3, H4 } from './headers';
 import Card from './Card';
+import Button from './Button';
 
 const InnerCard = styled.div`
   padding: 20px;
+`;
+
+const ReachedCapacity = styled.p`
+  text-transform: uppercase;
 `;
 
 const Description = styled.p``;
@@ -29,10 +34,17 @@ const LifeGroup = ({
   hosts,
   leaders,
   hasChildcare,
+  registrationLink,
+  reachedCapacity,
 }) => (
   <Card>
     <InnerCard>
       <H3>{name}</H3>
+      {registrationLink && !reachedCapacity ? (
+        <Button linkTo={registrationLink}>Register</Button>
+      ) : (
+        <ReachedCapacity>Reached Capacity</ReachedCapacity>
+      )}
       <p>
         {day}s {time}
       </p>
@@ -71,6 +83,8 @@ LifeGroup.propTypes = {
   hosts: PropTypes.array,
   leaders: PropTypes.array,
   hasChildcare: PropTypes.bool.isRequired,
+  registrationLink: PropTypes.string,
+  reachedCapacity: PropTypes.bool.isRequired,
 };
 
 export default LifeGroup;

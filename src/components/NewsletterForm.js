@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'react-emotion';
+import styled, { css } from 'react-emotion';
 
 import * as COLORS from '../constants/colors';
 
@@ -48,6 +48,7 @@ const Button = styled.button`
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
+  letter-spacing: 1px;
 
   &:hover {
     background-color: ${COLORS.BRAND_LIGHTER};
