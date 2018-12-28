@@ -27,6 +27,7 @@ const ImageStyles = {
 
 const LifeGroup = ({
   name,
+  isOpen,
   description,
   day,
   time,
@@ -40,11 +41,14 @@ const LifeGroup = ({
   <Card>
     <InnerCard>
       <H3>{name}</H3>
-      {registrationLink && !reachedCapacity ? (
-        <Button linkTo={registrationLink}>Register</Button>
-      ) : (
-        <ReachedCapacity>Reached Capacity</ReachedCapacity>
-      )}
+
+      {isOpen ? (
+        registrationLink && !reachedCapacity ? (
+          <Button linkTo={registrationLink}>Register</Button>
+        ) : (
+          <ReachedCapacity>Reached Capacity</ReachedCapacity>
+        )
+      ) : null}
       <p>
         {day}s {time}
       </p>
@@ -75,6 +79,7 @@ const LifeGroup = ({
 );
 
 LifeGroup.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string,
   day: PropTypes.string.isRequired,

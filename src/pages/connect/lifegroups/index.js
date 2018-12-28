@@ -115,6 +115,7 @@ class Page extends React.Component {
             .sort(sortByDayOfWeek)
             .map(({ node }, index, array) => (
               <LifeGroup
+                isOpen={false}
                 key={node.id}
                 name={node.name}
                 description={node.description && node.description.description}
