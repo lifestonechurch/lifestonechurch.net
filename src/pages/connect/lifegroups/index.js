@@ -29,7 +29,7 @@ const CardContainer = styled.div`
 `;
 
 const Image = styled.div`
-  margin: 0 auto;
+  margin: 0 auto 40px;
   max-width: 1170px;
 `;
 
@@ -88,6 +88,18 @@ class Page extends React.Component {
         <Image>
           <Img sizes={data.lifegroupImage.childImageSharp.sizes} />
         </Image>
+
+        <p>
+          LifeGroups, small groups who meet throughout the week, are the hub of
+          our ministry. They’re the place where the real ministry of the church
+          takes place as we study God’s Word while supporting and sharing our
+          lives with one another. We believe that meeting together on a regular
+          basis is time well spent. Email{' '}
+          <a href="mailto:lifestone@lifestonechurch.net">
+            lifestone@lifestonechurch.net
+          </a>{' '}
+          with any questions.
+        </p>
 
         <DatePickerContainer>
           <H3>Which days work best for you?</H3>
