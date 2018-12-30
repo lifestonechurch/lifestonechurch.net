@@ -35,11 +35,18 @@ const Image = styled.div`
   max-width: 1170px;
 `;
 
+const ImageWrapper = styled.span`
+  float: left;
+
+  @media (max-width: 400px) {
+    float: none;
+  }
+`;
+
 const ImageStyles = {
   width: 200,
   marginRight: 20,
   marginBottom: 20,
-  float: 'left',
 };
 
 const ClearFloat = styled.div`
@@ -110,11 +117,13 @@ class Page extends React.Component {
                       <H3>{leader.name}</H3>
 
                       {leader.photo && (
-                        <Img
-                          sizes={leader.photo.sizes}
-                          alt={leader.photo.title}
-                          style={ImageStyles}
-                        />
+                        <ImageWrapper>
+                          <Img
+                            sizes={leader.photo.sizes}
+                            alt={leader.photo.title}
+                            style={ImageStyles}
+                          />
+                        </ImageWrapper>
                       )}
                       <p>
                         {leader.description
