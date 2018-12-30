@@ -78,7 +78,11 @@ const LifeGroup = ({
           </div>
           <ClearFloat />
 
-          <p>Leaders: {humanizeList(leaders.map(l => l.name))}</p>
+          <p>
+            Leader{leaders.length === 1 && leaders[0].name.includes('&')
+              ? 's'
+              : ''}: {humanizeList(leaders.map(l => l.name))}
+          </p>
 
           <p>
             <Link
@@ -92,7 +96,12 @@ const LifeGroup = ({
         </React.Fragment>
       ) : null}
 
-      {hosts ? <p>Hosts: {humanizeList(hosts.map(h => h.name))}</p> : null}
+      {hosts ? (
+        <p>
+          Host{hosts.length === 1 && hosts[0].name.includes('&') ? 's' : ''}:{' '}
+          {humanizeList(hosts.map(h => h.name))}
+        </p>
+      ) : null}
     </InnerCard>
   </Card>
 );
