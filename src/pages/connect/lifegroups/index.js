@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 import humanizeList from 'humanize-list';
 
 import Layout from '../../../components/layout';
-import { H1, H3, H4 } from '../../../components/headers';
+import { H1, H2, H3, H4 } from '../../../components/headers';
 import LifeGroup from '../../../components/LifeGroup';
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import MultiSelect from '../../../components/MultiSelect';
@@ -31,6 +31,17 @@ const CardContainer = styled.div`
 const Image = styled.div`
   margin: 0 auto 40px;
   max-width: 1170px;
+`;
+
+const ImageStyles = {
+  width: 200,
+  marginRight: 20,
+  marginBottom: 20,
+  float: 'left',
+};
+
+const ClearFloat = styled.div`
+  clear: both;
 `;
 
 const sortByDayOfWeek = (a, b) => {
@@ -139,7 +150,7 @@ class Page extends React.Component {
                 contact={node.fields.contactFormatted}
                 hasChildcare={node.hasChildcare}
                 registrationLink={node.registrationLink}
-                reachedCapacity={node.reachedCapacity}
+                reachedCapacity={!!node.reachedCapacity}
               />
             ))}
         </CardContainer>
