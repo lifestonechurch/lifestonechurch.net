@@ -138,7 +138,7 @@ class Page extends React.Component {
             .sort(sortByDayOfWeek)
             .map(({ node }, index, array) => (
               <LifeGroup
-                isOpen={false}
+                isOpen={true}
                 key={node.id}
                 name={node.name}
                 description={node.description && node.description.description}
@@ -166,7 +166,7 @@ export default Page;
 export const query = graphql`
   query LifegroupsQuery {
     lifegroupImage: file(
-      relativePath: { eq: "pages/connect/lifegroups/winter-session.jpg" }
+      relativePath: { eq: "pages/connect/lifegroups/winter-registration.jpg" }
     ) {
       childImageSharp {
         sizes(maxWidth: 1170) {
