@@ -97,8 +97,8 @@ class Page extends React.Component {
               ({ node }) =>
                 node.leaders &&
                 node.leaders.reduce(
-                  (accum, leader) => accum && leader.description,
-                  true
+                  (accum, leader) => accum || leader.description,
+                  false
                 )
             )
             .map(({ node }, index, array) => (
