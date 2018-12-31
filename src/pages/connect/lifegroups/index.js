@@ -57,6 +57,11 @@ const sortByDayOfWeek = (a, b) => {
   return days[a.node.day] - days[b.node.day];
 };
 
+const sortByAvailability = (a, b) =>
+  a.node.reachedCapacity && !b.node.reachedCapacity
+    ? 1
+    : !a.node.reachedCapacity && b.node.reachedCapacity ? -1 : 0;
+
 class Page extends React.Component {
   state = {
     selectedDays: [],
@@ -90,14 +95,8 @@ class Page extends React.Component {
 
     return (
       <Layout>
-        <Breadcrumbs
-          path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
-          title={title}
-        />
-        <H1>{title}</H1>
-
         <Image>
-          <Img sizes={data.lifegroupImage.childImageSharp.sizes} />
+          <Img sizes={data.lifegroupImage.childImageSharp.sizes} alt={title} />
         </Image>
 
         <p>
@@ -136,6 +135,7 @@ class Page extends React.Component {
                 selectedDays.length === 0
             )
             .sort(sortByDayOfWeek)
+            .sort(sortByAvailability)
             .map(({ node }, index, array) => (
               <LifeGroup
                 isOpen={true}
