@@ -80,9 +80,24 @@ const Page = ({ data }) => {
         students your age for crazy games and encouraging Bible study!
       </p>
 
+      <Banner>
+        <H2>Current Series</H2>
+      </Banner>
+
       <Image>
-        <Img sizes={data.noYouth.childImageSharp.sizes} />
+        <Img sizes={data.youthSeriesImage.childImageSharp.sizes} />
       </Image>
+
+      <p>
+        If you were granted three wishes, it would probably be pretty easy to
+        come up with three things you wish you could change about your life or
+        the world around you. Maybe that’s because we know the world isn’t
+        always the way it should be – and neither are we. In this 4-week series,
+        we'll challenge students to seek change in the world and in their own
+        hearts by turning to God in prayer. Because prayer equals change when we
+        begin and end with God, pray with God’s own words, pray like Jesus
+        prayed, and pray for what matters most.
+      </p>
 
       {youthEvents.length ? (
         <>
@@ -126,13 +141,6 @@ export const query = graphql`
     youthImage: file(relativePath: { eq: "pages/kids/youth.jpg" }) {
       childImageSharp {
         sizes(maxWidth: 1200) {
-          ...GatsbyImageSharpSizes
-        }
-      }
-    }
-    noYouth: file(relativePath: { eq: "pages/kids/no-youth.jpg" }) {
-      childImageSharp {
-        sizes(maxWidth: 700) {
           ...GatsbyImageSharpSizes
         }
       }
