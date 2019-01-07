@@ -28,7 +28,6 @@ const Page = ({ data }) => (
     </Image>
 
     <p>
-      Already committed to a LifeGroup and ready to start serving at Lifestone?
       We are excited to get you serving God and serving others in the role that
       fits you best! Check out descriptions below of the many service
       opportunities available to you.
