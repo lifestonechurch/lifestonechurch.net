@@ -82,7 +82,7 @@ const Page = ({ data }) => (
       <a href="mailto:ali@lifestonechurch.net">ali@lifestonechurch.net</a>
     </p>
 
-    <Button linkTo="#enrollment-form">Enroll now</Button>
+    <Button linkTo="/little-learners/#enrollment-form">Enroll now</Button>
 
     <Banner>
       <H2>Class Descriptions</H2>
