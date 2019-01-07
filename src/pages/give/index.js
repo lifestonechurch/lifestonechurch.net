@@ -67,36 +67,6 @@ const Page = ({ data }) => (
     </BibleQuote>
 
     <Banner>
-      <H2>Year-End Giving</H2>
-    </Banner>
-
-    <VideoPlayer
-      url="https://www.youtube.com/embed/E3HGXkMDxzo"
-      maxWidth={600}
-      title="Thank You - Lottie Moon Christmas Offering Video"
-    />
-
-    <p>
-      100% of 2018 YEAR END GIFTS to Lifestone go to Lottie Moon! Use memo
-      "YEG".
-    </p>
-
-    <p>
-      Because you and your church give to the{' '}
-      <a
-        href="https://www.imb.org/lottie-moon-christmas-offering"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Lottie Moon
-      </a>{' '}
-      Christmas Offering, IMB missionaries can take the gospel to unreached
-      peoples around the world. Every dollar you give makes a difference,
-      because 100% of the money collected goes to the work of reaching every
-      nation.
-    </p>
-
-    <Banner>
       <H2>Ways to Give</H2>
     </Banner>
     <CardContainer>
