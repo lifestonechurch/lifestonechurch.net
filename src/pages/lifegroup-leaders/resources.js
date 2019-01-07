@@ -27,14 +27,14 @@ const links = [
       'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/pdfs/Example+LifeGroup+Schedule+10.24.18.pdf',
   },
   {
-    name: 'Leader & Host Expectations',
+    name: 'Leader Expectations',
     link:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/pdfs/Leader+%26+Host+Expectations.pdf',
+      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/pdfs/LifeGroup.Leader.Expectations.pdf',
   },
   {
-    name: 'LifeGroup Member Expectations',
+    name: 'Host Expectations',
     link:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/pdfs/LifeGroup+Member+Expectations+10.3.18.pdf',
+      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/pdfs/LifeGroup.Host.Expectations.pdf',
   },
 ];
 

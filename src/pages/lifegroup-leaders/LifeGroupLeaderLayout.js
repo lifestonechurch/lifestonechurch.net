@@ -22,20 +22,10 @@ const menuItems = [
     external: false,
   },
   {
-    name: 'LifeGroup Report',
-    link: 'https://lifestonechurch.breezechms.com/form/5652c5',
-    external: true,
-  },
-  {
     name: 'Attendance',
     link:
       'https://lifestonechurch.breezechms.com/events/overview#/?start_date=2018-10-19&view=month',
     external: true,
-  },
-  {
-    name: 'FAQ',
-    link: '/lifegroup-leaders/faq',
-    external: false,
   },
   {
     name: 'Resources',
@@ -52,9 +42,7 @@ const LifeGroupLeaderLayout = ({ children, data, onLogout }) => (
         query={graphql`
           query LifeGroupLeaderLayoutQuery {
             lifeGroupLeaderImage: file(
-              relativePath: {
-                eq: "pages/lifegroup-leaders/it-takes-everyone.jpg"
-              }
+              relativePath: { eq: "pages/lifegroup-leaders/lifegroups.jpg" }
             ) {
               childImageSharp {
                 sizes(maxWidth: 700) {

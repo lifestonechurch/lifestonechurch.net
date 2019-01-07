@@ -15,55 +15,72 @@ const InnerCard = styled.div`
   padding: 20px;
 `;
 
-const curriculum = [
-  {
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-1.pdf',
-    video: 'https://www.rightnowmedia.org/Content/Series/229881?episode=1 ',
-  },
-  {
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-2.pdf',
-    video: 'https://www.rightnowmedia.org/Content/Series/229881?episode=2 ',
-  },
-  {
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-3.pdf',
-    video: 'https://www.rightnowmedia.org/Content/Series/229881?episode=3 ',
-  },
-  {
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-4.pdf',
-    video: 'https://www.rightnowmedia.org/Content/Series/229881?episode=4 ',
-  },
-  {
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-5.pdf',
-    video: 'https://www.rightnowmedia.org/Content/Series/229881?episode=5 ',
-  },
-  {
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-6.pdf',
-    video: 'https://www.rightnowmedia.org/Content/Series/229881?episode=6 ',
-  },
-  {
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-7.pdf',
-    video: 'https://www.rightnowmedia.org/Content/Series/229881?episode=7 ',
-  },
-  {
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-8.pdf',
-    video: 'https://www.rightnowmedia.org/Content/Series/229881?episode=8 ',
-  },
-];
+const curriculum = {
+  current: { weeks: [] },
+  previous: [
+    {
+      name: 'The Good Book',
+      weeks: [
+        {
+          pdf:
+            'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-1.pdf',
+          video:
+            'https://www.rightnowmedia.org/Content/Series/229881?episode=1 ',
+        },
+        {
+          pdf:
+            'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-2.pdf',
+          video:
+            'https://www.rightnowmedia.org/Content/Series/229881?episode=2 ',
+        },
+        {
+          pdf:
+            'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-3.pdf',
+          video:
+            'https://www.rightnowmedia.org/Content/Series/229881?episode=3 ',
+        },
+        {
+          pdf:
+            'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-4.pdf',
+          video:
+            'https://www.rightnowmedia.org/Content/Series/229881?episode=4 ',
+        },
+        {
+          pdf:
+            'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-5.pdf',
+          video:
+            'https://www.rightnowmedia.org/Content/Series/229881?episode=5 ',
+        },
+        {
+          pdf:
+            'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-6.pdf',
+          video:
+            'https://www.rightnowmedia.org/Content/Series/229881?episode=6 ',
+        },
+        {
+          pdf:
+            'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-7.pdf',
+          video:
+            'https://www.rightnowmedia.org/Content/Series/229881?episode=7 ',
+        },
+        {
+          pdf:
+            'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/library/the-good-book/the-good-book-week-8.pdf',
+          video:
+            'https://www.rightnowmedia.org/Content/Series/229881?episode=8 ',
+        },
+      ],
+    },
+  ],
+};
 
 const Page = () => (
   <LifeGroupLeaderLayout>
     <div>
-      <H2>Fall Curriculum</H2>
+      <H2>Curriculum</H2>
       <Container>
-        {curriculum.map((c, i) => (
+        {curriculum.current.weeks.length == 0 ? <p>Coming soon</p> : null}
+        {curriculum.current.weeks.map((c, i) => (
           <Card key={i}>
             <InnerCard>
               <H3>Week {i + 1}</H3>
