@@ -9,6 +9,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 24px;
+  margin-bottom: 40px;
 `;
 
 const InnerCard = styled.div`
@@ -16,7 +17,14 @@ const InnerCard = styled.div`
 `;
 
 const curriculum = {
-  current: { weeks: [] },
+  current: {
+    weeks: [
+      {
+        pdf:
+          'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/LG.Study.Week.of.1.20.pdf',
+      },
+    ],
+  },
   previous: [
     {
       name: 'The Good Book',
@@ -84,16 +92,20 @@ const Page = () => (
           <Card key={i}>
             <InnerCard>
               <H3>Week {i + 1}</H3>
-              <p>
-                <a href={c.pdf} target="_blank" rel="noopener noreferrer">
-                  Discussion Guide
-                </a>
-              </p>
-              <p>
-                <a href={c.video} target="_blank" rel="noopener noreferrer">
-                  Video
-                </a>
-              </p>
+              {c.pdf && (
+                <p>
+                  <a href={c.pdf} target="_blank" rel="noopener noreferrer">
+                    Discussion Guide
+                  </a>
+                </p>
+              )}
+              {c.video && (
+                <p>
+                  <a href={c.video} target="_blank" rel="noopener noreferrer">
+                    Video
+                  </a>
+                </p>
+              )}
             </InnerCard>
           </Card>
         ))}
