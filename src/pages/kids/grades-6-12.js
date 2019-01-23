@@ -89,14 +89,17 @@ const Page = ({ data }) => {
       </Image>
 
       <p>
-        If you were granted three wishes, it would probably be pretty easy to
-        come up with three things you wish you could change about your life or
-        the world around you. Maybe that’s because we know the world isn’t
-        always the way it should be – and neither are we. In this 4-week series,
-        we'll challenge students to seek change in the world and in their own
-        hearts by turning to God in prayer. Because prayer equals change when we
-        begin and end with God, pray with God’s own words, pray like Jesus
-        prayed, and pray for what matters most.
+        "We're meant to be." It's how all of our favorite movies, songs, and
+        books talk about love—as if the secret to an amazing relationship is a
+        little bit of destiny, a whole bunch of feelings, and a tiny dash of
+        magic. So it makes sense, when we observe the not-so-perfect, real-life
+        relationships modeled by our friends, parents, and favorite celebrities,
+        that we might start to wonder, “Wait—is that how relationships are meant
+        to be?” In this 4-week series, you'll give students a better lens for
+        evaluating their current and future dating relationships as you help
+        them see that the secret to a relationship that's "meant to be" is to
+        stay close to Jesus, date with purpose, know who you're looking for, and
+        keep sex in the right context.
       </p>
 
       {youthEvents.length ? (
