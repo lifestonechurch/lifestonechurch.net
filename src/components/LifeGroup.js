@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 import slug from 'slug';
 import humanizeList from 'humanize-list';
 
-import { H3, H4 } from './headers';
+import { H3 } from './headers';
 import Card from './Card';
 import Button from './Button';
 

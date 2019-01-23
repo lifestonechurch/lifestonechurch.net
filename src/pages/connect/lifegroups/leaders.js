@@ -2,16 +2,12 @@ import React from 'react';
 import styled from 'react-emotion';
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
-import humanizeList from 'humanize-list';
 import slug from 'slug';
 
 import Layout from '../../../components/layout';
 import Card from '../../../components/Card';
-import { H1, H2, H3, H4 } from '../../../components/headers';
+import { H1, H2, H3 } from '../../../components/headers';
 import Breadcrumbs from '../../../components/Breadcrumbs';
-import Button from '../../../components/Button';
-
-const isOpen = true;
 
 const title = 'LifeGroup Leaders';
 
@@ -24,15 +20,6 @@ const CardContainer = styled.div`
     margin-bottom: 20px;
     padding: 20px;
   }
-`;
-
-const ReachedCapacity = styled.p`
-  text-transform: uppercase;
-`;
-
-const Image = styled.div`
-  margin: 0 auto 40px;
-  max-width: 1170px;
 `;
 
 const ImageWrapper = styled.span`
@@ -71,19 +58,6 @@ class Page extends React.Component {
     const { data } = this.props;
 
     const lifegroups = data.allContentfulSmallGroup.edges;
-
-    const allDays = Object.keys(
-      lifegroups.reduce(
-        (days, { node }) => ({
-          ...days,
-          [node.day]: node.day,
-        }),
-        {}
-      )
-    ).map(x => ({
-      name: x,
-      id: x,
-    }));
 
     return (
       <Layout>

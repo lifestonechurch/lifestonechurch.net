@@ -87,7 +87,7 @@ const Page = () => (
     <div>
       <H2>Curriculum</H2>
       <Container>
-        {curriculum.current.weeks.length == 0 ? <p>Coming soon</p> : null}
+        {curriculum.current.weeks.length === 0 ? <p>Coming soon</p> : null}
         {curriculum.current.weeks.map((c, i) => (
           <Card key={i}>
             <InnerCard>

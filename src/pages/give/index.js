@@ -12,7 +12,6 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 import Card from '../../components/Card';
 import Tag from '../../components/Tag';
 import PayPalForm from '../../components/PayPalForm';
-import VideoPlayer from '../../components/VideoPlayer';
 
 import * as COLORS from '../../constants/colors';
 
