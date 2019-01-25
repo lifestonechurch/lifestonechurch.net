@@ -4,12 +4,22 @@ import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import humanizeList from 'humanize-list';
 
+import Banner from '../../../components/Banner';
+import Card from '../../../components/Card';
 import Layout from '../../../components/layout';
-import { H3, H4 } from '../../../components/headers';
+import { H2, H3, H4 } from '../../../components/headers';
 import LifeGroup from '../../../components/LifeGroup';
 import MultiSelect from '../../../components/MultiSelect';
 
 const title = 'LifeGroups';
+
+const guides = [
+  {
+    name: 'Week of 1/20',
+    pdf:
+      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/LG.Study.Week.of.1.20.pdf',
+  },
+];
 
 const DatePickerContainer = styled.div`
   text-align: center;
@@ -25,6 +35,10 @@ const CardContainer = styled.div`
   @media (max-width: 799px) {
     grid-template-columns: 1fr;
   }
+`;
+
+const InnerCard = styled.div`
+  padding: 20px;
 `;
 
 const Image = styled.div`
@@ -141,6 +155,34 @@ class Page extends React.Component {
                 reachedCapacity={!!node.reachedCapacity}
               />
             ))}
+        </CardContainer>
+
+        <Banner>
+          <H2>Discussion Guides</H2>
+        </Banner>
+
+        <CardContainer>
+          {guides.map((c, i) => (
+            <Card key={i}>
+              <InnerCard>
+                <H3>{c.name}</H3>
+                {c.pdf && (
+                  <p>
+                    <a href={c.pdf} target="_blank" rel="noopener noreferrer">
+                      Discussion Guide
+                    </a>
+                  </p>
+                )}
+                {c.video && (
+                  <p>
+                    <a href={c.video} target="_blank" rel="noopener noreferrer">
+                      Video
+                    </a>
+                  </p>
+                )}
+              </InnerCard>
+            </Card>
+          ))}
         </CardContainer>
 
         <Link to="/lifegroup-leaders">LifeGroup Leader Resources</Link>
