@@ -2,7 +2,7 @@ import { createStore as reduxCreateStore } from 'redux';
 import reducer from './reducer';
 
 const initialState = {
-  isLoggedIn: false,
+  isLoggedIn: true,
 };
 
 const createStore = () => reduxCreateStore(reducer, initialState);
