@@ -23,6 +23,10 @@ const curriculum = {
         pdf:
           'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/LG.Study.Week.of.1.20.pdf',
       },
+      {
+        pdf:
+          'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/lifegroup-study-2019-01-27.pdf',
+      },
     ],
   },
   previous: [

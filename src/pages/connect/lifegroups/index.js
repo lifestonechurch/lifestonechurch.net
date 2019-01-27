@@ -19,6 +19,11 @@ const guides = [
     pdf:
       'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/LG.Study.Week.of.1.20.pdf',
   },
+  {
+    name: 'Week of 1/27',
+    pdf:
+      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/lifegroup-study-2019-01-27.pdf',
+  },
 ];
 
 const DatePickerContainer = styled.div`
