@@ -36,6 +36,11 @@ const links = [
     link:
       'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/pdfs/LifeGroup.Host.Expectations.pdf',
   },
+  {
+    name: 'LifeGroup Covenant',
+    link:
+      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/pdfs/LifeGroup_Group_Covenant.pdf',
+  },
 ];
 
 const Page = () => (
