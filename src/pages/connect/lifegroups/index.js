@@ -10,21 +10,11 @@ import Layout from '../../../components/layout';
 import { H2, H3, H4 } from '../../../components/headers';
 import LifeGroup from '../../../components/LifeGroup';
 import MultiSelect from '../../../components/MultiSelect';
+import { curriculum } from '../../lifegroup-leaders';
 
 const title = 'LifeGroups';
 
-const guides = [
-  {
-    name: 'Week of 1/20',
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/LG.Study.Week.of.1.20.pdf',
-  },
-  {
-    name: 'Week of 1/27',
-    pdf:
-      'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/lifegroup-study-2019-01-27.pdf',
-  },
-];
+const guides = curriculum.current.weeks;
 
 const guide = guides[guides.length - 1];
 

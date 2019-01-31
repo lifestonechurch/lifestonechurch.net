@@ -16,14 +16,16 @@ const InnerCard = styled.div`
   padding: 20px;
 `;
 
-const curriculum = {
+export const curriculum = {
   current: {
     weeks: [
       {
+        name: 'Week of 1/20',
         pdf:
           'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/LG.Study.Week.of.1.20.pdf',
       },
       {
+        name: 'Week of 1/27',
         pdf:
           'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/lifegroup-study-2019-01-27.pdf',
       },
@@ -95,7 +97,7 @@ const Page = () => (
         {curriculum.current.weeks.map((c, i) => (
           <Card key={i}>
             <InnerCard>
-              <H3>Week {i + 1}</H3>
+              <H3>{c.name}</H3>
               {c.pdf && (
                 <p>
                   <a href={c.pdf} target="_blank" rel="noopener noreferrer">
