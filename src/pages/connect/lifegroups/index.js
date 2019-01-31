@@ -5,14 +5,17 @@ import Img from 'gatsby-image';
 import humanizeList from 'humanize-list';
 
 import Banner from '../../../components/Banner';
+import Breadcrumbs from '../../../components/Breadcrumbs';
 import Card from '../../../components/Card';
 import Layout from '../../../components/layout';
-import { H2, H3, H4 } from '../../../components/headers';
+import { H1, H2, H3, H4 } from '../../../components/headers';
 import LifeGroup from '../../../components/LifeGroup';
 import MultiSelect from '../../../components/MultiSelect';
 import { curriculum } from '../../lifegroup-leaders';
 
 const title = 'LifeGroups';
+
+const isRegistrationOpen = false;
 
 const guides = curriculum.current.weeks;
 
@@ -94,65 +97,84 @@ class Page extends React.Component {
 
     return (
       <Layout>
+        <Breadcrumbs
+          path={[{ title: 'Home', url: '/' }, { title: 'Connect' }]}
+          title={title}
+        />
+        <H1>{title}</H1>
+
         <Image>
           <Img sizes={data.lifegroupImage.childImageSharp.sizes} alt={title} />
         </Image>
 
         <p>
-          LifeGroups, small groups who meet throughout the week, are the heart
-          of Lifestone Church. They’re the place where the real ministry of the
-          church takes place as we study God’s Word while supporting and sharing
-          our lives with one another. We believe that meeting together on a
-          regular basis is time well spent. Email{' '}
-          <a href="mailto:lifestone@lifestonechurch.net">
-            lifestone@lifestonechurch.net
-          </a>{' '}
-          with any questions.
+          3-week LifeGroup mini-session led by Pastor Ben designed to help you
+          discover why you'll love LifeGroups. We'll cover an intro to Biblical
+          Christianity and talk about how to get the most out of church!
         </p>
+        <p>Sundays February 24 - March 10 5:30-7pm at Lifestone</p>
+        <p>Free childcare provided with reservation.</p>
 
-        <DatePickerContainer>
-          <H3>Which days work best for you?</H3>
+        <iframe
+          src="https://lifestonechurch.breezechms.com/form/intro"
+          title="Enrollment form"
+          style={{
+            width: `100%`,
+            height: 700,
+            margin: `0 auto`,
+            border: `1px solid #fff`,
+          }}
+        />
 
-          <MultiSelect
-            onChange={this.handleLifeGroupDayChange}
-            items={allDays}
-          />
-        </DatePickerContainer>
+        {isRegistrationOpen && (
+          <>
+            <DatePickerContainer>
+              <H3>Which days work best for you?</H3>
 
-        {!!this.state.selectedDays.length && (
-          <H4>
-            LifeGroups on{' '}
-            {humanizeList(this.state.selectedDays, { oxfordComma: true })}
-          </H4>
-        )}
-
-        <CardContainer>
-          {lifegroups
-            .filter(
-              lifegroup =>
-                selectedDays.includes(lifegroup.node.day) ||
-                selectedDays.length === 0
-            )
-            .sort(sortByDayOfWeek)
-            .sort(sortByAvailability)
-            .map(({ node }, index, array) => (
-              <LifeGroup
-                isOpen={true}
-                key={node.id}
-                name={node.name}
-                description={node.description && node.description.description}
-                day={node.day}
-                time={node.time}
-                address={node.address || ''}
-                hosts={node.hosts || null}
-                leaders={node.leaders || null}
-                contact={node.fields.contactFormatted}
-                hasChildcare={node.hasChildcare}
-                registrationLink={node.registrationLink}
-                reachedCapacity={!!node.reachedCapacity}
+              <MultiSelect
+                onChange={this.handleLifeGroupDayChange}
+                items={allDays}
               />
-            ))}
-        </CardContainer>
+            </DatePickerContainer>
+
+            {!!this.state.selectedDays.length && (
+              <H4>
+                LifeGroups on{' '}
+                {humanizeList(this.state.selectedDays, { oxfordComma: true })}
+              </H4>
+            )}
+
+            <CardContainer>
+              {lifegroups
+                .filter(
+                  lifegroup =>
+                    selectedDays.includes(lifegroup.node.day) ||
+                    selectedDays.length === 0
+                )
+                .sort(sortByDayOfWeek)
+                .sort(sortByAvailability)
+                .map(({ node }, index, array) => (
+                  <LifeGroup
+                    isOpen={true}
+                    key={node.id}
+                    name={node.name}
+                    description={
+                      node.description && node.description.description
+                    }
+                    day={node.day}
+                    time={node.time}
+                    address={node.address || ''}
+                    hosts={node.hosts || null}
+                    leaders={node.leaders || null}
+                    contact={node.fields.contactFormatted}
+                    hasChildcare={node.hasChildcare}
+                    registrationLink={node.registrationLink}
+                    reachedCapacity={!!node.reachedCapacity}
+                  />
+                ))}
+            </CardContainer>
+          </>
+        )}
 
         <Banner>
           <H2>Discussion Guides</H2>
@@ -195,7 +217,7 @@ export default Page;
 export const query = graphql`
   query LifegroupsQuery {
     lifegroupImage: file(
-      relativePath: { eq: "pages/connect/lifegroups/winter-registration.jpg" }
+      relativePath: { eq: "pages/connect/lifegroups/intro-to-lifegroups.jpg" }
     ) {
       childImageSharp {
         sizes(maxWidth: 1170) {
