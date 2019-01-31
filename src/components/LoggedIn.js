@@ -122,7 +122,7 @@ class LoggedIn extends React.Component {
         {isLoggedIn ? (
           <div>
             {children}
-            <Button onClick={this.logout}>Logout</Button>
+            {false && <Button onClick={this.logout}>Logout</Button>}
           </div>
         ) : (
           <LoggedOutContainer>
