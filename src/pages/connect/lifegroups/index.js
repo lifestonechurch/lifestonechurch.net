@@ -26,6 +26,8 @@ const guides = [
   },
 ];
 
+const guide = guides[guides.length - 1];
+
 const DatePickerContainer = styled.div`
   text-align: center;
   margin-top: 40px;
@@ -167,27 +169,29 @@ class Page extends React.Component {
         </Banner>
 
         <CardContainer>
-          {guides.map((c, i) => (
-            <Card key={i}>
-              <InnerCard>
-                <H3>{c.name}</H3>
-                {c.pdf && (
-                  <p>
-                    <a href={c.pdf} target="_blank" rel="noopener noreferrer">
-                      Discussion Guide
-                    </a>
-                  </p>
-                )}
-                {c.video && (
-                  <p>
-                    <a href={c.video} target="_blank" rel="noopener noreferrer">
-                      Video
-                    </a>
-                  </p>
-                )}
-              </InnerCard>
-            </Card>
-          ))}
+          <Card>
+            <InnerCard>
+              <H3>{guide.name}</H3>
+              {guide.pdf && (
+                <p>
+                  <a href={guide.pdf} target="_blank" rel="noopener noreferrer">
+                    Discussion Guide
+                  </a>
+                </p>
+              )}
+              {guide.video && (
+                <p>
+                  <a
+                    href={guide.video}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Video
+                  </a>
+                </p>
+              )}
+            </InnerCard>
+          </Card>
         </CardContainer>
 
         <Link to="/lifegroup-leaders">LifeGroup Leader Resources</Link>
