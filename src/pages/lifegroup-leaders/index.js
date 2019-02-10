@@ -29,6 +29,11 @@ export const curriculum = {
         pdf:
           'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/lifegroup-study-2019-01-27.pdf',
       },
+      {
+        name: 'Week of 2/10',
+        pdf:
+          'https://s3-us-west-2.amazonaws.com/lifestonechurch.net/lifegroup-notes/lifegroup-study-2019-02-10.pdf',
+      },
     ],
   },
   previous: [
