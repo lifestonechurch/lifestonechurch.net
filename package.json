@@ -49,6 +49,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "dotenv": "^4.0.0",
+    "gh-pages": "^2.0.1",
     "husky": "^1.1.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
@@ -62,6 +63,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages",
     "format": "prettier --write 'src/**/*.js'",
     "test": "jest",
     "precommit": "npm run format"
