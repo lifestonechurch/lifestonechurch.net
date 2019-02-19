@@ -5,6 +5,7 @@ var humanizeList = require('humanize-list');
 const COLORS = { BRAND: '#008F01' };
 
 module.exports = {
+  pathPrefix: '/lifestonechurch.net',
   siteMetadata: {
     title: `Lifestone Church`,
     podcastSubtitle: `Messages from Sunday morning worship at Lifestone Church`,
