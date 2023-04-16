@@ -34,7 +34,7 @@
     "react-image-gallery": "0.8.11",
     "react-redux": "^5.1.0",
     "react-typography": "^0.16.13",
-    "remarkable": "^1.7.1",
+    "remarkable": "^1.7.2",
     "slug": "^0.9.1",
     "typography": "^0.16.17",
     "typography-theme-bootstrap": "^0.16.7"
